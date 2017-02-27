@@ -1,0 +1,79 @@
+body {
+    background: #fff;
+    font-family: "Century Gothic", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    position: relative;
+    margin: 0px;
+}
+header, main, footer {
+    display: flex;
+    justify-content: center;
+    background: #fff;
+}
+header {
+    position: fixed;
+    top: 0px;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+header h5 {
+  font-size: 18px;
+  color: #3c91d1;
+  padding: 0px;
+  font-style: normal;
+  font-weight: normal;
+}
+main { 
+    min-height: 500px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+article p{
+  color: #80807f;
+  font-size: 18px;
+}
+
+a.user, a.message, a.avata, a.like {
+    text-indent: -9999px;
+    width: 24px;
+    height: 24px;
+}
+a.user {
+    background: url("../images/user.png");
+}
+a.message {
+    background: url("../images/speech-bubble.png");
+}
+a.avata {
+    background: url("../images/girl.png");
+}
+a.like {
+    background: url("../images/like.png");
+}
+.page-2 {
+    margin-top: 100px;
+}
+article.ar-page-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+.main h4 {
+    color: #7f7f7f;
+    font-size: 16px;
+    margin-bottom: 2px;
+}
+.main span {
+    color: #848e92;
+    font-size: 13px;
+}
+.main p {
+    color: #848e92;
+    font-size: 14px;
+    margin-top: 2px;
+}
