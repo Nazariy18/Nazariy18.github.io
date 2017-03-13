@@ -42,10 +42,10 @@ figure img {
   background: url(patterns/pat10.png);
 }
 .sector1 img {
-	border: 1px solid black;
+	/*border: 1px solid black;*/
 }
 .sector2 img {
-	border: 1px solid white;
+	/*border: 1px solid white;*/
 }
 h1 {
 	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
