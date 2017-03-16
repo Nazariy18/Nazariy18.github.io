@@ -52,12 +52,6 @@ figure img {
 	padding-bottom: 10px;
   background: url(patterns/pat10.png);
 }
-.sector1 img {
-	/*border: 1px solid black;*/
-}
-.sector2 img {
-	/*border: 1px solid white;*/
-}
 h1 {
 	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 	font-size: 30px;
