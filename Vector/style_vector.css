@@ -21,7 +21,7 @@ time, mark, audio, video {
 .sector2 {
 	background: url(patterns/pat10.png);
 }
-.sector3 {
+.sector22 {
 	background: url(patterns/pat1.png);
 	margin: 0px;
 	padding: 0px;
@@ -39,7 +39,7 @@ figure {
 	min-width: 200px;
 	/*box-shadow:  4px 4px 12px rgba(0, 0, 0, .5);*/
 }
-.sector3 figure { 
+.sector22 figure { 
 	width: 80%;
 }
 figure img {
