@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Intro</title>
+
+	<script src="js/anime.min.js"></script>
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="vba-area">
+
+    <canvas></canvas>
+
+</div>
+
+<script>
+		var mainOptions = {
+				delay: /* delay */5000/* /delay */,
+        isPaused: false,
+        isRendering: false,
+        timer: null
+    };
+
+    var timeline = anime.timeline({
+        loop: false,
+        direction: 'alternate',
+        autoplay: true
+    });	
+
+    var canvasEl = document.querySelector('canvas');
+    var ctx = canvasEl.getContext('2d');
+
+    var textUp = /* text1 */"NAZARIY"/* /text1 */;
+    var textDown = /* text2 */"KEREYA"/* /text2 */;
+
+    var bgColor = /* background_color */'#43ba83'/* /background_color */;
+    var textColor = /* text_color */'#00115f'/* /text_color */;
+
+//-------------------------function
+	function setCanvasSize() {
+        var rectObject = canvasEl.parentNode.getBoundingClientRect();
+        canvasEl.width = rectObject.width;
+        canvasEl.height = rectObject.height;
+        canvasEl.style.width = rectObject.width + 'px';
+        canvasEl.style.height = rectObject.height + 'px';
+    }
+  function createCircle() {
+    var p = {};
+      p.x = 1000;
+      p.y = 250;
+      p.yShadow = 50;
+      p.radius = 8;
+      p.color = bgColor;
+      p.draw = function() {
+        ctx.save();
+        ctx.beginPath();
+        ctx.fillStyle = p.color;
+        ctx.shadowBlur = 7;
+        ctx.shadowOffsetY = p.yShadow;
+        ctx.shadowColor = '#999';
+        ctx.fillRect(p.x - 6, p.y - 3, 12, 6);
+        ctx.restore();
+
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.radius, 0, 2 * Math.PI, false);
+        ctx.fillStyle = p.color;
+        ctx.fill();
+      };
+      return p;
+    }
+  function createCircles() {
+     var p = {};
+      p.x1 = 640;
+      p.y1 = 370;
+      p.x2 = 640;
+      p.y2 = 370;
+      p.x3 = 640;
+      p.y3 = 370;
+      p.Alpha = 0;
+      p.lineWidth = 1;
+      p.radius = 8;
+      p.color = textColor;
+      p.draw = function() {
+        ctx.save();
+        ctx.globalAlpha = p.Alpha;
+        ctx.beginPath();
+        ctx.arc(p.x1, p.y1, p.radius, 0, 2 * Math.PI, false);
+        ctx.lineWidth = p.lineWidth;
+        ctx.strokeStyle = p.color;
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.arc(p.x2, p.y2, p.radius, 0, 2 * Math.PI, false);
+        ctx.lineWidth = p.lineWidth;
+        ctx.strokeStyle = p.color;
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.arc(p.x3, p.y3, p.radius, 0, 2 * Math.PI, false);
+        ctx.lineWidth = p.lineWidth;
+        ctx.strokeStyle = p.color;
+        ctx.stroke();
+        ctx.restore();
+      };
+      return p;
+    }
+  function createRects() {
+      var p = {};
+      p.x = 640;
+      p.y = 370;
+      p.xMove1 = 0;
+      p.yMove1 = 0;
+      p.xMove2 = 0;
+      p.yMove2 = 0;
+      p.xMove3 = 0;
+      p.yMove3 = 0;
+      p.angle = 0;
+      p.Alpha = 0;
+      p.lineWidth = 0;
+      p.width = 16;
+      p.height = 16;
+      p.color = '#616265';
+      p.draw = function() {
+        //--------------1
+        ctx.save()
+        ctx.globalAlpha = p.Alpha;
+        ctx.translate(p.xMove1, p.yMove1);
+        ctx.translate(p.x, p.y);
+        ctx.rotate(p.angle*Math.PI/180);
+        ctx.translate((-1)*p.x, (-1)*p.y);
+        ctx.beginPath();
+        ctx.rect(632, 362, p.width, p.height);
+        ctx.lineWidth = p.lineWidth;
+        ctx.strokeStyle = p.color;
+        ctx.stroke();
+        ctx.restore();
+        //--------------------2
+        ctx.save()
+        ctx.globalAlpha = p.Alpha;
+        ctx.translate(p.xMove2, p.yMove2);
+        ctx.translate(p.x, p.y);
+        ctx.rotate(p.angle*Math.PI/180);
+        ctx.translate((-1)*p.x, (-1)*p.y);
+        ctx.beginPath();
+        ctx.rect(632, 362, p.width, p.height);
+        ctx.lineWidth = p.lineWidth;
+        ctx.strokeStyle = p.color;
+        ctx.stroke();
+        ctx.restore();
+        //-------------------------3
+        ctx.save()
+        ctx.globalAlpha = p.Alpha;
+        ctx.translate(p.xMove3, p.yMove3);
+        ctx.translate(p.x, p.y);
+        ctx.rotate(p.angle*Math.PI/180);
+        ctx.translate((-1)*p.x, (-1)*p.y);
+        ctx.beginPath();
+        ctx.rect(632, 362, p.width, p.height);
+        ctx.lineWidth = p.lineWidth;
+        ctx.strokeStyle = p.color;
+        ctx.stroke();
+        ctx.restore();
+      };
+      return p;
+    }
+  function createTriangles() {
+     var p = {};
+      p.x = 640;
+      p.y = 370;
+      p.angle = 0;
+      p.xMove1 = 0;
+      p.yMove1 = 0;
+      p.xMove2 = 0;
+      p.yMove2 = 0;
+      p.xMove3 = 0;
+      p.yMove3 = 0;
+      p.Alpha = 0;
+      p.lineWidth = 0;
+      p.color = textColor;
+      p.draw = function() {
+        //------------1
+        ctx.save();
+        ctx.globalAlpha = p.Alpha;
+        ctx.translate(p.xMove1, p.yMove1);
+        ctx.translate(p.x, p.y);
+        ctx.rotate(p.angle*Math.PI/180);
+        ctx.translate((-1)*p.x, (-1)*p.y);
+        ctx.beginPath();
+        ctx.moveTo(p.x, p.y - 10);
+        ctx.lineTo(p.x + 10, p.y + 8);
+        ctx.lineTo(p.x - 10, p.y + 8);
+        ctx.closePath();
+        ctx.lineWidth = p.lineWidth;
+        ctx.strokeStyle = p.color;
+        ctx.stroke();
+        ctx.restore();
+        //---------2
+        ctx.save();
+        ctx.globalAlpha = p.Alpha;
+        ctx.translate(p.xMove2, p.yMove2);
+        ctx.translate(p.x, p.y);
+        ctx.rotate(p.angle*Math.PI/180);
+        ctx.translate((-1)*p.x, (-1)*p.y);
+        ctx.beginPath();
+        ctx.moveTo(p.x, p.y -10);
+        ctx.lineTo(p.x + 10, p.y + 8);
+        ctx.lineTo(p.x - 10, p.y + 8);
+        ctx.closePath();
+        ctx.lineWidth = p.lineWidth;
+        ctx.strokeStyle = p.color;
+        ctx.stroke();
+        ctx.restore();
+        //----------------3
+        ctx.save();
+        ctx.globalAlpha = p.Alpha;
+        ctx.translate(p.xMove3, p.yMove3);
+        ctx.translate(p.x, p.y);
+        ctx.rotate(p.angle*Math.PI/180);
+        ctx.translate((-1)*p.x, (-1)*p.y);
+        ctx.beginPath();
+        ctx.moveTo(p.x, p.y -10);
+        ctx.lineTo(p.x + 10, p.y + 8);
+        ctx.lineTo(p.x - 10, p.y + 8);
+        ctx.closePath();
+        ctx.lineWidth = p.lineWidth;
+        ctx.strokeStyle = p.color;
+        ctx.stroke();
+        ctx.restore();
+      };
+      return p;
+  }
+  function createHexagons() {
+    var p = {};
+      p.lineWidth = 0;
+      p.color = textColor;
+      p.angle = 0;
+      p.x = 640;
+      p.y = 370;
+      p.Alpha = 0;
+      p.xMove1 = 0;
+      p.yMove1 = 0;
+      p.xMove2 = 0;
+      p.yMove2 = 0;
+      p.xMove3 = 0;
+      p.yMove3 = 0;
+      p.draw = function() {
+        //--------1
+        ctx.save();
+        ctx.globalAlpha = p.Alpha;
+        ctx.translate(p.xMove1, p.yMove1);
+        ctx.translate(p.x, p.y);
+        ctx.rotate(p.angle*Math.PI/180);
+        ctx.translate((-1)*p.x, (-1)*p.y);
+        ctx.beginPath();
+        ctx.moveTo(p.x, p.y - 10);
+        ctx.lineTo(p.x + 9, p.y - 5);
+        ctx.lineTo(p.x + 9, p.y + 5);
+        ctx.lineTo(p.x, p.y + 10);
+        ctx.lineTo(p.x - 9, p.y + 5);
+        ctx.lineTo(p.x - 9, p.y - 5);
+        ctx.closePath();
+        ctx.lineWidth = p.lineWidth;
+        ctx.strokeStyle = p.color;
+        ctx.stroke();
+        ctx.restore();
+        //-------------2
+        ctx.save();
+        ctx.globalAlpha = p.Alpha;
+        ctx.translate(p.xMove2, p.yMove2);
+        ctx.translate(p.x, p.y);
+        ctx.rotate(p.angle*Math.PI/180);
+        ctx.translate((-1)*p.x, (-1)*p.y);
+        ctx.beginPath();
+        ctx.moveTo(p.x, p.y - 10);
+        ctx.lineTo(p.x + 9, p.y - 5);
+        ctx.lineTo(p.x + 9, p.y + 5);
+        ctx.lineTo(p.x, p.y + 10);
+        ctx.lineTo(p.x - 9, p.y + 5);
+        ctx.lineTo(p.x - 9, p.y - 5);
+        ctx.closePath();
+        ctx.lineWidth = p.lineWidth;
+        ctx.strokeStyle = p.color;
+        ctx.stroke();
+        ctx.restore();
+        //----------------3
+        ctx.save();
+        ctx.globalAlpha = p.Alpha;
+        ctx.translate(p.xMove3, p.yMove3);
+        ctx.translate(p.x, p.y);
+        ctx.rotate(p.angle*Math.PI/180);
+        ctx.translate((-1)*p.x, (-1)*p.y);
+        ctx.beginPath();
+        ctx.moveTo(p.x, p.y - 10);
+        ctx.lineTo(p.x + 9, p.y - 5);
+        ctx.lineTo(p.x + 9, p.y + 5);
+        ctx.lineTo(p.x, p.y + 10);
+        ctx.lineTo(p.x - 9, p.y + 5);
+        ctx.lineTo(p.x - 9, p.y - 5);
+        ctx.closePath();
+        ctx.lineWidth = p.lineWidth;
+        ctx.strokeStyle = p.color;
+        ctx.stroke();
+        ctx.restore();
+      };
+      return p;
+  }
+  function createHexagon() {
+      var p = {};
+      p.color = bgColor;
+      p.x = 640;
+      p.y = 370;
+      p.scale = 0;
+      p.scale2 = 0;
+      p.lineWidth = 70;
+      p.yMove = 0;
+      p.draw = function() {
+        ctx.save();
+        ctx.translate(0, p.yMove);
+        ctx.translate(p.x, p.y);
+        ctx.scale(p.scale, p.scale);
+        ctx.translate((-1)*p.x, (-1)*p.y);
+        ctx.beginPath();
+        ctx.moveTo(p.x, p.y - 100);
+        ctx.lineTo(p.x + 87, p.y - 50);
+        ctx.lineTo(p.x + 87, p.y + 50);
+        ctx.lineTo(p.x, p.y + 100);
+        ctx.lineTo(p.x - 87, p.y + 50);
+        ctx.lineTo(p.x - 87, p.y - 50);
+        ctx.closePath();
+        ctx.lineWidth = p.lineWidth;
+        ctx.strokeStyle = p.color;
+        ctx.stroke();
+        ctx.restore();
+
+        ctx.save();
+        ctx.translate(0, p.yMove);
+        ctx.translate(p.x, p.y);
+        ctx.scale(p.scale2, p.scale2);
+        ctx.translate((-1)*p.x, (-1)*p.y);
+        ctx.beginPath();
+        ctx.moveTo(p.x, p.y - 100);
+        ctx.lineTo(p.x + 87, p.y - 50);
+        ctx.lineTo(p.x + 87, p.y + 50);
+        ctx.lineTo(p.x, p.y + 100);
+        ctx.lineTo(p.x - 87, p.y + 50);
+        ctx.lineTo(p.x - 87, p.y - 50);
+        ctx.closePath();
+        ctx.fillStyle = p.color;
+        ctx.fill();
+        ctx.restore();
+      };
+      return p;
+  }
+  function createTextUp()  {
+      var p = {};
+      p.x = 640;
+      p.y = 440; 
+      p.color = textColor;
+      p.draw = function() {
+        ctx.save();
+        ctx.beginPath();
+        ctx.rect(0, 445, 1280, 40);
+        ctx.clip(); 
+        ctx.font = "bold 30px Arial"
+        ctx.textAlign = "center";
+        ctx.fillStyle = p.color;
+        ctx.fillText(textUp, p.x, p.y);
+        ctx.restore();
+      };
+      return p;
+  }
+  function createTextDown()  {
+     var p = {};
+      p.x = 640;
+      p.y = 470;
+      p.color = textColor;
+      p.draw = function() {
+        ctx.save();
+        ctx.beginPath();
+        ctx.rect(0, 472, 1280, 20);
+        ctx.clip(); 
+        ctx.font = "bold 15px Arial"
+        ctx.textAlign = "center";
+        ctx.fillStyle = p.color;
+        ctx.fillText(textDown, p.x, p.y);
+        ctx.restore();
+      };
+      return p;
+  }
+  function createLine() {
+      var p = {};
+      p.x1 = 640;
+      p.y = 492;
+      p.x2 = 640; 
+      p.color = /* line_color */'#c6c136'/* /line_color */;
+      p.lineWidth = 5;
+      p.draw = function() {
+        ctx.save();
+        ctx.beginPath();
+        ctx.moveTo(p.x1, p.y);
+        ctx.lineTo(p.x2, p.y);
+        ctx.lineWidth = p.lineWidth;
+        ctx.strokeStyle = p.color;
+        ctx.stroke();
+        ctx.restore();
+      };
+      return p;
+  }
+  function createImage() {
+      var p = {};
+          p.angle = 90;
+          p.x = 640;
+          p.y = 370;
+          p.yMove = 0;
+          p.scale = 0;
+          var img = new Image;
+          p.draw = function() { 
+            ctx.save(); 
+            ctx.translate(0, p.yMove);
+            ctx.translate(p.x, p.y);
+            ctx.scale(p.scale, p.scale);
+            ctx.translate((-1)*p.x, (-1)*p.y);
+            ctx.drawImage(img, 640 - (p.width / 2), 370 - (p.height / 2), p.width, p.height);
+            ctx.restore();
+            var widthImg = parseInt(img.width);
+            var heightImg = parseInt(img.height);
+            if(widthImg > heightImg)
+            {p.height = (140 / widthImg) * heightImg; p.width = 140;}
+            else {p.width = (140 / heightImg) * widthImg; p.height = 140;}
+          };
+          img.src = /* file */"logo.png"/* /file */;
+        return p;
+  }
+
+  function renderEffect(anim) {
+        for (var i = 0; i < anim.animatables.length; i++) {
+            anim.animatables[i].target.draw();
+        }
+    }
+  var render = anime({
+        duration: Infinity,
+        update: function() {
+            if( !timeline.paused ){
+                clearCanvas();
+            }
+        }
+    });
+
+  var clearCanvas = function(){
+       ctx.clearRect(0, 0, canvasEl.width, canvasEl.height);
+    };
+//----------------------------------------
+    function animateIntro() {
+    	var circle = createCircle();
+      var circles = createCircles();
+      var rects = createRects();
+      var triangles = createTriangles();
+      var hexagons = createHexagons();
+      var hexagon = createHexagon();
+      var text1 = createTextUp();
+      var text2 = createTextDown();
+      var line = createLine();
+      var img = createImage();
+
+      timeline
+          .add({
+                targets: circle,
+                x: [{value: 960}, 
+                    {value: 890, duration: 500, easing: 'linear'},
+                    {value: 830, duration: 375, easing: 'linear'},
+                    {value: 780, duration: 375, easing: 'linear'},
+                    {value: 750, duration: 250, easing: 'linear'},
+                    {value: 720, duration: 250, easing: 'linear'},
+                    {value: 700, duration: 200, easing: 'linear'},
+                    {value: 680, duration: 200, easing: 'linear'},
+                    {value: 670, duration: 125, easing: 'linear'},
+                    {value: 660, duration: 125, easing: 'linear'},
+                    {value: 655, duration: 100, easing: 'linear'},
+                    {value: 650, duration: 100, easing: 'linear'},
+                    {value: 645, duration: 80, easing: 'linear'},
+                    {value: 640, duration: 80, easing: 'linear'}],
+                y: [{value: 170}, 
+                    {value: 370, duration: 500, easing: 'easeInCubic'},
+                    {value: 220, duration: 375, easing: 'easeOutCubic'},
+                    {value: 370, duration: 375, easing: 'easeInCubic'},
+                    {value: 270, duration: 250, easing: 'easeOutCubic'},
+                    {value: 370, duration: 250, easing: 'easeInCubic'},
+                    {value: 290, duration: 200, easing: 'easeOutCubic'},
+                    {value: 370, duration: 200, easing: 'easeInCubic'},
+                    {value: 320, duration: 125, easing: 'easeOutCubic'},
+                    {value: 370, duration: 125, easing: 'easeInCubic'},
+                    {value: 340, duration: 100, easing: 'easeOutCubic'},
+                    {value: 370, duration: 100, easing: 'easeInCubic'},
+                    {value: 355, duration: 80, easing: 'easeOutCubic'},
+                    {value: 370, duration: 80, easing: 'easeInCubic'}],  
+                yShadow: [{value: 205}, 
+                    {value: 5,   duration: 500, easing: 'easeInCubic'},
+                    {value: 155, duration: 375, easing: 'easeOutCubic'},
+                    {value: 5,   duration: 375, easing: 'easeInCubic'},
+                    {value: 105, duration: 250, easing: 'easeOutCubic'},
+                    {value: 5,   duration: 250, easing: 'easeInCubic'},
+                    {value: 85,  duration: 200, easing: 'easeOutCubic'},
+                    {value: 5,   duration: 200, easing: 'easeInCubic'},
+                    {value: 55,  duration: 125, easing: 'easeOutCubic'},
+                    {value: 5,   duration: 125, easing: 'easeInCubic'},
+                    {value: 35,  duration: 100, easing: 'easeOutCubic'},
+                    {value: 5,   duration: 100, easing: 'easeInCubic'},
+                    {value: 20,  duration: 80, easing: 'easeOutCubic'},
+                    {value: 5,   duration: 80, easing: 'easeInCubic'}],   
+                update: renderEffect
+              })
+          .add({
+              targets: circles,
+              easing: 'linear',
+              duration: 1200,
+              x1: [640, 350],
+              y1: [370, 200],
+              x2: [640, 600],
+              y2: [370, 620],
+              x3: [640, 920],
+              y3: [370, 300],
+              Alpha: [1, 1, 0],
+              update: renderEffect,
+              offset: 3000,
+            })
+          .add({
+              targets: rects,
+              easing: 'linear',
+              duration: 1200,
+              xMove1: [0, 2],
+              yMove1: [0, -190],
+              xMove2: [0, -200],
+              yMove2: [0, 140],
+              xMove3: [0, 220],
+              yMove3: [0, 120],
+              angle: [0, 120],
+              Alpha: [1, 1, 0],
+              update: renderEffect,
+              offset: 3000
+          })
+          .add({
+              targets: hexagons,
+              easing: 'linear',
+              duration: 1200,
+              xMove1: [0, 100],
+              yMove1: [0, -150],
+              xMove2: [0, 100],
+              yMove2: [0, 190],
+              xMove3: [0, -230],
+              yMove3: [0, 20],
+              angle: [0, 140],
+              Alpha: [1, 1, 0],
+              update: renderEffect,
+              offset: 3000
+          })
+          .add({
+              targets: triangles,
+              easing: 'linear',
+              duration: 1200,
+              xMove1: [0, -80],
+              yMove1: [0, -100],
+              xMove2: [0, 150],
+              yMove2: [0, 10],
+              xMove3: [0, -100],
+              yMove3: [0, 150],
+              angle: [0, 140],
+              Alpha: [1, 1, 0],
+              update: renderEffect,
+              offset: 3000
+          })
+          .add({
+              targets: hexagon,
+              easing: 'linear',
+              duration: 1000,
+              scale: [0, 1],
+              lineWidth: [70, 0],
+              update: renderEffect,
+              offset: 3000
+          })
+           .add({
+              targets: hexagon,
+              easing: 'linear',
+              duration: 1000,
+              scale2: [0, 1],
+              update: renderEffect,
+              offset: 3200
+          })
+           .add({
+              targets: text1,
+              easing: 'easeOutCubic',
+              duration: 1500,
+              y: [440, 470],
+              update: renderEffect
+          })
+           .add({
+              targets: text2,
+              easing: 'easeOutCubic',
+              duration: 1500,
+              y: [470, 485],
+              update: renderEffect,
+              offset: 4200
+          })
+           .add({
+              targets: hexagon,
+              easing: 'easeOutCubic',
+              duration: 1500,
+              yMove: [0, -30], 
+              update: renderEffect,
+              offset: 4200
+          })
+           .add({
+              targets: line,
+              easing: 'easeOutCubic',
+              duration: 1500,
+              x1: [640, 625],
+              x2: [640, 655],
+              update: renderEffect,
+              offset: 4200
+          })
+           .add({
+              targets: img,
+              easing: 'linear',
+              duration: 1000,
+              scale: [0, 1],
+              update: renderEffect,
+              offset: 3200
+          })
+            .add({
+              targets: img,
+              easing: 'easeOutCubic',
+              duration: 1500,
+              yMove: [0, -30],
+              update: renderEffect,
+              offset: 4200,
+              complete: function(anim) {
+                mainOptions.timer = setTimeout(function(){
+                    clearCanvas();
+                }, mainOptions.isRendering
+                    ? mainOptions.delay * 3//delay x3 - for better rendering
+                    : mainOptions.delay);
+            }
+          });
+
+
+    }
+
+    setCanvasSize();
+    animateIntro();
+//-------------------------------------------
+ //Playback control
+    var playbackControl = {
+
+        getIsPaused: function(){
+            return timeline.paused;
+        },
+
+        playToggle: function(){
+            if( timeline.paused ){
+                timeline.play();
+            } else {
+                timeline.pause();
+            }
+        },
+
+        play: function(){
+            timeline.play();
+        },
+
+        pause: function(){
+            timeline.pause();
+        },
+
+        restart: function(){
+            timeline.restart();
+        },
+
+        stop: function(){
+            clearTimeout( mainOptions.timer );
+            timeline.restart();
+            timeline.pause();
+        },
+
+        seek: function( miliseconds ){
+            clearTimeout( mainOptions.timer );
+            if( timeline.reversed ){
+                timeline.reverse();
+            }
+            timeline.seek( miliseconds );
+            timeline.play();
+        }
+    };
+
+</script>
+
+<!-- BUTTONS -->
+<div id="vba-buttons" style="display: none; position: fixed; right: 20px; top: 20px;">
+    <button type="button" class="vba-btn" onclick="playbackControl.playToggle(); return false;">
+        Play / Pause
+    </button>
+    <button type="button" class="vba-btn" onclick="playbackControl.play(); return false;">
+        Play
+    </button>
+    <button type="button" class="vba-btn" onclick="playbackControl.pause(); return false;">
+        Pause
+    </button>
+    <button type="button" class="vba-btn" onclick="playbackControl.stop(); return false;">
+        Stop
+    </button>
+    <button type="button" class="vba-btn" onclick="playbackControl.seek(2500); return false;">
+        Jump to 50% time
+    </button>
+    <button type="button" class="vba-btn" onclick="playbackControl.restart(); return false;">
+        Replay
+    </button>
+</div>
+<script>
+    //To display buttons add #buttons hash to page address and reload
+    if( window.location.hash.indexOf('buttons') > -1 ){
+        document.getElementById('vba-buttons').style.display = 'block';
+    }
+</script>
+<!-- /BUTTONS -->
+	
+</body>
+</html>

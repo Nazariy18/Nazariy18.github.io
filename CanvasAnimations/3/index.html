@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Effect</title>
+
+	<script src="js/anime.min.js"></script>
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="vba-area">
+    <canvas class="Effect"></canvas>
+</div>
+
+<script>
+		var mainOptions = {
+				delay: /* delay */5000/* /delay */,
+        isPaused: false,
+        isRendering: false,
+        timer: null
+    };
+
+    var timeline = anime.timeline({
+        loop: false,
+        direction: 'alternate',
+        autoplay: true
+    });	
+
+    var canvasEl = document.querySelector('.Effect');
+    var ctx = canvasEl.getContext('2d');
+
+    ctx.font = "55px 'Century Gothic'"
+    var text = /* text */"TOP RATED FREELANCER"/* /text */;
+    var widthText = Math.ceil(ctx.measureText(text).width);
+
+    var triangleColor = /* triangle_color */'#FBB829'/* /triangle_color */;
+
+    var points = {};
+    points.v1 = 610 - widthText / 2;
+    points.v2 = 570 - widthText / 2;
+    points.v3 = 670 + widthText / 2;
+    points.v4 = 710 + widthText / 2;
+
+//-------------------------function
+	function setCanvasSize() {
+        canvasEl.width = canvasEl.parentNode.offsetWidth;
+        canvasEl.height = canvasEl.parentNode.offsetHeight;
+        canvasEl.style.width = canvasEl.parentNode.offsetWidth + 'px';
+        canvasEl.style.height = canvasEl.parentNode.offsetHeight + 'px';
+   }
+  function createText() {
+    var p = {};
+      p.x = 640;
+      p.y = 397;
+      p.widthMask = 0;
+      p.heightMask = 70;
+      p.color = /* text_color */'#cc3433'/* /text_color */;
+      p.draw = function() {
+        ctx.save();
+        ctx.beginPath();
+        ctx.rect(points.v1, 340, p.widthMask, p.heightMask);
+        ctx.clip(); 
+        ctx.font = "55px 'Century Gothic'"
+        ctx.textAlign = "center";
+        ctx.fillStyle = p.color;
+        ctx.fillText(text, p.x, p.y);
+        ctx.restore();
+      };
+      return p;
+  }
+  function createTriangleLeft() {
+      var p = {};
+      p.x1 = points.v2;
+      p.x2 = points.v2;
+      p.y1 = 375;
+      p.y2 = 375;
+      p.y3 = 375;
+      p.color = triangleColor;
+      p.draw = function() {
+        ctx.beginPath();
+        ctx.moveTo(p.x1, p.y1);
+        ctx.lineTo(p.x2, p.y2);
+        ctx.lineTo(p.x1, p.y3);
+        ctx.closePath();
+        ctx.fillStyle = p.color;
+        ctx.fill(); 
+      };
+      return p;
+  }
+  function createTriangleRight() {
+      var p = {};
+      p.x1 = points.v1 + 2; 
+      p.x2 = points.v2 + 42;
+      p.y1 = 340;
+      p.y2 = 375;
+      p.y3 = 410;
+      p.color = triangleColor;
+      p.draw = function() {
+        ctx.beginPath();
+        ctx.moveTo(p.x1, p.y1);
+        ctx.lineTo(p.x2, p.y2);
+        ctx.lineTo(p.x1, p.y3);
+        ctx.closePath();
+        ctx.fillStyle = p.color;
+        ctx.fill(); 
+      };
+      return p;
+  }
+
+  function renderEffect(anim) {
+        for (var i = 0; i < anim.animatables.length; i++) {
+            anim.animatables[i].target.draw();
+        }
+    }
+
+  var render = anime({
+        duration: Infinity,
+        update: function() {
+            if( !timeline.paused ){
+                clearCanvas();
+            }
+        }
+    });
+
+  var clearCanvas = function(){
+       ctx.clearRect(0, 0, canvasEl.width, canvasEl.height);
+    };
+//----------------------------------------
+    function animateTitle() {
+    	var text = createText();
+      var triangle1 = createTriangleLeft();
+      var triangle2 = createTriangleRight();
+
+      timeline
+          .add({
+                targets: triangle1,
+                easing: 'linear',
+                x1: [points.v2, points.v1],
+                y1: [375, 340],
+                y3: [375, 410],
+                duration: 300,
+                update: renderEffect
+          })
+          .add({
+                targets: triangle2,
+                easing: 'easeOutQuint',
+                x2: [points.v2 + 42, points.v2 + 82],
+                duration: 400,
+                update: renderEffect,
+                offset: 700
+          })
+          .add({
+                targets: triangle2,
+                easing: 'easeOutQuint',
+                x1: [points.v1 + 2, points.v3],
+                x2: [points.v2 + 82, points.v4],
+                duration: 1500,
+                update: renderEffect
+          })
+          .add({
+                targets: text,
+                easing: 'easeOutQuint',
+                widthMask: [0, widthText + 60],
+                duration: 1500,
+                update: renderEffect,
+                offset: 1100,
+                complete: function(anim) {
+                timeline.reverse();
+                mainOptions.isPaused = true;
+                mainOptions.timer = setTimeout(function(){
+                    mainOptions.isPaused = false;
+                    timeline.play();
+                }, mainOptions.isRendering
+                    ? mainOptions.delay * 3//delay x3 - for better rendering
+                    : mainOptions.delay);
+            }
+          });
+    }
+
+    setCanvasSize();
+    animateTitle();
+
+//-------------------------------------------
+//Playback control
+    var playbackControl = {
+
+        playToggle: function(){
+            if( mainOptions.isPaused ){
+                return;
+            }
+            if( timeline.paused ){
+                timeline.play();
+            } else {
+                timeline.pause();
+            }
+        },
+
+        play: function(){
+            if( mainOptions.isPaused ){
+                return;
+            }
+            timeline.play();
+        },
+
+        pause: function(){
+            if( mainOptions.isPaused ){
+                return;
+            }
+            timeline.pause();
+        },
+
+        restart: function(){
+            timeline.restart();
+        },
+
+        stop: function(){
+            mainOptions.isPaused = false;
+            clearTimeout( mainOptions.timer );
+            timeline.restart();
+            timeline.pause();
+        },
+
+        seek: function( miliseconds ){
+            mainOptions.isPaused = false;
+            clearTimeout( mainOptions.timer );
+            if( timeline.reversed ){
+                timeline.reverse();
+            }
+            timeline.seek( miliseconds );
+            timeline.play();
+        }
+    };
+
+</script>
+
+<!-- BUTTONS -->
+<div id="vba-buttons" style="display: none; position: fixed; right: 20px; top: 20px;">
+    <button type="button" class="vba-btn" onclick="playbackControl.playToggle(); return false;">
+        Play / Pause
+    </button>
+    <button type="button" class="vba-btn" onclick="playbackControl.play(); return false;">
+        Play
+    </button>
+    <button type="button" class="vba-btn" onclick="playbackControl.pause(); return false;">
+        Pause
+    </button>
+    <button type="button" class="vba-btn" onclick="playbackControl.stop(); return false;">
+        Stop
+    </button>
+    <button type="button" class="vba-btn" onclick="playbackControl.seek(2500); return false;">
+        Jump to 50% time
+    </button>
+    <button type="button" class="vba-btn" onclick="playbackControl.restart(); return false;">
+        Replay
+    </button>
+</div>
+<script>
+    //To display buttons add #buttons hash to page address and reload
+    if( window.location.hash.indexOf('buttons') > -1 ){
+        document.getElementById('vba-buttons').style.display = 'block';
+    }
+</script>
+<!-- /BUTTONS -->
+	
+</body>
+</html>

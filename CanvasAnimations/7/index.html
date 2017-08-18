@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Intro</title>
+
+	<script src="js/anime.min.js"></script>
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="vba-area">
+
+    <canvas></canvas>
+
+</div>
+
+<script>
+		var mainOptions = {
+				delay: /* delay */5000/* /delay */,
+        isPaused: false,
+        isRendering: false,
+        timer: null
+    };
+
+    var timeline = anime.timeline({
+        loop: false,
+        direction: 'alternate',
+        autoplay: true
+    });	
+
+    var canvasEl = document.querySelector('canvas');
+    var ctx = canvasEl.getContext('2d');
+
+    ctx.font = "30px 'Century Gothic'";
+    var text = /* text */"TOP RATED FREELANCER"/* /text */;
+    var widthText = Math.ceil(ctx.measureText(text).width);
+
+    if(widthText == 0) { var pointsR = 0;}
+    else {var pointsR = 5;}
+
+
+
+    var bgColor1 = /* background_color1 */'#d5f7fe'/* /background_color1 */;
+    var bgColor2 = /* background_color2 */'#2fe4a2'/* /background_color2 */;
+
+
+
+//-------------------------function
+	function setCanvasSize() {
+        var rectObject = canvasEl.parentNode.getBoundingClientRect();
+        canvasEl.width = rectObject.width;
+        canvasEl.height = rectObject.height;
+        canvasEl.style.width = rectObject.width + 'px';
+        canvasEl.style.height = rectObject.height + 'px';
+    }
+  function createCircle() {
+    var p = {};
+      p.x = 640;
+      p.y = 780;
+      p.color = bgColor1;
+      p.color2 = '#fff';
+      p.Alpha = 0;
+      p.radius = 30;
+      p.draw = function() {
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.radius, 0, 2 * Math.PI, false);
+        ctx.fillStyle = p.color;
+        ctx.fill();
+
+        ctx.save();
+        ctx.beginPath();
+        ctx.rect(640, 0, 100, 740);
+        ctx.clip(); 
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.radius - 5, 0, 2 * Math.PI, false);
+        ctx.fillStyle = p.color2;
+        ctx.globalAlpha = p.Alpha;
+        ctx.fill();
+        ctx.restore();
+      };
+      return p;
+   }
+  function createText() {
+    var p = {};
+      p.x = 640;
+      p.y = 230;
+      p.Alpha = 0;
+      p.color = /* text_color */'#fff'/* /text_color */;
+      p.draw = function() {
+        ctx.save();
+        ctx.font = "30px 'Century Gothic'";
+        ctx.textAlign = "center";
+        ctx.fillStyle = p.color;
+        ctx.globalAlpha = p.Alpha;
+        ctx.fillText(text, p.x, p.y);
+        ctx.restore();
+      };
+      return p;
+  }
+  function createLinesAndCircle1() {
+    var p = {};
+      p.x = 639;
+      p.y = 750;
+      p.y11 = 750;
+      p.y12 = 900; 
+      p.y21 = 950;
+      p.y22 = 1050; 
+      p.radius = 20;
+      p.color = bgColor1;
+      p.lineWidth = 2;
+      p.draw = function() {
+      //-----------------line_center_1
+        ctx.beginPath();
+        ctx.moveTo(p.x, p.y11);
+        ctx.lineTo(p.x, p.y12);
+        ctx.lineWidth = p.lineWidth;
+        ctx.strokeStyle = p.color;
+        ctx.stroke();
+      //-----------------line_center_2
+        ctx.beginPath();
+        ctx.moveTo(p.x, p.y21);
+        ctx.lineTo(p.x, p.y22);
+        ctx.lineWidth = p.lineWidth;
+        ctx.strokeStyle = p.color;
+        ctx.stroke();
+      //
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.radius, 0, 2 * Math.PI, false);
+        ctx.fillStyle = p.color;
+        ctx.fill();
+
+      };
+      return p;
+  }
+  function createLinesAndCircles2() {
+      var p = {};
+      p.x11 = 620;
+      p.y11 = 800;
+      p.x12 = 620;
+      p.y12 = 900;
+      p.x13 = 520;
+      p.y13 = 1000;
+      p.x14 = 420;
+      p.y14 = 1000;
+      p.x31 = 420;
+      p.y31 = 1050;
+      p.x21 = 660;
+      p.y21 = 900;
+      p.x22 = 660;
+      p.y22 = 975;
+      p.x23 = 760;
+      p.y23 = 1050;
+      p.x24 = 860;
+      p.y24 = 1050;
+      p.x41 = 660;
+      p.y41 = 800;
+      p.color = bgColor2;
+      p.lineWidth = 2;
+      p.radius1 = 12;
+      p.radius2 = 8;
+      p.draw = function() {
+        ctx.beginPath();
+        ctx.moveTo(p.x11, p.y11);
+        ctx.bezierCurveTo(p.x12, p.y12, p.x13, p.y13, p.x14, p.y14);
+        ctx.strokeStyle = p.color;
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.moveTo(p.x21, p.y21);
+        ctx.bezierCurveTo(p.x22, p.y22, p.x23, p.y23, p.x24, p.y24);
+        ctx.strokeStyle = p.color;
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.arc(p.x31, p.y31, p.radius1, 0, 2 * Math.PI, false);
+        ctx.strokeStyle = p.color;
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.arc(p.x41, p.y41, p.radius2, 0, 2 * Math.PI, false);
+        ctx.strokeStyle = p.color;
+        ctx.stroke();
+
+      };
+      return p;
+  }
+  function createLinesAndCircles3() {
+      var p = {};
+      p.x1 = 640;
+      p.y = 412;
+      p.x2 = 640;
+      p.x3 = 640;
+      p.x4 = 640;
+      p.xl1 = 640;
+      p.yl1 = 250;
+      p.yl2 = 350;
+      p.xl2 = 620;
+      p.xl3 = 660;
+      p.color1 = bgColor1;
+      p.color2 = bgColor2;
+      p.Alpha = 0;
+      p.radius = pointsR;
+      p.draw = function() {
+        ctx.save();
+        ctx.globalAlpha = p.Alpha;
+        ctx.beginPath();
+        ctx.arc(p.x1, p.y, p.radius, 0, 2 * Math.PI, false);
+        ctx.fillStyle = p.color1;
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.arc(p.x2, p.y, p.radius, 0, 2 * Math.PI, false);
+        ctx.fillStyle = p.color1;
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.arc(p.x3, p.y, p.radius, 0, 2 * Math.PI, false);
+        ctx.fillStyle = p.color2;
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.arc(p.x4, p.y, p.radius, 0, 2 * Math.PI, false);
+        ctx.fillStyle = p.color2;
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.moveTo(p.xl1, p.yl1);
+        ctx.lineTo(p.xl1, p.yl2);
+        ctx.lineWidth = p.lineWidth;
+        ctx.strokeStyle = p.color1;
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.moveTo(p.xl2, p.yl1 - 20);
+        ctx.lineTo(p.xl2, p.yl2 - 20);
+        ctx.lineWidth = p.lineWidth;
+        ctx.strokeStyle = p.color;
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.moveTo(p.xl3, p.yl1 - 20);
+        ctx.lineTo(p.xl3, p.yl2 - 20);
+        ctx.lineWidth = p.lineWidth;
+        ctx.strokeStyle = p.color;
+        ctx.stroke();
+        ctx.restore();
+      };
+      return p;
+  }
+  function createImage() {
+      var p = {};
+          p.x = 640;
+          p.y = 150;
+          p.scale = 0;
+          
+          var img = new Image;
+          p.draw = function() {
+            ctx.drawImage(img, p.x - (p.width / 2), p.y - (p.height / 2), p.width, p.height);
+            var widthImg = parseInt(img.width);
+            var heightImg = parseInt(img.height);
+            if(widthImg > heightImg)
+            {p.height = (120 / widthImg) * heightImg * p.scale; p.width = 120 * p.scale;}
+            else {p.width = (120 / heightImg) * widthImg * p.scale; p.height = 120 * p.scale;}
+          };
+          img.src = /* file */"logo.png"/* /file */;
+          return p;
+  }
+
+  function renderEffect(anim) {
+        for (var i = 0; i < anim.animatables.length; i++) {
+            anim.animatables[i].target.draw();
+        }
+    }
+  var render = anime({
+        duration: Infinity,
+        update: function() {
+            if( !timeline.paused ){
+                clearCanvas();
+            }
+        }
+    });
+
+  var clearCanvas = function(){
+       ctx.clearRect(0, 0, canvasEl.width, canvasEl.height);
+    };
+//----------------------------------------
+    function animateIntro() {
+    	 var circle = createCircle();
+       var linesAndCircle1 = createLinesAndCircle1();
+       var linesAndCircle2 = createLinesAndCircles2();
+       var linesAndCircle3 = createLinesAndCircles3();
+       var text = createText();
+       var img = createImage();
+
+       timeline
+          .add({
+                targets: circle,
+                easing: 'easeOutQuad',
+                duration: 1000,
+                y: [780, 150],
+                radius: [30, 50],
+                update: renderEffect
+              })
+          .add({
+                targets: circle,
+                easing: 'easeOutQuad',
+                duration: 1000,
+                y: [150, 300],
+                duration: 1000,
+                radius: [50, 80],
+                Alpha: [0, 0.3],
+                update: renderEffect 
+          })
+          .add({
+                targets: linesAndCircle1,
+                easing: 'easeOutQuad',
+                duration: 1000,
+                y11: [750, 250],
+                y12: [900, 250],
+                y21: [950, 300],
+                y22: [1000, 300],
+                y: [925, 275],
+                radius: [20, 0],  
+                update: renderEffect,
+                offset: 0
+          })
+          .add({
+                targets: linesAndCircle2,
+                easing: 'linear',
+                duration: 500,
+                y11: [800, 400],
+                y12: [900, 500],
+                x13: [520, 620],
+                x14: [420, 620],
+                y13: [1000, 600],
+                y14: [1000, 600],
+                y21: [900, 500],
+                y22: [975, 575],
+                x23: [760, 660],
+                x24: [860, 660],
+                y23: [1050, 650],
+                y24: [1050, 650],
+                x31: [420, 620],
+                y31: [1050, 650],
+                y41: [800, 450],
+                update: renderEffect,
+                offset: 0
+          })
+          .add({
+                targets: linesAndCircle2,
+                easing: 'easeOutQuad',
+                duration: 500,
+                y11: [400, 250],
+                y12: [400, 250],
+                y13: [600, 250],
+                y14: [600, 250],
+                y21: [500, 250],
+                y22: [575, 250],
+                y23: [650, 250],
+                y24: [650, 250],
+                y31: [650, 300],
+                radius1: [12, 0],
+                y41: [450, 230],
+                radius2: [8, 0],
+                update: renderEffect,
+                offset: 500
+          })
+          .add({
+                targets: text,
+                easing: 'easeOutQuad',
+                duration: 1000,
+                y: [230, 420],
+                Alpha: [0, 1],
+                update: renderEffect,
+                offset: 1000
+          })
+          .add({
+                targets: linesAndCircle3,
+                easing: 'easeOutQuad',
+                duration: 1000,
+                x2: [640, 625 - widthText / 2],
+                x1: [640, 655 + widthText / 2],
+                Alpha: [0, 1],
+                yl1: [250, 410],
+                yl2: [350, 410],
+                update: renderEffect,
+                offset: 800
+          })
+          .add({
+                targets: linesAndCircle3,
+                easing: 'easeOutQuad',
+                duration: 1000,
+                x3: [640, 625 - widthText / 2],
+                x4: [640, 655 + widthText / 2],
+                update: renderEffect,
+                offset: 1000
+          })
+          .add({
+                targets: img,
+                easing: 'easeOutQuad',
+                duration: 1000,
+                y: [150, 300],
+                scale: [0, 1],
+                update: renderEffect,
+                offset: 1000,
+                complete: function(anim) {
+                mainOptions.timer = setTimeout(function(){
+                    clearCanvas();
+                }, mainOptions.isRendering
+                    ? mainOptions.delay * 3//delay x3 - for better rendering
+                    : mainOptions.delay);
+            }
+          })
+    }
+
+    setCanvasSize();
+    animateIntro();
+//-------------------------------------------
+ //Playback control
+    var playbackControl = {
+
+        getIsPaused: function(){
+            return timeline.paused;
+        },
+
+        playToggle: function(){
+            if( timeline.paused ){
+                timeline.play();
+            } else {
+                timeline.pause();
+            }
+        },
+
+        play: function(){
+            timeline.play();
+        },
+
+        pause: function(){
+            timeline.pause();
+        },
+
+        restart: function(){
+            timeline.restart();
+        },
+
+        stop: function(){
+            clearTimeout( mainOptions.timer );
+            timeline.restart();
+            timeline.pause();
+        },
+
+        seek: function( miliseconds ){
+            clearTimeout( mainOptions.timer );
+            if( timeline.reversed ){
+                timeline.reverse();
+            }
+            timeline.seek( miliseconds );
+            timeline.play();
+        }
+    };
+
+</script>
+
+<!-- BUTTONS -->
+<div id="vba-buttons" style="display: none; position: fixed; right: 20px; top: 20px;">
+    <button type="button" class="vba-btn" onclick="playbackControl.playToggle(); return false;">
+        Play / Pause
+    </button>
+    <button type="button" class="vba-btn" onclick="playbackControl.play(); return false;">
+        Play
+    </button>
+    <button type="button" class="vba-btn" onclick="playbackControl.pause(); return false;">
+        Pause
+    </button>
+    <button type="button" class="vba-btn" onclick="playbackControl.stop(); return false;">
+        Stop
+    </button>
+    <button type="button" class="vba-btn" onclick="playbackControl.seek(2500); return false;">
+        Jump to 50% time
+    </button>
+    <button type="button" class="vba-btn" onclick="playbackControl.restart(); return false;">
+        Replay
+    </button>
+</div>
+<script>
+    //To display buttons add #buttons hash to page address and reload
+    if( window.location.hash.indexOf('buttons') > -1 ){
+        document.getElementById('vba-buttons').style.display = 'block';
+    }
+</script>
+<!-- /BUTTONS -->
+	
+</body>
+</html>

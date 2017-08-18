@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Effect</title>
+
+	<script src="js/anime.min.js"></script>
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="vba-area">
+    <canvas class="Effect"></canvas>
+</div>
+
+<script>
+		var mainOptions = {
+				delay: /* delay */3000/* /delay */,
+        isPaused: false,
+        isRendering: false,
+        timer: null
+    };
+
+    var timeline = anime.timeline({
+        loop: false,
+        direction: 'alternate',
+        autoplay: true
+    });	
+
+    var canvasEl = document.querySelector('.Effect');
+    var ctx = canvasEl.getContext('2d');
+
+    ctx.font = "bold 19px Arial"
+    var textDown = /* text2 */"WEB-ANIMATOR"/* /text2 */;
+    var widthTextDown = Math.ceil(ctx.measureText(textDown).width);
+
+    ctx.font = "45px Arial"
+    var textUp = /* text1 */"NAZARIY KEREYA"/* /text1 */;
+    var widthTextUp = Math.ceil(ctx.measureText(textUp).width);
+
+//-------------------------function
+	function setCanvasSize() {
+        canvasEl.width = canvasEl.parentNode.offsetWidth;
+        canvasEl.height = canvasEl.parentNode.offsetHeight;
+        canvasEl.style.width = canvasEl.parentNode.offsetWidth + 'px';
+        canvasEl.style.height = canvasEl.parentNode.offsetHeight + 'px';
+   }
+
+  function createTextUp() {
+  	var p = {};
+      p.x = 170;
+      p.y = 0;
+      p.color = /* text_color1 */'#FFF'/* /text_colo1 */;
+      p.draw = function() {
+      	ctx.save();
+      	ctx.rect(150, 535, widthTextUp + 40, 60);
+      	ctx.clip(); 
+      	ctx.font = "45px Arial"
+    		ctx.fillStyle = p.color;
+	  		ctx.fillText(textUp, p.x, p.y);
+	  		ctx.restore();
+	  	};
+	  	return p;
+  }
+  function createTextDown() {
+  	var p = {};
+      p.x = 202 + widthTextUp;
+      p.y = 605;
+      p.color = /* text_color2 */'#FBB829'/* /text_color2 */;
+      p.draw = function() {
+      	ctx.save();
+      	ctx.rect(192 + widthTextUp, 605, widthTextDown + 20, 27);
+      	ctx.clip();
+      	ctx.font = "bold 19px Arial"
+    		ctx.fillStyle = p.color;
+	  		ctx.fillText(textDown, p.x, p.y);
+	  		ctx.restore();
+	  	};
+	  	return p;
+  }
+  function createCircle() {
+  		var p = {};
+      p.x = 120;
+      p.y = 740;
+      p.color = '#FFF';
+      p.radius = 5;
+    	p.draw = function() {
+	  		ctx.beginPath();
+	      ctx.arc(p.x, p.y, p.radius, 0, 2 * Math.PI, false);
+	      ctx.fillStyle = p.color;
+	      ctx.fill();
+	    };
+	    return p;
+  }
+  function createLine() {
+  		var p = {};
+      p.x1 = 120;
+      p.y = 600;
+      p.x2 = 120; 
+      p.color = '#FFF';
+      p.lineWidth = 2;
+    	p.draw = function() {
+    		ctx.beginPath();
+	  		ctx.moveTo(p.x1, p.y);
+				ctx.lineTo(p.x2, p.y);
+				ctx.lineWidth = p.lineWidth;
+				ctx.strokeStyle = p.color;
+				ctx.stroke();
+			};
+			return p;
+  }
+  function createContainerUp() {
+  	var p = {};
+      p.x1 = 150;
+      p.y1 = 595;
+      p.width = widthTextUp + 40;
+      p.height = 0; 
+      p.color = /* background_color1 */'#FBB829'/* /background_color1 */;
+      p.draw = function() {
+    		ctx.fillStyle = p.color;
+	  		ctx.fillRect(p.x1, p.y1, p.width, p.height);
+	  	};
+	  	return p;
+  }
+  function createContainerDown() {
+  	var p = {};
+      p.x1 = 192 + widthTextUp;
+      p.y1 = 605;
+      p.width = widthTextDown + 20; 
+      p.height = 0; 
+      p.color = /* background_color2 */'#43403F'/* /background_color2 */;
+      p.draw = function() {
+    		ctx.fillStyle = p.color;
+	  		ctx.fillRect(p.x1, p.y1, p.width, p.height);
+	  	};
+	  	return p;
+  }
+
+  function renderEffect(anim) {
+        for (var i = 0; i < anim.animatables.length; i++) {
+            anim.animatables[i].target.draw();
+        }
+    }
+
+  var render = anime({
+        duration: Infinity,
+        update: function() {
+            if( !timeline.paused ){
+                clearCanvas();
+            }
+        }
+    });
+
+  var clearCanvas = function(){
+       ctx.clearRect(0, 0, canvasEl.width, canvasEl.height);
+    };
+//----------------------------------------
+    var animateTitle = function() {
+    	var circle = createCircle();
+    	var line = createLine();
+    	var container1 = createContainerUp();
+    	var container2 = createContainerDown();
+    	var text1 = createTextUp();
+    	var text2 = createTextDown();
+
+    	timeline
+    			.add({
+		    				targets: circle,
+		            y: [{value: 740}, 
+		            		{value: 360, duration: 1000, easing: 'easeOutCubic'},
+		            		{value: 600, duration: 500, easing: 'easeInCubic'}],
+		            update: renderEffect
+    			})
+    			.add({
+    						targets: line,
+    						easing: 'easeOutCubic',
+		            duration: 1000,
+		            x2: [120, 212 + widthTextUp + widthTextDown],
+		            update: renderEffect
+    			})
+    			.add({
+    						targets: container1,
+    						easing: 'easeOutQuint',
+        				duration: 2500,
+        				height: [0, 60],
+        				y1: [595, 535],
+        				update: renderEffect
+    			})
+    			.add({
+    						targets: container2,
+    						easing: 'easeOutQuint',
+        				duration: 2500,
+        				height: [0, 27],
+        				update: renderEffect,
+        				offset: 2800
+    			})
+    			.add({
+    						targets: text1,
+    						easing: 'easeOutQuint',
+        				duration: 2500,
+        				y: [630, 582],
+        				update: renderEffect,
+        				offset: 3200
+    			})
+    			.add({
+    						targets: text2,
+    						easing: 'easeOutQuint',
+        				duration: 2500,
+        				y: [605, 625],
+        				update: renderEffect,
+        				offset: 3200,
+    			})
+    			.add({
+    						targets: container2,
+    						easing: 'easeInQuint',
+        				duration: 2500,
+        				height: [27, 0],
+        				update: renderEffect,
+        				offset: 5700 + mainOptions.delay
+    			})
+    			.add({
+    						targets: text2,
+    						easing: 'easeInQuint',
+        				duration: 2500,
+        				y: [625, 605],
+        				update: renderEffect,
+        				offset: 5300 + mainOptions.delay
+        	})
+        	.add({
+    						targets: container1,
+    						easing: 'easeInQuint',
+        				duration: 2500,
+        				height: [60, 0],
+        				y1: [535, 595],
+        				update: renderEffect,
+        				offset: 5700 + mainOptions.delay
+    			})
+    			.add({
+    						targets: text1,
+    						easing: 'easeInQuint',
+        				duration: 2500,
+        				y: [582, 630],
+        				update: renderEffect,
+        				offset: 5300 + mainOptions.delay
+    			})
+    			.add({
+    						targets: line,
+    						easing: 'easeInCubic',
+		            duration: 1000,
+		            x2: [212 + widthTextUp + widthTextDown, 120],
+		            update: renderEffect
+    			})
+    			.add({
+		    				targets: circle,
+		            y: [600, 740],
+		            duration: 500, 
+		            easing: 'easeInCubic',
+		            update: renderEffect
+    			})
+    }
+
+    setCanvasSize();
+    animateTitle();
+//-------------------------------------------
+//Playback control
+    var playbackControl = {
+
+        playToggle: function(){
+            if( mainOptions.isPaused ){
+                return;
+            }
+            if( timeline.paused ){
+                timeline.play();
+            } else {
+                timeline.pause();
+            }
+        },
+
+        play: function(){
+            if( mainOptions.isPaused ){
+                return;
+            }
+            timeline.play();
+        },
+
+        pause: function(){
+            if( mainOptions.isPaused ){
+                return;
+            }
+            timeline.pause();
+        },
+
+        restart: function(){
+            timeline.restart();
+        },
+
+        stop: function(){
+            mainOptions.isPaused = false;
+            clearTimeout( mainOptions.timer );
+            timeline.restart();
+            timeline.pause();
+        },
+
+        seek: function( miliseconds ){
+            mainOptions.isPaused = false;
+            clearTimeout( mainOptions.timer );
+            if( timeline.reversed ){
+                timeline.reverse();
+            }
+            timeline.seek( miliseconds );
+            timeline.play();
+        }
+    };
+
+</script>
+
+<!-- BUTTONS -->
+<div id="vba-buttons" style="display: none; position: fixed; right: 20px; top: 20px;">
+    <button type="button" class="vba-btn" onclick="playbackControl.playToggle(); return false;">
+        Play / Pause
+    </button>
+    <button type="button" class="vba-btn" onclick="playbackControl.play(); return false;">
+        Play
+    </button>
+    <button type="button" class="vba-btn" onclick="playbackControl.pause(); return false;">
+        Pause
+    </button>
+    <button type="button" class="vba-btn" onclick="playbackControl.stop(); return false;">
+        Stop
+    </button>
+    <button type="button" class="vba-btn" onclick="playbackControl.seek(2500); return false;">
+        Jump to 50% time
+    </button>
+    <button type="button" class="vba-btn" onclick="playbackControl.restart(); return false;">
+        Replay
+    </button>
+</div>
+<script>
+    //To display buttons add #buttons hash to page address and reload
+    if( window.location.hash.indexOf('buttons') > -1 ){
+        document.getElementById('vba-buttons').style.display = 'block';
+    }
+</script>
+<!-- /BUTTONS -->
+	
+</body>
+</html>

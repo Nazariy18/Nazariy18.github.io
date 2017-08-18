@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Lower Third Animation</title>
+
+	<script src="js/anime.min.js"></script>
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="vba-area">
+
+    <canvas></canvas>
+
+</div>
+
+<script>
+		var mainOptions = {
+				delay: /* delay */3000/* /delay */,
+        isPaused: false,
+        isRendering: false,
+        timer: null
+    };
+
+    var timeline = anime.timeline({
+        loop: false,
+        direction: 'alternate',
+        autoplay: true
+    });	
+
+    var canvasEl = document.querySelector('canvas');
+    var ctx = canvasEl.getContext('2d');
+
+    ctx.font = "50px Arial";
+    var textUp = /* text1 */"Nazariy Kereya"/* /text1 */;
+    var widthTextUp = Math.ceil(ctx.measureText(textUp).width);
+
+    ctx.font = "25px Arial";
+    var textDown = /* text2 */"SVG/HTML/CSS/JS/GIF Animator"/* /text2 */;
+    var widthTextDown = Math.ceil(ctx.measureText(textDown).width);
+
+    if (widthTextUp > widthTextDown) 
+    			{var widthText = widthTextUp;}
+    else {var widthText = widthTextDown;} 
+
+
+//-------------------------function
+	function setCanvasSize() {
+        var rectObject = canvasEl.parentNode.getBoundingClientRect();
+        canvasEl.width = rectObject.width;
+        canvasEl.height = rectObject.height;
+        canvasEl.style.width = rectObject.width + 'px';
+        canvasEl.style.height = rectObject.height + 'px';
+    }
+  
+  function createText() {
+    var p = {};
+      p.x = 100 + widthText / 2;
+      p.y1 = 520;
+      p.y2 = 550;
+      p.yMask = 580;
+      p.hMask = 0;
+      p.color1 = /* text_color1 */'#ffffff'/* /text_color1 */;
+      p.color2 = /* text_color2 */'#edb847'/* /text_color2 */;
+      p.draw = function() {
+        
+        ctx.save();
+        ctx.beginPath();
+        ctx.rect(0, p.yMask, 1280, p.hMask);
+        ctx.clip(); 
+        
+        ctx.beginPath(); 
+        ctx.font = "50px Arial";
+        ctx.textAlign = "center";
+        ctx.fillStyle = p.color1;
+        ctx.fillText(textUp, p.x, p.y1);
+
+        ctx.beginPath(); 
+        ctx.font = "25px Arial";
+        ctx.textAlign = "center";
+        ctx.fillStyle = p.color2;
+        ctx.fillText(textDown, p.x, p.y2);
+        ctx.restore();
+      };
+      return p;
+  }
+  function creatrLines() {
+  	var p = {};
+  		p.x = 100;
+  		p.x1 = 100;
+  		p.x2 = 100;
+  		p.x3 = 100;
+  		p.x4 = 100;
+  		p.y = 570; //460
+      p.color1 = /* background_color1 */'#ffffff'/* /background_color1 */;
+      p.color2 = /* background_color2 */'#edb847'/* /background_color2 */;
+      p.lineWidth = 5;
+      p.draw = function() {
+          ctx.beginPath();
+          ctx.moveTo(p.x, p.y);
+          ctx.lineTo(p.x1, p.y);
+          ctx.lineWidth = p.lineWidth;
+        	ctx.strokeStyle = p.color1;
+       		ctx.stroke();
+
+       		ctx.beginPath();
+          ctx.moveTo(p.x, p.y - 10);
+          ctx.lineTo(p.x2, p.y - 10);
+          ctx.lineWidth = p.lineWidth;
+        	ctx.strokeStyle = p.color2;
+       		ctx.stroke();
+
+       		ctx.beginPath();
+          ctx.moveTo(p.x, 580);
+          ctx.lineTo(p.x3, 580);
+          ctx.lineWidth = p.lineWidth;
+        	ctx.strokeStyle = p.color1;
+       		ctx.stroke();
+
+       		ctx.beginPath();
+          ctx.moveTo(p.x, 590);
+          ctx.lineTo(p.x4, 590);
+          ctx.lineWidth = p.lineWidth;
+        	ctx.strokeStyle = p.color2;
+       		ctx.stroke();
+      }; 
+      return p;
+  }
+ 
+
+ 
+
+  function renderEffect(anim) {
+        for (var i = 0; i < anim.animatables.length; i++) {
+            anim.animatables[i].target.draw();
+        }
+    }
+  var render = anime({
+        duration: Infinity,
+        update: function() {
+            if( !timeline.paused ){
+                clearCanvas();
+            }
+        }
+    });
+
+  var clearCanvas = function(){
+       ctx.clearRect(0, 0, canvasEl.width, canvasEl.height);
+    };
+//----------------------------------------
+    function animateTitles() {
+      var text = createText();
+      var lines = creatrLines();
+
+
+      timeline
+      			.add({
+                  targets: lines,
+                  easing: 'linear',
+                  duration: 100,
+                  update: renderEffect
+            })
+            .add({
+                  targets: lines,
+                  easing: 'easeOutQuad',
+                  duration: 1000,
+                  x4: [100, 100 + widthText],
+                  update: renderEffect
+            })
+            .add({
+                  targets: lines,
+                  easing: 'easeOutQuad',
+                  duration: 1000,
+                  x3: [100, 100 + widthText],
+                  update: renderEffect,
+                  offset: 300
+            })
+            .add({
+                  targets: lines,
+                  easing: 'easeOutQuad',
+                  duration: 1000,
+                  x1: [100, 100 + widthText],
+                  update: renderEffect,
+                  offset: 500
+            })
+            .add({
+                  targets: lines,
+                  easing: 'easeOutQuad',
+                  duration: 1000,
+                  x2: [100, 100 + widthText],
+                  update: renderEffect,
+                  offset: 700
+            })
+            .add({
+                  targets: lines,
+                  easing: 'easeOutQuad',
+                  duration: 1000,
+                  y: [570, 460],
+                  update: renderEffect
+            })
+            .add({
+                  targets: text,
+                  easing: 'easeOutQuad',
+                  yMask: [580, 460],
+                  hMask: [0, 120],
+                  duration: 1000,
+                  update: renderEffect,
+                  offset: 1700,
+                  complete: function(anim) {
+                  timeline.reverse();
+                  mainOptions.isPaused = true;
+                  mainOptions.timer = setTimeout(function(){
+                      mainOptions.isPaused = false;
+                      timeline.play();
+                  }, mainOptions.isRendering
+                      ? mainOptions.delay * 3//delay x3 - for better rendering
+                      : mainOptions.delay);
+                  }
+            })
+
+          
+             
+    }
+
+    setCanvasSize();
+    animateTitles();
+//-------------------------------------------
+ //Playback control
+    var playbackControl = {
+
+        getIsPaused: function(){
+            return timeline.paused;
+        },
+
+        playToggle: function(){
+            if( timeline.paused ){
+                timeline.play();
+            } else {
+                timeline.pause();
+            }
+        },
+
+        play: function(){
+            timeline.play();
+        },
+
+        pause: function(){
+            timeline.pause();
+        },
+
+        restart: function(){
+            timeline.restart();
+        },
+
+        stop: function(){
+            clearTimeout( mainOptions.timer );
+            timeline.restart();
+            timeline.pause();
+        },
+
+        seek: function( miliseconds ){
+            clearTimeout( mainOptions.timer );
+            if( timeline.reversed ){
+                timeline.reverse();
+            }
+            timeline.seek( miliseconds );
+            timeline.play();
+        }
+    };
+
+</script>
+
+<!-- BUTTONS -->
+<div id="vba-buttons" style="display: none; position: fixed; right: 20px; top: 20px;">
+    <button type="button" class="vba-btn" onclick="playbackControl.playToggle(); return false;">
+        Play / Pause
+    </button>
+    <button type="button" class="vba-btn" onclick="playbackControl.play(); return false;">
+        Play
+    </button>
+    <button type="button" class="vba-btn" onclick="playbackControl.pause(); return false;">
+        Pause
+    </button>
+    <button type="button" class="vba-btn" onclick="playbackControl.stop(); return false;">
+        Stop
+    </button>
+    <button type="button" class="vba-btn" onclick="playbackControl.seek(2500); return false;">
+        Jump to 50% time
+    </button>
+    <button type="button" class="vba-btn" onclick="playbackControl.restart(); return false;">
+        Replay
+    </button>
+</div>
+<script>
+    //To display buttons add #buttons hash to page address and reload
+    if( window.location.hash.indexOf('buttons') > -1 ){
+        document.getElementById('vba-buttons').style.display = 'block';
+    }
+</script>
+<!-- /BUTTONS -->
+	
+</body>
+</html>
