@@ -59,19 +59,19 @@ body {
 .box .side-0 {
   -webkit-transform: rotateY(90deg) translateZ(1em);
           transform: rotateY(90deg) translateZ(1em);
-  background-color: rgb(241, 241, 241);
+
 }
 .box .side-1 {
   -webkit-transform: rotateY(180deg) translateY(-2em) translateZ(1em);
           transform: rotateY(180deg) translateY(-2em) translateZ(1em);
-  background-color: rgb(216, 216, 216);
+
 }
 .box .top {
   -webkit-transition: box-shadow .3s ease-in-out;
           transition: box-shadow .3s ease-in-out;
   -webkit-transform: rotateX(90deg) translateZ(5em);
           transform: rotateX(90deg) translateZ(5em);
-  background-color: rgb(255, 255, 255);
+
 }
 .box .bottom {
   -webkit-transform: rotateX(-90deg) translateY(0em) translateZ(-5em) rotate(180deg);
@@ -91,7 +91,7 @@ body {
   display: block;
   height: 2em;
   width: 2em;
-  background-color: rgba(255, 0, 0, .5);
+  background-color: rgba(255, 0, 0, .2);
 }
 
 .box:focus .top {
@@ -153,28 +153,28 @@ body {
 
 
 
-.base:hover .box_x-2_z-4_y-2 {    transform: rotateX(-30deg) rotateY(-135deg) translateX(-2.2em) translateY(-2.2em) translateZ(-4.4em);}
-.base:hover .box_x0_z-4_y-2  { transform: rotateX(-30deg) rotateY(-135deg) translateX(0em)  translateY(-2.2em) translateZ(-4.4em);}
-.base:hover .box_x2_z-4_y-2  {   transform: rotateX(-30deg) rotateY(-135deg) translateX(2.2em)  translateY(-2.2em) translateZ(-4.4em);}
-.base:hover .box_x4_z-4_y-2  {   transform: rotateX(-30deg) rotateY(-135deg) translateX(4.4em)  translateY(-2.2em) translateZ(-4.4em);}
+.base:hover .box_x-2_z-4_y-2 {    transform: rotateX(-30deg) rotateY(-135deg) translateX(-2.2em) translateY(-2.2em) translateZ(-4.4em); transition-delay: 1s;}
+.base:hover .box_x0_z-4_y-2  {   transform: rotateX(-30deg) rotateY(-135deg) translateX(0em)  translateY(-2.2em) translateZ(-4.4em); transition-delay: 1s;}
+.base:hover .box_x2_z-4_y-2  {   transform: rotateX(-30deg) rotateY(-135deg) translateX(2.2em)  translateY(-2.2em) translateZ(-4.4em); transition-delay: 1s;}
+.base:hover .box_x4_z-4_y-2  {   transform: rotateX(-30deg) rotateY(-135deg) translateX(4.4em)  translateY(-2.2em) translateZ(-4.4em); transition-delay: 1s;}
 
 
-.base:hover .box_x-2_z-2_y-2 { transform: rotateX(-30deg) rotateY(-135deg) translateX(-2.2em) translateY(-2.2em) translateZ(-2.2em);}
-.base:hover .box_x0_z-2_y-2  { transform: rotateX(-30deg) rotateY(-135deg) translateX(0em)  translateY(-2.2em) translateZ(-2.2em);}
-.base:hover .box_x2_z-2_y-2  { transform: rotateX(-30deg) rotateY(-135deg) translateX(2.2em)  translateY(-2.2em) translateZ(-2.2em);}
-.base:hover .box_x4_z-2_y-2  {  transform: rotateX(-30deg) rotateY(-135deg) translateX(4.4em)  translateY(-2.2em) translateZ(-2.2em);}
+.base:hover .box_x-2_z-2_y-2 { transform: rotateX(-30deg) rotateY(-135deg) translateX(-2.2em) translateY(-2.2em) translateZ(-2.2em); transition-delay: 1s;}
+.base:hover .box_x0_z-2_y-2  { transform: rotateX(-30deg) rotateY(-135deg) translateX(0em)  translateY(-2.2em) translateZ(-2.2em); transition-delay: 1s;}
+.base:hover .box_x2_z-2_y-2  { transform: rotateX(-30deg) rotateY(-135deg) translateX(2.2em)  translateY(-2.2em) translateZ(-2.2em); transition-delay: 1s;}
+.base:hover .box_x4_z-2_y-2  {  transform: rotateX(-30deg) rotateY(-135deg) translateX(4.4em)  translateY(-2.2em) translateZ(-2.2em); transition-delay: 1s;}
 
 
-.base:hover .box_x-2_z0_y-2 { transform: rotateX(-30deg) rotateY(-135deg) translateX(-2.2em) translateY(-2.2em) translateZ(0em);}
-.base:hover .box_x0_z0_y-2  {  transform: rotateX(-30deg) rotateY(-135deg) translateX(0em)  translateY(-2.2em) translateZ(0em);}
-.base:hover .box_x2_z0_y-2  {  transform: rotateX(-30deg) rotateY(-135deg) translateX(2.2em)  translateY(-2.2em) translateZ(0em);}
-.base:hover .box_x4_z0_y-2  {  transform: rotateX(-30deg) rotateY(-135deg) translateX(4.4em)  translateY(-2.2em) translateZ(0em);}
+.base:hover .box_x-2_z0_y-2 { transform: rotateX(-30deg) rotateY(-135deg) translateX(-2.2em) translateY(-2.2em) translateZ(0em); transition-delay: 1s;}
+.base:hover .box_x0_z0_y-2  {  transform: rotateX(-30deg) rotateY(-135deg) translateX(0em)  translateY(-2.2em) translateZ(0em); transition-delay: 1s;}
+.base:hover .box_x2_z0_y-2  {  transform: rotateX(-30deg) rotateY(-135deg) translateX(2.2em)  translateY(-2.2em) translateZ(0em); transition-delay: 1s;}
+.base:hover .box_x4_z0_y-2  {  transform: rotateX(-30deg) rotateY(-135deg) translateX(4.4em)  translateY(-2.2em) translateZ(0em); transition-delay: 1s;}
 
 
-.base:hover .box_x-2_z2_y-2 {  transform: rotateX(-30deg) rotateY(-135deg) translateX(-2.2em) translateY(-2.2em) translateZ(2.2em);}
-.base:hover .box_x0_z2_y-2  {  transform: rotateX(-30deg) rotateY(-135deg) translateX(0em)  translateY(-2.2em) translateZ(2.2em);}
-.base:hover .box_x2_z2_y-2  { transform: rotateX(-30deg) rotateY(-135deg) translateX(2.2em)  translateY(-2.2em) translateZ(2.2em);}
-.base:hover .box_x4_z2_y-2  { transform: rotateX(-30deg) rotateY(-135deg) translateX(4.4em)  translateY(-2.2em) translateZ(2.2em);}
+.base:hover .box_x-2_z2_y-2 {  transform: rotateX(-30deg) rotateY(-135deg) translateX(-2.2em) translateY(-2.2em) translateZ(2.2em); transition-delay: 1s;}
+.base:hover .box_x0_z2_y-2  {  transform: rotateX(-30deg) rotateY(-135deg) translateX(0em)  translateY(-2.2em) translateZ(2.2em); transition-delay: 1s;}
+.base:hover .box_x2_z2_y-2  { transform: rotateX(-30deg) rotateY(-135deg) translateX(2.2em)  translateY(-2.2em) translateZ(2.2em); transition-delay: 1s;}
+.base:hover .box_x4_z2_y-2  { transform: rotateX(-30deg) rotateY(-135deg) translateX(4.4em)  translateY(-2.2em) translateZ(2.2em); transition-delay: 1s;}
 
 
 
@@ -183,53 +183,53 @@ body {
 .box:nth-child(n+33):nth-child(-n+48)  .side-1 { background-color: rgb(85,121,168); }
 
 
-.base:hover .box_x-2_z-4_y-4 {  transform: rotateX(-30deg) rotateY(-135deg) translateX(-2.2em) translateY(-4.4em) translateZ(-4.4em);}
-.base:hover .box_x0_z-4_y-4  {  transform: rotateX(-30deg) rotateY(-135deg) translateX(0em)  translateY(-4.4em) translateZ(-4.4em);}
-.base:hover .box_x2_z-4_y-4  {   transform: rotateX(-30deg) rotateY(-135deg) translateX(2.2em)  translateY(-4.4em) translateZ(-4.4em);}
-.base:hover .box_x4_z-4_y-4  { transform: rotateX(-30deg) rotateY(-135deg) translateX(4.4em)  translateY(-4.4em) translateZ(-4.4em);}
+.base:hover .box_x-2_z-4_y-4 {  transform: rotateX(-30deg) rotateY(-135deg) translateX(-2.2em) translateY(-4.4em) translateZ(-4.4em); transition-delay: 2s;}
+.base:hover .box_x0_z-4_y-4  {  transform: rotateX(-30deg) rotateY(-135deg) translateX(0em)  translateY(-4.4em) translateZ(-4.4em); transition-delay: 2s;}
+.base:hover .box_x2_z-4_y-4  {   transform: rotateX(-30deg) rotateY(-135deg) translateX(2.2em)  translateY(-4.4em) translateZ(-4.4em); transition-delay: 2s;}
+.base:hover .box_x4_z-4_y-4  { transform: rotateX(-30deg) rotateY(-135deg) translateX(4.4em)  translateY(-4.4em) translateZ(-4.4em); transition-delay: 2s;}
 
 
-.base:hover .box_x-2_z-2_y-4 {  transform: rotateX(-30deg) rotateY(-135deg) translateX(-2.2em) translateY(-4.4em) translateZ(-2.2em);}
-.base:hover .box_x0_z-2_y-4  { transform: rotateX(-30deg) rotateY(-135deg) translateX(0em)  translateY(-4.4em) translateZ(-2.2em);}
-.base:hover .box_x2_z-2_y-4  {  transform: rotateX(-30deg) rotateY(-135deg) translateX(2.2em)  translateY(-4.4em) translateZ(-2.2em);}
-.base:hover .box_x4_z-2_y-4  { transform: rotateX(-30deg) rotateY(-135deg) translateX(4.4em)  translateY(-4.4em) translateZ(-2.2em);}
+.base:hover .box_x-2_z-2_y-4 {  transform: rotateX(-30deg) rotateY(-135deg) translateX(-2.2em) translateY(-4.4em) translateZ(-2.2em); transition-delay: 2s;}
+.base:hover .box_x0_z-2_y-4  { transform: rotateX(-30deg) rotateY(-135deg) translateX(0em)  translateY(-4.4em) translateZ(-2.2em); transition-delay: 2s;}
+.base:hover .box_x2_z-2_y-4  {  transform: rotateX(-30deg) rotateY(-135deg) translateX(2.2em)  translateY(-4.4em) translateZ(-2.2em); transition-delay: 2s;}
+.base:hover .box_x4_z-2_y-4  { transform: rotateX(-30deg) rotateY(-135deg) translateX(4.4em)  translateY(-4.4em) translateZ(-2.2em); transition-delay: 2s;}
 
 
-.base:hover .box_x-2_z0_y-4 {  transform: rotateX(-30deg) rotateY(-135deg) translateX(-2.2em) translateY(-4.4em) translateZ(0em);}
-.base:hover .box_x0_z0_y-4  {  transform: rotateX(-30deg) rotateY(-135deg) translateX(0em)  translateY(-4.4em) translateZ(0em);}
-.base:hover .box_x2_z0_y-4  {  transform: rotateX(-30deg) rotateY(-135deg) translateX(2.2em)  translateY(-4.4em) translateZ(0em);}
-.base:hover .box_x4_z0_y-4  { transform: rotateX(-30deg) rotateY(-135deg) translateX(4.4em)  translateY(-4.4em) translateZ(0em);}
+.base:hover .box_x-2_z0_y-4 {  transform: rotateX(-30deg) rotateY(-135deg) translateX(-2.2em) translateY(-4.4em) translateZ(0em); transition-delay: 2s;}
+.base:hover .box_x0_z0_y-4  {  transform: rotateX(-30deg) rotateY(-135deg) translateX(0em)  translateY(-4.4em) translateZ(0em); transition-delay: 2s;}
+.base:hover .box_x2_z0_y-4  {  transform: rotateX(-30deg) rotateY(-135deg) translateX(2.2em)  translateY(-4.4em) translateZ(0em); transition-delay: 2s;}
+.base:hover .box_x4_z0_y-4  { transform: rotateX(-30deg) rotateY(-135deg) translateX(4.4em)  translateY(-4.4em) translateZ(0em); transition-delay: 2s;}
 
 
-.base:hover .box_x-2_z2_y-4 {  transform: rotateX(-30deg) rotateY(-135deg) translateX(-2.2em) translateY(-4.4em) translateZ(2.2em);}
-.base:hover .box_x0_z2_y-4  { transform: rotateX(-30deg) rotateY(-135deg) translateX(0em)  translateY(-4.4em) translateZ(2.2em);}
-.base:hover .box_x2_z2_y-4  { transform: rotateX(-30deg) rotateY(-135deg) translateX(2.2em)  translateY(-4.4em) translateZ(2.2em);}
-.base:hover .box_x4_z2_y-4  {  transform: rotateX(-30deg) rotateY(-135deg) translateX(4.4em)  translateY(-4.4em) translateZ(2.2em);}
+.base:hover .box_x-2_z2_y-4 {  transform: rotateX(-30deg) rotateY(-135deg) translateX(-2.2em) translateY(-4.4em) translateZ(2.2em); transition-delay: 2s;}
+.base:hover .box_x0_z2_y-4  { transform: rotateX(-30deg) rotateY(-135deg) translateX(0em)  translateY(-4.4em) translateZ(2.2em); transition-delay: 2s;}
+.base:hover .box_x2_z2_y-4  { transform: rotateX(-30deg) rotateY(-135deg) translateX(2.2em)  translateY(-4.4em) translateZ(2.2em); transition-delay: 2s;}
+.base:hover .box_x4_z2_y-4  {  transform: rotateX(-30deg) rotateY(-135deg) translateX(4.4em)  translateY(-4.4em) translateZ(2.2em); transition-delay: 2s;}
 
 
 .box:nth-child(n+49):nth-child(-n+64)  .top { background-color: rgb(71,156,159);  z-index: 13; }
 .box:nth-child(n+49):nth-child(-n+64)  .side-0 { background-color: rgb(66,131,139); }
 .box:nth-child(n+49):nth-child(-n+64)  .side-1 { background-color: rgb(101,179,177); }
 
-.base:hover .box_x-2_z-4_y-6 {  transform: rotateX(-30deg) rotateY(-135deg) translateX(-2.2em) translateY(-6.6em) translateZ(-4.4em);}
-.base:hover .box_x0_z-4_y-6  {  transform: rotateX(-30deg) rotateY(-135deg) translateX(0em)  translateY(-6.6em) translateZ(-4.4em);}
-.base:hover .box_x2_z-4_y-6  {  transform: rotateX(-30deg) rotateY(-135deg) translateX(2.2em)  translateY(-6.6em) translateZ(-4.4em);}
-.base:hover .box_x4_z-4_y-6  {  transform: rotateX(-30deg) rotateY(-135deg) translateX(4.4em)  translateY(-6.6em) translateZ(-4.4em);}
+.base:hover .box_x-2_z-4_y-6 {  transform: rotateX(-30deg) rotateY(-135deg) translateX(-2.2em) translateY(-6.6em) translateZ(-4.4em); transition-delay: 3s;}
+.base:hover .box_x0_z-4_y-6  {  transform: rotateX(-30deg) rotateY(-135deg) translateX(0em)  translateY(-6.6em) translateZ(-4.4em); transition-delay: 3s;}
+.base:hover .box_x2_z-4_y-6  {  transform: rotateX(-30deg) rotateY(-135deg) translateX(2.2em)  translateY(-6.6em) translateZ(-4.4em); transition-delay: 3s;}
+.base:hover .box_x4_z-4_y-6  {  transform: rotateX(-30deg) rotateY(-135deg) translateX(4.4em)  translateY(-6.6em) translateZ(-4.4em); transition-delay: 3s;}
 
 
-.base:hover .box_x-2_z-2_y-6 {transform: rotateX(-30deg) rotateY(-135deg) translateX(-2.2em) translateY(-6.6em) translateZ(-2.2em);}
-.base:hover .box_x0_z-2_y-6  { transform: rotateX(-30deg) rotateY(-135deg) translateX(0em)  translateY(-6.6em) translateZ(-2.2em);}
-.base:hover .box_x2_z-2_y-6  {transform: rotateX(-30deg) rotateY(-135deg) translateX(2.2em)  translateY(-6.6em) translateZ(-2.2em);}
-.base:hover .box_x4_z-2_y-6  { transform: rotateX(-30deg) rotateY(-135deg) translateX(4.4em)  translateY(-6.6em) translateZ(-2.2em);}
+.base:hover .box_x-2_z-2_y-6 {transform: rotateX(-30deg) rotateY(-135deg) translateX(-2.2em) translateY(-6.6em) translateZ(-2.2em);  transition-delay: 3s;}
+.base:hover .box_x0_z-2_y-6  { transform: rotateX(-30deg) rotateY(-135deg) translateX(0em)  translateY(-6.6em) translateZ(-2.2em);   transition-delay: 3s;}
+.base:hover .box_x2_z-2_y-6  {transform: rotateX(-30deg) rotateY(-135deg) translateX(2.2em)  translateY(-6.6em) translateZ(-2.2em);  transition-delay: 3s;}
+.base:hover .box_x4_z-2_y-6  { transform: rotateX(-30deg) rotateY(-135deg) translateX(4.4em)  translateY(-6.6em) translateZ(-2.2em); transition-delay: 3s;}
 
 
-.base:hover .box_x-2_z0_y-6 { transform: rotateX(-30deg) rotateY(-135deg) translateX(-2.2em) translateY(-6.6em) translateZ(0em);}
-.base:hover .box_x0_z0_y-6  { transform: rotateX(-30deg) rotateY(-135deg) translateX(0em)  translateY(-6.6em) translateZ(0em);}
-.base:hover .box_x2_z0_y-6  {  transform: rotateX(-30deg) rotateY(-135deg) translateX(2.2em)  translateY(-6.6em) translateZ(0em);}
-.base:hover .box_x4_z0_y-6  { transform: rotateX(-30deg) rotateY(-135deg) translateX(4.4em)  translateY(-6.6em) translateZ(0em);}
+.base:hover .box_x-2_z0_y-6 { transform: rotateX(-30deg) rotateY(-135deg) translateX(-2.2em) translateY(-6.6em) translateZ(0em); transition-delay: 3s;}
+.base:hover .box_x0_z0_y-6  { transform: rotateX(-30deg) rotateY(-135deg) translateX(0em)  translateY(-6.6em) translateZ(0em); transition-delay: 3s;}
+.base:hover .box_x2_z0_y-6  {  transform: rotateX(-30deg) rotateY(-135deg) translateX(2.2em)  translateY(-6.6em) translateZ(0em); transition-delay: 3s;}
+.base:hover .box_x4_z0_y-6  { transform: rotateX(-30deg) rotateY(-135deg) translateX(4.4em)  translateY(-6.6em) translateZ(0em); transition-delay: 3s;}
 
 
-.base:hover .box_x-2_z2_y-6 {  transform: rotateX(-30deg) rotateY(-135deg) translateX(-2.2em) translateY(-6.6em) translateZ(2.2em);}
-.base:hover .box_x0_z2_y-6  { transform: rotateX(-30deg) rotateY(-135deg) translateX(0em)  translateY(-6.6em) translateZ(2.2em);}
-.base:hover .box_x2_z2_y-6  { transform: rotateX(-30deg) rotateY(-135deg) translateX(2.2em)  translateY(-6.6em) translateZ(2.2em);}
-.base:hover .box_x4_z2_y-6  { transform: rotateX(-30deg) rotateY(-135deg) translateX(4.4em)  translateY(-6.6em) translateZ(2.2em);}
+.base:hover .box_x-2_z2_y-6 {  transform: rotateX(-30deg) rotateY(-135deg) translateX(-2.2em) translateY(-6.6em) translateZ(2.2em); transition-delay: 3s; }
+.base:hover .box_x0_z2_y-6  { transform: rotateX(-30deg) rotateY(-135deg) translateX(0em)  translateY(-6.6em) translateZ(2.2em);    transition-delay: 3s;}
+.base:hover .box_x2_z2_y-6  { transform: rotateX(-30deg) rotateY(-135deg) translateX(2.2em)  translateY(-6.6em) translateZ(2.2em);  transition-delay: 3s;}
+.base:hover .box_x4_z2_y-6  { transform: rotateX(-30deg) rotateY(-135deg) translateX(4.4em)  translateY(-6.6em) translateZ(2.2em); transition-delay: 3s;}
