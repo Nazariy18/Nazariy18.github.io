@@ -1,0 +1,235 @@
+body {
+  margin-top: 20em;
+  background: rgb(167,219,216);
+}
+
+.base {
+  font-size: 1.8em;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+  height: 3em;
+  width: 3em;
+  margin: 0 auto;
+  -webkit-perspective-origin: 50% 50%;
+          perspective-origin: 50% 50%;
+  -webkit-transition: -webkit-transform 1s ease-in-out, -webkit-perspective-origin 1s ease-in-out;
+          transition: transform 1s ease-in-out, perspective-origin 1s ease-in-out;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.box {
+  display: block;
+  font-size: 1em;
+  position: absolute;
+  height: 2em;
+  width: 2em;
+  -webkit-transition: -webkit-transform 1s ease-in-out;
+          transition: transform 1s ease-in-out;
+  -webkit-transform: rotateX(-30deg) rotateY(-135deg);
+          transform: rotateX(-30deg) rotateY(-135deg);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.box .face {
+  position: relative;
+  bottom: 0;
+  width: 2em;
+  height: 2em;
+}
+.box .side-0,
+.box .side-1 {
+  overflow: hidden;
+  height: 2em;
+}
+.box .side-0 {
+  -webkit-transform: rotateY(90deg) translateZ(1em);
+          transform: rotateY(90deg) translateZ(1em);
+  background-color: rgb(241, 241, 241);
+}
+.box .side-1 {
+  -webkit-transform: rotateY(180deg) translateY(-2em) translateZ(1em);
+          transform: rotateY(180deg) translateY(-2em) translateZ(1em);
+  background-color: rgb(216, 216, 216);
+}
+.box .top {
+  -webkit-transition: box-shadow .3s ease-in-out;
+          transition: box-shadow .3s ease-in-out;
+  -webkit-transform: rotateX(90deg) translateZ(5em);
+          transform: rotateX(90deg) translateZ(5em);
+  background-color: rgb(255, 255, 255);
+}
+.box .bottom {
+  -webkit-transform: rotateX(-90deg) translateY(0em) translateZ(-5em) rotate(180deg);
+          transform: rotateX(-90deg) translateY(0em) translateZ(-5em) rotate(180deg);
+  -webkit-transition: box-shadow 1.2s;
+          transition: box-shadow 1.2s;
+}
+
+
+.base:hover {
+  -webkit-perspective-origin: 50% 0%;
+          perspective-origin: 50% 0%;
+}
+
+.box:hover .top::after, .box:hover .side-0::after, .box:hover .side-1::after {
+  content: "";
+  display: block;
+  height: 2em;
+  width: 2em;
+  background-color: rgba(255, 0, 0, .5);
+}
+
+.box:focus .top {
+  -webkit-transform: rotateX(90deg) translateZ(calc(5em + 1.2px)) !important;
+          transform: rotateX(90deg) translateZ(calc(5em + 1.2px)) !important;
+}
+
+.base:hover .box:focus .top {
+  box-shadow: 0 0 1px #127f95, 0 1px 1px #127f95, 1px 0 1px #127f95, -1px 0 1px #127f95, 0 -1px 1px #127f95, 1px -1px 1px #127f95, 1px 1px 1px #127f95, -1px -1px 1px #127f95, -1px 1px 1px #127f95;
+}
+
+.box:first-of-type .bottom {
+  box-shadow: 0 0 .75em rgba(0, 0, 0, 0.3);
+}
+
+.base:hover .box:first-of-type .bottom {
+  box-shadow: none;
+}
+
+.base:hover .box .bottom {
+  box-shadow: 0 0 1.5em rgba(0, 0, 0, 0.3);
+}
+
+.box:nth-child(-n+16)  .top { background-color: rgb(72,73,77);  z-index: 10; }
+.box:nth-child(-n+16)  .side-0 { background-color: rgb(46,47,50); }
+.box:nth-child(-n+16)  .side-1 { background-color: rgb(84,84,84); }
+
+
+
+
+.base:hover .box_x-2_z-4 {transform: rotateX(-30deg) rotateY(-135deg) translateX(-2.2em) translateZ(-4.4em);}
+.base:hover .box_x0_z-4  {transform: rotateX(-30deg) rotateY(-135deg) translateX(0em)  translateZ(-4.4em);}
+.base:hover .box_x2_z-4  {transform: rotateX(-30deg) rotateY(-135deg) translateX(2.2em)  translateZ(-4.4em);}
+.base:hover .box_x4_z-4  {transform: rotateX(-30deg) rotateY(-135deg) translateX(4.4em)  translateZ(-4.4em);}
+
+
+.base:hover .box_x-2_z-2 { transform: rotateX(-30deg) rotateY(-135deg) translateX(-2.2em) translateZ(-2.2em);}
+.base:hover .box_x0_z-2  { transform: rotateX(-30deg) rotateY(-135deg) translateX(0em)  translateZ(-2.2em);}
+.base:hover .box_x2_z-2  { transform: rotateX(-30deg) rotateY(-135deg) translateX(2.2em)  translateZ(-2.2em);}
+.base:hover .box_x4_z-2  {  transform: rotateX(-30deg) rotateY(-135deg) translateX(4.4em)  translateZ(-2.2em);}
+
+
+.base:hover .box_x-2_z0 {   transform: rotateX(-30deg) rotateY(-135deg) translateX(-2.2em) translateZ(0em);}
+.base:hover .box_x0_z0  { transform: rotateX(-30deg) rotateY(-135deg) translateX(0em)  translateZ(0em);}
+.base:hover .box_x2_z0  { transform: rotateX(-30deg) rotateY(-135deg) translateX(2.2em)  translateZ(0em);}
+.base:hover .box_x4_z0  {  transform: rotateX(-30deg) rotateY(-135deg) translateX(4.4em)  translateZ(0em);}
+
+
+.base:hover .box_x-2_z2 {  transform: rotateX(-30deg) rotateY(-135deg) translateX(-2.2em) translateZ(2.2em);}
+.base:hover .box_x0_z2  {  transform: rotateX(-30deg) rotateY(-135deg) translateX(0em)  translateZ(2.2em);}
+.base:hover .box_x2_z2  { transform: rotateX(-30deg) rotateY(-135deg) translateX(2.2em)  translateZ(2.2em);}
+.base:hover .box_x4_z2  { transform: rotateX(-30deg) rotateY(-135deg) translateX(4.4em)  translateZ(2.2em);}
+
+
+.box:nth-child(n+17):nth-child(-n+32)  .top { background-color: rgb(53,63,107);  z-index: 11; }
+.box:nth-child(n+17):nth-child(-n+32)  .side-0 { background-color: rgb(37,49,97); }
+.box:nth-child(n+17):nth-child(-n+32)  .side-1 { background-color: rgb(64,76,131); }
+
+
+
+
+.base:hover .box_x-2_z-4_y-2 {    transform: rotateX(-30deg) rotateY(-135deg) translateX(-2.2em) translateY(-2.2em) translateZ(-4.4em);}
+.base:hover .box_x0_z-4_y-2  { transform: rotateX(-30deg) rotateY(-135deg) translateX(0em)  translateY(-2.2em) translateZ(-4.4em);}
+.base:hover .box_x2_z-4_y-2  {   transform: rotateX(-30deg) rotateY(-135deg) translateX(2.2em)  translateY(-2.2em) translateZ(-4.4em);}
+.base:hover .box_x4_z-4_y-2  {   transform: rotateX(-30deg) rotateY(-135deg) translateX(4.4em)  translateY(-2.2em) translateZ(-4.4em);}
+
+
+.base:hover .box_x-2_z-2_y-2 { transform: rotateX(-30deg) rotateY(-135deg) translateX(-2.2em) translateY(-2.2em) translateZ(-2.2em);}
+.base:hover .box_x0_z-2_y-2  { transform: rotateX(-30deg) rotateY(-135deg) translateX(0em)  translateY(-2.2em) translateZ(-2.2em);}
+.base:hover .box_x2_z-2_y-2  { transform: rotateX(-30deg) rotateY(-135deg) translateX(2.2em)  translateY(-2.2em) translateZ(-2.2em);}
+.base:hover .box_x4_z-2_y-2  {  transform: rotateX(-30deg) rotateY(-135deg) translateX(4.4em)  translateY(-2.2em) translateZ(-2.2em);}
+
+
+.base:hover .box_x-2_z0_y-2 { transform: rotateX(-30deg) rotateY(-135deg) translateX(-2.2em) translateY(-2.2em) translateZ(0em);}
+.base:hover .box_x0_z0_y-2  {  transform: rotateX(-30deg) rotateY(-135deg) translateX(0em)  translateY(-2.2em) translateZ(0em);}
+.base:hover .box_x2_z0_y-2  {  transform: rotateX(-30deg) rotateY(-135deg) translateX(2.2em)  translateY(-2.2em) translateZ(0em);}
+.base:hover .box_x4_z0_y-2  {  transform: rotateX(-30deg) rotateY(-135deg) translateX(4.4em)  translateY(-2.2em) translateZ(0em);}
+
+
+.base:hover .box_x-2_z2_y-2 {  transform: rotateX(-30deg) rotateY(-135deg) translateX(-2.2em) translateY(-2.2em) translateZ(2.2em);}
+.base:hover .box_x0_z2_y-2  {  transform: rotateX(-30deg) rotateY(-135deg) translateX(0em)  translateY(-2.2em) translateZ(2.2em);}
+.base:hover .box_x2_z2_y-2  { transform: rotateX(-30deg) rotateY(-135deg) translateX(2.2em)  translateY(-2.2em) translateZ(2.2em);}
+.base:hover .box_x4_z2_y-2  { transform: rotateX(-30deg) rotateY(-135deg) translateX(4.4em)  translateY(-2.2em) translateZ(2.2em);}
+
+
+
+.box:nth-child(n+33):nth-child(-n+48)  .top { background-color: rgb(62,98,146);  z-index: 12; }
+.box:nth-child(n+33):nth-child(-n+48)  .side-0 { background-color: rgb(38,83,128); }
+.box:nth-child(n+33):nth-child(-n+48)  .side-1 { background-color: rgb(85,121,168); }
+
+
+.base:hover .box_x-2_z-4_y-4 {  transform: rotateX(-30deg) rotateY(-135deg) translateX(-2.2em) translateY(-4.4em) translateZ(-4.4em);}
+.base:hover .box_x0_z-4_y-4  {  transform: rotateX(-30deg) rotateY(-135deg) translateX(0em)  translateY(-4.4em) translateZ(-4.4em);}
+.base:hover .box_x2_z-4_y-4  {   transform: rotateX(-30deg) rotateY(-135deg) translateX(2.2em)  translateY(-4.4em) translateZ(-4.4em);}
+.base:hover .box_x4_z-4_y-4  { transform: rotateX(-30deg) rotateY(-135deg) translateX(4.4em)  translateY(-4.4em) translateZ(-4.4em);}
+
+
+.base:hover .box_x-2_z-2_y-4 {  transform: rotateX(-30deg) rotateY(-135deg) translateX(-2.2em) translateY(-4.4em) translateZ(-2.2em);}
+.base:hover .box_x0_z-2_y-4  { transform: rotateX(-30deg) rotateY(-135deg) translateX(0em)  translateY(-4.4em) translateZ(-2.2em);}
+.base:hover .box_x2_z-2_y-4  {  transform: rotateX(-30deg) rotateY(-135deg) translateX(2.2em)  translateY(-4.4em) translateZ(-2.2em);}
+.base:hover .box_x4_z-2_y-4  { transform: rotateX(-30deg) rotateY(-135deg) translateX(4.4em)  translateY(-4.4em) translateZ(-2.2em);}
+
+
+.base:hover .box_x-2_z0_y-4 {  transform: rotateX(-30deg) rotateY(-135deg) translateX(-2.2em) translateY(-4.4em) translateZ(0em);}
+.base:hover .box_x0_z0_y-4  {  transform: rotateX(-30deg) rotateY(-135deg) translateX(0em)  translateY(-4.4em) translateZ(0em);}
+.base:hover .box_x2_z0_y-4  {  transform: rotateX(-30deg) rotateY(-135deg) translateX(2.2em)  translateY(-4.4em) translateZ(0em);}
+.base:hover .box_x4_z0_y-4  { transform: rotateX(-30deg) rotateY(-135deg) translateX(4.4em)  translateY(-4.4em) translateZ(0em);}
+
+
+.base:hover .box_x-2_z2_y-4 {  transform: rotateX(-30deg) rotateY(-135deg) translateX(-2.2em) translateY(-4.4em) translateZ(2.2em);}
+.base:hover .box_x0_z2_y-4  { transform: rotateX(-30deg) rotateY(-135deg) translateX(0em)  translateY(-4.4em) translateZ(2.2em);}
+.base:hover .box_x2_z2_y-4  { transform: rotateX(-30deg) rotateY(-135deg) translateX(2.2em)  translateY(-4.4em) translateZ(2.2em);}
+.base:hover .box_x4_z2_y-4  {  transform: rotateX(-30deg) rotateY(-135deg) translateX(4.4em)  translateY(-4.4em) translateZ(2.2em);}
+
+
+.box:nth-child(n+49):nth-child(-n+64)  .top { background-color: rgb(71,156,159);  z-index: 13; }
+.box:nth-child(n+49):nth-child(-n+64)  .side-0 { background-color: rgb(66,131,139); }
+.box:nth-child(n+49):nth-child(-n+64)  .side-1 { background-color: rgb(101,179,177); }
+
+.base:hover .box_x-2_z-4_y-6 {  transform: rotateX(-30deg) rotateY(-135deg) translateX(-2.2em) translateY(-6.6em) translateZ(-4.4em);}
+.base:hover .box_x0_z-4_y-6  {  transform: rotateX(-30deg) rotateY(-135deg) translateX(0em)  translateY(-6.6em) translateZ(-4.4em);}
+.base:hover .box_x2_z-4_y-6  {  transform: rotateX(-30deg) rotateY(-135deg) translateX(2.2em)  translateY(-6.6em) translateZ(-4.4em);}
+.base:hover .box_x4_z-4_y-6  {  transform: rotateX(-30deg) rotateY(-135deg) translateX(4.4em)  translateY(-6.6em) translateZ(-4.4em);}
+
+
+.base:hover .box_x-2_z-2_y-6 {transform: rotateX(-30deg) rotateY(-135deg) translateX(-2.2em) translateY(-6.6em) translateZ(-2.2em);}
+.base:hover .box_x0_z-2_y-6  { transform: rotateX(-30deg) rotateY(-135deg) translateX(0em)  translateY(-6.6em) translateZ(-2.2em);}
+.base:hover .box_x2_z-2_y-6  {transform: rotateX(-30deg) rotateY(-135deg) translateX(2.2em)  translateY(-6.6em) translateZ(-2.2em);}
+.base:hover .box_x4_z-2_y-6  { transform: rotateX(-30deg) rotateY(-135deg) translateX(4.4em)  translateY(-6.6em) translateZ(-2.2em);}
+
+
+.base:hover .box_x-2_z0_y-6 { transform: rotateX(-30deg) rotateY(-135deg) translateX(-2.2em) translateY(-6.6em) translateZ(0em);}
+.base:hover .box_x0_z0_y-6  { transform: rotateX(-30deg) rotateY(-135deg) translateX(0em)  translateY(-6.6em) translateZ(0em);}
+.base:hover .box_x2_z0_y-6  {  transform: rotateX(-30deg) rotateY(-135deg) translateX(2.2em)  translateY(-6.6em) translateZ(0em);}
+.base:hover .box_x4_z0_y-6  { transform: rotateX(-30deg) rotateY(-135deg) translateX(4.4em)  translateY(-6.6em) translateZ(0em);}
+
+
+.base:hover .box_x-2_z2_y-6 {  transform: rotateX(-30deg) rotateY(-135deg) translateX(-2.2em) translateY(-6.6em) translateZ(2.2em);}
+.base:hover .box_x0_z2_y-6  { transform: rotateX(-30deg) rotateY(-135deg) translateX(0em)  translateY(-6.6em) translateZ(2.2em);}
+.base:hover .box_x2_z2_y-6  { transform: rotateX(-30deg) rotateY(-135deg) translateX(2.2em)  translateY(-6.6em) translateZ(2.2em);}
+.base:hover .box_x4_z2_y-6  { transform: rotateX(-30deg) rotateY(-135deg) translateX(4.4em)  translateY(-6.6em) translateZ(2.2em);}
