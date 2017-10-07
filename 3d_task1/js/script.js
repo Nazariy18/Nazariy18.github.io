@@ -67,13 +67,15 @@ if (window.addEventListener) {
 
 function onWheel(e) {
   e = e || window.event;
-
    var touches = e.changedTouches;
 
-    alert(touches[0].pageX);
-    
    delta = e.deltaY || e.detail || e.wheelDelta;
-   countScroll += delta/100;
+   if(touches) {delta = touches[1].pageY > touches[0].pageY}
+
+   if(delta > 0) { var step = 1;}
+   else {var step = -1;}
+
+   countScroll += step;
 
    if (countScroll > 6) {countScroll = 6;}
    if (countScroll < 0) {countScroll = 0;}
