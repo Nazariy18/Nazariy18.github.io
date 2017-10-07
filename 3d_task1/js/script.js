@@ -68,7 +68,7 @@ if (window.addEventListener) {
 function onWheel(e) {
   e = e || window.event;
     
-    alert("bum");
+    alert(e.changedTouches);
 
    delta = e.deltaY || e.detail || e.wheelDelta;
    countScroll += delta/100;
