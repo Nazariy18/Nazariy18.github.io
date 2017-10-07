@@ -68,6 +68,10 @@ if (window.addEventListener) {
 function onWheel(e) {
   e = e || window.event;
 
+   var touches = e.changedTouches;
+
+    alert(touches[0].pageX);
+    
    delta = e.deltaY || e.detail || e.wheelDelta;
    countScroll += delta/100;
 
