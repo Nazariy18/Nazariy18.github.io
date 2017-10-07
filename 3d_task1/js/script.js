@@ -51,6 +51,8 @@ function translateY(number) {
   return y;
 }
 
+window.addEventListener("touchmove", onWheel);
+
 if (window.addEventListener) {
   if ('onwheel' in document) {
     window.addEventListener("wheel", onWheel);
@@ -65,6 +67,8 @@ if (window.addEventListener) {
 
 function onWheel(e) {
   e = e || window.event;
+    
+    alert("bum");
 
    delta = e.deltaY || e.detail || e.wheelDelta;
    countScroll += delta/100;
