@@ -121,6 +121,6 @@ body {
 .box:nth-child(n+65):nth-child(-n+80)  .side-1 { background-color: rgb(155, 198, 166); }
 
 
-.box:nth-child(n+81):nth-child(-n+96)  .top    { background-color: rgb(213, 222, 143);  z-index: 15; transition-delay: 4s}
+.box:nth-child(n+81):nth-child(-n+96)  .top    { background-color: rgb(213, 222, 143);  z-index: 15;}
 .box:nth-child(n+81):nth-child(-n+96)  .side-0 { background-color: rgb(193, 201, 120); }
 .box:nth-child(n+81):nth-child(-n+96)  .side-1 { background-color: rgb(233, 240, 173); }
