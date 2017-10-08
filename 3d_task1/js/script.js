@@ -70,7 +70,9 @@ function onWheel(e) {
    var touches = e.changedTouches;
 
    delta = e.deltaY || e.detail || e.wheelDelta;
-   if(touches) {delta = touches[1].pageY - touches[0].pageY; alert("yes");}
+    alert(touches[0].pageY);
+    alert(touches[1].pageY);
+    alert(touches.length);
 
    if(delta > 0) { var step = 1;}
    else {var step = -1;}
