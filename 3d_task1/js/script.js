@@ -118,11 +118,12 @@ function onWheel(delta, e) {
             y = translateY(i);
             z = translateZ(i, numberStart - 1);
          //   el.style = "transform: rotateX(-30deg) rotateY(-135deg) translate3d(" + x + "em, " + y + "em, " + z + "em)"; 
-            el.style = "-webkit-transform: rotateX(-30deg) rotateY(-135deg) translate3d(" + x + "em, " + y + "em, " + z + "em)"; }
+          //  el.style = "-webkit-transform: rotateX(-30deg) rotateY(-135deg) translate3d(" + x + "em, " + y + "em, " + z + "em);";
+        el.style = "-webkit-transform: rotateX(-30deg) rotateY(-135deg) translateX(" + x + "em);";}
         else {
             var el = document.getElementsByClassName('box')[i+15];
 
-            el.style = "transform: rotateX(-30deg) rotateY(-135deg) translate3d(0em, 0em, 0em)";
+          //  el.style = "transform: rotateX(-30deg) rotateY(-135deg) translate3d(0em, 0em, 0em)";
         }
 
     }
@@ -131,5 +132,5 @@ function onWheel(delta, e) {
    prevCountScroll = countScroll;
 
    
-   //e.preventDefault ? e.preventDefault() : (e.returnValue = false);
+   e.preventDefault ? e.preventDefault() : (e.returnValue = false);
 }
