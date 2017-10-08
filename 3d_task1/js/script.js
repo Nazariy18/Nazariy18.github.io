@@ -98,6 +98,8 @@ function onWheel(delta, e) {
 
    if(delta > 0) { var step = 1;}
    else {var step = -1;}
+    
+    alert(delta);
 
    countScroll += step;
 
