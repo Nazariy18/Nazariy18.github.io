@@ -53,7 +53,8 @@ function translateY(number) {
   return y;
 }
 
-window.addEventListener("touchmove",stepTuch);
+window.addEventListener("touchstart", stepTuch);
+window.addEventListener("touchmove", stepTuch);
 
 if (window.addEventListener) {
   if ('onwheel' in document) {
@@ -69,18 +70,10 @@ if (window.addEventListener) {
 
 function stepTuch(e) {
     e = e || window.event;
-    var touches = e.changedTouches;
-
-    if(toushH == false) { 
-          pointEnd = touches[0].pageY; 
-          toushH = true;
-          var delta = pointEnd - pointStart;
-
-          onWheel(delta, e);
-    } else { 
-          pointStart = touches[0].pageY; 
-          toushH = false; 
-    }
+     g += 1;
+  
+     alert(g);
+     alert("start": e.targetTouches[0].clientY);
 
 }
 
