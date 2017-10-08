@@ -124,3 +124,10 @@ body {
 .box:nth-child(n+81):nth-child(-n+96)  .top    { background-color: rgb(213, 222, 143);  z-index: 15;}
 .box:nth-child(n+81):nth-child(-n+96)  .side-0 { background-color: rgb(193, 201, 120); }
 .box:nth-child(n+81):nth-child(-n+96)  .side-1 { background-color: rgb(233, 240, 173); }
+
+
+.base:hover .box_x-4_z-4 {-webkit-transform: rotateX(-30deg) rotateY(-135deg) translateX(-4em) translateZ(-4em);transform: rotateX(-30deg) rotateY(-135deg) translateX(-4em) translateZ(-4em);}
+.base:hover .box_x-2_z-4 {-webkit-transform: rotateX(-30deg) rotateY(-135deg) translateX(-2em) translateZ(-4em);transform: rotateX(-30deg) rotateY(-135deg) translateX(-2em) translateZ(-4em);}
+.base:hover .box_x0_z-4 {-webkit-transform: rotateX(-30deg) rotateY(-135deg) translateX(0em) translateZ(-4em);transform: rotateX(-30deg) rotateY(-135deg) translateX(0em) translateZ(-4em);}
+.base:hover .box_x2_z-4 {-webkit-transform: rotateX(-30deg) rotateY(-135deg) translateX(2em) translateZ(-4em);transform: rotateX(-30deg) rotateY(-135deg) translateX(2em) translateZ(-4em);}
+.base:hover .box_x4_z-4 {-webkit-transform: rotateX(-30deg) rotateY(-135deg) translateX(4em) translateZ(-4em);transform: rotateX(-30deg) rotateY(-135deg) translateX(4em) translateZ(-4em);}
