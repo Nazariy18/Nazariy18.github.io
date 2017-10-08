@@ -70,7 +70,9 @@ if (window.addEventListener) {
 
 function stepTuch(e) {
     e = e || window.event;
-    alert("hi");
+    alert(e.targetTouches[0].clientY);
+    
+    e.preventDefault();
 
 }
 
