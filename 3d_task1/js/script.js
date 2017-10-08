@@ -1,6 +1,8 @@
-var countScroll = 0, 
-    delta = 0,
-    prevCountScroll = 0;
+var countScroll = 0,
+    prevCountScroll = 0,
+    pointStart = 0,
+    pointEnd = 0,
+    toushH = true;
 
 
 
@@ -51,28 +53,45 @@ function translateY(number) {
   return y;
 }
 
-window.addEventListener("touchmove", onWheel);
+window.addEventListener("touchmove",stepTuch);
 
 if (window.addEventListener) {
   if ('onwheel' in document) {
-    window.addEventListener("wheel", onWheel);
+    window.addEventListener("wheel", stepScroll);
   } else if ('onmousewheel' in document) {
-    window.addEventListener("mousewheel", onWheel);
+    window.addEventListener("mousewheel", stepScroll);
   } else {
-    window.addEventListener("MozMousePixelScroll", onWheel);
+    window.addEventListener("MozMousePixelScroll", stepScroll);
   }
 } else { 
-  window.attachEvent("onmousewheel", onWheel);
+  window.attachEvent("onmousewheel", stepScroll);
 }
 
-function onWheel(e) {
-  e = e || window.event;
-   var touches = e.changedTouches;
+function stepTuch(e) {
+    e = e || window.event;
+    var touches = e.changedTouches;
 
-   delta = e.deltaY || e.detail || e.wheelDelta;
-    alert("y0:" + touches[0].pageY);
-    alert("y1:" + touches[1].pageY);
-    alert("size" + touches.length);
+    if(toushH == false) { 
+          pointEnd = touches[0].pageY; 
+          toushH = true;
+          var delta = pointEnd - pointStart;
+
+          onWheel(delta, e);
+    } else { 
+          pointStart = touches[0].pageY; 
+          toushH = false; 
+    }
+
+}
+
+function stepScroll(e) {
+    e = e || window.event;
+    var delta = e.deltaY || e.detail || e.wheelDelta;
+
+    onWheel(delta, e);
+}
+
+function onWheel(delta, e) {
 
    if(delta > 0) { var step = 1;}
    else {var step = -1;}
@@ -84,8 +103,8 @@ function onWheel(e) {
 
    var numberStart = countScroll * 16 - 15,
        x = 0,
-       y =0,
-       z =0;
+       y = 0,
+       z = 0;
   
    for (var i = numberStart; i < numberStart + 16; i++) {
 
@@ -105,9 +124,8 @@ function onWheel(e) {
     }
 
  
-  prevCountScroll = countScroll;
+   prevCountScroll = countScroll;
 
- 
-    
-  e.preventDefault ? e.preventDefault() : (e.returnValue = false);
+   
+   e.preventDefault ? e.preventDefault() : (e.returnValue = false);
 }
