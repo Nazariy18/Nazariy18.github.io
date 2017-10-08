@@ -117,7 +117,7 @@ function onWheel(delta, e) {
             x = translateX(i);
             y = translateY(i);
             z = translateZ(i, numberStart - 1);
-            el.style = "transform: rotateX(-30deg) rotateY(-135deg) translate3d(" + x + "em, " + y + "em, " + z + "em)"; 
+            el.style = "transform: rotateX(-30deg) rotateY(-135deg) translate3d(" + x + "em, " + y + "em, " + z + "em)"; }
         
         else {
             var el = document.getElementsByClassName('box')[i+15];
