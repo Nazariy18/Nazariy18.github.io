@@ -114,6 +114,8 @@ function onWheel(delta, e) {
         if (countScroll >= prevCountScroll && countScroll != 0) {
             var el = document.getElementsByClassName('box')[i-1];
 
+            alert(el);
+            
             x = translateX(i);
             y = translateY(i);
             z = translateZ(i, numberStart - 1);
