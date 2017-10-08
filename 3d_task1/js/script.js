@@ -51,10 +51,10 @@ function translateY(number) {
   return y;
 }
 
-window.addEventListener("touchmove", onWheel);
-
 if (window.addEventListener) {
-  if ('onwheel' in document) {
+  if ('touchmove' in document) {
+    window.addEventListener("touchmove", onWheel);
+  } else if ('onwheel' in document) {
     window.addEventListener("wheel", onWheel);
   } else if ('onmousewheel' in document) {
     window.addEventListener("mousewheel", onWheel);
@@ -70,9 +70,9 @@ function onWheel(e) {
    var touches = e.changedTouches;
 
    delta = e.deltaY || e.detail || e.wheelDelta;
-    alert(touches[0].pageY);
-    alert(touches[1].pageY);
-    alert(touches.length);
+    alert("y0:" + touches[0].pageY);
+    alert("y1:" + touches[1].pageY);
+    alert("size" + touches.length);
 
    if(delta > 0) { var step = 1;}
    else {var step = -1;}
