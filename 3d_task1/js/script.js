@@ -114,11 +114,12 @@ function onWheel(delta, e) {
         if (countScroll >= prevCountScroll && countScroll != 0) {
             var el = document.getElementsByClassName('box')[i-1];
 
-            alert(el);
             
             x = translateX(i);
             y = translateY(i);
             z = translateZ(i, numberStart - 1);
+            
+            alert("i:" + i + " x:" + x + " y:" + y + " z:" + z);
             el.style = "transform: rotateX(-30deg) rotateY(-135deg) translate3d(" + x + "em, " + y + "em, " + z + "em)"; }
         
         else {
