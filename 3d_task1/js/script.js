@@ -51,10 +51,10 @@ function translateY(number) {
   return y;
 }
 
+window.addEventListener("touchmove", onWheel);
+
 if (window.addEventListener) {
-  if ('touchmove' in document) {
-    window.addEventListener("touchmove", onWheel);
-  } else if ('onwheel' in document) {
+  if ('onwheel' in document) {
     window.addEventListener("wheel", onWheel);
   } else if ('onmousewheel' in document) {
     window.addEventListener("mousewheel", onWheel);
