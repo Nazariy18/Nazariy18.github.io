@@ -70,7 +70,7 @@ if (window.addEventListener) {
 
 function stepTuch(e) {
     e = e || window.event;
-/*
+    
     pointStart = e.targetTouches[0].clientY;
 
     if(pointEnd != 0 && pointStart != 0) {
@@ -78,9 +78,8 @@ function stepTuch(e) {
        onWheel(delta, e);
      }
 
-    pointEnd = e.targetTouches[0].clientY;*/
-    var delta = 100;
-    onWheel(delta, e);
+    pointEnd = e.targetTouches[0].clientY;
+
     e.preventDefault();
 }
 
@@ -119,7 +118,7 @@ function onWheel(delta, e) {
             x = translateX(i);
             y = translateY(i);
             z = translateZ(i, numberStart - 1);
-            el.style = "transform: rotateX(-30deg) rotateY(-135deg) translate3d(" + x + "em, " + y + "em, " + z + "em)"; 
+         //   el.style = "transform: rotateX(-30deg) rotateY(-135deg) translate3d(" + x + "em, " + y + "em, " + z + "em)"; 
             el.style = "-webkit-transform: rotateX(-30deg) rotateY(-135deg) translate3d(" + x + "em, " + y + "em, " + z + "em)"; }
         else {
             var el = document.getElementsByClassName('box')[i+15];
