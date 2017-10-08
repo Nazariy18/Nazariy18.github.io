@@ -70,7 +70,7 @@ if (window.addEventListener) {
 
 function stepTuch(e) {
     e = e || window.event;
-
+/*
     pointStart = e.targetTouches[0].clientY;
 
     if(pointEnd != 0 && pointStart != 0) {
@@ -78,8 +78,9 @@ function stepTuch(e) {
        onWheel(delta, e);
      }
 
-    pointEnd = e.targetTouches[0].clientY;
-
+    pointEnd = e.targetTouches[0].clientY;*/
+    var delta = 100;
+    onWheel(delta, e);
     e.preventDefault();
 }
 
@@ -89,6 +90,8 @@ function stepScroll(e) {
     var delta = e.deltaY || e.detail || e.wheelDelta;
 
     onWheel(delta, e);
+    
+    e.preventDefault();
 }
 
 function onWheel(delta, e) {
@@ -127,5 +130,5 @@ function onWheel(delta, e) {
    prevCountScroll = countScroll;
 
    
-   e.preventDefault ? e.preventDefault() : (e.returnValue = false);
+   //e.preventDefault ? e.preventDefault() : (e.returnValue = false);
 }
