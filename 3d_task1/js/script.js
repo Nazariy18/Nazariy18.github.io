@@ -81,7 +81,8 @@ function stepTuch(e) {
        countStep += step; 
 
        if (countStep%3 == 0 && countStep != 0) {
-           onWheel(step, e);}
+           onWheel(step, e);
+           countStep = 0;}
      }
 
     pointEnd = e.targetTouches[0].clientY;
@@ -99,7 +100,8 @@ function stepScroll(e) {
        countStep += step; 
 
        if (countStep%3 == 0 && countStep != 0) {
-           onWheel(step, e);}
+           onWheel(step, e);
+           countStep = 0;}
 }
 
 function onWheel(step, e) {
