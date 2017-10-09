@@ -75,7 +75,13 @@ function stepTuch(e) {
 
     if(pointEnd != 0 && pointStart != 0) {
        var delta = pointEnd - pointStart; 
-       onWheel(delta, e);
+        if(delta > 0) { var step = 1;}
+        else {var step = -1;}
+
+       countStep += step; 
+
+       if (countStep%3 == 0 && countStep != 0) {
+           onWheel(step, e);}
      }
 
     pointEnd = e.targetTouches[0].clientY;
@@ -89,14 +95,14 @@ function stepScroll(e) {
 
     if(delta > 0) { var step = 1;}
         else {var step = -1;}
-    
-    onWheel(delta, e);
+
+       countStep += step; 
+
+       if (countStep%3 == 0 && countStep != 0) {
+           onWheel(step, e);}
 }
 
-function onWheel(delta, e) {
-    
-   if(delta > 0) { var step = 1;}
-      else {var step = -1;}
+function onWheel(step, e) {
 
    countScroll += step;
 
