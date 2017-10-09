@@ -37,8 +37,8 @@ body {
   position: absolute;
   height: 2em;
   width: 2em;
-  -webkit-transition: -webkit-transform .2s ease-in-out;
-          transition: transform .2s ease-in-out;
+  -webkit-transition: -webkit-transform 1s ease-in-out;
+          transition: transform 1s ease-in-out;
   -webkit-transform: rotateX(-30deg) rotateY(-135deg);
           transform: rotateX(-30deg) rotateY(-135deg);
   -webkit-transform-style: preserve-3d;
