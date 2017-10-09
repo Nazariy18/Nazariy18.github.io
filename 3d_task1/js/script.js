@@ -2,7 +2,7 @@ var countScroll = 0,
     prevCountScroll = 0,
     pointStart = 0,
     pointEnd = 0,
-    toushH = true;
+    countStep = 0;
 
 
 
@@ -70,12 +70,18 @@ if (window.addEventListener) {
 
 function stepTuch(e) {
     e = e || window.event;
-    
+
     pointStart = e.targetTouches[0].clientY;
 
     if(pointEnd != 0 && pointStart != 0) {
        var delta = pointEnd - pointStart; 
-       onWheel(delta, e);
+        if(delta > 0) { var step = 1;}
+        else {var step = -1;}
+
+       countStep += step; 
+
+       if (countStep%3 == 0 && countStep != 0) {
+           onWheel(step, e);}
      }
 
     pointEnd = e.targetTouches[0].clientY;
@@ -83,21 +89,20 @@ function stepTuch(e) {
     e.preventDefault();
 }
 
-
 function stepScroll(e) {
     e = e || window.event;
     var delta = e.deltaY || e.detail || e.wheelDelta;
 
-    onWheel(delta, e);
-    
-    e.preventDefault();
+    if(delta > 0) { var step = 1;}
+        else {var step = -1;}
+
+       countStep += step; 
+
+       if (countStep%3 == 0 && countStep != 0) {
+           onWheel(step, e);}
 }
 
-function onWheel(delta, e) {
-
-   if(delta > 0) { var step = 1;}
-   else {var step = -1;}
-    
+function onWheel(step, e) {
 
    countScroll += step;
 
@@ -114,13 +119,11 @@ function onWheel(delta, e) {
         if (countScroll >= prevCountScroll && countScroll != 0) {
             var el = document.getElementsByClassName('box')[i-1];
 
-            
+
             x = translateX(i);
             y = translateY(i);
             z = translateZ(i, numberStart - 1);
-            
             el.style = "transform: rotateX(-30deg) rotateY(-135deg) translate3d(" + x + "em, " + y + "em, " + z + "em)"; }
-        
         else {
             var el = document.getElementsByClassName('box')[i+15];
 
