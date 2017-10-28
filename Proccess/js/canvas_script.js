@@ -93,7 +93,6 @@ function animateDiscovery() {
    	});
 }
 
-
 function createLines(x, y) {
 		var p = {};
 		p.x = x;
@@ -200,6 +199,75 @@ function createLines(x, y) {
 	  return p;
 }
 
+function creteBoxes(x, y) {
+	var p = {};
+	p.x = x;
+	p.y = y;
+	p.color1 = "#dc4726";
+	p.color2 = "#0062f1";
+	p.arc1X = p.x - 180;
+	p.arc1Y = p.y + 140;
+	p.arc2X = p.x + 180;
+	p.arc2Y = p.y + 140;
+	p.lineWidth = 2;
+	p.radius1 = 0;
+	p.radius2 = 0;
+	p.length = 0;
+	p.alpha = 1;
+	p.draw = function() {
+	  	ctx.save();
+
+	  	ctx.setLineDash([p.length, 1000]);
+
+	  	ctx.beginPath();
+	  	ctx.moveTo(p.x - 60, p.y + 20);
+	  	ctx.lineTo(p.x - 200, p.y + 20 );
+	  	ctx.lineTo(p.x - 200, p.y + 180);
+	  	ctx.lineTo(p.x - 40, p.y + 180);
+	  	ctx.lineTo(p.x - 40, p.y + 20);2
+	  	ctx.closePath();
+	  	ctx.lineWidth = p.lineWidth;
+	  	ctx.strokeStyle = p.color1;
+	  	ctx.stroke();
+
+	  	ctx.beginPath();
+	  	ctx.moveTo(p.x + 60, p.y + 20);
+	  	ctx.lineTo(p.x + 200, p.y + 20 );
+	  	ctx.lineTo(p.x + 200, p.y + 180);
+	  	ctx.lineTo(p.x + 40, p.y + 180);
+	  	ctx.lineTo(p.x + 40, p.y + 20);
+	  	ctx.closePath();
+	  	ctx.lineWidth = p.lineWidth;
+	  	ctx.strokeStyle = p.color2;
+	  	ctx.stroke();
+	  	ctx.restore();
+
+	  	ctx.save();
+	  	ctx.globalAlpha = p.alpha;
+	  	ctx.beginPath();
+	    ctx.arc(p.arc1X, p.arc1Y, p.radius1, 0, 2 * Math.PI, true);
+	    ctx.fillStyle = p.color1;
+	    ctx.fill();
+	    ctx.restore();
+
+	    ctx.save()
+
+	    ctx.beginPath();
+	    ctx.arc(p.arc1X, p.arc1Y, p.radius1, 0, 2 * Math.PI, true);
+	    ctx.strokeStyle = p.color1;
+	    ctx.stroke();
+	    ctx.restore();
+
+	    ctx.save()
+	    ctx.beginPath();
+	    ctx.arc(p.arc2X, p.arc2Y, p.radius2, 0, 2 * Math.PI, true);
+	    ctx.fillStyle = p.color2;
+	    ctx.fill();
+  		ctx.restore();
+	  }
+	  return p;
+
+}
 
 function animateMapAndPlan() {
 
@@ -207,6 +275,7 @@ function animateMapAndPlan() {
 	var centerY = canvas.height/2;
 
 	var lines = createLines(centerX, centerY);
+	var boxes = creteBoxes(centerX, centerY);
 
   proccess
    .add({
@@ -227,8 +296,43 @@ function animateMapAndPlan() {
         update: renderParticule,
         delay: 1000,
         offset: 0
-   });
+   })
+   .add({
+        targets: boxes,
+        duration: 2500,
+        easing: 'linear',
+        length: 800,
+        update: renderParticule,
+        delay: 4000,
+        offset: 0
+   })
+   .add({
+   			targets: lines,
+        duration: 1000,
+        easing: 'linear',
+        length: 0,
+        radius: 0,
+        length2: {value: 0, duration: 500},
+        update: renderParticule,
+        offset: 4000
+   })
+   .add({
+        targets: boxes,
+        duration: 1600,
+        easing: 'linear',
+        arc1X: { value: function(p) { return p.x - 70;}, delay: 1000},
+        arc1Y: { value: function(p) { return p.y + 80;}, delay: 1000},
+        alpha: { value: 0, delay: 1000, duration: 800},
+        radius1: [8, 8],
+        arc2X: { value: function(p) { return p.x + 120;}, delay: 1000},
+        arc2Y: { value: function(p) { return p.y + 100;}, delay: 1000},
+        radius2: [8, 8],
+        update: renderParticule,
+        offset: 4000
+   })
 }
+
+
 
 
 
