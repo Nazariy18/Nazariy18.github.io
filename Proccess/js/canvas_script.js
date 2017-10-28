@@ -55,6 +55,7 @@ function createDiscovery(x, y) {
 		p.moveY = 0;
 		p.scale = 1;
 		p.squares = getPos(p.x, p.y);
+		p.alpha = 1;
 	  p.draw = function() {
 	  	ctx.save();
 
@@ -317,19 +318,30 @@ function animateMapAndPlan() {
         offset: 4000
    })
    .add({
+   			targets: discovery,
+        duration: 1500,
+        easing: 'linear',
+        alpha: 0,
+        update: renderParticule,
+        offset: 4000
+   })
+   .add({
         targets: boxes,
         duration: 1600,
         easing: 'linear',
         arc1X: { value: function(p) { return p.x - 70;}, delay: 1000},
         arc1Y: { value: function(p) { return p.y + 80;}, delay: 1000},
         alpha: { value: 0, delay: 1000, duration: 800},
-        radius1: [8, 8],
+        radius1: { value: [8, 16], delay: 1000},
         arc2X: { value: function(p) { return p.x + 120;}, delay: 1000},
         arc2Y: { value: function(p) { return p.y + 100;}, delay: 1000},
-        radius2: [8, 8],
+        radius2: { value: [8, 30], delay: 1000},
         update: renderParticule,
         offset: 4000
    })
+
+
+
 }
 
 
