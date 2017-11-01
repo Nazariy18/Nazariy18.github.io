@@ -66,12 +66,17 @@ var distance = 95;
 
 var animate = function(el, i) {
   var angle = Math.random() * Math.PI * 2;
+
+  var endX = Math.cos(angle) * distance;
+  var endY = Math.sin(angle) * distance;
+  var delay = duration / maxElements;
+
   anime({
     targets: el,
-    translateX: [0, Math.cos(angle) * distance],
-    translateY: [0, Math.sin(angle) * distance],
+    translateX: endX,
+    translateY: endY,
     opacity: {value: 1, duration: 10},
-    delay: (duration / maxElements) * i,
+    delay: delay * i,
     duration: duration,
     easing: 'linear',
     loop: true
