@@ -1,0 +1,14 @@
+body {
+	margin: 0;
+}
+#canvas {
+	position: fixed;
+  top: 0;
+  left: 0;
+}
+
+#but {
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
+}
