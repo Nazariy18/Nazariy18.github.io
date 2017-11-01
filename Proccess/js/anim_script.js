@@ -23,7 +23,7 @@ for(var i = 0; i < numberOfSqueares; i++) {
 
 
 	    rects[i] = document.createElementNS("http://www.w3.org/2000/svg", "rect");
-			rects[i].setAttribute("fill", "hsla(" + anime.random(0, numberOfSqueares) + ", 100%, 50%, 1)");
+			rects[i].setAttribute("fill", "hsla(" + anime.random(0, 1000) + ", 100%, 50%, 1)");
 			rects[i].setAttribute("x", 102.8);
 			rects[i].setAttribute("y", 101);
 			rects[i].setAttribute("width", "2.8");
