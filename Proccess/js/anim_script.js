@@ -1,6 +1,6 @@
 var svg = document.getElementById('Process');
 
-var numberOfSqueares = 1000,
+var numberOfSqueares = 250,
 		squeryRadius = 95,
 		centerX = 104.9,
 		centerY = 103.1;
@@ -58,7 +58,7 @@ for (var i = 0; i < numberOfSqueares; i++) {
 
 //setInterval(move, 10);
 
-var maxElements = 1000;
+var maxElements = 250;
 var duration = 2000;
 var radius = 95;
 var distance = 95;
