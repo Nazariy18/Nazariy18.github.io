@@ -60,7 +60,7 @@ rects.forEach(animateSquare);
 
 
 var Process = anime.timeline({
-  //autoplay: false,
+  autoplay: false,
   update: function(anim) {
     countScroll = anim.progress;
   }
