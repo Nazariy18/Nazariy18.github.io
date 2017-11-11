@@ -11,7 +11,7 @@ body {
 }
 
 #svg_container {
-  margin: auto;
+	margin: 0;
 }
 
 
@@ -21,7 +21,7 @@ body {
 	opacity: 0;
 }
 
-.process {
+#process {
 	position: absolute;
 	top: 15%;
 	left: 1%;
@@ -37,12 +37,11 @@ body {
   color: #222b2d;
 }
 
-.discovery {
+#discovery, #mapping, #iteration, #build {
 	position: absolute;
-	top: 6%;
 	right: 10%;
 	
-
+	content: 'discovery';
   width: 315px;
   height: 27px;
   font-family: UntitledSansTest;
@@ -53,9 +52,17 @@ body {
   color: #222b2d;
 }
 
-.exploring {
+#discovery {
+	top: 6%;
+}
+
+#mapping, #iteration, #build  {
+	opacity: 0;
+	top: 0%;
+}
+
+#exploring, #creating, #testing, #once-vetted {
 	position: absolute;
-	bottom: 12%;
 	left: 8%;
 	right: 8%;
 
@@ -67,4 +74,13 @@ body {
   letter-spacing: 0.6px;
   text-align: left;
   color: #222b2d;
+}
+
+#exploring {
+	bottom: 12%;
+}
+
+#creating, #testing, #once-vetted {
+	bottom: 0%;
+	opacity: 0;
 }
