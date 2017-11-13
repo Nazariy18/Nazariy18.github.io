@@ -1,3 +1,14 @@
+@font-face {
+    font-family: UntitledSansTest;
+    src: url("../font/UntitledSansTest-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: UntitledSansTest;
+    font-weight: bold;
+    src: url("../font/UntitledSansTest-Bold.otf") format("opentype");
+}
+
 body {
 	margin: 0;
 }
@@ -14,10 +25,7 @@ body {
 	margin: 0;
 }
 
-
-
-
-#name tspan, #hobe tspan, #name2 tspan, #hobe2 tspan  {
+#name tspan, #hobe tspan, #name2 tspan, #hobe2 tspan, #cod_text path {
 	opacity: 0;
 }
 
