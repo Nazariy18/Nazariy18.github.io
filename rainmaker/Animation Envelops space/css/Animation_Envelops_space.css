@@ -1,3 +1,9 @@
+#Animation_Envelops_space {
+	opacity: 0;
+	animation: showSVG 0.2s linear forwards;
+}
+
+
 #StarsIcons {
 	transform: translate(1200px, 400px) scale(0.3, 0.3);
 	opacity: 0;
@@ -70,5 +76,14 @@
   }
 	100% {
 		 opacity: 0;
+	}
+}
+
+@keyframes showSVG {
+	0% {
+    opacity: 0;
+  }
+	100% {
+		 opacity: 1;
 	}
 }
