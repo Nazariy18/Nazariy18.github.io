@@ -13,24 +13,25 @@
 
 <script>
 
-window.addEventListener('touchstart', function(e) {
+var yStart = null;
+var delta = null;
+var yMove = null;
 
-    var swipe = e.originalEvent.touches,
-    start = swipe[0].pageY;
+window.addEventListener("touchstart", start);
+//window.addEventListener("touchmove", move);
+	
+function start(event) {
+	alert("start1: " + event.targetTouches[0].pageY);
+	yStart = event.targetTouches[0].pageY;
+	window.addEventListener("touchmove", move);
+}
 
-    window.addEventListener('touchmove', function(e) {
-
-        var contact = e.originalEvent.touches,
-        end = contact[0].pageY,
-        distance = end-start;
-
-        if (distance < -30) // up
-        	 {alert("up");}
-        if (distance > 30) // down
-        	{alert("down");}
-    });
-  
-});
+function move(event) {
+	alert("move1: " + event.targetTouches[0].pageY);
+	yMove = event.targetTouches[0].pageY;
+	delta = yMove - yStart;
+	alert("delta:" + delta);
+}
 
 	
 
