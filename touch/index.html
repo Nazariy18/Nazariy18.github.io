@@ -22,12 +22,10 @@ window.addEventListener("touchmove", move);
 	
 function start(event) {
 	alert("start1: " + event.targetTouches[0].pageY);
-	alert("start2: " + event.originalEvent.touches[0].pageY);
 }
 
 function move(event) {
 	alert("move1: " + event.targetTouches[0].pageY);
-	alert("move2: " + event.originalEvent.touches[0].pageY);
 }
 
 	
