@@ -13,30 +13,27 @@
 
 <script>
 
-
 var yStart = null;
 var delta = null;
+var yMove = null;
 
 window.addEventListener("touchstart", start);
 window.addEventListener("touchmove", move);
 	
 function start(event) {
 	alert("start");
-	var touch = event.targetTouches[0];
-	yStart = touch.pageY;
+	var touch1 = event.targetTouches[0];
+	yStart = touch1.pageY;
 
 	alert("start: " + yStart);
 }
 
 function move(event) {
 
-	var touch = event.targetTouches[0];
-	var yMove = touch.pageY;
+	var touch2 = event.targetTouches[0];
+	yMove = touch2.pageY;
 
 	alert("move: " + yMove);
-
-	delta = yStart - yMove;
-	alert("delta: " + delta);
 }
 
 	
