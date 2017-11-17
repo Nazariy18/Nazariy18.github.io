@@ -13,17 +13,10 @@
 
 <script>
 
-	window.addEventListener("touchmove", stepTuch);
 
-	function stepTuch(e) {
-    e = e || window.event;
-
-    var delta;
-    delta = e.originalEvent.touches[0].pageY;
-    alert(delta);
-
-    e.preventDefault();
-}
+document.body.addEventListener('touchstart', function(e){
+        alert(e.changedTouches[0].pageY) 
+    }, false);
 	
 
 </script>
