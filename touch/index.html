@@ -7,7 +7,7 @@
 </head>
 <body>
 
-	<div id="elemnt"> Sprob 4
+	<div id="elemnt"> Sprob 5
 		
 	</div>
 
@@ -21,19 +21,13 @@ window.addEventListener("touchstart", start);
 window.addEventListener("touchmove", move);
 	
 function start(event) {
-	alert("start");
-	var touch1 = event.targetTouches[0];
-	yStart = touch1.pageY;
-
-	alert("start: " + yStart);
+	alert("start1: " + event.targetTouches[0].pageY);
+	alert("start2: " + event.originalEvent.touches[0].pageY);
 }
 
 function move(event) {
-
-	var touch2 = event.targetTouches[0];
-	yMove = touch2.pageY;
-
-	alert("move: " + yMove);
+	alert("move1: " + event.targetTouches[0].pageY);
+	alert("move2: " + event.originalEvent.touches[0].pageY);
 }
 
 	
