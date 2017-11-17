@@ -937,9 +937,6 @@ rects.forEach(animateSquare);
 
 createTimeline();
 
-var yStart = null;
-var yMove = null;
-
 var prevdelta = 1, start = false;
 
 function onWheel(e) {
@@ -951,35 +948,6 @@ function onWheel(e) {
 
   e.preventDefault ? e.preventDefault() : (e.returnValue = false);
 }
-
-
-elem.addEventListener("touchstart", start);
-  
-function start(event) {
-
-  alert("start");
-
-  yStart = event.targetTouches[0].pageY;
-  elem.addEventListener("touchmove", move);
-
-  event.preventDefault ? event.preventDefault() : (event.returnValue = false);
-
-}
-
-
-function move(event) {
-
-  yMove = event.targetTouches[0].pageY;
-  var del = yStart - yMove;
-
-  alert("move");
-
-  scrollAnimation(del);
-
-  event.preventDefault ? event.preventDefault() : (event.returnValue = false);
-
-}
-
 
 
 function scrollAnimation(delta) {
@@ -1019,4 +987,22 @@ if (elem.addEventListener) {
   elem.attachEvent("onmousewheel", onWheel);
 }
 
-elem.addEventListener('resize', setSize);
+var yStart = null;
+var delta = null;
+var yMove = null;
+window.addEventListener("touchstart", start);
+  
+function start(event) {
+  alert("start1: " + event.targetTouches[0].pageY);
+  yStart = event.targetTouches[0].pageY;
+  window.addEventListener("touchmove", move);
+}
+
+function move(event) {
+  alert("move1: " + event.targetTouches[0].pageY);
+  yMove = event.targetTouches[0].pageY;
+  delta = yStart - yMove;
+  if(delta > 0) 
+     {alert("up");}
+  else {alert("down");}
+}
