@@ -1,1 +1,1022 @@
-var _0x4596=["\x50\x72\x6F\x63\x65\x73\x73","\x67\x65\x74\x45\x6C\x65\x6D\x65\x6E\x74\x42\x79\x49\x64","\x73\x76\x67\x5F\x63\x6F\x6E\x74\x61\x69\x6E\x65\x72","\x62\x6C\x6F\x63\x6B\x5F\x61\x6E\x69\x6D\x61\x74\x69\x6F\x6E","\x23\x44\x43\x34\x37\x32\x36","\x23\x34\x36\x44\x46\x36\x30","\x23\x33\x36\x38\x32\x46\x31","\x23\x46\x45\x45\x46\x33\x35","\x23\x66\x66\x66","\x70\x72\x6F\x67\x72\x65\x73\x73","\x72\x6F\x75\x6E\x64","\x70\x61\x75\x73\x65","\x74\x69\x6D\x65\x6C\x69\x6E\x65","\x74\x72\x61\x6E\x73\x66\x6F\x72\x6D\x4F\x72\x69\x67\x69\x6E","\x73\x74\x79\x6C\x65","\x69\x63\x6F\x6E","\x63\x65\x6E\x74\x65\x72","\x69\x6E\x6E\x65\x72\x57\x69\x64\x74\x68","\x63\x6C\x69\x65\x6E\x74\x57\x69\x64\x74\x68","\x64\x6F\x63\x75\x6D\x65\x6E\x74\x45\x6C\x65\x6D\x65\x6E\x74","\x62\x6F\x64\x79","\x69\x6E\x6E\x65\x72\x48\x65\x69\x67\x68\x74","\x63\x6C\x69\x65\x6E\x74\x48\x65\x69\x67\x68\x74","\x77\x69\x64\x74\x68","\x70\x78","\x68\x65\x69\x67\x68\x74","\x6E\x6F\x6E\x65","\x6D\x61\x72\x67\x69\x6E\x54\x6F\x70","\x68\x74\x74\x70\x3A\x2F\x2F\x77\x77\x77\x2E\x77\x33\x2E\x6F\x72\x67\x2F\x32\x30\x30\x30\x2F\x73\x76\x67","\x67","\x63\x72\x65\x61\x74\x65\x45\x6C\x65\x6D\x65\x6E\x74\x4E\x53","\x69\x64","\x72\x65\x63\x74\x73\x47\x72\x6F\x75\x70","\x73\x65\x74\x41\x74\x74\x72\x69\x62\x75\x74\x65","\x61\x70\x70\x65\x6E\x64\x43\x68\x69\x6C\x64","\x63\x69\x72\x63\x6C\x65","\x66\x69\x6C\x6C","\x63\x78","\x63\x79","\x72","\x72\x61\x6E\x64\x6F\x6D","\x30","\x50\x49","\x63\x6F\x73","\x73\x69\x6E","\x6C\x69\x6E\x65\x61\x72","\x73\x6D\x61\x6C\x6C\x52\x65\x63\x74\x73\x47\x72\x6F\x75\x70","\x6F\x70\x61\x63\x69\x74\x79","\x61\x64\x64","\x23\x63\x5F\x62\x6F\x78\x5F\x72\x65\x64","\x23\x63\x5F\x72\x65\x64","\x23\x70\x68\x5F\x63\x5F\x62\x6F\x78","\x23\x63\x6F\x64\x5F\x74\x65\x78\x74\x20\x70\x61\x74\x68","\x23\x70\x68\x5F\x6C\x69\x6E\x65\x5F\x75\x70","\x23\x6C\x69\x6E\x65\x5F\x75\x70","\x23\x70\x68\x5F\x6C\x69\x6E\x65\x73\x5F\x74\x65\x78\x74","\x23\x62\x6F\x78\x5F\x6C\x69\x6E\x65\x73\x5F\x74\x65\x78\x74","\x23\x70\x68\x5F\x72\x65\x63\x74\x5F\x66\x69\x6C\x6C","\x23\x62\x6F\x78\x5F\x72\x65\x63\x74\x5F\x66\x69\x6C\x6C","\x23\x62\x6F\x78\x5F\x72\x65\x63\x74","\x23\x70\x68\x5F\x62\x6F\x78\x5F\x66\x69\x6C\x6C","\x23\x72\x65\x64\x5F\x62\x6F\x78","\x23\x72\x65\x64\x5F\x62\x6F\x78\x5F\x66\x69\x6C\x6C","\x23\x63\x6F\x6D\x70","\x23\x6D\x6F\x62","\x23\x70\x68\x6F\x6E\x65\x5F\x63\x6F\x6E\x74\x65\x6E\x74","\x23\x63\x6F\x6D\x70\x20\x70\x61\x74\x68","\x23\x6D\x6F\x62\x20\x70\x61\x74\x68","\x73\x65\x74\x44\x61\x73\x68\x6F\x66\x66\x73\x65\x74","\x23\x72\x65\x64\x5F\x62\x6F\x78\x5F\x63\x6F\x6E\x74\x65\x6E\x74","\x23\x70\x6F\x69\x6E\x74\x65\x72","\x23\x6F\x6E\x63\x65\x2D\x76\x65\x74\x74\x65\x64","\x65\x61\x73\x65\x4F\x75\x74\x45\x6C\x61\x73\x74\x69\x63","\x30\x25","\x31\x32\x25","\x23\x62\x75\x69\x6C\x64","\x36\x25","\x23\x74\x65\x73\x74\x69\x6E\x67","\x23\x69\x74\x65\x72\x61\x74\x69\x6F\x6E","\x23\x62\x6C\x6F\x63\x6B\x5F\x61\x6E\x69\x6D\x61\x74\x69\x6F\x6E","\x23\x66\x66\x66\x66\x66\x66","\x23\x66\x39\x66\x63\x66\x39","\x23\x44\x43\x34\x38\x32\x36","\x23\x63\x30\x63\x62\x63\x36","\x23\x66\x65\x65\x66\x33\x35","\x23\x72\x65\x64\x5F\x62\x6F\x78\x5F\x63\x6F\x6E\x74\x65\x6E\x74\x20\x6C\x69\x6E\x65","\x23\x30\x30\x30\x30\x30\x30","\x23\x65\x61\x66\x30\x65\x65","\x23\x68\x61\x6E\x64","\x23\x69\x63\x6F\x6E","\x23\x6D\x65\x73\x73\x61\x67\x65","\x23\x62\x6F\x78\x5F\x6C\x69\x6E\x65\x73\x5F\x74\x65\x78\x74\x20\x6C\x69\x6E\x65","\x23\x63\x68\x65\x63\x6B\x5F\x6D\x61\x72\x6B\x32","\x23\x63\x68\x65\x63\x6B\x5F\x78","\x23\x66\x69\x6E\x67\x65\x72\x5F\x63\x6C\x69\x63\x6B","\x23\x62\x6C\x75\x65\x5F\x62\x6F\x78","\x23\x74\x65\x78\x74\x5F\x69\x63\x6F\x6E","\x23\x63\x5F\x62\x6F\x78\x5F\x62\x6C\x75\x65","\x23\x63\x72\x65\x61\x74\x69\x6E\x67","\x23\x6D\x61\x70\x70\x69\x6E\x67","\x23\x63\x6C\x69\x70\x5F\x69\x63\x6F\x6E","\x23\x68\x6F\x62\x65\x32\x20\x74\x73\x70\x61\x6E","\x23\x6E\x61\x6D\x65\x32\x20\x74\x73\x70\x61\x6E","\x23\x30\x30\x36\x32\x66\x31","\x23\x33\x36\x38\x32\x66\x31","\x23\x6C\x69\x6E\x65\x73\x20\x70\x6F\x6C\x79\x6C\x69\x6E\x65","\x23\x6C\x69\x6E\x65\x73\x20\x6C\x69\x6E\x65","\x23\x63\x31","\x23\x63\x32","\x23\x63\x33","\x23\x63\x34","\x23\x65\x78\x70\x6C\x6F\x72\x69\x6E\x67","\x23\x64\x69\x73\x63\x6F\x76\x65\x72\x79","\x66\x6F\x72\x45\x61\x63\x68","\x65\x76\x65\x6E\x74","\x64\x65\x6C\x74\x61\x59","\x64\x65\x74\x61\x69\x6C","\x77\x68\x65\x65\x6C\x44\x65\x6C\x74\x61","\x70\x72\x65\x76\x65\x6E\x74\x44\x65\x66\x61\x75\x6C\x74","\x72\x65\x74\x75\x72\x6E\x56\x61\x6C\x75\x65","\x70\x6C\x61\x79","\x72\x65\x76\x65\x72\x73\x65","\x61\x64\x64\x45\x76\x65\x6E\x74\x4C\x69\x73\x74\x65\x6E\x65\x72","\x6F\x6E\x77\x68\x65\x65\x6C","\x77\x68\x65\x65\x6C","\x6D\x6F\x75\x73\x65\x77\x68\x65\x65\x6C","\x4D\x6F\x7A\x4D\x6F\x75\x73\x65\x50\x69\x78\x65\x6C\x53\x63\x72\x6F\x6C\x6C","\x6F\x6E\x6D\x6F\x75\x73\x65\x77\x68\x65\x65\x6C","\x61\x74\x74\x61\x63\x68\x45\x76\x65\x6E\x74","\x72\x65\x73\x69\x7A\x65","\x74\x6F\x75\x63\x68\x73\x74\x61\x72\x74","\x70\x61\x67\x65\x59","\x74\x61\x72\x67\x65\x74\x54\x6F\x75\x63\x68\x65\x73","\x74\x6F\x75\x63\x68\x6D\x6F\x76\x65","\x6D\x6F\x76\x65"];var svg=document[_0x4596[1]](_0x4596[0]),svgContainer=document[_0x4596[1]](_0x4596[2]),elem=document[_0x4596[1]](_0x4596[3]),rectsGroup=null,smallRectsGroup=null,rectObl=null,windowWidth=0,windowHeight=0;var numberOfSqueares=500,squeryRadius=95,centerX=105.6,centerY=102.9,duration=2000,sizeRect=2.8,rects=[],smallRects=[],colors=[_0x4596[4],_0x4596[5],_0x4596[6],_0x4596[7],_0x4596[8]];var pas=true,play=true,etaps=[14,38,70];var Process=anime[_0x4596[12]]({autoplay:false,update:function(_0xf2eax16){var _0xf2eax17=Math[_0x4596[10]](_0xf2eax16[_0x4596[9]]);if((_0xf2eax17== 14|| _0xf2eax17== 38|| _0xf2eax17== 70)&& pas== true){_0xf2eax16[_0x4596[11]]();pas= false;play= true}else {if(_0xf2eax17== 10|| _0xf2eax17== 20|| _0xf2eax17== 50|| _0xf2eax17== 90){pas= true}};if(_0xf2eax17== 100|| _0xf2eax17== 0){play= true;pas= true}}});document[_0x4596[1]](_0x4596[15])[_0x4596[14]][_0x4596[13]]= _0x4596[16];function setSize(){windowWidth= window[_0x4596[17]]|| document[_0x4596[19]][_0x4596[18]]|| document[_0x4596[20]][_0x4596[18]];;;windowHeight= window[_0x4596[21]]|| document[_0x4596[19]][_0x4596[22]]|| document[_0x4596[20]][_0x4596[22]];if(windowWidth< windowHeight){svg[_0x4596[14]][_0x4596[23]]= (windowWidth/ 2)+ _0x4596[24];svg[_0x4596[14]][_0x4596[25]]= _0x4596[26]}else {svg[_0x4596[14]][_0x4596[25]]= (windowHeight/ 2)+ _0x4596[24];svg[_0x4596[14]][_0x4596[23]]= _0x4596[26]};svgContainer[_0x4596[14]][_0x4596[27]]= (0.15* windowHeight)+ _0x4596[24]}function createSquare(_0xf2eax1a,_0xf2eax1b,_0xf2eax1c){rectsGroup= document[_0x4596[30]](_0x4596[28],_0x4596[29]);rectsGroup[_0x4596[33]](_0x4596[31],_0x4596[32]);rectsGroup[_0x4596[14]][_0x4596[13]]= _0x4596[16];svg[_0x4596[34]](rectsGroup);rectObl= document[_0x4596[30]](_0x4596[28],_0x4596[35]);rectObl[_0x4596[33]](_0x4596[36],_0x4596[26]);rectObl[_0x4596[33]](_0x4596[37],_0xf2eax1a);rectObl[_0x4596[33]](_0x4596[38],_0xf2eax1b);rectObl[_0x4596[33]](_0x4596[39],squeryRadius+ _0xf2eax1c);rectsGroup[_0x4596[34]](rectObl);for(var _0xf2eax1d=0;_0xf2eax1d< numberOfSqueares;_0xf2eax1d++){rects[_0xf2eax1d]= document[_0x4596[30]](_0x4596[28],_0x4596[35]);rects[_0xf2eax1d][_0x4596[33]](_0x4596[36],colors[anime[_0x4596[40]](0,4)]);rects[_0xf2eax1d][_0x4596[33]](_0x4596[37],_0xf2eax1a- _0xf2eax1c/ 2);rects[_0xf2eax1d][_0x4596[33]](_0x4596[38],_0xf2eax1b- _0xf2eax1c/ 2);rects[_0xf2eax1d][_0x4596[33]](_0x4596[39],_0x4596[41]);rectsGroup[_0x4596[34]](rects[_0xf2eax1d])}}var animateSquare=function(_0xf2eax1f,_0xf2eax1d){var _0xf2eax20=Math[_0x4596[40]]()* Math[_0x4596[42]]* 2;var _0xf2eax21=Math[_0x4596[43]](_0xf2eax20)* squeryRadius;var _0xf2eax22=Math[_0x4596[44]](_0xf2eax20)* squeryRadius;var _0xf2eax23=duration/ numberOfSqueares;anime({targets:_0xf2eax1f,translateX:_0xf2eax21,translateY:_0xf2eax22,r:{value:sizeRect,duration:10},delay:_0xf2eax23* _0xf2eax1d,duration:duration,easing:_0x4596[45],loop:true})};function createSmalCircles(_0xf2eax25,_0xf2eax26,_0xf2eax27,_0xf2eax28,_0xf2eax29){var _0xf2eax2a=0,_0xf2eax2b=0,_0xf2eax2c=0;smallRectsGroup= document[_0x4596[30]](_0x4596[28],_0x4596[29]);smallRectsGroup[_0x4596[33]](_0x4596[31],_0x4596[46]);smallRectsGroup[_0x4596[33]](_0x4596[47],_0x4596[41]);svg[_0x4596[34]](smallRectsGroup);for(var _0xf2eax1d=0;_0xf2eax1d< _0xf2eax29;_0xf2eax1d++){_0xf2eax2a= Math[_0x4596[40]]()* Math[_0x4596[42]]* 2;_0xf2eax2b= Math[_0x4596[43]](_0xf2eax2a)* anime[_0x4596[40]](1,7);_0xf2eax2c= Math[_0x4596[44]](_0xf2eax2a)* anime[_0x4596[40]](1,7);smallRects[_0xf2eax1d]= document[_0x4596[30]](_0x4596[28],_0x4596[35]);smallRects[_0xf2eax1d][_0x4596[33]](_0x4596[36],colors[anime[_0x4596[40]](0,4)]);smallRects[_0xf2eax1d][_0x4596[33]](_0x4596[37],_0xf2eax25+ _0xf2eax2b);smallRects[_0xf2eax1d][_0x4596[33]](_0x4596[38],_0xf2eax26+ _0xf2eax2c);smallRects[_0xf2eax1d][_0x4596[33]](_0x4596[39],0.8);smallRectsGroup[_0x4596[34]](smallRects[_0xf2eax1d]);_0xf2eax2a= Math[_0x4596[40]]()* Math[_0x4596[42]]* 2;_0xf2eax2b= Math[_0x4596[43]](_0xf2eax2a)* anime[_0x4596[40]](1,4.5);_0xf2eax2c= Math[_0x4596[44]](_0xf2eax2a)* anime[_0x4596[40]](1,4.5);smallRects[_0xf2eax1d+ _0xf2eax29]= document[_0x4596[30]](_0x4596[28],_0x4596[35]);smallRects[_0xf2eax1d+ _0xf2eax29][_0x4596[33]](_0x4596[36],colors[anime[_0x4596[40]](0,4)]);smallRects[_0xf2eax1d+ _0xf2eax29][_0x4596[33]](_0x4596[37],_0xf2eax27+ _0xf2eax2b);smallRects[_0xf2eax1d+ _0xf2eax29][_0x4596[33]](_0x4596[38],_0xf2eax28+ _0xf2eax2c);smallRects[_0xf2eax1d+ _0xf2eax29][_0x4596[33]](_0x4596[39],0.5);smallRectsGroup[_0x4596[34]](smallRects[_0xf2eax1d+ 200])}}function createTimeline(){Process[_0x4596[48]]({targets:rectsGroup,easing:_0x4596[45],translateY:[0,-60],scale:[1,0.4],duration:500,offset:0})[_0x4596[48]]({targets:_0x4596[105],easing:_0x4596[45],strokeDashoffset:[anime[_0x4596[68]],0],duration:1000,offset:1000})[_0x4596[48]]({targets:_0x4596[106],easing:_0x4596[45],strokeDashoffset:[anime[_0x4596[68]],0],duration:500,offset:1800})[_0x4596[48]]({targets:_0x4596[107],easing:_0x4596[45],r:[0,5],duration:500,offset:1200})[_0x4596[48]]({targets:_0x4596[108],easing:_0x4596[45],r:[0,5],duration:500,offset:1500})[_0x4596[48]]({targets:_0x4596[109],easing:_0x4596[45],r:[0,5],duration:500,offset:1700})[_0x4596[48]]({targets:[_0x4596[110],_0x4596[97],_0x4596[49],_0x4596[50]],easing:_0x4596[45],r:[0,5],duration:500,offset:2100})[_0x4596[48]]({targets:_0x4596[112],easing:_0x4596[45],opacity:[1,0],duration:1000,offset:2600})[_0x4596[48]]({targets:_0x4596[111],easing:_0x4596[45],opacity:[1,0],duration:1000,offset:2600})[_0x4596[48]]({targets:_0x4596[99],easing:_0x4596[72],opacity:[0,1],top:[_0x4596[73],_0x4596[76]],duration:1000,offset:4100})[_0x4596[48]]({targets:_0x4596[98],easing:_0x4596[72],opacity:[0,1],bottom:[_0x4596[73],_0x4596[74]],duration:1000,offset:4100})[_0x4596[48]]({targets:_0x4596[110],easing:_0x4596[45],r:[5,0],duration:500,offset:3000})[_0x4596[48]]({targets:_0x4596[109],easing:_0x4596[45],r:[5,0],duration:500,offset:3400})[_0x4596[48]]({targets:_0x4596[108],easing:_0x4596[45],r:[5,0],duration:500,offset:3600})[_0x4596[48]]({targets:_0x4596[107],easing:_0x4596[45],r:[5,0],duration:500,offset:3900})[_0x4596[48]]({targets:_0x4596[106],easing:_0x4596[45],strokeDashoffset:[0,anime[_0x4596[68]]],duration:500,offset:3300})[_0x4596[48]]({targets:_0x4596[105],easing:_0x4596[45],strokeDashoffset:[0,anime[_0x4596[68]]],duration:1000,offset:3300})[_0x4596[48]]({targets:rectsGroup,easing:_0x4596[45],opacity:[1,0],duration:1000,offset:3300})[_0x4596[48]]({targets:[_0x4596[61],_0x4596[95]],easing:_0x4596[45],strokeDashoffset:[anime[_0x4596[68]],0],duration:1500,offset:3300})[_0x4596[48]]({targets:_0x4596[79],easing:_0x4596[45],background:[_0x4596[87],_0x4596[81]],duration:1500,offset:3300})[_0x4596[48]]({targets:[_0x4596[49],_0x4596[50]],easing:_0x4596[45],translateX:[0,48],translateY:[0,-36],r:[5,10],duration:1000,offset:3800})[_0x4596[48]]({targets:_0x4596[50],easing:_0x4596[45],opacity:[1,0],duration:1000,offset:3800})[_0x4596[48]]({targets:_0x4596[97],easing:_0x4596[45],translateX:[0,-25],translateY:[0,-23],r:[5,15],fill:[_0x4596[103],_0x4596[104]],duration:1000,offset:3800})[_0x4596[48]]({targets:[_0x4596[89],_0x4596[88]],easing:_0x4596[45],opacity:[0,1],duration:500,offset:4800})[_0x4596[48]]({targets:_0x4596[88],easing:_0x4596[45],translateX:[0,21],translateY:[0,-8],duration:500,offset:5300})[_0x4596[48]]({targets:_0x4596[94],easing:_0x4596[45],opacity:[0,1,0],duration:400,offset:6000})[_0x4596[48]]({targets:_0x4596[69],easing:_0x4596[45],opacity:[0,1],duration:200,offset:6200})[_0x4596[48]]({targets:_0x4596[102],easing:_0x4596[45],opacity:[0,1],delay:function(_0xf2eax1f,_0xf2eax1d){return 100* _0xf2eax1d},duration:10,offset:6200})[_0x4596[48]]({targets:_0x4596[101],easing:_0x4596[45],opacity:[0,1],delay:function(_0xf2eax1f,_0xf2eax1d){return 70* _0xf2eax1d},duration:10,offset:6700})[_0x4596[48]]({targets:_0x4596[88],easing:_0x4596[45],translateX:[21,0],translateY:[-8,0],duration:500,offset:6700})[_0x4596[48]]({targets:_0x4596[89],easing:_0x4596[45],translateX:[0,-66],translateY:[0,10],scale:[1,1.3],duration:1000,offset:8200})[_0x4596[48]]({targets:_0x4596[100],easing:_0x4596[45],r:[15,20],duration:1000,offset:8200})[_0x4596[48]]({targets:_0x4596[99],easing:_0x4596[45],opacity:[1,0],duration:1000,offset:8200})[_0x4596[48]]({targets:_0x4596[98],easing:_0x4596[45],opacity:[1,0],duration:1000,offset:8200})[_0x4596[48]]({targets:_0x4596[78],easing:_0x4596[72],opacity:[0,1],top:[_0x4596[73],_0x4596[76]],duration:1000,offset:9800})[_0x4596[48]]({targets:_0x4596[77],easing:_0x4596[72],opacity:[0,1],bottom:[_0x4596[73],_0x4596[74]],duration:1000,offset:9800})[_0x4596[48]]({targets:[_0x4596[61],_0x4596[62],_0x4596[95],_0x4596[88],_0x4596[69],_0x4596[96]],easing:_0x4596[45],translateY:[0,-60],duration:1000,offset:8200})[_0x4596[48]]({targets:_0x4596[97],easing:_0x4596[45],translateX:[-25,-25],translateY:[-23,-83],duration:1000,offset:8200})[_0x4596[48]]({targets:[_0x4596[49],_0x4596[50]],easing:_0x4596[45],translateX:[48,48],translateY:[-36,-96],duration:1000,offset:8200})[_0x4596[48]]({targets:_0x4596[79],easing:_0x4596[45],background:[_0x4596[81],_0x4596[80]],duration:1500,offset:8200})[_0x4596[48]]({targets:[_0x4596[95],_0x4596[96],_0x4596[97]],easing:_0x4596[45],opacity:[1,0],duration:1000,offset:8700})[_0x4596[48]]({targets:[_0x4596[61],_0x4596[62],_0x4596[88],_0x4596[69]],easing:_0x4596[45],translateX:[0,60],translateY:[-60,-60],duration:1000,offset:9200})[_0x4596[48]]({targets:[_0x4596[49],_0x4596[50]],easing:_0x4596[45],translateX:[48,108],translateY:[-96,-96],duration:1000,offset:9200})[_0x4596[48]]({targets:_0x4596[94],easing:_0x4596[45],opacity:[0,1],duration:200,offset:10200})[_0x4596[48]]({targets:_0x4596[94],easing:_0x4596[45],opacity:[1,0],duration:200,offset:10400})[_0x4596[48]]({targets:_0x4596[90],easing:_0x4596[45],opacity:[0,1],duration:500,offset:10400})[_0x4596[48]]({targets:_0x4596[88],easing:_0x4596[45],translateX:[60,55],translateY:[-60,-65],duration:500,offset:11100})[_0x4596[48]]({targets:_0x4596[94],easing:_0x4596[45],opacity:[0,1,0],duration:400,offset:11600})[_0x4596[48]]({targets:_0x4596[93],easing:_0x4596[45],opacity:[1,0],duration:100,offset:11800})[_0x4596[48]]({targets:_0x4596[92],easing:_0x4596[45],opacity:[0,1],duration:100,offset:11800})[_0x4596[48]]({targets:[_0x4596[59],_0x4596[58]],easing:_0x4596[45],height:[25,60],duration:500,offset:12100})[_0x4596[48]]({targets:_0x4596[91],easing:_0x4596[45],x1:[11.3,52],x2:[41.3,75],duration:500,offset:11800})[_0x4596[48]]({targets:[_0x4596[88],_0x4596[89],_0x4596[90]],easing:_0x4596[45],opacity:[1,0],duration:500,offset:12700})[_0x4596[48]]({targets:_0x4596[50],easing:_0x4596[45],fill:[_0x4596[82],_0x4596[83]],duration:10,offset:12700})[_0x4596[48]]({targets:_0x4596[70],easing:_0x4596[45],opacity:[0,1],duration:500,offset:13200})[_0x4596[48]]({targets:[_0x4596[62],_0x4596[58],_0x4596[50]],easing:_0x4596[45],opacity:[0,1],duration:1000,offset:13200})[_0x4596[48]]({targets:_0x4596[61],easing:_0x4596[45],stroke:[_0x4596[4],_0x4596[87]],duration:1000,offset:13200})[_0x4596[48]]({targets:_0x4596[85],easing:_0x4596[45],stroke:[_0x4596[4],_0x4596[86]],duration:1000,offset:13200})[_0x4596[48]]({targets:_0x4596[59],easing:_0x4596[45],stroke:[_0x4596[4],_0x4596[84]],duration:1000,offset:13200})[_0x4596[48]]({targets:_0x4596[49],easing:_0x4596[45],stroke:[_0x4596[82],_0x4596[83]],duration:1000,offset:13200})[_0x4596[48]]({targets:_0x4596[79],easing:_0x4596[45],background:[_0x4596[80],_0x4596[81]],duration:1000,offset:13200})[_0x4596[48]]({targets:_0x4596[78],easing:_0x4596[45],opacity:[1,0],duration:1000,offset:14700})[_0x4596[48]]({targets:_0x4596[77],easing:_0x4596[45],opacity:[1,0],duration:1000,offset:14700})[_0x4596[48]]({targets:_0x4596[75],easing:_0x4596[72],opacity:[0,1],top:[_0x4596[73],_0x4596[76]],duration:1000,offset:16300})[_0x4596[48]]({targets:_0x4596[71],easing:_0x4596[72],opacity:[0,1],bottom:[_0x4596[73],_0x4596[74]],duration:1000,offset:16300})[_0x4596[48]]({targets:_0x4596[70],easing:_0x4596[45],translateX:[0,-8],translateY:[0,10],duration:500,offset:14700})[_0x4596[48]]({targets:[_0x4596[49],_0x4596[50]],easing:_0x4596[45],translateX:[108,100],translateY:[-96,-86],duration:500,offset:14700})[_0x4596[48]]({targets:_0x4596[70],easing:_0x4596[45],translateX:[-8,-28],translateY:[10,10],duration:500,offset:15200})[_0x4596[48]]({targets:_0x4596[70],easing:_0x4596[45],translateX:[-28,-38],translateY:[10,15],duration:500,offset:15700})[_0x4596[48]]({targets:[_0x4596[58],_0x4596[59]],easing:_0x4596[45],translateX:[0,-10],translateY:[0,5],duration:500,offset:15700})[_0x4596[48]]({targets:_0x4596[70],easing:_0x4596[45],opacity:[1,0],duration:500,offset:16200})[_0x4596[48]]({targets:_0x4596[54],easing:_0x4596[45],translateX:[0,-20],translateY:[0,6],duration:500,offset:16200})[_0x4596[48]]({targets:[_0x4596[58],_0x4596[59]],easing:_0x4596[45],translateX:[-10,-20],translateY:[5,14],duration:500,offset:16200})[_0x4596[48]]({targets:_0x4596[56],easing:_0x4596[45],translateX:[0,18],translateY:[0,20],duration:500,offset:16200})[_0x4596[48]]({targets:[_0x4596[49],_0x4596[50]],easing:_0x4596[45],translateX:[100,126],translateY:[-86,-90],duration:500,offset:16200})[_0x4596[48]]({targets:[_0x4596[61],_0x4596[62],_0x4596[69]],easing:_0x4596[45],translateX:[60,20],translateY:[-60,-60],duration:1000,offset:16700})[_0x4596[48]]({targets:[_0x4596[49],_0x4596[50]],easing:_0x4596[45],translateX:[126,86],translateY:[-90,-90],duration:1000,offset:16700})[_0x4596[48]]({targets:[_0x4596[66],_0x4596[67]],easing:_0x4596[45],strokeDashoffset:[anime[_0x4596[68]],0],duration:1000,offset:17500})[_0x4596[48]]({targets:[_0x4596[63],_0x4596[64]],easing:_0x4596[45],opacity:[0,1],duration:1000,offset:17500})[_0x4596[48]]({targets:_0x4596[52],easing:_0x4596[45],opacity:[0,1],delay:function(_0xf2eax1f,_0xf2eax1d){return 200* _0xf2eax1d},duration:10,offset:17700})[_0x4596[48]]({targets:_0x4596[65],easing:_0x4596[45],opacity:[0,1],duration:10,offset:18900})[_0x4596[48]]({targets:[_0x4596[63],_0x4596[64]],easing:_0x4596[45],translateX:[0,-50],duration:1000,offset:19000})[_0x4596[48]]({targets:[_0x4596[61],_0x4596[62]],easing:_0x4596[45],translateX:[20,91.5],translateY:[-60,-2.5],scaleY:[1,0.55],scaleX:[1,0.84],duration:1000,offset:19000})[_0x4596[48]]({targets:_0x4596[60],easing:_0x4596[45],translateX:[0,60.7],translateY:[0,51],scaleY:[1,0.52],scaleX:[1,0.33],duration:1000,offset:19000})[_0x4596[48]]({targets:[_0x4596[58],_0x4596[59]],easing:_0x4596[45],x:[6.3,92.5],y:[117.3,110],width:[40,35],height:[60,30],duration:1000,offset:19000})[_0x4596[48]]({targets:_0x4596[57],easing:_0x4596[45],x:[6.3,67.7],y:[71.3,72],width:[40,27],height:[60,22],duration:1000,offset:19000})[_0x4596[48]]({targets:_0x4596[56],easing:_0x4596[45],translateX:[18,73],translateY:[20,52],scaleX:[1,0.8],scaleY:[1,0.6],duration:1000,offset:19000})[_0x4596[48]]({targets:_0x4596[55],easing:_0x4596[45],translateX:[0,0],translateY:[0,45],scaleX:[1,0.8],scaleY:[1,0.5],duration:1000,offset:19000})[_0x4596[48]]({targets:[_0x4596[49],_0x4596[50]],easing:_0x4596[45],translateX:[86,128],translateY:[-90,-95],r:[10,7],duration:1000,offset:19000})[_0x4596[48]]({targets:_0x4596[51],easing:_0x4596[45],translateX:[0,-15],translateY:[0,17],r:[10,5],duration:1000,offset:19000})[_0x4596[48]]({targets:_0x4596[54],easing:_0x4596[45],translateX:[-20,70],translateY:[6,25],scaleX:[1,0.86],scaleY:[1,0.86],duration:1000,offset:19000})[_0x4596[48]]({targets:_0x4596[53],easing:_0x4596[45],translateX:[0,67],translateY:[0,57],scaleX:[1,0.35],scaleY:[1,0.35],duration:1000,offset:19000})[_0x4596[48]]({targets:_0x4596[52],easing:_0x4596[45],opacity:[1,0],delay:function(_0xf2eax1f,_0xf2eax1d){return 600- 200* _0xf2eax1d},duration:10,offset:19000})[_0x4596[48]]({targets:[_0x4596[49],_0x4596[50],_0x4596[51]],easing:_0x4596[45],opacity:[1,0],duration:500,offset:20000})[_0x4596[48]]({targets:smallRectsGroup,easing:_0x4596[45],opacity:[0,1],duration:500,offset:20000})}setSize();createSmalCircles(143.5,70.5,86.5,93,200);createSquare(centerX,centerY,sizeRect);rects[_0x4596[113]](animateSquare);createTimeline();var prevdelta=1,start=false;function onWheel(_0xf2eax31){_0xf2eax31= _0xf2eax31|| window[_0x4596[114]];var _0xf2eax32=_0xf2eax31[_0x4596[115]]|| _0xf2eax31[_0x4596[116]]|| _0xf2eax31[_0x4596[117]];scrollAnimation(_0xf2eax32);_0xf2eax31[_0x4596[118]]?_0xf2eax31[_0x4596[118]]():(_0xf2eax31[_0x4596[119]]= false)}function scrollAnimation(_0xf2eax34){if(play== true){play= false;if((_0xf2eax34> 0&& prevdelta> 0)|| (_0xf2eax34< 0&& prevdelta< 0)){Process[_0x4596[120]]();start= true;prevdelta= _0xf2eax34}else {if(start== true){Process[_0x4596[121]]();Process[_0x4596[120]]();prevdelta= _0xf2eax34}else {play= true}}}}if(elem[_0x4596[122]]){if(_0x4596[123] in  document){elem[_0x4596[122]](_0x4596[124],onWheel);elem[_0x4596[122]](_0x4596[125],onWheel)}else {elem[_0x4596[122]](_0x4596[126],onWheel)}}else {elem[_0x4596[128]](_0x4596[127],onWheel)};elem[_0x4596[122]](_0x4596[129],setSize);var yStart=null;var yMove=null;elem[_0x4596[122]](_0x4596[130],start);function start(_0xf2eax37){_0xf2eax37[_0x4596[118]]?_0xf2eax37[_0x4596[118]]():(_0xf2eax37[_0x4596[119]]= false);yStart= _0xf2eax37[_0x4596[132]][0][_0x4596[131]];elem[_0x4596[122]](_0x4596[133],move)}function move(_0xf2eax37){_0xf2eax37[_0x4596[118]]?_0xf2eax37[_0x4596[118]]():(_0xf2eax37[_0x4596[119]]= false);yMove= _0xf2eax37[_0x4596[132]][0][_0x4596[131]];var _0xf2eax32=yStart- yMove;alert(_0x4596[134]);scrollAnimation(_0xf2eax32)}
+var svg = document.getElementById('Process'),
+    svgContainer = document.getElementById('svg_container'),
+    elem = document.getElementById('block_animation'),
+		rectsGroup = null,
+    smallRectsGroup = null,
+    rectObl = null,
+    windowWidth = 0,
+    windowHeight = 0;
+
+var numberOfSqueares = 500,
+		squeryRadius = 95,
+		centerX = 105.6,
+		centerY = 102.9,
+		duration = 2000,
+		sizeRect = 2.8,
+		rects = [],
+    smallRects = [],
+		colors = ['#DC4726', '#46DF60', '#3682F1', '#FEEF35', '#fff'];
+
+//var delta = 1,
+   var pas = true,
+    play = true,
+    etaps = [14, 38, 70];
+
+
+var Process = anime.timeline({
+  autoplay: false,
+  update: function(anim) {
+    var pr =  Math.round(anim.progress);
+    
+      if ((pr == 14 || pr == 38 || pr == 70) && pas == true) {
+          anim.pause();
+          pas = false;
+          play = true;
+        } else if (pr == 10 || pr == 20 || pr == 50 || pr == 90) {
+        pas = true;
+      }
+
+      if (pr == 100 || pr == 0) {
+        play = true;
+        pas = true;
+      }
+  }
+});
+
+
+document.getElementById('icon').style.transformOrigin = 'center';
+
+function setSize() {
+  windowWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;;
+  windowHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+
+  if (windowWidth < windowHeight) {
+      svg.style.width = (windowWidth / 2) + 'px';
+      svg.style.height = 'none';
+    } else {
+      svg.style.height = (windowHeight / 2) + 'px';
+      svg.style.width = 'none';
+    }
+
+  svgContainer.style.marginTop = (0.15 * windowHeight) + 'px'; 
+}
+
+function createSquare(x, y, size) {
+  rectsGroup = document.createElementNS("http://www.w3.org/2000/svg", "g");
+  rectsGroup.setAttribute("id", "rectsGroup");
+  rectsGroup.style.transformOrigin = 'center';
+  svg.appendChild(rectsGroup);
+  rectObl = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+  rectObl.setAttribute("fill", "none");
+  rectObl.setAttribute("cx", x);
+  rectObl.setAttribute("cy", y);
+  rectObl.setAttribute("r", squeryRadius + size);
+  rectsGroup.appendChild(rectObl);
+
+	for(var i = 0; i < numberOfSqueares; i++) {	
+	    rects[i] = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+			rects[i].setAttribute("fill", colors[anime.random(0, 4)]);
+			rects[i].setAttribute("cx", x - size / 2);
+			rects[i].setAttribute("cy", y - size / 2);
+      rects[i].setAttribute("r", "0");
+			//rects[i].setAttribute("width", "0");
+			//rects[i].setAttribute("height", "0");
+			rectsGroup.appendChild(rects[i]);
+		}
+}
+
+var animateSquare = function(el, i) {
+  var angle = Math.random() * Math.PI * 2;
+  var endX = Math.cos(angle) * squeryRadius;
+	var endY = Math.sin(angle) * squeryRadius;
+	var delay = duration / numberOfSqueares;
+
+  anime({
+    targets: el,
+    translateX: endX,
+    translateY: endY,
+    r: {value: sizeRect, duration: 10},
+    //width: {value: sizeRect, duration: 10},
+    //height: {value: sizeRect, duration: 10},
+    delay: delay * i,
+    duration: duration,
+    easing: 'linear',
+    loop: true
+  });
+}
+
+function createSmalCircles(x1, y1, x2, y2, count) {
+
+  var sAngle = 0, sX = 0, sY = 0;
+
+  smallRectsGroup = document.createElementNS("http://www.w3.org/2000/svg", "g");
+  smallRectsGroup.setAttribute("id", "smallRectsGroup");
+  smallRectsGroup.setAttribute("opacity", "0");
+  svg.appendChild(smallRectsGroup);
+
+  for(var i = 0; i < count; i++) {
+
+      sAngle = Math.random() * Math.PI * 2;
+      sX = Math.cos(sAngle) * anime.random(1, 7);
+      sY = Math.sin(sAngle) * anime.random(1, 7);
+
+      smallRects[i] = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+      smallRects[i].setAttribute("fill", colors[anime.random(0, 4)]);
+      smallRects[i].setAttribute("cx", x1 + sX);
+      smallRects[i].setAttribute("cy", y1 + sY);
+      smallRects[i].setAttribute("r", 0.8);
+      //smallRects[i].setAttribute("width", 0.8);
+      //smallRects[i].setAttribute("height", 0.8);
+      smallRectsGroup.appendChild(smallRects[i]);
+
+      sAngle = Math.random() * Math.PI * 2;
+      sX = Math.cos(sAngle) * anime.random(1, 4.5);
+      sY = Math.sin(sAngle) * anime.random(1, 4.5);
+
+      smallRects[i + count] = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+      smallRects[i + count].setAttribute("fill", colors[anime.random(0, 4)]);
+      smallRects[i + count].setAttribute("cx", x2 + sX);
+      smallRects[i + count].setAttribute("cy", y2 + sY);
+      smallRects[i + count].setAttribute("r", 0.5);
+      //smallRects[i + count].setAttribute("width", 0.5);
+      //smallRects[i + count].setAttribute("height", 0.5);
+      smallRectsGroup.appendChild(smallRects[i + 200]);
+    }
+}
+
+
+function createTimeline() {
+  Process
+  //rects_etap1
+    .add({
+      targets: rectsGroup,
+      easing: 'linear',
+      translateY: [0,  -60],
+      scale: [1, 0.4],
+      duration: 500,
+      offset: 0
+    })
+  //animate lines
+    .add({
+      targets: '#lines polyline',
+      easing: 'linear',
+      strokeDashoffset: [anime.setDashoffset, 0],
+      duration: 1000,
+      offset: 1000
+    })
+    .add({
+      targets: '#lines line',
+      easing: 'linear',
+      strokeDashoffset: [anime.setDashoffset, 0],
+      duration: 500,
+      offset: 1800
+    })
+  //animate circles 
+    .add({
+      targets: "#c1",
+      easing: 'linear',
+      r: [0, 5],
+      duration: 500,
+      offset: 1200
+    })
+    .add({
+      targets: '#c2',
+      easing: 'linear',
+      r: [0, 5],
+      duration: 500,
+      offset: 1500
+    })
+    .add({
+      targets: '#c3',
+      easing: 'linear',
+      r: [0, 5],
+      duration: 500,
+      offset: 1700
+    })
+    .add({
+      targets: ['#c4', '#c_box_blue', '#c_box_red', '#c_red'],
+      easing: 'linear',
+      r: [0, 5],
+      duration: 500,
+      offset: 2100
+    })
+  //animate text ------------------------------ etap 2
+    .add({
+      targets: '#discovery',
+      easing: 'linear',
+      opacity: [1, 0],
+      //top: ['6%', '0%'],
+      duration: 1000,
+      offset: 2600
+    })
+    .add({
+      targets: '#exploring',
+      easing: 'linear',
+      opacity: [1, 0],
+      //bottom: ['12%', '0%'],
+      duration: 1000,
+      offset: 2600
+    })
+    .add({
+      targets: '#mapping',
+      easing: 'easeOutElastic',
+      opacity: [0, 1],
+      top: ['0%', '6%'],
+      duration: 1000,
+      offset: 4100
+    })
+    .add({
+      targets: '#creating',
+      easing: 'easeOutElastic',
+      opacity: [0, 1],
+      bottom: ['0%', '12%'],
+      duration: 1000,
+      offset: 4100
+    })
+  //animate circles 2
+    .add({
+      targets: '#c4',
+      easing: 'linear',
+      r: [5, 0],
+      duration: 500,
+      offset: 3000
+    })
+    .add({
+      targets: '#c3',
+      easing: 'linear',
+      r: [5, 0],
+      duration: 500,
+      offset: 3400
+    })
+    .add({
+      targets: '#c2',
+      easing: 'linear',
+      r: [5, 0],
+      duration: 500,
+      offset: 3600
+    })
+    .add({
+      targets: '#c1',
+      easing: 'linear',
+      r: [5, 0],
+      duration: 500,
+      offset: 3900
+    })
+  //animate lines
+    .add({
+      targets: '#lines line',
+      easing: 'linear',
+      strokeDashoffset: [0, anime.setDashoffset],
+      duration: 500,
+      offset: 3300
+    })
+    .add({
+      targets: '#lines polyline',
+      easing: 'linear',
+      strokeDashoffset: [0, anime.setDashoffset],
+      duration: 1000,
+      offset: 3300
+    })
+  //rects_etap1
+  	.add({
+      targets: rectsGroup,
+      easing: 'linear',
+      opacity: [1, 0],
+      duration: 1000,
+      offset: 3300
+    })
+  //boxes
+  	.add({
+      targets: ['#red_box', '#blue_box'],
+      easing: 'linear',
+      strokeDashoffset: [anime.setDashoffset, 0],
+      duration: 1500,
+      offset: 3300
+    })
+  //change color
+  	.add({
+      targets: '#block_animation',
+      easing: 'linear',
+      background: ['#eaf0ee','#f9fcf9'],
+      duration: 1500,
+      offset: 3300
+    })
+  //move red box circle
+  	.add({
+      targets: ['#c_box_red', '#c_red'],
+      easing: 'linear',
+      translateX: [0, 48],
+      translateY: [0, -36],
+      r: [5, 10],
+      duration: 1000,
+      offset: 3800
+    })
+    .add({
+      targets: '#c_red',
+      easing: 'linear',
+      opacity: [1, 0],
+      duration: 1000,
+      offset: 3800
+    })
+  //move blue box circle 
+  	.add({
+      targets: '#c_box_blue',
+      easing: 'linear',
+      translateX: [0, -25],
+      translateY: [0, -23],
+      r: [5, 15],
+      fill: ['#0062f1', '#3682f1'],
+      duration: 1000,
+      offset: 3800
+    })
+  //show icon and hand
+  	.add({
+      targets: ['#icon', '#hand'],
+      easing: 'linear',
+      opacity: [0, 1],
+      duration: 500,
+      offset: 4800
+    })
+  //move hand
+  	.add({
+      targets: '#hand',
+      easing: 'linear',
+      translateX: [0, 21],
+      translateY: [0, -8],
+      duration: 500,
+      offset: 5300
+    })
+  //show red box
+  	.add({
+      targets: '#finger_click',
+      easing: 'linear',
+      opacity: [0, 1, 0],
+      duration: 400,
+      offset: 6000
+    })
+    .add({
+      targets: '#red_box_content',
+      easing: 'linear',
+      opacity: [0, 1],
+      duration: 200,
+      offset: 6200
+    })
+  //show text 1
+    .add({
+      targets: '#name2 tspan',
+      easing: 'linear',
+      opacity: [0, 1],
+      delay: function(el, i) { return 100*i;},
+      duration: 10,
+      offset: 6200
+    })
+    .add({
+      targets: '#hobe2 tspan',
+      easing: 'linear',
+      opacity: [0, 1],
+      delay: function(el, i) { return 70*i;},
+      duration: 10,
+      offset: 6700
+    })
+  //move hand 2
+  	.add({
+      targets: '#hand',
+      easing: 'linear',
+      translateX: [21, 0],
+      translateY: [-8, 0],
+      duration: 500,
+      offset: 6700
+    })
+  //icon move out box ------------------------------ etap 3
+  	.add({
+      targets: '#icon',
+      easing: 'linear',
+      translateX: [0, -66],
+      translateY: [0, 10],
+      scale: [1, 1.3],
+      duration: 1000,
+      offset: 8200
+    })
+    .add({
+      targets: '#clip_icon',
+      easing: 'linear',
+      r: [15, 20],
+      duration: 1000,
+      offset: 8200
+    })
+  //animate text 2
+    .add({
+      targets: '#mapping',
+      easing: 'linear',
+      opacity: [1, 0],
+      //top: ['6%', '0%'],
+      duration: 1000,
+      offset: 8200
+    })
+    .add({
+      targets: '#creating',
+      easing: 'linear',
+      opacity: [1, 0],
+      //bottom: ['12%', '0%'],
+      duration: 1000,
+      offset: 8200
+    })
+    .add({
+      targets: '#iteration',
+      easing: 'easeOutElastic',
+      opacity: [0, 1],
+      top: ['0%', '6%'],
+      duration: 1000,
+      offset: 9800
+    })
+    .add({
+      targets: '#testing',
+      easing: 'easeOutElastic',
+      opacity: [0, 1],
+      bottom: ['0%', '12%'],
+      duration: 1000,
+      offset: 9800
+    })
+  //move boxes
+  	.add({
+      targets: ['#red_box', '#red_box_fill', '#blue_box', '#hand', '#red_box_content', '#text_icon'],
+      easing: 'linear',
+      translateY: [0, -60],
+      duration: 1000,
+      offset: 8200
+    })
+  	.add({
+      targets: '#c_box_blue',
+      easing: 'linear',
+      translateX: [-25, -25],
+      translateY: [-23, -83],
+      duration: 1000,
+      offset: 8200
+    })
+  	.add({
+      targets: ['#c_box_red', '#c_red'],
+      easing: 'linear',
+      translateX: [48, 48],
+      translateY: [-36, -96],
+      duration: 1000,
+      offset: 8200
+    })
+  //change color 2
+  	.add({
+      targets: '#block_animation',
+      easing: 'linear',
+      background: ['#f9fcf9', '#ffffff'],
+      duration: 1500,
+      offset: 8200
+    })
+  //fade out blue box
+  	.add({
+      targets: ['#blue_box','#text_icon', '#c_box_blue'],
+      easing: 'linear',
+      opacity: [1, 0],
+      duration: 1000,
+      offset: 8700
+    })
+  //move red box
+   .add({
+      targets: ['#red_box', '#red_box_fill', '#hand', '#red_box_content'],
+      easing: 'linear',
+      translateX: [0, 60],
+      translateY: [-60, -60],
+      duration: 1000,
+      offset: 9200
+    })
+   .add({
+      targets: ['#c_box_red', '#c_red'],
+      easing: 'linear',
+      translateX: [48, 108],
+      translateY: [-96, -96], 
+      duration: 1000,
+      offset: 9200
+    })
+  //show message
+  	.add({
+      targets: '#finger_click',
+      easing: 'linear',
+      opacity: [0, 1],
+      duration: 200,
+      offset: 10200
+    })
+    .add({
+      targets: '#finger_click',
+      easing: 'linear',
+      opacity: [1, 0],
+      duration: 200,
+      offset: 10400
+    })
+    .add({
+      targets: '#message',
+      easing: 'linear',
+      opacity: [0, 1],
+      duration: 500,
+      offset: 10400
+    })
+  //chenge red box
+  	.add({
+      targets: '#hand',
+      easing: 'linear',
+      translateX: [60, 55],
+      translateY: [-60, -65],
+      duration: 500,
+      offset: 11100
+    })
+  	.add({
+      targets: '#finger_click',
+      easing: 'linear',
+      opacity: [0, 1, 0],
+      duration: 400,
+      offset: 11600
+    })
+  	.add({
+      targets: '#check_x',
+      easing: 'linear',
+      opacity: [1, 0],
+      duration: 100,
+      offset: 11800
+    })
+  	.add({
+      targets: '#check_mark2',
+      easing: 'linear',
+     	opacity: [0, 1],
+      duration: 100,
+      offset: 11800
+    })
+  	.add({
+      targets: ['#box_rect', '#box_rect_fill'],
+      easing: 'linear',
+     	height: [25, 60],
+      duration: 500,
+      offset: 12100
+    })
+  	.add({
+      targets: '#box_lines_text line',
+      easing: 'linear',
+     	x1: [11.3, 52],
+     	x2: [41.3, 75],
+      duration: 500,
+      offset: 11800
+    })
+  //fade out hand and icon
+  	.add({
+      targets: ['#hand', '#icon', '#message'],
+      easing: 'linear',
+     	opacity: [1, 0],
+      duration: 500,
+      offset: 12700
+    })
+  //show pointer and color
+    .add({
+      targets: '#c_red',
+      easing: 'linear',
+      fill: ['#DC4826', '#c0cbc6'],
+      duration: 10,
+      offset: 12700
+    })
+  	.add({
+      targets: '#pointer',
+      easing: 'linear',
+     	opacity: [0, 1],
+      duration: 500,
+      offset: 13200
+    })
+  	.add({
+      targets: ['#red_box_fill', '#box_rect_fill', '#c_red'],
+      easing: 'linear',
+      opacity: [0, 1],
+      duration: 1000,
+      offset: 13200
+    })
+    .add({
+      targets: '#red_box',
+      easing: 'linear',
+      stroke: ['#DC4726', '#eaf0ee'],
+      duration: 1000,
+      offset: 13200
+          })
+  	.add({
+      targets: '#red_box_content line',
+      easing: 'linear',
+     	stroke: ['#DC4726', '#000000'],
+      duration: 1000,
+      offset: 13200
+    })
+    .add({
+      targets: '#box_rect',
+      easing: 'linear',
+     	stroke: ['#DC4726', '#feef35'],
+      duration: 1000,
+      offset: 13200
+    })
+    .add({
+      targets: '#c_box_red',
+      easing: 'linear',
+     	stroke: ['#DC4826', '#c0cbc6'],
+      duration: 1000,
+      offset: 13200
+    })
+  //change color 3
+    .add({
+      targets: '#block_animation',
+      easing: 'linear',
+      background: ['#ffffff', '#f9fcf9'],
+      duration: 1000,
+      offset: 13200
+    })
+  //animate text 3 --------------------------------- etap 4
+    .add({
+      targets: '#iteration',
+      easing: 'linear',
+      opacity: [1, 0],
+      //top: ['6%', '0%'],
+      duration: 1000,
+      offset: 14700
+    })
+    .add({
+      targets: '#testing',
+      easing: 'linear',
+      opacity: [1, 0],
+      //bottom: ['12%', '0%'],
+      duration: 1000,
+      offset: 14700
+    })
+    .add({
+      targets: '#build',
+      easing: 'easeOutElastic',
+      opacity: [0, 1],
+      top: ['0%', '6%'],
+      duration: 1000,
+      offset: 16300
+    })
+    .add({
+      targets: '#once-vetted',
+      easing: 'easeOutElastic',
+      opacity: [0, 1],
+      bottom: ['0%', '12%'],
+      duration: 1000,
+      offset: 16300
+    })
+  //pointer move element
+    .add({
+      targets: '#pointer',
+      easing: 'linear',
+      translateX: [0, -8],
+      translateY: [0, 10],
+      duration: 500,
+      offset: 14700
+    })
+    .add({
+      targets: ['#c_box_red', '#c_red'],
+      easing: 'linear',
+      translateX: [108, 100],
+      translateY: [-96, -86],
+      duration: 500,
+      offset: 14700
+    })
+    .add({
+      targets: '#pointer',
+      easing: 'linear',
+      translateX: [-8, -28],
+      translateY: [10, 10],
+      duration: 500,
+      offset: 15200
+    })
+    .add({
+      targets: '#pointer',
+      easing: 'linear',
+      translateX: [-28, -38],
+      translateY: [10, 15],
+      duration: 500,
+      offset: 15700
+    })
+    .add({
+      targets: ['#box_rect_fill', '#box_rect'],
+      easing: 'linear',
+      translateX: [0, -10],
+      translateY: [0, 5],
+      duration: 500,
+      offset: 15700
+    })
+    .add({
+      targets: '#pointer',
+      easing: 'linear',
+      opacity: [1, 0],
+      duration: 500,
+      offset: 16200
+    })
+  //move content elements
+    .add({
+      targets: '#line_up',
+      easing: 'linear',
+      translateX: [0, -20],
+      translateY: [0, 6],
+      duration: 500,
+      offset: 16200
+    })
+    .add({
+      targets: ['#box_rect_fill', '#box_rect'],
+      easing: 'linear',
+      translateX: [-10, -20],
+      translateY: [5, 14],
+      duration: 500,
+      offset: 16200
+    })
+    .add({
+      targets: '#box_lines_text',
+      easing: 'linear',
+      translateX: [0, 18],
+      translateY: [0, 20],
+      duration: 500,
+      offset: 16200
+    })
+    .add({
+      targets: ['#c_box_red', '#c_red'],
+      easing: 'linear',
+      translateX: [100, 126],
+      translateY: [-86, -90],
+      duration: 500,
+      offset: 16200
+    })
+  //move all content
+    .add({
+      targets: ['#red_box', '#red_box_fill', '#red_box_content'],
+      easing: 'linear',
+      translateX: [60, 20],
+      translateY: [-60, -60],
+      duration: 1000,
+      offset: 16700
+    })
+   .add({
+      targets: ['#c_box_red', '#c_red'],
+      easing: 'linear',
+      translateX: [126, 86],
+      translateY: [-90, -90], 
+      duration: 1000,
+      offset: 16700
+    })
+  //drawing phone and monitor
+   .add({
+      targets: ['#comp path', '#mob path'],
+      easing: 'linear',
+      strokeDashoffset: [anime.setDashoffset, 0],
+      duration: 1000,
+      offset: 17500
+    })
+   .add({
+      targets: ['#comp', '#mob'],
+      easing: 'linear',
+      opacity: [0, 1],
+      duration: 1000,
+      offset: 17500
+    })
+  //printing cod
+    .add({
+      targets: '#cod_text path',
+      easing: 'linear',
+      opacity: [0, 1],
+      delay: function(el, i) { return 200*i;},
+      duration: 10,
+      offset: 17700
+    })
+  //show phone content 
+    .add({
+      targets: '#phone_content',
+      easing: 'linear',
+      opacity: [0, 1],
+      duration: 10,
+      offset: 18900
+    })
+  //move comp and phone
+    .add({
+      targets: ['#comp', '#mob'],
+      easing: 'linear',
+      translateX: [0, -50],
+      duration: 1000,
+      offset: 19000
+    })
+  //move in boxes
+    .add({
+      targets: ['#red_box', '#red_box_fill'],
+      easing: 'linear',
+      translateX: [20, 91.5],
+      translateY: [-60, -2.5],
+      scaleY: [1, 0.55],
+      scaleX: [1, 0.84],
+      duration: 1000,
+      offset: 19000
+    })
+    .add({
+      targets: '#ph_box_fill',
+      easing: 'linear',
+      translateX: [0, 60.7],
+      translateY: [0, 51],
+      scaleY: [1, 0.52],
+      scaleX: [1, 0.33],
+      duration: 1000,
+      offset: 19000
+    })
+  //move in yellow rects
+    .add({
+      targets: ['#box_rect_fill', '#box_rect'],
+      easing: 'linear',
+      x: [6.3, 92.5],
+      y: [117.3, 110],
+      width: [40, 35], 
+      height: [60, 30],
+      duration: 1000,
+      offset: 19000
+    })
+    .add({
+      targets: '#ph_rect_fill',
+      easing: 'linear',
+      x: [6.3, 67.7],
+      y: [71.3, 72],
+      width: [40, 27], 
+      height: [60, 22],
+      duration: 1000,
+      offset: 19000
+    })
+  //move in text lines
+    .add({
+      targets: '#box_lines_text',
+      easing: 'linear',
+      translateX: [18, 73],
+      translateY: [20, 52],
+      scaleX: [1, 0.8],
+      scaleY: [1, 0.6],
+      duration: 1000,
+      offset: 19000
+    })
+    .add({
+      targets: '#ph_lines_text',
+      easing: 'linear',
+      translateX: [0, 0],
+      translateY: [0, 45],
+      scaleX: [1, 0.8],
+      scaleY: [1, 0.5],
+      duration: 1000,
+      offset: 19000
+    })
+  //move in circles
+    .add({
+      targets: ['#c_box_red', '#c_red'],
+      easing: 'linear',
+      translateX: [86, 128],
+      translateY: [-90, -95],
+      r: [10, 7],
+      duration: 1000,
+      offset: 19000
+    })
+    .add({
+      targets: '#ph_c_box',
+      easing: 'linear',
+      translateX: [0, -15],
+      translateY: [0, 17],
+      r: [10, 5],
+      duration: 1000,
+      offset: 19000
+    })
+  //move in line up
+    .add({
+      targets: '#line_up',
+      easing: 'linear',
+      translateX: [-20, 70],
+      translateY: [6, 25],
+      scaleX: [1, 0.86],
+      scaleY: [1, 0.86],
+      duration: 1000,
+      offset: 19000
+    })
+    .add({
+      targets: '#ph_line_up',
+      easing: 'linear',
+      translateX: [0, 67],
+      translateY: [0, 57],
+      scaleX: [1, 0.35],
+      scaleY: [1, 0.35],
+      duration: 1000,
+      offset: 19000
+    })
+  //cod 
+    .add({
+      targets: '#cod_text path',
+      easing: 'linear',
+      opacity: [1, 0],
+      delay: function(el, i) { return 600 - 200*i;},
+      duration: 10,
+      offset: 19000
+    })
+  //rects e-1
+    .add({
+      targets: ['#c_box_red', '#c_red', '#ph_c_box',],
+      easing: 'linear',
+      opacity: [1, 0],
+      duration: 500,
+      offset: 20000
+    })
+    .add({
+      targets: smallRectsGroup,
+      easing: 'linear',
+      opacity: [0, 1],
+      duration: 500,
+      offset: 20000
+    })
+
+}
+
+
+setSize();
+
+createSmalCircles(143.5, 70.5, 86.5, 93, 200);
+createSquare(centerX, centerY, sizeRect);
+rects.forEach(animateSquare);
+
+createTimeline();
+
+var yStart = null;
+var yMove = null;
+
+var prevdelta = 1, start = false;
+
+function onWheel(e) {
+
+  e = e || window.event;
+  var del = e.deltaY || e.detail || e.wheelDelta;
+
+  scrollAnimation(del);
+
+  e.preventDefault ? e.preventDefault() : (e.returnValue = false);
+}
+
+
+elem.addEventListener("touchstart", start);
+  
+function start(event) {
+
+  alert("start");
+
+  yStart = event.targetTouches[0].pageY;
+  elem.addEventListener("touchmove", move);
+
+  event.preventDefault ? event.preventDefault() : (event.returnValue = false);
+
+}
+
+
+function move(event) {
+
+  yMove = event.targetTouches[0].pageY;
+  var del = yStart - yMove;
+
+  alert("move");
+
+  scrollAnimation(del);
+
+  event.preventDefault ? event.preventDefault() : (event.returnValue = false);
+
+}
+
+
+
+function scrollAnimation(delta) {
+
+  if (play == true) {
+
+      play = false;
+
+      if ((delta > 0 && prevdelta > 0) || (delta < 0 && prevdelta < 0)) {
+        Process.play();
+        start = true;
+        prevdelta = delta;
+      } else {
+
+          if (start == true) {
+            Process.reverse();
+            Process.play(); 
+            prevdelta = delta;
+          } else {
+            play = true;
+          }
+
+      }
+  }
+
+}
+
+
+if (elem.addEventListener) {
+  if ('onwheel' in document) {
+    elem.addEventListener("wheel", onWheel);
+    elem.addEventListener("mousewheel", onWheel);
+  } else {
+    elem.addEventListener("MozMousePixelScroll", onWheel);
+  }
+} else { 
+  elem.attachEvent("onmousewheel", onWheel);
+}
+
+elem.addEventListener('resize', setSize);
