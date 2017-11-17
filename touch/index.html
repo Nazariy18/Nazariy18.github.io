@@ -29,8 +29,10 @@ function start(event) {
 function move(event) {
 	alert("move1: " + event.targetTouches[0].pageY);
 	yMove = event.targetTouches[0].pageY;
-	delta = yMove - yStart;
-	alert("delta:" + delta);
+	delta = yStart - yMove;
+	if(delta > 0) 
+	   {alert("up");}
+	else {alert("down");}
 }
 
 	
