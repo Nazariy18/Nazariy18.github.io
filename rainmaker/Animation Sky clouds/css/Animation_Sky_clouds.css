@@ -1,0 +1,53 @@
+#Cloud1 {
+	-webkit-transform: translateX(500px);
+	transform: translateX(500px);
+	-webkit-animation: moveCloud 2s linear 0s forwards;
+	animation: moveCloud 2s linear 0s forwards;
+}
+
+#Cloud2 {
+	-webkit-transform: translateX(800px);
+	transform: translateX(800px);
+	-webkit-animation: moveCloud 3s linear 0s forwards;
+	animation: moveCloud 3s linear 0s forwards;
+}
+
+#Cloud3 {
+	-webkit-transform: translateX(300px);
+	transform: translateX(300px);
+	-webkit-animation: moveCloud 1.5s linear 0s forwards;
+	animation: moveCloud 1.5s linear 0s forwards;
+}
+
+#Cloud4 {
+	-webkit-transform: translateX(-500px);
+	transform: translateX(-500px);
+	-webkit-animation: moveCloud 3.5s linear 0s forwards;
+	animation: moveCloud 3.5s linear 0s forwards;
+}
+
+#Cloud_right1 {
+	-webkit-transform: translateX(-600px);
+	transform: translateX(-600px);
+	-webkit-animation: moveCloud 2.5s linear 0s forwards;
+	animation: moveCloud 2.5s linear 0s forwards;
+}
+
+#Cloud_right2 {
+	-webkit-transform: translateX(-300px);
+	transform: translateX(-300px);
+	-webkit-animation: moveCloud 2s linear 0s forwards;
+	animation: moveCloud 2s linear 0s forwards;
+}
+
+@-webkit-keyframes moveCloud {
+	to {
+		-webkit-transform: translateX(0px);
+	}
+}
+
+@keyframes moveCloud {
+	to {
+		transform: translateX(0px);
+	}
+}

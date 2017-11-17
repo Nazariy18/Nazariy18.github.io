@@ -1,0 +1,136 @@
+#d_line1 path, #d_line2 {
+	stroke-dasharray: 210;
+	stroke-dashoffset: 210;
+}
+#d_line3, #d_line4 {
+	stroke-dasharray: 120;
+	stroke-dashoffset: 120;
+}
+#d_line5 {
+	stroke-dasharray: 170;
+	stroke-dashoffset: 170;
+}
+
+#d_line1 path {
+	-webkit-animation: drawingLine 1s linear 0s forwards, dashLine 0s linear 1s forwards;
+	animation: drawingLine 1s linear 0s forwards, dashLine 0s linear 1s forwards;
+}
+#d_line2 {
+	-webkit-animation: drawingLine 1s linear 1s forwards, dashLine 0s linear 2s forwards;
+	animation: drawingLine 1s linear 1s forwards, dashLine 0s linear 2s forwards;
+}
+#d_line3 {
+	-webkit-animation: drawingLine 0.5s linear 2s forwards, dashLine 0s linear 2.5s forwards;
+	animation: drawingLine 0.5s linear 2s forwards, dashLine 0s linear 2.5s forwards;
+}
+#d_line4 {
+	-webkit-animation: drawingLine 0.5s linear 2.5s forwards, dashLine 0s linear 3s forwards;
+	animation: drawingLine 0.5s linear 2.5s forwards, dashLine 0s linear 3s forwards;
+}
+#d_line5 {
+	-webkit-animation: drawingLine 0.8s linear 3s forwards, dashLine 0s linear 3.8s forwards;
+	animation: drawingLine 0.8s linear 3s forwards, dashLine 0s linear 3.8s forwards;
+}
+
+#cards, #bell, #gears, #Group, #like, #graph {
+	-webkit-transform-origin: 50% 50%;
+	-webkit-transform: scale(0);
+	transform-origin: 50% 50%;
+	transform: scale(0);
+}
+
+#cards {
+	-webkit-animation: scaleElement 1s linear 0s forwards;
+	animation: scaleElement 1s linear 0s forwards;
+}
+#bell {
+	-webkit-animation: scaleElement 1s linear 0.5s forwards;
+	animation: scaleElement 1s linear 0.5s forwards;
+}
+#gears {
+	-webkit-animation: scaleElement 1s linear 1s forwards;
+	animation: scaleElement 1s linear 1s forwards;
+}
+#Group {
+	-webkit-animation: scaleElement 1s linear 1.5s forwards;
+	animation: scaleElement 1s linear 1.5s forwards;
+}
+#like {
+	-webkit-animation: scaleElement 1s linear 2s forwards;
+	animation: scaleElement 1s linear 2s forwards;
+}
+#graph {
+	-webkit-animation: scaleElement 1s linear 2.5s forwards;
+	animation: scaleElement 1s linear 2.5s forwards;
+}
+
+
+#star1 {
+	-webkit-animation: blinkStar 1s ease-out 0s alternate infinite;
+	animation: blinkStar 1s ease-out 0s alternate infinite;
+}
+#star2 {
+	-webkit-animation: blinkStar 1s ease-out 1s alternate infinite;
+	animation: blinkStar 1s ease-out 1s alternate infinite;
+}
+#star3 {
+	-webkit-animation: blinkStar 1s ease-out 0.5s alternate infinite;
+	animation: blinkStar 1s ease-out 0.5s alternate infinite;
+}
+
+
+@-webkit-keyframes drawingLine {
+	to {
+		stroke-dashoffset: 0;
+	}
+}
+
+@-webkit-keyframes dashLine {
+	to {
+		stroke-dasharray: 5;
+	}
+}
+
+@-webkit-keyframes scaleElement {
+	to {
+		-webkit-transform: scale(1);
+		transform: scale(1);
+	}
+}
+
+@-webkit-keyframes blinkStar {
+	0% {
+    opacity: 1;
+  }
+	100% {
+		 opacity: 0;
+	}
+}
+
+
+@keyframes drawingLine {
+	to {
+		stroke-dashoffset: 0;
+	}
+}
+
+@keyframes dashLine {
+	to {
+		stroke-dasharray: 5;
+	}
+}
+
+@keyframes scaleElement {
+	to {
+		transform: scale(1);
+	}
+}
+
+@keyframes blinkStar {
+	0% {
+    opacity: 1;
+  }
+	100% {
+		 opacity: 0;
+	}
+}
