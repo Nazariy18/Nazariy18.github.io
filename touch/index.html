@@ -7,16 +7,18 @@
 </head>
 <body>
 
-	<div id="elemnt"> Sprob 1
+	<div id="elemnt"> Sprob 2
 		
 	</div>
 
 <script>
 
 
-document.body.addEventListener('touchstart', function(e){
-        alert(e.changedTouches[0].pageY) 
-    }, false);
+window.addEventListener('load', function(){ // после загрузки страницы
+    document.body.addEventListener('touchstart', function(e){
+        alert(e.changedTouches[0].pageX) // показ коррдинат места прикосновения по X-у.
+    }, false)
+}, false)
 	
 
 </script>
