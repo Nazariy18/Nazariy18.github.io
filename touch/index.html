@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Touch</title>
+
+</head>
+<body>
+
+	<div id="elemnt">
+		
+	</div>
+
+<script>
+
+	window.addEventListener("touchmove", stepTuch);
+
+	function stepTuch(e) {
+    e = e || window.event;
+
+    var delta;
+    delta = e.originalEvent.touches[0].pageY;
+    alert(delta);
+
+    e.preventDefault();
+}
+	
+
+</script>
+	
+</body>
+</html>
