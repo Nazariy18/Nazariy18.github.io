@@ -991,12 +991,12 @@ var yStart = null;
 var delta = null;
 var yMove = null;
 
-elem.addEventListener("touchstart", start);
+svgContainer.addEventListener("touchstart", start);
   
 function start(event) {
   alert("start1: " + event.targetTouches[0].pageY);
   yStart = event.targetTouches[0].pageY;
-  elem.addEventListener("touchmove", move);
+  svgContainer.addEventListener("touchmove", move);
 }
 
 function move(event) {
