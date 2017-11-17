@@ -990,12 +990,13 @@ if (elem.addEventListener) {
 var yStart = null;
 var delta = null;
 var yMove = null;
-window.addEventListener("touchstart", start);
+
+elem.addEventListener("touchstart", start);
   
 function start(event) {
   alert("start1: " + event.targetTouches[0].pageY);
   yStart = event.targetTouches[0].pageY;
-  window.addEventListener("touchmove", move);
+  elem.addEventListener("touchmove", move);
 }
 
 function move(event) {
@@ -1006,3 +1007,4 @@ function move(event) {
      {alert("up");}
   else {alert("down");}
 }
+
