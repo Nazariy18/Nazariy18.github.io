@@ -7,30 +7,30 @@
 </head>
 <body>
 
-	<div id="elemnt"> Sprob 6
+	<div id="elemnt"> Sprob 7
 		
 	</div>
 
 <script>
 
-var yStart = null;
-var delta = null;
-var yMove = null;
+window.addEventListener('touchstart', function(e) {
 
-window.addEventListener("touchstart", start);
-window.addEventListener("touchmove", move);
-	
-function start(event) {
-	alert("start1: " + event.targetTouches[0].pageY);
-	yStart = event.targetTouches[0].pageY;
-}
+    var swipe = e.originalEvent.touches,
+    start = swipe[0].pageY;
 
-function move(event) {
-	alert("move1: " + event.targetTouches[0].pageY);
-	yMove = event.targetTouches[0].pageY;
-	delta = yMove - yStart;
-	alert("delta:" + delta);
-}
+    window.addEventListener('touchmove', function(e) {
+
+        var contact = e.originalEvent.touches,
+        end = contact[0].pageY,
+        distance = end-start;
+
+        if (distance < -30) // up
+        	 {alert("up");}
+        if (distance > 30) // down
+        	{alert("down");}
+    });
+  
+});
 
 	
 
