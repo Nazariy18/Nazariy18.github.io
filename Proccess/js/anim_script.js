@@ -1,3 +1,4 @@
+alert("new");
 var yStart = null;
 var yMove = null;
 var elem = document.getElementById('block_animation');
@@ -37,7 +38,7 @@ var Process = anime.timeline({
     var pr =  Math.round(anim.progress);
     
       if ((pr == 14 || pr == 38 || pr == 70) && pas == true) {
-          anim.pause();
+          //anim.pause();
           pas = false;
           play = true;
         } else if (pr == 10 || pr == 20 || pr == 50 || pr == 90) {
