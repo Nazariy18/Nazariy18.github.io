@@ -3,7 +3,7 @@ var yStart = null;
 var yMove = null;
 var elem = document.getElementById('block_animation');
 
-elem.addEventListener("touchstart", start);
+//elem.addEventListener("touchstart", start);
 	
 function start(event) {
 	alert("start1: " + event.targetTouches[0].pageY);
@@ -22,8 +22,8 @@ function move(event) {
 
 var svg = document.getElementById('Process'),
     svgContainer = document.getElementById('svg_container'),
-    elem = document.getElementById('block_animation'),
-		rectsGroup = null,
+    //elem = document.getElementById('block_animation'),
+    rectsGroup = null,
     smallRectsGroup = null,
     rectObl = null,
     windowWidth = 0,
@@ -990,7 +990,7 @@ function onWheel(e) {
   e.preventDefault ? e.preventDefault() : (e.returnValue = false);
 }
 
-
+elem.addEventListener("touchstart", start);
 
 if (elem.addEventListener) {
   if ('onwheel' in document) {
