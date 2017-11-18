@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Touch</title>
 	<style>
-	#elemnt {
+	#block_animation {
 	background: red;
 	position: absolute;
 	width: 100%;
@@ -15,16 +15,29 @@
 </head>
 <body>
 
-	<div id="elemnt"> Sprob 12
-		<div>ggg</div>
+<div id="block_animation">
+	<div id="svg_container">
+		
 	</div>
+</div>
+
+<div id="process">process</div>
+<div id="discovery">discovery</div>
+<div id="mapping">mapping</div>
+<div id="iteration">iteration</div>
+<div id="build">build</div>
+
+<div id="exploring">exploring ideas. opportunities and constraints. big ideas and opportunities</div>
+<div id="creating">creating user flows and personas, we anticipate who your users are and how they will navigate.</div>
+<div id="testing">testing designs with users to create clean and fresh aesthetics that are easy to use and look great.</div>
+<div id="once-vetted">once vetted with users and clients, we creat version-controlled design assets and develop our projects to be fast, efficient and optimised for all devices.  </div>
 
 <script>
 
 var yStart = null;
 var delta = null;
 var yMove = null;
-var elem = document.getElementById('elemnt');
+var elem = document.getElementById('block_animation');
 
 elem.addEventListener("touchstart", start);
 //window.addEventListener("touchmove", move);
