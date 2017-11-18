@@ -1,11 +1,11 @@
-alert("13.24");
+alert("13.27");
 
 var yStart = null;
 var delta = null;
 var yMove = null;
 var elem = document.getElementById('block_animation');
 
-//elem.addEventListener("touchstart", start);
+elem.addEventListener("touchstart", start);
 /*	
 function start(event) {
 	alert("start1: " + event.targetTouches[0].pageY);
@@ -1010,7 +1010,6 @@ function onWheel(e) {
 
 
 if (elem.addEventListener) {
-	elem.addEventListener("touchstart", start);
   if ('onwheel' in document) {
     elem.addEventListener("wheel", onWheel);
     elem.addEventListener("mousewheel", onWheel);
