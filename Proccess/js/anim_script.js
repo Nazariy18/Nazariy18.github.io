@@ -1,4 +1,4 @@
-alert("13.29");
+alert("13.33");
 
 var yStart = null;
 var delta = null;
@@ -28,7 +28,6 @@ var numberOfSqueares = 500,
 var pas = true,
     play = true,
     etaps = [14, 38, 70],
-    //delta = 1,
     prevdelta = 1, 
     start = false;
 
@@ -975,8 +974,8 @@ function start(event) {
 function move(event) {
 	alert("move1: " + event.targetTouches[0].pageY);
 	yMove = event.targetTouches[0].pageY;
-	delta = yStart - yMove;
-	if(delta > 0) 
+	var del = yStart - yMove;
+	if(del > 0) 
 	   {alert("up");}
 	else {alert("down");}
 }
