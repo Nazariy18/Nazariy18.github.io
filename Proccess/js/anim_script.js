@@ -961,7 +961,7 @@ createSquare(centerX, centerY, sizeRect);
 rects.forEach(animateSquare);
 
 createTimeline();
-/*
+
 function scrollAnimation(delta) {
 
   if (play == true) {
@@ -994,7 +994,7 @@ function onWheel(e) {
 }
 
 
-
+/*
 if (elem.addEventListener) {
   if ('onwheel' in document) {
     elem.addEventListener("wheel", onWheel);
