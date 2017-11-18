@@ -1,27 +1,3 @@
-var yStart = null;
-var delta = null;
-var yMove = null;
-var elem = document.getElementById('block_animation');
-
-elem.addEventListener("touchstart", start);
-//window.addEventListener("touchmove", move);
-	
-function start(event) {
-	alert("start1: " + event.targetTouches[0].pageY);
-	yStart = event.targetTouches[0].pageY;
-	elem.addEventListener("touchmove", move);
-}
-
-function move(event) {
-	alert("move1: " + event.targetTouches[0].pageY);
-	yMove = event.targetTouches[0].pageY;
-	delta = yStart - yMove;
-	if(delta > 0) 
-	   {alert("up");}
-	else {alert("down");}
-}
-
-
 var svg = document.getElementById('Process'),
     svgContainer = document.getElementById('svg_container'),
     elem = document.getElementById('block_animation'),
@@ -41,10 +17,12 @@ var numberOfSqueares = 500,
     smallRects = [],
 		colors = ['#DC4726', '#46DF60', '#3682F1', '#FEEF35', '#fff'];
 
-//var delta = 1,
-   var pas = true,
+var pas = true,
     play = true,
-    etaps = [14, 38, 70];
+    etaps = [14, 38, 70],
+    //delta = 1,
+    prevdelta = 1, 
+    start = false;
 
 
 var Process = anime.timeline({
@@ -56,7 +34,7 @@ var Process = anime.timeline({
           anim.pause();
           pas = false;
           play = true;
-        } else if (pr == 10 || pr == 20 || pr == 50 || pr == 90) {
+        } else if (/*pr == 10 ||*/ pr == 20 || pr == 50 || pr == 90) {
         pas = true;
       }
 
@@ -167,7 +145,6 @@ function createSmalCircles(x1, y1, x2, y2, count) {
       smallRectsGroup.appendChild(smallRects[i + 200]);
     }
 }
-
 
 function createTimeline() {
   Process
@@ -949,7 +926,6 @@ function createTimeline() {
       duration: 500,
       offset: 20000
     })
-
 }
 
 
@@ -961,11 +937,30 @@ rects.forEach(animateSquare);
 
 createTimeline();
 
-var prevdelta = 1, start = false;
+function scrollAnimation(delta) {
+
+  if (play == true) {
+      play = false;
+      if ((delta > 0 && prevdelta > 0) || (delta < 0 && prevdelta < 0)) {
+        Process.play();
+        start = true;
+        prevdelta = delta;
+      } else {
+          if (start == true) {
+            Process.reverse();
+            Process.play(); 
+            prevdelta = delta;
+          } else {
+            play = true;
+          }
+      }
+  }
+
+}
 
 function onWheel(e) {
 
-  e = e || window.event;
+  e = e || elem.event;
   var del = e.deltaY || e.detail || e.wheelDelta;
 
   scrollAnimation(del);
@@ -974,34 +969,11 @@ function onWheel(e) {
 }
 
 
-function scrollAnimation(delta) {
 
-  if (play == true) {
-
-      play = false;
-
-      if ((delta > 0 && prevdelta > 0) || (delta < 0 && prevdelta < 0)) {
-        Process.play();
-        start = true;
-        prevdelta = delta;
-      } else {
-
-          if (start == true) {
-            Process.reverse();
-            Process.play(); 
-            prevdelta = delta;
-          } else {
-            play = true;
-          }
-
-      }
-  }
-
-}
-
-/*
 if (elem.addEventListener) {
-  elem.addEventListener("touchstart", start);
+
+elem.addEventListener("touchstart", function() {alert("start");});
+
   if ('onwheel' in document) {
     elem.addEventListener("wheel", onWheel);
     elem.addEventListener("mousewheel", onWheel);
@@ -1010,4 +982,4 @@ if (elem.addEventListener) {
   }
 } else { 
   elem.attachEvent("onmousewheel", onWheel);
-}*/
+}
