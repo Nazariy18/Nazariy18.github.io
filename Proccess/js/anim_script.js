@@ -21,7 +21,7 @@ function move(event) {
 	else {alert("down");}
 }
 
-/*
+
 
 var svg = document.getElementById('Process'),
     svgContainer = document.getElementById('svg_container'),
@@ -49,7 +49,7 @@ var pas = true,
     prevdelta = 1, 
     start = false;
 
-
+/*
 var Process = anime.timeline({
   autoplay: false,
   update: function(anim) {
