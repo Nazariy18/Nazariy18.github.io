@@ -131,7 +131,7 @@ var animateSquare = function(el, i) {
     loop: true
   });
 }
-/*
+
 function createSmalCircles(x1, y1, x2, y2, count) {
 
   var sAngle = 0, sX = 0, sY = 0;
@@ -953,7 +953,7 @@ function createTimeline() {
     })
 }
 
-
+/*
 setSize();
 
 createSmalCircles(143.5, 70.5, 86.5, 93, 200);
