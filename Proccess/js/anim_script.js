@@ -1,3 +1,7 @@
+elem.addEventListener("touchstart", function() {alert("start1");});
+window.addEventListener("touchstart", function() {alert("start1_window");});
+
+
 var svg = document.getElementById('Process'),
     svgContainer = document.getElementById('svg_container'),
     elem = document.getElementById('block_animation'),
@@ -973,6 +977,7 @@ function onWheel(e) {
 if (elem.addEventListener) {
 
 elem.addEventListener("touchstart", function() {alert("start");});
+	window.addEventListener("touchstart", function() {alert("start_window");});
 
   if ('onwheel' in document) {
     elem.addEventListener("wheel", onWheel);
@@ -983,3 +988,6 @@ elem.addEventListener("touchstart", function() {alert("start");});
 } else { 
   elem.attachEvent("onmousewheel", onWheel);
 }
+
+elem.addEventListener("touchstart", function() {alert("start2");});
+window.addEventListener("touchstart", function() {alert("start2_window");});
