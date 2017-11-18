@@ -70,7 +70,7 @@ var Process = anime.timeline({
   }
 });
 
-/*
+
 document.getElementById('icon').style.transformOrigin = 'center';
 
 function setSize() {
@@ -131,7 +131,7 @@ var animateSquare = function(el, i) {
     loop: true
   });
 }
-
+/*
 function createSmalCircles(x1, y1, x2, y2, count) {
 
   var sAngle = 0, sX = 0, sY = 0;
