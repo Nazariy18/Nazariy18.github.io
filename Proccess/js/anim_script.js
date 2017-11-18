@@ -1004,5 +1004,4 @@ if (elem.addEventListener) {
   }
 } else { 
   elem.attachEvent("onmousewheel", onWheel);
-}/*
-*/
+}
