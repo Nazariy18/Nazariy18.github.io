@@ -36,6 +36,7 @@ var Process = anime.timeline({
   //autoplay: false,
   update: function(anim) {
     var pr =  Math.round(anim.progress);
+	  alert("time anim" + anim.duration);
       if ((pr == 14 || pr == 38 || pr == 70) && pas == true) {
           //anim.pause();
           pas = false;
