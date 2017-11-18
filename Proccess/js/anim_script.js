@@ -1,9 +1,9 @@
-alert("13.18");
+alert("13.24");
 
 var yStart = null;
 var delta = null;
 var yMove = null;
-//var elem = document.getElementById('block_animation');
+var elem = document.getElementById('block_animation');
 
 //elem.addEventListener("touchstart", start);
 /*	
@@ -982,8 +982,6 @@ function scrollAnimation(delta) {
 
 }
 
-elem.addEventListener("touchstart", start);
-
 function start(event) {
 	alert("start1: " + event.targetTouches[0].pageY);
 	yStart = event.targetTouches[0].pageY;
@@ -1012,6 +1010,7 @@ function onWheel(e) {
 
 
 if (elem.addEventListener) {
+	elem.addEventListener("touchstart", start);
   if ('onwheel' in document) {
     elem.addEventListener("wheel", onWheel);
     elem.addEventListener("mousewheel", onWheel);
