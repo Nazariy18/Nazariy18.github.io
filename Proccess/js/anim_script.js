@@ -49,7 +49,7 @@ var pas = true,
     prevdelta = 1, 
     start = false;
 
-/*
+
 var Process = anime.timeline({
   autoplay: false,
   update: function(anim) {
@@ -70,7 +70,7 @@ var Process = anime.timeline({
   }
 });
 
-
+/*
 document.getElementById('icon').style.transformOrigin = 'center';
 
 function setSize() {
