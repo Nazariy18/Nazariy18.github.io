@@ -1,3 +1,28 @@
+var yStart = null;
+var delta = null;
+var yMove = null;
+var elem = document.getElementById('block_animation');
+
+elem.addEventListener("touchstart", start);
+//window.addEventListener("touchmove", move);
+	
+function start(event) {
+	alert("start1: " + event.targetTouches[0].pageY);
+	yStart = event.targetTouches[0].pageY;
+	elem.addEventListener("touchmove", move);
+}
+
+function move(event) {
+	alert("move1: " + event.targetTouches[0].pageY);
+	yMove = event.targetTouches[0].pageY;
+	delta = yStart - yMove;
+	if(delta > 0) 
+	   {alert("up");}
+	else {alert("down");}
+}
+
+/*
+
 var svg = document.getElementById('Process'),
     svgContainer = document.getElementById('svg_container'),
     elem = document.getElementById('block_animation'),
@@ -34,7 +59,7 @@ var Process = anime.timeline({
           anim.pause();
           pas = false;
           play = true;
-        } else if (/*pr == 10 ||*/ pr == 20 || pr == 50 || pr == 90) {
+        } else if (pr == 10 || pr == 20 || pr == 50 || pr == 90) {
         pas = true;
       }
 
@@ -980,3 +1005,4 @@ if (elem.addEventListener) {
 } else { 
   elem.attachEvent("onmousewheel", onWheel);
 }
+*/
