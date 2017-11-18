@@ -3,7 +3,7 @@ var delta = null;
 var yMove = null;
 var elem = document.getElementById('block_animation');
 
-//elem.addEventListener("touchstart", start);
+elem.addEventListener("touchstart", start);
 //window.addEventListener("touchmove", move);
 	
 function start(event) {
@@ -999,7 +999,7 @@ function scrollAnimation(delta) {
 
 }
 
-
+/*
 if (elem.addEventListener) {
   elem.addEventListener("touchstart", start);
   if ('onwheel' in document) {
@@ -1010,4 +1010,4 @@ if (elem.addEventListener) {
   }
 } else { 
   elem.attachEvent("onmousewheel", onWheel);
-}
+}*/
