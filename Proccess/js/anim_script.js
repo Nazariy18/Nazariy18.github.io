@@ -1,7 +1,7 @@
-alert("13.33");
+alert("14.12");
 
 var yStart = null;
-var delta = null;
+//var delta = null;
 var yMove = null;
 var elem = document.getElementById('block_animation');
 
