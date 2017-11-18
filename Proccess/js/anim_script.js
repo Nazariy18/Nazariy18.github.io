@@ -1,7 +1,6 @@
-alert("14.12");
+alert("14.16");
 
 var yStart = null;
-//var delta = null;
 var yMove = null;
 var elem = document.getElementById('block_animation');
 
@@ -978,6 +977,9 @@ function move(event) {
 	if(del > 0) 
 	   {alert("up");}
 	else {alert("down");}
+
+  scrollAnimation(del);
+
 }
 
 function onWheel(e) {
