@@ -1,8 +1,3 @@
-var yStart = null;
-//var delta = null;
-var yMove = null;
-//var elem = document.getElementById('block_animation');
-
 var svg = document.getElementById('Process'),
     svgContainer = document.getElementById('svg_container'),
     elem = document.getElementById('block_animation'),
@@ -25,7 +20,8 @@ var numberOfSqueares = 500,
 var pas = true,
     play = true,
     etaps = [14, 38, 70],
-    //delta = 1,
+    yStart = null,
+    yMove = null,
     prevdelta = 1, 
     start = false;
 
