@@ -32,7 +32,7 @@ var pas = true,
 
 
 var Process = anime.timeline({
-  autoplay: false,
+  //autoplay: false,
   update: function(anim) {
     var pr =  Math.round(anim.progress);
     
