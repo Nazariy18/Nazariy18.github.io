@@ -999,7 +999,7 @@ function scrollAnimation(delta) {
 
 }
 
-
+/*
 if (elem.addEventListener) {
   if ('onwheel' in document) {
     elem.addEventListener("wheel", onWheel);
@@ -1009,4 +1009,4 @@ if (elem.addEventListener) {
   }
 } else { 
   elem.attachEvent("onmousewheel", onWheel);
-}
+}*/
