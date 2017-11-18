@@ -1,11 +1,11 @@
-alert("13.12");
+alert("13.18");
 
 var yStart = null;
 var delta = null;
 var yMove = null;
-var elem = document.getElementById('block_animation');
+//var elem = document.getElementById('block_animation');
 
-elem.addEventListener("touchstart", start);
+//elem.addEventListener("touchstart", start);
 /*	
 function start(event) {
 	alert("start1: " + event.targetTouches[0].pageY);
@@ -981,6 +981,8 @@ function scrollAnimation(delta) {
   }
 
 }
+
+elem.addEventListener("touchstart", start);
 
 function start(event) {
 	alert("start1: " + event.targetTouches[0].pageY);
