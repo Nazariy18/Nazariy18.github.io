@@ -953,7 +953,7 @@ function createTimeline() {
     })
 }
 
-/*
+
 setSize();
 
 createSmalCircles(143.5, 70.5, 86.5, 93, 200);
@@ -961,7 +961,7 @@ createSquare(centerX, centerY, sizeRect);
 rects.forEach(animateSquare);
 
 createTimeline();
-
+/*
 function scrollAnimation(delta) {
 
   if (play == true) {
