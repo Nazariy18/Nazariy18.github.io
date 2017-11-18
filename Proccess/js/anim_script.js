@@ -1,4 +1,4 @@
-alert("new");
+alert("new2");
 var yStart = null;
 var yMove = null;
 var elem = document.getElementById('block_animation');
