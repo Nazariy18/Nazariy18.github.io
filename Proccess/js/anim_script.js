@@ -5,22 +5,21 @@ var elem = document.getElementById('block_animation');
 
 //elem.addEventListener("touchstart", start);
 //window.addEventListener("touchmove", move);
-  
+	
 function start(event) {
-  alert("start1: " + event.targetTouches[0].pageY);
-  yStart = event.targetTouches[0].pageY;
-  elem.addEventListener("touchmove", move);
+	alert("start1: " + event.targetTouches[0].pageY);
+	yStart = event.targetTouches[0].pageY;
+	elem.addEventListener("touchmove", move);
 }
 
 function move(event) {
-  alert("move1: " + event.targetTouches[0].pageY);
-  yMove = event.targetTouches[0].pageY;
-  delta = yStart - yMove;
-  if(delta > 0) 
-     {alert("up");}
-  else {alert("down");}
+	alert("move1: " + event.targetTouches[0].pageY);
+	yMove = event.targetTouches[0].pageY;
+	delta = yStart - yMove;
+	if(delta > 0) 
+	   {alert("up");}
+	else {alert("down");}
 }
-
 
 
 var svg = document.getElementById('Process'),
@@ -42,7 +41,8 @@ var numberOfSqueares = 500,
     smallRects = [],
 		colors = ['#DC4726', '#46DF60', '#3682F1', '#FEEF35', '#fff'];
 
-var pas = true,
+//var delta = 1,
+   var pas = true,
     play = true,
     etaps = [14, 38, 70];
 
@@ -963,6 +963,17 @@ createTimeline();
 
 var prevdelta = 1, start = false;
 
+function onWheel(e) {
+
+  e = e || window.event;
+  var del = e.deltaY || e.detail || e.wheelDelta;
+
+  scrollAnimation(del);
+
+  e.preventDefault ? e.preventDefault() : (e.returnValue = false);
+}
+
+
 function scrollAnimation(delta) {
 
   if (play == true) {
@@ -988,22 +999,9 @@ function scrollAnimation(delta) {
 
 }
 
-function onWheel(e) {
-
-  e = e || window.event;
-  var del = e.deltaY || e.detail || e.wheelDelta;
-
-  scrollAnimation(del);
-
-  e.preventDefault ? e.preventDefault() : (e.returnValue = false);
-}
-
-
 
 if (elem.addEventListener) {
-
-    elem.addEventListener("touchstart", start);
-
+  elem.addEventListener("touchstart", start);
   if ('onwheel' in document) {
     elem.addEventListener("wheel", onWheel);
     elem.addEventListener("mousewheel", onWheel);
