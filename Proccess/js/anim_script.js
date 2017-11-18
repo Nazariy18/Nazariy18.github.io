@@ -987,16 +987,19 @@ if (elem.addEventListener) {
   elem.attachEvent("onmousewheel", onWheel);
 }
 
+
 var yStart = null;
 var delta = null;
 var yMove = null;
+var elem = document.getElementById('block_animation');
 
-svgContainer.addEventListener("touchstart", start);
+elem.addEventListener("touchstart", start);
+//window.addEventListener("touchmove", move);
   
 function start(event) {
   alert("start1: " + event.targetTouches[0].pageY);
   yStart = event.targetTouches[0].pageY;
-  svgContainer.addEventListener("touchmove", move);
+  elem.addEventListener("touchmove", move);
 }
 
 function move(event) {
