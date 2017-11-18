@@ -39,6 +39,7 @@ var Process = anime.timeline({
     
       if ((pr == 14 || pr == 38 || pr == 70) && pas == true) {
           //anim.pause();
+	  alert(pr);
           pas = false;
           play = true;
         } else if (pr == 10 || pr == 20 || pr == 50 || pr == 90) {
