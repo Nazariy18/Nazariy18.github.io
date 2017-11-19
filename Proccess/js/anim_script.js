@@ -1,4 +1,4 @@
-alert("19.54");
+alert("20.13");
 var elem = document.getElementById('block_animation');
 
 var svg = document.getElementById('Process'),
@@ -51,14 +51,13 @@ function setSize() {
 
 
   Process
-    //animate lines
       .add({
         targets: '#lines polyline',
         easing: 'linear',
-        strokeDashoffset: [anime.setDashoffset, 0],
+        strokeDashoffset: [500, 0],
         duration: 1000,
         offset: 1000
-      })
+      });
   /*    .add({
         targets: '#lines line',
         easing: 'linear',
