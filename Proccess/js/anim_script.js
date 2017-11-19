@@ -1,4 +1,4 @@
-alert("20.23");
+alert("20.36");
 var elem = document.getElementById('block_animation');
 
 var svg = document.getElementById('Process'),
