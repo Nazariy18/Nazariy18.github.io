@@ -1,4 +1,4 @@
-alert("19.26");
+alert("19.44");
 var elem = document.getElementById('block_animation');
 
 var svg = document.getElementById('Process'),
@@ -70,26 +70,6 @@ function createSquare(x, y, size) {
 			//rects[i].setAttribute("height", "0");
 			rectsGroup.appendChild(rects[i]);
 		}
-}
-
-var animateSquare = function(el, i) {
-  var angle = Math.random() * Math.PI * 2;
-  var endX = Math.cos(angle) * squeryRadius;
-	var endY = Math.sin(angle) * squeryRadius;
-	var delay = duration / numberOfSqueares;
-
-  anime({
-    targets: el,
-    translateX: endX,
-    translateY: endY,
-    r: {value: sizeRect, duration: 10},
-    //width: {value: sizeRect, duration: 10},
-    //height: {value: sizeRect, duration: 10},
-    delay: delay * i,
-    duration: duration,
-    easing: 'linear',
-    loop: true
-  });
 }
 
   Process
