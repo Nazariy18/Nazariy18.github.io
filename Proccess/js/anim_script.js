@@ -54,17 +54,17 @@ function setSize() {
       .add({
         targets: '#lines polyline',
         easing: 'linear',
-        strokeDashoffset: [anime.setDashoffset, 0],
+        strokeDashoffset: [500, 0],
         duration: 1000,
         offset: 1000
-      });
-  /*    .add({
+      })
+      .add({
         targets: '#lines line',
         easing: 'linear',
-        strokeDashoffset: [anime.setDashoffset, 0],
+        strokeDashoffset: [500, 0],
         duration: 500,
         offset: 1800
-      })
+      })/*
     //animate circles 
       .add({
         targets: "#c1",
