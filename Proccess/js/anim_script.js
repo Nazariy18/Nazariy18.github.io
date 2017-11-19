@@ -1,4 +1,4 @@
-alert("20.36");
+alert("20.58");
 var elem = document.getElementById('block_animation');
 
 var svg = document.getElementById('Process'),
@@ -64,7 +64,7 @@ function setSize() {
         strokeDashoffset: [500, 0],
         duration: 500,
         offset: 1800
-      })/*
+      })
     //animate circles 
       .add({
         targets: "#c1",
@@ -160,14 +160,14 @@ function setSize() {
       .add({
         targets: '#lines line',
         easing: 'linear',
-        strokeDashoffset: [0, anime.setDashoffset],
+        strokeDashoffset: [0, 500],
         duration: 500,
         offset: 3300
       })
       .add({
         targets: '#lines polyline',
         easing: 'linear',
-        strokeDashoffset: [0, anime.setDashoffset],
+        strokeDashoffset: [0, 500],
         duration: 1000,
         offset: 3300
       })
@@ -183,7 +183,7 @@ function setSize() {
       .add({
         targets: ['#red_box', '#blue_box'],
         easing: 'linear',
-        strokeDashoffset: [anime.setDashoffset, 0],
+        strokeDashoffset: [500, 0],
         duration: 1500,
         offset: 3300
       })
@@ -656,7 +656,7 @@ function setSize() {
      .add({
         targets: ['#comp path', '#mob path'],
         easing: 'linear',
-        strokeDashoffset: [anime.setDashoffset, 0],
+        strokeDashoffset: [500, 0],
         duration: 1000,
         offset: 17500
       })
@@ -818,7 +818,7 @@ function setSize() {
         opacity: [0, 1],
         duration: 500,
         offset: 20000
-      })*/
+      })
 
 
 
