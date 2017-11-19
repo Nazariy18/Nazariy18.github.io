@@ -1,4 +1,4 @@
-alert("19.44");
+alert("19.54");
 var elem = document.getElementById('block_animation');
 
 var svg = document.getElementById('Process'),
@@ -48,40 +48,9 @@ function setSize() {
   svgContainer.style.marginTop = (0.15 * windowHeight) + 'px'; 
 }
 
-function createSquare(x, y, size) {
-  rectsGroup = document.createElementNS("http://www.w3.org/2000/svg", "g");
-  rectsGroup.setAttribute("id", "rectsGroup");
-  rectsGroup.style.transformOrigin = 'center';
-  svg.appendChild(rectsGroup);
-  rectObl = document.createElementNS("http://www.w3.org/2000/svg", "circle");
-  rectObl.setAttribute("fill", "none");
-  rectObl.setAttribute("cx", x);
-  rectObl.setAttribute("cy", y);
-  rectObl.setAttribute("r", squeryRadius + size);
-  rectsGroup.appendChild(rectObl);
 
-	for(var i = 0; i < numberOfSqueares; i++) {	
-	    rects[i] = document.createElementNS("http://www.w3.org/2000/svg", "circle");
-			rects[i].setAttribute("fill", colors[anime.random(0, 4)]);
-			rects[i].setAttribute("cx", x - size / 2);
-			rects[i].setAttribute("cy", y - size / 2);
-      rects[i].setAttribute("r", "0");
-			//rects[i].setAttribute("width", "0");
-			//rects[i].setAttribute("height", "0");
-			rectsGroup.appendChild(rects[i]);
-		}
-}
 
   Process
-    //rects_etap1
-      .add({
-        targets: rectsGroup,
-        easing: 'linear',
-        translateY: [0,  -60],
-        scale: [1, 0.4],
-        duration: 500,
-        offset: 0
-      })
     //animate lines
       .add({
         targets: '#lines polyline',
@@ -90,7 +59,7 @@ function createSquare(x, y, size) {
         duration: 1000,
         offset: 1000
       })
-      .add({
+  /*    .add({
         targets: '#lines line',
         easing: 'linear',
         strokeDashoffset: [anime.setDashoffset, 0],
@@ -850,7 +819,7 @@ function createSquare(x, y, size) {
         opacity: [0, 1],
         duration: 500,
         offset: 20000
-      })
+      })*/
 
 
 
