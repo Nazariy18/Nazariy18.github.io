@@ -1,4 +1,4 @@
-alert("20.13");
+alert("20.23");
 var elem = document.getElementById('block_animation');
 
 var svg = document.getElementById('Process'),
@@ -54,7 +54,7 @@ function setSize() {
       .add({
         targets: '#lines polyline',
         easing: 'linear',
-        strokeDashoffset: [500, 0],
+        strokeDashoffset: [anime.setDashoffset, 0],
         duration: 1000,
         offset: 1000
       });
