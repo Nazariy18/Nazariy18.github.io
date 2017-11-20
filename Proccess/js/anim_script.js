@@ -1,20 +1,15 @@
-alert("9.58");
-
-var yStart = null;
-var yMove = null;
-var elem = document.getElementById('block_animation');
-
-elem.addEventListener("touchstart", start);
-window.addEventListener('resize', setSize);
-window.addEventListener("orientationchange", setSize);
+alert("final");
 
 var svg = document.getElementById('Process'),
     svgContainer = document.getElementById('svg_container'),
+    elem = document.getElementById('block_animation');
     rectsGroup = null,
     smallRectsGroup = null,
     rectObl = null,
     windowWidth = 0,
-    windowHeight = 0;
+    windowHeight = 0,
+    yStart = null,
+    yMove = null;
 
 var numberOfSqueares = 500,
     squeryRadius = 95,
@@ -931,7 +926,6 @@ function createTimeline() {
     })
 }
 
-
 setSize();
 
 createSmalCircles(143.5, 70.5, 86.5, 93, 200);
@@ -961,14 +955,14 @@ function scrollAnimation(delta) {
 
 }
 
-function start(event) {
+function startTouch(event) {
   yStart = event.targetTouches[0].pageY;
-  elem.addEventListener("touchmove", move);
+  elem.addEventListener("touchmove", moveTouch);
 
   event.preventDefault ? event.preventDefault() : (event.returnValue = false);
 }
 
-function move(event) {
+function moveTouch(event) {
   yMove = event.targetTouches[0].pageY;
   var del = yStart - yMove;
 
@@ -988,6 +982,9 @@ function onWheel(e) {
   e.preventDefault ? e.preventDefault() : (e.returnValue = false);
 }
 
+elem.addEventListener("touchstart", startTouch);
+window.addEventListener('resize', setSize);
+window.addEventListener("orientationchange", setSize);
 
 
 if (elem.addEventListener) {
