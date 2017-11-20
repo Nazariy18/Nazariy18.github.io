@@ -1,4 +1,4 @@
-alert("9.21");
+alert("9.58");
 
 var yStart = null;
 var yMove = null;
@@ -24,17 +24,16 @@ var numberOfSqueares = 500,
     sizeRect = 2.8,
     rects = [],
     smallRects = [],
-    colors = ['#DC4726', '#46DF60', '#3682F1', '#FEEF35', '#fff'];
+    colors = ['#DC4726', '#46DF60', '#3682F1', '#FEEF35', '#fff'],
+    polylinesDashoffset = [128.4, 130, 130, 100];
 
 var pas = true,
     play = true,
-    etaps = [14, 38, 70],
-    prevdelta = 1, 
-    start = false;
+    prevdelta = 1;
 
 
 var Process = anime.timeline({
-  //autoplay: false,
+  autoplay: false,
   update: function(anim) {
     var pr =  Math.round(anim.progress);
     
@@ -156,7 +155,7 @@ function createSmalCircles(x1, y1, x2, y2, count) {
 
 function createTimeline() {
   Process
-  //rects_etap1
+  //circle - step1
     .add({
       targets: rectsGroup,
       easing: 'linear',
@@ -169,14 +168,14 @@ function createTimeline() {
     .add({
       targets: '#lines polyline',
       easing: 'linear',
-      strokeDashoffset: [100, 0],
+      strokeDashoffset: 0,
       duration: 1000,
       offset: 1000
     })
     .add({
       targets: '#lines line',
       easing: 'linear',
-      strokeDashoffset: [100, 0],
+      strokeDashoffset: 0,
       duration: 500,
       offset: 1800
     })
@@ -209,12 +208,11 @@ function createTimeline() {
       duration: 500,
       offset: 2100
     })
-  //animate text ------------------------------ etap 2
+  //animate text ------------------------------ step2
     .add({
       targets: '#discovery',
       easing: 'linear',
       opacity: [1, 0],
-      //top: ['6%', '0%'],
       duration: 1000,
       offset: 2600
     })
@@ -222,7 +220,6 @@ function createTimeline() {
       targets: '#exploring',
       easing: 'linear',
       opacity: [1, 0],
-      //bottom: ['12%', '0%'],
       duration: 1000,
       offset: 2600
     })
@@ -275,18 +272,18 @@ function createTimeline() {
     .add({
       targets: '#lines line',
       easing: 'linear',
-      strokeDashoffset: [0, 100],
+      strokeDashoffset: [0, 30],
       duration: 500,
       offset: 3300
     })
     .add({
       targets: '#lines polyline',
       easing: 'linear',
-      strokeDashoffset: [0, 100],
+      strokeDashoffset: function(el, i) { return polylinesDashoffset[i];},
       duration: 1000,
       offset: 3300
     })
-  //rects_etap1
+  //circle - step1
     .add({
       targets: rectsGroup,
       easing: 'linear',
@@ -298,7 +295,7 @@ function createTimeline() {
     .add({
       targets: ['#red_box', '#blue_box'],
       easing: 'linear',
-      strokeDashoffset: [100, 0],
+      strokeDashoffset:  0,
       duration: 1500,
       offset: 3300
     })
@@ -396,7 +393,7 @@ function createTimeline() {
       duration: 500,
       offset: 6700
     })
-  //icon move out box ------------------------------ etap 3
+  //icon move out box ------------------------------ step3
     .add({
       targets: '#icon',
       easing: 'linear',
@@ -418,7 +415,6 @@ function createTimeline() {
       targets: '#mapping',
       easing: 'linear',
       opacity: [1, 0],
-      //top: ['6%', '0%'],
       duration: 1000,
       offset: 8200
     })
@@ -426,7 +422,6 @@ function createTimeline() {
       targets: '#creating',
       easing: 'linear',
       opacity: [1, 0],
-      //bottom: ['12%', '0%'],
       duration: 1000,
       offset: 8200
     })
@@ -636,7 +631,7 @@ function createTimeline() {
       duration: 1000,
       offset: 13200
     })
-  //animate text 3 --------------------------------- etap 4
+  //animate text 3 --------------------------------- step4
     .add({
       targets: '#iteration',
       easing: 'linear',
@@ -919,7 +914,7 @@ function createTimeline() {
       duration: 10,
       offset: 19000
     })
-  //rects e-1
+  //circle - step1
     .add({
       targets: ['#c_box_red', '#c_red', '#ph_c_box',],
       easing: 'linear',
