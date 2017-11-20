@@ -1,4 +1,4 @@
-alert("9.12");
+alert("9.21");
 
 var yStart = null;
 var yMove = null;
@@ -37,7 +37,7 @@ var Process = anime.timeline({
   //autoplay: false,
   update: function(anim) {
     var pr =  Math.round(anim.progress);
-    /*
+    
       if ((pr == 14 || pr == 38 || pr == 70) && pas == true) {
           anim.pause();
           pas = false;
@@ -49,7 +49,7 @@ var Process = anime.timeline({
       if (pr == 100 || pr == 0) {
         play = true;
         pas = true;
-      }*/
+      }
   }
 });
 
