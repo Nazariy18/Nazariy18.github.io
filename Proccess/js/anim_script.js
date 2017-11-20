@@ -298,7 +298,7 @@ function createTimeline() {
     .add({
       targets: ['#red_box', '#blue_box'],
       easing: 'linear',
-      strokeDashoffset: [anime.setDashoffset, 0],
+      strokeDashoffset: [100, 0],
       duration: 1500,
       offset: 3300
     })
