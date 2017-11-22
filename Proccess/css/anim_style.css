@@ -34,8 +34,6 @@ body {
 	top: 15%;
 	left: 1%;
 
-	width: 70px;
-  height: 14px;
   transform: rotate(-90deg);
   font-family: UntitledSansTest;
   font-size: 18px;
@@ -48,31 +46,21 @@ body {
 #discovery, #mapping, #iteration, #build {
 	position: absolute;
 	right: 10%;
-	
-	content: 'discovery';
-  width: 315px;
-  height: 27px;
+  opacity: 0;
+  top: 0%;
+  
   font-family: UntitledSansTest;
   font-size: 22px;
-  line-height: 1.23;
-  letter-spacing: 0.8px;
   text-align: right;
   color: #222b2d;
-}
-
-#discovery {
-	top: 6%;
-}
-
-#mapping, #iteration, #build  {
-	opacity: 0;
-	top: 0%;
 }
 
 #exploring, #creating, #testing, #once-vetted {
 	position: absolute;
 	left: 8%;
 	right: 8%;
+  bottom: 0%;
+  opacity: 0;
 
 	max-width: 480px;
   font-family: UntitledSansTest;
@@ -84,11 +72,41 @@ body {
   color: #222b2d;
 }
 
-#exploring {
-	bottom: 12%;
-}
 
-#creating, #testing, #once-vetted {
-	bottom: 0%;
-	opacity: 0;
+@media (min-device-width:320px)  { 
+  #discovery, #mapping, #iteration, #build {
+    font-size: 44px;
+  } 
+  #exploring, #creating, #testing, #once-vetted {
+    font-size: 36px;
+    max-width: 79%;
+  }
+  #process {
+    font-size: 36px;
+  }
+}
+@media (min-device-width:481px)  {
+    #discovery, #mapping, #iteration, #build {
+      font-size: 36px;
+    } 
+    #exploring, #creating, #testing, #once-vetted {
+      font-size: 28px;
+      max-width: 79%;
+    }
+    #process {
+      font-size: 28px;
+    }
+ }
+@media (min-device-width:641px)  {  
+  #discovery, #mapping, #iteration, #build {
+    font-size: 22px;
+  }  
+  #exploring, #creating, #testing, #once-vetted {
+    font-size: 18px;
+    max-width: 480px;
+  }
+  #process {
+    font-size: 18px;
+  }
+
 }
