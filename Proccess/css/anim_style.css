@@ -25,7 +25,7 @@ body {
 	margin: 0;
 }
 
-#name tspan, #hobe tspan, #name2 tspan, #hobe2 tspan, #cod_text path {
+#name2 path, #hobe2 path, #cod_text path {
 	opacity: 0;
 }
 
