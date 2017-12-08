@@ -7,6 +7,26 @@
 		body {
 			margin: 0;
 		}
+
+		#left, #right, #home  {
+			position: absolute;
+			background: blue;
+			cursor: pointer;
+			color: white;
+			font: bold 30px Arial, sans-serif; 
+			bottom: 50px;
+		}
+		#left {
+			left: 50px;
+		}
+
+		#right {
+			right: 50px;
+		}
+
+		#home {
+			left: calc(50% - 50px);
+		}
 	</style>
 </head>
 <body>
@@ -16,7 +36,10 @@
 		<svg version="1.1" id="Livello_1" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
 		 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 3414.4 2240"
 		 style="enable-background:new 0 0 3414.4 2240;" xml:space="preserve">
-		<polygon id="path_morph" points="0.3,0 1954.3,0 1952.6,8.5 1951,17.1 1949.3,25.6 1947.6,34.1 1946,42.6 1944.3,51.1 1942.6,59.6 
+		<style type="text/css">
+			.st0{fill:#303030;}
+		</style>
+		<polygon id="path_morph" class="st0" points="0.3,0 1954.3,0 1952.6,8.5 1951,17.1 1949.3,25.6 1947.6,34.1 1946,42.6 1944.3,51.1 1942.6,59.6 
 			1941,68.2 1939.3,76.7 1937.6,85.2 1936,93.7 1934.3,102.2 1932.7,110.7 1931,119.3 1929.3,127.8 1927.7,136.3 1926,144.8 
 			1924.4,153.3 1922.7,161.8 1921.1,170.4 1919.4,178.9 1917.8,187.4 1916.1,195.9 1914.5,204.4 1912.8,213 1911.2,221.5 1909.6,230 
 			1907.9,238.5 1906.3,247 1904.7,255.5 1903.1,264.1 1901.5,272.6 1899.9,281.1 1898.3,289.6 1896.8,298.1 1895.5,306.6 
@@ -49,6 +72,11 @@
 
 
 	</div>
+
+	<div id="left" onclick="Morph(points3, points32, points33);">LEFT</div>
+	<div id="right" onclick="Morph(points2, points22, points23);">RIGHT</div>
+
+	<div id="home" onclick="morphHome();">HOME</div>
 
 <script src="js/anime.min.js"></script>
 <script src="js/anim_script.js"></script>
