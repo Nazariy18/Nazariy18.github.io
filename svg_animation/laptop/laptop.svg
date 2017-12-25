@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="242 96.9 1080 648" style="enable-background:new 242 96.9 1080 648;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#FFFFFF;stroke-width:3;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10;}
+</style>
+<g id="img">
+	
+		<image style="overflow:visible; enable-background:new; " width="1080" height="648" xlink:href="laptop.png"  transform="matrix(1 0 0 1 242 96.89)">
+	</image>
+</g>
+<g id="lines">
+	<path style="stroke-dasharray: 2200; stroke-dashoffset: 2200;" class="st0" d="M441.8,190.9H1118v422.8H441.8V190.9z"/>
+	<path style="stroke-dasharray: 2400; stroke-dashoffset: 2400;" class="st0" d="M441.8,162.7c0,0-15.6-0.5-20.5,18.6v453c0,0-0.8,8.9,3.9,9.6h710.4c0,0,2.4-3.7,2.6-8.7V181
+		c0,0-5.1-16.8-20.3-18.4L441.8,162.7z"/>
+	<path style="stroke-dasharray: 20; stroke-dashoffset: 20;" class="st1" d="M783,178.8c0,1.8-1.4,3.2-3.2,3.2s-3.2-1.4-3.2-3.2c0-1.8,1.4-3.2,3.2-3.2S783,177,783,178.8z"/>
+	<path style="stroke-dasharray: 750; stroke-dashoffset: 750;" class="st0" d="M421.4,620.2c1.4,8.8,8.8,12.6,8.8,12.6h698.4c7.5-1.2,9.8-12.6,9.8-12.6"/>
+	<path style="stroke-dasharray: 1850; stroke-dashoffset: 1850;" class="st0" d="M1221.3,643.9H335.8v16.1c0,0,15.7,8.7,28,9.8H1195c0,0,23.3-4.8,26.3-10.2V643.9z"/>
+	<path style="stroke-dasharray: 900; stroke-dashoffset: 900;" class="st0" d="M335.8,659.3h885.5"/>
+	<path style="stroke-dasharray: 140; stroke-dashoffset: 140;" class="st0" d="M716.4,643.8c0,0,1.7,7.9,6.6,9.8h110.4c0,0,7-2.6,8.2-9.8"/>
+</g>
+
+<style>
+svg {
+	background-color: #f3726d;
+}
+
+@keyframes dash {
+    80% {
+       stroke-dashoffset: 0;
+       opacity: 1;
+    }
+    100% {
+    	 stroke-dashoffset: 0;
+    	 opacity: 0;
+    }
+}
+
+@keyframes visible {
+    to {
+       opacity: 1;
+    }
+}
+
+path {
+  animation: dash 2.5s linear forwards;
+}
+
+#img {
+	opacity: 0;
+	animation: visible .5s linear 2s forwards;
+}
+
+
+</style>
+
+</svg>
