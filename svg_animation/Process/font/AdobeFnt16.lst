@@ -1,0 +1,49 @@
+%!Adobe-FontList 1.16
+%Locale:0x419
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:UntitledSansTest-Bold
+FamilyName:Untitled Sans Test
+StyleName:Bold
+FullName:Untitled Sans Test Bold
+MenuName:Untitled Sans Test
+StyleBits:2
+WritingScript:Roman
+OutlineFileName:D:\UpWork\SVG Animation\Proccess\Font\UntitledSansTest-Bold.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+FileLength:18496
+FileModTime:1489141890
+WeightClass:700
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Untitled Sans Test Bold
+NameArray:0,Win,1,Untitled Sans Test
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:UntitledSansTest-Regular
+FamilyName:Untitled Sans Test
+StyleName:Regular
+FullName:Untitled Sans Test Regular
+MenuName:Untitled Sans Test
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:D:\UpWork\SVG Animation\Proccess\Font\UntitledSansTest-Regular.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+FileLength:18172
+FileModTime:1489141890
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Untitled Sans Test Regular
+NameArray:0,Win,1,Untitled Sans Test
+%EndFont
+
