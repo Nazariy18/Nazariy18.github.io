@@ -1,0 +1,54 @@
+#d0 {
+	opacity: 1;
+	animation: anim 3s steps(500, end) 0s infinite;
+}
+
+
+#d1 {
+	opacity: 1;
+	animation: anim_circle 3s linear 0s infinite;
+}
+#d2 {
+	opacity: 0;
+	animation: anim_circle 3s linear 0.24s infinite;
+}
+#d3 {
+	opacity: 0;
+	animation: anim_circle 3s linear 0.48s infinite;
+}
+#d4 {
+	opacity: 0;
+	animation: anim_circle 3s linear 0.72s infinite;
+}
+#d5 {
+	opacity: 0;
+	animation: anim_circle 3s linear 0.96s infinite;
+}
+
+
+@keyframes anim_circle {
+	0% {opacity: 0;}
+	8% {opacity: 0;}
+	9% {opacity: 1;}
+	48% {opacity: 1;}
+	49% {opacity: 0;}
+	100% {opacity: 0;}
+}
+
+@keyframes anim_circle {
+	0% {opacity: 1;}
+	40% {opacity: 1;}
+	40.5% {opacity: 0;}
+	100% {opacity: 0;}
+}
+
+@keyframes anim {
+	0% {transform: rotate(0deg); 
+			transform-origin: 50% 100%;}
+	40% {transform: rotate(360deg); 
+				transform-origin: 50% 100%;}
+	80% {transform: rotate(720deg); 
+				transform-origin: 50% 100%;}
+	100% {transform: rotate(720deg); 
+				transform-origin: 50% 100%;}
+	}
