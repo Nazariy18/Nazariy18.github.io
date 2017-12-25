@@ -1,0 +1,124 @@
+@font-face {
+    font-family: UntitledSansTest;
+    src: url("../font/UntitledSansTest-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: UntitledSansTest;
+    font-weight: bold;
+    src: url("../font/UntitledSansTest-Bold.otf") format("opentype");
+}
+
+body {
+	margin: 0;
+}
+
+#block_animation {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #EAF0EE;
+	text-align: center;
+}
+
+#svg_container {
+	margin: 0;
+}
+
+#name2 path, #hobe2 path, #cod_text path {
+	opacity: 0;
+}
+
+#scrollDown {
+  position: absolute;
+  width: 200px;
+  top: 5%;
+  left: calc(50% - 100px);
+
+  font-family: UntitledSansTest;
+  font-size: 18px;
+  text-align: center;
+  color: #222b2d;
+}
+
+#process {
+	position: absolute;
+	top: 15%;
+	left: 1%;
+
+  transform: rotate(-90deg);
+  font-family: UntitledSansTest;
+  font-size: 18px;
+  line-height: 0.78;
+  letter-spacing: 0.4px;
+  text-align: left;
+  color: #222b2d;
+}
+
+#discovery, #mapping, #iteration, #build {
+	position: absolute;
+	right: 10%;
+  opacity: 0;
+  top: 0%;
+  
+  font-family: UntitledSansTest;
+  font-size: 22px;
+  text-align: right;
+  color: #222b2d;
+}
+
+#exploring, #creating, #testing, #once-vetted {
+	position: absolute;
+	left: 8%;
+	right: 8%;
+  bottom: 0%;
+  opacity: 0;
+
+	max-width: 480px;
+  font-family: UntitledSansTest;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.83;
+  letter-spacing: 0.6px;
+  text-align: left;
+  color: #222b2d;
+}
+
+
+@media (min-device-width:320px)  { 
+  #discovery, #mapping, #iteration, #build {
+    font-size: 44px;
+  } 
+  #exploring, #creating, #testing, #once-vetted {
+    font-size: 36px;
+    max-width: 79%;
+  }
+  #process {
+    font-size: 36px;
+  }
+}
+@media (min-device-width:481px)  {
+    #discovery, #mapping, #iteration, #build {
+      font-size: 36px;
+    } 
+    #exploring, #creating, #testing, #once-vetted {
+      font-size: 28px;
+      max-width: 79%;
+    }
+    #process {
+      font-size: 28px;
+    }
+ }
+@media (min-device-width:641px)  {  
+  #discovery, #mapping, #iteration, #build {
+    font-size: 22px;
+  }  
+  #exploring, #creating, #testing, #once-vetted {
+    font-size: 18px;
+    max-width: 480px;
+  }
+  #process {
+    font-size: 18px;
+  }
+
+}
