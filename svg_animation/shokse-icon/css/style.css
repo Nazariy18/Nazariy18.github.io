@@ -1,0 +1,366 @@
+body {
+    text-align: center;
+}
+
+#first-wrapper, #second-wrapper {
+    display: inline-block;
+}
+
+#agile-icon-wrapper, #expedient-icon-wrapper, #reliable-icon-wrapper {
+    width: 150px;
+    margin: 40px;
+    padding: 10px;
+    display: block;
+    border: 2px solid #eee;
+}
+
+#android-wrapper, #ios-wrapper, #data-analytics-wrapper, #ui-ux-wrapper, #visual-computing-wrapper, #web-development-wrapper {
+    width: 100px;
+    margin: 10px;
+    padding: 10px;
+    display: block;
+    border: 2px solid #eee;
+}
+
+/* agile-icon animation start */
+
+#agile-icon:hover #red-lines > * {
+    stroke-dasharray: 10.02;
+    stroke-dashoffset: 10.02;
+    animation: dash 0.5s ease-in forwards;
+    animation-delay: 0.3s
+}
+
+#agile-icon:hover #main-arrow {
+    stroke-dasharray: 10;
+    stroke-dashoffset: 10;
+    animation: dash 1s ease-in-out forwards;
+}
+
+#agile-icon:hover #main-arrowhead > * {
+    stroke-dasharray: 10.01;
+    stroke-dashoffset: 10.01;
+    animation: dash 0.5s ease forwards;
+    animation-delay: 0.5s;
+}
+
+#agile-icon:hover #second-arrow {
+    stroke-dasharray: 10;
+    stroke-dashoffset: 10;
+    animation: dash 0.5s ease-in-out forwards;
+}
+
+#agile-icon:hover #second-arrowhead > * {
+    stroke-dasharray: 10;
+    stroke-dashoffset: 10;
+    animation: dash 0.4s ease forwards;
+    animation-delay: 0.5s;
+}
+
+/* agile-icon animation end */
+
+/* expedient-icon animation start */
+
+#expedient-icon:hover #red-lines > * {
+    stroke-dasharray: 10.02;
+    stroke-dashoffset: 10.02;
+    animation: dash 0.5s linear forwards;
+    animation-delay: 0.3s;
+}
+
+#expedient-icon:hover #arrow-line {
+    stroke-dasharray: 10;
+    stroke-dashoffset: 10;
+    animation: dash 0.7s ease-out forwards;
+}
+
+#expedient-icon:hover #arrow-head > * {
+    stroke-dasharray: 10.01;
+    stroke-dashoffset: 10.01;
+    animation: dash 0.4s linear forwards;
+    animation-delay: 0.7s;
+}
+
+/* expedient-icon animation end */
+
+/* reliable-icon animation start */
+
+#reliable-icon:hover #red-lines > * {
+    stroke-dasharray: 10.03;
+    stroke-dashoffset: 10.03;
+    animation: dash 0.5s ease-in forwards;
+    animation-delay: 0.5s;
+}
+
+#reliable-icon:hover #chain-first {
+    stroke-dasharray: 10;
+    stroke-dashoffset: 10;
+    animation: dash 0.3s ease-in-out forwards;
+}
+
+#reliable-icon:hover #chain-second {
+    stroke-dasharray: 10.03;
+    stroke-dashoffset: 10.03;
+    animation: dash 0.3s ease-in-out forwards;
+    animation-delay: 0.3s;
+}
+
+#reliable-icon:hover #chain-third {
+    stroke-dasharray: 10.03;
+    stroke-dashoffset: 10.03;
+    animation: dash 0.3s ease-in-out forwards;
+    animation-delay: 0.6s;
+}
+
+/* reliable-icon animation end */
+
+
+/* android development animation start */
+
+#android-development:hover #android {
+    opacity: 0;
+    animation: fade-in 1s ease-in-out forwards;
+    animation-delay: 0.5s;
+}
+
+#android-development:hover #left-bracket {
+    animation: left-bracket 1s ease-out forwards;
+}
+
+#android-development:hover #right-bracket {
+    animation: right-bracket 1s ease-out forwards;
+}
+
+/* android development animation end */
+
+/* IOS development animation start */
+
+#IOS-development:hover #apple {
+    opacity: 0;
+    animation: fade-in 1s ease-in-out forwards;
+    animation-delay: 0.5s;
+}
+
+#IOS-development:hover #left-bracket {
+    animation: left-bracket 1s ease-out forwards;
+}
+
+#IOS-development:hover #right-bracket {
+    animation: right-bracket 1s ease-out forwards;
+}
+
+/* IOS development animation end */
+
+/* data-analytics animation start */
+
+#data-analytics #circle-diagram *, #sector-diagram * {
+    transition: all 0.3s ease;
+}
+
+#data-analytics:hover #circle-diagram #blue {
+    transform: translate(-6px, 9px);
+    -ms-transform: translate(-6px, 9px);
+    -webkit-transform: translate(-6px, 9px);
+    -o-transform: translate(-6px, 9px);
+    -moz-transform: translate(-6px, 9px);
+}
+
+#data-analytics:hover #sector-diagram #blue {
+    transform: translate(-6px, 0px);
+    -ms-transform: translate(-6px, 0px);
+    -webkit-transform: translate(-6px, 0px);
+    -o-transform: translate(-6px, 0px);
+    -moz-transform: translate(-6px, 0px);
+}
+
+#data-analytics:hover #sector-diagram #red {
+    transform: translate(-7px, 17px);
+    -ms-transform: translate(-7px, 17px);
+    -webkit-transform: translate(-7px, 17px);
+    -o-transform: translate(-7px, 17px);
+    -moz-transform: translate(-7px, 17px);
+}
+
+#data-analytics:hover #text > * {
+    stroke-dasharray: 10;
+    stroke-dashoffset: 10;
+    animation: dash 0.3s ease-in-out forwards;
+}
+
+/* data-analytics animation end */
+
+/* UI-UX animation start */
+
+#UI-UX:hover #hand {
+    animation: hand 0.5s ease-in-out forwards;
+}
+
+#UI-UX:hover #arrow {
+    animation: arrow 0.5s ease-in-out forwards;
+    animation-delay: 0.5s;
+}
+
+/* UI-UX animation end */
+
+
+/* visual-computing animation start */
+
+#visual-computing:hover #red {
+    opacity: 0;
+    animation: fade-in 0.5s ease-in-out forwards;
+    animation-delay: 0s;
+}
+
+#visual-computing:hover #grey {
+    opacity: 0;
+    animation: fade-in 0.5s ease-in-out forwards;
+    animation-delay: 0.5s;
+}
+
+#visual-computing:hover #blue {
+    opacity: 0;
+    animation: fade-in 0.5s ease-in-out forwards;
+    animation-delay: 1s;
+}
+
+#visual-computing:hover #connect-lines {
+    stroke-dasharray: 10;
+    stroke-dashoffset: 10;
+    animation: dash 0.5s ease-in-out forwards;
+    animation-delay: 1.5s;
+}
+
+#visual-computing:hover #arrow-line {
+    stroke-dasharray: 10;
+    stroke-dashoffset: 10;
+    animation: dash 0.5s ease-in-out forwards;
+    animation-delay: 2s;
+}
+
+#visual-computing:hover #arrow-head > * {
+    stroke-dasharray: 10;
+    stroke-dashoffset: 10;
+    animation: dash 0.5s ease-in-out forwards;
+    animation-delay: 2.5s;
+}
+
+/* visual-computing animation end */
+
+/* web-development animation start */
+
+#web-development:hover #first {
+    opacity: 0;
+    animation: fade-in 0.5s ease-in-out forwards;
+    animation-delay: 0s;
+}
+
+#web-development:hover #second {
+    opacity: 0;
+    animation: fade-in 0.5s ease-in-out forwards;
+    animation-delay: 0.5s;
+}
+
+#web-development:hover #third {
+    opacity: 0;
+    animation: fade-in 0.5s ease-in-out forwards;
+    animation-delay: 1s;
+}
+
+#web-development:hover #blocks {
+    opacity: 0;
+    transform: translate(100px, 0px);
+    animation: return 1s ease forwards;
+    animation-delay: 1.5s;
+}
+
+#web-development:hover #text > * {
+    stroke-dasharray: 10;
+    stroke-dashoffset: 10;
+    animation: dash 1s ease forwards;
+    animation-delay: 2s;
+}
+
+
+/* web-development animation end */
+
+@keyframes return {
+    to {
+        transform: translate(0px, 0px);
+        opacity: 1;
+    }
+}
+
+@keyframes hand {
+    50% {
+        transform: translate(7px, -9px);
+        -ms-transform: translate(7px, -9px);
+        -webkit-transform: translate(7px, -9px);
+        -o-transform: translate(7px, -9px);
+        -moz-transform: translate(7px, -9px);
+    }
+    100% {
+        transform: translate(0px, 0px);
+        -ms-transform: translate(0px, 0px);
+        -webkit-transform: translate(0px, 0px);
+        -o-transform: translate(0px, 0px);
+        -moz-transform: translate(0px, 0px);
+    }
+}
+
+@keyframes arrow {
+    50% {
+        transform: translate(-7px, -9px);
+        -ms-transform: translate(-7px, -9px);
+        -webkit-transform: translate(-7px, -9px);
+        -o-transform: translate(-7px, -9px);
+        -moz-transform: translate(-7px, -9px);
+    }
+    100% {
+        transform: translate(0px, 0px);
+        -ms-transform: translate(0px, 0px);
+        -webkit-transform: translate(0px, 0px);
+        -o-transform: translate(0px, 0px);
+        -moz-transform: translate(0px, 0px);
+    }
+}
+
+@keyframes dash {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes left-bracket {
+    from {
+        transform: translateX(15px);
+        -ms-transform: translateX(15px);
+        -webkit-transform: translateX(15px);
+        -o-transform: translateX(15px);
+        -moz-transform: translateX(15px);
+    }
+    to {
+        transform: translateX(0px);
+        -ms-transform: translateX(0px);
+        -webkit-transform: translateX(0px);
+        -o-transform: translateX(0px);
+        -moz-transform: translateX(0px);
+    }
+}
+
+@keyframes right-bracket {
+    from {
+        transform: translateX(-15px);
+    }
+    to {
+        transform: translateX(0px);
+    }
+}
