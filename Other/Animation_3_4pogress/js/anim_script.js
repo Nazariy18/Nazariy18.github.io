@@ -13,20 +13,20 @@ mobProgress
       targets: '#path_circle025',
       easing: 'linear',
       strokeDashoffset: [anime.setDashoffset, 0],
-      duration: 100
+      duration: 200
     })
     .add({
       targets: '#path_circle025_grad',
       easing: 'linear',
       x2: [45, 22.5],
-      duration: 100,
+      duration: 200,
       offset: 0
     })
     .add({
       targets: '#path_circle05',
       easing: 'linear',
       strokeDashoffset: [anime.setDashoffset, 0],
-      duration: 200
+      duration: 400
     })
     .add({
       targets: '#progress_line',
@@ -40,7 +40,7 @@ mobProgress
       easing: 'linear',
       x2: [20.5, 24 + lenProgress],
       duration: 1000,
-      offset: 300
+      offset: 600
     })
     .add({
       targets: '#pShad',
@@ -48,7 +48,7 @@ mobProgress
       opacity: {value: 1, duration: 1},
       x2: [22, 22.5 + lenProgress],
       duration: 1000,
-      offset: 300
+      offset: 600
     });
 
  window.onload = function() {
