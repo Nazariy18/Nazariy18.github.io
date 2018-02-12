@@ -1,0 +1,810 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="hippo-4b" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1600 800" style="enable-background:new 0 0 1600 800;" xml:space="preserve">
+<style type="text/css">
+	.st0{filter:url(#Adobe_OpacityMaskFilter);}
+	.st1{fill:#000;}
+	.st2{mask:url(#hippo_1_);}
+	.st3{fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st4{fill:none;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+</style>
+<defs>
+	<filter id="Adobe_OpacityMaskFilter" filterUnits="userSpaceOnUse" x="261.3" y="65.6" width="1120.5" height="690.9">
+		<feColorMatrix type="matrix" values="-1 0 0 0 1  0 -1 0 0 1  0 0 -1 0 1  0 0 0 1 0" color-interpolation-filters="sRGB" result="source"></feColorMatrix>
+		<feFlood style="flood-color:white;flood-opacity:1" result="back"></feFlood>
+		<feBlend in="source" in2="back" mode="normal"></feBlend>
+	</filter>
+</defs>
+<mask maskUnits="userSpaceOnUse" x="261.3" y="65.6" width="1120.5" height="690.9" id="hippo_1_">
+	<g class="st0">
+		<path id="right-hand-mask" class="st1" d="M1221.7,300.5c-4.5,0.5-3.2-4-0.9-5.2c0,0-10.4,5.8-11.9,3.3s12.1-9,12.1-9
+			s-32.3,17.6-34.4,13.3c-2.2-4.3,22.5-21.5,45.8-28.8C1255.7,266.7,1226.2,300,1221.7,300.5z"></path>
+		<path id="left-hand-mask" class="st1" d="M384.6,262.9c-2.6,0.7-10.8-6-24.4,0.9c-2.8,1.4,0,3.2,0,3.2c2.4,0.5,7.1-3.4,12.4-1.5
+			c5.3,1.9,9.4,3.8,8.4,4.8c-0.9,1-3.5,0.8-11.3,0.7c-3.6,0-11.2,7.2-16.7,10c-5.5,2.8-9.7,7.8-17.7,7.3l24.8-45.5
+			c9.1-0.1,26.2,4.6,25,8.6c-0.1,0.6-0.5,1-0.9,1.2c0,0,2.9,4,0.8,5.3c-0.9,0.5-2.3-0.1-4.2-0.9C381.2,257.3,388.1,262,384.6,262.9z"></path>
+	</g>
+</mask>
+<g id="hippo" class="st2">
+	<g id="hippo-shadow">
+		<path class="st3" d="M542.2,720.6l58.2-14.1" stroke-dashoffset="59.883644104003906" stroke-dasharray="59.883644104003906"></path>
+		<path class="st3" d="M548.5,743c0,0,16.9-12.4,66-24.7" stroke-dashoffset="70.7365493774414" stroke-dasharray="70.7365493774414"></path>
+		<path class="st3" d="M645.8,723.9c0,0-54,18.2-60.1,20.4c-6.2,2.2-11.8,1.5-11.8,1.5" stroke-dashoffset="75.45166015625" stroke-dasharray="75.45166015625"></path>
+		<path class="st3" d="M729.5,708.6c-14.9,7.3-38.3,9.9-38.3,9.9" stroke-dashoffset="39.715476989746094" stroke-dasharray="39.715476989746094"></path>
+		<path class="st3" d="M739.6,718.5c0,0,0.1,3.4-23,7.5s-65.9,20-70.8,22s-9.3,1.5-9.3,1.5" stroke-dashoffset="108.30014038085938" stroke-dasharray="108.30014038085938"></path>
+		<path class="st3" d="M758.8,726.8c-5.8,4.3-22.3,7.2-31.3,9.2s-57.3,19.4-57.3,19.4" stroke-dashoffset="93.29444885253906" stroke-dasharray="93.29444885253906"></path>
+		<path class="st3" d="M752.5,745c-10.8,6.3-20.8,4.6-20.8,4.6" stroke-dashoffset="21.667556762695312" stroke-dasharray="21.667556762695312"></path>
+		<path class="st3" d="M632,752.3l-67.8-33.8" stroke-dashoffset="75.75801849365234" stroke-dasharray="75.75801849365234"></path>
+		<path class="st3" d="M592.9,717.1c2.3-0.4,65,30.1,65,30.1" stroke-dashoffset="71.67009735107422" stroke-dasharray="71.67009735107422"></path>
+		<path class="st3" d="M698.8,754.7l-57-31.3" stroke-dashoffset="65.02837371826172" stroke-dasharray="65.02837371826172"></path>
+		<path class="st3" d="M596.9,752.3l80.3-28.4 M714.5,743l-36.2-18.5" stroke-dashoffset="125.82752990722656" stroke-dasharray="125.82752990722656"></path>
+		<path class="st3" d="M698.2,715.1l27.3,14.1" stroke-dashoffset="30.72618865966797" stroke-dasharray="30.72618865966797"></path>
+		<path class="st3" d="M1059.1,693.6c0,0,12.9-7.6,26.8-10.8" stroke-dashoffset="28.98737907409668" stroke-dasharray="28.98737907409668"></path>
+		<path class="st3" d="M1099.7,688.6c-23,12.2-45.5,18.2-45.5,18.2" stroke-dashoffset="49.090576171875" stroke-dasharray="49.090576171875"></path>
+		<path class="st3" d="M1060.1,712.9c0,0,22.4-11.1,50.3-19.3" stroke-dashoffset="53.93056106567383" stroke-dasharray="53.93056106567383"></path>
+		<path class="st3" d="M1114.2,704.9c-5.7,3.4-46.2,22.6-46.2,22.6" stroke-dashoffset="51.43653106689453" stroke-dasharray="51.43653106689453"></path>
+		<path class="st3" d="M1133.6,709.6c0,0-27.6,12.4-35.1,15.6s-17.7,6.4-17.7,6.4" stroke-dashoffset="57.23849105834961" stroke-dasharray="57.23849105834961"></path>
+		<path class="st3" d="M1167.4,711.3c0,0-51.8,24.3-59.5,27.9s-10.6,3.9-10.6,3.9" stroke-dashoffset="77.03877258300781" stroke-dasharray="77.03877258300781"></path>
+		<path class="st3" d="M1120.6,744.4l73.5-34.5" stroke-dashoffset="81.1942138671875" stroke-dasharray="81.1942138671875"></path>
+		<path class="st3" d="M1165,736.7l55.6-22.7" stroke-dashoffset="60.05537033081055" stroke-dasharray="60.05537033081055"></path>
+		<path class="st3" d="M1226.7,720.6c-18.3,7.5-35.4,11-35.4,11" stroke-dashoffset="37.11345672607422" stroke-dasharray="37.11345672607422"></path>
+		<path class="st3" d="M1180.2,711l34.7,23" stroke-dashoffset="41.63035583496094" stroke-dasharray="41.63035583496094"></path>
+		<path class="st3" d="M1182.7,732.7l-29.4-21.6" stroke-dashoffset="36.481781005859375" stroke-dasharray="36.481781005859375"></path>
+		<path class="st3" d="M1160.1,732.7l-32.2-23.3" stroke-dashoffset="39.74576950073242" stroke-dasharray="39.74576950073242"></path>
+		<path class="st3" d="M1144.8,739.3l-66.6-45.8" stroke-dashoffset="80.82818603515625" stroke-dasharray="80.82818603515625"></path>
+		<path class="st3" d="M1116.5,736.7l-47.5-29.4" stroke-dashoffset="55.862430572509766" stroke-dasharray="55.862430572509766"></path>
+	</g>
+	<g id="hippo-bold">
+		<path class="st4" d="M557.6,165.3c0,0,20.5,3.4,25.4,5.9s5.9,8.5,8.4,10.1c2.5,1.5,33.8,12.9,53.2,25.9
+			c19.4,13,42.6,36.9,42.6,36.9s16.8,2.3,24.3,5.6c7.4,3.3,12.1,6.8,15.3,7.3s9.9,0.5,46.8,9.6c36.8,9.1,68.7,12.9,108.7,13.1
+			c40,0.2,64.7-2.3,74.1-3.8s66.3-11.9,111-11.1s95.3,10.1,118.4,16.3c11.8,4,49.3,17,95.1,50.5s51.8,47,54.8,51s9.8,29.9,11,35.3
+			c1.2,5.4,10.8,41.5-3.8,72.8c-5.3,12.7-16.7,27.8-19.8,33.5s-18,19.8-30.8,27.9s-17.8,11.5-18.5,13.8c-0.7,2.3,0.6,16.5-0.8,22.6
+			s-2.8,19.5-2.6,26.5s-1.3,23-12.4,38s-15.1,17.9-19,25.9s-9.8,19-13.5,21.8c-5.7,4.7-20,10.7-64.5,11.2s-52.7-9.7-52.7-13.4
+			s9.9-14,19.3-17.1s9.1-6.3,12.3-6.3c3.2,0,18.5,3.2,26.6-6.3s20.4-37.8,18.3-40.1s-7.6-8.9-13.4-11.7s-12.5-6.8-14.4-8.6
+			s-8.9-11.8-22.9-14.1s-29.5,9.2-51.7,14.3c-12.2,2.7-17.3,7.5-24.8,8.8c-7.5,1.3-20.2,2.4-34.6,5.8c-14.4,3.4-28,6.8-41.5,6.8
+			s-28.3-1.5-47.8-1.5c-19.6,0-72.4-7.3-80-8.6s-23.4-9.8-44.3-12.3s-50.4-6.2-61.6-3.2s-15.3,30.7-16.9,42s-1,14.1-0.4,15.3
+			s5.2,4.4,5.5,13.9s-7.2,13.7-26.1,26.9c-4.6,3.2-21.2,20.5-26.9,21.8s-36.7,0.6-40.9-0.6c-4.2-1.2-11.1-5.8-15.1-5.9
+			s-4.8,2.2-7.7,2.2s-8.9-4.1-11.5-4.6s-7.8,0-8.1-2.4s2.3-13,18.4-23.2c16.1-10.2,19.9-13.6,28.5-22.7s10.5-16.4,9.4-29.6
+			s-1.9-24.1-3.3-26.5c-1.4-2.4-10.5-11.2-18.5-16.5s-27.9-21.6-34.2-24.8s-29.4-15.4-38.3-22.8s-29.8-34.1-40.3-51.5
+			c-10.5-17.3-13.7-22.2-15-26.5s-2.4-20.9-5.2-29.5c-2.8-8.6-10.7-26.3-24-41.2s-19.1-23.5-37.3-27.4s-36.6,0.1-43.4,2.3
+			s-23.5,11.1-56.5,4.8c-16.7-2.8-22.8-2.6-46.7,2.8c-9.9,2.3-17.7,3.8-26.8-5.8s0-28.4,11.6-30.3c6-0.9,10.1-11.5,18.1-16.6
+			s28.2-13.2,30.9-18.2s5.8-14.6,9.7-19.7s28.6-18.7,43.1-45.7s21-41.2,14.6-53.8c-5.3-9.7-18.1-13.3-24.2-13.3
+			c-6.1,0-16.2,1.2-20.7-2.3s-9.3-5.2-15.6-5.3s-12.1-9-15-10.9s-9.6-1.4-14.9-11.1c-0.5-1-1.8-4.1-1.8-4.1s-4.3-11.5,12.3-24.5
+			s20.4-27.1,24.9-32.4c4.5-5.3,8.7-4.7,11.5-6.8c2.8-2.2,8.2-15,24-12.7c15.4,2.8,102.3,62.7,102.3,62.7s1.6,1.7,3.1,1.9
+			s6.3-2.4,14.1,2.3s11.9,11.5,11.9,11.5l33.6,13.5" stroke-dashoffset="3431.674072265625" stroke-dasharray="3431.674072265625"></path>
+		<path class="st4" d="M533,213.8c0,0-1.5-20.3,5.3-37s8.3-28,14.3-27.8s4.3,18.5,6,21.5s6.5,9.4-1.4,18.5" stroke-dashoffset="113.85340881347656" stroke-dasharray="113.85340881347656"></path>
+		<path class="st4" d="M604.2,701.5c0,0-6.4-4-14.1-5.2s-16.5-2.1-17.1-6.8s12.5-11.3,15.6-13.8c3.1-2.5,15.1-16.5,22-19.7
+			c6.8-3.3,19-5,21.2-9s1.2-10.5,1.1-14s3-8.4,3-13.8c0.3-8.3-17.3-21.1-11.4-32.1" stroke-dashoffset="172.79249572753906" stroke-dasharray="172.79249572753906"></path>
+		<path class="st4" d="M473.1,152.7c0,0-0.3,0.7-1.4,0.3s-1.4-1.1-1.1-1.8s0.8-0.3,2.1,0.3c1.4,0.5,1.7,0.8,1.5,2.1
+			s-1.9,1.6-4.3,0.4c-1-1.2-0.5-1.1-1.3-3.4c-0.8-2.3,1.8-1.3,3-1.2s1.8,0.6,3.2,1.8s1,0.9,0.6,3c-0.4,2.1-2.1,2.1-3.9,2.3
+			s-2.8-1.4-4.4-4c-1.6-2.6,3.8-5.9,3.8-5.9" stroke-dashoffset="48.52476501464844" stroke-dasharray="48.52476501464844"></path>
+		<path class="st4" d="M1142.7,596.8c-0.9,3.9,1.4,7.6,4.5,12.5s2.3,18.4,2.4,21.6s1.3,16.1-7.1,20.8c-8.4,4.7-39.4,10.8-46.8,13.7
+			c-7.4,2.8-14.5,11-13.5,14s11.5,7.2,16.1,8.8s14.4,2.9,14.4,2.9" stroke-dashoffset="161.32041931152344" stroke-dasharray="161.32041931152344"></path>
+		<path class="st4" d="M1342.6,402.9c0,0,5.6,7.4,8.7,11.5c3.1,4.1,7.5,26.4,10.8,32c3.3,5.6,6.5,17.9,5.2,34.7
+			c-2.3,30.6,5.8,41.5,8.9,46.9s5.7,10.3,2.8,10.3c-13.8-0.5-31-28.4-33.5-31.9s-7.2-7-7.2-7" stroke-dashoffset="202.0560302734375" stroke-dasharray="202.0560302734375"></path>
+	</g>
+	<g id="hippo-thin">
+		<path class="st3" d="M319.7,159.3c0,0,9.5,4.3,17.5,4.3s37.1,0.4,40.3,0.9s22.8,6.9,17.1,26" stroke-dashoffset="93.85723876953125" stroke-dasharray="93.85723876953125"></path>
+		<path class="st3" d="M363.8,81.1c0,0-6.8-0.2-9.9-4.4" stroke-dashoffset="11.164247512817383" stroke-dasharray="11.164247512817383"></path>
+		<path class="st3" d="M366,82.5l3.1,2.1" stroke-dashoffset="3.744333267211914" stroke-dasharray="3.744333267211914"></path>
+		<path class="st3" d="M349.7,107.1c0,0,12,0.2,21,1.6" stroke-dashoffset="21.074180603027344" stroke-dasharray="21.074180603027344"></path>
+		<path class="st3" d="M367.8,112.8c0,0,13.6-0.1,18,1.5c4.4,1.6,12.5,6.7,18.8,12.5" stroke-dashoffset="40.801212310791016" stroke-dasharray="40.801212310791016"></path>
+		<path class="st3" d="M422.5,148.3c-7-4.7-12.3-12-12.3-12" stroke-dashoffset="17.257217407226562" stroke-dasharray="17.257217407226562"></path>
+		<path class="st3" d="M459.3,140.2c0,0,12-10.4,21.3-5.5" stroke-dashoffset="23.23032569885254" stroke-dasharray="23.23032569885254"></path>
+		<path class="st3" d="M451.7,153.7c0,0,2.4,0.2,5.8-2.6s8.5-6.4,13.7-6.5c5.2-0.1,9.6,6.7,9.6,6.7" stroke-dashoffset="34.06045913696289" stroke-dasharray="34.06045913696289"></path>
+		<path class="st3" d="M475.7,161.2c0,0-1.8,2-6.9,2.3c-5.1,0.3-5.4-1.9-5.4-1.9" stroke-dashoffset="13.53003215789795" stroke-dasharray="13.53003215789795"></path>
+		<path class="st3" d="M475.3,166.5c-1.9,1.2-5.7,1.1-5.7,1.1" stroke-dashoffset="5.8707804679870605" stroke-dasharray="5.8707804679870605"></path>
+		<path class="st3" d="M480.7,166.1c-3.4,6.2-9.4,9.6-12.6,9.9s-5.4-2.2-5.4-2.2" stroke-dashoffset="22.567508697509766" stroke-dasharray="22.567508697509766"></path>
+		<path class="st3" d="M499.6,162.1c0,5.6-7.7,10.8-7.7,10.8" stroke-dashoffset="13.710097312927246" stroke-dasharray="13.710097312927246"></path>
+		<path class="st3" d="M501.6,168.2c-3.8,7.3-14.1,11.6-14.1,11.6" stroke-dashoffset="18.56964874267578" stroke-dasharray="18.56964874267578"></path>
+		<path class="st3" d="M403.8,205.4c0,0,1.2,9.4-0.4,16.1c-1.6,6.7-8.9,16.6-8.9,16.6" stroke-dashoffset="35.10523986816406" stroke-dasharray="35.10523986816406"></path>
+		<path class="st3" d="M410.1,214.4c0,0-0.2,4.4,0,5.8c0.2,1.4-2,4.2-2.8,6.3c-0.8,2.1-0.7,3.8-0.6,5.5c0.1,1.7-3.3,4.6-3.3,4.6" stroke-dashoffset="24.133495330810547" stroke-dasharray="24.133495330810547"></path>
+		<path class="st3" d="M418.1,211.6c0,0,0.1,10.6-2.3,17.8c-2.4,7.2-9.4,14.4-9.4,14.4" stroke-dashoffset="35.32878112792969" stroke-dasharray="35.32878112792969"></path>
+		<path class="st3" d="M426.1,223.4c-0.2,5.3-3.5,11.6-3.5,11.6" stroke-dashoffset="12.198092460632324" stroke-dasharray="12.198092460632324"></path>
+		<path class="st3" d="M429.9,232.7l0.7-3.5" stroke-dashoffset="3.5693161487579346" stroke-dasharray="3.5693161487579346"></path>
+		<path class="st3" d="M363,267.2c0,0-17.9,22.3-19.3,28s-5.6,11.3-11.8,18.3c-6.2,7.1-15.6,9.7-19.1,12.6s-10.2,5.8-12.1,6.4
+			s-12.4,8.2-14.6,9.9c-2.2,1.7-5.6,1.1-5.6,1.1" stroke-dashoffset="116.36255645751953" stroke-dasharray="116.36255645751953"></path>
+		<path class="st3" d="M373.2,299.9c-2.1,4.5-14.3,12.8-18.8,18s-16.5,17.2-19.8,18.2c-3.3,1-11,4.5-11,4.5" stroke-dashoffset="65.01469421386719" stroke-dasharray="65.01469421386719"></path>
+		<path class="st3" d="M373.6,296.5l7-7.6" stroke-dashoffset="10.332477569580078" stroke-dasharray="10.332477569580078"></path>
+		<path class="st3" d="M532.4,222.1c0,0-2.1,7-2.4,11.1c-0.3,4.1,0.3,10.8,1.4,14.6c1.1,3.8,0.3,13.6,0.8,20.9s0.1,20.5-3.2,35.5
+			S509.2,340,509.2,340" stroke-dashoffset="123.97288513183594" stroke-dasharray="123.97288513183594"></path>
+		<path class="st3" d="M573.8,168.5c0,0,0.6,4.1,2.2,6.3s0.8,17.9-1.2,22.7c-1.9,4.8-12.2,23.3-19.6,33.3
+			c-7.4,10.1-9.9,24.2-9.9,24.2" stroke-dashoffset="94.76325225830078" stroke-dasharray="94.76325225830078"></path>
+		<path class="st3" d="M595.4,241c-7.6,13.3-10.8,29.9-11.1,34s-3.4,10.4-3.8,16s-6.8,26.3-10.9,38.9s-18.5,33.4-24.6,44.3
+			c-6.2,10.9-9.9,26.3-9.9,26.3" stroke-dashoffset="171.8247528076172" stroke-dasharray="171.8247528076172"></path>
+		<path class="st3" d="M550.6,473.2c0,0-0.7-20.4,4.6-32.8s12.3-28.3,19.5-40.4s16.7-39,18.4-53.2c1.7-14.2,12.3-57.5,17.4-68
+			s9-14.5,9-14.5" stroke-dashoffset="222.20230102539062" stroke-dasharray="222.20230102539062"></path>
+		<path class="st3" d="M635.3,354.2c0,0,11.6-16,16.9-27.8c5.3-11.8,7.3-21,14.6-37.3s9.2-25.3,11.9-29.8
+			c2.8-4.5,6.7-10.5,12.5-14.6" stroke-dashoffset="124.11056518554688" stroke-dasharray="124.11056518554688"></path>
+		<path class="st3" d="M626.5,452.1c0,0,0.4-20.1,6.3-34.3c5.9-14.3,19.3-38.8,25.5-49.3c6.2-10.6,7.9-20.7,10.9-25.7
+			s10.4-25.4,14.8-35.3s13.8-38.8,32.5-50.3" stroke-dashoffset="217.70932006835938" stroke-dasharray="217.70932006835938"></path>
+		<path class="st3" d="M867.4,441.3c-15.4-4.6-29.8-17.9-29.8-17.9" stroke-dashoffset="35.01200866699219" stroke-dasharray="35.01200866699219"></path>
+		<path class="st3" d="M854.4,423.4c0,0,3.6,6.5,13,10s26.2,10.7,37.8,19.7" stroke-dashoffset="59.456565856933594" stroke-dasharray="59.456565856933594"></path>
+		<path class="st3" d="M519.1,171.3c0,0,12.8-11.5,16-14.1" stroke-dashoffset="21.32720947265625" stroke-dasharray="21.32720947265625"></path>
+		<path class="st3" d="M521.3,177.1c0,0,16.2-15.4,23.5-18.1" stroke-dashoffset="29.779441833496094" stroke-dasharray="29.779441833496094"></path>
+		<path class="st3" d="M521.3,184.3c0,0,12.7-13.9,20.1-15.8" stroke-dashoffset="25.7970027923584" stroke-dasharray="25.7970027923584"></path>
+		<path class="st3" d="M520.5,192.5c0,0,9.4-12.4,17.8-15.8" stroke-dashoffset="24.021541595458984" stroke-dasharray="24.021541595458984"></path>
+		<path class="st3" d="M522.3,201.3c0,0,4.5-11,12.6-13.2" stroke-dashoffset="18.81044578552246" stroke-dasharray="18.81044578552246"></path>
+		<path class="st3" d="M526.3,206.9c0,0-1.9-4,7.2-9.1" stroke-dashoffset="12.40481185913086" stroke-dasharray="12.40481185913086"></path>
+		<path class="st3" d="M528.6,217.3c0,0-3.6-5.5,4.3-9" stroke-dashoffset="11.502531051635742" stroke-dasharray="11.502531051635742"></path>
+		<path class="st3" d="M420.4,369.1c1.1-2,3.5-4.6,13.8-6.8s21-9.3,21-9.3" stroke-dashoffset="38.89231872558594" stroke-dasharray="38.89231872558594"></path>
+		<path class="st3" d="M452.3,362.3c0,0-9.6,5.4-16.4,7.7" stroke-dashoffset="18.137975692749023" stroke-dasharray="18.137975692749023"></path>
+		<path class="st3" d="M462.8,364.2c0,0-9.3,5.4-19.4,7.3" stroke-dashoffset="20.810609817504883" stroke-dasharray="20.810609817504883"></path>
+		<path class="st3" d="M470.9,369.9c0,0-8.5,4.1-16.7,6" stroke-dashoffset="17.774906158447266" stroke-dasharray="17.774906158447266"></path>
+		<path class="st3" d="M394.6,368.2l-9.7,8.6" stroke-dashoffset="12.963423728942871" stroke-dasharray="12.963423728942871"></path>
+		<path class="st3" d="M388.8,368.2l-14.9,10.9" stroke-dashoffset="18.461301803588867" stroke-dasharray="18.461301803588867"></path>
+		<path class="st3" d="M380.8,364.1l-18.1,15.8" stroke-dashoffset="24.026025772094727" stroke-dasharray="24.026025772094727"></path>
+		<path class="st3" d="M373.9,359.2c0,0-13.6,12.6-26.3,19.7" stroke-dashoffset="32.92244338989258" stroke-dasharray="32.92244338989258"></path>
+		<path class="st3" d="M351,369l-12.4,8.4" stroke-dashoffset="14.977307319641113" stroke-dasharray="14.977307319641113"></path>
+		<path class="st3" d="M341.7,368.3l-10.7,8.1" stroke-dashoffset="13.420147895812988" stroke-dasharray="13.420147895812988"></path>
+		<path class="st3" d="M341.4,362.3L325.6,376" stroke-dashoffset="20.91243553161621" stroke-dasharray="20.91243553161621"></path>
+		<path class="st3" d="M333.5,358.6l-18.8,17.7" stroke-dashoffset="25.821115493774414" stroke-dasharray="25.821115493774414"></path>
+		<path class="st3" d="M321.7,362.3l-17.4,15.9" stroke-dashoffset="23.570524215698242" stroke-dasharray="23.570524215698242"></path>
+		<path class="st3" d="M312.3,363.6l-19.8,17" stroke-dashoffset="26.09673500061035" stroke-dasharray="26.09673500061035"></path>
+		<path class="st3" d="M298.8,368.7l-15.9,13.5" stroke-dashoffset="20.85808753967285" stroke-dasharray="20.85808753967285"></path>
+		<path class="st3" d="M290.8,368.7l-15.2,12.4" stroke-dashoffset="19.61632537841797" stroke-dasharray="19.61632537841797"></path>
+		<path class="st3" d="M286.9,364.8l-16.9,13.1" stroke-dashoffset="21.382701873779297" stroke-dasharray="21.382701873779297"></path>
+		<path class="st3" d="M620.2,584.1c1.2-4.2-1.4-9.5-3.6-11.9s-1-30.7-1-30.7" stroke-dashoffset="43.75868225097656" stroke-dasharray="43.75868225097656"></path>
+		<path class="st3" d="M625.2,587.9c0.5-5.6-2-11.4-2.2-17.1c-0.6-12.2,0.2-27.1,1.7-30.4c1.5-3.3,0.3-20.3,0.3-20.3" stroke-dashoffset="68.23128509521484" stroke-dasharray="68.23128509521484"></path>
+		<path class="st3" d="M749,599.3c-2.3-2.7-1.9-7.3-1.9-7.3" stroke-dashoffset="7.714817523956299" stroke-dasharray="7.714817523956299"></path>
+		<path class="st3" d="M737.7,593.3l9.8,10.9" stroke-dashoffset="14.6577730178833" stroke-dasharray="14.6577730178833"></path>
+		<path class="st3" d="M746.2,604.7c0,0-7.1-1.9-13.1-6.5s-9.9-12.4-9.9-12.4" stroke-dashoffset="30.682334899902344" stroke-dasharray="30.682334899902344"></path>
+		<path class="st3" d="M728.7,599.9l10.1,6.1" stroke-dashoffset="11.799118995666504" stroke-dasharray="11.799118995666504"></path>
+		<path class="st3" d="M712.1,600.2c0,0,16.1,3.6,28.5,10" stroke-dashoffset="30.271116256713867" stroke-dasharray="30.271116256713867"></path>
+		<path class="st3" d="M702.1,612.3c0,0,5.4-7.9,13.4-11.2" stroke-dashoffset="17.672571182250977" stroke-dasharray="17.672571182250977"></path>
+		<path class="st3" d="M707.7,617c0,0,10.5-11.6,15.2-13.9" stroke-dashoffset="20.666515350341797" stroke-dasharray="20.666515350341797"></path>
+		<path class="st3" d="M713.6,618.3l10.6-10.6" stroke-dashoffset="14.990629196166992" stroke-dasharray="14.990629196166992"></path>
+		<path class="st3" d="M719.7,620.7c0,0,6-7.5,11.5-12.4" stroke-dashoffset="16.92789077758789" stroke-dasharray="16.92789077758789"></path>
+		<path class="st3" d="M728.7,620.7c0,0,0.9-6.2,6.5-9.8" stroke-dashoffset="12.08110237121582" stroke-dasharray="12.08110237121582"></path>
+		<path class="st3" d="M665,633.9l-9.1,5.2" stroke-dashoffset="10.48091983795166" stroke-dasharray="10.48091983795166"></path>
+		<path class="st3" d="M665,639.1l-9,3.9" stroke-dashoffset="9.808679580688477" stroke-dasharray="9.808679580688477"></path>
+		<path class="st3" d="M655.9,647.4c2.6-2.7,11.7-5.9,11.7-5.9" stroke-dashoffset="13.177183151245117" stroke-dasharray="13.177183151245117"></path>
+		<path class="st3" d="M654.9,653.1c9.6-8.4,14.2-5.3,14.2-5.3" stroke-dashoffset="15.93386459350586" stroke-dasharray="15.93386459350586"></path>
+		<path class="st3" d="M719.3,651.2c0,0,5.3-3.8,10.8-1" stroke-dashoffset="11.366620063781738" stroke-dasharray="11.366620063781738"></path>
+		<path class="st3" d="M718.2,654c0,0,8.2-2.4,11.5,0.3" stroke-dashoffset="11.852679252624512" stroke-dasharray="11.852679252624512"></path>
+		<path class="st3" d="M721.3,657.2c0.1,0,4.7-0.1,8.3,1.3" stroke-dashoffset="8.446252822875977" stroke-dasharray="8.446252822875977"></path>
+		<path class="st3" d="M669.9,724.7c-0.6-3.9,4.3-8.2,4.3-8.2" stroke-dashoffset="9.590360641479492" stroke-dasharray="9.590360641479492"></path>
+		<path class="st3" d="M647.5,724.1c1.5-5.6,7.6-9.2,7.6-9.2" stroke-dashoffset="12.195158958435059" stroke-dasharray="12.195158958435059"></path>
+		<path class="st3" d="M633,719.5c0.9-4.9,8.7-10.4,8.7-10.4" stroke-dashoffset="13.817612648010254" stroke-dasharray="13.817612648010254"></path>
+		<path class="st3" d="M615.9,718.6c1.3-5.7,8.2-11.3,8.2-11.3" stroke-dashoffset="14.171942710876465" stroke-dasharray="14.171942710876465"></path>
+		<path class="st3" d="M822.1,609.7c1.4-4.3,9.8-8.8,9.8-8.8" stroke-dashoffset="13.403192520141602" stroke-dasharray="13.403192520141602"></path>
+		<path class="st3" d="M848.6,603.5c0,0-6.9,6-12.6,10.3" stroke-dashoffset="16.276823043823242" stroke-dasharray="16.276823043823242"></path>
+		<path class="st3" d="M861.3,603.5c0,0-5.9,6.5-14.3,9.7" stroke-dashoffset="17.412490844726562" stroke-dasharray="17.412490844726562"></path>
+		<path class="st3" d="M871.4,602.6c0,0-10.8,12.9-20.9,16.3" stroke-dashoffset="26.769119262695312" stroke-dasharray="26.769119262695312"></path>
+		<path class="st3" d="M886.8,603.2c0,0-14.6,14.8-23,18" stroke-dashoffset="29.353715896606445" stroke-dasharray="29.353715896606445"></path>
+		<path class="st3" d="M900.7,602c0,0-13,18.1-22,21.2" stroke-dashoffset="30.87527847290039" stroke-dasharray="30.87527847290039"></path>
+		<path class="st3" d="M910.9,600.7c0,0-1,8.3-9.3,14.4c-8.3,6.2-10.4,9.6-10.4,9.6" stroke-dashoffset="31.757917404174805" stroke-dasharray="31.757917404174805"></path>
+		<path class="st3" d="M932.1,592.6c0,0-1.4,9.3-9.2,16.6s-21.8,16.7-21.8,16.7" stroke-dashoffset="46.76592254638672" stroke-dasharray="46.76592254638672"></path>
+		<path class="st3" d="M943.1,594.6c0,0-7.8,13.3-13.5,20.3c-5.7,6.9-10.2,10.4-14.9,12.3" stroke-dashoffset="43.92129135131836" stroke-dasharray="43.92129135131836"></path>
+		<path class="st3" d="M953.8,587.8c0,0,0.3,14.1-7.3,23c-7.6,9-8.1,11.6-19.1,17.2" stroke-dashoffset="50.61140441894531" stroke-dasharray="50.61140441894531"></path>
+		<path class="st3" d="M965,598.6c0,0-2.4,9.9-9.1,16.6s-9.9,13.3-9.9,13.3" stroke-dashoffset="35.772735595703125" stroke-dasharray="35.772735595703125"></path>
+		<path class="st3" d="M980.3,582.9c0,0,3.7,12.6-1.4,21.8s-6.2,10.6-8.9,13.2s-9.1,7.3-10.7,11.1" stroke-dashoffset="53.85390853881836" stroke-dasharray="53.85390853881836"></path>
+		<path class="st3" d="M989.5,603.2c0,0-1.9,7.7-8.1,14.4c-2.9,2.9-10.3,8.4-10.9,11.9" stroke-dashoffset="32.98509216308594" stroke-dasharray="32.98509216308594"></path>
+		<path class="st3" d="M1005,584.9c0,0,0.2,9.6-5.8,23.7c-6,14.1-15,21.1-15,21.1" stroke-dashoffset="50.64910125732422" stroke-dasharray="50.64910125732422"></path>
+		<path class="st3" d="M1012,600.4c0,0-1.3,9.3-5.7,15.7c-4.4,6.3-8.9,8.3-11.4,12.7" stroke-dashoffset="33.94777297973633" stroke-dasharray="33.94777297973633"></path>
+		<path class="st3" d="M1024.8,599.7c0,0-0.6,7.6-6.5,14.2c-5.9,6.5-8.1,12.1-8.1,12.1" stroke-dashoffset="30.47378158569336" stroke-dasharray="30.47378158569336"></path>
+		<path class="st3" d="M1035.6,594.1c0,0,0.1,11-4,15.8s-6.8,12.7-6.8,12.7" stroke-dashoffset="31.047714233398438" stroke-dasharray="31.047714233398438"></path>
+		<path class="st3" d="M1049.4,593.8c0,0-0.3,8.6-5.6,15.1s-6.3,11.2-6.3,11.2" stroke-dashoffset="29.287094116210938" stroke-dasharray="29.287094116210938"></path>
+		<path class="st3" d="M1060.3,602.8c0,0-6.5,10.8-13.6,15.9" stroke-dashoffset="21.0380859375" stroke-dasharray="21.0380859375"></path>
+		<path class="st3" d="M1073.3,598.3c0,0-7.3,12.6-11.3,17.6" stroke-dashoffset="20.92816734313965" stroke-dasharray="20.92816734313965"></path>
+		<path class="st3" d="M1290.3,370.8c0,0,18.3,9.6,20.9,53.8c1.8,28.1-12.9,50.3-12.9,50.3" stroke-dashoffset="112.23395538330078" stroke-dasharray="112.23395538330078"></path>
+		<path class="st3" d="M1315.8,448.8c0,0-3,14.8-11,27.3" stroke-dashoffset="29.571481704711914" stroke-dasharray="29.571481704711914"></path>
+		<path class="st3" d="M1325.4,453.3c0,0-0.6,13.3-12.9,30s-18.1,24.9-28.9,34.5" stroke-dashoffset="78.12853240966797" stroke-dasharray="78.12853240966797"></path>
+		<path class="st3" d="M1318.6,487.6l-8.4,9.9" stroke-dashoffset="12.9834623336792" stroke-dasharray="12.9834623336792"></path>
+		<path class="st3" d="M1257.9,580.3c0,0,0.3,11.5,2.1,18.4s2.1,14,1.9,16.5c-0.2,2.4-5.1,8.3-6.8,22.1" stroke-dashoffset="58.45789337158203" stroke-dasharray="58.45789337158203"></path>
+		<path class="st3" d="M1152.5,567.1c0,0-11.1,14-25.3,26.7" stroke-dashoffset="36.81929397583008" stroke-dasharray="36.81929397583008"></path>
+		<path class="st3" d="M1138.3,590.6c10.1-12.9,20-19.6,20-19.6" stroke-dashoffset="28.09183692932129" stroke-dasharray="28.09183692932129"></path>
+		<path class="st3" d="M1161.7,606.3c12.3-11.4,25.8-15.3,32.2-16.3c6.3-0.9,20.8-9.3,20.8-9.3" stroke-dashoffset="59.453407287597656" stroke-dasharray="59.453407287597656"></path>
+		<path class="st3" d="M1187.3,603.7l-20.3,11" stroke-dashoffset="23.08878517150879" stroke-dasharray="23.08878517150879"></path>
+		<path class="st3" d="M1178,621.7c8.1-7.3,13.2-8,13.2-8" stroke-dashoffset="15.588228225708008" stroke-dasharray="15.588228225708008"></path>
+		<path class="st3" d="M1183.4,635.2c8.7-4,22.5-4.2,22.5-4.2" stroke-dashoffset="23.021263122558594" stroke-dasharray="23.021263122558594"></path>
+		<path class="st3" d="M1181.8,639.8c4.2-2.7,20-4.5,20-4.5" stroke-dashoffset="20.5956974029541" stroke-dasharray="20.5956974029541"></path>
+		<path class="st3" d="M1180.4,643.1c6.9-2.8,19.6-3.4,19.6-3.4" stroke-dashoffset="19.96446418762207" stroke-dasharray="19.96446418762207"></path>
+		<path class="st3" d="M1178.5,647.5c4-1.5,20.5-2.7,20.5-2.7" stroke-dashoffset="20.708993911743164" stroke-dasharray="20.708993911743164"></path>
+		<path class="st3" d="M1176,652.6c5.5-1.3,18.1-2.4,18.1-2.4" stroke-dashoffset="18.269041061401367" stroke-dasharray="18.269041061401367"></path>
+		<path class="st3" d="M1172.6,658.9c3.1-1.6,18.7-2,18.7-2" stroke-dashoffset="18.870054244995117" stroke-dasharray="18.870054244995117"></path>
+		<path class="st3" d="M1169.1,664.7c7.5-3.3,20.3-3.9,20.3-3.9" stroke-dashoffset="20.76218605041504" stroke-dasharray="20.76218605041504"></path>
+		<path class="st3" d="M1187.3,665.9l-21.4,3.1" stroke-dashoffset="21.623388290405273" stroke-dasharray="21.623388290405273"></path>
+		<path class="st3" d="M1180.9,671.1c0,0-16.2,1.7-19.2,1.1" stroke-dashoffset="19.255962371826172" stroke-dasharray="19.255962371826172"></path>
+		<path class="st3" d="M1123.3,708.3c-4.1-4.9,6.6-13.5,6.6-13.5" stroke-dashoffset="16.410388946533203" stroke-dasharray="16.410388946533203"></path>
+		<path class="st3" d="M1139.8,711c-3.4-7.5,4.9-12.1,4.9-12.1" stroke-dashoffset="14.417398452758789" stroke-dasharray="14.417398452758789"></path>
+		<path class="st3" d="M1154.5,711.7c-2.3-5.3,2.5-8.7,2.5-8.7" stroke-dashoffset="9.802785873413086" stroke-dasharray="9.802785873413086"></path>
+		<path class="st3" d="M1165.6,711.6c-2-4.3,2.1-6.7,2.1-6.7" stroke-dashoffset="7.7406206130981445" stroke-dasharray="7.7406206130981445"></path>
+		<path class="st3" d="M1090.1,684.9c0.3-7.4,2.9-8.3,2.9-8.3" stroke-dashoffset="9.111822128295898" stroke-dasharray="9.111822128295898"></path>
+		<path class="st3" d="M1097.5,687.9c-1.1-4.6,2.1-7.1,2.1-7.1" stroke-dashoffset="7.791945457458496" stroke-dasharray="7.791945457458496"></path>
+		<path class="st3" d="M1090.8,667.9l20.5,22.9" stroke-dashoffset="30.735340118408203" stroke-dasharray="30.735340118408203"></path>
+		<path class="st3" d="M1095.2,665.5l19.7,23.3" stroke-dashoffset="30.51192283630371" stroke-dasharray="30.51192283630371"></path>
+		<path class="st3" d="M1099.7,664.1l17.8,22.7" stroke-dashoffset="28.846702575683594" stroke-dasharray="28.846702575683594"></path>
+		<path class="st3" d="M1105.9,662.4l15.9,21.3" stroke-dashoffset="26.5800724029541" stroke-dasharray="26.5800724029541"></path>
+		<path class="st3" d="M1126.4,681.5l-15-20.4" stroke-dashoffset="25.321157455444336" stroke-dasharray="25.321157455444336"></path>
+		<path class="st3" d="M1118.1,659.3l14.8,19.4" stroke-dashoffset="24.400869369506836" stroke-dasharray="24.400869369506836"></path>
+		<path class="st3" d="M1123.1,658l14,17.7" stroke-dashoffset="22.56746482849121" stroke-dasharray="22.56746482849121"></path>
+		<path class="st3" d="M1143.5,675.1l-13.9-18.9" stroke-dashoffset="23.46106719970703" stroke-dasharray="23.46106719970703"></path>
+		<path class="st3" d="M1135,654.7l15.7,20.6" stroke-dashoffset="25.90072250366211" stroke-dasharray="25.90072250366211"></path>
+		<path class="st3" d="M1140.5,652.6l16.2,21.7" stroke-dashoffset="27.080047607421875" stroke-dasharray="27.080047607421875"></path>
+		<path class="st3" d="M1162.7,671.6l-18.9-20.8" stroke-dashoffset="28.104278564453125" stroke-dasharray="28.104278564453125"></path>
+		<path class="st3" d="M1147.4,646.5l20.1,20.4" stroke-dashoffset="28.63861083984375" stroke-dasharray="28.63861083984375"></path>
+		<path class="st3" d="M1149.4,639.9l21.4,22.1" stroke-dashoffset="30.763126373291016" stroke-dasharray="30.763126373291016"></path>
+		<path class="st3" d="M1149.7,633.1l24.5,23" stroke-dashoffset="33.60431671142578" stroke-dasharray="33.60431671142578"></path>
+		<path class="st3" d="M1149.7,624.8l27.3,25.8" stroke-dashoffset="37.562374114990234" stroke-dasharray="37.562374114990234"></path>
+		<path class="st3" d="M1149.1,615.7c0,0,16.3,11.7,30.2,29.9" stroke-dashoffset="42.62397003173828" stroke-dasharray="42.62397003173828"></path>
+		<path class="st3" d="M1145,605.5c0,0,12,4.1,36.5,34.9" stroke-dashoffset="50.84386444091797" stroke-dasharray="50.84386444091797"></path>
+		<path class="st3" d="M1352.3,506.1l-9.6-15.4" stroke-dashoffset="18.147157669067383" stroke-dasharray="18.147157669067383"></path>
+		<path class="st3" d="M1344.9,485.3l10.5,18.8" stroke-dashoffset="21.533451080322266" stroke-dasharray="21.533451080322266"></path>
+		<path class="st3" d="M1357.2,499.3l-10.6-18.7" stroke-dashoffset="21.495346069335938" stroke-dasharray="21.495346069335938"></path>
+		<path class="st3" d="M1348.1,474.8l10.3,18.6" stroke-dashoffset="21.261497497558594" stroke-dasharray="21.261497497558594"></path>
+		<path class="st3" d="M1357.2,481.4l-8.2-10.8" stroke-dashoffset="13.560196876525879" stroke-dasharray="13.560196876525879"></path>
+		<path class="st3" d="M1357.2,473.6l-7.3-8.9" stroke-dashoffset="11.51089096069336" stroke-dasharray="11.51089096069336"></path>
+		<path class="st3" d="M1358.4,467.6l-7.9-9.7" stroke-dashoffset="12.510021209716797" stroke-dasharray="12.510021209716797"></path>
+		<path class="st3" d="M1358.4,462.4l-7.7-9.9" stroke-dashoffset="12.541894912719727" stroke-dasharray="12.541894912719727"></path>
+		<path class="st3" d="M1358.4,454.9l-7.9-11" stroke-dashoffset="13.542908668518066" stroke-dasharray="13.542908668518066"></path>
+		<path class="st3" d="M1356.8,447.3l-6.6-7.8" stroke-dashoffset="10.217606544494629" stroke-dasharray="10.217606544494629"></path>
+		<path class="st3" d="M1356.8,441.3l-7.3-8" stroke-dashoffset="10.830083847045898" stroke-dasharray="10.830083847045898"></path>
+		<path class="st3" d="M583.8,695.4c1.1-4.5,3.7-6.9,3.7-6.9" stroke-dashoffset="7.921290874481201" stroke-dasharray="7.921290874481201"></path>
+		<path class="st3" d="M592,696.7c0.3-3,3.7-5.1,3.7-5.1" stroke-dashoffset="6.498225212097168" stroke-dasharray="6.498225212097168"></path>
+		<path class="st3" d="M581.2,680.7l13.2,16.6" stroke-dashoffset="21.208477020263672" stroke-dasharray="21.208477020263672"></path>
+		<path class="st3" d="M587.5,676.7l18.8,22.3" stroke-dashoffset="29.167259216308594" stroke-dasharray="29.167259216308594"></path>
+		<path class="st3" d="M606.3,690.8l-11.9-14.1" stroke-dashoffset="18.450471878051758" stroke-dasharray="18.450471878051758"></path>
+		<path class="st3" d="M598.8,673.5c0,0,8.2,9.4,14.2,19.5" stroke-dashoffset="24.149429321289062" stroke-dasharray="24.149429321289062"></path>
+		<path class="st3" d="M602.9,669.4l13.8,20.9" stroke-dashoffset="25.044973373413086" stroke-dasharray="25.044973373413086"></path>
+		<path class="st3" d="M606.3,666.8c0,0,12.8,13.5,16.3,19.8" stroke-dashoffset="25.687713623046875" stroke-dasharray="25.687713623046875"></path>
+		<path class="st3" d="M611.3,663.3l15.5,20.4" stroke-dashoffset="25.620519638061523" stroke-dasharray="25.620519638061523"></path>
+		<path class="st3" d="M633.7,678.8L616,658.1" stroke-dashoffset="27.235654830932617" stroke-dasharray="27.235654830932617"></path>
+		<path class="st3" d="M617.5,653.6l19.4,23" stroke-dashoffset="30.089216232299805" stroke-dasharray="30.089216232299805"></path>
+		<path class="st3" d="M624.2,651.5l17.7,20" stroke-dashoffset="26.707496643066406" stroke-dasharray="26.707496643066406"></path>
+		<path class="st3" d="M629.7,649.1l17,17.4" stroke-dashoffset="24.326135635375977" stroke-dasharray="24.326135635375977"></path>
+		<path class="st3" d="M632.6,645.2l17.1,17.8" stroke-dashoffset="24.682966232299805" stroke-dasharray="24.682966232299805"></path>
+		<path class="st3" d="M653.2,657.4l-20.1-20.5" stroke-dashoffset="28.709911346435547" stroke-dasharray="28.709911346435547"></path>
+		<path class="st3" d="M633,631.5l22.1,20.7" stroke-dashoffset="30.28034782409668" stroke-dasharray="30.28034782409668"></path>
+		<path class="st3" d="M634.7,625.9l21.3,18.5" stroke-dashoffset="28.212398529052734" stroke-dasharray="28.212398529052734"></path>
+		<path class="st3" d="M635.9,620.6l19.8,15.9" stroke-dashoffset="25.393901824951172" stroke-dasharray="25.393901824951172"></path>
+		<path class="st3" d="M654.8,626.4l-22.6-15.8" stroke-dashoffset="27.57532501220703" stroke-dasharray="27.57532501220703"></path>
+		<path class="st3" d="M637.8,610.1c0,0,8.5,3.8,16.2,8.4" stroke-dashoffset="18.256977081298828" stroke-dasharray="18.256977081298828"></path>
+		<path class="st3" d="M632.6,601.1c0,0,10.3,0.6,12.3,1.8" stroke-dashoffset="12.479523658752441" stroke-dasharray="12.479523658752441"></path>
+		<path class="st3" d="M629.3,596.6l9.3,0.9" stroke-dashoffset="9.343437194824219" stroke-dasharray="9.343437194824219"></path>
+	</g>
+</g>
+<g id="left">
+	<g id="left-shadow">
+		<path class="st3" d="M101.6,727.9c-7.6,5.2-31.6,8.3-31.6,8.3" stroke-dashoffset="32.85751724243164" stroke-dasharray="32.85751724243164"></path>
+		<path class="st3" d="M176.8,709.5l-26.3,7.4" stroke-dashoffset="27.321247100830078" stroke-dasharray="27.321247100830078"></path>
+		<path class="st3" d="M181.5,723.1l-21.9,6.3" stroke-dashoffset="22.788145065307617" stroke-dasharray="22.788145065307617"></path>
+		<path class="st3" d="M118.4,737.7L74.5,752" stroke-dashoffset="46.17033386230469" stroke-dasharray="46.17033386230469"></path>
+		<path class="st3" d="M176.8,738.8l-49.3,10.8c0,0-25,8.3-32.8,7.5" stroke-dashoffset="84.2437744140625" stroke-dasharray="84.2437744140625"></path>
+		<path class="st3" d="M184.8,746.5c0,0-51.5,12.8-61.1,15.3s-11.4,1.5-11.4,1.5" stroke-dashoffset="74.57550811767578" stroke-dasharray="74.57550811767578"></path>
+		<path class="st3" d="M184.8,760.3c-3.3,3-42,11-43.2,11" stroke-dashoffset="44.68758773803711" stroke-dasharray="44.68758773803711"></path>
+		<path class="st3" d="M203,769c-4.5,5.8-21.5,5-21.5,5" stroke-dashoffset="22.66973114013672" stroke-dasharray="22.66973114013672"></path>
+		<path class="st3" d="M204.5,726.2c0.7,0.4,25-9.7,35.8-11.4c10.8-1.7,23.2-3.8,24-5.3" stroke-dashoffset="62.3352165222168" stroke-dasharray="62.3352165222168"></path>
+		<path class="st3" d="M291.5,713.2c0,0-56.3,15-62.7,17.5c-6.3,2.5-7,0-7,0" stroke-dashoffset="72.6648178100586" stroke-dasharray="72.6648178100586"></path>
+		<path class="st3" d="M244,739.1l63.1-20.3" stroke-dashoffset="66.28499603271484" stroke-dasharray="66.28499603271484"></path>
+		<path class="st3" d="M270.8,743.3l43.9-14.3" stroke-dashoffset="46.17033004760742" stroke-dasharray="46.17033004760742"></path>
+		<path class="st3" d="M313.6,738.1c-2.9,3.9-22.1,6.9-22.1,6.9" stroke-dashoffset="23.41187858581543" stroke-dasharray="23.41187858581543"></path>
+		<path class="st3" d="M307.9,713.2l18.3,12.1" stroke-dashoffset="21.938526153564453" stroke-dasharray="21.938526153564453"></path>
+		<path class="st3" d="M323.8,738.1l-37.6-25.8" stroke-dashoffset="45.60043716430664" stroke-dasharray="45.60043716430664"></path>
+		<path class="st3" d="M313.6,745.6L250.8,708" stroke-dashoffset="73.19561767578125" stroke-dasharray="73.19561767578125"></path>
+		<path class="st3" d="M277,743.3l-56.6-28.1" stroke-dashoffset="63.1915283203125" stroke-dasharray="63.1915283203125"></path>
+		<path class="st3" d="M336.1,743.3c-1.9,2.4-13.4,1.8-13.4,1.8" stroke-dashoffset="13.764780044555664" stroke-dasharray="13.764780044555664"></path>
+	</g>
+	<g id="left-bold">
+		<path class="st4" d="M93.5,359.3c0,0-2.5-30.8-2.7-37.8c-0.2-7-9.9-33.6-10.8-39.2c-0.9-5.6-7-23.3-7-23.3s-3-11,6.3-21.7
+			c9.3-10.7,16-10.8,22.5-21.5s15.1-23.1,27.6-27.8c3.4-1,2-4.3,0.2-6c-1.9-1.6-18.3-20.7-21-43c-1.5-16.5,14.7-29,24.5-31.2
+			s31.3-4.1,40.8,5.8" stroke-dashoffset="339.29315185546875" stroke-dasharray="339.29315185546875"></path>
+		<path class="st4" d="M186.7,126.5c0,0,7.9,6.3,6.9,10.5c-0.9,4.3-2.4,6.4-1.8,8.5c0.6,2.1,11.8,13.3,9.7,15.5s-5.4,2.3-4.9,4.3
+			s6.6,16.6,4.3,20.7c-2.3,4.1-14,1.3-17.8,15" stroke-dashoffset="93.49791717529297" stroke-dasharray="93.49791717529297"></path>
+		<path class="st4" d="M193,189.7c0,0,2,3.8,4.1,4.5c2.1,0.8,6.7-1.7,13.7,3.1s22.8,7,28.7,12.2c5.9,5.2,6.4,9.1,9.7,11.3
+			c3.3,2.3,11.8,2.1,18.2,5.6c6.4,3.5,8.1,6.4,10.8,6.9c2.7,0.5,9.3-1.1,12.8,0.9c3.4,2.1,5.8,6.3,10.8,7.9
+			c5.1,1.6,13.8,2.1,13.7,4.3s13.8,6.1,16.8,12.4" stroke-dashoffset="161.34156799316406" stroke-dasharray="161.34156799316406"></path>
+		<path class="st4" d="M304.3,272.8c0,0,0.9-18.7,11.7-25.4" stroke-dashoffset="28.925031661987305" stroke-dasharray="28.925031661987305"></path>
+		<path class="st4" d="M104,212.4c0,0,12.5-2.4,27.5,4.2c15,6.5,24.8,16.3,24.8,16.3s2.4-3.2,4.4-2.8s7.3,1.4,5.9,12.3
+			c-0.3,2.8,5.2,6.4,5.2,6.4" stroke-dashoffset="87.35095977783203" stroke-dasharray="87.35095977783203"></path>
+		<path class="st4" d="M158.9,252.3c0,0,12.5-5.1,18.2-2.3s6.4,8.4,16.4,9.6c10,1.1,14.5,5.7,17.9,9.8s13.3,4.7,13.3,4.7
+			s5.5,2.6-2.1,9.3s-10,11.4-8.9,15.5s0.3,6.4,4.9,10.9s8.8,5.9-1.6,7.9c-10.3,2-15.9-1.3-23.5-1.5s-23.9,1.7-40.4-10.5
+			s-24.3-9.8-38.7-16.6C100,282,88.5,277.3,80.7,279" stroke-dashoffset="274.98583984375" stroke-dasharray="274.98583984375"></path>
+		<path class="st4" d="M238,310.7c0,0,1.8,11.1,1.8,28.8s-0.7,33.5,3.5,46.3c4.2,12.8,2,26.3,1.8,36c-0.2,9.7,2,29.2,3.5,44
+			c1.5,14.8,7.6,31.4,10.8,50.7s7.5,61.6,8,73.6s4.4,21.1,2.8,23s-25,7.1-35.8,12.1s-34.8,7.1-44.6,7.8s-35.6,0.8-46.9-2.4
+			s-25-2.9-31.1-0.4s-15.7,5.8-19,3.8c-3.3-2.1,0.4-12.3,1.9-23.8s-0.5-17.3-1.3-27s-1-47.8-0.5-65.8s-4.3-55.5-5.1-90.3
+			s1.3-50.3,5.8-57.3s0-9.3,0-9.3c8.3-7.6,41.6-9.1,60.8-21.9s21-23.9,21-23.9" stroke-dashoffset="860.8040161132812" stroke-dasharray="860.8040161132812"></path>
+		<path class="st4" d="M197.1,194.3c0,0-3.6,5.6,0.7,11s13,15.9,21.8,35c3.1,7,3.4,8.4,7.9,8.9c4.5,0.5,6.6,2.7,7.1,6.9
+			c0.5,4.2,2.2,18.3,2.2,18.3" stroke-dashoffset="95.21424102783203" stroke-dasharray="95.21424102783203"></path>
+		<path class="st4" d="M153.9,632.4c0,0-0.5,14.8,0,25.8s-6.4,25.9-8.2,33.6c-1.8,7.7,1.3,16-2.9,16.2c-1.5-0.1-6-2.9-9.6-3.4
+			s-4.5,1.5-7.8,3.5s-10.8,1.5-18.3,2s-14.1,12-16.9,10.3s-3.8-31.2-4.3-39.9s-1.8-33.5-0.8-64.8S93,571,93,571" stroke-dashoffset="286.7809143066406" stroke-dasharray="286.7809143066406"></path>
+		<path class="st4" d="M264.6,615.4c1.5,3.3,0.6,8.9,1.3,11.9c0.8,3.1,7.6,6,7.6,10.8s2.5,9.8,5.3,12.3s5.3,9.5,5.6,13.1
+			s-5.1,3.1-10,3.8s-9.4,3.4-19.1,10.6s-22.6,14.5-26.4,15.5s-4.4-5-4.3-9.4c0.3-12.5,0.4-26.4-1.8-32.9c-2.2-6.5,0-22.3,0-22.3" stroke-dashoffset="185.65675354003906" stroke-dasharray="185.65675354003906"></path>
+		<path class="st4" d="M141.5,707.6c-0.7,4,4.3,6.3,9,9.3s7.9,10,9.1,12.5s-3.6,8.4-5.7,11c-2.1,2.6-29,1.8-32.7-0.8
+			s-18.3-11.9-23-13s-7-6.1-7-6.1" stroke-dashoffset="111.41181182861328" stroke-dasharray="111.41181182861328"></path>
+		<path class="st4" d="M284.2,662.6c0,0,6.4,5.9,15.5,6c9.1,0.1,33.1-3.8,32.6,6.9s-17.2,7-22.6,9.1s-24.1,4.5-32.4,5.8
+			s-32.3,4.8-39.1,5.6s-8.6-2.8-8.6-2.8" stroke-dashoffset="162.02215576171875" stroke-dasharray="162.02215576171875"></path>
+		<g>
+			<path class="st4" d="M362.9,249.9c4.4-0.8,12.3,0,15.9,1.4c3.7,1.4,5.4,1.8,5.9-0.1c1.2-4-15.9-8.6-25-8.6
+				c-9.1,0.1-20.9,9.2-27.4,17.3c-6.5,8.1-10.5,11-34.8,14.1s-65.4-0.5-68.4,0s-2.7,3.6-2.7,3.6" stroke-dashoffset="196.05747985839844" stroke-dasharray="196.05747985839844"></path>
+			<path class="st4" d="M383.8,252.5c0,0,2.9,4,0.8,5.3c-2.1,1.3-7.7-4.2-15.7-3.7c-8,0.4-11.3,2.6-11.3,2.6" stroke-dashoffset="34.01714324951172" stroke-dasharray="34.01714324951172"></path>
+		</g>
+		<path class="st4" d="M380.3,256.9c0,0,7.4,4.9,3.8,5.9c-2.6,0.7-10.8-6-24.5,0.9c0,0-2.4,2.7,0,3.2s7.1-3.4,12.5-1.5
+			c5.3,1.9,9.4,3.8,8.4,4.8s-3.5,0.8-11.3,0.7c-3.6,0-11.2,7.1-16.7,10s-9.7,7.8-17.7,7.3s-6.5,1.9-20.2,5.8s-25.4,10.8-54.5,12.3
+			c-15.7,1-26.7,6.9-37.3,7.3" stroke-dashoffset="227.00718688964844" stroke-dasharray="227.00718688964844"></path>
+	</g>
+	<g id="left-thin">
+		<path class="st3" d="M117.6,131.9c-0.3-4.1,4.4-7.9,4.4-7.9" stroke-dashoffset="9.3507080078125" stroke-dasharray="9.3507080078125"></path>
+		<path class="st3" d="M117.5,143.9c-2.9-3.1-1.4-7.1-1.4-7.1" stroke-dashoffset="7.5974345207214355" stroke-dasharray="7.5974345207214355"></path>
+		<path class="st3" d="M188.1,114.6l-4,3.9" stroke-dashoffset="5.586592197418213" stroke-dasharray="5.586592197418213"></path>
+		<path class="st3" d="M172.3,119.7c-0.6-3.8,2.3-10,10.1-5.8c7.8,4.2,6.1,11,3.7,12.8c-2.4,1.8-7,3.1-10,0
+			C173.1,123.6,172.9,123.2,172.3,119.7z" stroke-dashoffset="50.024967193603516" stroke-dasharray="50.024967193603516"></path>
+		<path class="st3" d="M165.7,126.9c0,0,2.4-5,7.2-4.7" stroke-dashoffset="9.097087860107422" stroke-dasharray="9.097087860107422"></path>
+		<path class="st3" d="M151.4,136.8c0,0-4.5-10.8,2.8-13.3s11.9,3,12.8,7.4c0.9,4.4-2.4,9.9-8.5,10
+			C153.4,141,151.7,137.6,151.4,136.8z" stroke-dashoffset="55.83492660522461" stroke-dasharray="55.83492660522461"></path>
+		<path class="st3" d="M143.3,189.6c-8.8-2.5-7.1-10.9-7.9-11s-2.6,3.8-3.9,4.3c-1.3,0.5-2.9-0.2-4.3-1.6c-1.4-1.4-9-13.1-9.7-18
+			s4.4-3.9,5-4.5s0.4-2.6,0.9-3.3s26.2-19.4,26.2-19.4" stroke-dashoffset="89.89474487304688" stroke-dasharray="89.89474487304688"></path>
+		<path class="st3" d="M136.4,170c-0.3,2.6-1.5,4-5.4-2.1s-1.4-7.3-0.4-8" stroke-dashoffset="18.04474639892578" stroke-dasharray="18.04474639892578"></path>
+		<path class="st3" d="M168.2,149.2c0,0,4.4-5.5,6.9-5.5s8-0.1,8-0.1" stroke-dashoffset="17.00432586669922" stroke-dasharray="17.00432586669922"></path>
+		<path class="st3" d="M180.1,149.5c0,0-3.6,3.7-7.6,5.1" stroke-dashoffset="9.220319747924805" stroke-dasharray="9.220319747924805"></path>
+		<path class="st3" d="M201.5,161c-1.5-0.8-7.9,3-11,3.7c-3.1,0.6-3.8-3.7-3.8-3.7" stroke-dashoffset="17.676021575927734" stroke-dasharray="17.676021575927734"></path>
+		<path class="st3" d="M198.7,171.5c-10,5.9-17.4,5.8-17.4,5.8" stroke-dashoffset="18.51712417602539" stroke-dasharray="18.51712417602539"></path>
+		<path class="st3" d="M183.9,198.5c0.8,3.7-1.3,8.5-3.2,9.6s-19.8-5.3-28.8-12S132,185.8,132,185.8" stroke-dashoffset="64.62882995605469" stroke-dasharray="64.62882995605469"></path>
+		<path class="st3" d="M185.9,194.9c0,0,16.3,13.7,16.5,28.9c-0.1,1.8-6.9-6.8-10.4-9.6c-3.6-2.8-7.3-5.7-10.4-6.7" stroke-dashoffset="61.1802978515625" stroke-dasharray="61.1802978515625"></path>
+		<path class="st3" d="M180.7,208.2c1.8,9.4,5.3,26.1,4.4,27.3s-12.2-12.1-22.5-22c-10.3-9.9-33.7-25.2-33.7-25.2" stroke-dashoffset="101.51878356933594" stroke-dasharray="101.51878356933594"></path>
+		<path class="st3" d="M196.9,219c0,0,0.3,9.3-3,10.2c-3.3,0.9-10.2-5.6-10.2-5.6" stroke-dashoffset="23.117074966430664" stroke-dasharray="23.117074966430664"></path>
+		<path class="st3" d="M202.3,221.7c0,0,13.2,25.5,14.2,28s-0.8,1.6-2.9,1.7c-8.8,0.4-24.6-0.9-26.7-1.6s-4.1-5.2-7.5-9.8
+			c-10.4-15.1-42.2-46-42.2-46" stroke-dashoffset="137.8568115234375" stroke-dasharray="137.8568115234375"></path>
+		<path class="st3" d="M197.6,250.9c0,0-2.4-5.8-3.7-9.1s-2.8-11.5-0.6-12.5c2.2-1,3.2,0.9,6.9,4.4s11,17.7,11,17.7" stroke-dashoffset="52.48150634765625" stroke-dasharray="52.48150634765625"></path>
+		<path class="st3" d="M188.3,192.3c-5,2.1-11.4,1.3-11.4,1.3" stroke-dashoffset="11.583186149597168" stroke-dasharray="11.583186149597168"></path>
+		<path class="st3" d="M217.9,209.8c0,0,6.2,8.9,7.1,15.1s0.8,15.3,0.8,15.3" stroke-dashoffset="32.13300704956055" stroke-dasharray="32.13300704956055"></path>
+		<path class="st3" d="M229,226.6c0,0,4.9,6.7,1.7,13.9" stroke-dashoffset="14.614818572998047" stroke-dasharray="14.614818572998047"></path>
+		<path class="st3" d="M242.4,225.9c0,0,3.4,4.1,3.2,9.8c-0.2,5.7-3.2,11.2-3.2,11.2" stroke-dashoffset="22.242900848388672" stroke-dasharray="22.242900848388672"></path>
+		<path class="st3" d="M250.5,245.4c0,0,1.1-0.5,2.4-0.5s1.7,2.1,3.2,2c1.5-0.2,8.1-3.5,8.1-3.5s-6.1,9.5-6.9,16.7" stroke-dashoffset="33.420711517333984" stroke-dasharray="33.420711517333984"></path>
+		<path class="st3" d="M271.1,249.7l2.7-5.2" stroke-dashoffset="5.8591837882995605" stroke-dasharray="5.8591837882995605"></path>
+		<path class="st3" d="M281,268.4c0,0-0.3-2.5,1.4-4.6c1.7-2.1,12.5-15.5,14-14.4s-1.4,8.3-7.2,14.3" stroke-dashoffset="41.945960998535156" stroke-dasharray="41.945960998535156"></path>
+		<path class="st3" d="M323.2,258.8l3.4,7.1" stroke-dashoffset="7.872105598449707" stroke-dasharray="7.872105598449707"></path>
+		<path class="st3" d="M319.6,260l4.1,7.8" stroke-dashoffset="8.811915397644043" stroke-dasharray="8.811915397644043"></path>
+		<path class="st3" d="M316,261.2l4,8.4" stroke-dashoffset="9.303757667541504" stroke-dasharray="9.303757667541504"></path>
+		<path class="st3" d="M311.8,262.8l3.6,8.2" stroke-dashoffset="8.955459594726562" stroke-dasharray="8.955459594726562"></path>
+		<path class="st3" d="M308.2,267.2l2.7,4.8" stroke-dashoffset="5.50726318359375" stroke-dasharray="5.50726318359375"></path>
+		<path class="st3" d="M356.5,252.3c1.7-1.5,4.1-1.9,4.1-1.9" stroke-dashoffset="4.568601608276367" stroke-dasharray="4.568601608276367"></path>
+		<path class="st3" d="M232.9,289.3c0,0-2.3,6.7-5.7,8c-3.4,1.3-5.9-0.6-5.9-0.6" stroke-dashoffset="16.230228424072266" stroke-dasharray="16.230228424072266"></path>
+		<path class="st3" d="M223.3,313.2c-2.5-4,4.7-9.5,4.7-9.5" stroke-dashoffset="11.47789478302002" stroke-dasharray="11.47789478302002"></path>
+		<path class="st3" d="M232.6,304.1l-6,6.6" stroke-dashoffset="8.919646263122559" stroke-dasharray="8.919646263122559"></path>
+		<path class="st3" d="M195.1,316.1c0,0-2.4-2.5-1.6-7.6c0.8-5.1,5.3-5.8,5.5-10.2s-0.8-16.4,1.7-19.6c2.4-3.2,5.6-8.4,12.5-7.9" stroke-dashoffset="55.311519622802734" stroke-dasharray="55.311519622802734"></path>
+		<path class="st3" d="M214,280.3l2.2,0.4" stroke-dashoffset="2.2360639572143555" stroke-dasharray="2.2360639572143555"></path>
+		<path class="st3" d="M208.6,279.3l2,0.2" stroke-dashoffset="2.009976387023926" stroke-dasharray="2.009976387023926"></path>
+		<path class="st3" d="M181.8,261.9c-0.6,1.1-9.1,3.8-15.6,3.9s-18.9-3.3-18.9-3.3" stroke-dashoffset="35.5006103515625" stroke-dasharray="35.5006103515625"></path>
+		<path class="st3" d="M185.1,263.9c-4.2,2.9-11.2,4.8-11.2,4.8" stroke-dashoffset="12.231880187988281" stroke-dasharray="12.231880187988281"></path>
+		<path class="st3" d="M188.6,268.7l3.6-2.4" stroke-dashoffset="4.326663017272949" stroke-dasharray="4.326663017272949"></path>
+		<path class="st3" d="M115.9,248.3l4.5,3.1" stroke-dashoffset="5.4644341468811035" stroke-dasharray="5.4644341468811035"></path>
+		<path class="st3" d="M111.2,233.3c0,0,12.7-4.9,30.6-0.9" stroke-dashoffset="30.972610473632812" stroke-dasharray="30.972610473632812"></path>
+		<path class="st3" d="M130.2,236c0.2,0,9.2-0.7,19.5,1.7" stroke-dashoffset="19.636043548583984" stroke-dasharray="19.636043548583984"></path>
+		<path class="st3" d="M140.2,242c0,0,9.6-1.7,19.3-0.7" stroke-dashoffset="19.363805770874023" stroke-dasharray="19.363805770874023"></path>
+		<path class="st3" d="M92.6,274.8c-18.8-5.5-11.5-21.9-11.5-21.9" stroke-dashoffset="28.54113006591797" stroke-dasharray="28.54113006591797"></path>
+		<path class="st3" d="M96.4,271.8l6.5,3.8" stroke-dashoffset="7.529270172119141" stroke-dasharray="7.529270172119141"></path>
+		<path class="st3" d="M110.2,279.7l13.1,7.1" stroke-dashoffset="14.900337219238281" stroke-dasharray="14.900337219238281"></path>
+		<path class="st3" d="M85.1,287.1l6.7-7.4" stroke-dashoffset="9.982478141784668" stroke-dasharray="9.982478141784668"></path>
+		<path class="st3" d="M87.6,290.8L96,281" stroke-dashoffset="12.907354354858398" stroke-dasharray="12.907354354858398"></path>
+		<path class="st3" d="M89.9,294.4l10.5-11.7" stroke-dashoffset="15.720696449279785" stroke-dasharray="15.720696449279785"></path>
+		<path class="st3" d="M93,297.8l12.5-13" stroke-dashoffset="18.03468894958496" stroke-dasharray="18.03468894958496"></path>
+		<path class="st3" d="M97.3,300.1l12.6-13.3" stroke-dashoffset="18.320743560791016" stroke-dasharray="18.320743560791016"></path>
+		<path class="st3" d="M102.9,301l11.4-12.2" stroke-dashoffset="16.697315216064453" stroke-dasharray="16.697315216064453"></path>
+		<path class="st3" d="M106.4,303.3l11.9-12.7" stroke-dashoffset="17.40403175354004" stroke-dasharray="17.40403175354004"></path>
+		<path class="st3" d="M110.6,305.7l12-13.6" stroke-dashoffset="18.137258529663086" stroke-dasharray="18.137258529663086"></path>
+		<path class="st3" d="M114.3,308.5l12.5-15.1" stroke-dashoffset="19.602556228637695" stroke-dasharray="19.602556228637695"></path>
+		<path class="st3" d="M119.3,309.8l13.5-14.7" stroke-dashoffset="19.958465576171875" stroke-dasharray="19.958465576171875"></path>
+		<path class="st3" d="M122.6,312.3l15.1-15.5" stroke-dashoffset="21.639314651489258" stroke-dasharray="21.639314651489258"></path>
+		<path class="st3" d="M128.6,313.1l12.4-14.9" stroke-dashoffset="19.38477897644043" stroke-dasharray="19.38477897644043"></path>
+		<path class="st3" d="M132.7,314.4l13-13.8" stroke-dashoffset="18.958894729614258" stroke-dasharray="18.958894729614258"></path>
+		<path class="st3" d="M136.1,317.1l13.1-14.4" stroke-dashoffset="19.467151641845703" stroke-dasharray="19.467151641845703"></path>
+		<path class="st3" d="M141,318.1l11.6-13" stroke-dashoffset="17.422977447509766" stroke-dasharray="17.422977447509766"></path>
+		<path class="st3" d="M144.3,319.9l11.3-12.6" stroke-dashoffset="16.924840927124023" stroke-dasharray="16.924840927124023"></path>
+		<path class="st3" d="M149.1,321.1l9.2-12.1" stroke-dashoffset="15.200331687927246" stroke-dasharray="15.200331687927246"></path>
+		<path class="st3" d="M152.9,322.2l9.3-11.3" stroke-dashoffset="14.634881973266602" stroke-dasharray="14.634881973266602"></path>
+		<path class="st3" d="M156.2,324l9.8-11.5" stroke-dashoffset="15.109271049499512" stroke-dasharray="15.109271049499512"></path>
+		<path class="st3" d="M160.4,324.8l9.1-11.1" stroke-dashoffset="14.353404998779297" stroke-dasharray="14.353404998779297"></path>
+		<path class="st3" d="M123.2,292.3c0,0,2.8,21.2,3.6,33.5c0.8,12.4,0,24.1,0,24.1" stroke-dashoffset="57.81186294555664" stroke-dasharray="57.81186294555664"></path>
+		<path class="st3" d="M132.4,318.1v2.5" stroke-dashoffset="2.5" stroke-dasharray="2.5"></path>
+		<path class="st3" d="M132.4,323.1l0.2,2.5" stroke-dashoffset="2.5079870223999023" stroke-dasharray="2.5079870223999023"></path>
+		<path class="st3" d="M132.6,327.3l0.2,2.8" stroke-dashoffset="2.8071212768554688" stroke-dasharray="2.8071212768554688"></path>
+		<path class="st3" d="M132.8,332.3l0.4,3" stroke-dashoffset="3.026548385620117" stroke-dasharray="3.026548385620117"></path>
+		<path class="st3" d="M133.2,337.7c0,0,0.8,8,0.6,10.3" stroke-dashoffset="10.324825286865234" stroke-dasharray="10.324825286865234"></path>
+		<path class="st3" d="M139.7,351.1c-17.5,11.8-21.8,8.3-21.8,8.3" stroke-dashoffset="24.00303840637207" stroke-dasharray="24.00303840637207"></path>
+		<path class="st3" d="M143.7,356.2c-4.8,2.3-9.9,4.1-9.9,4.1" stroke-dashoffset="10.719622611999512" stroke-dasharray="10.719622611999512"></path>
+		<path class="st3" d="M161.7,358.2c0,0-1.6-4.1,4.1-8" stroke-dashoffset="9.621257781982422" stroke-dasharray="9.621257781982422"></path>
+		<path class="st3" d="M179.3,359.3c0,0-3.3-5.5-0.8-12.8c2.6-7.3,6.6-6,6.6-6" stroke-dashoffset="22.910388946533203" stroke-dasharray="22.910388946533203"></path>
+		<path class="st3" d="M185.2,355.7c0,0,0.1-5.5,3.4-6.8" stroke-dashoffset="8.006233215332031" stroke-dasharray="8.006233215332031"></path>
+		<path class="st3" d="M196.6,353.8l1.3,1.9" stroke-dashoffset="2.3021695613861084" stroke-dasharray="2.3021695613861084"></path>
+		<path class="st3" d="M95.7,389.1c0,0-0.9-15.2,6.4-19.8" stroke-dashoffset="21.64179801940918" stroke-dasharray="21.64179801940918"></path>
+		<path class="st3" d="M107,385.9c0,0-2.4-1.6-1.8-3.6s4.8-8.8,4.5-10.5" stroke-dashoffset="15.781984329223633" stroke-dasharray="15.781984329223633"></path>
+		<path class="st3" d="M116.8,381.4c0,0-1.4-3,0-8.8" stroke-dashoffset="8.922771453857422" stroke-dasharray="8.922771453857422"></path>
+		<path class="st3" d="M123.2,370.8c0,0,4,5.1,3.9,10.6S120,402,120,402" stroke-dashoffset="33.36042404174805" stroke-dasharray="33.36042404174805"></path>
+		<path class="st3" d="M144.5,381.4c-2.5-3.1-2.9-8.8-2.9-8.8" stroke-dashoffset="9.383191108703613" stroke-dasharray="9.383191108703613"></path>
+		<path class="st3" d="M153,377l2.6,3.3" stroke-dashoffset="4.2011847496032715" stroke-dasharray="4.2011847496032715"></path>
+		<path class="st3" d="M171.3,371.3c0,0,3.1,1.5,3.1,5.3s-4.5,13.4-4.5,13.4" stroke-dashoffset="20.651517868041992" stroke-dasharray="20.651517868041992"></path>
+		<path class="st3" d="M182.1,368.7c1.4,3,1.5,7.3,0.7,9.9s-1.4,7.9-1.4,7.9" stroke-dashoffset="18.142261505126953" stroke-dasharray="18.142261505126953"></path>
+		<path class="st3" d="M187.5,428.3c0,0-2.5-8.4-2.8-14.9s0.8-12.9,3.6-21.8s2.1-19,2.1-19" stroke-dashoffset="56.614349365234375" stroke-dasharray="56.614349365234375"></path>
+		<path class="st3" d="M200.8,382.2c0,0-0.5-4.9-0.5-8s1.7-4.1,1.7-4.1" stroke-dashoffset="12.62629222869873" stroke-dasharray="12.62629222869873"></path>
+		<path class="st3" d="M221.1,373.4l0.5,2.7" stroke-dashoffset="2.745918035507202" stroke-dasharray="2.745918035507202"></path>
+		<path class="st3" d="M229.4,360.8c0,0,4.8,4.2,4.5,12.1s-4.5,16.3-4.5,16.3" stroke-dashoffset="30.30157470703125" stroke-dasharray="30.30157470703125"></path>
+		<path class="st3" d="M239.8,350.6c-11.2,6.2-37.2,9-59.2,11.5s-71,1.3-76.8,1.4c-5.8,0.1-8.3,2.1-8.3,2.1" stroke-dashoffset="146.09341430664062" stroke-dasharray="146.09341430664062"></path>
+		<path class="st3" d="M239.8,353.3c0,0-19.4,8.9-58.4,13.5s-56.8,0.8-71.7,0.9s-15.4,1.1-15.4,1.1" stroke-dashoffset="147.4359130859375" stroke-dasharray="147.4359130859375"></path>
+		<path class="st3" d="M217.5,354.7c0,0-2.2-19.3,6.6-17.4c8.8,1.9-6.4,23.1-9.6,26.9c-1.7,3-1.4,5.8-2.9,7.5
+			c-1.5,1.7-6.2,6.1-3.8,7.1s6.4-2.6,7.4-6.2S218.5,361.1,217.5,354.7z" stroke-dashoffset="98.67424011230469" stroke-dasharray="98.67424011230469"></path>
+		<path class="st3" d="M216.9,358.9c0,0-4.4-24-17.2-17.9c-6.3,3.1,7.3,16.3,18.6,17.1c3.6,0.2,4.5,4.7,6.2,7.2s8.5,9.6,5.6,11.2
+			s-9.7-9.4-11.1-14.6C218.4,360.1,216.9,358.9,216.9,358.9z" stroke-dashoffset="104.65909576416016" stroke-dasharray="104.65909576416016"></path>
+		<path class="st3" d="M212.6,356.8c0,0-13.1-9.7-9.3-13.1c3.8-3.3,12.1,9.6,12.1,9.6" stroke-dashoffset="34.002838134765625" stroke-dasharray="34.002838134765625"></path>
+		<path class="st3" d="M217.3,348.3c0,0,3.9-8.8,7.3-7.3s-0.5,8.3-0.5,8.3" stroke-dashoffset="20.307540893554688" stroke-dasharray="20.307540893554688"></path>
+		<path class="st3" d="M254.8,275.1c-11-2.1-19-7.6-19-7.6" stroke-dashoffset="20.58353042602539" stroke-dasharray="20.58353042602539"></path>
+		<path class="st3" d="M123.3,466.3c0,0-2.9,3.6-0.6,17.5s10,45.3,11.6,50.8s6.6,33.8,3,39.1" stroke-dashoffset="109.54249572753906" stroke-dasharray="109.54249572753906"></path>
+		<path class="st3" d="M145.6,549.9c0,0-1.3-11.9-3.1-17.3s-5.9-16-4-18.8" stroke-dashoffset="37.13889694213867" stroke-dasharray="37.13889694213867"></path>
+		<path class="st3" d="M167.4,475.3c0,0-4.4-5.1-3.5-19.1" stroke-dashoffset="19.755001068115234" stroke-dasharray="19.755001068115234"></path>
+		<path class="st3" d="M181.3,480c0,0,3.5,27,5.4,37.4s3.5,23.8,2.1,31.4s-6.1,32.3-5.4,42.4" stroke-dashoffset="112.20674896240234" stroke-dasharray="112.20674896240234"></path>
+		<path class="st3" d="M219.4,578.3c-0.7-22.7,3.5-27.7,3.5-27.7" stroke-dashoffset="28.203929901123047" stroke-dasharray="28.203929901123047"></path>
+		<path class="st3" d="M230.1,453c1.5,5.4,1.5,16.8,4.5,33.8c2.9,17,0.8,35.3-1.5,45c-2.3,9.7-4.1,36.2-4.1,36.2" stroke-dashoffset="115.86090087890625" stroke-dasharray="115.86090087890625"></path>
+		<path class="st3" d="M88.5,653.8c0,0,0-14.1,1.8-17.4" stroke-dashoffset="17.577938079833984" stroke-dasharray="17.577938079833984"></path>
+		<path class="st3" d="M92.3,654.3c0,0,0-10.6,2.3-15.2" stroke-dashoffset="15.47016429901123" stroke-dasharray="15.47016429901123"></path>
+		<path class="st3" d="M97.3,655.5c0,0-0.3-16.9,2.9-21.4" stroke-dashoffset="21.798263549804688" stroke-dasharray="21.798263549804688"></path>
+		<path class="st3" d="M100.2,653.8c0,0,1.3-16.7,4.1-20.8" stroke-dashoffset="21.32321548461914" stroke-dasharray="21.32321548461914"></path>
+		<path class="st3" d="M105.9,653.1c0,0,0-17.3,2-21.3" stroke-dashoffset="21.480876922607422" stroke-dasharray="21.480876922607422"></path>
+		<path class="st3" d="M110.4,650.5c0,0,0.7-15.8,2.1-20.5" stroke-dashoffset="20.634380340576172" stroke-dasharray="20.634380340576172"></path>
+		<path class="st3" d="M115.1,649.6c0,0-0.4-16.2,2.5-20.7" stroke-dashoffset="21.02393913269043" stroke-dasharray="21.02393913269043"></path>
+		<path class="st3" d="M120.2,649.6c0,0-0.7-16.7,1.4-21.1" stroke-dashoffset="21.25188446044922" stroke-dasharray="21.25188446044922"></path>
+		<path class="st3" d="M124,649.6l0.5-16.6" stroke-dashoffset="16.60750389099121" stroke-dasharray="16.60750389099121"></path>
+		<path class="st3" d="M128.3,650.8l1.4-22.4" stroke-dashoffset="22.4437313079834" stroke-dasharray="22.4437313079834"></path>
+		<path class="st3" d="M132.8,653.8l1.7-24.9" stroke-dashoffset="24.957988739013672" stroke-dasharray="24.957988739013672"></path>
+		<path class="st3" d="M137.8,652.3l1.3-22.6" stroke-dashoffset="22.6373348236084" stroke-dasharray="22.6373348236084"></path>
+		<path class="st3" d="M142.3,653.1l0.8-22.5" stroke-dashoffset="22.514217376708984" stroke-dasharray="22.514217376708984"></path>
+		<path class="st3" d="M146.3,650.1l1.1-18.5" stroke-dashoffset="18.53267478942871" stroke-dasharray="18.53267478942871"></path>
+		<path class="st3" d="M91.3,661.2l15.7-29" stroke-dashoffset="32.97711181640625" stroke-dasharray="32.97711181640625"></path>
+		<path class="st3" d="M100.2,662.5c0,0,11.3-18.6,22.1-34.1" stroke-dashoffset="40.64058303833008" stroke-dasharray="40.64058303833008"></path>
+		<path class="st3" d="M111.3,659.8c0,0,7.4-12.7,21.5-31" stroke-dashoffset="37.74544906616211" stroke-dasharray="37.74544906616211"></path>
+		<path class="st3" d="M119.4,660.6c0,0,8-16,22.9-30.6" stroke-dashoffset="38.36281204223633" stroke-dasharray="38.36281204223633"></path>
+		<path class="st3" d="M125.5,662.5c0,0,11.9-18.9,19.4-26.9" stroke-dashoffset="33.201019287109375" stroke-dasharray="33.201019287109375"></path>
+		<path class="st3" d="M135.2,660.6l18.7-27.6" stroke-dashoffset="33.33839416503906" stroke-dasharray="33.33839416503906"></path>
+		<path class="st3" d="M153.7,647.7c-0.8,2.6-15.2,18.5-15.2,18.5" stroke-dashoffset="23.984804153442383" stroke-dasharray="23.984804153442383"></path>
+		<path class="st3" d="M227.7,647.7v-20" stroke-dashoffset="20" stroke-dasharray="20"></path>
+		<path class="st3" d="M231.8,647.7c0,0-1.4-16.1,2.8-22.4" stroke-dashoffset="22.878189086914062" stroke-dasharray="22.878189086914062"></path>
+		<path class="st3" d="M236.9,645.5v-21.3" stroke-dashoffset="21.29998779296875" stroke-dasharray="21.29998779296875"></path>
+		<path class="st3" d="M241.1,644v-21.4" stroke-dashoffset="21.4000244140625" stroke-dasharray="21.4000244140625"></path>
+		<path class="st3" d="M246.1,641.1l-1.7-19.6" stroke-dashoffset="19.673561096191406" stroke-dasharray="19.673561096191406"></path>
+		<path class="st3" d="M249.4,639.8l-1.1-19.5" stroke-dashoffset="19.531002044677734" stroke-dasharray="19.531002044677734"></path>
+		<path class="st3" d="M254,639.8l-2.1-20.6" stroke-dashoffset="20.70673942565918" stroke-dasharray="20.70673942565918"></path>
+		<path class="st3" d="M258.8,637.7l-3.2-19.6" stroke-dashoffset="19.859481811523438" stroke-dasharray="19.859481811523438"></path>
+		<path class="st3" d="M260.4,616.7l3.4,19.2" stroke-dashoffset="19.498729705810547" stroke-dasharray="19.498729705810547"></path>
+		<path class="st3" d="M267.4,644.8l3.8-11.4" stroke-dashoffset="12.016674995422363" stroke-dasharray="12.016674995422363"></path>
+		<path class="st3" d="M257.8,651.3l7.9-26.5" stroke-dashoffset="27.652484893798828" stroke-dasharray="27.652484893798828"></path>
+		<path class="st3" d="M250.5,650.4l10.4-31.2" stroke-dashoffset="32.8876953125" stroke-dasharray="32.8876953125"></path>
+		<path class="st3" d="M239.6,656.3l14.4-37.7" stroke-dashoffset="40.356544494628906" stroke-dasharray="40.356544494628906"></path>
+		<path class="st3" d="M231.5,657.5l11.9-35.7" stroke-dashoffset="37.6311149597168" stroke-dasharray="37.6311149597168"></path>
+		<path class="st3" d="M223.6,654.4l9.9-28.8" stroke-dashoffset="30.454050064086914" stroke-dasharray="30.454050064086914"></path>
+		<path class="st3" d="M297.2,668.4c0.3,2.8-4.2,8.7-4.2,8.7" stroke-dashoffset="9.806402206420898" stroke-dasharray="9.806402206420898"></path>
+		<path class="st3" d="M286.1,678l6.5-10.7" stroke-dashoffset="12.5195951461792" stroke-dasharray="12.5195951461792"></path>
+		<path class="st3" d="M278.4,678.3c0,0,3.6-5.9,10.5-12.6" stroke-dashoffset="16.43539047241211" stroke-dasharray="16.43539047241211"></path>
+		<path class="st3" d="M123.6,720.6c0,0,10.1-9.6,21.2-7.3" stroke-dashoffset="23.217296600341797" stroke-dasharray="23.217296600341797"></path>
+		<path class="st3" d="M131.1,723c0,0,9.9-8.3,18.4-6.7" stroke-dashoffset="20.129056930541992" stroke-dasharray="20.129056930541992"></path>
+		<path class="st3" d="M137.3,725.6l8.7-5.1" stroke-dashoffset="10.084627151489258" stroke-dasharray="10.084627151489258"></path>
+	</g>
+</g>
+<g id="right">
+	<g id="right-shadow">
+		<path class="st3" d="M1321.3,707.3c0,0-10.6-2.4-40.3-24.1" stroke-dashoffset="47.107566833496094" stroke-dasharray="47.107566833496094"></path>
+		<path class="st3" d="M1342.4,704.8l-34.1-23.5" stroke-dashoffset="41.41326141357422" stroke-dasharray="41.41326141357422"></path>
+		<path class="st3" d="M1371.6,710l-40.6-31.7" stroke-dashoffset="51.50969696044922" stroke-dasharray="51.50969696044922"></path>
+		<path class="st3" d="M1395.5,707.3l-26.3-20.8" stroke-dashoffset="33.53105926513672" stroke-dasharray="33.53105926513672"></path>
+		<path class="st3" d="M1389.3,686.6c11.9,7.6,16,14.2,16,14.2" stroke-dashoffset="21.51963996887207" stroke-dasharray="21.51963996887207"></path>
+		<path class="st3" d="M1267.8,700.8c0,0,28.1-13,51.7-19.7" stroke-dashoffset="55.37175369262695" stroke-dasharray="55.37175369262695"></path>
+		<path class="st3" d="M1281,707.3l62-23.1" stroke-dashoffset="66.16349792480469" stroke-dasharray="66.16349792480469"></path>
+		<path class="st3" d="M1308.3,705.8l49-19.2" stroke-dashoffset="52.62737274169922" stroke-dasharray="52.62737274169922"></path>
+		<path class="st3" d="M1379.9,685.1c5.4,3.6-49,24.9-49,24.9" stroke-dashoffset="56.21896743774414" stroke-dasharray="56.21896743774414"></path>
+		<path class="st3" d="M1356.2,705.8l42.6-14.8" stroke-dashoffset="45.0976448059082" stroke-dasharray="45.0976448059082"></path>
+		<path class="st3" d="M1373.5,710l25.9-10.5" stroke-dashoffset="27.947473526000977" stroke-dasharray="27.947473526000977"></path>
+		<path class="st3" d="M1408.8,704.8c-5.3,3.5-13.3,5.3-13.3,5.3" stroke-dashoffset="14.381007194519043" stroke-dasharray="14.381007194519043"></path>
+	</g>
+	<g id="right-bold">
+		<path class="st4" d="M1376.8,169.6c0,0-0.5,13.3,5.2,15.5c5.7,2.2,31.6,1.7,39.3,16.8s2.7,34.1,1.7,41.4s-9.1,64.8,4.7,88.3
+			c2.6,4.5,10.6,6.9,15.5,25.5s5.4,54.5,4.4,70.5c0,3.6-6,3.7-8.7,12.7c-2.7,9-14.5,73.7-15,80.5c-0.5,6.8-5.4,32.2-8.2,74.7
+			c-0.5,13.3-7.7,45.7-12.4,61.2c-1.9,2.5-3.8,6.4-4.8,7.5c0,0-6.8,14.5-38.5,11.7c-5.8-0.8-3.3-5.8,4.3-6.8
+			c7.7-1,18.3-4.8,18.7-8.7c0.3-3.8,1.7-24.8,0.7-43.5c-1-18.7-1.5-21.2-1.5-21.2l-17-4.8c0,0,1.3,12-0.5,24.5
+			c-1.8,12.5-4,28.7-10,39.3c-4.8,2.3-5.5,2.6-7.9,5.8s-9,10.4-24.5,9.4s-11.4-5-2.3-7.7c9.1-2.7,17.5-4.2,19.6-9.8
+			s0.3-37.1-0.5-50.4s3.2-72.5-0.6-103.4" stroke-dashoffset="998.7529296875" stroke-dasharray="998.7529296875"></path>
+		<path class="st4" d="M1324.8,293.2c8.2,17.7,20.2,46.4,20.5,49.7c0.3,3.3-2.5,4.3-2.5,4.3c-4,17.5-2.7,47.3-2.7,47.3" stroke-dashoffset="106.63444519042969" stroke-dasharray="106.63444519042969"></path>
+		<path class="st4" d="M1316.2,276.4c3.5,13.3,18.9,18.2,18.9,18.2l-10.1-1.7" stroke-dashoffset="37.51039123535156" stroke-dasharray="37.51039123535156"></path>
+		<path class="st4" d="M1425.4,225.7c0,0-7.1,16.9-25.8,22.6c-18.7,5.7-44,22.3-57.7,24.9c-2,0.4,1-6.8,0-11.3s-11-15-21.8-14.6
+			c0,0,25.6-10.1,38.1-18.5s24.6-18.9,24.6-18.9" stroke-dashoffset="211.22607421875" stroke-dasharray="211.22607421875"></path>
+		<path class="st4" d="M1341.6,271.1c0,0-29.6,6.7-58.6,10.9s-37.5,3.3-42.7,6.7c-5.2,3.3-14.2,11.3-18.7,11.8s-3.2-4-0.9-5.2
+			c0,0-10.4,5.8-11.9,3.3s12.1-9,12.1-9s-32.3,17.6-34.4,13.3c-2.2-4.3,22.5-21.5,45.8-28.8c23.3-7.3,39.8-13.8,41.8-16.3
+			c2-2.5,38.8-13.2,46.9-10.8C1329.1,249.3,1344.9,255.8,1341.6,271.1z M1341.6,271.1c0,0-29.6,6.7-58.6,10.9s-37.5,3.3-42.7,6.7
+			c-5.2,3.3-14.2,11.3-18.7,11.8s-3.2-4-0.9-5.2c0,0-10.4,5.8-11.9,3.3s12.1-9,12.1-9s-32.3,17.6-34.4,13.3
+			c-2.2-4.3,22.5-21.5,45.8-28.8c23.3-7.3,39.8-13.8,41.8-16.3c2-2.5,38.8-13.2,46.9-10.8C1329.1,249.3,1344.9,255.8,1341.6,271.1z
+			 M1341.6,271.1c0,0-29.6,6.7-58.6,10.9s-37.5,3.3-42.7,6.7c-5.2,3.3-14.2,11.3-18.7,11.8s-3.2-4-0.9-5.2c0,0-10.4,5.8-11.9,3.3
+			s12.1-9,12.1-9s-32.3,17.6-34.4,13.3c-2.2-4.3,22.5-21.5,45.8-28.8c23.3-7.3,39.8-13.8,41.8-16.3c2-2.5,38.8-13.2,46.9-10.8
+			C1329.1,249.3,1344.9,255.8,1341.6,271.1z" stroke-dashoffset="1152.541748046875" stroke-dasharray="1152.541748046875"></path>
+		<path class="st4" d="M1277.1,256.1c0,0-1.3-8.4-2.5-14.6c-1.2-6.2-9.3-9.8-9.3-16c0.2-2,11.5-4.9,23.3-7.9c11.8-3,22-10,29.3-16.5
+			s14.7-6.5,14.7-6.5c6.2,4.5,5.2,9.5,5.8,14.2c0.7,4.7,4.3,15.7,8.5,16.7s11.3-19.2,20.7-25c9.3-5.8,14.3-15.4,14.3-15.4" stroke-dashoffset="198.54086303710938" stroke-dasharray="198.54086303710938"></path>
+		<path class="st4" d="M1275,250c0,0-24.3-0.5-39.1,0c-14.8,0.5-32-5.3-37.8-8.5s-12.8-2.8-22.7-6.2c-9.8-3.3-27.2-12.2-26.3-15
+			c0.8-2.8,24.7,4.2,24.7,4.2c0.5-2-17-7-20-10s3.7-5.3,7.5-3.8c13.4,6.3,17.7,5.1,17.7,5.1s1-3.5-1.7-6.7s-5.6-5.6,0.4-5.8
+			c11.9,3.4,18.3,15.3,26.9,18.8c8.2,3.3,29.3,5.6,39.5,6.1s21.6-1.3,21.6-1.3" stroke-dashoffset="322.15484619140625" stroke-dasharray="322.15484619140625"></path>
+		<path class="st4" d="M1378.5,165.3c0,0-8.5,15.6-23.1,24.6s-21.4,2.5-27-8.5c-2-4.3-2-7.1-3.8-8.4s-5.4,1-5.8-1.9s3.8-9.5,2-14.8
+			c-1.8-5.3-5.6-9.7-2-22.5s12.8-27.9,30.1-27.4s26.1,10.2,30.9,26.5C1384.7,149.3,1378.5,165.3,1378.5,165.3z" stroke-dashoffset="243.36715698242188" stroke-dasharray="243.36715698242188"></path>
+		<path class="st4" d="M1370.2,114.8c0,0,4.8-4,8.5-1.1c3.7,2.8-3,8.6-3,8.6" stroke-dashoffset="19.603477478027344" stroke-dasharray="19.603477478027344"></path>
+		<path class="st4" d="M1378.7,113.7c0,0-1.3-2.7,7.7-2.7c14.8,1.1,17.3,36.5,18.1,50.7c0.8,14.2,12.6,34.8,12.6,34.8" stroke-dashoffset="103.32749938964844" stroke-dasharray="103.32749938964844"></path>
+		<path class="st4" d="M1336.5,192c0,0,2.2,1.5-3.9,2.7" stroke-dashoffset="5.759200096130371" stroke-dasharray="5.759200096130371"></path>
+		<path class="st4" d="M1399.6,661.7c0,0,4.6,1.8,5.6,7.7c1,5.8,3.2,12.2,0.7,13c-2.5,0.8-11,4.3-15.3,0c0,0-15.2,5.5-31.3,4
+			c-16.2-1.5-19.7-2.7-14.7-8.5c5-5.8,15.2-7.7,15.2-7.7" stroke-dashoffset="111.44377136230469" stroke-dasharray="111.44377136230469"></path>
+		<path class="st4" d="M1311.9,666.8c0,0-19.2,3.2-20.7,10.7c-0.5,2.7,15.7,5.8,25,4c9.3-1.8,27-5.5,29.7-9l1.9,2.5" stroke-dashoffset="84.94062042236328" stroke-dasharray="84.94062042236328"></path>
+		<path class="st4" d="M1354.7,654.5c0,0,4,5.2,3.4,7.2c-0.3,3.6-3.1,4-0.6,9" stroke-dashoffset="17.59194564819336" stroke-dasharray="17.59194564819336"></path>
+		<path class="st4" d="M1395.3,249.7c0,0,10.3,10.8,9.2,17.5c-0.4,2-1.3,4.2-2.5,6.2c-2.8,4.8-6.7,8.9-6.7,8.9" stroke-dashoffset="38.15886306762695" stroke-dasharray="38.15886306762695"></path>
+		<path class="st4" d="M1419.9,297.7c0,0-11.9-6.3-17.1-25.8" stroke-dashoffset="31.670978546142578" stroke-dasharray="31.670978546142578"></path>
+		<path class="st4" d="M1428.8,333.1c0,0,4.2,15.4,4.7,28c0.5,12.7,3.8,44.1,0,78.3s-16.2,70.3-17.2,105.6s-3.3,53.7-3.3,53.7
+			s-37.9,0.2-73.8-18.4" stroke-dashoffset="344.4538879394531" stroke-dasharray="344.4538879394531"></path>
+		<path class="st4" d="M1444.9,431.2l-12.2,14.4" stroke-dashoffset="18.87322425842285" stroke-dasharray="18.87322425842285"></path>
+		<path class="st4" d="M1195.3,301.7c0,0,6.2,73.8-17,169c-8.3,33.3-32.5,89.5-55.1,123.7l-16.2,5.5c0,0,15-19.9,16.4-24.9
+			s9.1-22.9,11.3-30s17.4-38.3,26.4-74.5s13.7-55.7,13.5-73.3c-0.2-17.7,5-26,5.3-33s-0.9-60.8,0.8-60.6
+			C1182.2,303.7,1195.3,301.7,1195.3,301.7z" stroke-dashoffset="648.2354125976562" stroke-dasharray="648.2354125976562"></path>
+		<path class="st4" d="M1159.8,228.5c0,0-8.7,32.4-7.6,45.2l-8.7-1.5c0,0-1-16.1,2.7-30.4c3.7-14.3,5.4-18.3,5.4-18.3L1159.8,228.5z
+			" stroke-dashoffset="114.12035369873047" stroke-dasharray="114.12035369873047"></path>
+	</g>
+	<g id="right-thin">
+		<path class="st3" d="M1320.1,154.5c-1.4,2.1-2.8,2.1-2.8,2.1" stroke-dashoffset="3.6102712154388428" stroke-dasharray="3.6102712154388428"></path>
+		<path class="st3" d="M1329.7,166.9c0,0-1.1,4.1-6.3,5.7" stroke-dashoffset="8.822853088378906" stroke-dasharray="8.822853088378906"></path>
+		<path class="st3" d="M1338.4,146.5c-4.1,5.3-8.2,3-8.2,3" stroke-dashoffset="9.476594924926758" stroke-dasharray="9.476594924926758"></path>
+		<path class="st3" d="M1324.6,146.5c0,0,9.3-8.3,13.8-7.1c4.6,1.2,4.9,1.8,4.9,1.8" stroke-dashoffset="21.177261352539062" stroke-dasharray="21.177261352539062"></path>
+		<path class="st3" d="M1343.9,173c0,0-2.4,3.8-4.5,4s-5.4-0.1-6.7,0.8c-1.4,0.9-4.3,3.6-4.3,3.6" stroke-dashoffset="18.596351623535156" stroke-dasharray="18.596351623535156"></path>
+		<path class="st3" d="M1337.5,181.4c0,0-1.4,2.7-7.1,3.7" stroke-dashoffset="8.217108726501465" stroke-dasharray="8.217108726501465"></path>
+		<path class="st3" d="M1321.9,125.6c0,0,1.9,2.5,5.4,4.2s12.4,0.6,15.9,3.4c10.8,7.8,10.7,11.3,10.7,20.6s7.1,16,7.1,16" stroke-dashoffset="65.96019744873047" stroke-dasharray="65.96019744873047"></path>
+		<path class="st3" d="M1358.7,140.6c0,0-5.5-7.4-12.1-9.3c-6.6-1.8-19.4-3-22-10.6" stroke-dashoffset="40.90476608276367" stroke-dasharray="40.90476608276367"></path>
+		<path class="st3" d="M1360.3,139.3c0,0-2.8-6.9-8.6-9.1c-5.8-2.2-22.7-5.3-24.5-13" stroke-dashoffset="41.52976989746094" stroke-dasharray="41.52976989746094"></path>
+		<path class="st3" d="M1375,121.1c0,0-1.7,10.4-15.3,15.9" stroke-dashoffset="22.92133903503418" stroke-dasharray="22.92133903503418"></path>
+		<path class="st3" d="M1374.4,120.1c0,0-31.5,5.8-42.9-7.5" stroke-dashoffset="45.180973052978516" stroke-dasharray="45.180973052978516"></path>
+		<path class="st3" d="M1369.6,114.2c0,0,0,4-11.9,3.2c-11.8-0.7-18.4-3.1-21.9-7.9" stroke-dashoffset="37.157737731933594" stroke-dasharray="37.157737731933594"></path>
+		<path class="st3" d="M1368.1,112.9c0,0-16.2,4.7-23-6.2" stroke-dashoffset="25.50267791748047" stroke-dasharray="25.50267791748047"></path>
+		<path class="st3" d="M1374.7,120.7c0,0-2.9,5.2-17.4,4.5s-24.9-4.3-28.4-10.1" stroke-dashoffset="49.712120056152344" stroke-dasharray="49.712120056152344"></path>
+		<path class="st3" d="M1373.3,125.6c0,0-3.1,5.9-20.5,5" stroke-dashoffset="21.807100296020508" stroke-dasharray="21.807100296020508"></path>
+		<path class="st3" d="M1355.6,140.9c0,0,8.9-4.4,9,0.5s-1.3,5.8-0.4,7.5s3.8,4.6,1.6,7.3c-1.9,0.6-4.3,1.7-3.2,3.3s13.2,10,13.2,10
+			" stroke-dashoffset="48.32640075683594" stroke-dasharray="48.32640075683594"></path>
+		<path class="st3" d="M1373.5,125c0,0-1.7,9.8-9.1,15.7" stroke-dashoffset="18.495269775390625" stroke-dasharray="18.495269775390625"></path>
+		<path class="st3" d="M1372.7,128.2c-0.2,13-6.4,24.5-6.4,24.5" stroke-dashoffset="25.525386810302734" stroke-dasharray="25.525386810302734"></path>
+		<path class="st3" d="M1376.5,124.1c0,0-1,9.9-1.2,14.6c-0.2,4.7-2.8,12.2-5.3,17.4c-2.5,5.2-6.3,4.7-6.3,4.7" stroke-dashoffset="41.27129364013672" stroke-dasharray="41.27129364013672"></path>
+		<path class="st3" d="M1381.5,141.5c-2.3,1.5-4.2,8.5-6.1,14.3c-1.8,5.8-6.7,8.7-6.7,8.7" stroke-dashoffset="26.903980255126953" stroke-dasharray="26.903980255126953"></path>
+		<path class="st3" d="M1379.7,116.6c0,0,4-1.7,6.4-0.3c2.3,1.4,6.5,3.1,9,16.6s3.1,29.1,4,32.5c0.9,3.3,2.6,12.6,8.9,25.5" stroke-dashoffset="86.0282211303711" stroke-dasharray="86.0282211303711"></path>
+		<path class="st3" d="M1378.9,118.5c0,0,7,2.1,9.7,9.7c4.3,12.6,6.8,35.1,7.9,40c1.2,4.9,5.9,20.9,5.9,20.9" stroke-dashoffset="76.7109375" stroke-dasharray="76.7109375"></path>
+		<path class="st3" d="M1377,125c0,0,2.3-1.9,3.9-0.9c1.6,0.9,6.7,4.5,9.3,27.7s4.1,30.9,7.6,36.2" stroke-dashoffset="71.42208099365234" stroke-dasharray="71.42208099365234"></path>
+		<path class="st3" d="M1380.6,135.6c0,0,6,9.2,6.9,34.2c0.1,4.2,5,17.2,5,17.2" stroke-dashoffset="53.11580276489258" stroke-dasharray="53.11580276489258"></path>
+		<path class="st3" d="M1388.5,186.4c0,0-3.9-8.4-5.2-12.6s-2-20.5-2-20.5" stroke-dashoffset="34.26188659667969" stroke-dasharray="34.26188659667969"></path>
+		<path class="st3" d="M1361.1,207c0,0,8-1,8.4,1.5c0.3,2.5-13,14.3-22.5,17c0,0-18-17.5-18.6-19.5s9.1-4.8,9.1-4.8" stroke-dashoffset="75.51119995117188" stroke-dasharray="75.51119995117188"></path>
+		<path class="st3" d="M1282.8,233.7l-6.4,17.4" stroke-dashoffset="18.539690017700195" stroke-dasharray="18.539690017700195"></path>
+		<path class="st3" d="M1285.3,253.3c-0.4-5.2,6.5-19.6,6.5-19.6" stroke-dashoffset="20.780040740966797" stroke-dasharray="20.780040740966797"></path>
+		<path class="st3" d="M1290.3,251.8c-0.4-6.9,7.6-20.4,7.6-20.4" stroke-dashoffset="21.986101150512695" stroke-dasharray="21.986101150512695"></path>
+		<path class="st3" d="M1294.1,250.8c1.7-7.2,7.7-18.3,7.7-18.3" stroke-dashoffset="19.897268295288086" stroke-dasharray="19.897268295288086"></path>
+		<path class="st3" d="M1299.8,249.3c1.8-7.3,6.8-16.9,6.8-16.9" stroke-dashoffset="18.250877380371094" stroke-dasharray="18.250877380371094"></path>
+		<path class="st3" d="M1305.7,248.1c1.1-5.7,5.4-15.3,5.4-15.3" stroke-dashoffset="16.251392364501953" stroke-dasharray="16.251392364501953"></path>
+		<path class="st3" d="M1311.4,247.1c0.7-6,4.6-14.7,4.6-14.7" stroke-dashoffset="15.449257850646973" stroke-dasharray="15.449257850646973"></path>
+		<path class="st3" d="M1320.1,231.4l-5.5,15.1" stroke-dashoffset="16.070476531982422" stroke-dasharray="16.070476531982422"></path>
+		<path class="st3" d="M1324.8,230.8l-5.4,15.8" stroke-dashoffset="16.697315216064453" stroke-dasharray="16.697315216064453"></path>
+		<path class="st3" d="M1329.1,230.3l-4.3,15" stroke-dashoffset="15.604179382324219" stroke-dasharray="15.604179382324219"></path>
+		<path class="st3" d="M1332.7,229.6l-2.5,13.5" stroke-dashoffset="13.729530334472656" stroke-dasharray="13.729530334472656"></path>
+		<path class="st3" d="M1335.1,240.9l2.2-13.4" stroke-dashoffset="13.579381942749023" stroke-dasharray="13.579381942749023"></path>
+		<path class="st3" d="M1339.8,238.7l1.5-11.6" stroke-dashoffset="11.696586608886719" stroke-dasharray="11.696586608886719"></path>
+		<path class="st3" d="M1420.5,265.6l-9.7,23.3" stroke-dashoffset="25.238431930541992" stroke-dasharray="25.238431930541992"></path>
+		<path class="st3" d="M1407.6,283.8c0,0,4.7-7.6,8.1-17.8c3.4-10.2,5.9-11.4,5.9-11.4" stroke-dashoffset="32.56970977783203" stroke-dasharray="32.56970977783203"></path>
+		<path class="st3" d="M1406,280.8c0,0,4.1-8.9,8.5-23.8c4.5-14.8,8.8-16.2,8.8-16.2" stroke-dashoffset="44.05940246582031" stroke-dasharray="44.05940246582031"></path>
+		<path class="st3" d="M1416.7,237.9c0,0-4.5,13.1-5.9,17.6c-1.5,4.5-7,19.6-7,19.6" stroke-dashoffset="39.375831604003906" stroke-dasharray="39.375831604003906"></path>
+		<path class="st3" d="M1410.3,243.2c0,0-1.3,10.7-6.4,19.3" stroke-dashoffset="20.454669952392578" stroke-dasharray="20.454669952392578"></path>
+		<path class="st3" d="M1406,245.7c0,0-0.9,7.3-4.2,12.6" stroke-dashoffset="13.368231773376465" stroke-dasharray="13.368231773376465"></path>
+		<path class="st3" d="M1325.6,274.5l-2.9,7" stroke-dashoffset="7.576948165893555" stroke-dasharray="7.576948165893555"></path>
+		<path class="st3" d="M1329.4,282.8c-1.5-4.5,2.2-9.5,2.2-9.5" stroke-dashoffset="10.089235305786133" stroke-dasharray="10.089235305786133"></path>
+		<path class="st3" d="M1334.3,283.6c-0.9-4.3,4.9-11.9,4.9-11.9" stroke-dashoffset="13.154404640197754" stroke-dasharray="13.154404640197754"></path>
+		<path class="st3" d="M1344,272.6l-4.1,8.9" stroke-dashoffset="9.79896354675293" stroke-dasharray="9.79896354675293"></path>
+		<path class="st3" d="M1348.4,271.3l-3.1,10" stroke-dashoffset="10.46947193145752" stroke-dasharray="10.46947193145752"></path>
+		<path class="st3" d="M1353.8,269.1l-3.6,10.3" stroke-dashoffset="10.91098403930664" stroke-dasharray="10.91098403930664"></path>
+		<path class="st3" d="M1359.1,266.7l-3.6,10.4" stroke-dashoffset="11.005439758300781" stroke-dasharray="11.005439758300781"></path>
+		<path class="st3" d="M1360.5,275l3.7-10.8" stroke-dashoffset="11.416189193725586" stroke-dasharray="11.416189193725586"></path>
+		<path class="st3" d="M1366.3,273l2.5-11.1" stroke-dashoffset="11.378055572509766" stroke-dasharray="11.378055572509766"></path>
+		<path class="st3" d="M1374.6,259l-3.1,12.6" stroke-dashoffset="12.975746154785156" stroke-dasharray="12.975746154785156"></path>
+		<path class="st3" d="M1380.5,256.1l-3.5,13" stroke-dashoffset="13.462911605834961" stroke-dasharray="13.462911605834961"></path>
+		<path class="st3" d="M1383.3,264.6c-1.3-1.3,2.2-10.8,2.2-10.8" stroke-dashoffset="11.211233139038086" stroke-dasharray="11.211233139038086"></path>
+		<path class="st3" d="M1388,262.6c-1.2-0.8,1.8-10.7,1.8-10.7" stroke-dashoffset="11.016590118408203" stroke-dasharray="11.016590118408203"></path>
+		<path class="st3" d="M1393.3,260.3c-1.9-2.3,1-10.2,1-10.2" stroke-dashoffset="10.536728858947754" stroke-dasharray="10.536728858947754"></path>
+		<path class="st3" d="M1389.4,320.1c0.8-9,4.8-19.6,4.8-19.6" stroke-dashoffset="20.229839324951172" stroke-dasharray="20.229839324951172"></path>
+		<path class="st3" d="M1393.6,317.9c0.5-6.6,3.6-14.3,3.6-14.3" stroke-dashoffset="14.793404579162598" stroke-dasharray="14.793404579162598"></path>
+		<path class="st3" d="M1349.2,309c0,0,3,4.3,3.5,9.3" stroke-dashoffset="10.027445793151855" stroke-dasharray="10.027445793151855"></path>
+		<path class="st3" d="M1353.9,325.3c-5.6-6.9-8.5-16.6-8.5-16.6" stroke-dashoffset="18.74826431274414" stroke-dasharray="18.74826431274414"></path>
+		<path class="st3" d="M1365.5,328.9c0,0-7.8,1.5-11.7,2.5s-11.9,1.7-11.9,1.7" stroke-dashoffset="23.995691299438477" stroke-dasharray="23.995691299438477"></path>
+		<path class="st3" d="M1367.6,332.4c0,0-7.9,1.6-11.4,3s-12.8,1.5-12.8,1.5" stroke-dashoffset="24.73328399658203" stroke-dasharray="24.73328399658203"></path>
+		<path class="st3" d="M1421.8,314.2c-2.1-0.2-20.9,7-31.1,10s-19.1,3.3-19.1,3.3" stroke-dashoffset="52.1197624206543" stroke-dasharray="52.1197624206543"></path>
+		<path class="st3" d="M1422.6,317.9c0,0-27.8,10-33.8,11.3s-17.6,1.7-17.6,1.7" stroke-dashoffset="53.3474235534668" stroke-dasharray="53.3474235534668"></path>
+		<path class="st3" d="M1371.5,329.3c0.4,2.8-4,4.3-5.3,0.9s2.3-3.4,2.3-3.4S1371.2,326.6,1371.5,329.3z" stroke-dashoffset="17.360485076904297" stroke-dasharray="17.360485076904297"></path>
+		<path class="st3" d="M1366,328.6c0,0-11.5-7.4-8.4-10.7s10.4,9,10.4,9" stroke-dashoffset="29.712112426757812" stroke-dasharray="29.712112426757812"></path>
+		<path class="st3" d="M1368.3,326.8c0,0,3.3-12.2,7-9.9c3.7,2.3-4.4,10.8-4.4,10.8" stroke-dashoffset="26.136249542236328" stroke-dasharray="26.136249542236328"></path>
+		<path class="st3" d="M1371,331.1c0,0,13.1,12,10,15s-10.6-14.5-10.6-14.5" stroke-dashoffset="37.985595703125" stroke-dasharray="37.985595703125"></path>
+		<path class="st3" d="M1368.3,332.2c0,0,0.8,10.3-1.9,14.3c-2.7,4-5.1,7.7-7.2,6.2s4.8-9.3,5.5-11.8s2.5-9.2,2.5-9.2" stroke-dashoffset="47.976497650146484" stroke-dasharray="47.976497650146484"></path>
+		<path class="st3" d="M1352.9,375c0,0-3-11.1-3.6-19.3c-0.6-8.2,2.3-11.2,2.3-11.2" stroke-dashoffset="31.33424949645996" stroke-dasharray="31.33424949645996"></path>
+		<path class="st3" d="M1352.5,364.3c0,0,5.5,11.8,6,18.4c0.5,6.6,1.2,11.2,2.4,11.8s3.1,0.9,2.7,7.1" stroke-dashoffset="39.90960693359375" stroke-dasharray="39.90960693359375"></path>
+		<path class="st3" d="M1411,330c0,0,8.9,8,7.7,21.6" stroke-dashoffset="23.674339294433594" stroke-dasharray="23.674339294433594"></path>
+		<path class="st3" d="M1415.4,325.9c0.1,0.2,8.6,8.6,8,21.9" stroke-dashoffset="23.909671783447266" stroke-dasharray="23.909671783447266"></path>
+		<path class="st3" d="M1422.6,357.7c0,0,4.3,12.8-2.2,20.4" stroke-dashoffset="21.35272216796875" stroke-dasharray="21.35272216796875"></path>
+		<path class="st3" d="M1401.8,469.1c-2.6-37,1.4-45.4,1.4-45.4" stroke-dashoffset="45.62117004394531" stroke-dasharray="45.62117004394531"></path>
+		<path class="st3" d="M1377.3,435.3c0,0,5,6.5,4.7,13.3c-0.3,6.8-1.1,22.2-1.7,26.1s0.7,12.4,0.7,12.4" stroke-dashoffset="52.96721267700195" stroke-dasharray="52.96721267700195"></path>
+		<path class="st3" d="M1409.5,444.8c0,0-0.2,29.8-1,39.2c-0.8,9.5-9.3,40.6-19.8,62" stroke-dashoffset="104.51531982421875" stroke-dasharray="104.51531982421875"></path>
+		<path class="st3" d="M1363.5,566.5c-1.3-2.8-1-16.7-1-16.7" stroke-dashoffset="16.787399291992188" stroke-dasharray="16.787399291992188"></path>
+		<path class="st3" d="M1431.2,343.6l9.4,5.7" stroke-dashoffset="10.993206977844238" stroke-dasharray="10.993206977844238"></path>
+		<path class="st3" d="M1432.4,350.5l10.4,5.4" stroke-dashoffset="11.718379974365234" stroke-dasharray="11.718379974365234"></path>
+		<path class="st3" d="M1433.3,357.7l11.2,5.6" stroke-dashoffset="12.521940231323242" stroke-dasharray="12.521940231323242"></path>
+		<path class="st3" d="M1433.3,362.8l12,5.1" stroke-dashoffset="13.038790702819824" stroke-dasharray="13.038790702819824"></path>
+		<path class="st3" d="M1434,369.2l12.1,5" stroke-dashoffset="13.092341423034668" stroke-dasharray="13.092341423034668"></path>
+		<path class="st3" d="M1434.3,375.4l12.3,4.6" stroke-dashoffset="13.13206958770752" stroke-dasharray="13.13206958770752"></path>
+		<path class="st3" d="M1434.7,381.4l12.5,5" stroke-dashoffset="13.462911605834961" stroke-dasharray="13.462911605834961"></path>
+		<path class="st3" d="M1447.5,392.4l-12.5-4.5" stroke-dashoffset="13.285329818725586" stroke-dasharray="13.285329818725586"></path>
+		<path class="st3" d="M1435.2,394.5l12.6,5" stroke-dashoffset="13.555788040161133" stroke-dasharray="13.555788040161133"></path>
+		<path class="st3" d="M1435.3,401.1l12.6,4.9" stroke-dashoffset="13.519220352172852" stroke-dasharray="13.519220352172852"></path>
+		<path class="st3" d="M1435.3,408.1l12.6,3.7" stroke-dashoffset="13.132001876831055" stroke-dasharray="13.132001876831055"></path>
+		<path class="st3" d="M1435.2,414.4l12.7,5" stroke-dashoffset="13.648763656616211" stroke-dasharray="13.648763656616211"></path>
+		<path class="st3" d="M1435.3,419.4l11.8,4.4" stroke-dashoffset="12.593692779541016" stroke-dasharray="12.593692779541016"></path>
+		<path class="st3" d="M1446.1,430.2l-11.5-5.2" stroke-dashoffset="12.62101936340332" stroke-dasharray="12.62101936340332"></path>
+		<path class="st3" d="M1434.2,431.6l7.4,3.5" stroke-dashoffset="8.185985565185547" stroke-dasharray="8.185985565185547"></path>
+		<path class="st3" d="M1414.5,606c0,0-5.5,10.3-5.8,10.3" stroke-dashoffset="11.831835746765137" stroke-dasharray="11.831835746765137"></path>
+		<path class="st3" d="M1401.8,618.1l13.7-19.5" stroke-dashoffset="23.831462860107422" stroke-dasharray="23.831462860107422"></path>
+		<path class="st3" d="M1397.6,618.9l12.9-20.3" stroke-dashoffset="24.05202865600586" stroke-dasharray="24.05202865600586"></path>
+		<path class="st3" d="M1394.3,615.5l11.9-17.1" stroke-dashoffset="20.833141326904297" stroke-dasharray="20.833141326904297"></path>
+		<path class="st3" d="M1390.8,615.5l11-17.5" stroke-dashoffset="20.670026779174805" stroke-dasharray="20.670026779174805"></path>
+		<path class="st3" d="M1387.3,613.1l9.8-15.6" stroke-dashoffset="18.42281723022461" stroke-dasharray="18.42281723022461"></path>
+		<path class="st3" d="M1385.3,608.4l7.4-11.5" stroke-dashoffset="13.675172805786133" stroke-dasharray="13.675172805786133"></path>
+		<path class="st3" d="M1385.3,602.1l4.3-5.7" stroke-dashoffset="7.140067100524902" stroke-dasharray="7.140067100524902"></path>
+		<path class="st3" d="M1359.1,607.9l6.5-7.4" stroke-dashoffset="9.849383354187012" stroke-dasharray="9.849383354187012"></path>
+		<path class="st3" d="M1355.3,606.8l10.2-11.8" stroke-dashoffset="15.597394943237305" stroke-dasharray="15.597394943237305"></path>
+		<path class="st3" d="M1350.1,606.9l13.2-16.8" stroke-dashoffset="21.365352630615234" stroke-dasharray="21.365352630615234"></path>
+		<path class="st3" d="M1346.6,605.3l13-16.4" stroke-dashoffset="20.927513122558594" stroke-dasharray="20.927513122558594"></path>
+		<path class="st3" d="M1344,602.6l11.3-15.3" stroke-dashoffset="19.02053451538086" stroke-dasharray="19.02053451538086"></path>
+		<path class="st3" d="M1342,598.4l9.4-12.5" stroke-dashoffset="15.640027046203613" stroke-dasharray="15.640027046203613"></path>
+		<path class="st3" d="M1341.5,592.1l6.1-7.9" stroke-dashoffset="9.980986595153809" stroke-dasharray="9.980986595153809"></path>
+		<path class="st3" d="M1298.4,670.8c0,0,3.3,4,2.6,10.5" stroke-dashoffset="11.063793182373047" stroke-dasharray="11.063793182373047"></path>
+		<path class="st3" d="M1305.5,668.3c0,0,1.5,7.7,1.1,13.1" stroke-dashoffset="13.176819801330566" stroke-dasharray="13.176819801330566"></path>
+		<path class="st3" d="M1310.4,667.1c0,0,2.1,11.1,1.8,14.9" stroke-dashoffset="15.033072471618652" stroke-dasharray="15.033072471618652"></path>
+		<path class="st3" d="M1316.4,669l1.1,12.3" stroke-dashoffset="12.349074363708496" stroke-dasharray="12.349074363708496"></path>
+		<path class="st3" d="M1322.7,680.2l-1.5-10.6" stroke-dashoffset="10.705581665039062" stroke-dasharray="10.705581665039062"></path>
+		<path class="st3" d="M1326.6,669.7l2,9.2" stroke-dashoffset="9.414894104003906" stroke-dasharray="9.414894104003906"></path>
+		<path class="st3" d="M1331.6,669.1l2.3,8.4" stroke-dashoffset="8.709226608276367" stroke-dasharray="8.709226608276367"></path>
+		<path class="st3" d="M1336.3,667.9l3.1,8" stroke-dashoffset="8.579618453979492" stroke-dasharray="8.579618453979492"></path>
+		<path class="st3" d="M1340.8,665.7l2.2,8.7" stroke-dashoffset="8.973851203918457" stroke-dasharray="8.973851203918457"></path>
+		<path class="st3" d="M1345.7,661.5l2.4,13.2" stroke-dashoffset="13.416424751281738" stroke-dasharray="13.416424751281738"></path>
+		<path class="st3" d="M1350.9,656.4l1.1,16.2" stroke-dashoffset="16.237314224243164" stroke-dasharray="16.237314224243164"></path>
+		<path class="st3" d="M1347.2,675.4l-0.3,9.4" stroke-dashoffset="9.40481185913086" stroke-dasharray="9.40481185913086"></path>
+		<path class="st3" d="M1352.5,672.4l-0.5,13.2" stroke-dashoffset="13.209478378295898" stroke-dasharray="13.209478378295898"></path>
+		<path class="st3" d="M1356.4,671l-0.3,14.6" stroke-dashoffset="14.603058815002441" stroke-dasharray="14.603058815002441"></path>
+		<path class="st3" d="M1360.8,675.7v10.7" stroke-dashoffset="10.70001220703125" stroke-dasharray="10.70001220703125"></path>
+		<path class="st3" d="M1366.6,676v10.4" stroke-dashoffset="10.4000244140625" stroke-dasharray="10.4000244140625"></path>
+		<path class="st3" d="M1371.6,676v10.2" stroke-dashoffset="10.20001220703125" stroke-dasharray="10.20001220703125"></path>
+		<path class="st3" d="M1377.4,675.4l-0.2,10.2" stroke-dashoffset="10.201972007751465" stroke-dasharray="10.201972007751465"></path>
+		<path class="st3" d="M1381.6,674.7l0.1,10" stroke-dashoffset="10.000499725341797" stroke-dasharray="10.000499725341797"></path>
+		<path class="st3" d="M1387.6,672.6v9" stroke-dashoffset="9" stroke-dasharray="9"></path>
+		<path class="st3" d="M1391.7,670.5v12.7" stroke-dashoffset="12.70001220703125" stroke-dasharray="12.70001220703125"></path>
+		<path class="st3" d="M1395.3,667.9l0.2,16.5" stroke-dashoffset="16.501211166381836" stroke-dasharray="16.501211166381836"></path>
+		<path class="st3" d="M1399.4,684.2l-0.6-20.6" stroke-dashoffset="20.60871124267578" stroke-dasharray="20.60871124267578"></path>
+		<path class="st3" d="M1401.8,663.2l1.7,20" stroke-dashoffset="20.072114944458008" stroke-dasharray="20.072114944458008"></path>
+		<path class="st3" d="M1186.4,311l9.4,0.2" stroke-dashoffset="9.402152061462402" stroke-dasharray="9.402152061462402"></path>
+		<path class="st3" d="M1185.8,315.2l10.1,0.3" stroke-dashoffset="10.104430198669434" stroke-dasharray="10.104430198669434"></path>
+		<path class="st3" d="M1187.3,319.1h8.7" stroke-dashoffset="8.699951171875" stroke-dasharray="8.699951171875"></path>
+		<path class="st3" d="M1187.3,323.8l8.7,0.4" stroke-dashoffset="8.709141731262207" stroke-dasharray="8.709141731262207"></path>
+		<path class="st3" d="M1182.5,328.6l13.5,0.3" stroke-dashoffset="13.50333309173584" stroke-dasharray="13.50333309173584"></path>
+		<path class="st3" d="M1195.9,333.5l-9,0.3" stroke-dashoffset="9.004998207092285" stroke-dasharray="9.004998207092285"></path>
+		<path class="st3" d="M1195.9,338.1c0,0-8.3,0.1-9,0" stroke-dashoffset="9.001201629638672" stroke-dasharray="9.001201629638672"></path>
+		<path class="st3" d="M1186.9,342.2h9" stroke-dashoffset="9" stroke-dasharray="9"></path>
+		<path class="st3" d="M1186.9,346.9h8.7" stroke-dashoffset="8.699951171875" stroke-dasharray="8.699951171875"></path>
+		<path class="st3" d="M1182.9,352.2h12.5" stroke-dashoffset="12.5" stroke-dasharray="12.5"></path>
+		<path class="st3" d="M1186.6,357.4h8.6" stroke-dashoffset="8.5999755859375" stroke-dasharray="8.5999755859375"></path>
+		<path class="st3" d="M1185.4,361h9.5" stroke-dashoffset="9.5" stroke-dasharray="9.5"></path>
+		<path class="st3" d="M1185.8,366.2h8.8" stroke-dashoffset="8.800048828125" stroke-dasharray="8.800048828125"></path>
+		<path class="st3" d="M1185.4,371.8h8.7" stroke-dashoffset="8.699951171875" stroke-dasharray="8.699951171875"></path>
+		<path class="st3" d="M1179.7,377.9h13.9" stroke-dashoffset="13.9000244140625" stroke-dasharray="13.9000244140625"></path>
+		<path class="st3" d="M1183.8,384.1h9.3" stroke-dashoffset="9.300048828125" stroke-dasharray="9.300048828125"></path>
+		<path class="st3" d="M1182.7,389.4h9.8" stroke-dashoffset="9.800048828125" stroke-dasharray="9.800048828125"></path>
+		<path class="st3" d="M1181.9,394.5h10" stroke-dashoffset="10" stroke-dasharray="10"></path>
+		<path class="st3" d="M1181.3,400h10" stroke-dashoffset="10" stroke-dasharray="10"></path>
+		<path class="st3" d="M1177.1,406.1h13.3" stroke-dashoffset="13.300048828125" stroke-dasharray="13.300048828125"></path>
+		<path class="st3" d="M1180.4,411.8h9.2" stroke-dashoffset="9.199951171875" stroke-dasharray="9.199951171875"></path>
+		<path class="st3" d="M1179.1,416.6h9.8" stroke-dashoffset="9.800048828125" stroke-dasharray="9.800048828125"></path>
+		<path class="st3" d="M1178.5,422.3h9.6" stroke-dashoffset="9.5999755859375" stroke-dasharray="9.5999755859375"></path>
+		<path class="st3" d="M1177.6,426.8h9.7" stroke-dashoffset="9.699951171875" stroke-dasharray="9.699951171875"></path>
+		<path class="st3" d="M1172.9,432.3h13.5" stroke-dashoffset="13.5" stroke-dasharray="13.5"></path>
+		<path class="st3" d="M1175.8,437.2h9.7" stroke-dashoffset="9.699951171875" stroke-dasharray="9.699951171875"></path>
+		<path class="st3" d="M1174.6,441.4h10" stroke-dashoffset="10" stroke-dasharray="10"></path>
+		<path class="st3" d="M1173.8,446.2h9.9" stroke-dashoffset="9.9000244140625" stroke-dasharray="9.9000244140625"></path>
+		<path class="st3" d="M1172.9,451.4h9.8" stroke-dashoffset="9.800048828125" stroke-dasharray="9.800048828125"></path>
+		<path class="st3" d="M1168.4,457.6h12.9" stroke-dashoffset="12.9000244140625" stroke-dasharray="12.9000244140625"></path>
+		<path class="st3" d="M1170.4,464h9.5" stroke-dashoffset="9.5" stroke-dasharray="9.5"></path>
+		<path class="st3" d="M1168.1,468.4l10.6,0.2" stroke-dashoffset="10.601862907409668" stroke-dasharray="10.601862907409668"></path>
+		<path class="st3" d="M1167.5,474.2h9.9" stroke-dashoffset="9.9000244140625" stroke-dasharray="9.9000244140625"></path>
+		<path class="st3" d="M1165.4,478.9l10.5,0.3" stroke-dashoffset="10.504284858703613" stroke-dasharray="10.504284858703613"></path>
+		<path class="st3" d="M1160.5,485.2h13.6" stroke-dashoffset="13.5999755859375" stroke-dasharray="13.5999755859375"></path>
+		<path class="st3" d="M1162.3,491.2h9.9" stroke-dashoffset="9.9000244140625" stroke-dasharray="9.9000244140625"></path>
+		<path class="st3" d="M1160.1,495.4h10.6" stroke-dashoffset="10.5999755859375" stroke-dasharray="10.5999755859375"></path>
+		<path class="st3" d="M1158.3,500.3h10.7" stroke-dashoffset="10.699951171875" stroke-dasharray="10.699951171875"></path>
+		<path class="st3" d="M1156.3,505.5h10.7" stroke-dashoffset="10.699951171875" stroke-dasharray="10.699951171875"></path>
+		<path class="st3" d="M1151,511.5l13.9-0.3" stroke-dashoffset="13.903261184692383" stroke-dasharray="13.903261184692383"></path>
+		<path class="st3" d="M1152.3,517.9h9.9" stroke-dashoffset="9.9000244140625" stroke-dasharray="9.9000244140625"></path>
+		<path class="st3" d="M1150.1,522.5h10.2" stroke-dashoffset="10.199951171875" stroke-dasharray="10.199951171875"></path>
+		<path class="st3" d="M1148.5,526.8h10" stroke-dashoffset="10" stroke-dasharray="10"></path>
+		<path class="st3" d="M1146.8,531.6h9.6" stroke-dashoffset="9.5999755859375" stroke-dasharray="9.5999755859375"></path>
+		<path class="st3" d="M1140.8,537h13.2" stroke-dashoffset="13.199951171875" stroke-dasharray="13.199951171875"></path>
+		<path class="st3" d="M1140.8,543.5h10.2" stroke-dashoffset="10.199951171875" stroke-dasharray="10.199951171875"></path>
+		<path class="st3" d="M1139.3,547.6h9.8" stroke-dashoffset="9.800048828125" stroke-dasharray="9.800048828125"></path>
+		<path class="st3" d="M1137.3,552.5h9.4" stroke-dashoffset="9.4000244140625" stroke-dasharray="9.4000244140625"></path>
+		<path class="st3" d="M1135.3,556.8h9.3" stroke-dashoffset="9.300048828125" stroke-dasharray="9.300048828125"></path>
+		<path class="st3" d="M1132,562.9h9.5" stroke-dashoffset="9.5" stroke-dasharray="9.5"></path>
+		<path class="st3" d="M1130.5,568.9l7.8-0.1" stroke-dashoffset="7.800689697265625" stroke-dasharray="7.800689697265625"></path>
+		<path class="st3" d="M1127.9,574.5h7.3" stroke-dashoffset="7.300048828125" stroke-dasharray="7.300048828125"></path>
+		<path class="st3" d="M1125.3,579.6h7.1" stroke-dashoffset="7.0999755859375" stroke-dasharray="7.0999755859375"></path>
+		<path class="st3" d="M1122.8,584.5h6.7" stroke-dashoffset="6.699951171875" stroke-dasharray="6.699951171875"></path>
+		<path class="st3" d="M1119.5,589.1l6.9,0.4" stroke-dashoffset="6.911610126495361" stroke-dasharray="6.911610126495361"></path>
+		<path class="st3" d="M1150.6,239.6l6.3,1.1" stroke-dashoffset="6.395359992980957" stroke-dasharray="6.395359992980957"></path>
+		<path class="st3" d="M1149.4,243.3l6.6,1.3" stroke-dashoffset="6.726788520812988" stroke-dasharray="6.726788520812988"></path>
+		<path class="st3" d="M1148.6,247.6l6.3,1.1" stroke-dashoffset="6.395359992980957" stroke-dasharray="6.395359992980957"></path>
+		<path class="st3" d="M1147.6,251.1l6.8,1" stroke-dashoffset="6.873184680938721" stroke-dasharray="6.873184680938721"></path>
+		<path class="st3" d="M1147.9,255.6l5.7,0.9" stroke-dashoffset="5.770566463470459" stroke-dasharray="5.770566463470459"></path>
+		<path class="st3" d="M1147.6,259.9l5.4,0.9" stroke-dashoffset="5.474509239196777" stroke-dasharray="5.474509239196777"></path>
+		<path class="st3" d="M1146.8,263.3l5.7,1.4" stroke-dashoffset="5.869363784790039" stroke-dasharray="5.869363784790039"></path>
+		<path class="st3" d="M1147.1,267.1l5.1,1.2" stroke-dashoffset="5.239253520965576" stroke-dasharray="5.239253520965576"></path>
+		<path class="st3" d="M1280.8,254.7c-1.1-5.7,6.5-19.6,6.5-19.6" stroke-dashoffset="20.90006446838379" stroke-dasharray="20.90006446838379"></path>
+	</g>
+</g>
+
+<style>
+
+	:root {
+		  --main-duration-4b: 4s;
+	}
+
+	#hippo-4b #hippo #hippo-bold path {
+		-webkit-animation: drawing calc(0.5 * var(--main-duration-4b)) linear 0s forwards;
+		        animation: drawing calc(0.5 * var(--main-duration-4b)) linear 0s forwards;
+	}
+	#hippo-4b #hippo #hippo-thin path {
+		-webkit-animation: drawing calc(0.25 * var(--main-duration-4b)) linear calc(0.25 * var(--main-duration-4b)) forwards;
+		        animation: drawing calc(0.25 * var(--main-duration-4b)) linear calc(0.25 * var(--main-duration-4b)) forwards;
+	}
+	#hippo-4b #hippo #hippo-shadow path {
+		-webkit-animation: drawing calc(0.125 * var(--main-duration-4b)) linear calc(0.375 * var(--main-duration-4b)) forwards;
+		        animation: drawing calc(0.125 * var(--main-duration-4b)) linear calc(0.375 * var(--main-duration-4b)) forwards;
+	}
+
+	#hippo-4b #left #left-bold path,
+	#hippo-4b #right #right-bold path {
+		-webkit-animation: drawing calc(0.5 * var(--main-duration-4b)) linear calc(0.5 * var(--main-duration-4b)) forwards;
+		        animation: drawing calc(0.5 * var(--main-duration-4b)) linear calc(0.5 * var(--main-duration-4b)) forwards;
+	}
+	#hippo-4b #left #left-thin path,
+	#hippo-4b #right #right-thin path {
+		-webkit-animation: drawing calc(0.25 * var(--main-duration-4b)) linear calc(0.75 * var(--main-duration-4b)) forwards;
+		        animation: drawing calc(0.25 * var(--main-duration-4b)) linear calc(0.75 * var(--main-duration-4b)) forwards;
+	}
+	#hippo-4b #left #left-shadow path,
+	#hippo-4b #right #right-shadow path {
+		-webkit-animation: drawing calc(0.125 * var(--main-duration-4b)) linear calc(0.875 * var(--main-duration-4b)) forwards;
+		        animation: drawing calc(0.125 * var(--main-duration-4b)) linear calc(0.875 * var(--main-duration-4b)) forwards;
+	}
+
+	#hippo-4b .st1 {
+		-webkit-animation: showing calc(0.25 * var(--main-duration-4b)) linear calc(0.5 * var(--main-duration-4b)) forwards;
+		        animation: showing calc(0.25 * var(--main-duration-4b)) linear calc(0.5 * var(--main-duration-4b)) forwards;
+	}
+
+
+	@-webkit-keyframes drawing {
+		to {
+			stroke-dashoffset: 0;
+		}
+	}
+
+	@keyframes drawing {
+		to {
+			stroke-dashoffset: 0;
+		}
+	}
+
+	@-webkit-keyframes showing {
+		to {
+			fill: #fff;
+		}
+	}
+
+	@keyframes showing {
+		to {
+			fill: #fff;
+		}
+	}
+
+</style>
+
+</svg>
