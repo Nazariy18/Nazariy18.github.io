@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lower Third #5</title>
+
+    <script src="../../lib/animejs/anime.min.js"></script>
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="vba-area">
+
+    <canvas class="Effect"></canvas>
+
+</div>
+
+<script>
+    var mainOptions = {
+        delay: /* delay */2000/* /delay */,
+        isPaused: false,
+        isRendering: false,
+        timer: null
+    };
+
+    var timeline = anime.timeline({
+        loop: true,
+        direction: 'alternate',
+        autoplay: true
+    });
+
+    var canvasEl = document.querySelector('.Effect');
+    var ctx = canvasEl.getContext('2d');
+
+    ctx.font = "30px Arial";
+    var textUp = /* text1 */'Simplicity is the ultimate sophistication'/* /text1 */;
+    var widthTextUp = Math.ceil(ctx.measureText(textUp).width);
+
+
+    ctx.font = "bold 65px Arial";
+    var textDown = /* text2 */'Leonardo da Vinci'/* /text2 */;
+    var widthTextDown = Math.ceil(ctx.measureText(textDown).width);
+
+    var widthText;
+    if (widthTextUp > widthTextDown) {
+        widthText = widthTextUp;
+    }
+    else {
+        widthText = widthTextDown;
+    }
+
+    var textColor2 = /* text_color2 */'#eeb945'/* /text_colo2 */;
+
+    //-------------------------function
+    function setCanvasSize() {
+        var rectObject = canvasEl.parentNode.getBoundingClientRect();
+        canvasEl.width = rectObject.width;
+        canvasEl.height = rectObject.height;
+        canvasEl.style.width = rectObject.width + 'px';
+        canvasEl.style.height = rectObject.height + 'px';
+    }
+
+    function createTextUp() {
+        var p = {};
+        p.x = 150;
+        p.y = 500;
+        p.xMask = 210 + widthText;
+        p.color = /* text_color1 */'#ffffff'/* /text_colo1 */;
+        p.draw = function () {
+            ctx.save();
+            ctx.beginPath();
+            ctx.rect(p.xMask, 470, 1280, 40);
+            ctx.clip();
+
+            ctx.beginPath();
+            ctx.font = "30px Arial";
+            ctx.fillStyle = p.color;
+            ctx.fillText(textUp, p.x, p.y);
+            ctx.restore();
+        };
+        return p;
+    }
+
+    function createTextDown() {
+        var p = {};
+        p.x = 150;
+        p.y = 580;
+        p.xMask = 215 + widthText;
+        p.color = textColor2;
+        p.width = 0;
+        p.height = 80;
+        p.draw = function () {
+
+            ctx.save();
+            ctx.beginPath();
+            ctx.rect(p.xMask, 520, 1280, 80);
+            ctx.clip();
+
+            ctx.beginPath();
+            ctx.font = "bold 65px Arial";
+            ctx.fillStyle = p.color;
+            ctx.fillText(textDown, p.x, p.y);
+
+            ctx.globalCompositeOperation  = 'xor';
+
+            ctx.beginPath();
+            ctx.rect(130, 520, p.width, p.height);
+            ctx.fillStyle = p.color;
+            ctx.fill();
+
+            ctx.restore();
+        };
+        return p;
+    }
+
+    function createRects() {
+        var p = {};
+        p.x1 = 200 + widthText;
+        p.x2 = 200 + widthText;
+        p.y1 = 490;
+        p.y2 = 560;
+        p.color = /* background_color */'#ffffff'/* /background_color */;
+        p.width1 = 10;
+        p.height1 = 0;
+        p.width2 = 15;
+        p.height2 = 0;
+        p.draw = function () {
+            ctx.save();
+            ctx.beginPath();
+            ctx.rect(p.x1, p.y1, p.width1, p.height1);
+            ctx.fillStyle = p.color;
+            ctx.fill();
+
+            ctx.beginPath();
+            ctx.rect(p.x2, p.y2, p.width2, p.height2);
+            ctx.fillStyle = p.color;
+            ctx.fill();
+            ctx.restore();
+        };
+        return p;
+    }
+
+
+    function renderEffect(anim) {
+        clearCanvas();
+        for (var i = 0; i < anim.animatables.length; i++) {
+            anim.animatables[i].target.draw();
+        }
+    }
+
+    var render = anime({
+        duration: Infinity,
+        update: function () {
+            if (!timeline.paused) {
+                clearCanvas();
+            }
+        }
+    });
+
+    var clearCanvas = function () {
+        ctx.clearRect(0, 0, canvasEl.width, canvasEl.height);
+    };
+
+    //----------------------------------------
+    function animateTitles() {
+        var text1 = createTextUp();
+        var text2 = createTextDown();
+        var rects = createRects();
+
+        timeline
+            .add({
+                targets: [text1, text2, rects],
+                update: renderEffect
+            })
+            .add({
+                targets: rects,
+                easing: 'easeOutQuad',
+                duration: 500,
+                y2: [560, 520],
+                height2: [0, 80],
+                update: renderEffect,
+                offset: 100
+            })
+            .add({
+                targets: rects,
+                easing: 'easeOutQuad',
+                duration: 500,
+                y1: [490, 470],
+                height1: [0, 40],
+                update: renderEffect
+            })
+            .add({
+                targets: rects,
+                easing: 'easeOutQuad',
+                duration: 1000,
+                x2: [200 + widthText, 110],
+                update: renderEffect,
+                offset: 1100
+            })
+            .add({
+                targets: rects,
+                easing: 'easeOutQuad',
+                duration: 1000,
+                x1: [200 + widthText, -20],
+                update: renderEffect,
+                offset: 1300
+            })
+            .add({
+                targets: text1,
+                easing: 'easeOutQuad',
+                duration: 1000,
+                xMask: [210 + widthText, -10],
+                update: renderEffect,
+                offset: 1300
+            })
+            .add({
+                targets: text2,
+                easing: 'easeOutQuad',
+                duration: 1000,
+                xMask: [215 + widthText, 125],
+                update: renderEffect,
+                offset: 1100
+            })
+            .add({
+                targets: rects,
+                easing: 'easeOutQuad',
+                duration: 1000,
+                x2: [110, 200 + widthText],
+                update: renderEffect,
+                offset: 2600
+            })
+            .add({
+                targets: text2,
+                easing: 'easeOutQuad',
+                duration: 1000,
+                width: [0, widthTextDown + 40],
+                update: renderEffect,
+                offset: 2600
+            })
+            //Duplicate for delay
+            .add({
+                targets: text2,
+                easing: 'easeOutQuad',
+                width: widthTextDown + 40,
+                update: renderEffect,
+                duration: mainOptions.delay / 2//time in + time out = need / 2
+            })
+            .add({
+                targets: [text1, rects, text2],
+                update: renderEffect
+            });
+    }
+
+    setCanvasSize();
+    animateTitles();
+    //-------------------------------------------
+    //Playback control
+    var playbackControl = {
+
+        getIsPaused: function () {
+            return timeline.paused;
+        },
+
+        playToggle: function () {
+            if (timeline.paused) {
+                timeline.play();
+            } else {
+                timeline.pause();
+            }
+        },
+
+        play: function () {
+            timeline.play();
+        },
+
+        pause: function () {
+            timeline.pause();
+        },
+
+        restart: function () {
+            timeline.restart();
+        },
+
+        stop: function () {
+            clearTimeout(mainOptions.timer);
+            timeline.restart();
+            timeline.pause();
+            clearCanvas();
+        },
+
+        seek: function (miliseconds) {
+            clearTimeout(mainOptions.timer);
+            if (timeline.reversed) {
+                timeline.reverse();
+            }
+            timeline.seek(miliseconds);
+            timeline.play();
+        }
+    };
+
+</script>
+
+<!-- BUTTONS -->
+<div id="vba-buttons" style="display: none; position: fixed; right: 20px; top: 20px;">
+    <button type="button" class="vba-btn" onclick="playbackControl.playToggle(); return false;">
+        Play / Pause
+    </button>
+    <button type="button" class="vba-btn" onclick="playbackControl.play(); return false;">
+        Play
+    </button>
+    <button type="button" class="vba-btn" onclick="playbackControl.pause(); return false;">
+        Pause
+    </button>
+    <button type="button" class="vba-btn" onclick="playbackControl.stop(); return false;">
+        Stop
+    </button>
+    <button type="button" class="vba-btn" onclick="playbackControl.seek(2500); return false;">
+        Jump to 50% time
+    </button>
+    <button type="button" class="vba-btn" onclick="playbackControl.restart(); return false;">
+        Replay
+    </button>
+</div>
+<script>
+    //To display buttons add #buttons hash to page address and reload
+    if (window.location.hash.indexOf('buttons') > -1) {
+        document.getElementById('vba-buttons').style.display = 'block';
+    }
+</script>
+<!-- /BUTTONS -->
+
+</body>
+</html>
