@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animation #3</title>
+
+    <link href="../../fonts/Domestic_Manners/font.css" rel="stylesheet">
+    <script src="../../lib/animejs/anime.min.js"></script>
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="vba-area">
+
+    <canvas class="Effect"></canvas>
+
+</div>
+
+<script>
+    var mainOptions = {
+        delay: /* delay */3000/* /delay */,
+        isPaused: false,
+        isRendering: false,
+        timer: null
+    };
+
+    var timeline = anime.timeline({
+        loop: true,
+        autoplay: true
+    });
+
+    var canvasEl = document.querySelector('.Effect');
+    var ctx = canvasEl.getContext('2d');
+
+    ctx.font = "bold 40px 'Century Gothic'";
+    var textPl = /* text */'I could agree with you but then we’d both be wrong. Harvey Specter'/* /text */;
+
+    var words = textPl.split(' ');
+    //------------------------
+    var size = 54;
+    var m = 4, k = 1;
+
+    do {
+        size = size - 4;
+        m += 1;
+        k = 1;
+
+        var line = '';
+        ctx.font = "bold " + size + "px 'HandWritten'";
+
+        for (var n = 0; n < words.length; n++) {
+            var testLine = line + words[n] + ' ';
+            var testWidth = ctx.measureText(testLine).width;
+            if (testWidth > 400 && n > 0) {
+                line = words[n] + ' ';
+                k += 1;
+            }
+            else {
+                line = testLine;
+            }
+        }
+    }
+    while (k > m);
+
+    //-------------------------function
+    function setCanvasSize() {
+        var rectObject = canvasEl.parentNode.getBoundingClientRect();
+        canvasEl.width = rectObject.width;
+        canvasEl.height = rectObject.height;
+        canvasEl.style.width = rectObject.width + 'px';
+        canvasEl.style.height = rectObject.height + 'px';
+    }
+
+    function createFigure() {
+        var p = {};
+        p.color = /* paper_front */'#ffb5ae'/* /paper_front */;
+        p.scale = 2;
+        p.x1 = 0;
+        p.y1 = 0;
+        p.x2 = 240;
+        p.y2 = 0;
+        p.x3 = 240;
+        p.y3 = 111;
+        p.x4 = 221;
+        p.y4 = 163;
+        p.x4k = 237;
+        p.y4k = 143;
+        p.x5 = 178;
+        p.y5 = 232;
+        p.x6 = 156;
+        p.y6 = 240;
+        p.x6k = 175;
+        p.y6k = 238;
+        p.x7 = 0;
+        p.y7 = 240;
+        p.x = 120;
+        p.y = 120;
+        p.draw = function () {
+            ctx.save();
+            ctx.translate(520, 250);
+            ctx.translate(p.x, p.y);
+            ctx.scale(p.scale, p.scale);
+            ctx.translate((-1) * p.x, (-1) * p.y);
+            //---------------------------------
+            ctx.beginPath();
+            ctx.moveTo(p.x1, p.y1);
+            ctx.lineTo(p.x2, p.y2);
+            ctx.lineTo(p.x3, p.y3);
+            ctx.bezierCurveTo(p.x3, p.y3, p.x4k, p.y4k, p.x4, p.y4);
+            ctx.lineTo(p.x5, p.y5);
+            ctx.bezierCurveTo(p.x5, p.y5, p.x6k, p.y6k, p.x6, p.y6);
+            ctx.lineTo(p.x7, p.y7);
+            ctx.lineTo(p.x1, p.y1);
+            ctx.closePath();
+            ctx.fillStyle = p.color;
+            ctx.fill();
+
+            ctx.restore();
+        };
+        return p;
+    }
+
+    function createFigureUp() {
+        var p = {};
+        p.color = /* paper_back */'#946a69'/* /paper_back */;
+        p.scale = 2;
+        p.x1 = 221;
+        p.y1 = 163;
+        p.x2 = 178;
+        p.y2 = 232;
+        p.x3 = 178;
+        p.y3 = 212;
+        p.x3k = 184;
+        p.y3k = 227;
+        p.x4 = 172;
+        p.y4 = 197;
+        p.x5 = 200;
+        p.y5 = 181;
+        p.x6k = 212;
+        p.y6k = 174;
+        p.x = 120;
+        p.y = 120;
+        p.xMove = 520;
+        p.yMove = 250;
+        p.draw = function () {
+            ctx.save();
+            ctx.translate(p.xMove, p.yMove);
+            ctx.translate(p.x, p.y);
+            ctx.scale(p.scale, p.scale);
+            ctx.translate((-1) * p.x, (-1) * p.y);
+            //---------------------------------
+            ctx.beginPath();
+            ctx.moveTo(p.x1, p.y1);
+            ctx.lineTo(p.x2, p.y2);
+            ctx.bezierCurveTo(p.x2, p.y2, p.x3k, p.y3k, p.x3, p.y3);
+            ctx.lineTo(p.x4, p.y4);
+            ctx.lineTo(p.x5, p.y5);
+            ctx.bezierCurveTo(p.x5, p.y5, p.x6k, p.y6k, p.x1, p.y1);
+            ctx.fillStyle = p.color;
+            ctx.fill();
+            ctx.restore();
+
+
+        };
+        return p;
+    }
+
+    function createText() {
+        var p = {};
+        p.x = 620;
+        p.y = 340;
+        p.xMask = 1200;
+        p.yMask = 1800;
+        p.maxWidth = 400;
+        p.color = /* text_color */'#000000'/* /text_color */;
+        p.widthMask = 400;
+        p.draw = function () {
+            var line = '';
+            var y = 350 - (100 / m) * k;
+
+            ctx.save();
+            ctx.beginPath();
+            ctx.moveTo(p.xMask, 0);
+            ctx.lineTo(0, p.yMask);
+            ctx.lineTo(0, 0);
+            ctx.clip();
+
+
+            ctx.font = "bold " + size + "px 'HandWritten'";
+            ctx.textAlign = "center";
+            ctx.fillStyle = p.color;
+
+            for (var n = 0; n < words.length; n++) {
+                var testLine = line + words[n] + ' ';
+                var testWidth = ctx.measureText(testLine).width;
+
+                if (testWidth > p.maxWidth && n > 0) {
+                    ctx.fillText(line, p.x, y);
+                    line = words[n] + ' ';
+                    y += size + 5;
+                }
+                else {
+                    line = testLine;
+                }
+            }
+            ctx.fillText(line, p.x, y);
+
+            ctx.restore();
+
+        };
+        return p;
+    }
+
+    function renderEffect(anim) {
+        clearCanvas();
+        for (var i = 0; i < anim.animatables.length; i++) {
+            anim.animatables[i].target.draw();
+        }
+    }
+
+    var render = anime({
+        duration: Infinity,
+        update: function () {
+            if (!timeline.paused) {
+                clearCanvas();
+            }
+        }
+    });
+
+    var clearCanvas = function () {
+        ctx.clearRect(0, 0, canvasEl.width, canvasEl.height);
+    };
+
+    //----------------------------------------
+    function animateEffect() {
+        var figure1 = createFigure();
+        var figure2 = createFigureUp();
+        var text = createText();
+
+        timeline
+            .add({
+                targets: figure1,
+                easing: 'linear',
+                duration: 500,
+                y3: [111, 0],
+                x4: [221, 224],
+                y4: [163, 51],
+                x4k: [237, 238],
+                y4k: [143, 30],
+                x5: [178, 112],
+                y5: [232, 231],
+                x6: [156, 87],
+                y6: [240, 240],
+                x6k: [175, 107],
+                y6k: [238, 239],
+                update: renderEffect,
+                offset: mainOptions.delay
+            })
+            .add({
+                targets: figure2,
+                easing: 'linear',
+                duration: 500,
+                x1: [221, 224],
+                y1: [163, 51],
+                x2: [178, 112],
+                y2: [232, 231],
+                x3: [178, 112],
+                y3: [212, 212],
+                x3k: [184, 116],
+                y3k: [227, 225],
+                x4: [172, 73],
+                y4: [197, 138],
+                x5: [200, 193],
+                y5: [181, 79],
+                x6k: [212, 210],
+                y6k: [174, 70],
+                update: renderEffect,
+                offset: mainOptions.delay
+            })
+            .add({
+                targets: figure1,
+                easing: 'linear',
+                duration: 126,
+                x2: [240, 230],
+                x3: [240, 230],
+                x4: [224, 230],
+                y4: [51, 0],
+                x4k: [238, 230],
+                y4k: [30, 0],
+                x5: [112, 96],
+                x6: [87, 61],
+                x6k: [107, 91],
+                update: renderEffect,
+                offset: 500 + mainOptions.delay
+            })
+            .add({
+                targets: figure2,
+                easing: 'linear',
+                duration: 126,
+                x1: [224, 240],
+                y1: [51, -10],
+                x2: [112, 96],
+                x3: [112, 96],
+                x3k: [116, 100],
+                x4: [73, 31],
+                y4: [138, 112],
+                x5: [193, 240],
+                y5: [79, -10],
+                x6k: [210, 240],
+                y6k: [70, -10],
+                update: renderEffect,
+                offset: 500 + mainOptions.delay
+            })
+            .add({
+                targets: figure1,
+                easing: 'linear',
+                duration: 192,
+                x2: [230, 179],
+                x3: [230, 179],
+                x4: [230, 179],
+                x4k: [230, 179],
+                x5: [96, 35],
+                x6: [61, 0],
+                x6k: [91, 30],
+                update: renderEffect,
+                offset: 626 + mainOptions.delay
+            })
+            .add({
+                targets: figure2,
+                easing: 'linear',
+                duration: 192,
+                x1: [240, 189],
+                y1: [-10, -10],
+                x2: [96, 35],
+                x3: [96, 35],
+                x3k: [100, 39],
+                x4: [31, -33],
+                y4: [112, 73],
+                x5: [240, 186],
+                y5: [-10, -49],
+                x6k: [240, 195],
+                y6k: [-10, -22],
+                update: renderEffect,
+                offset: 626 + mainOptions.delay
+            })
+            .add({
+                targets: figure1,
+                easing: 'linear',
+                duration: 111,
+                x2: [179, 144],
+                x3: [179, 144],
+                x4: [179, 144],
+                x4k: [179, 144],
+                x5: [35, 0],
+                y5: [231, 230],
+                y6: [240, 230],
+                x6k: [30, 0],
+                y6k: [240, 230],
+                update: renderEffect,
+                offset: 817 + mainOptions.delay
+            })
+            .add({
+                targets: figure2,
+                easing: 'linear',
+                duration: 111,
+                x1: [189, 154],
+                y1: [-10, -10],
+                x2: [35, 0],
+                y2: [231, 230],
+                x3: [35, 0],
+                y3: [212, 230],
+                x3k: [39, 0],
+                y3k: [225, 230],
+                x4: [-33, -70],
+                y4: [73, 51],
+                x5: [186, 149],
+                y5: [-49, -71],
+                x6k: [195, 170],
+                y6k: [-22, -28],
+                update: renderEffect,
+                offset: 817 + mainOptions.delay
+            })
+            .add({
+                targets: figure1,
+                easing: 'linear',
+                duration: 63,
+                x2: [144, 0],
+                x3: [144, 0],
+                x4: [144, 0],
+                x4k: [144, 0],
+                y5: [230, 0],
+                y6: [230, 0],
+                y6k: [230, 0],
+                update: renderEffect,
+                offset: 928 + mainOptions.delay
+            })
+            .add({
+                targets: figure2,
+                easing: 'linear',
+                duration: 63,
+                x1: [154, 134],
+                y1: [-10, -10],
+                x2: [0, 0],
+                y2: [230, 198],
+                x3: [0, -21],
+                y3: [230, 217],
+                x3k: [0, -17],
+                y3k: [230, 222],
+                x4: [-70, -91],
+                y4: [51, 38],
+                x5: [149, 128],
+                y5: [-71, -84],
+                x6k: [170, 150],
+                y6k: [-28, -25],
+                update: renderEffect,
+                offset: 928 + mainOptions.delay
+            })
+            .add({
+                targets: figure2,
+                easing: 'linear',
+                duration: 371,
+                x1: [134, 16],
+                y1: [-10, -10],
+                x2: [0, 0],
+                y2: [198, 10],
+                x3: [-21, -145],
+                y3: [217, 143],
+                x3k: [0, -30],
+                y3k: [222, 50],
+                x4: [-91, -215],
+                y4: [38, -36],
+                x5: [128, 4],
+                y5: [-84, -158],
+                x6k: [150, 30],
+                y6k: [-25, -54],
+                update: renderEffect
+            })
+            .add({
+                targets: figure2,
+                easing: 'linear',
+                duration: 54,
+                x1: [16, 0],
+                y1: [-10, -15],
+                x2: [0, 0],
+                y2: [10, -15],
+                x3: [-145, -230],
+                y3: [143, 92],
+                x3k: [-30, 0],
+                y3k: [50, -15],
+                x4: [-215, -300],
+                y4: [-36, -87],
+                x5: [4, -61],
+                y5: [-158, -189],
+                x6k: [30, 0],
+                y6k: [-54, -15],
+                update: renderEffect
+            })
+            .add({
+                targets: text,
+                easing: 'linear',
+                duration: 2400,
+                xMask: [1200, 0],
+                yMask: [1800, 0],
+                update: renderEffect,
+                offset: mainOptions.delay
+            })
+            .add({
+                targets: figure2,
+                easing: 'linear',
+                duration: 1000,
+                xMove: [520, -1520],
+                yMove: [250, -1250],
+                update: renderEffect,
+                offset: 1416 + mainOptions.delay
+            })
+            .add({
+                targets: [figure1, text, figure2],
+                update: renderEffect
+            });
+    }
+
+    setCanvasSize();
+    animateEffect();
+    //-------------------------------------------
+    //Playback control
+    var playbackControl = {
+
+        getIsPaused: function () {
+            return timeline.paused;
+        },
+
+        playToggle: function () {
+            if (timeline.paused) {
+                timeline.play();
+            } else {
+                timeline.pause();
+            }
+        },
+
+        play: function () {
+            timeline.play();
+        },
+
+        pause: function () {
+            timeline.pause();
+        },
+
+        restart: function () {
+            timeline.restart();
+        },
+
+        stop: function () {
+            timeline.restart();
+            timeline.pause();
+            clearCanvas();
+        },
+
+        seek: function (miliseconds) {
+            if (timeline.reversed) {
+                timeline.reverse();
+            }
+            timeline.seek(miliseconds);
+            timeline.play();
+        }
+    };
+
+</script>
+
+<!-- BUTTONS -->
+<div id="vba-buttons" style="display: none; position: fixed; right: 20px; top: 20px;">
+    <button type="button" class="vba-btn" onclick="playbackControl.playToggle(); return false;">
+        Play / Pause
+    </button>
+    <button type="button" class="vba-btn" onclick="playbackControl.play(); return false;">
+        Play
+    </button>
+    <button type="button" class="vba-btn" onclick="playbackControl.pause(); return false;">
+        Pause
+    </button>
+    <button type="button" class="vba-btn" onclick="playbackControl.stop(); return false;">
+        Stop
+    </button>
+    <button type="button" class="vba-btn" onclick="playbackControl.seek(2500); return false;">
+        Jump to 50% time
+    </button>
+    <button type="button" class="vba-btn" onclick="playbackControl.restart(); return false;">
+        Replay
+    </button>
+</div>
+<script>
+    //To display buttons add #buttons hash to page address and reload
+    if (window.location.hash.indexOf('buttons') > -1) {
+        document.getElementById('vba-buttons').style.display = 'block';
+    }
+</script>
+<!-- /BUTTONS -->
+
+</body>
+</html>

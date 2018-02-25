@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animation #4</title>
+
+    <link href="../../fonts/PPETRIAL/font.css" rel="stylesheet">
+    <script src="../../lib/animejs/anime.min.js"></script>
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="vba-area">
+
+    <canvas class="Effect"></canvas>
+
+</div>
+
+<script>
+    var mainOptions = {
+        isPaused: false,
+        isRendering: false,
+        timer: null
+    };
+
+    var timeline = anime.timeline({
+        loop: true,
+        autoplay: true
+    });
+
+    var canvasEl = document.querySelector('.Effect'),
+        ctx = canvasEl.getContext('2d');
+
+    ctx.font = "70px 'HandWrittenPencil'";
+    var textLb = /* text */'All limitations are self-imposed'/* /text */;
+    var widthText = 1 * Math.ceil(ctx.measureText(textLb).width);
+    var handImage = new Image();
+
+    //-------------------------function
+    function setCanvasSize() {
+        var rectObject = canvasEl.parentNode.getBoundingClientRect();
+        canvasEl.width = rectObject.width;
+        canvasEl.height = rectObject.height;
+        canvasEl.style.width = rectObject.width + 'px';
+        canvasEl.style.height = rectObject.height + 'px';
+    }
+
+    function createImageHand() {
+        var p = {};
+        p.x = 740 - widthText / 2;
+        p.y = 1200;
+        p.draw = function () {
+            ctx.save();
+            ctx.shadowBlur = 20;
+            ctx.shadowOffsetX = -5;
+            ctx.shadowOffsetY = 20;
+            ctx.shadowColor = 'rgba(0, 0, 0, .1)';
+            ctx.drawImage(handImage, p.x - (p.width / 2), p.y - (p.height / 2), p.width, p.height);
+            var widthImg = parseInt(handImage.width);
+            var heightImg = parseInt(handImage.height);
+            if (widthImg > heightImg) {
+                p.height = (720 / widthImg) * heightImg;
+                p.width = 720;
+            }
+            else {
+                p.width = (720 / heightImg) * widthImg;
+                p.height = 720;
+            }
+            ctx.restore();
+        };
+        return p;
+    }
+
+    function createText() {
+        var p = {};
+        p.x = 640;
+        p.y = 370;
+        p.widthMask = 0;
+        p.color = /* text_color */'#000000'/* /text_color */;
+        p.draw = function () {
+
+            ctx.save();
+            ctx.beginPath();
+            ctx.rect(640 - widthText / 2, 300, p.widthMask, 100);
+            ctx.clip();
+            ctx.font = "70px 'HandWrittenPencil'";
+            ctx.textAlign = "center";
+            ctx.fillStyle = p.color;
+            ctx.fillText(textLb, p.x, p.y);
+
+            ctx.restore()
+        };
+        return p;
+    }
+
+    function renderEffect(anim) {
+        clearCanvas();
+        for (var i = 0; i < anim.animatables.length; i++) {
+            anim.animatables[i].target.draw();
+        }
+    }
+
+    var render = anime({
+        duration: Infinity,
+        update: function () {
+            if (!timeline.paused) {
+                clearCanvas();
+            }
+        }
+    });
+
+    var clearCanvas = function () {
+        ctx.clearRect(0, 0, canvasEl.width, canvasEl.height);
+    };
+
+    //----------------------------------------
+    function animateHand() {
+        var hand = createImageHand();
+        var text = createText();
+
+        timeline
+            .add({
+                targets: text,
+                easing: 'linear',
+                duration: 2000,
+                widthMask: [0, widthText],
+                update: renderEffect,
+                offset: 600
+            })
+            .add({
+                targets: hand,
+                easing: 'easeOutCubic',
+                duration: 500,
+                y: [1200, 650],
+                update: renderEffect,
+                offset: 0
+            })
+            .add({
+                targets: hand,
+                duration: 2000,
+                easing: 'linear',
+                x: [740 - widthText / 2,
+                    740 - (widthText / 2) + (1 * widthText / 20),
+                    740 - (widthText / 2) + (2 * widthText / 20), 
+                    740 - (widthText / 2) + (3 * widthText / 20),
+                    740 - (widthText / 2) + (4 * widthText / 20),
+                    740 - (widthText / 2) + (5 * widthText / 20),
+                    740 - (widthText / 2) + (6 * widthText / 20),
+                    740 - (widthText / 2) + (7 * widthText / 20),
+                    740 - (widthText / 2) + (8 * widthText / 20),
+                    740 - (widthText / 2) + (9 * widthText / 20),
+                    740 - (widthText / 2) + (10 * widthText / 20),
+                    740 - (widthText / 2) + (11 * widthText / 20),
+                    740 - (widthText / 2) + (12 * widthText / 20),
+                    740 - (widthText / 2) + (13 * widthText / 20),
+                    740 - (widthText / 2) + (14 * widthText / 20),
+                    740 - (widthText / 2) + (15 * widthText / 20),
+                    740 - (widthText / 2) + (16 * widthText / 20),
+                    740 - (widthText / 2) + (17 * widthText / 20),
+                    740 - (widthText / 2) + (18 * widthText / 20),
+                    740 - (widthText / 2) + (19 * widthText / 20),
+                    740 - (widthText / 2) + (widthText),],
+                y: [{value: 650}, 750, 650, 750, 650, 750, 650, 750, 650, 750, 650, 750, 650, 750, 650, 750, 650, 750, 650, 750, 650],
+                update: renderEffect,
+                offset: 500
+            })
+            .add({
+                targets: hand,
+                easing: 'easeInCubic',
+                duration: 500,
+                y: [650, 1200],
+                x: [740 - (widthText / 2) + (widthText), 1280],
+                update: renderEffect,
+                offset: 2600
+            })
+            .add({
+                targets: [text, hand],
+                update: renderEffect
+            });
+
+    }
+
+    setCanvasSize();
+
+    handImage.onload  = animateHand;
+    handImage.src = 'hand-pencil-drawing.png';
+
+    //-------------------------------------------
+    //Playback control
+    var playbackControl = {
+
+        getIsPaused: function () {
+            return timeline.paused;
+        },
+
+        playToggle: function () {
+            if (timeline.paused) {
+                timeline.play();
+            } else {
+                timeline.pause();
+            }
+        },
+
+        play: function () {
+            timeline.play();
+        },
+
+        pause: function () {
+            timeline.pause();
+        },
+
+        restart: function () {
+            timeline.restart();
+        },
+
+        stop: function () {
+            timeline.restart();
+            timeline.pause();
+            clearCanvas();
+        },
+
+        seek: function (miliseconds) {
+            if (timeline.reversed) {
+                timeline.reverse();
+            }
+            timeline.seek(miliseconds);
+            timeline.play();
+        }
+    };
+
+</script>
+
+<!-- BUTTONS -->
+<div id="vba-buttons" style="display: none; position: fixed; right: 20px; top: 20px;">
+    <button type="button" class="vba-btn" onclick="playbackControl.playToggle(); return false;">
+        Play / Pause
+    </button>
+    <button type="button" class="vba-btn" onclick="playbackControl.play(); return false;">
+        Play
+    </button>
+    <button type="button" class="vba-btn" onclick="playbackControl.pause(); return false;">
+        Pause
+    </button>
+    <button type="button" class="vba-btn" onclick="playbackControl.stop(); return false;">
+        Stop
+    </button>
+    <button type="button" class="vba-btn" onclick="playbackControl.seek(2500); return false;">
+        Jump to 50% time
+    </button>
+    <button type="button" class="vba-btn" onclick="playbackControl.restart(); return false;">
+        Replay
+    </button>
+</div>
+<script>
+    //To display buttons add #buttons hash to page address and reload
+    if (window.location.hash.indexOf('buttons') > -1) {
+        document.getElementById('vba-buttons').style.display = 'block';
+    }
+</script>
+<!-- /BUTTONS -->
+
+</body>
+</html>
