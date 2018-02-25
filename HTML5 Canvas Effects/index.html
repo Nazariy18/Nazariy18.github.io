@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HTML5 Canvas Effects</title>
+	<link rel="stylesheet" href="css/style-canvas.css">
+	<script src="lib/modernizr.custom.js"></script>
+</head>
+<body>
+
+	<div id="header">
+		<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="-200 0 2230 110" style="enable-background:new 0 0 1830 110;" xml:space="preserve">
+			<style type="text/css">
+				.st0{fill:#F55B59;}
+				.st1{fill:#2c3f52;}
+			</style>
+			<rect id="rect-back" class="st1" x="-200" y="0" width="2230" height="110" />
+			<g id="text">
+				<path id="XMLID_186_" class="st0" d="M426.5,88.9c-0.8,0-3.1,0.1-3.1-1.3c0-0.4,0.1-0.8,0.3-1.2c3-7.8,5.4-15.8,5.4-24.2
+					c0-5.8-2.3-7.7-8-7.7c-8.6,0-17.8,4.1-17.8,13.9c0,6.1,1.1,12.8,3.5,18.4c0.2,0.3,0.3,0.9,0.3,1.3c0,1.2-2,0.8-2.7,0.8h-12.5
+					c-2.4,0-2.4-24.5-2.4-28.1c0-6.2,1.7-42.6,5.8-42.6h11.6c0.5,0,2.6-0.3,2.6,0.8c0,1.1-5.8,13.4-5.8,22.4c0,2.1,0.8,4.2,2,4.2
+					c2.6,0,2.6-2.5,14.2-2.5c4.2,0,7.5,0.9,7.5-2.6c0-8.1-7.5-20.2-7.5-21.3c0-1.1,2.6-0.8,3.1-0.8h11.1c3.2,0,7.4,24.5,7.4,42.6
+					c0,4.1,0,28.1-2.7,28.1H426.5z"/>
+				<path id="XMLID_188_" class="st0" d="M468.3,88.9c-1.6,0-5.4,3.4-5.4-21.3c0-19,3.7-31,3.7-34.2c0-2.5,0.4-4.1-1.7-4.1
+					c-6,0-16.7,9.8-18.1,9.8c-0.8,0-1.2,0.3-1.2-2c0-2.6,2.3-13.2,3.6-15.6c0.9-1.6,12.3-4.7,23.8-4.7c13.7,0,25.8,3.7,25.8,7.7
+					c0,3.7-4.2,11.8-5.1,11.8c-1.4,0-4.9-7.1-11.1-7.1c-5.2,0-6,16.2-6,24.1c0,21.8,4.7,32.6,4.7,34.1c0,1.9-3.1,1.4-4.2,1.4H468.3z"/>
+				<path id="XMLID_190_" class="st0" d="M507.9,88.9c-2.1,0-4.7,1.6-4.7-30.3c0-42,4.4-40.5,5.9-40.5h7.8c3.3,0,4.5,0,8.7,5.7
+					c8,11,8.5,17.2,10.2,17.2c1.3,0,1.8-6.2,10.8-17.2c4.8-5.8,6-5.7,9.4-5.7h6.6c1.4,0,5.9-1.5,5.9,40.5c0,31.9-2.6,30.3-4.7,30.3
+					h-10.9c-1,0-3.1,0.3-3.1-1.3c0-1.2,4.8-16.5,4.8-38.7c0-1.8,0.3-12.2-2.5-12.2c-2.5,0-5.7,8.4-6.5,10.5
+					c-7.1,17.4-4.3,25.4-9.9,25.4c-7.1,0-4.3-8-11.9-25.4c-0.9-1.9-3.7-10.5-6.3-10.5c-2.8,0-2.7,10.5-2.7,12.2
+					c0,22.2,5.4,37.5,5.4,38.7c0,1.5-2,1.3-3.1,1.3H507.9z"/>
+				<path id="XMLID_192_" class="st0" d="M580.4,88.9c-4.5,0.2-3.1-2.8-3.6-20.1c0-11.4,4.7-50.7,7.1-50.7h13.5c0.6,0,1.6,0.2,1.6,1.7
+					c0,1.9-9.9,20.1-9.9,43.6c0,11.7,5.1,14.5,9.8,14.5c7.8,0,12.6-7.2,14.7-7.2c1.6,0,4.9,16.4,4.9,16.8c0,1.7-2.6,1.3-3.7,1.3H580.4z
+					"/>
+				<path id="XMLID_194_" class="st0" d="M660.2,20c0.8,0,1.7,0.1,1.7,1c0,1.1-0.9,11.1-2.5,11.1c-2.1,0-5.5-1.3-13.6-1.3
+					c-1.6,0-4,0.2-5.5,0.8c-1.4,0.6-3.7,6.4-3.7,10.9c0,2,0.5,3.3,1.8,3.3c0.7,0,2.4-1.4,8.2-1.4c12,0,18.3,10.2,18.3,21.3
+					c0,15.7-10,24.6-24,24.6c-11.3,0-17.3-6.3-17.3-8.2c0-0.7,5.2-13.2,6.6-13.2c2.5,0,3.3,6.2,12.2,6.2c6,0,10-3.7,10-9.6
+					c0-6.3-4.2-11.1-10.5-11.1c-6,0-9,4.2-11.3,4.2c-2.2,0-5-1.1-5-6.1c0-12.8,2.4-32.5,6-32.5H660.2z"/>
+				<path id="XMLID_196_" class="st0" d="M695.5,55.5c0-18.4,10.4-38.6,31-38.6c7.4,0,18.8,3.1,18.8,12.3c0,4.9-3.4,7.7-8.8,7.7
+					c-3.5,0,1.2-8-9.6-8c-12.4,0-17.7,12.7-17.7,23.3c0,16.2,11.1,22.8,18.4,22.8c13.9,0,15-12.4,15.8-12.4c1.2,0,1.9,6.8,1.9,7.7
+					c0,12.6-9.7,19.9-21.6,19.9C704.5,90.2,695.5,72.7,695.5,55.5z"/>
+				<path id="XMLID_198_" class="st0" d="M789,88.9c-0.8,0-3.2,0.3-3.2-1c0-2.4,6.5-10.9,6.5-20.6c0-3.8-3.7-5.3-7.5-5.3
+					c-7.7,0-20.1,1.4-20.1,11.1c0,6.7,5.5,13.9,5.5,15.2c0,0.5-0.5,0.6-1.6,0.6h-12.2c-4.3,0-5.5-7.7-5.5-18.7
+					c0-36.4,25.2-53.3,29-53.3c2.8,0,24.7,12.2,24.7,51.6c0,22.7-3.7,20.4-6.2,20.4H789z M766.7,51.2c0,1,0.6,1.6,1.6,1.6
+					c1.5,0,9.8-2.2,17.3-2.2c3,0,4.3-0.4,4.3-2.8c0-5.3-6.3-16.3-9.5-16.3C775.8,31.5,766.7,45,766.7,51.2z"/>
+				<path id="XMLID_201_" class="st0" d="M850,88.9c-5.9,0-0.6-5.3-13.9-32.1c-1.1-2.3-8.6-16.6-11.3-16.6c-2.1,0-1.5,9.3-1.5,11
+					c0,24,3.5,32.6,3.5,37c0,1.1-1.6,0.8-2.4,0.8h-7.9c-2.1,0-4.7,1.6-4.7-30.3c0-42,4.4-40.5,5.9-40.5h6.7c3.2,0,9.7,6.8,25.6,36.2
+					c0.3,0.4,0.7,1.5,1.4,1.5c0.8,0,0.7-3.7,0.7-4.8c0-15.9-4.3-30-4.3-32c0-1.2,1.9-0.9,3.5-0.9h6.5c1.9,0,5.9-1.5,5.9,40.5
+					c0,31.9-2.6,30.3-4.7,30.3H850z"/>
+				<path id="XMLID_203_" class="st0" d="M916.2,18.2c2,0,4.9,6.8,4.9,22.4c0,29.3-21,50.4-26.1,50.4c-1.7,0-25.8-13.4-25.8-52.1
+					c0-20.2,3.1-20.7,4.6-20.7h9.7c1,0,4-0.3,4,1.4c0,2.2-4.5,7.3-4.5,25.2c0,15.2,9.9,27.7,12,27.7c4.4,0,13.7-12.5,13.7-27.7
+					c0-17.9-5.6-23-5.6-25.2c0-1.6,2.2-1.4,3.2-1.4H916.2z"/>
+				<path id="XMLID_205_" class="st0" d="M963.4,88.9c-0.8,0-3.2,0.3-3.2-1c0-2.4,6.5-10.9,6.5-20.6c0-3.8-3.7-5.3-7.5-5.3
+					c-7.7,0-20.1,1.4-20.1,11.1c0,6.7,5.5,13.9,5.5,15.2c0,0.5-0.5,0.6-1.6,0.6h-12.2c-4.3,0-5.5-7.7-5.5-18.7
+					c0-36.4,25.2-53.3,29-53.3c2.8,0,24.7,12.2,24.7,51.6c0,22.7-3.7,20.4-6.2,20.4H963.4z M941,51.2c0,1,0.6,1.6,1.6,1.6
+					c1.5,0,9.8-2.2,17.3-2.2c3,0,4.3-0.4,4.3-2.8c0-5.3-6.3-16.3-9.5-16.3C950.1,31.5,941,45,941,51.2z"/>
+				<path id="XMLID_208_" class="st0" d="M1009.1,28.4c-4.3,0-9.7,2.1-9.7,7.1c0,6.1,8.4,8.5,13.1,10.1c17.9,6,21.5,14.5,21.5,22.6
+					c0,9.9-7.1,22-25,22c-12.1,0-24.3-6.5-24.3-20c0-7.2,4.3-11.5,5.2-11.5c1.4,0,0,17.3,18.3,17.3c6.5,0,12.1-2.8,12.1-8.1
+					c0-6.2-7.7-8.8-12.6-10.3C989,51.9,987,43.5,987,36.2c0-7.1,4.8-19.3,22.1-19.3c12.3,0,21.1,6.5,21.1,9c0,2.4-4.4,10.1-6.8,10.1
+					C1021.3,36.1,1017.9,28.4,1009.1,28.4z"/>
+				<path id="XMLID_210_" class="st0" d="M1069.3,88.9c-4.5,0.2-3.1-2.8-3.6-20.1c0-11.4,4.7-50.7,7.1-50.7h33.5c1,0,4.1-0.3,4.1,1.4
+					c0,0.7-5.4,12.6-6.5,12.6c-1.4,0-4-4-12.3-4c-5.9,0-12.1,3.5-12.1,11.6c0,1.8,0.3,4.8,2.7,4.8c2.7,0,8.8-4,15.9-4
+					c1,0,3.8,0.3,3.8,1.8c0,0.1-4.8,13.9-5.8,13.9c-0.8,0-4.1-1.7-7.4-1.7c-4.3,0-10.6,3.1-10.6,11.6c0,6.8,3.6,11.7,10.7,11.7
+					c8.4,0,13.6-5.6,15.6-5.6c1.3,0,7,14.4,7,15.2c0,1.6-2.1,1.3-3.1,1.3H1069.3z"/>
+				<path id="XMLID_212_" class="st0" d="M1157.1,18.2c1,0,4.1-0.3,4.1,1.4c0,0.7-5.4,12.6-6.5,12.6c-1.4,0-4-4-12.3-4
+					c-5.9,0-12.1,3.5-12.1,11.6c0,5.1,0.3,6.7,2.7,6.7c5.5,0,6-3.9,17.3-3.9c0.9,0,2.9,0,2.9,1.4c0,0.4-3.3,13.7-4.8,13.7
+					c-0.9,0-3.1-1.2-6.5-1.2c-7.5,0-11.2,4.3-11.2,11.3c0,7.4,3.4,19.3,3.3,20.2c0.1,1-2,0.8-2.8,0.8h-10c-2.1,0-4.7,1.6-4.7-30.3
+					c0-42,4.4-40.5,5.9-40.5H1157.1z"/>
+				<path id="XMLID_214_" class="st0" d="M1203.7,18.2c1,0,4.1-0.3,4.1,1.4c0,0.7-5.4,12.6-6.5,12.6c-1.4,0-4-4-12.3-4
+					c-5.9,0-12.1,3.5-12.1,11.6c0,5.1,0.3,6.7,2.7,6.7c5.5,0,6-3.9,17.3-3.9c0.9,0,2.9,0,2.9,1.4c0,0.4-3.3,13.7-4.8,13.7
+					c-0.9,0-3.1-1.2-6.5-1.2c-7.5,0-11.2,4.3-11.2,11.3c0,7.4,3.4,19.3,3.3,20.2c0.1,1-2,0.8-2.8,0.8h-10c-2.1,0-4.7,1.6-4.7-30.3
+					c0-42,4.4-40.5,5.9-40.5H1203.7z"/>
+				<path id="XMLID_216_" class="st0" d="M1213.2,88.9c-4.5,0.2-3.1-2.8-3.6-20.1c0-11.4,4.7-50.7,7.1-50.7h33.5c1,0,4.1-0.3,4.1,1.4
+					c0,0.7-5.4,12.6-6.5,12.6c-1.4,0-4-4-12.3-4c-5.9,0-12.1,3.5-12.1,11.6c0,1.8,0.3,4.8,2.7,4.8c2.7,0,8.8-4,15.9-4
+					c1,0,3.8,0.3,3.8,1.8c0,0.1-4.8,13.9-5.8,13.9c-0.8,0-4.1-1.7-7.4-1.7c-4.3,0-10.6,3.1-10.6,11.6c0,6.8,3.6,11.7,10.7,11.7
+					c8.4,0,13.6-5.6,15.6-5.6c1.3,0,7,14.4,7,15.2c0,1.6-2.1,1.3-3.1,1.3H1213.2z"/>
+				<path id="XMLID_218_" class="st0" d="M1258.2,55.5c0-18.4,10.4-38.6,31-38.6c7.4,0,18.8,3.1,18.8,12.3c0,4.9-3.4,7.7-8.8,7.7
+					c-3.5,0,1.2-8-9.6-8c-12.4,0-17.7,12.7-17.7,23.3c0,16.2,11.1,22.8,18.4,22.8c13.9,0,15-12.4,15.8-12.4c1.2,0,1.9,6.8,1.9,7.7
+					c0,12.6-9.7,19.9-21.6,19.9C1267.2,90.2,1258.2,72.7,1258.2,55.5z"/>
+				<path id="XMLID_220_" class="st0" d="M1333.5,88.9c-1.6,0-5.4,3.4-5.4-21.3c0-19,3.7-31,3.7-34.2c0-2.5,0.4-4.1-1.7-4.1
+					c-6,0-16.7,9.8-18.1,9.8c-0.8,0-1.2,0.3-1.2-2c0-2.6,2.3-13.2,3.6-15.6c0.8-1.6,12.3-4.7,23.8-4.7c13.7,0,25.8,3.7,25.8,7.7
+					c0,3.7-4.2,11.8-5.1,11.8c-1.4,0-4.9-7.1-11.1-7.1c-5.2,0-6,16.2-6,24.1c0,21.8,4.7,32.6,4.7,34.1c0,1.9-3.1,1.4-4.2,1.4H1333.5z"
+					/>
+				<path id="XMLID_222_" class="st0" d="M1391.3,28.4c-4.3,0-9.7,2.1-9.7,7.1c0,6.1,8.4,8.5,13.1,10.1c17.9,6,21.5,14.5,21.5,22.6
+					c0,9.9-7.1,22-25,22c-12.1,0-24.3-6.5-24.3-20c0-7.2,4.3-11.5,5.2-11.5c1.4,0,0,17.3,18.3,17.3c6.5,0,12.1-2.8,12.1-8.1
+					c0-6.2-7.7-8.8-12.6-10.3c-18.6-5.8-20.7-14.2-20.7-21.4c0-7.1,4.8-19.3,22.1-19.3c12.3,0,21.1,6.5,21.1,9c0,2.4-4.4,10.1-6.8,10.1
+					C1403.5,36.1,1400.2,28.4,1391.3,28.4z"/>
+			</g>
+		</svg>
+	</div>
+
+	<ul class="effects">
+		<!-- Intro -->
+		<li>
+			<figure>
+				<img src="intro/1/i1.gif" alt="intro1">
+				<figcaption>
+					<span>INTRO #1</span>
+					<a href="intro/1/index.html">Take a look</a>
+				</figcaption>
+			</figure>
+		</li>
+		<li>
+			<figure>
+				<img src="intro/2/i2.gif" alt="intro2">
+				<figcaption>
+					<span>INTRO #2</span>
+					<a href="intro/2/index.html">Take a look</a>
+				</figcaption>
+			</figure>
+		</li>
+		<li>
+			<figure>
+				<img src="intro/3/i3.gif" alt="intro3">
+				<figcaption>
+					<span>INTRO #3</span>
+					<a href="intro/3/index.html">Take a look</a>
+				</figcaption>
+			</figure>
+		</li>
+		<li>
+			<figure>
+				<img src="intro/4/i4.gif" alt="intro4">
+				<figcaption>
+					<span>INTRO #4</span>
+					<a href="intro/4/index.html">Take a look</a>
+				</figcaption>
+			</figure>
+		</li>
+		<li>
+			<figure>
+				<img src="intro/5/i5.gif" alt="intro5">
+				<figcaption>
+					<span>INTRO #5</span>
+					<a href="intro/5/index.html">Take a look</a>
+				</figcaption>
+			</figure>
+		</li>
+		<!-- text-animation -->
+		<li>
+			<figure>
+				<img src="text-animation/1/e1.gif" alt="animation1">
+				<figcaption>
+					<span>ANIMATION #1</span>
+					<a href="text-animation/1/index.html">Take a look</a>
+				</figcaption>
+			</figure>
+		</li>
+		<li>
+			<figure>
+				<img src="text-animation/2/e2.gif" alt="animation2">
+				<figcaption>
+					<span>ANIMATION #2</span>
+					<a href="text-animation/2/index.html">Take a look</a>
+				</figcaption>
+			</figure>
+		</li>
+		<li>
+			<figure>
+				<img src="text-animation/3/e3.gif" alt="animation3">
+				<figcaption>
+					<span>ANIMATION #3</span>
+					<a href="text-animation/3/index.html">Take a look</a>
+				</figcaption>
+			</figure>
+		</li>
+		<li>
+			<figure>
+				<img src="text-animation/4/e4.gif" alt="animation4">
+				<figcaption>
+					<span>ANIMATION #4</span>
+					<a href="text-animation/4/index.html">Take a look</a>
+				</figcaption>
+			</figure>
+		</li>
+		<li>
+			<figure>
+				<img src="text-animation/5/e5.gif" alt="animation5">
+				<figcaption>
+					<span>ANIMATION #5</span>
+					<a href="text-animation/5/index.html">Take a look</a>
+				</figcaption>
+			</figure>
+		</li>
+		<li>
+			<figure>
+				<img src="text-animation/6/e6.gif" alt="animation6">
+				<figcaption>
+					<span>ANIMATION #6</span>
+					<a href="text-animation/6/index.html">Take a look</a>
+				</figcaption>
+			</figure>
+		</li>
+		<li>
+			<figure>
+				<img src="text-animation/7/e7.gif" alt="animation7">
+				<figcaption>
+					<span>ANIMATION #7</span>
+					<a href="text-animation/7/index.html">Take a look</a>
+				</figcaption>
+			</figure>
+		</li>
+		<!-- etxt-effect -->
+		<li>
+			<figure>
+				<img src="text-effect/1/n1.gif" alt="effect1">
+				<figcaption>
+					<span>EFFECT #1</span>
+					<a href="text-effect/1/index.html">Take a look</a>
+				</figcaption>
+			</figure>
+		</li>
+		<li>
+			<figure>
+				<img src="text-effect/2/n2.gif" alt="effect2">
+				<figcaption>
+					<span>EFFECT #2</span>
+					<a href="text-effect/2/index.html">Take a look</a>
+				</figcaption>
+			</figure>
+		</li>
+		<li>
+			<figure>
+				<img src="text-effect/3/n3.gif" alt="effect3">
+				<figcaption>
+					<span>EFFECT #3</span>
+					<a href="text-effect/3/index.html">Take a look</a>
+				</figcaption>
+			</figure>
+		</li>
+		<li>
+			<figure>
+				<img src="text-effect/4/n4.gif" alt="effect4">
+				<figcaption>
+					<span>EFFECT #4</span>
+					<a href="text-effect/4/index.html">Take a look</a>
+				</figcaption>
+			</figure>
+		</li>
+		<li>
+			<figure>
+				<img src="text-effect/5/n5.gif" alt="effect5">
+				<figcaption>
+					<span>EFFECT #5</span>
+					<a href="text-effect/5/index.html">Take a look</a>
+				</figcaption>
+			</figure>
+		</li>
+		<li>
+			<figure>
+				<img src="text-effect/6/n6.gif" alt="effect6">
+				<figcaption>
+					<span>EFFECT #6</span>
+					<a href="text-effect/6/index.html">Take a look</a>
+				</figcaption>
+			</figure>
+		</li>
+		<li>
+			<figure>
+				<img src="text-effect/7/n7.gif" alt="effect7">
+				<figcaption>
+					<span>EFFECT #7</span>
+					<a href="text-effect/7/index.html">Take a look</a>
+				</figcaption>
+			</figure>
+		</li>
+		<li>
+			<figure>
+				<img src="text-effect/8/n8.gif" alt="effect8">
+				<figcaption>
+					<span>EFFECT #8</span>
+					<a href="text-effect/8/index.html">Take a look</a>
+				</figcaption>
+			</figure>
+		</li>
+		<li>
+			<figure>
+				<img src="text-effect/9/n9.gif" alt="effect9">
+				<figcaption>
+					<span>EFFECT #9</span>
+					<a href="text-effect/9/index.html">Take a look</a>
+				</figcaption>
+			</figure>
+		</li>
+		<li>
+			<figure>
+				<img src="text-effect/10/n10.gif" alt="effect10">
+				<figcaption>
+					<span>EFFECT #10</span>
+					<a href="text-effect/10/index.html">Take a look</a>
+				</figcaption>
+			</figure>
+		</li>
+		<li>
+			<figure>
+				<img src="text-effect/11/n11.gif" alt="effect11">
+				<figcaption>
+					<span>EFFECT #11</span>
+					<a href="text-effect/11/index.html">Take a look</a>
+				</figcaption>
+			</figure>
+		</li>
+		<li>
+			<figure>
+				<img src="text-effect/12/n12.gif" alt="effect12">
+				<figcaption>
+					<span>EFFECT #12</span>
+					<a href="text-effect/12/index.html">Take a look</a>
+				</figcaption>
+			</figure>
+		</li>
+		<li>
+			<figure>
+				<img src="text-effect/13/n13.gif" alt="effect13">
+				<figcaption>
+					<span>EFFECT #13</span>
+					<a href="text-effect/13/index.html">Take a look</a>
+				</figcaption>
+			</figure>
+		</li>
+		<li>
+			<figure>
+				<img src="text-effect/14/n14.gif" alt="effect14">
+				<figcaption>
+					<span>EFFECT #14</span>
+					<a href="text-effect/14/index.html">Take a look</a>
+				</figcaption>
+			</figure>
+		</li>
+		<li>
+			<figure>
+				<img src="text-effect/15/n15.gif" alt="effect15">
+				<figcaption>
+					<span>EFFECT #15</span>
+					<a href="text-effect/15/index.html">Take a look</a>
+				</figcaption>
+			</figure>
+		</li>
+		<li>
+			<figure>
+				<img src="text-effect/16/n16.gif" alt="effect16">
+				<figcaption>
+					<span>EFFECT #16</span>
+					<a href="text-effect/16/index.html">Take a look</a>
+				</figcaption>
+			</figure>
+		</li>
+		<li>
+			<figure>
+				<img src="text-effect/17/n17.gif" alt="effect17">
+				<figcaption>
+					<span>EFFECT #17</span>
+					<a href="text-effect/17/index.html">Take a look</a>
+				</figcaption>
+			</figure>
+		</li>
+		<li>
+			<figure>
+				<img src="text-effect/18/n18.gif" alt="effect18">
+				<figcaption>
+					<span>EFFECT #18</span>
+					<a href="text-effect/18/index.html">Take a look</a>
+				</figcaption>
+			</figure>
+		</li>
+		<!-- Outro -->
+		<li>
+			<figure>
+				<img src="outro/1/o1.gif" alt="outro1">
+				<figcaption>
+					<span>OUTRO #1</span>
+					<a href="outro/1/index.html">Take a look</a>
+				</figcaption>
+			</figure>
+		</li>
+		<!-- lower-third -->
+		<li>
+			<figure>
+				<img src="lower-third/1/l1.gif" alt="lower-third1">
+				<figcaption>
+					<span>LOWER THIRD #1</span>
+					<a href="lower-third/1/index.html">Take a look</a>
+				</figcaption>
+			</figure>
+		</li>
+		<li>
+			<figure>
+				<img src="lower-third/2/l2.gif" alt="lower-third2">
+				<figcaption>
+					<span>LOWER THIRD #2</span>
+					<a href="lower-third/2/index.html">Take a look</a>
+				</figcaption>
+			</figure>
+		</li>
+		<li>
+			<figure>
+				<img src="lower-third/3/l3.gif" alt="lower-third3">
+				<figcaption>
+					<span>LOWER THIRD #3</span>
+					<a href="lower-third/3/index.html">Take a look</a>
+				</figcaption>
+			</figure>
+		</li>
+		<li>
+			<figure>
+				<img src="lower-third/4/l4.gif" alt="lower-third4">
+				<figcaption>
+					<span>LOWER THIRD #4</span>
+					<a href="lower-third/4/index.html">Take a look</a>
+				</figcaption>
+			</figure>
+		</li>
+		<li>
+			<figure>
+				<img src="lower-third/5/l5.gif" alt="lower-third5">
+				<figcaption>
+					<span>LOWER THIRD #5</span>
+					<a href="lower-third/5/index.html">Take a look</a>
+				</figcaption>
+			</figure>
+		</li>
+		<li>
+			<figure>
+				<img src="lower-third/6/l6.gif" alt="lower-third6">
+				<figcaption>
+					<span>LOWER THIRD #6</span>
+					<a href="lower-third/6/index.html">Take a look</a>
+				</figcaption>
+			</figure>
+		</li>
+		<!-- hand effects -->
+		<li>
+			<figure>
+				<img src="hands-effect/1/h1.gif" alt="hand-effect1">
+				<figcaption>
+					<span>HAND EFFECT #1</span>
+					<a href="hands-effect/1/index.html">Take a look</a>
+				</figcaption>
+			</figure>
+		</li>
+		<li>
+			<figure>
+				<img src="hands-effect/2/h2.gif" alt="hand-effect2">
+				<figcaption>
+					<span>HAND EFFECT #2</span>
+					<a href="hands-effect/2/index.html">Take a look</a>
+				</figcaption>
+			</figure>
+		</li>
+		<li>
+			<figure>
+				<img src="hands-effect/3/h3.gif" alt="hand-effect3">
+				<figcaption>
+					<span>HAND EFFECT #3</span>
+					<a href="hands-effect/3/index.html">Take a look</a>
+				</figcaption>
+			</figure>
+		</li>
+		<li>
+			<figure>
+				<img src="hands-effect/4/h4.gif" alt="hand-effect4">
+				<figcaption>
+					<span>HAND EFFECT #4</span>
+					<a href="hands-effect/4/index.html">Take a look</a>
+				</figcaption>
+			</figure>
+		</li>
+		<li>
+			<figure>
+				<img src="hands-effect/5/h5.gif" alt="hand-effect5">
+				<figcaption>
+					<span>HAND EFFECT #5</span>
+					<a href="hands-effect/5/index.html">Take a look</a>
+				</figcaption>
+			</figure>
+		</li>
+		<li>
+			<figure>
+				<img src="hands-effect/6/h6.gif" alt="hand-effect6">
+				<figcaption>
+					<span>HAND EFFECT #6</span>
+					<a href="hands-effect/6/index.html">Take a look</a>
+				</figcaption>
+			</figure>
+		</li>
+		<li>
+			<figure>
+				<img src="hands-effect/7/h7.gif" alt="hand-effect7">
+				<figcaption>
+					<span>HAND EFFECT #7</span>
+					<a href="hands-effect/7/index.html">Take a look</a>
+				</figcaption>
+			</figure>
+		</li>
+		<li>
+			<figure>
+				<img src="hands-effect/8/h8.gif" alt="hand-effect8">
+				<figcaption>
+					<span>HAND EFFECT #8</span>
+					<a href="hands-effect/8/index.html">Take a look</a>
+				</figcaption>
+			</figure>
+		</li>
+		<li>
+			<figure>
+				<img src="hands-effect/9/h9.gif" alt="hand-effect9">
+				<figcaption>
+					<span>HAND EFFECT #9</span>
+					<a href="hands-effect/9/index.html">Take a look</a>
+				</figcaption>
+			</figure>
+		</li>
+		<li>
+			<figure>
+				<img src="hands-effect/10/h10.gif" alt="hand-effect10">
+				<figcaption>
+					<span>HAND EFFECT #10</span>
+					<a href="hands-effect/10/index.html">Take a look</a>
+				</figcaption>
+			</figure>
+		</li>
+		<li>
+			<figure>
+				<img src="hands-effect/11/h11.gif" alt="hand-effect11">
+				<figcaption>
+					<span>HAND EFFECT #11</span>
+					<a href="hands-effect/11/index.html">Take a look</a>
+				</figcaption>
+			</figure>
+		</li>
+	</ul>
+
+</body>
+</html>

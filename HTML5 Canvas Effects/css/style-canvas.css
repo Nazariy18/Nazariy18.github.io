@@ -1,0 +1,101 @@
+body {
+	margin: 0;
+	margin-top: 5%;
+	background: #fff;
+}
+
+@font-face {
+	font-family: 'HoboStd';
+	src: url('../fonts/Hobo/HoboStd.otf');
+}
+
+#header svg {
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 100;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+.effects {
+	margin: 0 auto;
+}
+
+.effects li {
+	text-align: left;
+	position: relative;
+	display: inline-block;
+	width: 30%;
+	min-width: 400px;
+	padding: 20px 15px 0px 15px;
+}
+
+.effects figure {
+	-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+	        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+	border-radius: 10px;
+	margin: 0;
+	position: relative;
+	overflow: hidden;
+}
+
+.effects figure img {
+	border-radius: 10px;
+	max-width: 100%;
+	display: block;
+	position: relative;
+}
+
+
+.effects figcaption {
+	font-family: HoboStd, Arial, sans-serif;
+	font-size: 18px;
+	position: absolute;
+	width: 100%;
+	top: auto;
+	bottom: 0;
+	opacity: 0;
+	-webkit-transform: translateY(100%);
+	    -ms-transform: translateY(100%);
+	        transform: translateY(100%);
+	-webkit-transition: opacity 0.1s 0.3s, -webkit-transform 0.4s;
+	transition: opacity 0.1s 0.3s, -webkit-transform 0.4s;
+	-o-transition: transform 0.4s, opacity 0.1s 0.3s;
+	transition: transform 0.4s, opacity 0.1s 0.3s;
+	transition: transform 0.4s, opacity 0.1s 0.3s, -webkit-transform 0.4s;
+	padding: 14px 20px;
+	background: #2c3f52;
+	color: #F55B59;
+}
+
+.effects figcaption a {
+	font-size: 14px;
+	position: absolute;
+	text-decoration: none;
+	text-align: center;
+	bottom: 12px;
+	right: 60px;
+	padding: 5px 20px;
+	border-radius: 2px;
+	display: inline-block;
+	background: #F55B59;
+	color: #fff;
+}
+
+.no-touch .effects figure:hover figcaption,
+.effects figure.cs-hover figcaption {
+	opacity: 1;
+	-webkit-transform: translateY(0px);
+	    -ms-transform: translateY(0px);
+	        transform: translateY(0px);
+	-webkit-transition: opacity 0.1s, -webkit-transform 0.4s;
+	transition: opacity 0.1s, -webkit-transform 0.4s;
+	-o-transition: transform 0.4s, opacity 0.1s;
+	transition: transform 0.4s, opacity 0.1s;
+	transition: transform 0.4s, opacity 0.1s, -webkit-transform 0.4s;
+}
