@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Intro #5</title>
+
+    <script src="../../lib/animejs/anime.min.js"></script>
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="vba-area">
+
+    <canvas class="Effect"></canvas>
+
+</div>
+
+<script>
+    var mainOptions = {
+        isPaused: false,
+        isRendering: false,
+        timer: null
+    };
+
+    var timeline = anime.timeline({
+        loop: false,
+        direction: 'alternate',
+        autoplay: true
+    });
+
+    var canvasEl = document.querySelector('.Effect');
+    var ctx = canvasEl.getContext('2d');
+
+    var bgColorCircle = /* background_color1 */'#ffffff'/* /background_color1 */;
+    var bgColor1 = /* background_color2 */'#ef6270'/* /background_color2 */;
+    var bgColor2 = /* background_color3 */'#734052'/* /background_color3 */;
+    var bgColor3 = /* background_color4 */'#213443'/* /background_color4 */;
+    var bgColor4 = /* background_color5 */'#f15f60'/* /background_color5 */;
+
+    ctx.font = "25px Arial";
+    var textLb = /* title */"BEAR BRAND"/* /title */;
+    var widthText = Math.ceil(ctx.measureText(textLb).width);
+
+    //-------------------------function
+    function setCanvasSize() {
+        var rectObject = canvasEl.parentNode.getBoundingClientRect();
+        canvasEl.width = rectObject.width;
+        canvasEl.height = rectObject.height;
+        canvasEl.style.width = rectObject.width + 'px';
+        canvasEl.style.height = rectObject.height + 'px';
+    }
+
+    function createHexagons() {
+        var p = {};
+        p.x = 640;
+        p.y = 370;
+        //------------1
+        p.scale1 = 0.25;
+        p.yMove1 = -500;
+        p.color1 = bgColor1;
+        //-------------2
+        p.scale2 = 0.5;
+        p.yMove2 = -500;
+        p.color2 = bgColor2;
+        //-------------3
+        p.scale3 = 0.75;
+        p.yMove3 = -500;
+        p.color3 = bgColor3;
+        //-------------4
+        p.scale4 = 1;
+        p.yMove4 = -500;
+        p.color4 = bgColor4;
+        p.colorF = '#ffffff'; //-n
+        p.borderColor = '#ffffff';
+        p.lineWidth = 2;
+        p.Alpha = 0.2;
+        p.yCircle = -10;
+        p.colorCircle = bgColorCircle;
+        p.radius = 7;
+        p.draw = function () {
+            //-----------------1
+            ctx.save();
+            ctx.translate(0, p.yMove1);
+            ctx.translate(p.x, p.y);
+            ctx.scale(p.scale1, p.scale1);
+            ctx.translate((-1) * p.x, (-1) * p.y);
+            ctx.beginPath();
+            ctx.moveTo(p.x, p.y - 100);
+            ctx.lineTo(p.x + 87, p.y - 50);
+            ctx.lineTo(p.x + 87, p.y + 50);
+            ctx.lineTo(p.x, p.y + 100);
+            ctx.lineTo(p.x - 87, p.y + 50);
+            ctx.lineTo(p.x - 87, p.y - 50);
+            ctx.closePath();
+            ctx.fillStyle = p.color1;
+            ctx.fill();
+            ctx.restore();
+            //------------------2
+            ctx.save();
+            ctx.translate(0, p.yMove2);
+            ctx.translate(p.x, p.y);
+            ctx.scale(p.scale2, p.scale2);
+            ctx.translate((-1) * p.x, (-1) * p.y);
+            ctx.beginPath();
+            ctx.moveTo(p.x, p.y - 100);
+            ctx.lineTo(p.x + 87, p.y - 50);
+            ctx.lineTo(p.x + 87, p.y + 50);
+            ctx.lineTo(p.x, p.y + 100);
+            ctx.lineTo(p.x - 87, p.y + 50);
+            ctx.lineTo(p.x - 87, p.y - 50);
+            ctx.closePath();
+            ctx.fillStyle = p.color2;
+            ctx.fill();
+
+            ctx.save();
+            ctx.globalAlpha = p.Alpha;
+            ctx.beginPath();
+            ctx.moveTo(p.x, p.y - 100);
+            ctx.lineTo(p.x + 87, p.y - 50);
+            ctx.lineTo(p.x + 87, p.y + 50);
+            ctx.lineTo(p.x, p.y + 100);
+            ctx.lineTo(p.x, p.y - 100);
+            ctx.closePath();
+            ctx.fillStyle = p.colorF;
+            ctx.fill();
+            ctx.restore();
+            ctx.restore();
+            //------------------3
+            ctx.save();
+            ctx.translate(0, p.yMove3);
+            ctx.translate(p.x, p.y);
+            ctx.scale(p.scale3, p.scale3);
+            ctx.translate((-1) * p.x, (-1) * p.y);
+            ctx.beginPath();
+            ctx.moveTo(p.x, p.y - 100);
+            ctx.lineTo(p.x + 87, p.y - 50);
+            ctx.lineTo(p.x + 87, p.y + 50);
+            ctx.lineTo(p.x, p.y + 100);
+            ctx.lineTo(p.x - 87, p.y + 50);
+            ctx.lineTo(p.x - 87, p.y - 50);
+            ctx.closePath();
+            ctx.fillStyle = p.color3;
+            ctx.fill();
+
+            ctx.save();
+            ctx.globalAlpha = p.Alpha;
+            ctx.beginPath();
+            ctx.moveTo(p.x, p.y - 100);
+            ctx.lineTo(p.x + 87, p.y - 50);
+            ctx.lineTo(p.x + 87, p.y + 50);
+            ctx.lineTo(p.x, p.y + 100);
+            ctx.lineTo(p.x, p.y - 100);
+            ctx.closePath();
+            ctx.fillStyle = p.colorF;
+            ctx.fill();
+            ctx.restore();
+            ctx.restore();
+            //------------------4
+            ctx.save();
+            ctx.translate(0, p.yMove4);
+            ctx.translate(p.x, p.y);
+            ctx.scale(p.scale4, p.scale4);
+            ctx.translate((-1) * p.x, (-1) * p.y);
+            ctx.beginPath();
+            ctx.moveTo(p.x, p.y - 100);
+            ctx.lineTo(p.x + 87, p.y - 50);
+            ctx.lineTo(p.x + 87, p.y + 50);
+            ctx.lineTo(p.x, p.y + 100);
+            ctx.lineTo(p.x - 87, p.y + 50);
+            ctx.lineTo(p.x - 87, p.y - 50);
+            ctx.closePath();
+            ctx.fillStyle = p.color4;
+            ctx.fill();
+            ctx.lineWidth = p.lineWidth;
+            ctx.strokeStyle = p.borderColor;
+            ctx.stroke();
+
+            ctx.save();
+            ctx.globalAlpha = p.Alpha;
+            ctx.beginPath();
+            ctx.moveTo(p.x, p.y - 100);
+            ctx.lineTo(p.x + 87, p.y - 50);
+            ctx.lineTo(p.x + 87, p.y + 50);
+            ctx.lineTo(p.x, p.y + 100);
+            ctx.lineTo(p.x, p.y - 100);
+            ctx.closePath();
+            ctx.fillStyle = p.colorF;
+            ctx.fill();
+            ctx.restore();
+            ctx.restore();
+
+            ctx.beginPath();
+            ctx.arc(p.x, p.yCircle, p.radius, 0, 2 * Math.PI, false);
+            ctx.fillStyle = p.colorCircle;
+            ctx.fill();
+        };
+        return p;
+    }
+
+    function createImage() {
+        var p = {};
+        p.x = 640;
+        p.y = 370;
+        p.yMove = -500;
+        p.colorShadow = 'rgba(0, 0, 0, .3)';
+        var img = new Image;
+        p.draw = function () {
+            ctx.save();
+
+            ctx.beginPath();
+            ctx.moveTo(p.x, p.y - 100);
+            ctx.lineTo(p.x + 87, p.y - 50);
+            ctx.lineTo(p.x + 87, p.y + 50);
+            ctx.lineTo(p.x, p.y + 100);
+            ctx.lineTo(p.x - 87, p.y + 50);
+            ctx.lineTo(p.x - 87, p.y - 50);
+            ctx.closePath();
+            ctx.clip();
+            ctx.translate(0, p.yMove);
+            ctx.shadowOffsetX = 10;
+            ctx.shadowColor = p.colorShadow;
+            ctx.drawImage(img, 640 - (p.width / 2), 370 - (p.height / 2), p.width, p.height);
+            ctx.restore();
+            var widthImg = parseInt(img.width);
+            var heightImg = parseInt(img.height);
+            if (widthImg > heightImg) {
+                p.height = (140 / widthImg) * heightImg;
+                p.width = 140;
+            }
+            else {
+                p.width = (140 / heightImg) * widthImg;
+                p.height = 140;
+            }
+        };
+        img.src = /* file */"../../img/bear-black.png"/* /file */;
+        return p;
+    }
+
+    function createCircles() {
+        var p = {};
+        p.x11 = 640;
+        p.y11 = 400;
+        p.x12 = 640;
+        p.y12 = 370;
+
+        p.x21 = 640;
+        p.y21 = 370;
+        p.x22 = 640;
+        p.y22 = 370;
+
+        p.x31 = 640;
+        p.y31 = 400;
+        p.x32 = 640;
+        p.y32 = 370;
+        p.x33 = 640;
+        p.y33 = 370;
+
+        p.x41 = 640;
+        p.y41 = 400;
+        p.x42 = 640;
+        p.y42 = 370;
+        p.x43 = 640;
+        p.y43 = 370;
+
+        p.x51 = 640;
+        p.y51 = 370;
+        p.x52 = 640;
+        p.y52 = 370;
+
+        p.Alpha = 1;
+        p.lineWidth = 3;
+        p.radius = 0;
+        p.color1 = bgColor4;
+
+        p.k11 = 0.5;
+        p.k12 = 0.5;
+        p.k21 = 0.5;
+        p.k22 = 0.5;
+        p.k31 = 1.5;
+        p.k32 = 1.5;
+        p.k41 = -0.5;
+        p.k42 = -0.5;
+        p.draw = function () {
+            ctx.save();
+            ctx.globalAlpha = p.Alpha;
+            ctx.beginPath();
+            ctx.arc(p.x11, p.y11, p.radius, 0, 2 * Math.PI, false);
+            ctx.fillStyle = bgColor4;
+            ctx.fill();
+            ctx.beginPath();
+            ctx.arc(p.x12, p.y12, p.radius, 0, 2 * Math.PI, false);
+            ctx.lineWidth = p.lineWidth;
+            ctx.strokeStyle = bgColor4;
+            ctx.stroke();
+
+            ctx.beginPath();
+            ctx.arc(p.x21, p.y21, p.radius, 0, 2 * Math.PI, false);
+            ctx.strokeStyle = bgColor3;
+            ctx.lineWidth = p.lineWidth;
+            ctx.stroke();
+            ctx.beginPath();
+            ctx.arc(p.x22, p.y22, p.radius, 0, 2 * Math.PI, false);
+            ctx.strokeStyle = bgColor3;
+            ctx.lineWidth = p.lineWidth;
+            ctx.stroke();
+
+            ctx.beginPath();
+            ctx.arc(p.x31, p.y31, p.radius, 0, 2 * Math.PI, false);
+            ctx.fillStyle = bgColor2;
+            ctx.fill();
+            ctx.beginPath();
+            ctx.arc(p.x32, p.y32, p.radius, 0, 2 * Math.PI, false);
+            ctx.fillStyle = bgColor2;
+            ctx.fill();
+            ctx.beginPath();
+            ctx.arc(p.x33, p.y33, p.radius, 0, 2 * Math.PI, false);
+            ctx.strokeStyle = bgColor2;
+            ctx.lineWidth = p.lineWidth;
+            ctx.stroke();
+
+            ctx.beginPath();
+            ctx.arc(p.x41, p.y41, p.radius, 0, 2 * Math.PI, false);
+            ctx.fillStyle = bgColor1;
+            ctx.fill();
+            ctx.beginPath();
+            ctx.arc(p.x42, p.y42, p.radius, 0, 2 * Math.PI, false);
+            ctx.strokeStyle = bgColor1;
+            ctx.lineWidth = p.lineWidth;
+            ctx.stroke();
+            ctx.beginPath();
+            ctx.arc(p.x43, p.y43, p.radius, 0, 2 * Math.PI, false);
+            ctx.strokeStyle = bgColor1;
+            ctx.lineWidth = p.lineWidth;
+            ctx.stroke();
+
+            ctx.beginPath();
+            ctx.arc(p.x51, p.y51, p.radius, 0, 2 * Math.PI, false);
+            ctx.fillStyle = bgColorCircle;
+            ctx.fill();
+            ctx.beginPath();
+            ctx.arc(p.x52, p.y52, p.radius, 0, 2 * Math.PI, false);
+            ctx.fillStyle = bgColorCircle;
+            ctx.fill();
+
+            ctx.beginPath();
+            ctx.arc(540, 270, 70, p.k11 * Math.PI, p.k12 * Math.PI, false);
+            ctx.strokeStyle = bgColorCircle;
+            ctx.lineWidth = 2;
+            ctx.stroke();
+
+            ctx.beginPath();
+            ctx.arc(740, 270, 70, p.k21 * Math.PI, p.k22 * Math.PI, false);
+            ctx.strokeStyle = bgColor4;
+            ctx.lineWidth = 2;
+            ctx.stroke();
+
+            ctx.beginPath();
+            ctx.arc(540, 470, 70, p.k31 * Math.PI, p.k32 * Math.PI, false);
+            ctx.strokeStyle = bgColor4;
+            ctx.lineWidth = 2;
+            ctx.stroke();
+
+            ctx.beginPath();
+            ctx.arc(740, 470, 70, p.k41 * Math.PI, p.k42 * Math.PI, false);
+            ctx.strokeStyle = bgColorCircle;
+            ctx.lineWidth = 2;
+            ctx.stroke();
+
+
+            ctx.restore();
+        };
+        return p;
+    }
+
+    function createText() {
+        var p = {};
+        p.x = 650 + widthText;
+        p.y = 530;
+        p.width = 640;
+        p.color = /* title_color */'#ffffff'/* /title_color */;
+        p.draw = function () {
+            ctx.save();
+            ctx.beginPath();
+            ctx.rect(0, 500, p.width, 50);
+            ctx.clip();
+            ctx.font = "25px Arial";
+            ctx.textAlign = "center";
+            ctx.fillStyle = p.color;
+            ctx.fillText(textLb, p.x, p.y);
+            ctx.restore();
+        };
+        return p;
+    }
+
+
+    function renderEffect(anim) {
+        clearCanvas();
+        for (var i = 0; i < anim.animatables.length; i++) {
+            anim.animatables[i].target.draw();
+        }
+    }
+    var render = anime({
+        duration: Infinity,
+        update: function () {
+            if (!timeline.paused) {
+                clearCanvas();
+            }
+        }
+    });
+
+    var clearCanvas = function () {
+        ctx.clearRect(0, 0, canvasEl.width, canvasEl.height);
+    };
+    //----------------------------------------
+    function animateIntro() {
+        var hexagons = createHexagons();
+        var img = createImage();
+        var circles = createCircles();
+        var text = createText();
+
+        timeline
+            .add({
+                targets: circles,
+                easing: 'easeOutQuart',
+                duration: 1500,
+                x11: [640, 900],
+                y11: [400, 390],
+                x12: [640, 400],
+                y12: [370, 270],
+                x21: [640, 340],
+                x22: [640, 840],
+                x31: [640, 940],
+                y31: [400, 350],
+                x32: [640, 540],
+                y32: [370, 250],
+                x33: [640, 800],
+                y33: [370, 250],
+                x41: [640, 440],
+                y41: [400, 390],
+                x42: [640, 430],
+                y42: [400, 320],
+                x43: [640, 850],
+                y43: [400, 320],
+                x51: [640, 500],
+                y51: [400, 250],
+                x52: [640, 700],
+                y52: [400, 210],
+                radius: [8, 0, 0],
+                k12: [0.5, 1.5],
+                k21: [0.5, -0.5],
+                k31: [1.5, 0.5],
+                k42: [-0.5, 0.5],
+                update: renderEffect,
+                offset: 2600
+            })
+            .add({
+                targets: circles,
+                easing: 'easeOutQuart',
+                duration: 1300,
+                k11: [0.5, 1.5],
+                k22: [0.5, -0.5],
+                k32: [1.5, 0.5],
+                k41: [-0.5, 0.5],
+                update: renderEffect,
+                offset: 2800
+            })
+            .add({
+                targets: hexagons,
+                easing: 'easeOutBack',
+                duration: 1700,
+                yMove1: [{value: -500},
+                    {value: 0, delay: 0}],
+                yMove2: [{value: -500},
+                    {value: 0, delay: 400}],
+                yMove3: [{value: -500},
+                    {value: 0, delay: 800}],
+                yMove4: [{value: -500},
+                    {value: 0, delay: 1200}],
+                yCircle: [{value: -10},
+                    {value: 370, delay: 1600}],
+                update: renderEffect,
+                offset: 0
+            })
+            .add({
+                targets: img,
+                easing: 'easeOutQuart',
+                duration: 500,
+                yMove: [-200, 0],
+                update: renderEffect,
+                offset: 2600
+            })
+            .add({
+                targets: text,
+                easing: 'linear',
+                duration: 1000,
+                width: [640, 650 + widthText / 2],
+                x: [650 + widthText, 640],
+                update: renderEffect,
+                offset: 2600
+            })
+            .add({
+                targets: [circles, hexagons, img, text],
+                update: renderEffect
+            })
+
+
+    }
+
+    setCanvasSize();
+    animateIntro();
+    //-------------------------------------------
+    //Playback control
+    var playbackControl = {
+
+        getIsPaused: function () {
+            return timeline.paused;
+        },
+
+        playToggle: function () {
+            if (timeline.paused) {
+                timeline.play();
+            } else {
+                timeline.pause();
+            }
+        },
+
+        play: function () {
+            timeline.play();
+        },
+
+        pause: function () {
+            timeline.pause();
+        },
+
+        restart: function () {
+            timeline.restart();
+        },
+
+        stop: function () {
+            clearTimeout(mainOptions.timer);
+            timeline.restart();
+            timeline.pause();
+            clearCanvas();
+        },
+
+        seek: function (miliseconds) {
+            clearTimeout(mainOptions.timer);
+            if (timeline.reversed) {
+                timeline.reverse();
+            }
+            timeline.seek(miliseconds);
+            timeline.play();
+        }
+    };
+
+</script>
+
+<!-- BUTTONS -->
+<div id="vba-buttons" style="display: none; position: fixed; right: 20px; top: 20px;">
+    <button type="button" class="vba-btn" onclick="playbackControl.playToggle(); return false;">
+        Play / Pause
+    </button>
+    <button type="button" class="vba-btn" onclick="playbackControl.play(); return false;">
+        Play
+    </button>
+    <button type="button" class="vba-btn" onclick="playbackControl.pause(); return false;">
+        Pause
+    </button>
+    <button type="button" class="vba-btn" onclick="playbackControl.stop(); return false;">
+        Stop
+    </button>
+    <button type="button" class="vba-btn" onclick="playbackControl.seek(2500); return false;">
+        Jump to 50% time
+    </button>
+    <button type="button" class="vba-btn" onclick="playbackControl.restart(); return false;">
+        Replay
+    </button>
+</div>
+<script>
+    //To display buttons add #buttons hash to page address and reload
+    if (window.location.hash.indexOf('buttons') > -1) {
+        document.getElementById('vba-buttons').style.display = 'block';
+    }
+</script>
+<!-- /BUTTONS -->
+
+</body>
+</html>
