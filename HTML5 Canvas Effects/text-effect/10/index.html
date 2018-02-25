@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Effect #10</title>
+
+	<link href = "../../fonts/Lato/font.css" rel="stylesheet">
+  <script src = "../../lib/animejs/anime.min.js"></script>
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="vba-area">
+
+    <canvas class="Effect"></canvas>
+
+</div>
+
+<script>
+		var mainOptions = {
+				delay: /* delay */3000/* /delay */,
+        isPaused: false,
+        isRendering: false,
+        timer: null
+    };
+
+    var timeline = anime.timeline({
+        loop: true,
+        autoplay: true
+    });
+
+    var canvasEl = document.querySelector('.Effect'),
+        ctx = canvasEl.getContext('2d'),
+        fontSize1 = 70,
+        fontSize2 = 40,
+
+        line1 = /* text1 */"Normality"/* /text1 */,
+        line2 = /* text2 */"is a paved road:"/* /text2 */,
+        line3 = /* text3 */"it’s comfortable"/* /text3 */,
+        line4 = /* text4 */"to walk but no flowers grow"/* /text4 */;
+
+        ctx.font = fontSize1 + "px LatoMedium, sans-serif";
+    var widthLine1 = ctx.measureText(line1).width,
+    		widthLine3 = ctx.measureText(line3).width;
+
+        ctx.font = fontSize2 + "px LatoMedium, sans-serif";
+    var widthLine2 = ctx.measureText(line2).width,
+        widthLine4 = ctx.measureText(line4).width;
+
+
+//-------------------------function
+	function setCanvasSize() {
+        var rectObject = canvasEl.parentNode.getBoundingClientRect();
+        canvasEl.width = rectObject.width;
+        canvasEl.height = rectObject.height;
+        canvasEl.style.width = rectObject.width + 'px';
+        canvasEl.style.height = rectObject.height + 'px';
+    }
+
+
+  function createText() {
+     var p = {};
+      p.x = 150; 
+      p.y = canvasEl.height / 2;
+      p.fontSize1 = fontSize1;
+      p.fontSize2 = fontSize2;
+      p.color1 = /* text_color1 */'#ffffff'/* /text_color1 */;
+      p.color2 = /* text_color2 */'#ffffff'/* /text_color2 */;
+      p.color3 = /* text_color3 */'#ffffff'/* /text_color3 */;
+      p.color4 = /* text_color4 */'#ffffff'/* /text_color4 */;
+      p.y1 = p.y - p.fontSize2;
+      p.y2 = p.y;
+      p.y3 = p.y + p.fontSize1;
+      p.y4 = p.y + p.fontSize1 + p.fontSize2;
+      p.scaleX1 = -1;
+      p.skew1 = 1;
+      p.Alpha1 = 0;
+      p.scaleX2 = -1;
+      p.skew2 = 1;
+      p.Alpha2 = 0;
+      p.scaleX3 = -1;
+      p.skew3 = 1;
+      p.Alpha3 = 0;
+      p.scaleX4 = -1;
+      p.skew4 = 1;
+      p.Alpha4 = 0;
+      p.moveY = 2 * fontSize1 + 2 * fontSize2;
+      
+      p.draw = function() {
+        ctx.save();
+        ctx.globalAlpha = p.Alpha;
+        ctx.textBaseline="bottom"; 
+        ctx.textAlign = "start";
+
+        ctx.translate(0, p.moveY);
+       
+        ctx.save();
+        ctx.globalAlpha = p.Alpha1;
+        ctx.translate(p.x - 15, p.y);
+        ctx.transform(p.scaleX1, p.skew1, 0, 1, 0, 0);
+        ctx.translate(-p.x + 15, -p.y);
+        ctx.font = p.fontSize1 + "px LatoMedium, sans-serif";
+        ctx.fillStyle = p.color1;
+        ctx.fillText(line1, p.x, p.y1);
+        ctx.restore();
+
+        ctx.save();
+        ctx.globalAlpha = p.Alpha2;
+        ctx.translate(p.x - 15, p.y);
+        ctx.transform(p.scaleX2, p.skew2, 0, 1, 0, 0);
+        ctx.translate(-p.x + 15, -p.y);
+        ctx.font = p.fontSize2 + "px LatoMedium, sans-serif";
+        ctx.fillStyle = p.color2;
+        ctx.fillText(line2, p.x, p.y2);
+        ctx.restore();
+
+        ctx.save();
+        ctx.globalAlpha = p.Alpha3;
+        ctx.translate(p.x - 15, p.y);
+        ctx.transform(p.scaleX3, p.skew3, 0, 1, 0, 0);
+        ctx.translate(-p.x + 15, -p.y);
+        ctx.font = p.fontSize1 + "px LatoMedium, sans-serif";
+        ctx.fillStyle = p.color3;
+        ctx.fillText(line3, p.x, p.y3);
+        ctx.restore();
+
+        ctx.save();
+        ctx.globalAlpha = p.Alpha4;
+        ctx.translate(p.x - 15, p.y);
+        ctx.transform(p.scaleX4, p.skew4, 0, 1, 0, 0);
+        ctx.translate(-p.x + 15, -p.y);
+        ctx.font = p.fontSize2 + "px LatoMedium, sans-serif";
+        ctx.fillStyle = p.color4;
+        ctx.fillText(line4, p.x, p.y4);
+        ctx.restore();
+
+        ctx.restore();
+
+      };
+      return p;
+  }
+
+  function createLine() {
+     var p = {};
+      p.x = 135; 
+      p.y = canvasEl.height / 2;
+      p.color = /* line_color */'#88ccff'/* /line_color */;
+      p.lineWidth = 4;
+      p.y1 = p.y + fontSize1 + fontSize2;
+      p.y2 = p.y + fontSize1 + fontSize2;
+  
+      p.draw = function() {
+
+        ctx.save();
+        ctx.beginPath();
+        ctx.moveTo(p.x, p.y1);
+        ctx.lineTo(p.x, p.y2);
+        ctx.lineWidth = p.lineWidth;
+        ctx.strokeStyle = p.color;
+
+        ctx.stroke();
+        ctx.restore();
+ 
+      };
+      return p;
+  }
+
+
+
+
+  function renderEffect(anim) {
+        clearCanvas();
+        for (var i = 0; i < anim.animatables.length; i++) {
+            anim.animatables[i].target.draw();
+        }
+    }
+  var render = anime({
+        duration: Infinity,
+        update: function() {
+            if( !timeline.paused ){
+                clearCanvas();
+            }
+        }
+    });
+
+  var clearCanvas = function(){
+       ctx.clearRect(0, 0, canvasEl.width, canvasEl.height);
+    };
+//----------------------------------------
+
+  function animateEffect() {
+      var text = createText(),
+          line = createLine();
+
+      
+       timeline
+            .add({
+                targets: line,
+                easing: 'easeOutQuad',
+                duration: 1250,
+                y2: function(p) {
+                      return p.y - fontSize1 - fontSize2;
+                    },
+                update: renderEffect,
+                offset: 0
+              })
+            .add({
+                targets: text,
+                easing: 'easeOutQuad',
+                duration: 1250,
+                moveY: 0,
+                update: renderEffect,
+                offset: 0
+              })
+             .add({
+                targets: text,
+                easing: 'easeOutCubic',
+                duration: 800,
+                scaleX1: 1,
+                skew1: 0,
+                Alpha1: { value: 1, duration: 200},
+                scaleX2: { value: 1, delay: 150},
+                skew2: { value: 0, delay: 150},
+                Alpha2: { value: 1, duration: 200, delay: 150},
+                scaleX3: { value: 1, delay: 300},
+                skew3: { value: 0, delay: 300},
+                Alpha3: { value: 1, duration: 200, delay: 300},
+                scaleX4: { value: 1, delay: 450},
+                skew4: { value: 0, delay: 450},
+                Alpha4: { value: 1, duration: 200, delay: 450},
+                update: renderEffect,
+                offset: 0
+              })
+             .add({
+                targets: line,
+                easing: 'easeInQuad',
+                duration: 1050,
+                y1: function(p) {
+                      return p.y - fontSize1 - fontSize2;
+                    },
+                update: renderEffect,
+                offset: 1250 + mainOptions.delay 
+              })
+              .add({
+                targets: text,
+                easing: 'easeInQuad',
+                duration: 1050,
+                moveY: -2 * (fontSize1 + fontSize2),
+                update: renderEffect,
+                offset: 1250 + mainOptions.delay
+              })
+              .add({
+                targets: text,
+                easing: 'easeInCubic',
+                duration: 600,
+                scaleX1: 0,
+                skew1: 0.1,
+                scaleX2: { value: 0, delay: 150},
+                skew2: { value: 0.1, delay: 150},
+                scaleX3: { value: 0, delay: 300},
+                skew3: { value: 0.1, delay: 300},
+                scaleX4: { value: 0, delay: 450},
+                skew4: { value: 0.1, delay: 450},
+                update: renderEffect,
+                offset: 1250 + mainOptions.delay
+              })
+              .add({
+                targets: [line, text],
+                update: renderEffect
+              });
+
+             
+
+    }
+
+    setCanvasSize();
+    animateEffect();
+//-------------------------------------------
+ //Playback control
+    var playbackControl = {
+
+        getIsPaused: function(){
+            return timeline.paused;
+        },
+
+        playToggle: function(){
+            if( timeline.paused ){
+                timeline.play();
+            } else {
+                timeline.pause();
+            }
+        },
+
+        play: function(){
+            timeline.play();
+        },
+
+        pause: function(){
+            timeline.pause();
+        },
+
+        restart: function(){
+            timeline.restart();
+        },
+
+        stop: function(){
+            timeline.restart();
+            timeline.pause();
+            clearCanvas();
+        },
+
+        seek: function( miliseconds ){
+            clearTimeout( mainOptions.timer );
+            if( timeline.reversed ){
+                timeline.reverse();
+            }
+            timeline.seek( miliseconds );
+            timeline.play();
+        }
+    };
+
+</script>
+
+<!-- BUTTONS -->
+<div id="vba-buttons" style="display: none; position: fixed; right: 20px; top: 20px;">
+    <button type="button" class="vba-btn" onclick="playbackControl.playToggle(); return false;">
+        Play / Pause
+    </button>
+    <button type="button" class="vba-btn" onclick="playbackControl.play(); return false;">
+        Play
+    </button>
+    <button type="button" class="vba-btn" onclick="playbackControl.pause(); return false;">
+        Pause
+    </button>
+    <button type="button" class="vba-btn" onclick="playbackControl.stop(); return false;">
+        Stop
+    </button>
+    <button type="button" class="vba-btn" onclick="playbackControl.seek(2500); return false;">
+        Jump to 50% time
+    </button>
+    <button type="button" class="vba-btn" onclick="playbackControl.restart(); return false;">
+        Replay
+    </button>
+</div>
+<script>
+    //To display buttons add #buttons hash to page address and reload
+    if( window.location.hash.indexOf('buttons') > -1 ){
+        document.getElementById('vba-buttons').style.display = 'block';
+    }
+</script>
+<!-- /BUTTONS -->
+	
+</body>
+</html>

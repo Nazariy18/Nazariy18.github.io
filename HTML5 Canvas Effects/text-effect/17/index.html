@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Effect #17</title>
+
+	<link href = "../../fonts/Lato/font.css" rel="stylesheet">
+  <script src = "../../lib/animejs/anime.min.js"></script>
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="vba-area">
+
+    <canvas class="Effect"></canvas>
+
+</div>
+
+<script>
+		var mainOptions = {
+				delay: /* delay */2000/* /delay */,
+        isPaused: false,
+        isRendering: false,
+        timer: null
+    };
+
+    var timeline = anime.timeline({
+        loop: true,
+        autoplay: true
+    });
+
+    var canvasEl = document.querySelector('.Effect'),
+        ctx = canvasEl.getContext('2d'),
+        fontSize = 50,
+        font = 'LatoBold',
+        wordsLine1 = [],
+        widthWords1 = [],
+        posWordsLine1 = [],
+        wordsLine4 = [],
+        widthWords4 = [],
+        posWordsLine4 = [],
+
+        line1 = /* text1 */"\"Life becomes easier"/* /text1 */,
+        line2 = /* text2 */"when you learn to accept"/* /text2 */,
+        line3 = /* text3 */"the apology"/* /text3 */;
+        line4 = /* text4 */"you never got\""/* /text4 */;
+        line5 = /* text5 */"R. Brault"/* /text5 */;
+
+        ctx.font = fontSize + "px " + font + ", sans-serif";
+    var widthLine1 = ctx.measureText(line1).width,
+    		widthLine2 = ctx.measureText(line2).width,
+    		widthLine3 = ctx.measureText(line3).width,
+    		widthLine4 = ctx.measureText(line4).width;
+
+    //line1
+    wordsLine1 = line1.split(' ');
+    posWordsLine1[0] = -widthLine1 / 2;
+    widthWords1[0] = ctx.measureText(wordsLine1[0]).width;
+
+    for (var i = 1; i < wordsLine1.length; i++) {
+    	widthWords1[i] = ctx.measureText(wordsLine1[i]).width;
+    	posWordsLine1[i] = ctx.measureText(' ').width + posWordsLine1[i - 1] + widthWords1[i - 1];
+    }
+    //line4
+    wordsLine4 = line4.split(' ');
+    posWordsLine4[0] = -widthLine4 / 2;
+    widthWords4[0] = ctx.measureText(wordsLine4[0]).width;
+
+    for (var i = 1; i < wordsLine4.length; i++) {
+      widthWords4[i] = ctx.measureText(wordsLine4[i]).width;
+      posWordsLine4[i] = ctx.measureText(' ').width + posWordsLine4[i - 1] + widthWords4[i - 1];
+    }
+
+    var color1 = /* text_color1 */'#ffffff'/* /text_color1 */,
+        color4 = /* text_color4 */'#ffffff'/* /text_color4 */,
+        shineColor1 = /* shine_color1 */'#ffffff'/* /shine_color1 */,
+        shineColor2 = /* shine_color2 */'#ffffff'/* /shine_color2 */,
+        shineColor3 = /* shine_color3 */'#ffffff'/* /shine_color3 */,
+        shineColor4 = /* shine_color4 */'#ffffff'/* /shine_color4 */;
+
+
+//-------------------------function
+	function setCanvasSize() {
+        var rectObject = canvasEl.parentNode.getBoundingClientRect();
+        canvasEl.width = rectObject.width;
+        canvasEl.height = rectObject.height;
+        canvasEl.style.width = rectObject.width + 'px';
+        canvasEl.style.height = rectObject.height + 'px';
+  }
+
+  function createWordsLine(word, pos, xTran, sX, color) {
+     var p = {};
+      p.x = canvasEl.width / 2; 
+      p.y = canvasEl.height / 2;
+      p.font = font;
+      p.fontSize = fontSize;
+      p.color = color;
+      p.x1 = p.x + pos;
+      p.xT = p.x + xTran;
+      p.moveY = 0;
+      p.scaleX = sX;
+      p.scaleY = 1;
+  
+      p.draw = function() {
+        ctx.save();
+        ctx.translate(0, p.moveY);
+        ctx.translate(p.xT, p.y);
+        ctx.scale(p.scaleX, p.scaleY);
+        ctx.translate(-p.xT, -p.y);
+        ctx.textBaseline="middle"; 
+        ctx.textAlign = "start";
+        ctx.font = p.fontSize + "px " + font + ", sans-serif";
+
+        ctx.fillStyle = p.color;
+        ctx.fillText(word, p.x1, p.y);
+ 
+        ctx.restore();
+
+      };
+      return p;
+  }
+
+  function createBlik(angle, mX, mY, color, rev) {
+     var p = {};
+      p.x = canvasEl.width / 2; 
+      p.y = canvasEl.height / 2;
+      p.color = color;
+      p.lineWidth = 6;
+      p.fontSize = fontSize;
+      p.angle = angle;
+      p.moveX = mX;
+      p.moveY = mY;
+      p.dash = 35;
+      p.dashOffset = rev * 35;
+
+      p.draw = function() {
+        ctx.save();
+        ctx.translate(p.moveX, p.moveY);
+        ctx.translate(p.x, p.y);
+        ctx.rotate(p.angle*Math.PI/180);
+        ctx.translate(-p.x, -p.y);
+        ctx.beginPath();
+        ctx.moveTo(p.x, p.y - 10);
+        ctx.lineTo(p.x, p.y - 30);
+        ctx.moveTo(p.x + 25, p.y);
+        ctx.lineTo(p.x + 35, p.y - 20);
+        ctx.moveTo(p.x - 25, p.y);
+        ctx.lineTo(p.x - 35, p.y - 20);
+     
+        ctx.lineWidth = p.lineWidth;
+        ctx.lineCap="round";
+        ctx.strokeStyle = p.color;
+        ctx.setLineDash([p.dash]);
+        ctx.lineDashOffset = p.dashOffset;
+        ctx.stroke();
+        ctx.restore();
+            
+      };
+      return p;
+  }
+
+  function createText() {
+     var p = {};
+      p.x = canvasEl.width / 2; 
+      p.y = canvasEl.height / 2;
+      p.font = font;
+      p.fontSize = fontSize;
+      p.color2 = /* text_color2 */'#ffffff'/* /text_color2 */;
+      p.color3 = /* text_color3 */'#ffffff'/* /text_color3 */;
+      p.color4 = /* text_color4 */'#ffffff'/* /text_color4 */;
+      p.color5 = /* text_color5 */'#ffffff'/* /text_color5 */;
+      p.xT2 = p.x + widthLine2 / 2;
+      p.xT2end = p.x - widthLine2 / 2;
+      p.xT3 = p.x + widthLine3 / 2;
+      p.xT3end = p.x - widthLine3 / 2;
+      p.xT4 = p.x + widthLine4 / 2;
+      p.xT4end = p.x - widthLine4 / 2;
+      p.scaleX2 = 0;
+      p.scaleY2 = 1;
+      p.scaleX3 = 0;
+      p.scaleY3 = 1;
+      p.scaleX4 = 0;
+      p.scaleY4 = 1;
+      p.y5 = p.y + p.fontSize;
+      p.yT5 = p.y + p.fontSize/2;
+      p.scaleY5 = 0;
+      p.moveY = 0;
+
+      p.draw = function() {
+        ctx.save();
+        ctx.translate(0, p.moveY);
+        ctx.textBaseline="middle"; 
+        ctx.textAlign = "center";
+        ctx.font = p.fontSize + "px " + font + ", sans-serif";
+       
+        ctx.save();
+        ctx.translate(p.xT2, p.y);
+        ctx.scale(p.scaleX2, p.scaleY2);
+        ctx.translate(-p.xT2, -p.y);
+        ctx.fillStyle = p.color2;
+        ctx.fillText(line2, p.x, p.y);
+        ctx.restore();
+
+        ctx.save();
+        ctx.translate(p.xT3, p.y);
+        ctx.scale(p.scaleX3, p.scaleY3);
+        ctx.translate(-p.xT3, -p.y);
+        ctx.fillStyle = p.color3;
+        ctx.fillText(line3, p.x, p.y);
+        ctx.restore();
+
+        ctx.save();
+        ctx.translate(p.xT4, p.y);
+        ctx.scale(p.scaleX4, p.scaleY4);
+        ctx.translate(-p.xT4, -p.y);
+        ctx.fillStyle = p.color4;
+        ctx.fillText(line4, p.x, p.y);
+        ctx.restore();
+
+        ctx.save();
+        ctx.translate(p.x, p.yT5);
+        ctx.scale(1, p.scaleY5);
+        ctx.translate(-p.x, -p.yT5);
+        ctx.fillStyle = p.color5;
+        ctx.fillText(line5, p.x, p.y5);
+        ctx.restore();
+
+        ctx.restore();
+
+      };
+      return p;
+  }
+
+
+  function renderEffect(anim) {
+        clearCanvas();
+        for (var i = 0; i < anim.animatables.length; i++) {
+            anim.animatables[i].target.draw();
+        }
+    }
+  var render = anime({
+        duration: Infinity,
+        update: function() {
+            if( !timeline.paused ){
+                clearCanvas();
+            }
+        }
+    });
+
+  var clearCanvas = function(){
+       ctx.clearRect(0, 0, canvasEl.width, canvasEl.height);
+    };
+//----------------------------------------
+
+  function animateEffect() {
+      var text = createText(),
+      		blik1 = [],
+          textLine1 = [],
+      		textLine4 = [];
+
+      		for (var i = 0; i < wordsLine1.length; i++) {
+      			textLine1[i] = createWordsLine(wordsLine1[i], posWordsLine1[i], posWordsLine1[0], 1, color1);
+      			blik1[i] = createBlik(180, posWordsLine1[i] + widthWords1[i] / 2, fontSize, shineColor1,-1);
+      		}
+      var blik2 = createBlik(-135, - widthLine2/2, fontSize / 2, shineColor2, 1),
+      		blik3 = createBlik(-45, - widthLine3/2, -fontSize / 2, shineColor3, 1),
+      		blik4 = createBlik(-45, - widthLine4/2, -fontSize / 2, shineColor4, 1);
+
+          for (var i = 0; i < wordsLine4.length; i++) {
+            textLine4[i] = createWordsLine(wordsLine4[i], posWordsLine4[i], widthLine4 / 2, 0, color4);
+          }
+
+      var del1 = 400 / wordsLine1.length,
+          dur1 = 700 - del1 * (wordsLine1.length - 1),
+          del4 = 400 / wordsLine4.length,
+          dur4 = 700 - del4 * (wordsLine4.length - 1);
+
+       timeline
+             .add({
+                targets: textLine1,
+                easing: 'easeInSine',
+                duration: dur1,
+                moveY: [500, 0],
+                delay: function(el, i) { return del1 * i;},
+                update: renderEffect,
+                offset: 0
+              })
+             .add({
+                targets: blik1,
+                easing: 'linear',
+                duration: 300,
+                dashOffset: 35,
+                delay: function(el, i) { return del1 * i;},
+                update: renderEffect,
+                offset: dur1
+              })
+             .add({
+                targets: textLine1,
+                scaleY: [{ value: 1.5, easing: 'linear', duration: 330},
+                				 { value: 1, easing: 'linear', duration: 170}],
+                scaleX: { value: 0, easing: 'easeInSine', duration: 500},
+                update: renderEffect,
+                offset: 1000
+              })
+             .add({
+                targets: text,
+                scaleX2: { value: 1, easing: 'easeInSine', duration: 500},
+                scaleY2: [{ value: 1.5, easing: 'linear', duration: 330},
+                				 { value: 1, easing: 'linear', duration: 170}],
+                update: renderEffect,
+                offset: 1100
+              })
+             .add({
+                targets: blik2,
+                easing: 'linear',
+                duration: 300,
+                dashOffset: -35,
+                update: renderEffect,
+                offset: 1600
+              })
+              .add({
+                targets: text,
+                xT2: [{value: function(p) {return p.xT2end;}, duration: 100}],
+                scaleX2: { value: 0, easing: 'easeInSine', duration: 500},
+                scaleY2: [{ value: 1.5, easing: 'linear', duration: 330},
+                				 { value: 1, easing: 'linear', duration: 170}],
+                scaleX3: { value: 1, easing: 'easeInSine', duration: 500, delay: 100},
+                scaleY3: [{ value: 1.5, easing: 'linear', duration: 330, delay: 100},
+                				 { value: 1, easing: 'linear', duration: 170}],
+                update: renderEffect,
+                offset: 2000
+              })
+              .add({
+                targets: blik3,
+                easing: 'linear',
+                duration: 300,
+                dashOffset: -35,
+                update: renderEffect,
+                offset: 2600
+              })
+              .add({
+                targets: text,
+                xT3: [{value: function(p) {return p.xT3end;}, duration: 100}],
+                scaleX3: { value: 0, easing: 'easeInSine', duration: 500},
+                scaleY3: [{ value: 1.5, easing: 'linear', duration: 330},
+                				 { value: 1, easing: 'linear', duration: 170}],
+                update: renderEffect,
+                offset: 3000
+              })
+              .add({
+                targets: textLine4,
+                scaleX: { value: 1, easing: 'easeInSine', duration: 500},
+                scaleY: [{ value: 1.5, easing: 'linear', duration: 330},
+                         { value: 1, easing: 'linear', duration: 170}],
+                update: renderEffect,
+                offset: 3100
+              })
+              .add({
+                targets: blik4,
+                easing: 'linear',
+                duration: 300,
+                dashOffset: -35,
+                update: renderEffect,
+                offset: 3600
+              })
+              .add({
+                targets: text,
+                easing: 'easeOutBack',
+                duration: 300,
+                scaleY5: 1,
+                update: renderEffect,
+                offset: 3600
+              })
+              .add({
+                targets: textLine4,
+                easing: 'easeInSine',
+                duration: dur4,
+                moveY: -600,
+                delay: function(el, i) { return (wordsLine4.length - 1 - i) * del4;},
+                update: renderEffect,
+                offset: 3900 + mainOptions.delay
+              })
+              .add({
+                targets: text,
+                easing: 'easeInSine',
+                duration: dur4,
+                moveY: -600,
+                update: renderEffect,
+                offset: 4300 + mainOptions.delay
+              })
+              .add({
+                targets: [textLine1, text, textLine4, blik1, blik2, blik3, blik4],
+                update: renderEffect
+              });
+
+    }
+
+    setCanvasSize();
+    animateEffect();
+//-------------------------------------------
+ //Playback control
+    var playbackControl = {
+
+        getIsPaused: function(){
+            return timeline.paused;
+        },
+
+        playToggle: function(){
+            if( timeline.paused ){
+                timeline.play();
+            } else {
+                timeline.pause();
+            }
+        },
+
+        play: function(){
+            timeline.play();
+        },
+
+        pause: function(){
+            timeline.pause();
+        },
+
+        restart: function(){
+            timeline.restart();
+        },
+
+        stop: function(){
+            timeline.restart();
+            timeline.pause();
+            clearCanvas();
+        },
+
+        seek: function( miliseconds ){
+            clearTimeout( mainOptions.timer );
+            if( timeline.reversed ){
+                timeline.reverse();
+            }
+            timeline.seek( miliseconds );
+            timeline.play();
+        }
+    };
+
+</script>
+
+<!-- BUTTONS -->
+<div id="vba-buttons" style="display: none; position: fixed; right: 20px; top: 20px;">
+    <button type="button" class="vba-btn" onclick="playbackControl.playToggle(); return false;">
+        Play / Pause
+    </button>
+    <button type="button" class="vba-btn" onclick="playbackControl.play(); return false;">
+        Play
+    </button>
+    <button type="button" class="vba-btn" onclick="playbackControl.pause(); return false;">
+        Pause
+    </button>
+    <button type="button" class="vba-btn" onclick="playbackControl.stop(); return false;">
+        Stop
+    </button>
+    <button type="button" class="vba-btn" onclick="playbackControl.seek(2500); return false;">
+        Jump to 50% time
+    </button>
+    <button type="button" class="vba-btn" onclick="playbackControl.restart(); return false;">
+        Replay
+    </button>
+</div>
+<script>
+    //To display buttons add #buttons hash to page address and reload
+    if( window.location.hash.indexOf('buttons') > -1 ){
+        document.getElementById('vba-buttons').style.display = 'block';
+    }
+</script>
+<!-- /BUTTONS -->
+	
+</body>
+</html>

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Effect #15</title>
+
+	<link href = "../../fonts/Lato/font.css" rel="stylesheet">
+  <script src = "../../lib/animejs/anime.min.js"></script>
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="vba-area">
+
+    <canvas class="Effect"></canvas>
+
+</div>
+
+<script>
+		var mainOptions = {
+				delay: /* delay */2000/* /delay */,
+        isPaused: false,
+        isRendering: false,
+        timer: null
+    };
+
+    var timeline = anime.timeline({
+        loop: true,
+        autoplay: true
+    });
+
+    var canvasEl = document.querySelector('.Effect'),
+        ctx = canvasEl.getContext('2d'),
+        posWord = [],
+        widthWord = [],
+
+        line = 	/* text */"Die with memories, not dreams"/* /text */;
+        ctx.font = "50px LatoMedium, sans-serif";
+
+    var widthLine = ctx.measureText(line).width,
+        words = line.split(' ');
+
+    var widthSpace = ctx.measureText(" ").width;
+        widthWord[0] = ctx.measureText(words[0]).width;
+        posWord[0] = widthWord[0] / 2 - widthLine / 2;
+
+        for (var i = 1; i < words.length; i++) {
+          widthWord[i] = ctx.measureText(words[i]).width;
+          posWord[i] = posWord[i-1] + widthWord[i-1] / 2 + widthWord[i] /2 + widthSpace;
+        }
+
+//-------------------------function
+	function setCanvasSize() {
+        var rectObject = canvasEl.parentNode.getBoundingClientRect();
+        canvasEl.width = rectObject.width;
+        canvasEl.height = rectObject.height;
+        canvasEl.style.width = rectObject.width + 'px';
+        canvasEl.style.height = rectObject.height + 'px';
+    }
+
+
+  function createText(word, x, number) {
+     var p = {};
+      p.x = canvasEl.width / 2; 
+      p.y = canvasEl.height / 2;
+      p.x2 = p.x + x;
+      p.fontSize = 50;
+      p.color = /* text_color */'#ffffff'/* /text_color */;
+      p.scaleY = 0;
+      p.moveY = 50;
+      p.moveX = -100;
+      if (number % 2 == 0) {
+        p.angle = 10;
+        p.endA1 = -4;
+        p.endA2 = 2;
+        p.endA3 = -1;
+      } else {
+        p.angle = -10;
+        p.endA1 = 4;
+        p.endA2 = -2;
+        p.endA3 = 1;
+      }
+      p.line = word;
+      p.Alpha = 1;
+      p.draw = function() {
+        
+        ctx.save();
+        ctx.globalAlpha = p.Alpha;
+        ctx.translate(p.x2, p.y + p.fontSize / 2);
+        ctx.rotate(p.angle*Math.PI/180);
+        ctx.transform(1, 0, 0, p.scaleY, p.moveX, p.moveY);
+        ctx.translate((-1)*p.x2, (-1)*(p.y + p.fontSize / 2));
+        
+        ctx.font = p.fontSize + "px LatoMedium, sans-serif";
+        ctx.textBaseline="middle"; 
+        ctx.textAlign = "center";
+        ctx.fillStyle = p.color;
+       
+        ctx.fillText(p.line, p.x2, p.y);
+
+        ctx.restore();
+
+      };
+      return p;
+  }
+
+
+  function renderEffect(anim) {
+  			clearCanvas();
+        for (var i = 0; i < anim.animatables.length; i++) {
+            anim.animatables[i].target.draw();
+        }
+    }
+  var render = anime({
+        duration: Infinity,
+        update: function() {
+            if( !timeline.paused ){
+                clearCanvas();
+            }
+        }
+    });
+
+  var clearCanvas = function(){
+       ctx.clearRect(0, 0, canvasEl.width, canvasEl.height);
+    };
+//----------------------------------------
+
+  function animateEffect() {
+      var text = [];
+      for (var i = 0; i < words.length; i++) {
+        text[i] = createText(words[i], posWord[i], i);
+      }
+
+      var del = 402 / words.length,
+          dur1 = 1500 - del * (words.length - 1),
+          dur2 = 1100 - del * (words.length - 1);
+
+      
+       timeline
+             .add({
+                targets: text,
+                scaleY: [{value: 1.3, easing: 'easeOutQuad', duration: 3/12 * dur1},
+                         {value: 1, easing: 'easeOutQuad', duration: 1/12 * dur1, delay: 4/12 * dur1}],
+                moveY: [{value: -50, easing: 'easeOutQuad', duration: 5/12 * dur1},
+                        {value: 0, easing: 'easeInQuad', duration: 3/12 * dur1},
+                        {value: -20, easing: 'easeOutQuad', duration: 2/12 * dur1},
+                        {value: 0, easing: 'easeInQuad', duration: 1/12 * dur1}],
+                moveX: {value: 0, easing: 'easeOutQuad', duration: 5/12 * dur1},
+                angle: [{value: function(p) { 
+                					return p.endA1;
+                				}, easing: 'easeInOutSine', duration: 5/12 * dur1},
+                        {value: function(p) { 
+                        	return p.endA2;
+                        }, easing: 'easeInOutSine', duration: 2/12 * dur1, delay: 2/12 *dur1},
+                        {value: function(p) { 
+                        	return p.endA3;
+                        }, easing: 'easeInOutSine', duration: 2/12 * dur1},
+                        {value: 0, easing: 'easeInOutSine', duration: 1/12 * dur1}],
+                update: renderEffect,
+                delay: function(el, i) {
+                	return (words.length - 1 - i) * del;
+                },
+                offset: 0
+              })
+             .add({
+                targets: text,
+                scaleY: [{value: 1.3, easing: 'easeOutQuart', duration: 4/8 * dur2},
+                         {value: 0, easing: 'easeInQuint', duration: 4/8 * dur2}],
+                moveY: [ {value: -30, easing: 'easeOutQuart', duration: 4/8 * dur2},
+                         {value: 0, easing: 'easeInQuart', duration: 4/8 * dur2}],
+                update: renderEffect,
+                delay: function(el, i) {
+                	return (words.length - 1 - i) * del;
+                },
+                offset: 1500 + mainOptions.delay
+              })
+             .add({
+                targets: text,
+                scaleY: 0,
+                duration: 100,
+                update:renderEffect
+              });
+            
+            
+    }
+
+    setCanvasSize();
+    animateEffect();
+//-------------------------------------------
+ //Playback control
+    var playbackControl = {
+
+        getIsPaused: function(){
+            return timeline.paused;
+        },
+
+        playToggle: function(){
+            if( timeline.paused ){
+                timeline.play();
+            } else {
+                timeline.pause();
+            }
+        },
+
+        play: function(){
+            timeline.play();
+        },
+
+        pause: function(){
+            timeline.pause();
+        },
+
+        restart: function(){
+            timeline.restart();
+        },
+
+        stop: function(){
+            timeline.restart();
+            timeline.pause();
+            clearCanvas();
+        },
+
+        seek: function( miliseconds ){
+            clearTimeout( mainOptions.timer );
+            if( timeline.reversed ){
+                timeline.reverse();
+            }
+            timeline.seek( miliseconds );
+            timeline.play();
+        }
+    };
+
+</script>
+
+<!-- BUTTONS -->
+<div id="vba-buttons" style="display: none; position: fixed; right: 20px; top: 20px;">
+    <button type="button" class="vba-btn" onclick="playbackControl.playToggle(); return false;">
+        Play / Pause
+    </button>
+    <button type="button" class="vba-btn" onclick="playbackControl.play(); return false;">
+        Play
+    </button>
+    <button type="button" class="vba-btn" onclick="playbackControl.pause(); return false;">
+        Pause
+    </button>
+    <button type="button" class="vba-btn" onclick="playbackControl.stop(); return false;">
+        Stop
+    </button>
+    <button type="button" class="vba-btn" onclick="playbackControl.seek(2500); return false;">
+        Jump to 50% time
+    </button>
+    <button type="button" class="vba-btn" onclick="playbackControl.restart(); return false;">
+        Replay
+    </button>
+</div>
+<script>
+    //To display buttons add #buttons hash to page address and reload
+    if( window.location.hash.indexOf('buttons') > -1 ){
+        document.getElementById('vba-buttons').style.display = 'block';
+    }
+</script>
+<!-- /BUTTONS -->
+	
+</body>
+</html>

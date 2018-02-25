@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Effect #13</title>
+
+	<link href = "../../fonts/Lato/font.css" rel="stylesheet">
+  <script src = "../../lib/animejs/anime.min.js"></script>
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="vba-area">
+
+    <canvas class="Effect"></canvas>
+
+</div>
+
+<script>
+		var mainOptions = {
+				delay: /* delay */2000/* /delay */,
+        isPaused: false,
+        isRendering: false,
+        timer: null
+    };
+
+    var timeline = anime.timeline({
+        loop: true,
+        direction: 'alternate',
+        autoplay: true
+    });
+
+    var canvasEl = document.querySelector('.Effect'),
+        ctx = canvasEl.getContext('2d'),
+        posWord = [],
+        widthWord = [],
+
+        line = 	/* text */"There is no substitute for hard work"/* /text */;
+        ctx.font = "50px LatoMedium, sans-serif";
+
+    var widthLine = ctx.measureText(line).width,
+        words = line.split(' ');
+
+    var widthSpace = ctx.measureText(" ").width;
+        widthWord[0] = ctx.measureText(words[0]).width;
+        posWord[0] = widthWord[0] / 2 - widthLine / 2;
+
+        for (var i = 1; i < words.length; i++) {
+          widthWord[i] = ctx.measureText(words[i]).width;
+          posWord[i] = posWord[i-1] + widthWord[i-1] / 2 + widthWord[i] /2 + widthSpace;
+        }
+
+    var tmp = null,
+        tmpWord = null;
+
+    
+    for (var i = 0; i < posWord.length; i++) {
+        for (var j = 0; j < posWord.length - i; j++) {
+          if (Math.abs(posWord[j]) < Math.abs(posWord[j+1])) {
+            tmp = posWord[j];
+            posWord[j] = posWord[j+1];
+            posWord[j+1] = tmp;
+
+            tmpWord = words[j];
+            words[j] = words[j+1];
+            words[j+1] = tmpWord;
+          }
+        }
+    }
+
+//-------------------------function
+	function setCanvasSize() {
+        var rectObject = canvasEl.parentNode.getBoundingClientRect();
+        canvasEl.width = rectObject.width;
+        canvasEl.height = rectObject.height;
+        canvasEl.style.width = rectObject.width + 'px';
+        canvasEl.style.height = rectObject.height + 'px';
+    }
+
+
+  function createText(word, x) {
+     var p = {};
+      p.x = canvasEl.width / 2; 
+      p.y = canvasEl.height / 2;
+      p.endX2 = p.x + x;
+      p.fontSize = 50;
+      p.color = /* text_color */'#ffffff'/* /text_color */;
+      p.scale = 0;
+      if (x < 0) {
+         p.x2 = p.x + 30;
+         p.angle = 45;
+         p.endAngle = -10;
+      } else {
+          p.x2 = p.x - 30;
+         p.angle = -45;
+         p.endAngle = 10;
+      }
+      p.line = word;
+      p.draw = function() {
+        
+        ctx.save();
+        ctx.translate(p.x2, p.y);
+        ctx.rotate(p.angle*Math.PI/180);
+        ctx.scale(p.scale, p.scale);
+        ctx.translate((-1)*p.x2, (-1)*p.y);
+        
+        ctx.font = p.fontSize + "px LatoMedium, sans-serif";
+        ctx.textBaseline="middle"; 
+        ctx.textAlign = "center";
+        ctx.fillStyle = p.color;
+       
+        ctx.fillText(p.line, p.x2, p.y);
+
+        ctx.restore();
+
+      };
+      return p;
+  }
+
+
+  function renderEffect(anim) {
+        clearCanvas();
+        for (var i = 0; i < anim.animatables.length; i++) {
+            anim.animatables[i].target.draw();
+        }
+    }
+  var render = anime({
+        duration: Infinity,
+        update: function() {
+            if( !timeline.paused ){
+                clearCanvas();
+            }
+        }
+    });
+
+  var clearCanvas = function(){
+       ctx.clearRect(0, 0, canvasEl.width, canvasEl.height);
+    };
+//----------------------------------------
+
+  function animateEffect() {
+      var text = [];
+      for (var i = 0; i < words.length; i++) {
+        text[i] = createText(words[i], posWord[i]);
+      }
+      
+
+      var del = 800 / words.length,
+          dur = 1400 - del * (words.length - 1);
+
+       timeline
+             .add({
+                targets: text,
+                scale: [{value: 1.2, easing: 'easeOutQuad', duration: 0.375 * dur},
+                         {value: 1, easing: 'easeInQuad', duration: 0.625 * dur}],
+                x2: {value: function(p) { return p.endX2;}, easing: 'easeOutQuad', duration: 0.375 * dur},
+                angle: [{value: function(p) { return p.endAngle;}, easing: 'easeOutQuad', duration: 0.375 * dur},
+                        {value: 0, easing: 'easeInQuad', duration: 0.625 * dur}],
+                update: renderEffect,
+                delay: function(el, i) {return i * del;},
+                offset: 100
+              })
+             .add({
+                targets: text,
+                angle: 0,
+                duration: mainOptions.delay / 2,
+                update: renderEffect
+              });
+
+    }
+
+    setCanvasSize();
+    animateEffect();
+//-------------------------------------------
+ //Playback control
+    var playbackControl = {
+
+        getIsPaused: function(){
+            return timeline.paused;
+        },
+
+        playToggle: function(){
+            if( timeline.paused ){
+                timeline.play();
+            } else {
+                timeline.pause();
+            }
+        },
+
+        play: function(){
+            timeline.play();
+        },
+
+        pause: function(){
+            timeline.pause();
+        },
+
+        restart: function(){
+            timeline.restart();
+        },
+
+        stop: function(){
+            timeline.restart();
+            timeline.pause();
+            clearCanvas();
+        },
+
+        seek: function( miliseconds ){
+            clearTimeout( mainOptions.timer );
+            if( timeline.reversed ){
+                timeline.reverse();
+            }
+            timeline.seek( miliseconds );
+            timeline.play();
+        }
+    };
+
+</script>
+
+<!-- BUTTONS -->
+<div id="vba-buttons" style="display: none; position: fixed; right: 20px; top: 20px;">
+    <button type="button" class="vba-btn" onclick="playbackControl.playToggle(); return false;">
+        Play / Pause
+    </button>
+    <button type="button" class="vba-btn" onclick="playbackControl.play(); return false;">
+        Play
+    </button>
+    <button type="button" class="vba-btn" onclick="playbackControl.pause(); return false;">
+        Pause
+    </button>
+    <button type="button" class="vba-btn" onclick="playbackControl.stop(); return false;">
+        Stop
+    </button>
+    <button type="button" class="vba-btn" onclick="playbackControl.seek(2500); return false;">
+        Jump to 50% time
+    </button>
+    <button type="button" class="vba-btn" onclick="playbackControl.restart(); return false;">
+        Replay
+    </button>
+</div>
+<script>
+    //To display buttons add #buttons hash to page address and reload
+    if( window.location.hash.indexOf('buttons') > -1 ){
+        document.getElementById('vba-buttons').style.display = 'block';
+    }
+</script>
+<!-- /BUTTONS -->
+	
+</body>
+</html>
