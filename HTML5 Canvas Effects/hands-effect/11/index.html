@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Hand Effect #11</title>
+
+	<link href = "../../fonts/IndieFlower/font.css" rel="stylesheet">
+  <link href = "../../fonts/meatloaf/font.css" rel="stylesheet">
+  <script src = "../../lib/fontfaceobserver/fontfaceobserver.standalone.js"></script>
+  <script src = "../../lib/animejs/anime.min.js"></script>
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="vba-area">
+
+    <canvas class="Effect"></canvas>
+
+</div>
+
+<script>
+		var mainOptions = {
+				delay: /* delay */2000/* /delay */,
+        isPaused: false,
+        isRendering: false,
+        timer: null
+    };
+
+    var timeline = anime.timeline({
+        loop: true,
+        autoplay: true
+    });
+
+
+    var canvasEl = document.querySelector('.Effect'),
+        ctx = canvasEl.getContext('2d'),
+
+        fontMeatloaf = new FontFaceObserver('Meatloaf'),
+        fontIndieFlower = new FontFaceObserver('IndieFlower'),
+
+        line1 = {
+          text: /* text1 */"Don't worry"/* /text1 */,
+          color: /* text_color1 */'#abd386'/* /text_color1 */,
+          fontSize: 40,
+          fontFamily: 'IndieFlower'
+        },
+
+        line2 = {
+          text: /* text2 */"BE HAPPY!"/* /text2 */,
+          color: /* text_color2 */'#ffffff'/* /text_color2 */,
+          fontSize: 90,
+          fontFamily: 'Meatloaf'
+        },
+
+        lineColor = /* line_color */'#ffffff'/* /line_color */;
+
+//-------------------------function
+	function setCanvasSize() {
+        var rectObject = canvasEl.parentNode.getBoundingClientRect();
+        canvasEl.width = rectObject.width;
+        canvasEl.height = rectObject.height;
+        canvasEl.style.width = rectObject.width + 'px';
+        canvasEl.style.height = rectObject.height + 'px';
+  }
+
+  function getWidthText(line) {
+      ctx.font = line.fontSize + "px " + line.fontFamily + ", sans-serif";
+      var widthLine = ctx.measureText(line.text).width;
+
+      return widthLine;
+  }
+
+  function createTextUp(line, maxWidth) {
+     var p = {};
+      p.x = canvasEl.width / 2; 
+      p.y = canvasEl.height / 2;
+      p.yTran = p.y;
+      p.Alpha = 1;
+      p.scaleX = 0;
+      p.scaleY = 0;
+      p.draw = function() {
+
+        ctx.save();
+				ctx.globalAlpha = p.Alpha;
+        ctx.translate(p.x, p.yTran);
+        ctx.scale(p.scaleX, p.scaleY);
+        ctx.translate(-p.x, -p.yTran);
+
+				ctx.font = line.fontSize + "px " + line.fontFamily + ", sans-serif";
+        ctx.textBaseline = "middle"; 
+        ctx.textAlign = "center";
+        ctx.fillStyle = line.color;
+        ctx.fillText(line.text, p.x, p.y);
+
+        ctx.restore();
+      };
+      return p;
+  }
+
+  function createTextDown(line, maxWidth) {
+     var p = {};
+      p.x = canvasEl.width / 2; 
+      p.y = canvasEl.height / 2;
+      p.yTran = canvasEl.height / 2 + line.fontSize / 2;
+      p.Alpha = 1;
+      p.scaleY = 0;
+      p.draw = function() {
+
+        ctx.save();
+        ctx.globalAlpha = p.Alpha;
+        ctx.translate(p.x, p.yTran);
+        ctx.scale(1, p.scaleY);
+        ctx.translate(-p.x, -p.yTran);
+
+        ctx.textBaseline = "middle"; 
+        ctx.textAlign = "center";
+        ctx.font = line.fontSize + "px " + line.fontFamily + ", sans-serif";
+        ctx.fillStyle = line.color;
+        ctx.fillText(line.text, p.x, p.y, maxWidth);
+
+        ctx.restore();
+      };
+      return p;
+  }
+
+  function createHand(imgLink) {
+     var p = {};
+      p.x = 0; 
+      p.y = 0;
+      p.moveX = canvasEl.width / 8;
+      p.moveY = canvasEl.height + 20;
+      p.scale = 0.5;
+      p.img = new Image;
+      p.img.src = imgLink;
+      
+      p.draw = function() {
+          ctx.save();
+          ctx.translate(p.moveX, p.moveY);
+          ctx.scale(p.scale, p.scale);
+          ctx.drawImage(p.img, p.x, p.y);
+          ctx.restore();
+      }
+      return p;
+  }
+
+  function createCircleLine(radius) {
+     var p = {};
+      p.x = canvasEl.width / 2; 
+      p.y = canvasEl.height / 2;
+      p.lineWidth = 2;
+      p.color = lineColor;
+      p.dash = 2*Math.PI * radius;
+      p.dashOffset = 2*Math.PI * radius;
+      p.Alpha = 1;
+      p.draw = function() {
+
+        ctx.save();
+        ctx.globalAlpha = p.Alpha;
+
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, radius, -0.5*Math.PI, 2.5*Math.PI, false);
+        ctx.setLineDash([p.dash]);
+        ctx.lineDashOffset = p.dashOffset;
+        ctx.lineWidth = p.lineWidth;
+        ctx.strokeStyle = p.color;
+        ctx.stroke();
+
+        ctx.restore();
+      };
+      return p;
+  }
+
+  function renderEffect(anim) {
+        clearCanvas();
+        for (var i = 0; i < anim.animatables.length; i++) {
+            anim.animatables[i].target.draw();
+        }
+    }
+
+  var render = anime({
+        duration: Infinity,
+        update: function() {
+            if( !timeline.paused ){
+                clearCanvas();
+            }
+        }
+    });
+
+  var clearCanvas = function(){
+       ctx.clearRect(0, 0, canvasEl.width, canvasEl.height);
+    };
+//----------------------------------------
+
+  function animateEffect() {
+
+      var widtLine1 = getWidthText(line1),
+          widtLine2 = getWidthText(line2);
+
+      var text1 = createTextUp(line1, 900),
+          text2 = createTextDown(line2, 900),
+          hand = createHand("img/Hand_7.png"),
+          circleLine = createCircleLine(100);
+      	
+
+       timeline
+             .add({
+                targets: text1,
+                scaleX: {value: 1, easing: 'easeOutCubic', duration: 700},
+                scaleY: [{value: 1, easing: 'easeOutCubic', duration: 700},
+                				 {value: 0, easing: 'easeInCubic', duration: 400, delay: 300}],
+                yTran: {value: function(p) {
+                										return p.y - line1.fontSize/2;
+                								}, duration: 1, delay: 800},
+                update: renderEffect,
+                offset: 0
+              }) 
+             .add({
+                targets: text2,
+                easing: 'easeInCubic',
+                duration: 400,
+                scaleY: 1,
+                update: renderEffect,
+                offset: 1000
+              }) 
+             .add({
+                targets: hand,
+                moveY: [{value: canvasEl.height / 3, easing: 'easeOutQuart', duration: 700},
+                				{value: canvasEl.height + 20, easing: 'easeInQuart', duration: 500, delay: 700}],
+                update: renderEffect,
+                offset: 0
+              }) 
+              .add({
+                targets: [hand, text1, text2],
+                easing: 'linear',
+                duration: 1,
+                Alpha: [1, 0],
+                update: renderEffect,
+                offset: 2000 + mainOptions.delay
+              }) 
+              .add({
+                targets: circleLine,
+                easing: 'easeInOutQuint',
+                duration: 500,
+                dashOffset: function(p) {
+                							return -p.dashOffset;
+                						},
+                update: renderEffect,
+                offset: 1900 + mainOptions.delay
+              }) 
+              .add({
+                targets: [hand, text1, text2, circleLine],
+                duration: 1,
+                update: renderEffect,
+                offset: 1900
+              });
+
+          console.log(timeline.duration);
+    
+  }
+
+
+    setCanvasSize();
+    Promise.all([fontMeatloaf.load(), fontIndieFlower.load()]).then(animateEffect);
+
+
+//-------------------------------------------
+ //Playback control
+    var playbackControl = {
+
+        getIsPaused: function(){
+            return timeline.paused;
+        },
+
+        playToggle: function(){
+            if( timeline.paused ){
+                timeline.play();
+            } else {
+                timeline.pause();
+            }
+        },
+
+        play: function(){
+            timeline.play();
+        },
+
+        pause: function(){
+            timeline.pause();
+        },
+
+        restart: function(){
+            timeline.restart();
+        },
+
+        stop: function(){
+            timeline.restart();
+            timeline.pause();
+            clearCanvas();
+        },
+
+        seek: function( miliseconds ){
+            clearTimeout( mainOptions.timer );
+            if( timeline.reversed ){
+                timeline.reverse();
+            }
+            timeline.seek( miliseconds );
+            timeline.play();
+        }
+    };
+
+</script>
+
+<!-- BUTTONS -->
+<div id="vba-buttons" style="display: none; position: fixed; right: 20px; top: 20px;">
+    <button type="button" class="vba-btn" onclick="playbackControl.playToggle(); return false;">
+        Play / Pause
+    </button>
+    <button type="button" class="vba-btn" onclick="playbackControl.play(); return false;">
+        Play
+    </button>
+    <button type="button" class="vba-btn" onclick="playbackControl.pause(); return false;">
+        Pause
+    </button>
+    <button type="button" class="vba-btn" onclick="playbackControl.stop(); return false;">
+        Stop
+    </button>
+    <button type="button" class="vba-btn" onclick="playbackControl.seek(2500); return false;">
+        Jump to 50% time
+    </button>
+    <button type="button" class="vba-btn" onclick="playbackControl.restart(); return false;">
+        Replay
+    </button>
+</div>
+<script>
+    //To display buttons add #buttons hash to page address and reload
+    if( window.location.hash.indexOf('buttons') > -1 ){
+        document.getElementById('vba-buttons').style.display = 'block';
+    }
+</script>
+<!-- /BUTTONS -->
+	
+</body>
+</html>
