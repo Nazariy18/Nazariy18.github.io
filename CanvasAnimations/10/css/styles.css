@@ -1,5 +1,0 @@
-
-html, body { margin: 0; padding: 0; box-sizing: border-box; }
-.vba-area { position: relative; width: 1280px; height: 720px; overflow: hidden; background-image: url(n2.jpg);}
-* { box-sizing: border-box; }
-.vba-btn { font-size: 16px; cursor: pointer; padding: 10px 15px; border: 2px solid #ddd; background-color: #eee; color: #000; border-radius: 6px; }
