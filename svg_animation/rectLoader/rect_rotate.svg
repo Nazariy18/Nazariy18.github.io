@@ -1,0 +1,373 @@
+<svg version="1.1" id="rect-rotate" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 600 600" enable-background="new 0 0 600 600" xml:space="preserve">
+<rect id="bg" fill="#323741" width="600" height="600"/>
+<g id="rects" clip-path="url(#clipRects)">
+	<g id="inside-rects">
+		<rect id="rect-upper-left" x="150" y="150" fill="#FFD039" stroke="#FFD039" stroke-miterlimit="10" width="100" height="100"/>
+		<rect id="rect-upper" x="250" y="150" fill="#FFD039" stroke="#FFD039" stroke-miterlimit="10" width="100" height="100"/>
+		<rect id="rect-upper-right" x="350" y="150" fill="#FFD039" stroke="#FFD039" stroke-miterlimit="10" width="100" height="100"/>
+		<rect id="rect-left" x="150" y="250" fill="#FFD039" stroke="#FFD039" stroke-miterlimit="10" width="100" height="100"/>
+		<rect id="rect-center" x="250" y="250" fill="#FFD039" stroke="#FFD039" stroke-miterlimit="10" width="100" height="100"/>
+		<rect id="rect-right" x="350" y="250" fill="#FFD039" stroke="#FFD039" stroke-miterlimit="10" width="100" height="100"/>
+		<rect id="rect-bottom-left" x="150" y="350" fill="#FFD039" stroke="#FFD039" stroke-miterlimit="10" width="100" height="100"/>
+		<rect id="rect-bottom" x="250" y="350" fill="#FFD039" stroke="#FFD039" stroke-miterlimit="10" width="100" height="100"/>
+		<rect id="rect-bottom-right" x="350" y="350" fill="#FFD039" stroke="#FFD039" stroke-miterlimit="10" width="100" height="100"/>
+	</g>
+</g>
+<defs>
+	<clipPath id="clipRects">
+		<rect id="clip-all" clip-path="url(#clipRects)"  width="600" height="600"/>
+	</clipPath>
+</defs>
+<style>
+
+	#rect-rotate #rects #rect-upper-left {
+		-webkit-animation: moveUpperLeft 2s linear infinite;
+		        animation: moveUpperLeft 2s linear infinite;
+	}
+	#rect-rotate #rects #rect-upper {
+		-webkit-animation: moveUpper 2s linear infinite;
+		        animation: moveUpper 2s linear infinite;
+	}
+	#rect-rotate #rects #rect-upper-right {
+		-webkit-animation: moveUpperRight 2s linear infinite;
+		        animation: moveUpperRight 2s linear infinite;
+	}
+	#rect-rotate #rects #rect-right {
+		-webkit-animation: moveRight 2s linear infinite;
+		        animation: moveRight 2s linear infinite;
+	}
+	#rect-rotate #rects #rect-bottom-right {
+		-webkit-animation: moveBottomRight 2s linear infinite;
+		        animation: moveBottomRight 2s linear infinite;
+	}
+	#rect-rotate #rects #rect-bottom {
+		-webkit-animation: moveBottom 2s linear infinite;
+		        animation: moveBottom 2s linear infinite;
+	}
+	#rect-rotate #rects #rect-bottom-left {
+		-webkit-animation: moveBottomLeft 2s linear infinite;
+		        animation: moveBottomLeft 2s linear infinite;
+	}
+	#rect-rotate #rects #rect-left {
+		-webkit-animation: moveLeft 2s linear infinite;
+		        animation: moveLeft 2s linear infinite;
+	}
+
+	#rect-rotate #inside-rects {
+		-webkit-transform-origin: 50% 50%;
+		    -ms-transform-origin: 50% 50%;
+		        transform-origin: 50% 50%;
+		-webkit-transform: scale(0.9);
+		    -ms-transform: scale(0.9);
+		        transform: scale(0.9);
+		-webkit-animation: mainRotate 2s linear infinite;
+		        animation: mainRotate 2s linear infinite;
+	}
+
+
+	@-webkit-keyframes moveUpperRight {
+		0% {
+			-webkit-transform: translate(0px, 0px);
+			        transform: translate(0px, 0px);
+		}
+		30% {
+			-webkit-transform: translate(200px, -200px);
+			        transform: translate(200px, -200px);
+		}
+		100% {
+			-webkit-transform: translate(200px, -200px);
+			        transform: translate(200px, -200px);
+		}
+	}
+
+
+	@keyframes moveUpperRight {
+		0% {
+			-webkit-transform: translate(0px, 0px);
+			        transform: translate(0px, 0px);
+		}
+		30% {
+			-webkit-transform: translate(200px, -200px);
+			        transform: translate(200px, -200px);
+		}
+		100% {
+			-webkit-transform: translate(200px, -200px);
+			        transform: translate(200px, -200px);
+		}
+	}
+
+	@-webkit-keyframes moveRight {
+		0% {
+			-webkit-transform: translate(0px, 0px);
+			        transform: translate(0px, 0px);
+		}
+		10% {
+			-webkit-transform: translate(0px, 0px);
+			        transform: translate(0px, 0px);
+		}
+		40% {
+			-webkit-transform: translate(200px, 0px);
+			        transform: translate(200px, 0px);
+		}
+		100% {
+			-webkit-transform: translate(200px, 0px);
+			        transform: translate(200px, 0px);
+		}
+	}
+
+	@keyframes moveRight {
+		0% {
+			-webkit-transform: translate(0px, 0px);
+			        transform: translate(0px, 0px);
+		}
+		10% {
+			-webkit-transform: translate(0px, 0px);
+			        transform: translate(0px, 0px);
+		}
+		40% {
+			-webkit-transform: translate(200px, 0px);
+			        transform: translate(200px, 0px);
+		}
+		100% {
+			-webkit-transform: translate(200px, 0px);
+			        transform: translate(200px, 0px);
+		}
+	}
+
+	@-webkit-keyframes moveBottomRight {
+		0% {
+			-webkit-transform: translate(0px, 0px);
+			        transform: translate(0px, 0px);
+		}
+		20% {
+			-webkit-transform: translate(0px, 0px);
+			        transform: translate(0px, 0px);
+		}
+		50% {
+			-webkit-transform: translate(200px, 200px);
+			        transform: translate(200px, 200px);
+		}
+		100% {
+			-webkit-transform: translate(200px, 200px);
+			        transform: translate(200px, 200px);
+		}
+	}
+
+	@keyframes moveBottomRight {
+		0% {
+			-webkit-transform: translate(0px, 0px);
+			        transform: translate(0px, 0px);
+		}
+		20% {
+			-webkit-transform: translate(0px, 0px);
+			        transform: translate(0px, 0px);
+		}
+		50% {
+			-webkit-transform: translate(200px, 200px);
+			        transform: translate(200px, 200px);
+		}
+		100% {
+			-webkit-transform: translate(200px, 200px);
+			        transform: translate(200px, 200px);
+		}
+	}
+
+	@-webkit-keyframes moveBottom {
+		0% {
+			-webkit-transform: translate(0px, 0px);
+			        transform: translate(0px, 0px);
+		}
+		30% {
+			-webkit-transform: translate(0px, 0px);
+			        transform: translate(0px, 0px);
+		}
+		60% {
+			-webkit-transform: translate(0px, 200px);
+			        transform: translate(0px, 200px);
+		}
+		100% {
+			-webkit-transform: translate(0px, 200px);
+			        transform: translate(0px, 200px);
+		}
+	}
+
+	@keyframes moveBottom {
+		0% {
+			-webkit-transform: translate(0px, 0px);
+			        transform: translate(0px, 0px);
+		}
+		30% {
+			-webkit-transform: translate(0px, 0px);
+			        transform: translate(0px, 0px);
+		}
+		60% {
+			-webkit-transform: translate(0px, 200px);
+			        transform: translate(0px, 200px);
+		}
+		100% {
+			-webkit-transform: translate(0px, 200px);
+			        transform: translate(0px, 200px);
+		}
+	}
+
+	@-webkit-keyframes moveBottomLeft {
+		0% {
+			-webkit-transform: translate(0px, 0px);
+			        transform: translate(0px, 0px);
+		}
+		40% {
+			-webkit-transform: translate(0px, 0px);
+			        transform: translate(0px, 0px);
+		}
+		70% {
+			-webkit-transform: translate(-200px, 200px);
+			        transform: translate(-200px, 200px);
+		}
+		100% {
+			-webkit-transform: translate(-200px, 200px);
+			        transform: translate(-200px, 200px);
+		}
+	}
+
+	@keyframes moveBottomLeft {
+		0% {
+			-webkit-transform: translate(0px, 0px);
+			        transform: translate(0px, 0px);
+		}
+		40% {
+			-webkit-transform: translate(0px, 0px);
+			        transform: translate(0px, 0px);
+		}
+		70% {
+			-webkit-transform: translate(-200px, 200px);
+			        transform: translate(-200px, 200px);
+		}
+		100% {
+			-webkit-transform: translate(-200px, 200px);
+			        transform: translate(-200px, 200px);
+		}
+	}
+
+	@-webkit-keyframes moveLeft {
+		0% {
+			-webkit-transform: translate(0px, 0px);
+			        transform: translate(0px, 0px);
+		}
+		50% {
+			-webkit-transform: translate(0px, 0px);
+			        transform: translate(0px, 0px);
+		}
+		80% {
+			-webkit-transform: translate(-200px, 0px);
+			        transform: translate(-200px, 0px);
+		}
+		100% {
+			-webkit-transform: translate(-200px, 0px);
+			        transform: translate(-200px, 0px);
+		}
+	}
+
+	@keyframes moveLeft {
+		0% {
+			-webkit-transform: translate(0px, 0px);
+			        transform: translate(0px, 0px);
+		}
+		50% {
+			-webkit-transform: translate(0px, 0px);
+			        transform: translate(0px, 0px);
+		}
+		80% {
+			-webkit-transform: translate(-200px, 0px);
+			        transform: translate(-200px, 0px);
+		}
+		100% {
+			-webkit-transform: translate(-200px, 0px);
+			        transform: translate(-200px, 0px);
+		}
+	}
+
+	@-webkit-keyframes moveUpperLeft {
+		0% {
+			-webkit-transform: translate(0px, 0px);
+			        transform: translate(0px, 0px);
+		}
+		60% {
+			-webkit-transform: translate(0px, 0px);
+			        transform: translate(0px, 0px);
+		}
+		90% {
+			-webkit-transform: translate(-200px, -200px);
+			        transform: translate(-200px, -200px);
+		}
+		100% {
+			-webkit-transform: translate(-200px, -200px);
+			        transform: translate(-200px, -200px);
+		}
+	}
+
+	@keyframes moveUpperLeft {
+		0% {
+			-webkit-transform: translate(0px, 0px);
+			        transform: translate(0px, 0px);
+		}
+		60% {
+			-webkit-transform: translate(0px, 0px);
+			        transform: translate(0px, 0px);
+		}
+		90% {
+			-webkit-transform: translate(-200px, -200px);
+			        transform: translate(-200px, -200px);
+		}
+		100% {
+			-webkit-transform: translate(-200px, -200px);
+			        transform: translate(-200px, -200px);
+		}
+	}
+
+	@-webkit-keyframes moveUpper {
+		0% {
+			-webkit-transform: translate(0px, 0px);
+			        transform: translate(0px, 0px);
+		}
+		70% {
+			-webkit-transform: translate(0px, 0px);
+			        transform: translate(0px, 0px);
+		}
+		100% {
+			-webkit-transform: translate(0px, -200px);
+			        transform: translate(0px, -200px);
+		}
+	}
+
+	@keyframes moveUpper {
+		0% {
+			-webkit-transform: translate(0px, 0px);
+			        transform: translate(0px, 0px);
+		}
+		70% {
+			-webkit-transform: translate(0px, 0px);
+			        transform: translate(0px, 0px);
+		}
+		100% {
+			-webkit-transform: translate(0px, -200px);
+			        transform: translate(0px, -200px);
+		}
+	}
+
+	@-webkit-keyframes mainRotate {
+		to {
+			-webkit-transform: rotate(-90deg) scale(2.7);
+			        transform: rotate(-90deg) scale(2.7);
+		}
+	}
+
+	@keyframes mainRotate {
+		to {
+			-webkit-transform: rotate(-90deg) scale(2.7);
+			        transform: rotate(-90deg) scale(2.7);
+		}
+	}
+
+</style>
+</svg>
