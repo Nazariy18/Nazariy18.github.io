@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Path to Polygon</title>
+	<style>
+		body {
+			font-family: 'Arial', sans-serif;
+			font-weight: bold;
+		}
+		h1 {
+			text-align: center;
+		}
+		textarea {
+			width: 98%;
+		}
+		#path-container, #poly-container {
+			width: 48%;
+			display: inline-block;
+		}
+	</style>
+</head>
+<body>
+	<h1>CONVERT PATH TO ...</h1>
+		<textarea id="path-data" placeholder="Paste path" rows="10" required></textarea>
+		<label for="lineOrShape">Convert Path to </label>
+		<select id="lineOrShape">
+			<option>Polyline</option>
+			<option>Poligon</option>
+		</select><br><br>
+		<label for="countPoints">Number of points: </label>
+		<input id="countPoints" type="number" value="100" min="2" max="1000" pattern="[0-9]{1,4}" required>
+	<button id="but">Convert</button><br><br>
+	<form>
+		<textarea id="result-data" placeholder="Result" rows="10"></textarea>
+	</form>
+	<div id="path-container">
+		Path: <br>
+	</div>
+	<div id="poly-container">
+		Converted: <br>
+	</div>
+
+	<script>
+
+	var pathData = null,
+			resul = null,
+			svgPath = null,
+			svgPoly = null,
+			first = false;
+
+
+	var contSVG = document.querySelector('#path-container'),
+		  contPoly = document.querySelector('#poly-container'),
+			but = document.querySelector('#but');
+
+
+	function pathToPolyLine(pData, num) {
+			var points = [],
+					num = document.querySelector('#countPoints').value;
+		  		len  = pData.getTotalLength(),
+		  		step = len/num;
+
+		  for (var i = 0; i <= num; i ++){
+		    var p = pData.getPointAtLength(i * step);
+		    points.push( p.x.toFixed(1) + ',' + p.y.toFixed(1));
+		  }
+
+		  return points;
+	}
+
+	function getAtributePath(path, polygon) {
+		var attrs = path.attributes,
+				 attr;
+
+				for (var i = 0; i < attrs.length; i++) {
+					    attr = attrs[i];
+					    if(attr.name != 'd') {
+					    	polygon.setAttribute(attr.name, attr.value);
+					    }
+				}
+	}
+
+
+	function createSvgPath(path) {
+		  	 svgPath = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+		 		 svgPath.setAttribute("id", "svgPath");
+		 		 contSVG.appendChild(svgPath);
+		 		 svgPath.innerHTML = path;
+
+		 var pathD = document.querySelector("path"),
+		 		 bbox = pathD.getBBox(),
+				 vBox = {
+					  x: bbox.x - 0.25 * bbox.width,
+					  y: bbox.y - 0.25 * bbox.height,
+					  w: bbox.width + 0.5 * bbox.width,
+					  h: bbox.height + 0.5 * bbox.height
+				};
+
+					if(vBox.w < 50) { 
+							vBox.w = 50; 
+							vBox.x = bbox.x - 25;
+					}
+					if(vBox.h < 50) { 
+							vBox.h = 50; 
+							vBox.y = bbox.y - 25;
+					}
+
+			 	 svgPath.setAttribute("viewBox", vBox.x + " " + vBox.y + " " + vBox.w + " " + vBox.h);
+				 svgPath.setAttribute("width", "100%");
+				 svgPath.style.border = "1px #f00 solid";
+
+
+		 		 svgPoly = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+		 		 svgPoly.setAttribute("id", "svgPoly");
+		 		 svgPoly.setAttribute("viewBox", vBox.x + " " + vBox.y + " " + vBox.w + " " + vBox.h);
+		 		 svgPoly.setAttribute("width", "100%");
+		 		 contPoly.appendChild(svgPoly);
+		 		 svgPoly.style.border = "1px #f00 solid";
+
+		 var polyPoints = pathToPolyLine(pathD),
+		 		 poly = document.querySelector('#lineOrShape').value;
+
+		 if (poly == 'Polyline') {
+		 		var polygon = document.createElementNS("http://www.w3.org/2000/svg", "polyline");
+		 } else {
+		 		var polygon = document.createElementNS("http://www.w3.org/2000/svg", "polygon");
+		 }
+		 		 getAtributePath(pathD, polygon);
+		 		 polygon.setAttribute('points', polyPoints.join(' '));
+		 		 svgPoly.appendChild(polygon);
+
+		 return svgPoly;
+	} 
+
+	function removeSVG() {
+		if (first == true) {
+	    svgPath.parentNode.removeChild(svgPath);
+	    svgPoly.parentNode.removeChild(svgPoly);
+  	}
+    return false;
+	}
+
+	but.onclick = function() {
+
+		pathData = document.querySelector('#path-data').value;
+		if(pathData != '') {
+			removeSVG();
+			first = true;
+			result = createSvgPath(pathData);
+			document.querySelector('#result-data').value = result.innerHTML;
+		}
+	};
+
+
+	</script>
+	
+</body>
+</html>
