@@ -1,0 +1,112 @@
+<svg version="1.1" id="pencil-animation" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 800 600" enable-background="new 0 0 800 600" xml:space="preserve">
+<defs>
+	<clipPath id="clipCounter">
+		<rect id="mask-for-path" fill="#52F01C" width="800" height="349.2"/>
+	</clipPath>
+</defs>
+<rect id="bg" fill="#313559" width="800" height="600"/>
+<path id="pencil-shadow" opacity="0.15" d="M355.3,339.4h120.2c2.2,0,4,1.8,4,4v2.4c0,2.2-1.8,4-4,4H355.3c-2.2,0-4-1.8-4-4v-2.4
+	C351.3,341.2,353.1,339.4,355.3,339.4z"/>
+<g clip-path="url(#clipCounter)">
+	<path id="counter" fill="none" stroke="#5293C1" stroke-width="4" stroke-miterlimit="10" d="M477.7,669.9c0-6.8-5.2-13.2-14.2-18.4
+		c0,0-19.5-12-63.5-21.6c-43.9-9.7-63.5-21.6-63.5-21.6c-8.9-5.2-14.2-11.5-14.2-18.4s5.2-13.2,14.2-18.4c0,0,19.5-12,63.5-21.6
+		c43.9-9.7,63.5-21.6,63.5-21.6c8.9-5.2,14.2-11.5,14.2-18.4c0-6.8-5.2-13.2-14.2-18.4c0,0-19.5-12-63.5-21.6
+		c-43.9-9.7-63.5-21.6-63.5-21.6c-8.9-5.2-14.2-11.5-14.2-18.4c0-6.8,5.2-13.2,14.2-18.4c0,0,19.5-12,63.5-21.6
+		c43.9-9.7,63.5-21.6,63.5-21.6c8.9-5.2,14.2-11.5,14.2-18.4c0-6.8-5.2-13.2-14.2-18.4c0,0-19.5-12-63.5-21.6
+		c-43.9-9.7-63.5-21.6-63.5-21.6c-8.9-5.2-14.2-11.5-14.2-18.4c0-6.8,5.2-13.2,14.2-18.4c0,0,19.5-12,63.5-21.6
+		c43.9-9.7,63.5-21.6,63.5-21.6c8.9-5.2,14.2-11.5,14.2-18.4s-5.2-13.2-14.2-18.4c0,0-19.5-12-63.5-21.6
+		c-43.9-9.7-63.5-21.6-63.5-21.6c-8.9-5.2-14.2-11.5-14.2-18.4c0-6.8,5.2-13.2,14.2-18.4c0,0,19.5-12,63.5-21.6s63.5-21.6,63.5-21.6
+		c8.9-5.2,14.2-11.5,14.2-18.4s-5.2-13.2-14.2-18.4c0,0-19.5-12-63.5-21.6s-63.5-21.6-63.5-21.6c-8.9-5.2-14.2-11.5-14.2-18.4"/>
+</g>
+<g id="pencil">
+	<path fill="#F8C454" d="M479.6,321.9"/>
+	<path fill="#F8C454" d="M479.6,321.9l-83.7-83.7c-6.1-6.1-16-6.1-22.1,0l-5.9,5.9c-6.1,6.1-6.1,16,0,22.1l83.7,83.7L479.6,321.9z"
+		/>
+	<path fill="#F8ECDC" d="M479.6,339.4v-17.5c-13.5,1.7-26.1,14.2-28,28h17.5L479.6,339.4z"/>
+	<path fill="#5293C1" d="M479.6,349.9h-10.5c0.7-5.2,5.4-9.9,10.5-10.5"/>
+	<path fill="#5293C1" d="M369.6,267.9c2.3-5.9,6-11.7,11.2-16.8c5.1-5.1,11-8.9,16.8-11.2l10.9,10.9c-5.9,2.3-11.7,6-16.8,11.2
+		c-5.1,5.1-8.9,11-11.2,16.8L369.6,267.9z"/>
+	<path opacity="0.15" d="M364.7,248.7c-2.6,5.8-1.6,12.8,3.2,17.5l83.7,83.7h28l-24.3-10.7L364.7,248.7"/>
+</g>
+<style>
+	#pencil-animation #pencil {
+		-webkit-transform-origin: 479.6px 349.9px;
+		    -ms-transform-origin: 479.6px 349.9px;
+		        transform-origin: 479.6px 349.9px;
+		-webkit-animation: movePancil 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95) 0s infinite alternate;
+		        animation: movePancil 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95) 0s infinite alternate;
+	}
+
+	#pencil-animation #counter {
+		-webkit-animation: movePath 1s linear 0s infinite;
+		        animation: movePath 1s linear 0s infinite;
+	}
+
+	#pencil-animation #pencil-shadow {
+		-webkit-transform-origin: 400px 350px;
+		    -ms-transform-origin: 400px 350px;
+		        transform-origin: 400px 350px;
+		-webkit-animation: moveShadow 0.5s linear 0s infinite alternate;
+		        animation: moveShadow 0.5s linear 0s infinite alternate;
+	}
+
+	@-webkit-keyframes movePancil {
+		to {
+			-webkit-transform: translate(-158px, 0px) rotate(90deg);
+			        transform: translate(-158px, 0px) rotate(90deg);
+		}
+	}
+
+	@keyframes movePancil {
+		to {
+			-webkit-transform: translate(-158px, 0px) rotate(90deg);
+			        transform: translate(-158px, 0px) rotate(90deg);
+		}
+	}
+
+	@-webkit-keyframes movePath {
+		to {
+			-webkit-transform: translate(0px, -160px);
+			        transform: translate(0px, -160px);
+		}
+	}
+
+	@keyframes movePath {
+		to {
+			-webkit-transform: translate(0px, -160px);
+			        transform: translate(0px, -160px);
+		}
+	}
+
+	@-webkit-keyframes moveShadow {
+		0% {
+			-webkit-transform: scale(1, 1) translate(0px, 0px);
+			        transform: scale(1, 1) translate(0px, 0px);
+		}
+		50% {
+			-webkit-transform: scale(0.2, 1) translate(-15px, 0px);
+			        transform: scale(0.2, 1) translate(-15px, 0px);
+		}
+		100% {
+			-webkit-transform: scale(1, 1) translate(-30px, 0px);
+			        transform: scale(1, 1) translate(-30px, 0px);
+		}
+	}
+
+	@keyframes moveShadow {
+		0% {
+			-webkit-transform: scale(1, 1) translate(0px, 0px);
+			        transform: scale(1, 1) translate(0px, 0px);
+		}
+		50% {
+			-webkit-transform: scale(0.2, 1) translate(-15px, 0px);
+			        transform: scale(0.2, 1) translate(-15px, 0px);
+		}
+		100% {
+			-webkit-transform: scale(1, 1) translate(-30px, 0px);
+			        transform: scale(1, 1) translate(-30px, 0px);
+		}
+	}
+</style>
+</svg>
