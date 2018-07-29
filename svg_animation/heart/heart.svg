@@ -1,0 +1,123 @@
+<svg version="1.1" id="heart-animation" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 400 300" enable-background="new 0 0 400 300" xml:space="preserve">
+<rect id="bg" fill="#FCFAF2" width="400" height="300"/>
+<g id="counters">
+	<path id="rect" fill="none" stroke="#2A2C39" stroke-miterlimit="10" stroke-dashoffset="240" stroke-dasharray="240" d="M230,180h-60v-60h60V180z"/>
+	<path id="circ2" fill="none" stroke="#2A2C39" stroke-miterlimit="10" stroke-dashoffset="188.58" stroke-dasharray="188.58" d="M200,120c-16.6,0-30,13.4-30,30s13.4,30,30,30
+		s30-13.4,30-30S216.6,120,200,120z"/>
+	<path id="circ1" fill="none" stroke="#2A2C39" stroke-miterlimit="10" stroke-dashoffset="188.58" stroke-dasharray="188.58" d="M200,120c-16.6,0-30,13.4-30,30s13.4,30,30,30
+		s30-13.4,30-30S216.6,120,200,120z"/>
+</g>
+<path id="main-counter" fill="#EF4723" fill-opacity="0" stroke="#EF4723" stroke-miterlimit="10" stroke-dashoffset="308.31" stroke-dasharray="308.31" d="M157.6,107.6c11.7-11.7,30.7-11.7,42.4,0
+	c11.7-11.7,30.7-11.7,42.4,0s11.7,30.7,0,42.4L200,192.4L157.6,150C145.9,138.3,145.9,119.3,157.6,107.6z"/>
+<style>
+	#heart-animation #rect {
+		opacity: 0.5;
+		-webkit-animation: drawCon 1s linear 0s forwards;
+		        animation: drawCon 1s linear 0s forwards;
+	}
+
+	#heart-animation #circ1 {
+		opacity: 0.5;
+		-webkit-animation: drawCon 1s linear 1s forwards, moveCirc1 1s linear 2s forwards;
+		        animation: drawCon 1s linear 1s forwards, moveCirc1 1s linear 2s forwards;
+	}
+
+	#heart-animation #circ2 {
+		opacity: 0.5;
+		-webkit-animation: drawCon 1s linear 1s forwards, moveCirc2 1s linear 2s forwards;
+		        animation: drawCon 1s linear 1s forwards, moveCirc2 1s linear 2s forwards;
+	}
+
+	#heart-animation #counters {
+		-webkit-transform-origin: 50% 50%;
+		    -ms-transform-origin: 50% 50%;
+		        transform-origin: 50% 50%;
+		-webkit-animation: rotateCirc 1s linear 3s forwards, fadeOut 2s linear 3s forwards;
+		        animation: rotateCirc 1s linear 3s forwards, fadeOut 2s linear 3s forwards;
+	}
+
+	#heart-animation #main-counter {
+		-webkit-animation: drawCon 1s linear 4s forwards, fadeIn 1s linear 5s forwards, fadeOut 2s linear 7s forwards;
+		        animation: drawCon 1s linear 4s forwards, fadeIn 1s linear 5s forwards, fadeOut 2s linear 7s forwards;
+	}
+
+	@-webkit-keyframes drawCon {
+		to {
+			stroke-dashoffset: 0;
+		}
+	}
+
+	@keyframes drawCon {
+		to {
+			stroke-dashoffset: 0;
+		}
+	}
+
+	@-webkit-keyframes moveCirc1 {
+		to {
+			-webkit-transform: translate(30px, 0px);
+			        transform: translate(30px, 0px);
+		}
+	}
+
+	@keyframes moveCirc1 {
+		to {
+			-webkit-transform: translate(30px, 0px);
+			        transform: translate(30px, 0px);
+		}
+	}
+
+	@-webkit-keyframes moveCirc2 {
+		to {
+			-webkit-transform: translate(0px, -30px);
+			        transform: translate(0px, -30px);
+		}
+	}
+
+	@keyframes moveCirc2 {
+		to {
+			-webkit-transform: translate(0px, -30px);
+			        transform: translate(0px, -30px);
+		}
+	}
+
+	@-webkit-keyframes rotateCirc {
+		to {
+			-webkit-transform: rotate(-45deg);
+			        transform: rotate(-45deg);
+		}
+	}
+
+	@keyframes rotateCirc {
+		to {
+			-webkit-transform: rotate(-45deg);
+			        transform: rotate(-45deg);
+		}
+	}
+
+	@-webkit-keyframes fadeOut {
+		to {
+			opacity: 0;
+		}
+	}
+
+	@keyframes fadeOut {
+		to {
+			opacity: 0;
+		}
+	}
+
+	@-webkit-keyframes fadeIn {
+		to {
+			fill-opacity: 1;
+		}
+	}
+
+	@keyframes fadeIn {
+		to {
+			fill-opacity: 1;
+		}
+	}
+</style>
+</svg>
