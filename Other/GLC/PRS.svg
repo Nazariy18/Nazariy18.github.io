@@ -1,0 +1,139 @@
+<svg version="1.1" id="PRC-animation" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+<defs>
+	<clipPath id="clip-latter">
+		<rect x="-38" y="0" width="90" height="100" />
+	</clipPath>
+	<linearGradient id="light_gradient" gradientUnits="userSpaceOnUse" x1="14.647" y1="50.5575" x2="51.9819" y2="50.5575">
+		<stop  offset="0" style="stop-color:#FFFFFF;stop-opacity:0"/>
+		<stop  offset="0.8" style="stop-color:#FFFFFF;stop-opacity:0.9"/>
+		<stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:0"/>
+	</linearGradient>
+	<linearGradient id="shadow_gradient" gradientUnits="userSpaceOnUse" x1="51.9819" y1="50.5454" x2="64.4956" y2="50.5454">
+	<stop  offset="0" style="stop-color:#000000;stop-opacity:0.2"/>
+	<stop  offset="1" style="stop-color:#000000;stop-opacity:0"/>
+</linearGradient>
+	<filter id="filter-shadow-left" x="-20%" y="-20%" width="140%" height="140%" filterUnits="objectBoundingBox" primitiveUnits="userSpaceOnUse" color-interpolation-filters="linearRGB">
+		<feDropShadow stdDeviation="0.5 0" in="SourceGraphic" dx="-0.5" dy="0" flood-color="#000000" flood-opacity="0.5" x="0%" y="0%" width="100%" height="100%" result="dropShadow"/>
+	</filter>
+</defs>
+
+<path id="bg-frame" fill-rule="evenodd" clip-rule="evenodd" fill="#2E7D32" d="M4.161,88.099V13.014
+	c0-3.193,2.586-5.779,5.776-5.779h80.864c3.19,0,5.776,2.586,5.776,5.779v75.085c0,3.193-2.586,5.779-5.776,5.779H9.937
+	C6.747,93.877,4.161,91.291,4.161,88.099z"/>
+<path fill-rule="evenodd" clip-rule="evenodd" fill="#9C9D9D" d="M12.881,90.989h31.768V10.126H12.881
+	c-1.595,0-2.888,1.292-2.888,2.888v75.085C9.993,89.695,11.286,90.989,12.881,90.989z"/>
+<path fill-rule="evenodd" clip-rule="evenodd" fill="#BDBDBC" d="M14.674,90.988h31.768V10.124H14.674
+	c-1.595,0-2.888,1.292-2.888,2.888v75.085C11.786,89.694,13.08,90.988,14.674,90.988z"/>
+<path fill-rule="evenodd" clip-rule="evenodd" fill="#BCBBBB" d="M87.566,10.124H51.982v80.864h35.584
+	c1.786,0,3.235-1.292,3.235-2.888V13.015C90.801,11.419,89.352,10.124,87.566,10.124z"/>
+<g id="left-letter">
+	<path fill-rule="evenodd" clip-rule="evenodd" fill="#EEEEEE" d="M17.758,90.988h34.224V10.124H17.758
+		c-1.718,0-3.111,1.292-3.111,2.888v75.085C14.647,89.694,16.04,90.988,17.758,90.988z"/>
+	<g id="text">
+		<rect x="18.06" y="24.75" fill="#CCCBCA" width="30.36" height="6.08" rx="3.04" ry="3.04"/>
+		<rect x="18.06" y="36.89" fill="#CCCBCA" width="30.36" height="6.08" rx="3.04" ry="3.04"/>
+		<rect x="18.06" y="49.03" fill="#CCCBCA" width="30.36" height="6.08" rx="3.04" ry="3.04"/>
+		<rect x="18.06" y="61.17" fill="#CCCBCA" width="30.36" height="6.08" rx="3.04" ry="3.04"/>
+	</g>
+</g>
+<g id="right-letter">
+	<path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M85.791,10.126H51.982v80.864h33.809
+		c1.697,0,3.074-1.292,3.074-2.888V13.016C88.864,11.42,87.488,10.126,85.791,10.126z"/>
+	<g id="arrow">
+		<circle id="arrow-circle" fill="#2E7D32" cx="71.12" cy="70.5" r="12.83"/>
+		<path fill="#FFFFFF" d="M69.01,79.65c-0.536,0-1.073-0.204-1.483-0.614c-0.82-0.818-0.82-2.144,0-2.963l4.809-4.803l-4.809-4.804
+			c-0.82-0.818-0.82-2.145,0-2.963c0.819-0.818,2.148-0.818,2.966,0l6.293,6.286c0.819,0.818,0.819,2.145,0,2.963l-6.293,6.285
+			C70.085,79.446,69.548,79.65,69.01,79.65z"/>
+	</g>
+	<g id="grid">
+		<rect x="58.03" y="25.62" fill="#FFD54F" width="6.47" height="6.47" rx="1.4" rt="1.4"/>
+		<rect x="67.73" y="25.62" fill="#FFD54F" width="16.17" height="6.47" rx="1.4" rt="1.4"/>
+		<rect x="58.03" y="35.32" fill="#FFD54F" width="6.47" height="6.47" rx="1.4" rt="1.4"/>
+		<rect x="67.73" y="35.32" fill="#FFD54F" width="16.17" height="6.47" rx="1.4" rt="1.4"/>
+		<rect x="58.03" y="45.03" fill="#FFD54F" width="6.47" height="6.47" rx="1.4" rt="1.4"/>
+		<rect x="67.73" y="45.03" fill="#FFD54F" width="16.17" height="6.47" rx="1.4" rt="1.4"/>
+	</g>
+</g>
+<g id="letter-rightUp">
+	<path fill-rule="evenodd" clip-rule="evenodd" fill="#EEEEEE" d="M86.948,90.967H52.724V10.103h34.224
+		c1.718,0,3.111,1.292,3.111,2.888v75.085C90.059,89.672,88.666,90.967,86.948,90.967z"/>
+	<g>
+		<rect x="56.28" y="24.73" fill="#CCCBCA" width="30.36" height="6.07" rx="3.04" ry="3.04"/>
+		<rect x="56.28" y="36.88" fill="#CCCBCA" width="30.36" height="6.07" rx="3.04" ry="3.04"/>
+		<rect x="56.28" y="49.01" fill="#CCCBCA" width="30.36" height="6.07" rx="3.04" ry="3.04"/>
+		<rect x="56.28" y="61.15" fill="#CCCBCA" width="30.36" height="6.07" rx="3.04" ry="3.04"/>
+	</g>
+</g>
+<rect id="shadow-letter-right" x="52" y="10.12" fill="url(#shadow_gradient)" width="12.5" height="80.8"/>
+<g id="letter-move-clip" clip-path="url(#clip-latter)">
+	<g id="letter-move" >
+		<path id="shadow-letter-left" filter="url(#filter-shadow-left)" fill="#EEEEEE" d="M17.758,90.988h34.224V10.124H17.758
+			c-1.718,0-3.111,1.292-3.111,2.888v75.085C14.647,89.694,16.04,90.988,17.758,90.988z"/>
+		<path fill="#EEEEEE" d="M17.758,90.988h34.224V10.124H17.758
+			c-1.718,0-3.111,1.292-3.111,2.888v75.085C14.647,89.694,16.04,90.988,17.758,90.988z"/>
+		<g>
+			<rect x="18.06" y="24.75" fill="#CCCBCA" width="30.36" height="6.08" rx="3.04" ry="3.04"/>
+			<rect x="18.06" y="36.89" fill="#CCCBCA" width="30.36" height="6.08" rx="3.04" ry="3.04"/>
+			<rect x="18.06" y="49.03" fill="#CCCBCA" width="30.36" height="6.08" rx="3.04" ry="3.04"/>
+			<rect x="18.06" y="61.17" fill="#CCCBCA" width="30.36" height="6.08" rx="3.04" ry="3.04"/>
+		</g>
+		<rect id="light-letter" x="14.65" y="10.13" fill="url(#light_gradient)" width="37.34" height="80.86"/>
+	</g>
+</g>
+
+<style>
+	#letter-move {
+		transform: translate(38px, 0px);
+		animation: moveLatter 1s ease-in-out 0s forwards;
+	}
+	#letter-move-clip {
+		transform: translate(38px, 0px);
+		animation: moveLatter 1s ease-in-out 0s forwards;
+	}
+	#light-letter {
+		transform-origin: 14.65px 50px;
+		transform: scale(0, 1);
+		animation: scaleLight 1s ease-in-out 0s forwards, fadeOutShadow 1s ease-in 0s forwards;
+	}
+	#shadow-letter-right {
+		transform-origin: 52px 50px;
+		transform: translate(38px, 0px) scale(0, 1);
+		animation: moveRightShadow 1s ease-in-out 0s forwards, fadeOutShadow 1s ease-in 0s forwards;
+	}
+	#shadow-letter-left {
+		animation: fadeOutShadow 1s ease-in 0s forwards;
+	}
+
+	@keyframes moveLatter {
+		to {
+			transform: translate(0px, 0px);
+		}
+	}
+
+	@keyframes scaleLight {
+		to {
+			transform: scale(1, 1);
+		}
+	}
+
+	@keyframes moveRightShadow {
+		to {
+			transform: translate(0px, 0px) scale(1, 1);
+		}
+	}
+
+	@keyframes fadeOutShadow {
+		0% {
+			opacity: 1;
+		}
+		85% {
+			opacity: 1;
+		}
+		100% {
+			opacity: 0;
+		}
+	}
+
+</style>
+</svg>
