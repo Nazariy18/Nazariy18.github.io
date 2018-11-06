@@ -1,0 +1,1015 @@
+<svg version="1.1" id="cao-animation" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+<defs>
+	<clipPath id="file-clip">
+		<path d="M84.561,11.977H17.339c-3.094,0-5.602,2.189-5.602,4.891v63.579
+					c0,2.702,2.508,4.891,5.602,4.891h47.616l25.208-22.009V16.868C90.163,14.166,87.655,11.977,84.561,11.977z"/>
+	</clipPath>
+	<clipPath id="ribbon-clip">
+		<polygon points="46.88,37.943 46.88,58.932 53.386,52.934 59.891,58.932 59.891,37.943"/>
+	</clipPath>
+	<clipPath id="corner-clip">
+		<path d="M50.557,41.329c-3.094,0-5.602,2.191-5.602,4.892v17.117l25.208-22.009H50.557z"/>
+	</clipPath>
+	<clipPath id="container-clip">
+		<path d="M88.76,13.868H27.14c-1.546,0-2.801,1.096-2.801,2.445v58.69
+		c0,1.35,1.255,2.444,2.801,2.444h42.014l22.408-19.562V16.313C91.561,14.964,90.308,13.868,88.76,13.868z"/>
+	</clipPath>
+	<filter id="filter_shadow" x="-20%" y="-20%" width="140%" height="140%" filterUnits="objectBoundingBox" primitiveUnits="userSpaceOnUse" color-interpolation-filters="linearRGB">
+			<feDropShadow stdDeviation="0 0.5" in="SourceGraphic" dx="0" dy="0.5" flood-color="#000000" flood-opacity="0.5" x="0%" y="0%" width="100%" height="100%" result="dropShadow"/>
+	</filter>
+</defs>
+<g id="shapes">
+	<g id="bg-shadow" opacity="0">
+		<path filter="url(#filter_shadow)" fill="#BDBDBD" d="M84.561,11.877H17.339c-3.094,0-5.602,2.189-5.602,4.891v63.579
+		c0,2.702,2.508,4.891,5.602,4.891h47.616l25.208-22.009V16.768C90.163,14.066,87.655,11.877,84.561,11.877z"/>
+		<polygon filter="url(#filter_shadow)" fill="#F50057" points="33.28,73.843 33.28,94.832 39.786,88.834 46.291,94.832 46.291,73.843 	"/>
+	</g>
+	<circle id="bg-grey-circle" fill="#777777" cx="50" cy="50" r="110"/>
+	<g id="fileG" clip-path="url(#file-clip)">
+		<circle id="file" filter="url(#filter_shadow)" fill="#BDBDBD" cx="53.4" cy="48.3" r="10"/>
+	</g>
+	<g id="containerG" clip-path="url(#container-clip)">
+		<circle id="container"  fill="#FAFAFA" cx="55.8" cy="46.4" r="26.8"/>
+		<path id="text" fill="#BDBDBD" d="M77.557,43.213H38.343c-1.548,0-2.801,1.096-2.801,2.445c0,1.35,1.253,2.444,2.801,2.444
+		h39.213c1.548,0,2.801-1.094,2.801-2.444C80.357,44.308,79.104,43.213,77.557,43.213z M38.343,38.321h22.408
+		c1.546,0,2.801-1.094,2.801-2.444c0-1.35-1.255-2.445-2.801-2.445H38.343c-1.548,0-2.801,1.096-2.801,2.445
+		C35.542,37.227,36.797,38.321,38.343,38.321z M38.343,28.539h39.213c1.548,0,2.801-1.094,2.801-2.444s-1.253-2.447-2.801-2.447
+		H38.343c-1.548,0-2.801,1.096-2.801,2.447S36.797,28.539,38.343,28.539z"/>
+	</g>
+	<g id="circle-shape">
+		<g id="cornerG" clip-path="url(#corner-clip)">
+			<circle id="corner" filter="url(#filter_shadow)" fill="#8D8D8D" cx="53.4" cy="48.3" r="10"/>
+		</g>
+		<circle id="file-circle" fill="#BDBDBD" cx="53.4" cy="48.3" r="10"/>
+		<g id="ribbonG" clip-path="url(#ribbon-clip)">
+			<circle id="ribbon" filter="url(#filter_shadow)" fill="#9D9D9D" cx="53.4" cy="48.3" r="10"/>
+		</g>
+		<circle id="elipse" filter="url(#filter_shadow)" fill="#CDCDCD" cx="53.4" cy="48.3" r="10"/>
+	</g>
+</g>
+<style>
+	#cao-animation #circle-shape {
+		-webkit-transform-origin: 53.4px 48.3px;
+		    -ms-transform-origin: 53.4px 48.3px;
+		        transform-origin: 53.4px 48.3px;
+		-webkit-transform: rotate(70deg);
+		    -ms-transform: rotate(70deg);
+		        transform: rotate(70deg);
+		-webkit-animation: rotateCircleShapes 0.6s ease-in-out 0.3s forwards;
+		        animation: rotateCircleShapes 0.6s ease-in-out 0.3s forwards;
+	}
+
+	#cao-animation #elipse {
+		-webkit-transform-origin: 53.4px 48.3px;
+		    -ms-transform-origin: 53.4px 48.3px;
+		        transform-origin: 53.4px 48.3px;
+		-webkit-animation: moveElipseShape 2s ease-in-out 0s forwards;
+		        animation: moveElipseShape 2s ease-in-out 0s forwards;
+	}
+
+	#cao-animation #ribbonG {
+		-webkit-transform-origin: 53.4px 48.3px;
+		    -ms-transform-origin: 53.4px 48.3px;
+		        transform-origin: 53.4px 48.3px;
+		-webkit-animation: moveRibbonShape 2s ease-in-out 0s forwards;
+		        animation: moveRibbonShape 2s ease-in-out 0s forwards;
+	}
+	#cao-animation #ribbon {
+		-webkit-transform-origin: 53.4px 48.3px;
+		    -ms-transform-origin: 53.4px 48.3px;
+		        transform-origin: 53.4px 48.3px;
+		-webkit-animation: morphRibbon 2s ease-in-out 0s forwards;
+		        animation: morphRibbon 2s ease-in-out 0s forwards;
+	}
+	#cao-animation #ribbon-clip {
+		-webkit-transform-origin: 53.4px 43px;
+		    -ms-transform-origin: 53.4px 43px;
+		        transform-origin: 53.4px 43px;
+		-webkit-transform: scale(1.8, 1.8);
+		    -ms-transform: scale(1.8, 1.8);
+		        transform: scale(1.8, 1.8);
+		-webkit-animation: moveRibbonMask 2s ease-in-out 0s forwards;
+		        animation: moveRibbonMask 2s ease-in-out 0s forwards;
+	}
+
+	#cao-animation #cornerG {
+		-webkit-transform-origin: 53.4px 48.3px;
+		    -ms-transform-origin: 53.4px 48.3px;
+		        transform-origin: 53.4px 48.3px;
+		-webkit-animation: moveCornerShape 2s ease-in-out 0s forwards;
+		        animation: moveCornerShape 2s ease-in-out 0s forwards;
+	}
+	#cao-animation #corner {
+		-webkit-transform-origin: 53.4px 48.3px;
+		    -ms-transform-origin: 53.4px 48.3px;
+		        transform-origin: 53.4px 48.3px;
+		-webkit-animation: morphCorner 2s ease-in-out 0s forwards;
+		        animation: morphCorner 2s ease-in-out 0s forwards;
+	}
+	#cao-animation #corner-clip {
+		-webkit-transform-origin: 50px 48.3px;
+		    -ms-transform-origin: 50px 48.3px;
+		        transform-origin: 50px 48.3px;
+		-webkit-transform: scale(1.6, 1.6);
+		    -ms-transform: scale(1.6, 1.6);
+		        transform: scale(1.6, 1.6);
+		-webkit-animation: moveCornerMask 2s ease-in-out 0s forwards;
+		        animation: moveCornerMask 2s ease-in-out 0s forwards;
+	}
+
+	#cao-animation #file-circle {
+		-webkit-transform-origin: 53.4px 48.3px;
+		    -ms-transform-origin: 53.4px 48.3px;
+		        transform-origin: 53.4px 48.3px;
+		-webkit-animation: moveFileShape 2s ease-in-out 0s forwards;
+		        animation: moveFileShape 2s ease-in-out 0s forwards;
+	}
+	#cao-animation #fileG {
+		opacity: 0;
+		-webkit-transform-origin: 53.4px 48.3px;
+		    -ms-transform-origin: 53.4px 48.3px;
+		        transform-origin: 53.4px 48.3px;
+		-webkit-transform: translate(-31.5px, -26.5px);
+		    -ms-transform: translate(-31.5px, -26.5px);
+		        transform: translate(-31.5px, -26.5px);
+		-webkit-animation: moveFile 2s ease-in-out 0s forwards;
+		        animation: moveFile 2s ease-in-out 0s forwards;
+	}
+	#cao-animation #file {
+		-webkit-transform-origin: 53.4px 48.3px;
+		    -ms-transform-origin: 53.4px 48.3px;
+		        transform-origin: 53.4px 48.3px;
+		-webkit-transform: translate(-31.5px, -26.5px);
+		    -ms-transform: translate(-31.5px, -26.5px);
+		        transform: translate(-31.5px, -26.5px);
+		-webkit-animation: morphFile 2s ease-in-out 0s forwards;
+		        animation: morphFile 2s ease-in-out 0s forwards;
+	}
+	#cao-animation #file-clip {
+		-webkit-transform-origin: 55px 48.3px;
+		    -ms-transform-origin: 55px 48.3px;
+		        transform-origin: 55px 48.3px;
+		-webkit-transform: scale(0.3, 0.3);
+		    -ms-transform: scale(0.3, 0.3);
+		        transform: scale(0.3, 0.3);
+		-webkit-animation: moveFileMask 2s ease-in-out 0s forwards;
+		        animation: moveFileMask 2s ease-in-out 0s forwards;
+	}
+
+	#cao-animation #containerG {
+		-webkit-transform-origin: 55.8px 46.4px;
+		    -ms-transform-origin: 55.8px 46.4px;
+		        transform-origin: 55.8px 46.4px;
+		-webkit-animation:  moveContainerShape 2s ease-in-out 0s forwards;
+		        animation:  moveContainerShape 2s ease-in-out 0s forwards;
+	}
+	#cao-animation #container {
+		-webkit-transform-origin: 55.8px 46.4px;
+		    -ms-transform-origin: 55.8px 46.4px;
+		        transform-origin: 55.8px 46.4px;
+		-webkit-animation: morphContainer 2s ease-in-out 0s forwards;
+		        animation: morphContainer 2s ease-in-out 0s forwards;
+	}
+	#cao-animation #container-clip {
+		-webkit-transform-origin: 55.8px 46.4px;
+		    -ms-transform-origin: 55.8px 46.4px;
+		        transform-origin: 55.8px 46.4px;
+		-webkit-transform: scale(0.9, 0.9);
+		    -ms-transform: scale(0.9, 0.9);
+		        transform: scale(0.9, 0.9);
+		-webkit-animation:  moveContainerMask 2s ease-in-out 0s forwards;
+		        animation:  moveContainerMask 2s ease-in-out 0s forwards;
+	}
+
+	#cao-animation #text {
+		opacity: 0;
+		-webkit-transform-origin: 55.8px 46.4px;
+		    -ms-transform-origin: 55.8px 46.4px;
+		        transform-origin: 55.8px 46.4px;
+		-webkit-transform: scale(0.5, 0.5);
+		    -ms-transform: scale(0.5, 0.5);
+		        transform: scale(0.5, 0.5);
+		-webkit-animation: showText 2s ease-in-out 0s forwards;
+		        animation: showText 2s ease-in-out 0s forwards;
+	}
+
+	#cao-animation #shapes {
+		-webkit-transform-origin: 50px 50px;
+		    -ms-transform-origin: 50px 50px;
+		        transform-origin: 50px 50px;
+		-webkit-animation: showEntaireShape 2s linear 0s forwards;
+		        animation: showEntaireShape 2s linear 0s forwards;
+  }
+
+  #cao-animation #bg-grey-circle {
+		-webkit-transform-origin: 50px 50px;
+		    -ms-transform-origin: 50px 50px;
+		        transform-origin: 50px 50px;
+		-webkit-transform: scale(0, 0);
+		    -ms-transform: scale(0, 0);
+		        transform: scale(0, 0);
+		-webkit-animation: growBgGreyShape 0.5s ease-out 1.05s forwards;
+		        animation: growBgGreyShape 0.5s ease-out 1.05s forwards;
+	}
+
+	#cao-animation #bg-shadow {
+		-webkit-transform-origin: 50px 50px;
+		    -ms-transform-origin: 50px 50px;
+		        transform-origin: 50px 50px;
+	 -webkit-animation: showShadow 0.1s ease-in-out 1.6s forwards;
+	         animation: showShadow 0.1s ease-in-out 1.6s forwards;
+	}
+
+
+	@-webkit-keyframes rotateCircleShapes {
+		0% {
+			-webkit-transform: rotate(70deg);
+			        transform: rotate(70deg);
+		}
+		100% {
+			-webkit-transform: rotate(0deg);
+			        transform: rotate(0deg);
+		}
+	}
+
+
+	@keyframes rotateCircleShapes {
+		0% {
+			-webkit-transform: rotate(70deg);
+			        transform: rotate(70deg);
+		}
+		100% {
+			-webkit-transform: rotate(0deg);
+			        transform: rotate(0deg);
+		}
+	}
+
+	@-webkit-keyframes moveElipseShape {
+		0% {
+			fill: #CDCDCD;
+			-webkit-transform: translate(0px, 0px) scale(1, 1);
+			        transform: translate(0px, 0px) scale(1, 1);
+		}
+		30% {
+			-webkit-transform: translate(-8px, 0px) scale(1, 1);
+			        transform: translate(-8px, 0px) scale(1, 1);
+		}
+		35% {
+			-webkit-transform: translate(-8px, 0px) scale(1, 1);
+			        transform: translate(-8px, 0px) scale(1, 1);
+		}
+		55% {
+			-webkit-transform: translate(-13.6px, 20.35px) scale(1, 1);
+			        transform: translate(-13.6px, 20.35px) scale(1, 1);
+		}
+		65% {
+			fill: #FFC10C;
+			-webkit-transform: translate(-13.6px, 20.35px) scale(1.05, 0.97);
+			        transform: translate(-13.6px, 20.35px) scale(1.05, 0.97);
+		}
+		100% {
+			-webkit-transform: translate(-13.6px, 20.35px) scale(1.05, 0.97);
+			        transform: translate(-13.6px, 20.35px) scale(1.05, 0.97);
+			fill: #FFC10C;
+		}
+	}
+
+	@keyframes moveElipseShape {
+		0% {
+			fill: #CDCDCD;
+			-webkit-transform: translate(0px, 0px) scale(1, 1);
+			        transform: translate(0px, 0px) scale(1, 1);
+		}
+		30% {
+			-webkit-transform: translate(-8px, 0px) scale(1, 1);
+			        transform: translate(-8px, 0px) scale(1, 1);
+		}
+		35% {
+			-webkit-transform: translate(-8px, 0px) scale(1, 1);
+			        transform: translate(-8px, 0px) scale(1, 1);
+		}
+		55% {
+			-webkit-transform: translate(-13.6px, 20.35px) scale(1, 1);
+			        transform: translate(-13.6px, 20.35px) scale(1, 1);
+		}
+		65% {
+			fill: #FFC10C;
+			-webkit-transform: translate(-13.6px, 20.35px) scale(1.05, 0.97);
+			        transform: translate(-13.6px, 20.35px) scale(1.05, 0.97);
+		}
+		100% {
+			-webkit-transform: translate(-13.6px, 20.35px) scale(1.05, 0.97);
+			        transform: translate(-13.6px, 20.35px) scale(1.05, 0.97);
+			fill: #FFC10C;
+		}
+	}
+
+	@-webkit-keyframes moveRibbonShape {
+		0% {
+			-webkit-transform: translate(0px, 0px);
+			        transform: translate(0px, 0px);
+		}
+		20% {
+			-webkit-transform: translate(0px, 7px);
+			        transform: translate(0px, 7px);
+		}
+		30% {
+			-webkit-transform: translate(0px, 7px);
+			        transform: translate(0px, 7px);
+		}
+		50% {
+			-webkit-transform: translate(-13.6px, 36px);
+			        transform: translate(-13.6px, 36px);
+		}
+		100% {
+			-webkit-transform: translate(-13.6px, 36px);
+			        transform: translate(-13.6px, 36px);
+		}
+	}
+
+	@keyframes moveRibbonShape {
+		0% {
+			-webkit-transform: translate(0px, 0px);
+			        transform: translate(0px, 0px);
+		}
+		20% {
+			-webkit-transform: translate(0px, 7px);
+			        transform: translate(0px, 7px);
+		}
+		30% {
+			-webkit-transform: translate(0px, 7px);
+			        transform: translate(0px, 7px);
+		}
+		50% {
+			-webkit-transform: translate(-13.6px, 36px);
+			        transform: translate(-13.6px, 36px);
+		}
+		100% {
+			-webkit-transform: translate(-13.6px, 36px);
+			        transform: translate(-13.6px, 36px);
+		}
+	}
+	@-webkit-keyframes morphRibbon {
+		0% {
+			fill: #9D9D9D;
+			-webkit-transform: scale(1, 1);
+			        transform: scale(1, 1);
+		}
+		50% {
+			-webkit-transform: scale(1, 1);
+			        transform: scale(1, 1);
+		}
+		65% {
+			fill: #F50057;
+			-webkit-transform: scale(1.3, 1.3);
+			        transform: scale(1.3, 1.3);
+		}
+		100% {
+			fill: #F50057;
+			-webkit-transform: scale(1.3, 1.3);
+			        transform: scale(1.3, 1.3);
+		}
+	}
+	@keyframes morphRibbon {
+		0% {
+			fill: #9D9D9D;
+			-webkit-transform: scale(1, 1);
+			        transform: scale(1, 1);
+		}
+		50% {
+			-webkit-transform: scale(1, 1);
+			        transform: scale(1, 1);
+		}
+		65% {
+			fill: #F50057;
+			-webkit-transform: scale(1.3, 1.3);
+			        transform: scale(1.3, 1.3);
+		}
+		100% {
+			fill: #F50057;
+			-webkit-transform: scale(1.3, 1.3);
+			        transform: scale(1.3, 1.3);
+		}
+	}
+	@-webkit-keyframes moveRibbonMask {
+		0% {
+			-webkit-transform: scale(1.8, 1.8);
+			        transform: scale(1.8, 1.8);
+		}
+		50% {
+			-webkit-transform: scale(1.8, 1.8);
+			        transform: scale(1.8, 1.8);
+		}
+		65% {
+			-webkit-transform: scale(1, 1);
+			        transform: scale(1, 1);
+		}
+		100% {
+			-webkit-transform: scale(1, 1);
+			        transform: scale(1, 1);
+		}
+	}
+	@keyframes moveRibbonMask {
+		0% {
+			-webkit-transform: scale(1.8, 1.8);
+			        transform: scale(1.8, 1.8);
+		}
+		50% {
+			-webkit-transform: scale(1.8, 1.8);
+			        transform: scale(1.8, 1.8);
+		}
+		65% {
+			-webkit-transform: scale(1, 1);
+			        transform: scale(1, 1);
+		}
+		100% {
+			-webkit-transform: scale(1, 1);
+			        transform: scale(1, 1);
+		}
+	}
+
+	@-webkit-keyframes moveCornerShape {
+		0% {
+			-webkit-transform: translate(0px, 0px);
+			        transform: translate(0px, 0px);
+		}
+		20% {
+			-webkit-transform: translate(8px, 0px);
+			        transform: translate(8px, 0px);
+		}
+		35% {
+			-webkit-transform: translate(8px, 0px);
+			        transform: translate(8px, 0px);
+		}
+		55% {
+			-webkit-transform: translate(20px, 22px);
+			        transform: translate(20px, 22px);
+		}
+		100% {
+			-webkit-transform: translate(20px, 22px);
+			        transform: translate(20px, 22px);
+		}
+	}
+
+	@keyframes moveCornerShape {
+		0% {
+			-webkit-transform: translate(0px, 0px);
+			        transform: translate(0px, 0px);
+		}
+		20% {
+			-webkit-transform: translate(8px, 0px);
+			        transform: translate(8px, 0px);
+		}
+		35% {
+			-webkit-transform: translate(8px, 0px);
+			        transform: translate(8px, 0px);
+		}
+		55% {
+			-webkit-transform: translate(20px, 22px);
+			        transform: translate(20px, 22px);
+		}
+		100% {
+			-webkit-transform: translate(20px, 22px);
+			        transform: translate(20px, 22px);
+		}
+	}
+	@-webkit-keyframes morphCorner {
+		0% {
+			-webkit-transform: scale(1, 1);
+			        transform: scale(1, 1);
+		}
+		50% {
+			-webkit-transform: scale(1, 1);
+			        transform: scale(1, 1);
+		}
+		65% {
+			-webkit-transform: scale(1.9, 1.9);
+			        transform: scale(1.9, 1.9);
+		}
+		100% {
+			-webkit-transform: scale(1.9, 1.9);
+			        transform: scale(1.9, 1.9);
+		}
+	}
+	@keyframes morphCorner {
+		0% {
+			-webkit-transform: scale(1, 1);
+			        transform: scale(1, 1);
+		}
+		50% {
+			-webkit-transform: scale(1, 1);
+			        transform: scale(1, 1);
+		}
+		65% {
+			-webkit-transform: scale(1.9, 1.9);
+			        transform: scale(1.9, 1.9);
+		}
+		100% {
+			-webkit-transform: scale(1.9, 1.9);
+			        transform: scale(1.9, 1.9);
+		}
+	}
+	@-webkit-keyframes moveCornerMask {
+		0% {
+			-webkit-transform: scale(1.6, 1.6);
+			        transform: scale(1.6, 1.6);
+		}
+		50% {
+			-webkit-transform: scale(1.6, 1.6);
+			        transform: scale(1.6, 1.6);
+		}
+		65% {
+			-webkit-transform: scale(1, 1);
+			        transform: scale(1, 1);
+		}
+		100% {
+			-webkit-transform: scale(1, 1);
+			        transform: scale(1, 1);
+		}
+	}
+	@keyframes moveCornerMask {
+		0% {
+			-webkit-transform: scale(1.6, 1.6);
+			        transform: scale(1.6, 1.6);
+		}
+		50% {
+			-webkit-transform: scale(1.6, 1.6);
+			        transform: scale(1.6, 1.6);
+		}
+		65% {
+			-webkit-transform: scale(1, 1);
+			        transform: scale(1, 1);
+		}
+		100% {
+			-webkit-transform: scale(1, 1);
+			        transform: scale(1, 1);
+		}
+	}
+
+	@-webkit-keyframes moveFileShape {
+		0% {
+			opacity: 1;
+			-webkit-transform: translate(0px, 0px);
+			        transform: translate(0px, 0px);
+		}
+		20% {
+			-webkit-transform: translate(0px, -8px);
+			        transform: translate(0px, -8px);
+		}
+		30% {
+			-webkit-transform: translate(0px, -8px);
+			        transform: translate(0px, -8px);
+		}
+		50% {
+			opacity: 1;
+			-webkit-transform: translate(-31.5px, -26.5px);
+			        transform: translate(-31.5px, -26.5px);
+		}
+		51% {
+			opacity: 0;
+			-webkit-transform: translate(-31.5px, -26.5px);
+			        transform: translate(-31.5px, -26.5px);
+		}
+		100% {
+			opacity: 0;
+			-webkit-transform: translate(-31.5px, -26.5px);
+			        transform: translate(-31.5px, -26.5px);
+		}
+	}
+
+	@keyframes moveFileShape {
+		0% {
+			opacity: 1;
+			-webkit-transform: translate(0px, 0px);
+			        transform: translate(0px, 0px);
+		}
+		20% {
+			-webkit-transform: translate(0px, -8px);
+			        transform: translate(0px, -8px);
+		}
+		30% {
+			-webkit-transform: translate(0px, -8px);
+			        transform: translate(0px, -8px);
+		}
+		50% {
+			opacity: 1;
+			-webkit-transform: translate(-31.5px, -26.5px);
+			        transform: translate(-31.5px, -26.5px);
+		}
+		51% {
+			opacity: 0;
+			-webkit-transform: translate(-31.5px, -26.5px);
+			        transform: translate(-31.5px, -26.5px);
+		}
+		100% {
+			opacity: 0;
+			-webkit-transform: translate(-31.5px, -26.5px);
+			        transform: translate(-31.5px, -26.5px);
+		}
+	}
+	@-webkit-keyframes moveFile {
+		0% {
+			opacity: 0;
+			-webkit-transform: translate(-31.5px, -26.5px);
+			        transform: translate(-31.5px, -26.5px);
+		}
+		49% {
+			opacity: 0;
+			-webkit-transform: translate(-31.5px, -26.5px);
+			        transform: translate(-31.5px, -26.5px);
+		}
+		50% {
+			opacity: 1;
+			-webkit-transform: translate(-31.5px, -26.5px);
+			        transform: translate(-31.5px, -26.5px);
+		}
+		65% {
+			opacity: 1;
+			-webkit-transform: translate(0px, 0px);
+			        transform: translate(0px, 0px);
+		}
+		100% {
+			opacity: 1;
+			-webkit-transform: translate(0px, 0px);
+			        transform: translate(0px, 0px);
+		}
+	}
+	@keyframes moveFile {
+		0% {
+			opacity: 0;
+			-webkit-transform: translate(-31.5px, -26.5px);
+			        transform: translate(-31.5px, -26.5px);
+		}
+		49% {
+			opacity: 0;
+			-webkit-transform: translate(-31.5px, -26.5px);
+			        transform: translate(-31.5px, -26.5px);
+		}
+		50% {
+			opacity: 1;
+			-webkit-transform: translate(-31.5px, -26.5px);
+			        transform: translate(-31.5px, -26.5px);
+		}
+		65% {
+			opacity: 1;
+			-webkit-transform: translate(0px, 0px);
+			        transform: translate(0px, 0px);
+		}
+		100% {
+			opacity: 1;
+			-webkit-transform: translate(0px, 0px);
+			        transform: translate(0px, 0px);
+		}
+	}
+	@-webkit-keyframes morphFile {
+		0% {
+			-webkit-transform: scale(1, 1);
+			        transform: scale(1, 1);
+		}
+		50% {
+			-webkit-transform: scale(1, 1);
+			        transform: scale(1, 1);
+		}
+		65% {
+			-webkit-transform: scale(6, 6);
+			        transform: scale(6, 6);
+		}
+		100% {
+			-webkit-transform: scale(6, 6);
+			        transform: scale(6, 6);
+		}
+	}
+	@keyframes morphFile {
+		0% {
+			-webkit-transform: scale(1, 1);
+			        transform: scale(1, 1);
+		}
+		50% {
+			-webkit-transform: scale(1, 1);
+			        transform: scale(1, 1);
+		}
+		65% {
+			-webkit-transform: scale(6, 6);
+			        transform: scale(6, 6);
+		}
+		100% {
+			-webkit-transform: scale(6, 6);
+			        transform: scale(6, 6);
+		}
+	}
+	@-webkit-keyframes moveFileMask {
+		0% {
+			-webkit-transform: scale(0.3, 0.3);
+			        transform: scale(0.3, 0.3);
+		}
+		50% {
+			-webkit-transform: scale(0.3, 0.3);
+			        transform: scale(0.3, 0.3);
+		}
+		65% {
+			-webkit-transform: scale(1, 1);
+			        transform: scale(1, 1);
+		}
+		100% {
+			-webkit-transform: scale(1, 1);
+			        transform: scale(1, 1);
+		}
+	}
+	@keyframes moveFileMask {
+		0% {
+			-webkit-transform: scale(0.3, 0.3);
+			        transform: scale(0.3, 0.3);
+		}
+		50% {
+			-webkit-transform: scale(0.3, 0.3);
+			        transform: scale(0.3, 0.3);
+		}
+		65% {
+			-webkit-transform: scale(1, 1);
+			        transform: scale(1, 1);
+		}
+		100% {
+			-webkit-transform: scale(1, 1);
+			        transform: scale(1, 1);
+		}
+	}
+
+	@-webkit-keyframes moveContainerShape {
+		0% {
+			-webkit-transform: translate(0px, 0px);
+			        transform: translate(0px, 0px);
+		}
+		20% {
+			-webkit-transform: translate(0px, 0px);
+			        transform: translate(0px, 0px);
+		}
+		50% {
+			-webkit-transform: translate(-7px, 3px);
+			        transform: translate(-7px, 3px);
+		}
+		100% {
+			-webkit-transform: translate(-7px, 3px);
+			        transform: translate(-7px, 3px);
+		}
+	}
+
+	@keyframes moveContainerShape {
+		0% {
+			-webkit-transform: translate(-7px, 3px);
+			        transform: translate(-7px, 3px);
+		}
+		20% {
+			-webkit-transform: translate(-7px, 3px);
+			        transform: translate(-7px, 3px);
+		}
+		50% {
+			-webkit-transform: translate(-7px, 3px);
+			        transform: translate(-7px, 3px);
+		}
+		100% {
+			-webkit-transform: translate(-7px, 3px);
+			        transform: translate(-7px, 3px);
+		}
+	}
+	@-webkit-keyframes morphContainer {
+		0% {
+			-webkit-transform: scale(1, 1);
+			        transform: scale(1, 1);
+		}
+		50% {
+			-webkit-transform: scale(1, 1);
+			        transform: scale(1, 1);
+		}
+		65% {
+			-webkit-transform: scale(1.8, 1.8);
+			        transform: scale(1.8, 1.8);
+		}
+		100% {
+			-webkit-transform: scale(1.8, 1.8);
+			        transform: scale(1.8, 1.8);
+		}
+	}
+	@keyframes morphContainer {
+		0% {
+			-webkit-transform: scale(1, 1);
+			        transform: scale(1, 1);
+		}
+		50% {
+			-webkit-transform: scale(1, 1);
+			        transform: scale(1, 1);
+		}
+		65% {
+			-webkit-transform: scale(1.8, 1.8);
+			        transform: scale(1.8, 1.8);
+		}
+		100% {
+			-webkit-transform: scale(1.8, 1.8);
+			        transform: scale(1.8, 1.8);
+		}
+	}
+	@-webkit-keyframes moveContainerMask {
+		0% {
+			-webkit-transform: scale(0.9, 0.9);
+			        transform: scale(0.9, 0.9);
+		}
+		50% {
+			-webkit-transform: scale(0.9, 0.9);
+			        transform: scale(0.9, 0.9);
+		}
+		65% {
+			-webkit-transform: scale(1, 1);
+			        transform: scale(1, 1);
+		}
+		100% {
+			-webkit-transform: scale(1, 1);
+			        transform: scale(1, 1);
+		}
+	}
+	@keyframes moveContainerMask {
+		0% {
+			-webkit-transform: scale(0.9, 0.9);
+			        transform: scale(0.9, 0.9);
+		}
+		50% {
+			-webkit-transform: scale(0.9, 0.9);
+			        transform: scale(0.9, 0.9);
+		}
+		65% {
+			-webkit-transform: scale(1, 1);
+			        transform: scale(1, 1);
+		}
+		100% {
+			-webkit-transform: scale(1, 1);
+			        transform: scale(1, 1);
+		}
+	}
+
+	@-webkit-keyframes showText {
+		0% {
+			opacity: 0;
+			-webkit-transform: scale(0.5, 0.5);
+			        transform: scale(0.5, 0.5);
+		}
+		50% {
+			opacity: 0;
+			-webkit-transform: scale(0.5, 0.5);
+			        transform: scale(0.5, 0.5);
+		}
+		65% {
+			opacity: 1;
+			-webkit-transform: scale(1, 1);
+			        transform: scale(1, 1);
+		}
+		100% {
+			opacity: 1;
+			-webkit-transform: scale(1, 1);
+			        transform: scale(1, 1);
+		}
+	}
+
+	@keyframes showText {
+		0% {
+			opacity: 0;
+			-webkit-transform: scale(0.5, 0.5);
+			        transform: scale(0.5, 0.5);
+		}
+		50% {
+			opacity: 0;
+			-webkit-transform: scale(0.5, 0.5);
+			        transform: scale(0.5, 0.5);
+		}
+		65% {
+			opacity: 1;
+			-webkit-transform: scale(1, 1);
+			        transform: scale(1, 1);
+		}
+		100% {
+			opacity: 1;
+			-webkit-transform: scale(1, 1);
+			        transform: scale(1, 1);
+		}
+	}
+
+	@-webkit-keyframes showEntaireShape {
+		0% {
+			-webkit-transform: translate(0px, 0px) scale(0.5, 0.5);
+			        transform: translate(0px, 0px) scale(0.5, 0.5);
+		}
+		55% {
+			-webkit-transform: translate(0px, 0px) scale(0.9, 0.9);
+			        transform: translate(0px, 0px) scale(0.9, 0.9);
+			-webkit-animation-timing-function: ease-out;
+			        animation-timing-function: ease-out;
+		}
+		65% {
+			-webkit-transform: translate(0px, -10px) scale(0.95, 0.95);
+			        transform: translate(0px, -10px) scale(0.95, 0.95);
+			-webkit-animation-timing-function: ease-in;
+			        animation-timing-function: ease-in;
+		}
+		75% {
+			-webkit-transform: translate(0px, 0px) scale(0.97, 0.97);
+			        transform: translate(0px, 0px) scale(0.97, 0.97);
+			-webkit-animation-timing-function: ease-out;
+			        animation-timing-function: ease-out;
+		}
+		80% {
+			-webkit-transform: translate(0px, -4px) scale(0.99, 0.99);
+			        transform: translate(0px, -4px) scale(0.99, 0.99);
+			-webkit-animation-timing-function: ease-in;
+			        animation-timing-function: ease-in;
+		}
+		85% {
+			-webkit-transform: translate(0px, 0px) scale(1, 1);
+			        transform: translate(0px, 0px) scale(1, 1);
+		}
+		100% {
+			-webkit-transform: translate(0px, 0px) scale(1, 1);
+			        transform: translate(0px, 0px) scale(1, 1);
+		}
+	}
+
+	@keyframes showEntaireShape {
+		0% {
+			-webkit-transform: translate(0px, 0px) scale(0.5, 0.5);
+			        transform: translate(0px, 0px) scale(0.5, 0.5);
+		}
+		55% {
+			-webkit-transform: translate(0px, 0px) scale(0.9, 0.9);
+			        transform: translate(0px, 0px) scale(0.9, 0.9);
+			-webkit-animation-timing-function: ease-out;
+			        animation-timing-function: ease-out;
+		}
+		65% {
+			-webkit-transform: translate(0px, -10px) scale(0.95, 0.95);
+			        transform: translate(0px, -10px) scale(0.95, 0.95);
+			-webkit-animation-timing-function: ease-in;
+			        animation-timing-function: ease-in;
+		}
+		75% {
+			-webkit-transform: translate(0px, 0px) scale(0.97, 0.97);
+			        transform: translate(0px, 0px) scale(0.97, 0.97);
+			-webkit-animation-timing-function: ease-out;
+			        animation-timing-function: ease-out;
+		}
+		80% {
+			-webkit-transform: translate(0px, -4px) scale(0.99, 0.99);
+			        transform: translate(0px, -4px) scale(0.99, 0.99);
+			-webkit-animation-timing-function: ease-in;
+			        animation-timing-function: ease-in;
+		}
+		85% {
+			-webkit-transform: translate(0px, 0px) scale(1, 1);
+			        transform: translate(0px, 0px) scale(1, 1);
+		}
+		100% {
+			-webkit-transform: translate(0px, 0px) scale(1, 1);
+			        transform: translate(0px, 0px) scale(1, 1);
+		}
+	}
+
+	@-webkit-keyframes growBgGreyShape {
+		to {
+			-webkit-transform: scale(1, 1);
+			        transform: scale(1, 1);
+			opacity: 0;
+		}
+	}
+
+	@keyframes growBgGreyShape {
+		to {
+			-webkit-transform: scale(1, 1);
+			        transform: scale(1, 1);
+			opacity: 0;
+		}
+	}
+
+	@-webkit-keyframes showShadow {
+		from {
+			-webkit-transform: scale(0, 0);
+			        transform: scale(0, 0);
+			opacity: 0;
+		}
+		to {
+			-webkit-transform: scale(1, 1);
+			        transform: scale(1, 1);
+			opacity: 1;
+		}
+	}
+
+	@keyframes showShadow {
+		from {
+			-webkit-transform: scale(0, 0);
+			        transform: scale(0, 0);
+			opacity: 0;
+		}
+		to {
+			-webkit-transform: scale(1, 1);
+			        transform: scale(1, 1);
+			opacity: 1;
+		}
+	}
+
+</style>
+</svg>

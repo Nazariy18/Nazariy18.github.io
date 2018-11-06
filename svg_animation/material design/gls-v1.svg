@@ -1,0 +1,741 @@
+<svg version="1.1" id="glc-animation" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-30 -30 160 160" enable-background="new 0 0 100 100" xml:space="preserve">
+<defs>
+	<clipPath id="clip_shape_folder">
+		<path id="clip-folder" fill="none" d="M0,100V0h100v76.866h-2.907
+			c0-11.938-9.677-21.613-21.613-21.613c-11.937,0-21.613,9.675-21.613,21.613c0,11.933,9.676,21.613,21.613,21.613V100H0z"/>
+	</clipPath>
+</defs>
+<rect id="label-blue" x="83.6" y="41.7" fill="#2196F3" width="13.5" height="13.5" rx="2.6" ry="2.6"/>
+<rect id="label-yellow" x="83.6" y="28.2" fill="#FFFF72" width="13.5" height="13.5" rx="2.6" ry="2.6"/>
+<rect id="label-red" x="83.6" y="14.7" fill="#E53935" width="13.5" height="13.5" rx="2.6" ry="2.6"/>
+<g clip-path="url(#clip_shape_folder)">
+	<rect id="folder-shape" x="5.2" y="6.6" fill="#FFD54F" width="86.5" height="86.5" rx="5.3" ry="5.3"/>
+</g>
+<g id="code-circle">
+	<circle id="green-circle" fill="#2E5E2B" cx="75.5" cy="76.9" r="16.2"/>
+	<g id="code">
+		<path fill="#FFFFFF" d="M71.893,83.714c0.461,0,0.921-0.175,1.273-0.526c0.702-0.702,0.702-1.839,0-2.542l-4.125-4.12l4.125-4.121
+			c0.702-0.702,0.702-1.84,0-2.542c-0.703-0.702-1.843-0.702-2.544,0l-5.398,5.392c-0.702,0.702-0.702,1.84,0,2.542l5.398,5.391
+			C70.973,83.539,71.433,83.714,71.893,83.714z"/>
+		<path fill="#FFFFFF" d="M79.067,84.054c-0.46,0-0.921-0.175-1.272-0.526c-0.703-0.701-0.703-1.839,0-2.542l4.125-4.12
+			l-4.125-4.121c-0.703-0.702-0.703-1.84,0-2.542c0.702-0.702,1.843-0.702,2.544,0l5.398,5.392c0.702,0.701,0.702,1.84,0,2.542
+			l-5.398,5.391C79.988,83.879,79.527,84.054,79.067,84.054z"/>
+	</g>
+</g>
+<style>
+	#glc-animation #folder-shape,
+	#glc-animation #label-red,
+	#glc-animation #label-yellow,
+	#glc-animation #label-blue {
+		width: 5px;
+		height: 5px;
+	}
+
+	#glc-animation #folder-shape {
+		-webkit-transform: translate(12.3px, 35.9px);
+		    -ms-transform: translate(12.3px, 35.9px);
+		        transform: translate(12.3px, 35.9px);
+		-webkit-animation: moveFolderShape 8s ease-in-out 0s infinite;
+		        animation: moveFolderShape 8s ease-in-out 0s infinite;
+	}
+	#glc-animation #label-red {
+		-webkit-transform: translate(-51.1px, 27.8px);
+		    -ms-transform: translate(-51.1px, 27.8px);
+		        transform: translate(-51.1px, 27.8px);
+		-webkit-animation: moveLabelRed 8s ease-in-out 0s infinite;
+		        animation: moveLabelRed 8s ease-in-out 0s infinite;
+	}
+	#glc-animation #label-yellow {
+		-webkit-transform: translate(-36.1px, 14.3px);
+		    -ms-transform: translate(-36.1px, 14.3px);
+		        transform: translate(-36.1px, 14.3px);
+		-webkit-animation: moveLabelYellow 8s ease-in-out 0s infinite;
+		        animation: moveLabelYellow 8s ease-in-out 0s infinite;
+	}
+	#glc-animation #label-blue {
+		-webkit-transform: translate(-21.1px, 0.8px);
+		    -ms-transform: translate(-21.1px, 0.8px);
+		        transform: translate(-21.1px, 0.8px);
+		-webkit-animation: moveLabelBlue 8s ease-in-out 0s infinite;
+		        animation: moveLabelBlue 8s ease-in-out 0s infinite;
+	}
+	#glc-animation #code-circle {
+		-webkit-transform-origin: 75.5px 76.9px;
+		    -ms-transform-origin: 75.5px 76.9px;
+		        transform-origin: 75.5px 76.9px;
+		-webkit-transform: scale(0.15, 0.15) translate(4.5px, -31.9px);
+		    -ms-transform: scale(0.15, 0.15) translate(4.5px, -31.9px);
+		        transform: scale(0.15, 0.15) translate(4.5px, -31.9px);
+		-webkit-animation: moveGreenCircle 8s ease-in-out 0s infinite;
+		        animation: moveGreenCircle 8s ease-in-out 0s infinite;
+	}
+	#glc-animation #code-circle #code {
+		opacity: 0;
+		-webkit-animation: showCode 8s linear 0s infinite;
+		        animation: showCode 8s linear 0s infinite;
+	}
+
+	@-webkit-keyframes moveFolderShape {
+		0% {
+			-webkit-transform: translate(12.3px, 35.9px);
+			        transform: translate(12.3px, 35.9px);
+			width: 5px;
+			height: 5px;
+		}
+		4% {
+			-webkit-transform: translate(12.3px, 35.9px);
+			        transform: translate(12.3px, 35.9px);
+			width: 5px;
+			height: 5px;
+		}
+		16% {
+			-webkit-transform: translate(12.3px, 45.9px);
+			        transform: translate(12.3px, 45.9px);
+			width: 5px;
+			height: 5px;
+		}
+		28% {
+			-webkit-transform: translate(12.3px, 35.9px);
+			        transform: translate(12.3px, 35.9px);
+			width: 5px;
+			height: 5px;
+		}
+		40% {
+			-webkit-transform: translate(12.3px, 45.9px);
+			        transform: translate(12.3px, 45.9px);
+			width: 5px;
+			height: 5px;
+		}
+		52% {
+			-webkit-transform: translate(12.3px, 35.9px);
+			        transform: translate(12.3px, 35.9px);
+			width: 5px;
+			height: 5px;
+		}
+		57% {
+			-webkit-transform: translate(0px, 0px);
+			        transform: translate(0px, 0px);
+			width: 86.5px;
+			height: 86.5px;
+			-webkit-animation-timing-function: ease-in;
+			        animation-timing-function: ease-in;
+		}
+		91% {
+			-webkit-transform: translate(0px, 0px);
+			        transform: translate(0px, 0px);
+			width: 86.5px;
+			height: 86.5px;
+		}
+		96% {
+			-webkit-transform: translate(12.3px, 35.9px);
+			        transform: translate(12.3px, 35.9px);
+			width: 5px;
+			height: 5px;
+			-webkit-animation-timing-function: ease-out;
+			        animation-timing-function: ease-out;
+		}
+		100% {
+			-webkit-transform: translate(12.3px, 35.9px);
+			        transform: translate(12.3px, 35.9px);
+			width: 5px;
+			height: 5px;
+		}
+	}
+
+	@keyframes moveFolderShape {
+		0% {
+			-webkit-transform: translate(12.3px, 35.9px);
+			        transform: translate(12.3px, 35.9px);
+			width: 5px;
+			height: 5px;
+		}
+		4% {
+			-webkit-transform: translate(12.3px, 35.9px);
+			        transform: translate(12.3px, 35.9px);
+			width: 5px;
+			height: 5px;
+		}
+		16% {
+			-webkit-transform: translate(12.3px, 45.9px);
+			        transform: translate(12.3px, 45.9px);
+			width: 5px;
+			height: 5px;
+		}
+		28% {
+			-webkit-transform: translate(12.3px, 35.9px);
+			        transform: translate(12.3px, 35.9px);
+			width: 5px;
+			height: 5px;
+		}
+		40% {
+			-webkit-transform: translate(12.3px, 45.9px);
+			        transform: translate(12.3px, 45.9px);
+			width: 5px;
+			height: 5px;
+		}
+		52% {
+			-webkit-transform: translate(12.3px, 35.9px);
+			        transform: translate(12.3px, 35.9px);
+			width: 5px;
+			height: 5px;
+		}
+		57% {
+			-webkit-transform: translate(0px, 0px);
+			        transform: translate(0px, 0px);
+			width: 86.5px;
+			height: 86.5px;
+			-webkit-animation-timing-function: ease-in;
+			        animation-timing-function: ease-in;
+		}
+		91% {
+			-webkit-transform: translate(0px, 0px);
+			        transform: translate(0px, 0px);
+			width: 86.5px;
+			height: 86.5px;
+		}
+		96% {
+			-webkit-transform: translate(12.3px, 35.9px);
+			        transform: translate(12.3px, 35.9px);
+			width: 5px;
+			height: 5px;
+			-webkit-animation-timing-function: ease-out;
+			        animation-timing-function: ease-out;
+		}
+		100% {
+			-webkit-transform: translate(12.3px, 35.9px);
+			        transform: translate(12.3px, 35.9px);
+			width: 5px;
+			height: 5px;
+		}
+	}
+
+	@-webkit-keyframes moveLabelRed {
+		0% {
+			-webkit-transform: translate(-51.1px, 27.8px);
+			        transform: translate(-51.1px, 27.8px);
+			width: 5px;
+			height: 5px;
+		}
+		3% {
+			-webkit-transform: translate(-51.1px, 27.8px);
+			        transform: translate(-51.1px, 27.8px);
+			width: 5px;
+			height: 5px;
+		}
+		15% {
+			-webkit-transform: translate(-51.1px, 37.8px);
+			        transform: translate(-51.1px, 37.8px);
+			width: 5px;
+			height: 5px;
+		}
+		27% {
+			-webkit-transform: translate(-51.1px, 27.8px);
+			        transform: translate(-51.1px, 27.8px);
+			width: 5px;
+			height: 5px;
+		}
+		39% {
+			-webkit-transform: translate(-51.1px, 37.8px);
+			        transform: translate(-51.1px, 37.8px);
+			width: 5px;
+			height: 5px;
+		}
+		51% {
+			-webkit-transform: translate(-51.1px, 27.8px);
+			        transform: translate(-51.1px, 27.8px);
+			width: 5px;
+			height: 5px;
+		}
+		56% {
+			-webkit-transform: translate(0px, 0px);
+			        transform: translate(0px, 0px);
+			width: 13.5px;
+			height: 13.5px;
+			-webkit-animation-timing-function: ease-in;
+			        animation-timing-function: ease-in;
+		}
+		92% {
+			-webkit-transform: translate(0px, 0px);
+			        transform: translate(0px, 0px);
+			width: 13.5px;
+			height: 13.5px;
+		}
+		97% {
+			-webkit-transform: translate(-51.1px, 27.8px);
+			        transform: translate(-51.1px, 27.8px);
+			width: 5px;
+			height: 5px;
+			-webkit-animation-timing-function: ease-out;
+			        animation-timing-function: ease-out;
+		}
+		100% {
+			-webkit-transform: translate(-51.1px, 27.8px);
+			        transform: translate(-51.1px, 27.8px);
+			width: 5px;
+			height: 5px;
+		}
+	}
+
+	@keyframes moveLabelRed {
+		0% {
+			-webkit-transform: translate(-51.1px, 27.8px);
+			        transform: translate(-51.1px, 27.8px);
+			width: 5px;
+			height: 5px;
+		}
+		3% {
+			-webkit-transform: translate(-51.1px, 27.8px);
+			        transform: translate(-51.1px, 27.8px);
+			width: 5px;
+			height: 5px;
+		}
+		15% {
+			-webkit-transform: translate(-51.1px, 37.8px);
+			        transform: translate(-51.1px, 37.8px);
+			width: 5px;
+			height: 5px;
+		}
+		27% {
+			-webkit-transform: translate(-51.1px, 27.8px);
+			        transform: translate(-51.1px, 27.8px);
+			width: 5px;
+			height: 5px;
+		}
+		39% {
+			-webkit-transform: translate(-51.1px, 37.8px);
+			        transform: translate(-51.1px, 37.8px);
+			width: 5px;
+			height: 5px;
+		}
+		51% {
+			-webkit-transform: translate(-51.1px, 27.8px);
+			        transform: translate(-51.1px, 27.8px);
+			width: 5px;
+			height: 5px;
+		}
+		56% {
+			-webkit-transform: translate(0px, 0px);
+			        transform: translate(0px, 0px);
+			width: 13.5px;
+			height: 13.5px;
+			-webkit-animation-timing-function: ease-in;
+			        animation-timing-function: ease-in;
+		}
+		92% {
+			-webkit-transform: translate(0px, 0px);
+			        transform: translate(0px, 0px);
+			width: 13.5px;
+			height: 13.5px;
+		}
+		97% {
+			-webkit-transform: translate(-51.1px, 27.8px);
+			        transform: translate(-51.1px, 27.8px);
+			width: 5px;
+			height: 5px;
+			-webkit-animation-timing-function: ease-out;
+			        animation-timing-function: ease-out;
+		}
+		100% {
+			-webkit-transform: translate(-51.1px, 27.8px);
+			        transform: translate(-51.1px, 27.8px);
+			width: 5px;
+			height: 5px;
+		}
+	}
+
+	@-webkit-keyframes moveLabelYellow {
+		0% {
+			-webkit-transform: translate(-36.1px, 14.3px);
+			        transform: translate(-36.1px, 14.3px);
+			width: 5px;
+			height: 5px;
+		}
+		2% {
+			-webkit-transform: translate(-36.1px, 14.3px);
+			        transform: translate(-36.1px, 14.3px);
+			width: 5px;
+			height: 5px;
+		}
+		14% {
+			-webkit-transform: translate(-36.1px, 24.3px);
+			        transform: translate(-36.1px, 24.3px);
+			width: 5px;
+			height: 5px;
+		}
+		26% {
+			-webkit-transform: translate(-36.1px, 14.3px);
+			        transform: translate(-36.1px, 14.3px);
+			width: 5px;
+			height: 5px;
+		}
+		38% {
+			-webkit-transform: translate(-36.1px, 24.3px);
+			        transform: translate(-36.1px, 24.3px);
+			width: 5px;
+			height: 5px;
+		}
+		50% {
+			-webkit-transform: translate(-36.1px, 14.3px);
+			        transform: translate(-36.1px, 14.3px);
+			width: 5px;
+			height: 5px;
+		}
+		55% {
+			-webkit-transform: translate(0px, 0px);
+			        transform: translate(0px, 0px);
+			width: 13.5px;
+			height: 13.5px;
+			-webkit-animation-timing-function: ease-in;
+			        animation-timing-function: ease-in;
+		}
+		93% {
+			-webkit-transform: translate(0px, 0px);
+			        transform: translate(0px, 0px);
+			width: 13.5px;
+			height: 13.5px;
+		}
+		98% {
+			-webkit-transform: translate(-36.1px, 14.3px);
+			        transform: translate(-36.1px, 14.3px);
+			width: 5px;
+			height: 5px;
+			-webkit-animation-timing-function: ease-in;
+			        animation-timing-function: ease-in;
+		}
+		100% {
+			-webkit-transform: translate(-36.1px, 14.3px);
+			        transform: translate(-36.1px, 14.3px);
+			width: 5px;
+			height: 5px;
+		}
+	}
+
+	@keyframes moveLabelYellow {
+		0% {
+			-webkit-transform: translate(-36.1px, 14.3px);
+			        transform: translate(-36.1px, 14.3px);
+			width: 5px;
+			height: 5px;
+		}
+		2% {
+			-webkit-transform: translate(-36.1px, 14.3px);
+			        transform: translate(-36.1px, 14.3px);
+			width: 5px;
+			height: 5px;
+		}
+		14% {
+			-webkit-transform: translate(-36.1px, 24.3px);
+			        transform: translate(-36.1px, 24.3px);
+			width: 5px;
+			height: 5px;
+		}
+		26% {
+			-webkit-transform: translate(-36.1px, 14.3px);
+			        transform: translate(-36.1px, 14.3px);
+			width: 5px;
+			height: 5px;
+		}
+		38% {
+			-webkit-transform: translate(-36.1px, 24.3px);
+			        transform: translate(-36.1px, 24.3px);
+			width: 5px;
+			height: 5px;
+		}
+		50% {
+			-webkit-transform: translate(-36.1px, 14.3px);
+			        transform: translate(-36.1px, 14.3px);
+			width: 5px;
+			height: 5px;
+		}
+		55% {
+			-webkit-transform: translate(0px, 0px);
+			        transform: translate(0px, 0px);
+			width: 13.5px;
+			height: 13.5px;
+			-webkit-animation-timing-function: ease-in;
+			        animation-timing-function: ease-in;
+		}
+		93% {
+			-webkit-transform: translate(0px, 0px);
+			        transform: translate(0px, 0px);
+			width: 13.5px;
+			height: 13.5px;
+		}
+		98% {
+			-webkit-transform: translate(-36.1px, 14.3px);
+			        transform: translate(-36.1px, 14.3px);
+			width: 5px;
+			height: 5px;
+			-webkit-animation-timing-function: ease-in;
+			        animation-timing-function: ease-in;
+		}
+		100% {
+			-webkit-transform: translate(-36.1px, 14.3px);
+			        transform: translate(-36.1px, 14.3px);
+			width: 5px;
+			height: 5px;
+		}
+	}
+
+	@-webkit-keyframes moveLabelBlue {
+		0% {
+			-webkit-transform: translate(-21.1px, 0.8px);
+			        transform: translate(-21.1px, 0.8px);
+			width: 5px;
+			height: 5px;
+		}
+		1% {
+			-webkit-transform: translate(-21.1px, 0.8px);
+			        transform: translate(-21.1px, 0.8px);
+			width: 5px;
+			height: 5px;
+		}
+		13% {
+			-webkit-transform: translate(-21.1px, 10.8px);
+			        transform: translate(-21.1px, 10.8px);
+			width: 5px;
+			height: 5px;
+		}
+		25% {
+			-webkit-transform: translate(-21.1px, 0.8px);
+			        transform: translate(-21.1px, 0.8px);
+			width: 5px;
+			height: 5px;
+		}
+		37% {
+			-webkit-transform: translate(-21.1px, 10.8px);
+			        transform: translate(-21.1px, 10.8px);
+			width: 5px;
+			height: 5px;
+		}
+		49% {
+			-webkit-transform: translate(-21.1px, 0.8px);
+			        transform: translate(-21.1px, 0.8px);
+			width: 5px;
+			height: 5px;
+		}
+		54% {
+			-webkit-transform: translate(0px, 0px);
+			        transform: translate(0px, 0px);
+			width: 13.5px;
+			height: 13.5px;
+			-webkit-animation-timing-function: ease-in;
+			        animation-timing-function: ease-in;
+		}
+		94% {
+			-webkit-transform: translate(0px, 0px);
+			        transform: translate(0px, 0px);
+			width: 13.5px;
+			height: 13.5px;
+		}
+		99% {
+			-webkit-transform: translate(-21.1px, 0.8px);
+			        transform: translate(-21.1px, 0.8px);
+			width: 5px;
+			height: 5px;
+			-webkit-animation-timing-function: ease-out;
+			        animation-timing-function: ease-out;
+		}
+		100% {
+			-webkit-transform: translate(-21.1px, 0.8px);
+			        transform: translate(-21.1px, 0.8px);
+			width: 5px;
+			height: 5px;
+			-webkit-animation-timing-function: ease-out;
+			        animation-timing-function: ease-out;
+		}
+	}
+
+	@keyframes moveLabelBlue {
+		0% {
+			-webkit-transform: translate(-21.1px, 0.8px);
+			        transform: translate(-21.1px, 0.8px);
+			width: 5px;
+			height: 5px;
+		}
+		1% {
+			-webkit-transform: translate(-21.1px, 0.8px);
+			        transform: translate(-21.1px, 0.8px);
+			width: 5px;
+			height: 5px;
+		}
+		13% {
+			-webkit-transform: translate(-21.1px, 10.8px);
+			        transform: translate(-21.1px, 10.8px);
+			width: 5px;
+			height: 5px;
+		}
+		25% {
+			-webkit-transform: translate(-21.1px, 0.8px);
+			        transform: translate(-21.1px, 0.8px);
+			width: 5px;
+			height: 5px;
+		}
+		37% {
+			-webkit-transform: translate(-21.1px, 10.8px);
+			        transform: translate(-21.1px, 10.8px);
+			width: 5px;
+			height: 5px;
+		}
+		49% {
+			-webkit-transform: translate(-21.1px, 0.8px);
+			        transform: translate(-21.1px, 0.8px);
+			width: 5px;
+			height: 5px;
+		}
+		54% {
+			-webkit-transform: translate(0px, 0px);
+			        transform: translate(0px, 0px);
+			width: 13.5px;
+			height: 13.5px;
+			-webkit-animation-timing-function: ease-in;
+			        animation-timing-function: ease-in;
+		}
+		94% {
+			-webkit-transform: translate(0px, 0px);
+			        transform: translate(0px, 0px);
+			width: 13.5px;
+			height: 13.5px;
+		}
+		99% {
+			-webkit-transform: translate(-21.1px, 0.8px);
+			        transform: translate(-21.1px, 0.8px);
+			width: 5px;
+			height: 5px;
+			-webkit-animation-timing-function: ease-out;
+			        animation-timing-function: ease-out;
+		}
+		100% {
+			-webkit-transform: translate(-21.1px, 0.8px);
+			        transform: translate(-21.1px, 0.8px);
+			width: 5px;
+			height: 5px;
+			-webkit-animation-timing-function: ease-out;
+			        animation-timing-function: ease-out;
+		}
+	}
+
+	@-webkit-keyframes moveGreenCircle {
+		0% {
+			-webkit-transform: translate(4.5px, -31.9px) scale(0.15, 0.15);
+			        transform: translate(4.5px, -31.9px) scale(0.15, 0.15);
+		}
+		12% {
+			-webkit-transform: translate(4.5px, -21.9px) scale(0.15, 0.15);
+			        transform: translate(4.5px, -21.9px) scale(0.15, 0.15);
+		}
+		24% {
+			-webkit-transform: translate(4.5px, -31.9px) scale(0.15, 0.15) ;
+			        transform: translate(4.5px, -31.9px) scale(0.15, 0.15) ;
+		}
+		36% {
+			-webkit-transform: translate(4.5px, -21.9px) scale(0.15, 0.15) ;
+			        transform: translate(4.5px, -21.9px) scale(0.15, 0.15) ;
+		}
+		48% {
+			-webkit-transform: translate(4.5px, -31.9px) scale(0.15, 0.15) ;
+			        transform: translate(4.5px, -31.9px) scale(0.15, 0.15) ;
+		}
+		53% {
+			-webkit-transform: translate(0px, 0px) scale(1, 1);
+			        transform: translate(0px, 0px) scale(1, 1);
+			-webkit-animation-timing-function: ease-in;
+			        animation-timing-function: ease-in;
+		}
+		95% {
+			-webkit-transform: translate(0px, 0px) scale(1, 1);
+			        transform: translate(0px, 0px) scale(1, 1);
+		}
+		100% {
+			-webkit-transform: translate(4.5px, -31.9px) scale(0.15, 0.15);
+			        transform: translate(4.5px, -31.9px) scale(0.15, 0.15);
+			-webkit-animation-timing-function: ease-out;
+			        animation-timing-function: ease-out;
+		}
+	}
+
+	@keyframes moveGreenCircle {
+		0% {
+			-webkit-transform: translate(4.5px, -31.9px) scale(0.15, 0.15);
+			        transform: translate(4.5px, -31.9px) scale(0.15, 0.15);
+		}
+		12% {
+			-webkit-transform: translate(4.5px, -21.9px) scale(0.15, 0.15);
+			        transform: translate(4.5px, -21.9px) scale(0.15, 0.15);
+		}
+		24% {
+			-webkit-transform: translate(4.5px, -31.9px) scale(0.15, 0.15) ;
+			        transform: translate(4.5px, -31.9px) scale(0.15, 0.15) ;
+		}
+		36% {
+			-webkit-transform: translate(4.5px, -21.9px) scale(0.15, 0.15) ;
+			        transform: translate(4.5px, -21.9px) scale(0.15, 0.15) ;
+		}
+		48% {
+			-webkit-transform: translate(4.5px, -31.9px) scale(0.15, 0.15) ;
+			        transform: translate(4.5px, -31.9px) scale(0.15, 0.15) ;
+		}
+		53% {
+			-webkit-transform: translate(0px, 0px) scale(1, 1);
+			        transform: translate(0px, 0px) scale(1, 1);
+			-webkit-animation-timing-function: ease-in;
+			        animation-timing-function: ease-in;
+		}
+		95% {
+			-webkit-transform: translate(0px, 0px) scale(1, 1);
+			        transform: translate(0px, 0px) scale(1, 1);
+		}
+		100% {
+			-webkit-transform: translate(4.5px, -31.9px) scale(0.15, 0.15);
+			        transform: translate(4.5px, -31.9px) scale(0.15, 0.15);
+			-webkit-animation-timing-function: ease-out;
+			        animation-timing-function: ease-out;
+		}
+	}
+
+	@-webkit-keyframes showCode {
+		0% {
+			opacity: 0;
+		}
+		48% {
+			opacity: 0;
+		}
+		53% {
+			opacity: 1;
+			-webkit-animation-timing-function: ease-in;
+			        animation-timing-function: ease-in;
+		}
+		95% {
+			opacity: 1;
+		}
+		100% {
+			opacity: 0;
+			-webkit-animation-timing-function: ease-out;
+			        animation-timing-function: ease-out;
+		}
+	}
+
+	@keyframes showCode {
+		0% {
+			opacity: 0;
+		}
+		48% {
+			opacity: 0;
+		}
+		53% {
+			opacity: 1;
+			-webkit-animation-timing-function: ease-in;
+			        animation-timing-function: ease-in;
+		}
+		95% {
+			opacity: 1;
+		}
+		100% {
+			opacity: 0;
+			-webkit-animation-timing-function: ease-out;
+			        animation-timing-function: ease-out;
+		}
+	}
+
+</style>
+</svg>
