@@ -1,0 +1,103 @@
+<svg version="1.1" id="walk" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 495 495" enable-background="new 0 0 495 495" xml:space="preserve">
+<rect id="background" fill="#00ADA9" width="495" height="495"/>
+<line id="road" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" stroke-dasharray="15" x1="0" y1="407" x2="495" y2="407"/>
+<g id="squares">
+	<rect id="square-down" x="202.5" y="315.5" fill="#FF6444" stroke="#474143" stroke-miterlimit="10" width="90" height="90"/>
+	<g id="squares-MidandUp">
+		<rect id="square-middle" x="202.5" y="224.5" fill="#FF6444" stroke="#474143" stroke-miterlimit="10" width="90" height="90"/>
+		<rect id="square-upper" x="202.5" y="133.5" fill="#FF6444" stroke="#474143" stroke-miterlimit="10" width="90" height="90"/>
+	</g>
+</g>
+<style>
+	#walk #road {
+		stroke-dashoffset: 15px;
+		-webkit-animation: moveRoad 1s linear infinite;
+		        animation: moveRoad 1s linear infinite;
+	}
+
+	#walk #squares {
+		-webkit-transform-origin: 293px 406px;
+		    -ms-transform-origin: 293px 406px;
+		        transform-origin: 293px 406px;
+		-webkit-animation: rotateDownShape 1s linear infinite;
+		        animation: rotateDownShape 1s linear infinite;
+	}
+
+	#walk #squares-MidandUp {
+		-webkit-transform-origin: 202px 315px;
+		    -ms-transform-origin: 202px 315px;
+		        transform-origin: 202px 315px;
+		-webkit-animation: rotateMiddleShape 1s linear infinite;
+		        animation: rotateMiddleShape 1s linear infinite;
+	}
+
+	#walk #square-upper {
+		-webkit-transform-origin: 293px 224px;
+		    -ms-transform-origin: 293px 224px;
+		        transform-origin: 293px 224px;
+		-webkit-animation: rotateUpperShape 1s linear infinite;
+		        animation: rotateUpperShape 1s linear infinite;
+	}
+
+	@-webkit-keyframes rotateDownShape {
+		to {
+			-webkit-transform: translate(-91px, 0px) rotate(90deg);
+			        transform: translate(-91px, 0px) rotate(90deg);
+		}
+	}
+
+	@keyframes rotateDownShape {
+		to {
+			-webkit-transform: translate(-91px, 0px) rotate(90deg);
+			        transform: translate(-91px, 0px) rotate(90deg);
+		}
+	}
+
+	@-webkit-keyframes rotateMiddleShape {
+		to {
+			-webkit-transform: rotate(-180deg);
+			        transform: rotate(-180deg);
+		}
+	}
+
+	@keyframes rotateMiddleShape {
+		to {
+			-webkit-transform: rotate(-180deg);
+			        transform: rotate(-180deg);
+		}
+	}
+
+	@-webkit-keyframes rotateUpperShape {
+		to {
+			-webkit-transform: rotate(180deg);
+			        transform: rotate(180deg);
+		}
+	}
+
+	@keyframes rotateUpperShape {
+		to {
+			-webkit-transform: rotate(180deg);
+			        transform: rotate(180deg);
+		}
+	}
+
+	@-webkit-keyframes moveRoad {
+		from {
+			stroke-dashoffset: 15px;
+		}
+		to {
+			stroke-dashoffset: 106px;
+		}
+	}
+
+	@keyframes moveRoad {
+		from {
+			stroke-dashoffset: 15px;
+		}
+		to {
+			stroke-dashoffset: 106px;
+		}
+	}
+</style>
+</svg>
