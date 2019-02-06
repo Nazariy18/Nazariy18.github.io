@@ -1,0 +1,54 @@
+body {
+	background: #eee;
+}
+
+#insting-animation #cursor {
+	-webkit-transform-origin: 252.5px 125.8px;
+	    -ms-transform-origin: 252.5px 125.8px;
+	        transform-origin: 252.5px 125.8px;
+}
+#insting-animation #screen1 #screen1-block {
+	-webkit-transform-origin: 426.61px 254.65px;
+	    -ms-transform-origin: 426.61px 254.65px;
+	        transform-origin: 426.61px 254.65px;
+}
+#insting-animation #screen2 #screen2-block {
+	-webkit-transform-origin: 426.61px 254.65px;
+	    -ms-transform-origin: 426.61px 254.65px;
+	        transform-origin: 426.61px 254.65px;
+}
+#insting-animation #screen2 #screen2-block2 {
+	-webkit-transform-origin: 278.03px 220.91px;
+	    -ms-transform-origin: 278.03px 220.91px;
+	        transform-origin: 278.03px 220.91px;
+}
+#insting-animation #screen3 #screen3-block {
+	-webkit-transform-origin: 389px 287.4px;
+	    -ms-transform-origin: 389px 287.4px;
+	        transform-origin: 389px 287.4px;
+}
+#insting-animation #screen4 #screen4-block1 {
+	-webkit-transform-origin: 313px 227.35px;
+	    -ms-transform-origin: 313px 227.35px;
+	        transform-origin: 313px 227.35px;
+}
+#insting-animation #screen4 #screen4-block2 {
+	-webkit-transform-origin: 461px 309.44px;
+	    -ms-transform-origin: 461px 309.44px;
+	        transform-origin: 461px 309.44px;
+}
+#insting-animation #man #hands #left-hand {
+	-webkit-transform-origin: 139.4px 253.4px;
+	    -ms-transform-origin: 139.4px 253.4px;
+	        transform-origin: 139.4px 253.4px;
+}
+#insting-animation #man #hands #right-hand {
+	-webkit-transform-origin: 89.21px 280.24px;
+	    -ms-transform-origin: 89.21px 280.24px;
+	        transform-origin: 89.21px 280.24px;
+}
+#insting-animation #man #head {
+	-webkit-transform-origin: 106.1px 218.2px;
+	    -ms-transform-origin: 106.1px 218.2px;
+	        transform-origin: 106.1px 218.2px;
+}
