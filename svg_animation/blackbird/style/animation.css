@@ -1,0 +1,22 @@
+body {
+	margin: 0;
+}
+
+#pillar1 {
+	transform-origin: 612.06px 598.91px;
+}
+#pillar2 {
+	transform-origin: 975.32px 874.17px;
+}
+#pillar3, #pillar3-plus {
+	transform-origin: 1130.93px 599.56px;
+}
+#border-face-right {
+	transform-origin: 1063.78px 544.45px;
+}
+#border-face-left {
+	transform-origin: 992.09px 503.81px;
+}
+#flag {
+	transform-origin: 1008.6px 468.4px;
+}
