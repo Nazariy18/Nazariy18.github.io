@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+ <head>
+    <link rel="stylesheet" href="./Owocni_files/bootstrap.min.css">
+    <link rel="stylesheet" href="./Owocni_files/style.css">
+    <style>
+		#rays-animation {
+			position: absolute;
+			right: 110px;
+			top: -31px;
+			width: 41.69px;
+			overflow: visible; 
+		}
+
+		.span-header-right:hover {
+			cursor: pointer;
+		}
+
+		.span-header-right {
+			z-index: 2;
+		}
+	</style>
+  </head>
+
+  <body>
+
+    <section>
+      <header>
+        <div id="intro" class="container">
+          <div class="row">
+            <div class="header-right">
+              <span class="span-header-right"><strong>Szybka <br> Wycena</strong></span>
+              <div>
+              	<svg id="rays-animation" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 41.69 106.88">
+              		<g id="start">
+              			<g id="short-rays">
+              				<path d="M33.08,24.85l6.35-12.79" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="4.45" stroke-dashoffset="29.4" stroke-dasharray="10.7 8 10.7 14.4" />
+              				<path d="M9.37,24.45,2.9,11.72" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="4.45" stroke-dashoffset="29.4" stroke-dasharray="10.7 8 10.7 14.4" />
+              				<path d="M8.6,82.05,2.25,94.85" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="4.45" stroke-dashoffset="29.4" stroke-dasharray="10.7 8 10.7 14.4" />
+              				<path d="M32.31,82.45l6.47,12.74" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="4.45" stroke-dashoffset="29.4" stroke-dasharray="10.7 8 10.7 14.4" />
+              			</g>
+              			<g id="long-rays">
+              				<path d="M21.07,21.39V2.25" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="4.45" stroke-dashoffset="36.4" stroke-dasharray="14.2 8 14.2 19.2" />
+              				<path d="M20.61,85.51v19.15" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="4.45" stroke-dashoffset="36.4" stroke-dasharray="14.2 8 14.2 19.2" />
+              			</g>
+              			<circle id="pulse-circle" cx="20.85" cy="53.44" r="0" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+              			<g id="move-circle">
+              				<circle cx="20.85" cy="53.44" r="0" fill="#fff" />
+              				<circle cx="20.85" cy="53.44" r="0" fill="#fff" />
+              				<circle cx="20.85" cy="53.44" r="0" fill="#fff" />
+              			</g>
+              		</g>
+              	</svg>
+              </div>
+              <div class="header-right-logo">
+                <div class="right-logo-border"></div>
+                <div class="right-logo-image"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+    </section>
+
+
+
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
+	<script src = "lib/anime.min.js"></script>
+	<script>
+		var _0x7fdc=["\x23\x72\x61\x79\x73\x2D\x61\x6E\x69\x6D\x61\x74\x69\x6F\x6E\x20\x23\x6C\x6F\x6E\x67\x2D\x72\x61\x79\x73\x20\x3E\x20\x70\x61\x74\x68","\x65\x61\x73\x65\x4F\x75\x74\x51\x75\x61\x64","\x61\x64\x64","\x23\x72\x61\x79\x73\x2D\x61\x6E\x69\x6D\x61\x74\x69\x6F\x6E\x20\x23\x73\x68\x6F\x72\x74\x2D\x72\x61\x79\x73\x20\x3E\x20\x70\x61\x74\x68","\x23\x72\x61\x79\x73\x2D\x61\x6E\x69\x6D\x61\x74\x69\x6F\x6E\x20\x23\x6D\x6F\x76\x65\x2D\x63\x69\x72\x63\x6C\x65\x20\x3E\x20\x63\x69\x72\x63\x6C\x65","\x72","\x6C\x69\x6E\x65\x61\x72","\x74\x58","\x74\x59","\x65\x61\x73\x65\x4F\x75\x74\x43\x75\x62\x69\x63","\x23\x72\x61\x79\x73\x2D\x61\x6E\x69\x6D\x61\x74\x69\x6F\x6E\x20\x23\x70\x75\x6C\x73\x65\x2D\x63\x69\x72\x63\x6C\x65","\x74\x69\x6D\x65\x6C\x69\x6E\x65","\x6D\x6F\x75\x73\x65\x6F\x76\x65\x72","\x72\x65\x73\x74\x61\x72\x74","\x61\x64\x64\x45\x76\x65\x6E\x74\x4C\x69\x73\x74\x65\x6E\x65\x72","\x2E\x73\x70\x61\x6E\x2D\x68\x65\x61\x64\x65\x72\x2D\x72\x69\x67\x68\x74","\x71\x75\x65\x72\x79\x53\x65\x6C\x65\x63\x74\x6F\x72"];var dataMoveCirc={tX:[-100,90,-30],tY:[-35,-40,100],r:[6,4,5]};function createRaysAnim(_0xff3bx3,_0xff3bx4,_0xff3bx5,_0xff3bx6){_0xff3bx3[_0x7fdc[2]]({targets:_0x7fdc[10],r:[0,70],strokeWidth:[4,2],opacity:[1,0],easing:_0x7fdc[9],duration:600,offset:_0xff3bx4})[_0x7fdc[2]]({targets:_0x7fdc[4],r:[{value:0,duration:1},{value:function(_0xff3bx7,_0xff3bx8){return dataMoveCirc[_0x7fdc[5]][_0xff3bx8]},duration:250},{value:0,duration:150,easing:_0x7fdc[6]}],translateX:[0,function(_0xff3bx7,_0xff3bx8){return dataMoveCirc[_0x7fdc[7]][_0xff3bx8]}],translateY:[0,function(_0xff3bx7,_0xff3bx8){return dataMoveCirc[_0x7fdc[8]][_0xff3bx8]}],easing:_0x7fdc[9],duration:600,offset:_0xff3bx4})[_0x7fdc[2]]({targets:_0x7fdc[3],strokeDashoffset:[_0xff3bx5,0],easing:_0x7fdc[1],duration:500,offset:_0xff3bx4+ 150})[_0x7fdc[2]]({targets:_0x7fdc[0],strokeDashoffset:[_0xff3bx6,0],easing:_0x7fdc[1],duration:500,offset:_0xff3bx4+ 150})}var RaysHoverAnimation=anime[_0x7fdc[11]]({autoplay:false}),RaysStartAnimation=anime[_0x7fdc[11]]({autoplay:true,complete:function(){createRaysAnim(RaysHoverAnimation,0,18.7,22.2)}});createRaysAnim(RaysStartAnimation,3000,29.4,36.4);document[_0x7fdc[16]](_0x7fdc[15])[_0x7fdc[14]](_0x7fdc[12],function(){RaysHoverAnimation[_0x7fdc[13]]()})
+		
+	</script>
+  
+</body>
+</html>
