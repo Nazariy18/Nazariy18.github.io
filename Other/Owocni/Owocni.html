@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<html>
+ <head>
+    <link rel="stylesheet" href="./Owocni_files/bootstrap.min.css">
+    <link rel="stylesheet" href="./Owocni_files/style.css">
+    <style>
+		#rays-animation {
+			position: absolute;
+			right: 109px;
+			top: -31px;
+			width: 41.69px;
+			overflow: visible; 
+		}
+
+		.span-header-right:hover {
+			cursor: pointer;
+		}
+
+		.span-header-right {
+			z-index: 2;
+		}
+	</style>
+  </head>
+
+  <body>
+
+    <section>
+      <header>
+        <div id="intro" class="container">
+          <div class="row">
+            <div class="header-right">
+              <span class="span-header-right"><strong>Szybka <br> Wycena</strong></span>
+              <div>
+              	<svg id="rays-animation" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 41.69 106.88">
+              		<g id="start">
+              			<g id="short-rays">
+              				<path d="M33.08,24.85l6.35-12.79" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="4.45" stroke-dashoffset="29.4" stroke-dasharray="10.7 8 10.7 14.4" />
+              				<path d="M9.37,24.45,2.9,11.72" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="4.45" stroke-dashoffset="29.4" stroke-dasharray="10.7 8 10.7 14.4" />
+              				<path d="M8.6,82.05,2.25,94.85" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="4.45" stroke-dashoffset="29.4" stroke-dasharray="10.7 8 10.7 14.4" />
+              				<path d="M32.31,82.45l6.47,12.74" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="4.45" stroke-dashoffset="29.4" stroke-dasharray="10.7 8 10.7 14.4" />
+              			</g>
+              			<g id="long-rays">
+              				<path d="M21.07,21.39V2.25" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="4.45" stroke-dashoffset="36.4" stroke-dasharray="14.2 8 14.2 19.2" />
+              				<path d="M20.61,85.51v19.15" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="4.45" stroke-dashoffset="36.4" stroke-dasharray="14.2 8 14.2 19.2" />
+              			</g>
+              			<circle id="pulse-circle" cx="20.85" cy="53.44" r="40" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="0"/>
+              			<g id="move-circle">
+              				<circle cx="-20" cy="30" r="0" fill="#fff" />
+              				<circle cx="55" cy="45" r="0" fill="#fff" />
+              				<circle cx="0" cy="90" r="0" fill="#fff" />
+              				<circle cx="40" cy="80" r="0" fill="#fff" />
+              			</g>
+              		</g>
+              	</svg>
+              </div>
+              <div class="header-right-logo">
+                <div class="right-logo-border"></div>
+                <div class="right-logo-image"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+    </section>
+
+
+
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
+	<script src = "lib/anime.min.js"></script>
+	<script>
+		var dataMoveCirc = {
+			tX: [-100, 70, -60, 50],
+			tY: [-35, -40, 80, 40],
+			r: [4, 5, 5, 4]
+		};
+
+		function createRaysAnim(nameTimeLine, del, shortD, longD) {
+
+			nameTimeLine
+				.add({
+					targets: '#rays-animation #pulse-circle',
+					r: [30, 80],
+					strokeWidth: [{value: 0, duration: 1},
+								  {value: 3, duration: 100}
+					],
+					opacity: [{value: 1, duration: 1, deley: 300},
+							{value: 0, easing: 'linear', duration: 300}],
+  					easing: 'easeOutCubic',
+					duration: 600,
+					offset: del
+				})
+				.add({
+					targets: '#rays-animation #move-circle > circle',
+					r: [{value: 0, duration: 1},
+						{value: function (el, i) {
+									return dataMoveCirc.r[i];
+								}, duration: 250},
+						{value: 0, duration: 150, easing: 'linear'}
+					],
+					translateX: [0, function (el, i) {
+						return dataMoveCirc.tX[i];
+					}],
+					translateY: [0, function (el, i) {
+						return dataMoveCirc.tY[i];
+					}],
+  					easing: 'easeOutCubic',
+					duration: 600,
+					offset: del
+				})
+				.add({
+					targets: '#rays-animation #short-rays > path',
+					strokeDashoffset: [shortD, 0],
+  					easing: 'easeOutQuad',
+					duration: 500,
+					offset: del + 150
+				})
+				.add({
+					targets: '#rays-animation #long-rays > path',
+					strokeDashoffset: [longD, 0],
+  					easing: 'easeOutQuad',
+					duration: 500,
+					offset: del + 150
+				});
+		}
+
+		var RaysHoverAnimation = anime.timeline({ autoplay: false }),
+			RaysStartAnimation = anime.timeline({ 
+										autoplay: true,
+										complete: function() {
+											createRaysAnim(RaysHoverAnimation, 0, 18.7, 22.2);
+										} 
+									});
+
+		createRaysAnim(RaysStartAnimation, 3000, 29.4, 36.4);
+
+
+		document.querySelector('.span-header-right').addEventListener("mouseover", function() {
+			RaysHoverAnimation.restart();
+		});
+		
+	</script>
+  
+</body>
+</html>
