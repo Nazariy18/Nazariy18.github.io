@@ -35,20 +35,23 @@
               	<svg id="rays-animation" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 41.69 106.88">
               		<g id="start">
               			<g id="short-rays">
-              				<path d="M33.08,24.85l6.35-12.79" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="4.45" stroke-dashoffset="29.4" stroke-dasharray="10.7 8 10.7 14.4" />
-              				<path d="M9.37,24.45,2.9,11.72" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="4.45" stroke-dashoffset="29.4" stroke-dasharray="10.7 8 10.7 14.4" />
-              				<path d="M8.6,82.05,2.25,94.85" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="4.45" stroke-dashoffset="29.4" stroke-dasharray="10.7 8 10.7 14.4" />
-              				<path d="M32.31,82.45l6.47,12.74" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="4.45" stroke-dashoffset="29.4" stroke-dasharray="10.7 8 10.7 14.4" />
+              				<path d="M33.08,24.85l6.35-12.79" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="4.45" stroke-dashoffset="48.2" stroke-dasharray="10.7 8 10.7 8 10.7 14.4" />
+              				<path d="M9.37,24.45,2.9,11.72" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="4.45" stroke-dashoffset="48.2" stroke-dasharray="10.7 8 10.7 8 10.7 14.4" />
+              				<path d="M8.6,82.05,2.25,94.85" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="4.45" stroke-dashoffset="48.2" stroke-dasharray="10.7 8 10.7 8 10.7 14.4" />
+              				<path d="M32.31,82.45l6.47,12.74" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="4.45" stroke-dashoffset="48.2" stroke-dasharray="10.7 8 10.7 8 10.7 14.4" />
               			</g>
               			<g id="long-rays">
-              				<path d="M21.07,21.39V2.25" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="4.45" stroke-dashoffset="36.4" stroke-dasharray="14.2 8 14.2 19.2" />
-              				<path d="M20.61,85.51v19.15" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="4.45" stroke-dashoffset="36.4" stroke-dasharray="14.2 8 14.2 19.2" />
+              				<path d="M21.07,21.39V2.25" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="4.45" stroke-dashoffset="58.65" stroke-dasharray="14.2 8 14.2 8 14.2 19.2" />
+              				<path d="M20.61,85.51v19.15" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="4.45" stroke-dashoffset="58.65" stroke-dasharray="14.2 8 14.2 8 14.2 19.2" />
               			</g>
               			<circle id="pulse-circle" opacity="0" cx="20.85" cy="53.44" r="33" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="4"/>
+
               			<g id="move-circle">
               				<circle cx="-5" cy="25" r="0" fill="#fff" />
               				<circle cx="55" cy="35" r="0" fill="#fff" />
-              				<circle cx="-5" cy="80" r="0" fill="#fff" />
+              				<circle cx="-15" cy="70" r="0" fill="#fff" />
+              				<circle cx="55" cy="75" r="0" fill="#fff" />
+              				<circle cx="25" cy="90" r="0" fill="#fff" />
               			</g>
               		</g>
               	</svg>
@@ -69,12 +72,12 @@
 	<script src = "lib/anime.min.js"></script>
 	<script>
 		var dataMoveCirc = {
-			tX: [-28, 22, -30],
-			tY: [-30, -35, 25],
-			r: [4, 3, 5]
+			tX: [-28, 22, -22, 25, 5],
+			tY: [-30, -35, 20, 25, 35],
+			r: [4, 3, 5, 4, 3]
 		};
 
-		function createRaysAnim(nameTimeLine, del, shortD, longD) {
+		function createRaysAnim(nameTimeLine, del, shortD, toshD, longD, toLgD) {
 
 			nameTimeLine
 				.add({
@@ -111,17 +114,17 @@
 				})
 				.add({
 					targets: '#rays-animation #short-rays > path',
-					strokeDashoffset: [shortD, 0],
+					strokeDashoffset: [shortD, toshD],
   					easing: 'easeOutQuad',
 					duration: 400,
-					offset: del + 150
+					offset: del + 100
 				})
 				.add({
 					targets: '#rays-animation #long-rays > path',
-					strokeDashoffset: [longD, 0],
+					strokeDashoffset: [longD, toLgD],
   					easing: 'easeOutQuad',
 					duration: 400,
-					offset: del + 150
+					offset: del + 100
 				});
 		}
 
@@ -129,11 +132,11 @@
 			RaysStartAnimation = anime.timeline({ 
 										autoplay: true,
 										complete: function() {
-											createRaysAnim(RaysHoverAnimation, 0, 18.7, 22.2);
+											createRaysAnim(RaysHoverAnimation, 0, 37.4, 0, 44.4, 0);
 										} 
 									});
 
-		createRaysAnim(RaysStartAnimation, 3000, 29.4, 36.4);
+		createRaysAnim(RaysStartAnimation, 3000, 48.2, 18.7, 58.65, 22.2);
 
 
 		document.querySelector('.span-header-right').addEventListener("mouseover", function() {
