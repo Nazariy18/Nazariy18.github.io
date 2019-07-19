@@ -74,7 +74,7 @@
 		var dataMoveCirc = {
 			tX: [-28, 22, -22, 25, 5],
 			tY: [-30, -35, 20, 25, 35],
-			r: [4, 3, 5, 4, 3]
+			r: [2, 1, 2.5, 2, 1.5]
 		};
 
 		function createRaysAnim(nameTimeLine, del, shortD, toshD, longD, toLgD) {
@@ -89,10 +89,10 @@
 				.add({
 					targets: '#rays-animation #pulse-circle',
 					r: [25, 53],
-					strokeWidth: [4, 0],
+					strokeWidth: [3, 0],
 					opacity: [{value: 1, duration: 1}, {value: 1}],
   					easing: 'easeOutCubic',
-					duration: 170,
+					duration: 340,
 					offset: del
 				})
 				.add({
@@ -109,21 +109,21 @@
 						return dataMoveCirc.tY[i];
 					}],
   					easing: 'easeOutCubic',
-					duration: 330,
+					duration: 660,
 					offset: del
 				})
 				.add({
 					targets: '#rays-animation #short-rays > path',
 					strokeDashoffset: [shortD, toshD],
   					easing: 'easeOutQuad',
-					duration: 400,
+					duration: 500,
 					offset: del + 100
 				})
 				.add({
 					targets: '#rays-animation #long-rays > path',
 					strokeDashoffset: [longD, toLgD],
   					easing: 'easeOutQuad',
-					duration: 400,
+					duration: 500,
 					offset: del + 100
 				});
 		}
