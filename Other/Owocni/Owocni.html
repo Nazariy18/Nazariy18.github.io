@@ -30,7 +30,9 @@
         <div id="intro" class="container">
           <div class="row">
             <div class="header-right">
-              <span class="span-header-right"><strong>Szybka <br> Wycena</strong></span>
+              <span class="span-header-right">
+              	<strong>Szybka <br> Wycena</strong>
+              </span>
               <div>
               	<svg id="rays-animation" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 41.69 106.88">
               		<g id="start">
@@ -74,10 +76,29 @@
 		var dataMoveCirc = {
 			tX: [-28, 22, -22, 25, 5],
 			tY: [-30, -35, 20, 25, 35],
-			r: [2, 1, 2.5, 2, 1.5]
-		};
+			r: [2, 1.5, 2.5, 2, 1.5]
+		},
+
+		startEnd = false,
+		animFirstTime = false;
+
 
 		function createRaysAnim(nameTimeLine, del, shortD, toshD, longD, toLgD) {
+
+			if(nameTimeLine == RaysStartAnimation) {
+				nameTimeLine
+					.add({
+						targets: '.span-header-right',
+						translateX: [{value: 0, duration: 1},
+								{value: 10, easing: 'linear', duration: 1000},
+								{value: 0, easing: 'easeOutElastic', duration: 800}],
+						scale: [{value: 1, duration: 1},
+								{value: 0.5, easing: 'linear', duration: 1000},
+								{value: 1, easing: 'easeOutElastic', duration: 800}],
+						duration: 340,
+						offset: del - 1000
+					})
+			}
 
 			nameTimeLine
 				.add({
@@ -109,7 +130,7 @@
 						return dataMoveCirc.tY[i];
 					}],
   					easing: 'easeOutCubic',
-					duration: 660,
+					duration: 760,
 					offset: del
 				})
 				.add({
@@ -128,19 +149,31 @@
 				});
 		}
 
-		var RaysHoverAnimation = anime.timeline({ autoplay: false }),
+		var RaysHoverAnimation = anime.timeline({ 
+										autoplay: false,
+										complete: function() {
+											RaysStartAnimation.restart();
+											startEnd = false;
+										} 
+									}),
 			RaysStartAnimation = anime.timeline({ 
 										autoplay: true,
 										complete: function() {
-											createRaysAnim(RaysHoverAnimation, 0, 37.4, 0, 44.4, 0);
+											if (animFirstTime == false) {
+												createRaysAnim(RaysHoverAnimation, 0, 37.4, -14.3, 44.4, -19.2);
+												animFirstTime = true;
+											}
+											startEnd = true;
 										} 
 									});
 
-		createRaysAnim(RaysStartAnimation, 3000, 48.2, 18.7, 58.65, 22.2);
+		createRaysAnim(RaysStartAnimation, 2000, 48.2, 18.7, 58.65, 22.2);
 
 
 		document.querySelector('.span-header-right').addEventListener("mouseover", function() {
-			RaysHoverAnimation.restart();
+			if (startEnd == true) {
+				RaysHoverAnimation.restart();
+			}	
 		});
 		
 	</script>
