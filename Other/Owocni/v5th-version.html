@@ -44,7 +44,7 @@
               			</g>
               			<g id="long-rays">
               				<path d="M21.07,21.39V2.25" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="4.45" stroke-dashoffset="58.65" stroke-dasharray="14.2 8 14.2 8 14.2 19.2" />
-              				<path d="M20.61,85.51v19.15" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="4.45" stroke-dashoffset="58.65" stroke-dasharray="14.2 8 14.2 8 14.2 19.2" />
+              				<path d="M20.61,85.51v19.14" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="4.45" stroke-dashoffset="58.65" stroke-dasharray="14.2 8 14.2 8 14.2 19.2" />
               			</g>
               			<circle id="pulse-circle" opacity="0" cx="20.85" cy="53.44" r="33" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="4"/>
 
@@ -153,6 +153,16 @@
 										complete: function() {
 											createRaysAnim(RaysHoverAnimation, 100, 48.2, 18.7, 58.65, 22.2);
 											animEnd = true;
+											anime({
+												targets: '#long-rays > path',
+												duration: 1,
+												strokeDashoffset: 58.65
+											});
+											anime({
+												targets: '#short-rays > path',
+												duration: 1,
+												strokeDashoffset: 48.2
+											});
 										} 
 									});
 
