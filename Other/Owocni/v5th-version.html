@@ -168,8 +168,17 @@
 
 		createRaysAnim(RaysStartAnimation, 3000, 48.2, 18.7, 58.65, 22.2);
 
+		var objectHovered = document.querySelector('.span-header-right');
 
-		document.querySelector('.span-header-right').addEventListener("mouseenter", function() {
+
+		objectHovered.addEventListener("mouseenter", function() {
+			if (animEnd == true) {
+				RaysHoverAnimation.restart();
+				animEnd = false;
+			}	
+		});
+
+		objectHovered.addEventListener("touchstart", function() {
 			if (animEnd == true) {
 				RaysHoverAnimation.restart();
 				animEnd = false;
