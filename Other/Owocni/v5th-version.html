@@ -92,13 +92,13 @@
 					scale: [{value: 1, duration: 1},
 					{value: 0.5, easing: 'linear', duration: 100},
 					{value: 1, easing: 'easeOutElastic', duration: 800}],
-					offset: del - 100
+					offset: del
 				})
 				.add({
 					targets: '#rays-animation #pulse-circle',
 					opacity: [0, 1],
 					duration: 1,
-					offset: del
+					offset: del + 100
 				})
 				.add({
 					targets: '#rays-animation #pulse-circle',
@@ -107,7 +107,7 @@
 					opacity: [{value: 1, duration: 1}, {value: 1}],
   					easing: 'easeOutCubic',
 					duration: 600,
-					offset: del
+					offset: del + 100
 				})
 				.add({
 					targets: '#rays-animation #move-circle > circle',
@@ -124,21 +124,21 @@
 					}],
   					easing: 'easeOutCubic',
 					duration: 600,
-					offset: del
+					offset: del + 100
 				})
 				.add({
 					targets: '#rays-animation #short-rays > path',
 					strokeDashoffset: [shortD, toshD],
   					easing: 'easeOutQuad',
 					duration: 500,
-					offset: del + 100
+					offset: del + 200
 				})
 				.add({
 					targets: '#rays-animation #long-rays > path',
 					strokeDashoffset: [longD, toLgD],
   					easing: 'easeOutQuad',
 					duration: 500,
-					offset: del + 100
+					offset: del + 200
 				});
 		}
 
@@ -151,18 +151,8 @@
 			RaysStartAnimation = anime.timeline({ 
 										autoplay: true,
 										complete: function() {
-											createRaysAnim(RaysHoverAnimation, 100, 48.2, 18.7, 58.65, 22.2);
+											createRaysAnim(RaysHoverAnimation, 0, 48.2, 18.7, 58.65, 22.2);
 											animEnd = true;
-											anime({
-												targets: '#long-rays > path',
-												duration: 1,
-												strokeDashoffset: 58.65
-											});
-											anime({
-												targets: '#short-rays > path',
-												duration: 1,
-												strokeDashoffset: 48.2
-											});
 										} 
 									});
 
