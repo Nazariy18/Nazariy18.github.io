@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>preloader</title>
+</head>
+<style>
+	.prevenna-loader #main-path-prev {
+		-webkit-animation: drawIn 1.5s ease-in-out 0.5s forwards, fadeOut 0.2s ease-out 2s forwards;
+		        animation: drawIn 1.5s ease-in-out 0.5s forwards, fadeOut 0.2s ease-out 2s forwards;
+	}
+
+	.prevenna-loader #main-path {
+		opacity: 0;
+		-webkit-animation: fadeInP 1s ease-in 2s forwards;
+		        animation: fadeInP 1s ease-in 2s forwards;
+	}
+
+	.prevenna-loader #pl-path-group {
+		-webkit-transform-origin: 144px 138.6px;
+		    -ms-transform-origin: 144px 138.6px;
+		        transform-origin: 144px 138.6px;
+		-webkit-animation: scaleInP 0.2s ease-in-out 2s 2 alternate;
+		        animation: scaleInP 0.2s ease-in-out 2s 2 alternate;
+	}
+
+	.prevenna-loader {
+		animation-delay: 
+		display: block;
+		z-index: 99999999;
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: #3d5588;
+
+		-webkit-animation: changeBgLoad 0.2s ease-in 2s forwards, fadeOut 0.4s ease-out 2.6s forwards;
+		        animation: changeBgLoad 0.2s ease-in 2s forwards, fadeOut 0.4s ease-out 2.6s forwards;
+	}
+
+	.prevenna-loader svg {
+		overflow: visible;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		-webkit-transform: translate(-50%, -50%);
+		    -ms-transform: translate(-50%, -50%);
+		        transform: translate(-50%, -50%);
+
+		width: 800px;;
+	}
+
+
+	@-webkit-keyframes drawIn {
+		to {
+			stroke-dashoffset: 0px;
+		}
+	}
+
+
+	@keyframes drawIn {
+		to {
+			stroke-dashoffset: 0px;
+		}
+	}
+
+	@-webkit-keyframes scaleInP {
+		to {
+			-webkit-transform: scale(1.2, 1.2);
+			        transform: scale(1.2, 1.2);
+		}
+	}
+
+	@keyframes scaleInP {
+		to {
+			-webkit-transform: scale(1.2, 1.2);
+			        transform: scale(1.2, 1.2);
+		}
+	}
+
+	@-webkit-keyframes fadeInP {
+		0% {
+			opacity: 0;
+		}
+		20%, 100% {
+			opacity: 1;
+		}
+	}
+
+	@keyframes fadeInP {
+		0% {
+			opacity: 0;
+		}
+		20%, 100% {
+			opacity: 1;
+		}
+	}
+
+	@-webkit-keyframes fadeOut {
+		to {
+			opacity: 0;
+		}
+	}
+
+	@keyframes fadeOut {
+		to {
+			opacity: 0;
+		}
+	}
+
+	@-webkit-keyframes changeBgLoad {
+		0% {
+			background: #3d5588;
+		}
+		100% {
+			background: #fff;
+		}
+	}
+
+	@keyframes changeBgLoad {
+		0% {
+			background: #3d5588;
+		}
+		100% {
+			background: #fff;
+		}
+	}
+</style>
+<body>
+	<div class="prevenna-loader">
+		<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 288 277.2">
+			<defs>
+				<linearGradient id="linear-gradient-prevenna-loader" x1="88.31" y1="37" x2="165.78" y2="204.86" gradientUnits="userSpaceOnUse">
+					<stop offset="0" stop-color="#3d5588"/>
+					<stop offset="0.04" stop-color="#4c5c82"/>
+					<stop offset="0.16" stop-color="#7b726f"/>
+					<stop offset="0.29" stop-color="#a4845f"/>
+					<stop offset="0.42" stop-color="#c59352"/>
+					<stop offset="0.55" stop-color="#de9f48"/>
+					<stop offset="0.69" stop-color="#f1a741"/>
+					<stop offset="0.84" stop-color="#fbac3c"/>
+					<stop offset="1" stop-color="#ffae3b"/>
+				</linearGradient>
+			</defs>
+			<!--<rect id="bg" width="288" height="277.2" fill="#3d5588"/>-->
+			<g id="pl-path-group">
+				<path id="main-path-prev" d="M85.44,143.79H141c23,0,43.66-20.79,43.66-48.94h0C184.64,70.21,165,45.9,139,45.9H74.15V203.13l29.21,28.17V74h64.86c25.94,0,45.63,24.31,45.63,49h0c0,28.15-20.71,48.94-43.66,48.94H114.65" fill="none" stroke-linejoin="round" stroke-width="4.29" stroke="#ffae3b" stroke-dasharray="889.52" stroke-dashoffset="889.52"/>
+				<path id="main-path" d="M85.44,143.79H141c23,0,43.66-20.79,43.66-48.94h0C184.64,70.21,165,45.9,139,45.9H74.15V203.13l29.21,28.17V74h64.86c25.94,0,45.63,24.31,45.63,49h0c0,28.15-20.71,48.94-43.66,48.94H114.65" fill="none" stroke-linejoin="round" stroke-width="4.29" stroke="url(#linear-gradient-prevenna-loader)"/>
+			</g>
+		</svg>
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+		$('.prevenna-loader #main-path').one("animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd",
+              function(event) {
+    			console.log('end-animation');
+ 		 });
+	</script>
+
+</body>
+</html>
