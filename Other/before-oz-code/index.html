@@ -402,13 +402,13 @@
 					</g>
 				</g>
 			</g>
-			<g opacity="1">
+			<g>
 				<g mask="url(#clip-backPathDown)">
 					<path d="M294.62,140.32v14.9H138.55V144.85" fill="none" stroke="#0085b9" stroke-miterlimit="10" stroke-dasharray="2"/>
 				</g>
 				<polygon id="arrow-backDown" opacity="0" points="-5.52 0 -5.53 -4.15 -1.93 -2.08 1.67 -0.01 -1.92 2.07 -5.51 4.15 -5.52 0" fill="url(#before-oz-code-lg-0)"/>
 			</g>
-			<g opacity="1">
+			<g>
 				<g mask="url(#clip-backPathUp)">
 					<path d="M371.89,56.84v-18H139.59v11" fill="none" stroke="#0085b9" stroke-miterlimit="10" stroke-dasharray="2"/>
 				</g>
@@ -446,7 +446,7 @@
 				duration: 1000,
 				opacity: [0, 1],
 				delay: function(el, i) {
-					return i*1000;
+					return i*1300;
 				},
 				offset: 0
 			})
@@ -456,37 +456,39 @@
 				duration: 1000,
 				opacity: [0, 1],
 				delay: function(el, i) {
-					return i*1000;
+					return i*1300;
 				},
-				offset: 500
+				offset: 0
 			})
 			.add({
 				targets: pathCurves,
 				easing: 'linear',
-				duration: 500,
+				duration: 600,
 				strokeDashoffset: [anime.setDashoffset, 0],
 				delay: function(el, i) {
-					return i*510;
-				}
+					return i*1300;
+				},
+				offset: 900
 			})
 			.add({
 				targets: '#before-oz-code-anim #m-arrows > polygon',
 				easing: 'linear',
-				duration: 500,
+				duration: 600,
 				opacity: { value: 1, duration: 50},
 				translateX: function(el, i) { return pathForArrows[i]('x'); },
 				translateY: function(el, i) { return pathForArrows[i]('y'); },
 				rotate: function(el, i) { return pathForArrows[i]('angle'); },
 				delay: function(el, i) {
-					return i*510;
+					return i*1300;
 				},
-				offset: 6500
+				offset: 900
 			})
 			.add({
 				targets: '#before-oz-code-anim #mask-backPath',
 				easing: 'linear',
 				duration: 4000,
-				strokeDashoffset: [anime.setDashoffset, 0]
+				strokeDashoffset: [anime.setDashoffset, 0],
+				offset: 7400
 			})
 			.add({
 				targets: '#before-oz-code-anim #back-path #arrow-back',
@@ -496,14 +498,14 @@
 				translateX: pathForBack('x'),
 				translateY: pathForBack('y'),
 				rotate: pathForBack('angle'),
-				offset: 9000
+				offset: 7400
 			})
 			.add({
 				targets: '#before-oz-code-anim #mask-backPathUp',
 				easing: 'linear',
 				duration: 2100,
 				strokeDashoffset: [anime.setDashoffset, 0],
-				offset: 10000
+				offset: 8700
 			})
 			.add({
 				targets: '#before-oz-code-anim #arrow-backUp',
@@ -513,14 +515,14 @@
 				translateX: pathForBackUp('x'),
 				translateY: pathForBackUp('y'),
 				rotate: pathForBackUp('angle'),
-				offset: 10000
+				offset: 8700
 			})
 			.add({
 				targets: '#before-oz-code-anim #mask-backPathDown',
 				easing: 'linear',
 				duration: 1600,
 				strokeDashoffset: [anime.setDashoffset, 0],
-				offset: 10500
+				offset: 9200
 			})
 			.add({
 				targets: '#before-oz-code-anim #arrow-backDown',
@@ -530,7 +532,7 @@
 				translateX: pathForBackDown('x'),
 				translateY: pathForBackDown('y'),
 				rotate: pathForBackDown('angle'),
-				offset: 10500
+				offset: 9200
 			});
 		}
 
