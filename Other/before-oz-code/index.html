@@ -151,18 +151,6 @@
 				<linearGradient id="before-oz-code-swatch-89" x1="441.52" y1="109.1" x2="446.7" y2="109.1" xlink:href="#before-oz-code-swatch"/>
 				<linearGradient id="before-oz-code-swatch-90" x1="139.2" y1="148.57" x2="135.93" y2="140.95" xlink:href="#before-oz-code-swatch"/>
 				<linearGradient id="before-oz-code-swatch-91" x1="139.1" y1="44.35" x2="142.37" y2="51.97" xlink:href="#before-oz-code-swatch"/>
-				<path id="backPath" d="M461.88,63.57A39,39,0,0,1,485.5,99.64c0,21.52-17,39-38,39s-38-17.44-38-39c0-22.21-17.22-40.22-38.46-40.22s-38.45,18-38.45,40.22c0,21.34-17,38.64-38,38.64s-38-17.3-38-38.64a38.39,38.39,0,0,0-76.77,0c0,22-17,39.9-38,39.9s-38-17.86-38-39.9a37.88,37.88,0,0,0-75.52-3.79" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="5" stroke-dasharray="766.81" stroke-dashoffset="766.81"/>
-				<path id="backPathUp" d="M371.89,56.84v-18H139.59v11" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-dasharray="261.31" stroke-dashoffset="261.31" stroke-width="5" />
-				<path id="backPathDown" d="M294.62,140.32v14.9H138.55V144.85" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-dasharray="181.34" stroke-dashoffset="181.34" stroke-width="5" />
-				<mask id="clip-backPath">
-					<path id="mask-backPath" d="M461.88,63.57A39,39,0,0,1,485.5,99.64c0,21.52-17,39-38,39s-38-17.44-38-39c0-22.21-17.22-40.22-38.46-40.22s-38.45,18-38.45,40.22c0,21.34-17,38.64-38,38.64s-38-17.3-38-38.64a38.39,38.39,0,0,0-76.77,0c0,22-17,39.9-38,39.9s-38-17.86-38-39.9a37.88,37.88,0,0,0-75.52-3.79" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="5" stroke-dasharray="766.81" stroke-dashoffset="766.81"/>
-				</mask>
-				<mask id="clip-backPathDown">
-					<path id="mask-backPathDown" d="M294.62,140.32v14.9H138.55V144.85" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-dasharray="181.34" stroke-dashoffset="181.34" stroke-width="5" />
-				</mask>
-				<mask id="clip-backPathUp">
-					<path id="mask-backPathUp" d="M371.89,56.84v-18H139.59v11" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-dasharray="261.31" stroke-dashoffset="261.31" stroke-width="5" />
-				</mask>
 			</defs>
 			<g id="main-path">
 				<g id="m-curves">
@@ -180,11 +168,17 @@
 					<polygon opacity="0" points="-5.52 0 -5.53 -4.15 -1.93 -2.08 1.67 -0.01 -1.92 2.07 -5.51 4.15 -5.52 0" fill="url(#before-oz-code-lg-0)"/>
 				</g>
 			</g>
-			<g id="back-path" opacity="0.2">
-				<g mask="url(#clip-backPath)">
+			<g id="back-path" opacity="0">
+				<g opacity="0.2">
 					<path d="M461.88,63.57A39,39,0,0,1,485.5,99.64c0,21.52-17,39-38,39s-38-17.44-38-39c0-22.21-17.22-40.22-38.46-40.22s-38.45,18-38.45,40.22c0,21.34-17,38.64-38,38.64s-38-17.3-38-38.64a38.39,38.39,0,0,0-76.77,0c0,22-17,39.9-38,39.9s-38-17.86-38-39.9a37.88,37.88,0,0,0-75.52-3.79" fill="none" stroke="#0085b9" stroke-miterlimit="10" stroke-dasharray="2"/>
+					<polygon points="28.89 90.8 33.01 91.29 30.53 94.61 28.05 97.94 26.41 94.12 24.77 90.31 28.89 90.8" fill="#2a2162"/>
 				</g>
-				<polygon id="arrow-back" opacity="0" points="-5.52 0 -5.53 -4.15 -1.93 -2.08 1.67 -0.01 -1.92 2.07 -5.51 4.15 -5.52 0" fill="#2a2162"/>
+				<g>
+					<path d="M294.62,140.32v14.9H138.55V144.85" fill="none" stroke="#0085b9" stroke-miterlimit="10" stroke-dasharray="2"/>
+					<polygon id="arrow-backDown" points="134.4 147.06 142.7 147.06 138.55 139.83 134.4 147.06" fill="url(#before-oz-code-swatch-90)"/>
+					<path d="M371.89,56.84v-18H139.59v11" fill="none" stroke="#0085b9" stroke-miterlimit="10" stroke-dasharray="2"/>
+					<polygon points="143.9 45.86 135.6 45.86 139.75 53.09 143.9 45.86" fill="url(#before-oz-code-swatch-91)"/>
+				</g>
 			</g>
 			<g id="text-lines">
 				<text opacity="0" transform="translate(42.58 164.35)" font-size="8" fill="#0085b9" font-family="Arial, sans-serif">Inspect error <tspan x="0" y="9.6">report</tspan></text>
@@ -402,18 +396,6 @@
 					</g>
 				</g>
 			</g>
-			<g>
-				<g mask="url(#clip-backPathDown)">
-					<path d="M294.62,140.32v14.9H138.55V144.85" fill="none" stroke="#0085b9" stroke-miterlimit="10" stroke-dasharray="2"/>
-				</g>
-				<polygon id="arrow-backDown" opacity="0" points="-5.52 0 -5.53 -4.15 -1.93 -2.08 1.67 -0.01 -1.92 2.07 -5.51 4.15 -5.52 0" fill="url(#before-oz-code-lg-0)"/>
-			</g>
-			<g>
-				<g mask="url(#clip-backPathUp)">
-					<path d="M371.89,56.84v-18H139.59v11" fill="none" stroke="#0085b9" stroke-miterlimit="10" stroke-dasharray="2"/>
-				</g>
-				<polygon id="arrow-backUp" opacity="0" points="-5.52 0 -5.53 -4.15 -1.93 -2.08 1.67 -0.01 -1.92 2.07 -5.51 4.15 -5.52 0" fill="url(#before-oz-code-lg-0)"/>
-			</g>
 			<text transform="translate(185.36 21.01)" font-size="14" fill="#1170aa" font-family="Arial, sans-serif">BEFORE OZ CODE</text>
 		</svg>
 	</div>
@@ -428,9 +410,6 @@
 				bcTextLines = document.querySelectorAll('#before-oz-code-anim #text-lines > text'),
 				pathCurves = document.querySelectorAll('#before-oz-code-anim #m-curves > path');
 
-			var pathForBack = anime.path('#before-oz-code-anim #backPath');
-			var pathForBackUp = anime.path('#before-oz-code-anim #backPathUp');
-			var pathForBackDown = anime.path('#before-oz-code-anim #backPathDown');
 			var pathForArrows = [];
 
 			for (var i = 0; i < pathCurves.length; i++) {
@@ -443,20 +422,20 @@
 			.add({
 				targets: bcIcons,
 				easing: 'easeInOutSine',
-				duration: 1000,
+				duration: 600,
 				opacity: [0, 1],
 				delay: function(el, i) {
-					return i*1300;
+					return i*600;
 				},
 				offset: 0
 			})
 			.add({
 				targets: bcTextLines,
 				easing: 'easeInOutSine',
-				duration: 1000,
+				duration: 600,
 				opacity: [0, 1],
 				delay: function(el, i) {
-					return i*1300;
+					return i*600;
 				},
 				offset: 0
 			})
@@ -466,9 +445,9 @@
 				duration: 600,
 				strokeDashoffset: [anime.setDashoffset, 0],
 				delay: function(el, i) {
-					return i*1300;
+					return i*600;
 				},
-				offset: 900
+				offset: 100
 			})
 			.add({
 				targets: '#before-oz-code-anim #m-arrows > polygon',
@@ -479,60 +458,17 @@
 				translateY: function(el, i) { return pathForArrows[i]('y'); },
 				rotate: function(el, i) { return pathForArrows[i]('angle'); },
 				delay: function(el, i) {
-					return i*1300;
+					return i*600;
 				},
-				offset: 900
+				offset: 100
 			})
 			.add({
-				targets: '#before-oz-code-anim #mask-backPath',
-				easing: 'linear',
-				duration: 4000,
+				targets: '#before-oz-code-anim #back-path',
+				easing: 'easeInOutSine',
+				opacity: [0, 1],
+				duration: 600,
 				strokeDashoffset: [anime.setDashoffset, 0],
-				offset: 7400
-			})
-			.add({
-				targets: '#before-oz-code-anim #back-path #arrow-back',
-				easing: 'linear',
-				duration: 4000,
-				opacity: {value: 1, duration: 50},
-				translateX: pathForBack('x'),
-				translateY: pathForBack('y'),
-				rotate: pathForBack('angle'),
-				offset: 7400
-			})
-			.add({
-				targets: '#before-oz-code-anim #mask-backPathUp',
-				easing: 'linear',
-				duration: 2100,
-				strokeDashoffset: [anime.setDashoffset, 0],
-				offset: 8700
-			})
-			.add({
-				targets: '#before-oz-code-anim #arrow-backUp',
-				easing: 'linear',
-				duration: 2100,
-				opacity: {value: 1, duration: 50},
-				translateX: pathForBackUp('x'),
-				translateY: pathForBackUp('y'),
-				rotate: pathForBackUp('angle'),
-				offset: 8700
-			})
-			.add({
-				targets: '#before-oz-code-anim #mask-backPathDown',
-				easing: 'linear',
-				duration: 1600,
-				strokeDashoffset: [anime.setDashoffset, 0],
-				offset: 9200
-			})
-			.add({
-				targets: '#before-oz-code-anim #arrow-backDown',
-				easing: 'linear',
-				duration: 1600,
-				opacity: {value: 1, duration: 50},
-				translateX: pathForBackDown('x'),
-				translateY: pathForBackDown('y'),
-				rotate: pathForBackDown('angle'),
-				offset: 9200
+				offset: 3600
 			});
 		}
 
