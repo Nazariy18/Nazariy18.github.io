@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>lock-anim</title>
+	<style>
+		body {
+			padding: 0;
+			margin: 0;
+		}
+
+		svg {
+			overflow: visible;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<svg id="lock-animation" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1029.65 915.4">
+			<defs>
+				<g id="zero-one">
+					<g class="zero-part1">
+						<polygon points="3.99 5 3.99 14.48 1 17.48 0 16.48 0 3.5 3.99 5" fill="#928e8d"/>
+						<polygon points="0 32.46 0 19.48 1 18.48 3.99 21.48 3.99 30.96 0 32.46" fill="#928e8d"/>
+						<path d="M17.48,36h-15A3.19,3.19,0,0,1,0,33.46L4,32H16Z" fill="#928e8d"/>
+						<path d="M16,4H4l-4-1.5A3.2,3.2,0,0,1,2.55,0H17.48Z" fill="#928e8d"/>
+					</g>
+					<g>
+						<path d="M17,14.48V4l1.5-4A3.2,3.2,0,0,1,21,2.5v14l-1,1Z" fill="#928e8d"/>
+						<path d="M20,18.48l1,1v14A3.19,3.19,0,0,1,18.48,36L17,32V21.47Z" fill="#928e8d"/>
+					</g>
+				</g>
+				<g id="one-zero">
+					<g class="zero-part2">
+						<polygon points="3.99 5 3.99 14.49 1 17.48 0 16.48 0 3.5 3.99 5" fill="#928e8d"/>
+						<polygon points="0 32.47 0 19.48 1 18.48 3.99 21.48 3.99 30.96 0 32.47" fill="#928e8d"/>
+						<path d="M17.48,36h-15A3.19,3.19,0,0,1,0,33.46L4,32H16Z" fill="#928e8d"/>
+						<path d="M16,4H4l-4-1.5A3.21,3.21,0,0,1,2.55,0H17.48Z" fill="#928e8d"/>
+					</g>
+					<g>
+						<path d="M17,14.49V4l1.5-4A3.21,3.21,0,0,1,21,2.5v14l-1,1Z" fill="#928e8d"/>
+						<path d="M20,18.48l1,1v14A3.19,3.19,0,0,1,18.48,36L17,32V21.48Z" fill="#928e8d"/>
+					</g>
+				</g>
+			</defs>
+			<g id="zeros-group">
+			</g>
+			<g id="ones-group">
+			</g>
+			<path id="lock-icon" opacity="0" d="M655,375.93V367.7a161.13,161.13,0,1,0-322.25,0v8.23H314.38V619.81a60.84,60.84,0,0,0,60.84,60.83H612.45a60.84,60.84,0,0,0,60.84-60.83V375.93ZM360.37,367.7a133.47,133.47,0,0,1,266.93,0v8.23H360.37ZM511.69,539.18v75.31H476V539.18a39.45,39.45,0,1,1,35.71,0" fill="#3d4a75"/>
+			<g id="lock-out">
+				<path d="M375.22,680.64a60.84,60.84,0,0,1-60.84-60.83V375.93H673.29V619.81a60.84,60.84,0,0,1-60.84,60.83H375.22" fill="none" stroke="#3d4a75" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke-dasharray="1275.05" stroke-dashoffset="1275.05"></path>
+				<path d="M476,539.18v75.31h35.71V539.18a39.45,39.45,0,1,0-35.71,0Z" fill="none" stroke="#3d4a75" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke-dasharray="397.16" stroke-dashoffset="397.16"></path>
+				<path d="M360.37,375.93V367.7a133.47,133.47,0,0,1,266.93,0v8.23H655V367.7a161.13,161.13,0,1,0-322.25,0v8.23" fill="none" stroke="#3d4a75" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke-dasharray="986.42" stroke-dashoffset="986.42"></path>
+			</g>
+		</svg>
+	</div>
+
+	<script src="lib/gsap.min.js"></script>
+	<script>
+		function randomInteger(min, max) {
+			let rand = min - 0.5 + Math.random() * (max - min + 1);
+			return Math.round(rand);
+		}
+
+		function createZeros(count, fromElem, toGroup) {
+
+			let massEl = [];
+
+			for (let i = 0; i < count; i++) {
+				let usePart = document. createElementNS("http://www.w3.org/2000/svg", "use");
+				usePart.setAttribute("href", fromElem);
+				usePart.setAttribute("transform", 'translate(' + randomInteger(0, 1020) + ', ' + randomInteger(0, 910) + ')');
+				toGroup.appendChild(usePart);
+
+				massEl.push(usePart);  
+			}
+
+			return massEl;
+		}
+
+		function moveElement(element) {
+			let radius = randomInteger(150, 250);
+			let angle = randomInteger(0, 360);
+			let xPosition = gsap.getProperty(element, "x") + radius * Math.cos(angle*Math.PI/180);
+			let yPosition = gsap.getProperty(element, "y") + radius * Math.sin(angle*Math.PI/180);
+			let duration = randomInteger(80, 110)/10;
+			let startTime = -randomInteger(100, 800)/100;
+
+			gsap.to(element, duration, {x: xPosition, y: yPosition, yoyo: true, ease: 'none', repeat: -1, delay: startTime});
+		}
+
+		function blinkElements(elements, startTime) {
+			gsap.fromTo(elements, 0.5, {opacity: 1}, {opacity: 0, yoyo: true, ease: 'none', repeat: -1, repeatDelay: 1.5, delay: startTime});
+		}
+
+
+		function mainLockAnimation() {
+
+			let zeroElements = createZeros(60, '#zero-one', document.querySelector('#lock-animation #zeros-group'));
+			let oneElements = createZeros(60, '#one-zero', document.querySelector('#lock-animation #ones-group'));
+
+			zeroElements.forEach(function(elem) {
+				moveElement(elem);
+				blinkElements('#lock-animation #zero-one .zero-part1', 0);
+			});
+			oneElements.forEach(function(elem) {
+				moveElement(elem);
+				blinkElements('#lock-animation #one-zero .zero-part2', 1.9);
+			});
+
+			let lockIconAnim = gsap.timeline({defaults: { ease: 'sine.inOut' }, delay: 1});
+
+				lockIconAnim
+					.to('#lock-animation #lock-out > path', 1, {strokeDashoffset: 0, stagger: 1}, 0)
+					.to('#lock-animation #lock-icon', 1, {opacity: 1});
+
+		}
+
+		mainLockAnimation();
+
+
+
+
+
+
+	</script>
+
+</body>
+</html>
