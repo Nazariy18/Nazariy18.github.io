@@ -1,0 +1,51 @@
+<svg version="1.1" id="cust-loader1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="50 50 400 400" enable-background="new 0 0 500 500" xml:space="preserve">
+ <defs>
+	 	<filter id="filter" x="-20%" y="-20%" width="140%" height="140%" filterUnits="objectBoundingBox" primitiveUnits="userSpaceOnUse" color-interpolation-filters="linearRGB">
+	 		<feDropShadow stdDeviation="4 4" in="SourceGraphic" dx="0" dy="0" flood-color="#000000" flood-opacity="0.5" x="0%" y="0%" width="100%" height="100%" result="dropShadow"/>
+	 	</filter>
+	 </defs>
+<rect id="bg" x="0" y="0" fill="#B6D6F2" width="500" height="500"/>
+<g id="rect-group">
+		<rect id="rect-loader5" filter="url(#filter)" x="160" y="160" fill="#E83338" stroke="#E83338" stroke-width="2" stroke-miterlimit="10" width="180" height="180"/>
+		<rect id="rect-loader4" filter="url(#filter)" x="170" y="170" fill="#E83338" stroke="#E83338" stroke-width="2" stroke-miterlimit="10" width="160" height="160"/>
+		<rect id="rect-loader3" filter="url(#filter)" x="180" y="180" fill="#E83338" stroke="#E83338" stroke-width="2" stroke-miterlimit="10" width="140" height="140"/>
+		<rect id="rect-loader2" filter="url(#filter)" x="190" y="190" fill="#E83338" stroke="#E83338" stroke-width="2" stroke-miterlimit="10" width="120" height="120"/>
+		<rect id="rect-loader1" filter="url(#filter)" x="200" y="200" fill="#E83338" stroke="#E83338" stroke-width="2" stroke-miterlimit="10" width="100" height="100"/>
+</g>
+<style> 
+	#cust-loader1 #rect-group #rect-loader1 {
+		transform-origin: 250px 250px;
+		animation: rotateRect 2.2s ease-in-out 0s infinite;
+	}
+	#cust-loader1 #rect-group #rect-loader2 {
+		transform-origin: 250px 250px;
+		animation: rotateRect 2.2s ease-in-out 0.16s infinite;
+	}
+	#cust-loader1 #rect-group #rect-loader3 {
+		transform-origin: 250px 250px;
+		animation: rotateRect 2.2s ease-in-out 0.30s infinite;
+	}
+	#cust-loader1 #rect-group #rect-loader4 {
+		transform-origin: 250px 250px;
+		animation: rotateRect 2.2s ease-in-out 0.41s infinite;
+	}
+	#cust-loader1 #rect-group #rect-loader5 {
+		transform-origin: 250px 250px;
+		animation: rotateRect 2.2s ease-in-out 0.50s infinite;
+	}
+
+
+	@keyframes rotateRect {
+		0% {
+			transform: rotate(0deg);
+		}
+		90% {
+			transform: rotate(90deg);
+		}
+		100% {
+			transform: rotate(90deg);
+		}
+	}
+</style>
+</svg>
