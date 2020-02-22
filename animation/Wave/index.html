@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>wave</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			background: #000; //#010626;
+		}
+
+		svg {
+			overflow: visible;
+
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+
+			width: 100%;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<svg id="wave-anim" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 416.69">
+			<defs>
+				<linearGradient id="grad-wave" gradientUnits="objectBoundingBox" x1="0%" y1="50%" x2="100%" y2="50%" > 
+					<stop stop-color="#FFF351"/>
+					<stop offset="0.17" stop-color="#ED3248"/>
+					<stop offset="0.29" stop-color="#FC3293"/>
+					<stop offset="0.4" stop-color="#EC3CFB"/>
+					<stop offset="0.5" stop-color="#B53CFF"/>
+					<stop offset="0.61" stop-color="#6838F3"/>
+					<stop offset="0.73" stop-color="#3992FB"/>
+					<stop offset="0.86" stop-color="#0A8CFF"/>
+					<stop offset="1" stop-color="#20FD79"/>
+				</linearGradient>
+			</defs>
+			<!--<path d="M0,210L311,210" fill="none" stroke-width="4" stroke="#FFF351"/>
+			<path d="M1609,210L1920,210" fill="none" stroke-width="4" stroke="#20FD79"/>-->
+
+			<g id="waves">
+				<path d="M0,210L1920,210" fill="none" stroke="url(#grad-wave)"/>
+				<path d="M0,210L1920,210" fill="none" stroke="url(#grad-wave)"/>
+				<path d="M0,210L1920,210" fill="none" stroke="url(#grad-wave)"/>
+				<path d="M0,210L1920,210" fill="none" stroke="url(#grad-wave)"/>
+				<path d="M0,210L1920,210" fill="none" stroke="url(#grad-wave)"/>
+				<path d="M0,210L1920,210" fill="none" stroke="url(#grad-wave)"/>
+				<path d="M0,210L1920,210" fill="none" stroke="url(#grad-wave)"/>
+				<path d="M0,210L1920,210" fill="none" stroke="url(#grad-wave)"/>
+				<path d="M0,210L1920,210" fill="none" stroke="url(#grad-wave)"/>
+				<path d="M0,210L1920,210" fill="none" stroke="url(#grad-wave)"/>
+				<path d="M0,210L1920,210" fill="none" stroke="url(#grad-wave)"/>
+				<path d="M0,210L1920,210" fill="none" stroke="url(#grad-wave)"/>
+				<path d="M0,210L1920,210" fill="none" stroke="url(#grad-wave)"/>
+				<path d="M0,210L1920,210" fill="none" stroke="url(#grad-wave)"/>
+				<path d="M0,210L1920,210" fill="none" stroke="url(#grad-wave)"/>
+			</g>
+		</svg>
+	</div>
+
+	<script>
+
+	function getXposition(startX, endX) {
+		let xs = [];
+		for (var i = startX; i <= endX; i++) {
+			xs.push(i);
+		}
+
+		return xs;
+	}
+
+	function animateWave() {
+
+		let wavePathes = document.querySelectorAll('#wave-anim #waves > path');
+
+		let xPosition = getXposition(310, 1610);
+		let A = 90, 
+			w0 = 0.02,
+			w1 = 0.005, 
+			fi = -Math.PI + 370/Math.PI,
+			m = 1,
+			t = 0;
+
+
+		function animate() {
+
+			for (var i = 1; i < 16; i++) {
+
+
+				let points = xPosition.map( x => {
+					//let y = (1 - (16 - i)/16) * A * (1 + m * Math.cos(w1 * x + fi)) * Math.cos(w0 * x + t) + 210;
+					let y = (1 - (16 - i)/16) * A * (1 + m * Math.cos(w1 * x + fi)) * Math.cos(w0 * x + t + i/7) + 210;
+					return [x, y];
+				});
+
+				let path = 'M' + points.map(p => {
+					return p[0] + ',' + p[1];
+				}).join('L');
+
+				wavePathes[i-1].setAttribute('d', path)
+			}
+
+			t -= 0.04;
+			//fi -= 0.01;
+
+			requestAnimationFrame(animate)
+		}
+
+		animate();
+	}
+
+	animateWave();
+
+
+	</script>
+
+</body>
+</html>
