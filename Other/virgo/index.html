@@ -2,6 +2,41 @@
 <html>
 <head>
 	<title>virgo-hero-anim</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+		}
+
+		@font-face {
+			font-family: Roboto-Regular;
+			src: url(fonts/Roboto-Regular.ttf);
+		}
+
+		.row {
+			margin-right: 15px;
+			margin-left: 15px;
+		}
+		.svg-con {
+			margin: 0 auto;
+		}
+		#virgo-hero {
+			overflow: visible;
+		}
+
+
+		.icons-text {
+			text-align: center;
+			background-color: #fff;
+			color: #00abc7;
+			border-radius: 20px;
+			font-family: 'Roboto-Regular', sans-serif;
+			font-size: 36px;
+			padding: 20px;
+		}
+
+
+	</style>
 </head>
 <body>
 	<div class="row">
@@ -18,9 +53,19 @@
 					<linearGradient id="linear-gradient-4" x1="893.55" y1="423.75" x2="1214.32" y2="423.75" xlink:href="#linear-gradient"/>
 					<linearGradient id="linear-gradient-5" x1="835.86" y1="423.75" x2="1195.1" y2="423.75" xlink:href="#linear-gradient"/>
 					<linearGradient id="linear-gradient-6" x1="765.86" y1="423.75" x2="1165.1" y2="423.75" xlink:href="#linear-gradient"/>
+
 					<filter id="filter-icon-shadow" x="-40%" y="-40%" width="180%" height="180%" filterUnits="objectBoundingBox" primitiveUnits="userSpaceOnUse" color-interpolation-filters="linearRGB">
-						<feDropShadow stdDeviation="15 15" in="blur" dx="0" dy="20" flood-color="#020202" flood-opacity="0.2" x="0%" y="0%" width="100%" height="100%" result="dropShadow"/>
+						<feGaussianBlur in="SourceAlpha" stdDeviation="15"/>
+						<feOffset dx="0" dy="20" result="offsetblur"/>
+						<feComponentTransfer>
+							<feFuncA type="linear" slope="0.12"/>
+						</feComponentTransfer>
+						<feMerge> 
+							<feMergeNode/>
+							<feMergeNode in="SourceGraphic"/>
+						</feMerge>
 					</filter>
+
 					<g class="byPathes">
 						<path d="M1829,128.35c319,85.5,549.14,329.61,549.14,617.4s-230.19,531.89-549.14,617.4" />
 						<path d="M1039.27,284.91C837.05,373,699.52,546.3,699.52,745.75c0,198.39,136.08,371,336.54,459.43" />
@@ -37,7 +82,7 @@
 					<path d="M1244.13,95.75c-441.83,0-800,291-800,650s358.17,650,800,650" fill="none" stroke-width="1.54" opacity="0.4" stroke="url(#linear-gradient-6)" />
 				</g>
 				<g id="icons">
-					<g id="icon-part1" class="icon-part" filter="url(#filter-icon-shadow)">
+					<g id="icon-part1" opacity="0" class="icon-part" filter="url(#filter-icon-shadow)">
 						<circle class="pulse-circ" cx="500" cy="500" r="75" fill="#00abc7"/>
 						<circle cx="500" cy="500" r="76" fill="#fff"/>
 						<g>
@@ -51,7 +96,7 @@
 							<path d="M499.6,546.18A20.71,20.71,0,0,1,487.2,542,47.27,47.27,0,0,1,468,503.8a21.53,21.53,0,0,1,17.26-21.06l4-.4a3.61,3.61,0,0,1,3.91,3.27c0,.11,0,.23,0,.35a3.53,3.53,0,0,1-2.4,3.38l-4.14.47a14.28,14.28,0,0,0-11.46,14,40.07,40.07,0,0,0,16.28,32.43,13.48,13.48,0,0,0,15.94.24A40.2,40.2,0,0,0,524,503.92a14.33,14.33,0,0,0-14.26-14.4h-9.92a4.51,4.51,0,0,1-4.52-4.5h0v-2.7h14.42a21.42,21.42,0,0,1,21.48,21.13A47.29,47.29,0,0,1,512,542a20.71,20.71,0,0,1-12.4,4.15" fill="#666" fill-rule="evenodd"/>
 						</g>
 					</g>
-					<g id="icon-part2" class="icon-part" filter="url(#filter-icon-shadow)">
+					<g id="icon-part2" opacity="0" class="icon-part" filter="url(#filter-icon-shadow)">
 						<circle class="pulse-circ" cx="500" cy="500" r="75" fill="#00abc7"/>
 						<circle cx="500" cy="500" r="76" fill="#fff"/>
 						<g>
@@ -59,7 +104,7 @@
 							<path d="M480.19,507.37l-4.94-4.08-10.63-1.2,7.43,3.94-12.33-1.1,7.89,4.5,10.32,1.68,14.4.45Zm47.6,4.2-10.49-5.41-1.88-3.68L510,497.86l-6.32-2.69.4-2.6-2.51-3.34-7-.86,4.71-2.14-5.05-4-1.59-3.89L489,476.9l-3,2.58.74,2.75-4.52.26,3.24,2L478.63,487l4.1,1.13.27,2.6L479.43,492l-5.54,3,4.86-.09-3.88,2.83-6.12,2.1,6.11.15,3.57,1.36,2.62,2.7,5.22,1.78-.12-3.51,10,6.77-.43-4.48,9.32,2.24,7.7,3.43Zm18.85,0-5.31-5.52-5.8-3.86,2.55-1.32-5.17-4.67.66-2.52-3.2-1.47-2.28-2.5-3.06-.93-1.8-2.47-4.64-2.06-2.46,1.61,1.5,2.39-2,.84,2.38,1.35-.51,3.06,2.24,1.35-4.37,1.68,4.6,4.09,6.22,1.76,1.43,3.72,6,0,4.44,2.77,8.5,2.66Z" fill="#fff" fill-rule="evenodd"/>
 						</g>
 					</g>
-					<g id="icon-part3" class="icon-part" filter="url(#filter-icon-shadow)">
+					<g id="icon-part3" opacity="0" class="icon-part" filter="url(#filter-icon-shadow)">
 						<circle class="pulse-circ" cx="500" cy="500" r="75" fill="#00abc7"/>
 						<circle cx="500" cy="500" r="76" fill="#fff"/>
 						<g>
@@ -71,7 +116,7 @@
 							<path d="M516.35,529.92s3.5.82,5.8,9.92" fill="none" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.48"/>
 						</g>
 					</g>
-					<g id="icon-part4" class="icon-part" filter="url(#filter-icon-shadow)">
+					<g id="icon-part4" opacity="0" class="icon-part" filter="url(#filter-icon-shadow)">
 						<circle class="pulse-circ" cx="500" cy="500" r="75" fill="#00abc7"/>
 						<circle cx="500" cy="500" r="76" fill="#00abc7"/>
 						<g>
@@ -92,11 +137,154 @@
 					</g>
 				</g>
 				<g>
-					<image id="bottle" opacity="1" width="484" height="1366" transform="translate(1192.13 160.75)" xlink:href="virgo-bottle.png" />
+					<image id="bottle" opacity="0" width="484" height="1366" transform="translate(1192.13 160.75)" xlink:href="virgo-bottle.png" />
 					<path d="M1422.13,1411.75c56.33,0,102-130.29,102-291s-45.67-291-102-291-102,130.28-102,291S1365.8,1411.75,1422.13,1411.75Z" fill-opacity="0" fill-rule="evenodd"/>
+				</g>
+				<g filter="url(#filter-icon-shadow)" id="text-elements">
+					<g id="icon-part1-text">
+						<foreignObject x="250" y="590" width="500" height="100%">
+							<div class="icons-text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+							</div>
+						</foreignObject>
+					</g>
+					<g id="icon-part2-text">
+						<foreignObject x="250" y="590" width="500" height="100%">
+							<div class="icons-text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+							</div>
+						</foreignObject>
+					</g>
+					<g id="icon-part3-text">
+						<foreignObject x="250" y="590" width="500" height="100%">
+							<div class="icons-text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+							</div>
+						</foreignObject>
+					</g>
+					<g id="icon-part4-text">
+						<foreignObject x="250" y="590" width="500" height="100%">
+							<div class="icons-text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+							</div>
+						</foreignObject>
+					</g>
 				</g>
 			</svg>
 		</div>
 	</div>
+
+	<style>
+		#virgo-hero #bottle {
+			animation: fadeIn 1s linear 0.5s forwards;
+		}
+		#virgo-hero #icons > g {
+			cursor: pointer;
+		}
+		#virgo-hero #icons .pulse-circ {
+			transform-origin: 500px 500px;
+			opacity: 0;
+		}
+		#virgo-hero #icons > g:hover .pulse-circ {
+			animation: pulseCirc 1s ease-out 0s forwards;
+		}
+		#virgo-hero #text-elements > g {
+			opacity: 0;
+			pointer-events: none;
+		}
+		
+		@keyframes fadeIn {
+			to {
+				opacity: 1;
+			}
+		}
+
+		@keyframes pulseCirc {
+			0% {
+				opacity: 1;
+				transform: scale(0.5, 0.5);
+			}
+			100% {
+				opacity: 0;
+				transform: scale(3, 3);
+			}
+		}
+	</style>
+
+	<script src="lib/gsap.min.js"></script>
+	<script src="lib/MotionPathPlugin.min.js"></script>
+	<script>
+
+		function moveHeroIcons(elem, byPath, del) {
+
+			gsap.set(elem, {opacity: 1}); 
+
+			let anim = gsap.to(
+					[elem, '#' + elem.id + '-text'], 
+					100, 
+					{ 
+							motionPath: { 
+								path: byPath, 
+								offsetX: -500, 
+								offsetY: -500
+							}, 
+						ease: "none",  
+						yoyo: true, 
+						repeat: -1,
+						delay: del
+					}); 
+
+			return anim;
+		}
+
+		let movedIcons = document.querySelectorAll('#virgo-hero .icon-part');
+		let movedPathes = document.querySelectorAll('#virgo-hero .byPathes > path');
+		let startPoints = [-70, -130, -160, -40];
+
+		let iconTimelines = [];
+		let idSvg = '#virgo-hero';
+
+		function setAllHidden(arr) {
+			for (var i = 0; i < arr.length; i++) {
+				let id = '#' + arr[i].id + '-text';
+				gsap.set(id, {opacity: 0});
+				iconTimelines[i].play();
+			}
+		}
+
+		function getNumbIcon(elem) {
+			for (var i = 0; i < movedIcons.length; i++) {
+				if (movedIcons[i] == elem) {
+					return i;
+				}
+			}
+		}
+
+		function showText(event) {
+			event.stopPropagation();
+			setAllHidden(movedIcons);
+
+			let id = '#' + this.id + '-text';
+			let numEl = getNumbIcon(this);
+
+			gsap.set(id, {opacity: 1});
+			iconTimelines[numEl].pause();
+		}
+
+
+		for (var i = 0; i < movedIcons.length; i++) {
+			iconTimelines[i] = moveHeroIcons(movedIcons[i], movedPathes[i], startPoints[i]);
+			movedIcons[i].addEventListener("click", showText);
+		}
+
+		document.addEventListener("click", function() {
+			setAllHidden(movedIcons);
+		});
+
+		gsap.fromTo(idSvg + ' #icons', 1.5, {scale: 0, svgOrigin: '1434.1px 763.9px'}, {scale: 1, delay: 1.5});
+
+
+	</script>
+
 </body>
 </html>
