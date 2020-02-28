@@ -175,13 +175,15 @@
 
 			let anim = gsap.to(
 					[elem, '#' + elem.id + '-text'], 
-					100, 
+					50, 
 					{ 
-							motionPath: { 
+						/*motionPath: { 
 								path: byPath, 
 								offsetX: -500, 
 								offsetY: -500
-							}, 
+							}, */
+						x: 500, 
+						y: 200,
 						ease: "none",  
 						yoyo: true, 
 						repeat: -1,
@@ -202,6 +204,8 @@
 		for (var i = 0; i < movedIcons.length; i++) {
 			iconTimelines[i] = moveHeroIcons(movedIcons[i], movedPathes[i], startPoints[i]);
 		}
+
+		//gsap.fromTo(idSvg + ' #icons', 1.5, {scale: 0, svgOrigin: '1434.1px 763.9px'}, {scale: 1, delay: 1.5});
 
 	</script>
 
