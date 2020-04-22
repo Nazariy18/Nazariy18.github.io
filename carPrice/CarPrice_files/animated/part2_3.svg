@@ -1,0 +1,157 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 422 332">
+  <path d="M146.48,296.54c25.07,3.41,41.7,9.41,41.7,16.24C188.18,323.39,148,332,98.46,332S8.75,323.39,8.75,312.78c0-6.63,15.69-12.48,39.55-15.94l50.16,17.43Z" fill="#e9e8e8"/>
+  <g id="stars">
+    <polygon points="260.79 124.45 265.6 134.18 276.34 135.75 268.56 143.32 270.4 154.02 260.79 148.97 251.18 154.02 253.02 143.32 245.24 135.75 255.99 134.18 260.79 124.45" fill="#fedd39"/>
+    <polygon points="295.17 102.09 299.97 111.82 310.72 113.38 302.94 120.96 304.78 131.66 295.17 126.61 285.56 131.66 287.39 120.96 279.62 113.38 290.36 111.82 295.17 102.09" fill="#fedd39"/>
+    <polygon points="330.64 87.3 335.45 97.04 346.19 98.6 338.42 106.17 340.25 116.88 330.64 111.82 321.03 116.88 322.87 106.17 315.09 98.6 325.84 97.04 330.64 87.3" fill="#fedd39"/>
+    <polygon points="368.91 78.51 373.72 88.24 384.46 89.8 376.69 97.38 378.52 108.08 368.91 103.03 359.3 108.08 361.14 97.38 353.36 89.8 364.11 88.24 368.91 78.51" fill="#fedd39"/>
+    <polygon points="406.45 70.03 411.26 79.76 422 81.33 414.23 88.9 416.06 99.6 406.45 94.55 396.84 99.6 398.68 88.9 390.9 81.33 401.65 79.76 406.45 70.03" fill="#fedd39"/>
+  </g>
+  <path id="loc-icon" d="M96.17,0a16.27,16.27,0,0,0-15,22.57l15,23.19,14.93-23A16.27,16.27,0,0,0,96.17,0Zm0,23.1A6.84,6.84,0,1,1,103,16.26,6.84,6.84,0,0,1,96.17,23.1Z" fill="#989898" opacity="0.5"/>
+  <path id="mess-icon" d="M371.8,208.09c-18.83,0-34.09,12.31-34.09,27.5s15.26,27.5,34.09,27.5a42,42,0,0,0,5.06-.31l12.44,11.79V259.19c9.93-4.81,16.58-13.58,16.58-23.6C405.88,220.4,390.62,208.09,371.8,208.09Zm15.37,39.69h-29.9a3.55,3.55,0,1,1,0-7.09h29.9a3.55,3.55,0,1,1,0,7.09Zm0-15.73h-29.9a3.55,3.55,0,1,1,0-7.09h29.9a3.55,3.55,0,1,1,0,7.09Z" fill="#989898" opacity="0.5"/>
+  <g>
+    <path d="M97.85,124.1A97.85,97.85,0,1,0,195.69,222,97.85,97.85,0,0,0,97.85,124.1Zm0,178.64A80.8,80.8,0,1,1,178.64,222,80.79,80.79,0,0,1,97.85,302.74Z" fill="#38b86f"/>
+    <path d="M19.67,226.29a80.78,80.78,0,0,1,148.81-43.56A80.79,80.79,0,1,0,29.82,265.51,80.41,80.41,0,0,1,19.67,226.29Z" fill="#d7d3e3"/>
+    <g>
+      <path d="M115.06,220c0,21.71-6.9,41.41-30.34,41.41-23.16,0-30.33-19.05-30.33-40.92,0-21.64,8-40.92,30.69-40.92C107.09,179.57,115.06,197.58,115.06,220Zm-43,.29c0,14.52,1.65,27.44,12.83,27.44,10.9,0,12.33-12.08,12.33-27.63,0-15.33-1.85-26.85-12.17-26.85C75,193.25,72.1,203.2,72.1,220.29Z" fill="#32475b"/>
+      <path d="M129,240.65c0,5-2.87,8.39-7.83,8.39-4.69,0-7.8-2.87-7.8-8.38,0-4.66,2.76-8.31,7.85-8.31C125.76,232.35,129,235.19,129,240.65Zm-10.76,0c0,2.87,1,4.43,3,4.43s3-1.39,3-4.43-1.21-4.33-3-4.33S118.22,237.71,118.22,240.65Zm2.86,21.18,17.8-29h4.63l-17.83,29ZM151.24,254c0,5-2.86,8.39-7.83,8.39-4.7,0-7.8-2.9-7.8-8.38,0-4.67,2.75-8.31,7.85-8.31C148,245.72,151.24,248.55,151.24,254Zm-10.76,0c0,2.86,1.05,4.42,3,4.42s3-1.38,3-4.42-1.22-4.34-3-4.34S140.48,251.1,140.48,254Z" fill="#32475b"/>
+    </g>
+  </g>
+  <style>
+    #loc-icon {
+      -webkit-transform: translate(0px, 10px);
+          -ms-transform: translate(0px, 10px);
+              transform: translate(0px, 10px);
+      -webkit-animation: moveIcon 2s ease-in-out 0s infinite alternate;
+              animation: moveIcon 2s ease-in-out 0s infinite alternate;
+    }
+
+    #stars > polygon {
+      opacity: 0;
+    }
+    #stars > polygon:nth-child(1) {
+      -webkit-animation: fadeInStar1 5s ease-in-out 0s infinite;
+              animation: fadeInStar1 5s ease-in-out 0s infinite;
+    }
+    #stars > polygon:nth-child(2) {
+      -webkit-animation: fadeInStar2 5s ease-in-out 0s infinite;
+              animation: fadeInStar2 5s ease-in-out 0s infinite;
+    }
+    #stars > polygon:nth-child(3) {
+      -webkit-animation: fadeInStar3 5s ease-in-out 0s infinite;
+              animation: fadeInStar3 5s ease-in-out 0s infinite;
+    }
+    #stars > polygon:nth-child(4) {
+      -webkit-animation: fadeInStar4 5s ease-in-out 0s infinite;
+              animation: fadeInStar4 5s ease-in-out 0s infinite;
+    }
+    #stars > polygon:nth-child(5) {
+      -webkit-animation: fadeInStar5 5s ease-in-out 0s infinite;
+              animation: fadeInStar5 5s ease-in-out 0s infinite;
+    }
+
+    @-webkit-keyframes moveIcon {
+      to {
+        -webkit-transform: translate(0px, 0px);
+                transform: translate(0px, 0px);
+      }
+    }
+
+    @keyframes moveIcon {
+      to {
+        -webkit-transform: translate(0px, 0px);
+                transform: translate(0px, 0px);
+      }
+    }
+
+    @-webkit-keyframes fadeInStar1 {
+      0%, 100% {
+        opacity: 0;
+      }
+      10%, 90% {
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeInStar1 {
+      0%, 100% {
+        opacity: 0;
+      }
+      10%, 90% {
+        opacity: 1;
+      }
+    }
+
+    @-webkit-keyframes fadeInStar2 {
+      0%, 5%, 100% {
+        opacity: 0;
+      }
+      15%, 90% {
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeInStar2 {
+      0%, 5%, 100% {
+        opacity: 0;
+      }
+      15%, 90% {
+        opacity: 1;
+      }
+    }
+
+    @-webkit-keyframes fadeInStar3 {
+      0%, 10%, 100% {
+        opacity: 0;
+      }
+      20%, 90% {
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeInStar3 {
+      0%, 10%, 100% {
+        opacity: 0;
+      }
+      20%, 90% {
+        opacity: 1;
+      }
+    }
+
+    @-webkit-keyframes fadeInStar4 {
+      0%, 15%, 100% {
+        opacity: 0;
+      }
+      25%, 90% {
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeInStar4 {
+      0%, 15%, 100% {
+        opacity: 0;
+      }
+      25%, 90% {
+        opacity: 1;
+      }
+    }
+
+    @-webkit-keyframes fadeInStar5 {
+      0%, 20%, 100% {
+        opacity: 0;
+      }
+      30%, 90% {
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeInStar5 {
+      0%, 20%, 100% {
+        opacity: 0;
+      }
+      30%, 90% {
+        opacity: 1;
+      }
+    }
+  </style>
+</svg>
