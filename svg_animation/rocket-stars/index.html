@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rocket-animation</title>
+	<style>
+		body {
+			margin: 0px;
+			padding: 0px;
+			text-align: center;
+		}
+		svg {
+			width: 50%;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<svg id="rocket-star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 189.28 176.31">
+			<defs>
+				<radialGradient id="radial-gradient" cx="93.05" cy="88.16" r="79.76" gradientTransform="matrix(-0.01, 1, -1.24, -0.01, 202.7, -3.98)" gradientUnits="userSpaceOnUse">
+					<stop offset="0" stop-color="#fff"/>
+					<stop offset="0.85" stop-color="#fff"/>
+					<stop offset="1"/>
+				</radialGradient>
+				<clipPath id="clip-left-wing">
+					<path d="M0,0V176.31H189.28V0ZM108.18,124.93l5.73,35.38-9.9-9-9.25,17.14-9.25-17.14-9.89,9,5.73-35.38V114.09H81.1C60.42,70.2,67.45,35.63,94.64,7.84c27.19,27.79,34.22,62.36,13.54,106.25v10.84Z"/>
+				</clipPath>
+				<clipPath id="clip-hatchуes">
+					<path d="M108.18,114.09C128.86,70.2,121.83,35.63,94.64,7.84,67.45,35.63,60.42,70.2,81.1,114.09Z"/>
+				</clipPath>
+				<mask id="hide-rocket">
+					<rect x="0" y="0" width="100%" height="100%" fill="#fff"/>
+					<path class="wings" d="M114.13,99.57l16.77,10.61s.29-20.44.08-26-3.73-7.71-3.73-7.71L120,72.08A104.89,104.89,0,0,1,114.13,99.57Z" fill="#000"/>
+				</mask>
+				<mask id="hide-stars">
+					<ellipse cx="93.05" cy="88.16" rx="97.49" ry="78.83" transform="translate(-34.94 81.22) rotate(-40.35)" fill="url(#radial-gradient)"/>
+				</mask>
+			</defs>
+			<g id="stars" mask="url(#hide-stars)">
+				<circle cx="35.29" cy="42.56" r="1.65" fill="none" stroke="#f10707" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.5"/>
+				<path d="M62.88,60.47l-1.34-.78,1.34-.77a.16.16,0,0,0,.06-.22l-.31-.55a.16.16,0,0,0-.22-.06l-1.34.78V57.31a.16.16,0,0,0-.16-.16h-.63a.16.16,0,0,0-.16.16v1.56l-1.34-.78a.15.15,0,0,0-.21.06l-.32.55a.17.17,0,0,0,.06.22l1.34.77-1.34.78a.16.16,0,0,0-.06.22l.32.55a.16.16,0,0,0,.21.06l1.34-.78v1.56a.16.16,0,0,0,.16.15h.63a.16.16,0,0,0,.16-.15V60.52l1.34.78a.17.17,0,0,0,.22-.06l.31-.55a.15.15,0,0,0-.06-.22Z" fill-opacity="0.59"/>
+				<circle cx="39.69" cy="55.28" r="1.65" fill="none" stroke="#f10707" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.5"/>
+				<circle cx="145.46" cy="133.07" r="1.65" fill="none" stroke="#f10707" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.5"/>
+				<path d="M125.55,120.31l-1.34-.78,1.34-.78a.16.16,0,0,0,.06-.22l-.32-.55a.16.16,0,0,0-.21-.06l-1.34.78v-1.55a.16.16,0,0,0-.16-.16H123a.16.16,0,0,0-.16.16v1.55l-1.34-.78a.17.17,0,0,0-.22.06l-.31.55a.15.15,0,0,0,.06.22l1.34.78-1.34.78a.14.14,0,0,0-.06.21l.31.55a.16.16,0,0,0,.22.06l1.34-.78v1.56a.16.16,0,0,0,.16.16h.63a.16.16,0,0,0,.16-.16v-1.56l1.34.78a.15.15,0,0,0,.21-.06l.32-.55a.15.15,0,0,0-.06-.21Z" fill-opacity="0.59"/>
+				<circle cx="136.47" cy="123.71" r="1.65" fill="none" stroke="#f10707" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.5"/>
+				<path d="M57.31,69.16l-1.8-1,1.8-1.05a.21.21,0,0,0,.07-.29L57,66.05a.21.21,0,0,0-.29-.08l-1.79,1V64.93a.21.21,0,0,0-.21-.21h-.85a.21.21,0,0,0-.21.21V67l-1.79-1a.21.21,0,0,0-.29.08l-.43.73a.21.21,0,0,0,.08.29L53,68.12l-1.8,1a.21.21,0,0,0-.08.29l.43.74a.21.21,0,0,0,.29.07l1.79-1V71.3a.21.21,0,0,0,.21.22h.85a.22.22,0,0,0,.21-.22V69.22l1.79,1a.21.21,0,0,0,.29-.07l.42-.74a.21.21,0,0,0-.07-.29Z" fill-opacity="0.59"/>
+				<circle cx="138.57" cy="142.43" r="1.65" fill="none" stroke="#f10707" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.5"/>
+				<path d="M142.2,134.3l-2.13-1.23,2.13-1.23a.26.26,0,0,0,.09-.35l-.5-.87a.25.25,0,0,0-.34-.09l-2.13,1.23V129.3a.25.25,0,0,0-.25-.25h-1a.25.25,0,0,0-.25.25v2.46l-2.12-1.23a.25.25,0,0,0-.34.09l-.5.87a.26.26,0,0,0,.09.35l2.12,1.23L135,134.3a.26.26,0,0,0-.09.35l.5.87a.25.25,0,0,0,.34.09l2.12-1.23v2.46a.26.26,0,0,0,.25.26h1a.26.26,0,0,0,.25-.26v-2.46l2.13,1.23a.25.25,0,0,0,.34-.09l.5-.87a.26.26,0,0,0-.09-.35Z" fill-opacity="0.59"/>
+				<circle cx="48.38" cy="45.85" r="1.65" fill="none" stroke="#f10707" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.5"/>
+				<path d="M131.26,126.9l-1.52-1,1.52-.94a.2.2,0,0,0,.07-.27l-.36-.66a.18.18,0,0,0-.25-.08l-1.52,1v-1.89a.19.19,0,0,0-.18-.2h-.72a.19.19,0,0,0-.18.2V125l-1.53-1a.17.17,0,0,0-.24.08l-.36.66a.21.21,0,0,0,.06.27l1.53.94-1.53,1a.21.21,0,0,0-.06.27l.36.67a.17.17,0,0,0,.24.07l1.53-1v1.89a.19.19,0,0,0,.18.2H129a.19.19,0,0,0,.18-.2V127l1.52,1a.18.18,0,0,0,.25-.07l.36-.67a.21.21,0,0,0-.07-.27Z" fill-opacity="0.59"/>
+				<circle cx="125.63" cy="133.48" r="1.65" fill="none" stroke="#f10707" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.5"/>
+				<path d="M42.05,48.51l-1.15-.67,1.15-.67A.12.12,0,0,0,42.1,47l-.27-.48a.15.15,0,0,0-.19,0l-1.15.67V45.79a.13.13,0,0,0-.14-.13h-.54a.13.13,0,0,0-.14.13v1.34l-1.15-.67a.15.15,0,0,0-.19,0l-.27.48a.12.12,0,0,0,0,.18l1.15.67-1.15.67a.14.14,0,0,0,0,.19l.27.48a.15.15,0,0,0,.19,0l1.15-.67V49.9a.13.13,0,0,0,.14.13h.54a.13.13,0,0,0,.14-.13V48.56l1.15.67a.15.15,0,0,0,.19,0l.27-.48a.14.14,0,0,0-.05-.19Z" fill-opacity="0.59"/>
+				<circle cx="54.65" cy="57.15" r="1.85" fill="none" stroke="#f10707" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.5"/>
+				<path d="M51,56.23l-1.53-.95,1.53-1a.2.2,0,0,0,.06-.26l-.36-.67a.17.17,0,0,0-.24-.07l-1.53,1v-1.9a.19.19,0,0,0-.18-.19H48a.19.19,0,0,0-.18.19v1.9l-1.53-1a.17.17,0,0,0-.24.07l-.36.67a.19.19,0,0,0,.07.26l1.52,1-1.52.95a.19.19,0,0,0-.07.26l.36.67a.17.17,0,0,0,.24.07l1.53-.94v1.89a.18.18,0,0,0,.18.19h.72a.18.18,0,0,0,.18-.19V56.29l1.53.94a.17.17,0,0,0,.24-.07l.36-.67a.2.2,0,0,0-.06-.26Z" fill-opacity="0.59"/>
+				<circle cx="45.69" cy="64.72" r="1.65" fill="none" stroke="#f10707" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.5"/>
+				<path d="M134.73,117.93l-1.52-.94,1.52-.95a.19.19,0,0,0,.07-.26l-.36-.67a.17.17,0,0,0-.25-.07l-1.52.94v-1.89a.18.18,0,0,0-.18-.19h-.72a.18.18,0,0,0-.18.19V116l-1.53-.94a.16.16,0,0,0-.24.07l-.36.67a.2.2,0,0,0,.06.26l1.53.95-1.53.94a.21.21,0,0,0-.06.27l.36.67a.17.17,0,0,0,.24.07l1.53-1v1.89a.19.19,0,0,0,.18.2h.72a.19.19,0,0,0,.18-.2V118l1.52,1a.18.18,0,0,0,.25-.07l.36-.67a.21.21,0,0,0-.07-.27Z" fill-opacity="0.59"/>
+				<circle cx="116.88" cy="124.31" r="1.65" fill="none" stroke="#f10707" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.5"/>
+				<circle cx="134.82" cy="109.17" r="1.65" fill="none" stroke="#f10707" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.5"/>
+			</g>
+			<g id="rocket">
+				<path id="wind1" d="M93.5-7.38s.56,9.92-2.84,12.47S59.2,34,62,68.87,72,108.56,72.24,115.93s-1.7,42.23-6,54.71" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke-dasharray="50 189.5" stroke-dashoffset="289.5"></path>
+				<path id="wind2" d="M96.71,1.79S122.59,28.43,127.13,61c0,0,1.87,10.13,5.3,13.2,7.48,6.72,4.76,34.47,4.15,38,0,0-.94,11.15-8.88,13.6s-15.69,7.94-5.11,44.89" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke-dasharray="30 188.5" stroke-dashoffset="248.5"></path>
+
+				<rect x="81.35" y="114.09" width="26.83" height="10.84" stroke-width="2" stroke="#000" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+				<g mask="url(#hide-rocket)">
+					<path id="body" d="M108.18,114.09C128.86,70.2,121.83,35.63,94.64,7.84,67.45,35.63,60.42,70.2,81.1,114.09Z" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+				</g>
+				<line x1="76.21" y1="33.88" x2="113.06" y2="33.88" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+				<polygon id="fire" points="108.18 124.93 113.91 160.31 104.01 151.33 94.76 168.47 85.52 151.33 75.62 160.31 81.35 124.93 108.18 124.93" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+				<g clip-path="url(#clip-hatchуes)">
+					<g id="hatchуes">
+						<circle cx="94.76" cy="84.14" r="7.21" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+						<circle cx="94.76" cy="56.26" r="9.29" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+						<circle cx="145.64" cy="84.14" r="7.21" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+						<circle cx="145.64" cy="56.26" r="9.29" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+					</g>
+				</g>
+				<path class="wings" d="M114.13,99.57l16.77,10.61s.29-20.44.08-26-3.73-7.71-3.73-7.71L120,72.08A104.89,104.89,0,0,1,114.13,99.57Z" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+				<g clip-path="url(#clip-left-wing)">
+					<g id="l-wing">
+						<path class="wings" d="M114.13,99.57l16.77,10.61s.29-20.44.08-26-3.73-7.71-3.73-7.71L120,72.08A104.89,104.89,0,0,1,114.13,99.57Z" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+					</g>
+				</g>
+				<path id="tr-Rwing" opacity="0" d="M119.98,99.57L119.98,110.18L119.98,84.14L119.98,76.43L119.98,72.08L119.98,99.57Z" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+			</g>
+		</svg>
+	</div>
+	<script src="lib/gsap.min.js"></script>
+	<script src="lib/MorphSVGPlugin.min.js"></script>
+	<script>
+		function rocketStarAnimation() {
+
+			let idSVG = '#rocket-star' + ' ';
+			gsap.set(idSVG + '.wings', {svgOrigin: '119.98px 72.08px'})
+			gsap.set(idSVG + '#l-wing', {svgOrigin: '94.54px 72.08px', scaleX: -1})
+			gsap.set(idSVG + '#rocket', {svgOrigin: '94.64px 88.16px', rotate: 45})
+
+			gsap.to(idSVG + '#wind1', 0.8, { strokeDashoffset: 50, ease: 'sine.inOut', repeat: -1, repeatDelay: 0.8})
+			gsap.to(idSVG + '#wind2', 0.8, { strokeDashoffset: 30, ease: 'sine.inOut', repeat: -1, repeatDelay: 0.8, delay: 0.4})
+
+			let penAnim = gsap.timeline({defaults: { ease: 'none' }, repeat: -1, repeatDelay: 0, delay: 0, paused: false});
+				penAnim
+					.to(idSVG + '.wings', 0.4, { morphSVG: idSVG + '#tr-Rwing', ease: 'sine.in', yoyo: true, repeat: 1}, 0)
+					.to(idSVG + '.wings', 0.8, { x: -50.88, ease: 'sine.inOut'}, 0)
+					.to(idSVG + '#hatchуes', 0.8, { x: -50.88}, 0)
+					.set(idSVG + '.wings', { scaleX: -1}, 0.4)
+					.to(idSVG + '#fire', 0.2, { scaleY: 0.9, svgOrigin: '94.76px, 124.93px', yoyo: true, repeat: 3}, 0);
+
+			gsap.fromTo(idSVG + '#stars > *', 3, { x: 95, y: -95}, { x: -95, y:95, ease: 'sine.inOut', stagger: { each: 0.5, repeat: -1, repeatDelay: 0.8}, delay: -10})
+		
+
+		}
+
+		rocketStarAnimation();
+
+
+	</script>
+
+</body>
+</html>
