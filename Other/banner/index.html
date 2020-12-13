@@ -22,8 +22,12 @@
 			z-index: 999;
 			background: #034C79;
 			overflow: hidden;
+			-webkit-animation: moveBanner 0.6s ease-out 5s forwards;
+			        animation: moveBanner 0.6s ease-out 5s forwards;
+		}
 
-			animation: moveBanner 0.6s ease-out 5s forwards;
+		@media(max-width:1049px) {
+			.interactiveBanner, #banner{display:none;}
 		}
 
 		#banner #ban-upper-line {
@@ -33,6 +37,8 @@
 			width: 100%;
 			height: 25px;
 			opacity: 0.9;
+			background: -webkit-gradient(linear, left top, right top, color-stop(34%, rgba(110,201,219,0)), color-stop(65%, rgba(110,201,219, 0.36)), to(rgba(110,201,219,1)));
+			background: -o-linear-gradient(left, rgba(110,201,219,0) 34%, rgba(110,201,219, 0.36) 65%, rgba(110,201,219,1) 100%);
 			background: linear-gradient(90deg, rgba(110,201,219,0) 34%, rgba(110,201,219, 0.36) 65%, rgba(110,201,219,1) 100%);
 		}
 
@@ -41,7 +47,9 @@
 			right: 75px;
 			bottom: 30px;
 
-			animation: movePoints 5s linear 0s forwards;
+			-webkit-animation: movePoints 5s linear 0s forwards;
+
+			        animation: movePoints 5s linear 0s forwards;
 		}
 
 		#banner #tech-42 {
@@ -53,7 +61,6 @@
 		#banner #banner-text {
 			position: absolute;
 			left: 28%;
-			//left: 340px;
 			width: 100%;
 			height: 625px;
 
@@ -62,7 +69,6 @@
 
 		#banner #banner-text #interactive_report {
 			position: relative;
-			//left: 100%;
 			left: 75%;
 			top: 173px;
 
@@ -71,13 +77,14 @@
 			font-size: 40px;
 			color: #fff;
 
-			animation: moveInInter 0.6s ease-out 0.9s forwards;
+			-webkit-animation: moveInInter 0.6s ease-out 0.9s forwards;
+
+			        animation: moveInInter 0.6s ease-out 0.9s forwards;
 		}
 
 		#banner #banner-text #the_state,
 		#banner #banner-text #strategic {
 			position: absolute;
-			//left: 100%;
 			left: 75%;
 			width: 660px;
 			border: 0.79px solid #fff;
@@ -93,13 +100,15 @@
 		#banner #banner-text #the_state {
 			top: 227px;
 			padding: 15px 0px 13px 36.5px;
-			animation: moveInSt 0.6s ease-out 1.6s forwards;
+			-webkit-animation: moveInSt 0.6s ease-out 1.6s forwards;
+			        animation: moveInSt 0.6s ease-out 1.6s forwards;
 		}
 
 		#banner #banner-text #strategic {
 			top: 305.25px;
 			padding: 12px 0px 16px 36.5px;
-			animation: moveInSt 0.6s ease-out 2s forwards;
+			-webkit-animation: moveInSt 0.6s ease-out 2s forwards;
+			        animation: moveInSt 0.6s ease-out 2s forwards;
 		}
 
 		#banner #banner-text #explore_the_date {
@@ -110,7 +119,9 @@
 			font-size: 31.22px;
 			color: #fdeb00; 
 
-			animation: moveInExp 0.6s ease-out 3.4s forwards;
+			-webkit-animation: moveInExp 0.6s ease-out 3.4s forwards; 
+
+			        animation: moveInExp 0.6s ease-out 3.4s forwards;
 		}
 
 		#banner #banner-text #explore-cliped {
@@ -119,12 +130,25 @@
 			width: 340px;
 			left: 367px;
 			top: 383px;
-  			clip-path: polygon(0 100%, 0 0, 100% 0, 100% 100%);
+  			-webkit-clip-path: polygon(0 100%, 0 0, 100% 0, 100% 100%);
+  			        clip-path: polygon(0 100%, 0 0, 100% 0, 100% 100%);
+		}
+
+		@-webkit-keyframes moveInInter {
+			to {
+				left: 0px;
+			}
 		}
 
 		@keyframes moveInInter {
 			to {
 				left: 0px;
+			}
+		}
+
+		@-webkit-keyframes moveInSt {
+			to {
+				left: 2px;
 			}
 		}
 
@@ -134,9 +158,21 @@
 			}
 		}
 
+		@-webkit-keyframes moveInExp {
+			to {
+				top: 8.5px;
+			}
+		}
+
 		@keyframes moveInExp {
 			to {
 				top: 8.5px;
+			}
+		}
+
+		@-webkit-keyframes moveBanner {
+			to {
+				top: -630px;
 			}
 		}
 
@@ -146,15 +182,17 @@
 			}
 		}
 
-		@keyframes movePoints {
+		@-webkit-keyframes movePoints {
 			to {
 				right: 165px;
 			}
 		}
 
-
-
-
+		@keyframes movePoints {
+			to {
+				right: 165px;
+			}
+		}
 	</style>
 </head>
 <body>
