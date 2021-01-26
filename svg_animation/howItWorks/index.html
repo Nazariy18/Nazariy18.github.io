@@ -513,7 +513,7 @@
 			let idSVG = '#hitw-all' + ' ';
 			gsap.set(idSVG + '#zoom-transport', {scale: 1.5, svgOrigin: '350px 670px'});
 
-			let animEt2 = gsap.timeline({defaults: { ease: 'sine.inOut' }, delay: 0, repeat: -1, repeatDelay: 0});
+			let animEt2 = gsap.timeline({defaults: { ease: 'sine.inOut' }, delay: 0, repeat: -1, repeatDelay: 0.05});
 				animEt2
 					.to([idSVG + '#sm-transport', idSVG + '#zoom-transport'], 0.4, {opacity: 1}, 0)
 
