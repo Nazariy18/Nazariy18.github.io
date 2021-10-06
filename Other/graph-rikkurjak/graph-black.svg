@@ -1,0 +1,74 @@
+<svg id="graph-white" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1280 1073">
+  <defs>
+    <linearGradient id="linear-gradient" x1="-1" y1="536.5" x2="658.92" y2="536.5" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#000"/>
+      <stop offset="0.12" stop-color="#000" stop-opacity="0.98"/>
+      <stop offset="0.25" stop-color="#000" stop-opacity="0.93"/>
+      <stop offset="0.37" stop-color="#000" stop-opacity="0.85"/>
+      <stop offset="0.5" stop-color="#000" stop-opacity="0.74"/>
+      <stop offset="0.63" stop-color="#000" stop-opacity="0.59"/>
+      <stop offset="0.76" stop-color="#000" stop-opacity="0.41"/>
+      <stop offset="0.89" stop-color="#000" stop-opacity="0.2"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="640" y1="626.3" x2="640" y2="1073" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#000" stop-opacity="0"/>
+      <stop offset="0.17" stop-color="#000" stop-opacity="0.22"/>
+      <stop offset="0.4" stop-color="#000" stop-opacity="0.5"/>
+      <stop offset="0.6" stop-color="#000" stop-opacity="0.71"/>
+      <stop offset="0.78" stop-color="#000" stop-opacity="0.87"/>
+      <stop offset="0.92" stop-color="#000" stop-opacity="0.96"/>
+      <stop offset="1" stop-color="#000"/>
+    </linearGradient>
+
+    <filter id="filter-blur" x="-100%" y="-100%" width="400%" height="400%" filterUnits="objectBoundingBox" primitiveUnits="userSpaceOnUse" color-interpolation-filters="linearRGB">
+      <feGaussianBlur stdDeviation="20 20" x="0%" y="0%" width="100%" height="100%" in="SourceGraphic" edgeMode="none" result="blur"/>
+    </filter>
+    <filter id="filter-blur2" x="-100%" y="-100%" width="400%" height="400%" filterUnits="objectBoundingBox" primitiveUnits="userSpaceOnUse" color-interpolation-filters="linearRGB">
+      <feGaussianBlur stdDeviation="35 35" x="0%" y="0%" width="100%" height="100%" in="SourceGraphic" edgeMode="none" result="blur"/>
+    </filter>
+  </defs>
+  <g>
+    <rect id="bg" width="1280" height="1073" fill="#000"/>
+    <g>
+      <path opacity="0.3" filter="url(#filter-blur2)" d="M1280,475.29c-24.09-4-45.75-11.31-70.35-2.44-46.06,10.92-60.86,77.48-100.52,76-35-3.55-43.7-56.14-76.43-5.08-12.56,13.46-32.82,126.82-53.77,75C940.38,482,872.71,740.69,811.8,733c-56.66-6.43-56.21-236.68-114.25-243.35-51.74-7.25-104.16,200.44-162.63,102.57-16-30.09-22.65-73-47.33-94h0c-94.32-64.66-173.3,282.75-353.36,203.75,0,0,0,0,0,0C81.46,679.7,37.07,634.4,0,590.2" fill="none" stroke="#52d9c0" stroke-miterlimit="10" stroke-width="35"/>
+      <path d="M1280,475.46V1073H-.41L0,590.2c37.06,44.19,81.44,89.51,134.18,111.73,0,0,0,0,0,0C314.63,780.82,392.78,433.8,487.58,498.19h0c24.67,21.06,31.39,63.95,47.34,94,58.45,97.83,111-109.76,162.61-102.57C766.39,495.3,753.13,834,856.06,701.84c26.65-34.71,44.66-75.79,73-109.13,33.78-37.15,41.81,6.31,52.37,31.83,18,29.69,31.67-35.8,38.14-50.26,4.78-13.18,9.76-26.61,17.92-38.1,29.16-37.07,37.63,8.38,71.6,12.69,39.75,1.4,54.47-65.12,100.52-76,24.59-9.05,46.16-1,70.35,1.86Z" fill="#52d9c0" opacity="0.5"/>
+      <path d="M1280,475.29c-24.09-4-45.75-11.31-70.35-2.44-46.06,10.92-60.86,77.48-100.52,76-35-3.55-43.7-56.14-76.43-5.08-12.56,13.46-32.82,126.82-53.77,75C940.38,482,872.71,740.69,811.8,733c-56.66-6.43-56.21-236.68-114.25-243.35-51.74-7.25-104.16,200.44-162.63,102.57-16-30.09-22.65-73-47.33-94h0c-94.32-64.66-173.3,282.75-353.36,203.75,0,0,0,0,0,0C81.46,679.7,37.07,634.4,0,590.2" fill="none" stroke="#52d9c0" stroke-miterlimit="10" stroke-width="5"/>
+    </g>
+    <g id="dot">
+      <path filter="url(#filter-blur)" opacity="0.5" d="M0,590.2c37.05,44.2,81.44,89.5,134.18,111.73,0,0,0,0,0,0,180.06,79,259-268.41,353.36-203.75h0c24.68,21.08,31.37,63.95,47.33,94,58.47,97.87,110.89-109.82,162.63-102.57,58,6.67,57.59,236.92,114.25,243.35,60.91,7.68,128.58-251,167.13-114.22,21,51.82,41.21-61.54,53.77-75,32.73-51.06,41.47,1.53,76.43,5.08,39.66,1.46,54.46-65.1,100.52-76,24.6-8.87,46.26-1.53,70.35,2.44" fill="none" stroke="#52d9c0" stroke-miterlimit="10" stroke-width="50" stroke-linecap="round" stroke-dasharray="0.2 1923.8" stroke-dashoffset="1924"></path>
+      <path d="M0,590.2c37.05,44.2,81.44,89.5,134.18,111.73,0,0,0,0,0,0,180.06,79,259-268.41,353.36-203.75h0c24.68,21.08,31.37,63.95,47.33,94,58.47,97.87,110.89-109.82,162.63-102.57,58,6.67,57.59,236.92,114.25,243.35,60.91,7.68,128.58-251,167.13-114.22,21,51.82,41.21-61.54,53.77-75,32.73-51.06,41.47,1.53,76.43,5.08,39.66,1.46,54.46-65.1,100.52-76,24.6-8.87,46.26-1.53,70.35,2.44" fill="none" stroke="#52d9c0" stroke-miterlimit="10" stroke-width="18" stroke-linecap="round" stroke-dasharray="0.2 1923.8" stroke-dashoffset="1924"></path>
+    </g>
+    <g>
+      <path opacity="0.3" filter="url(#filter-blur2)" d="M0,634.65c78.62-72.81,139.94-86.07,184-82,91.78,8.5,111.61,92.36,203.85,93.48,98.07,1.19,140.34-92.82,216.24-68.7,49.74,15.8,47,61.07,94.6,69.82,66.25,12.19,93.74-71.47,166.69-69.82,77.62,1.75,92,97.5,168.93,99.1,51.87,1.09,68.35-42,163.31-96.85A629.74,629.74,0,0,1,1280,539.82" fill="none" stroke="#274873" stroke-miterlimit="10" stroke-width="35"/>
+      <path d="M1280,539.6V1073H-.42V634.74c78.74-73,140.14-86.3,184.29-82.21C275.65,561,295.48,644.89,387.72,646c98.07,1.18,140.34-92.82,216.24-68.7,49.74,15.8,47,61.07,94.6,69.82,66.25,12.19,93.74-71.47,166.69-69.82,77.62,1.75,92,97.5,168.93,99.1,51.87,1.09,68.35-42,163.31-96.85A629.19,629.19,0,0,1,1280,539.6Z" fill="#274873" opacity="0.5"/>
+      <path d="M0,634.65c78.62-72.81,139.94-86.07,184-82,91.78,8.5,111.61,92.36,203.85,93.48,98.07,1.19,140.34-92.82,216.24-68.7,49.74,15.8,47,61.07,94.6,69.82,66.25,12.19,93.74-71.47,166.69-69.82,77.62,1.75,92,97.5,168.93,99.1,51.87,1.09,68.35-42,163.31-96.85A629.74,629.74,0,0,1,1280,539.82" fill="none" stroke="#274873" stroke-miterlimit="10" stroke-width="5"/>
+    </g>
+    <g>
+      <path d="M657.92,1073H-1V0h658.9Z" fill="url(#linear-gradient)"/>
+      <path d="M0,1075V626.3H1280V1075Z" fill="url(#linear-gradient-2)"/>
+    </g>
+  </g>
+  <style>
+    #graph-white {
+      overflow: hidden;
+    }
+
+    #graph-white #dot > path {
+      -webkit-animation: movePoint 4s ease-out 0s forwards;
+              animation: movePoint 4s ease-out 0s forwards;
+    }
+
+    @-webkit-keyframes movePoint {
+      to {
+        stroke-dashoffset: 948px;
+      }
+    }
+
+    @keyframes movePoint {
+      to {
+        stroke-dashoffset: 948px;
+      }
+    }
+  </style>
+</svg>
