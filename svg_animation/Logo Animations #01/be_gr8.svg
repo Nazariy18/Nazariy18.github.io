@@ -1,0 +1,98 @@
+<svg id="be-gr8-anim" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 2000">
+  <path id="bg-shape" opacity="0" d="M1791.56,1381.78,111.15,1577c-40.8,4.75-70.49-24.76-66.31-65.89L127,701.29c4.18-41.14,40.63-78.32,81.43-83.07L1888.85,423c40.8-4.75,70.49,24.76,66.31,65.89L1873,1298.71C1868.81,1339.85,1832.36,1377,1791.56,1381.78Z" fill="#2953fe"/>
+  <g id="shape-lines">
+    <path d="M68.31,1554.29c10.31,10.17,25.11,14.7,41.68,12.78L1790.4,1371.85" fill="none" stroke="#2953fe" stroke-linecap="round" stroke-linejoin="round" stroke-width="20" stroke-dasharray="1737" stroke-dashoffset="1737"></path>
+    <path d="M68.31,1554.29C57.87,1544,53.07,1529,54.79,1512.12L137,702.3c3.72-36.66,36.31-69.92,72.63-74.15" fill="none" stroke="#2953fe" stroke-linecap="round" stroke-linejoin="round" stroke-width="20" stroke-dasharray="972" stroke-dashoffset="972"></path>
+    <path d="M1931.69,445.71c-8.76-8.64-20.76-13.21-34.33-13.21a63.61,63.61,0,0,0-7.35.43L209.58,628.15" fill="none" stroke="#2953fe" stroke-linecap="round" stroke-linejoin="round" stroke-width="20" stroke-dasharray="1737" stroke-dashoffset="1737"></path>
+    <path d="M1931.69,445.71c10.44,10.28,15.24,25.26,13.52,42.17l-82.16,809.82c-3.73,36.63-36.32,69.89-72.65,74.15" fill="none" stroke="#2953fe" stroke-linecap="round" stroke-linejoin="round" stroke-width="20" stroke-dasharray="972" stroke-dashoffset="972"></path>
+  </g>
+  <g id="text-line">
+    <path opacity="0" d="M364.23,732.72,254.1,745.51,183,1446.6l110.13-12.79c84.91-9.87,161.06-87.55,169.74-173.17l9-88.34c4.2-41.45-8.27-77.17-31.78-102,29.17-30.93,49.27-70.44,53.48-111.89l9-88.35C511.15,784.47,449.14,722.85,364.23,732.72Zm-9.81,96.65c32.06-3.73,55.46,19.53,52.18,51.85l-9,88.35c-3.28,32.32-32,61.64-64.08,65.37l-14.27,1.65L340.15,831ZM367,1271.78c-3.28,32.32-32,61.65-64.09,65.38l-14.27,1.65,20.86-205.57,14.27-1.65c32.06-3.73,55.47,19.53,52.19,51.85Z" fill="#fff"/>
+    <polygon opacity="0" points="556.03 710.43 484.89 1411.52 704.54 1385.99 714.35 1289.34 590.55 1303.73 611.41 1098.16 706.19 1087.15 715.99 990.5 621.22 1001.51 642.08 795.94 765.88 781.55 775.68 684.9 556.03 710.43" fill="#fff"/>
+    <path opacity="0" d="M1058.84,652C985.1,660.57,919,728,911.43,802.37L867.65,1233.8c-7.54,74.34,46.31,127.86,120.05,119.29s139.87-76,147.41-150.37l26.79-264-133.72,15.54-9.81,96.65,37.86-4.4-17,167.39c-2.14,21-20.86,40.15-41.74,42.58s-36.13-12.73-34-33.78l43.78-431.43c2.14-21,20.86-40.15,41.74-42.58s36.13,12.72,34,33.78l-6.56,64.6,95.86-11.14,6.56-64.6C1186.43,697,1132.58,643.43,1058.84,652Z" fill="#fff"/>
+    <path opacity="0" d="M1485.89,843.11l9-88.34c8.69-85.62-53.33-147.24-138.24-137.37l-110.13,12.79-71.14,701.1,95.86-11.14,30.67-302.22,14.27-1.66c2.4-.28,4.76-.81,7.15-1.19l31.36,295.41,97.88-11.38-35-329.62C1454.71,937,1481,891.32,1485.89,843.11ZM1332.54,715.7l14.27-1.65c32-3.73,55.46,19.53,52.18,51.85l-9,88.35c-3.28,32.32-32,61.64-64.08,65.37l-14.27,1.66Z" fill="#fff"/>
+    <path opacity="0" d="M1682.3,579.55c-73.74,8.57-139.87,76-147.42,150.37L1529,788.05c-4.73,46.62,7,90,33.2,122.27l21.93,27-28,32.84c-33.39,39.15-54.37,86.39-59.1,133l-5.9,58.12c-7.55,74.34,46.31,127.86,120,119.29s139.87-76,147.41-150.37l5.9-58.12c4.73-46.63-7.06-90.06-33.2-122.29l-21.93-27,28-32.85c33.38-39.15,54.37-86.38,59.1-133l5.9-58.13C1809.89,624.5,1756,571,1682.3,579.55Zm-30.71,441c13.4,16.52,19.44,38.8,17,62.71l-5.9,58.12c-2.14,21.06-20.87,40.16-41.75,42.58s-36.13-12.72-34-33.78l5.89-58.12c2.43-23.91,13.19-48.14,30.31-68.21l15.94-18.7Zm49-252.48c-2.43,23.9-13.19,48.13-30.31,68.2L1654.35,855l-12.48-15.39c-13.4-16.53-19.45-38.8-17-62.7l5.89-58.12c2.14-21.06,20.87-40.16,41.75-42.59s36.13,12.73,34,33.78Z" fill="#fff"/>
+  </g>
+  <style>
+    #be-gr8-anim #shape-lines > path {
+      -webkit-animation: drawIn 1s ease-in-out 0.1s forwards;
+              animation: drawIn 1s ease-in-out 0.1s forwards;
+    }
+
+    #be-gr8-anim #bg-shape {
+      -webkit-animation: fadeIn 0.75s ease-in-out 0.75s forwards;
+              animation: fadeIn 0.75s ease-in-out 0.75s forwards;
+    }
+
+    #be-gr8-anim #text-line > * {
+      -webkit-transform: translate(50px, -20px);
+          -ms-transform: translate(50px, -20px);
+              transform: translate(50px, -20px);
+      -webkit-animation: moveIn 0.9s ease-in-out forwards;
+              animation: moveIn 0.9s ease-in-out forwards;
+    }
+
+    #be-gr8-anim #text-line > *:nth-child(1) {
+      -webkit-animation-delay: 1.2s;
+              animation-delay: 1.2s;
+    }
+    #be-gr8-anim #text-line > *:nth-child(2) {
+      -webkit-animation-delay: 1.3s;
+              animation-delay: 1.3s;
+    }
+    #be-gr8-anim #text-line > *:nth-child(3) {
+      -webkit-animation-delay: 1.4s;
+              animation-delay: 1.4s;
+    }
+    #be-gr8-anim #text-line > *:nth-child(4) {
+      -webkit-animation-delay: 1.5s;
+              animation-delay: 1.5s;
+    }
+    #be-gr8-anim #text-line > *:nth-child(5) {
+      -webkit-animation-delay: 1.6s;
+              animation-delay: 1.6s;
+    }
+
+
+    @-webkit-keyframes drawIn {
+      to {
+        stroke-dashoffset: 0px;
+      }
+    }
+
+
+    @keyframes drawIn {
+      to {
+        stroke-dashoffset: 0px;
+      }
+    }
+
+    @-webkit-keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+
+    @-webkit-keyframes moveIn {
+      to {
+        -webkit-transform: translate(0px, 0px);
+                transform: translate(0px, 0px);
+        opacity: 1;
+      }
+    }
+
+    @keyframes moveIn {
+      to {
+        -webkit-transform: translate(0px, 0px);
+                transform: translate(0px, 0px);
+        opacity: 1;
+      }
+    }
+  </style>
+</svg>

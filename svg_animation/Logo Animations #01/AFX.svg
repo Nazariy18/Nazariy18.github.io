@@ -1,0 +1,202 @@
+<svg id="afx-logo" xmlns="http://www.w3.org/2000/svg" viewBox="128 90 736 430">
+	<defs>
+		<clipPath id="clip-elipseLine">
+			<path d="M497,134.11c113.55,0,212.51,19.73,272.64,52.58C708,149.15,609.39,126,498.28,126c-115.46,0-217.39,25-278.39,65.2C278.5,155.81,379.39,134.11,497,134.11Z"/>
+			<path d="M826.78,242.62A60.86,60.86,0,0,1,831,264.74C831,342,685,406,498.28,406S165.57,343.36,165.57,266.09a63.1,63.1,0,0,1,6.36-27.38c-7.65,13.17-11.76,27.16-11.76,41.79,0,89.08,151.38,172.82,338.11,172.82S836.39,369.58,836.39,280.5A81.29,81.29,0,0,0,826.78,242.62Z"/>
+		</clipPath>
+	</defs>
+	<g clip-path="url(#clip-elipseLine)">
+		<path id="elipseLine" d="M203.71,208.08c-25.27,21.07-39.59,45.15-39.59,70.72,0,82.89,150.49,150.07,336.13,150.07S836.39,361.69,836.39,278.8,685.9,128.73,500.25,128.73c-128.36,0-239.92,32.13-296.54,79.35" fill="none" stroke="#a31c38" stroke-miterlimit="10" stroke-width="50" stroke-dasharray="1585" stroke-dashoffset="1585"></path>
+	</g>
+	<g id="text">
+		<path opacity="0" d="M160.86,353.63l7.87,11.46c4.94,7.19,4.16,13.78-.95,17.29-3.51,2.41-6.95,2.2-11.36-.9.61,4.2-5.53,10.22-10.09,17.74L140.65,391l4.53-5.91c5.23-6.85,5.43-7.74,3.13-11.08l-13.13,9-5.47-8Zm-5.44,19.16c1.84,2.67,4.24,3.44,6.71,1.75s2.49-3.91.47-6.84l-1.66-2.41-7.25,5Z" fill="#a31b37"/>
+		<path opacity="0" d="M178.31,377.79l17.93,17.15-4.51,4.72-10.95-10.47-6.09,6.35,10.19,9.74L180.36,410l-10.18-9.74-6.5,6.79L175,417.91l-4.51,4.72-18.34-17.54Z" fill="#a31b37"/>
+		<path opacity="0" d="M198.92,396.86l7.82,5.68-18.21,25.07,12.61,9.16-4,5.5-20.43-14.83Z" fill="#a31b37"/>
+		<path opacity="0" d="M221,412.31l8.26,5-19.64,32.29-8.25-5Z" fill="#a31b37"/>
+		<path opacity="0" d="M240.68,423.44l8.94,4.58-7.4,38.91-8.32-4.26,1.8-7.9-8.54-4.38-5.42,6.05-8.32-4.27Zm-3.45,25.21,3.31-13.72-.11-.05-9.25,10.67Z" fill="#a31b37"/>
+		<path opacity="0" d="M260.86,433.79l13.31,5.48c8.08,3.33,9.72,9.33,7.95,13.62-1.29,3.12-4.16,4.87-8.23,4.93,3.64,3.59,4.69,7.43,3,11.42-2.29,5.58-8.9,8.36-17,5l-13.43-5.53Zm-.23,34.12c3.86,1.59,6.19.52,7.41-2.45,1-2.45.63-5.3-2.94-6.77l-3.46-1.43-3.9,9.46Zm5.25-15.54c3.4,1.4,5.7.73,6.88-2.13s.11-4.86-3.4-6.31l-1.91-.78L264,451.58Z" fill="#a31b37"/>
+		<path opacity="0" d="M290.86,445.82,300,448.9l-9.86,29.37,14.78,5-2.16,6.45-23.95-8Z" fill="#a31b37"/>
+		<path opacity="0" d="M316.71,454.35l23.93,6.57-1.73,6.3-14.61-4L322,471.69l13.59,3.73-1.73,6.29L320.25,478l-2.49,9.07,15.15,4.16-1.73,6.3-24.47-6.72Z" fill="#a31b37"/>
+		<path opacity="0" d="M362.9,466l13.55,2.51c9.75,1.8,12.71,8.43,11.73,13.7-.74,4-4.22,10.47-15.87,8.32l-4-.74-2.8,15.13L356,503.12Zm9.37,17.88c4.36.81,5.92-.81,6.43-3.53.42-2.29-.31-4.84-4.42-5.6l-3.06-.57-1.71,9.19Z" fill="#a31b37"/>
+		<path opacity="0" d="M393.61,471.5l13.78,1.85c8.65,1.16,13,6.15,12.19,12.29-.56,4.23-3,6.63-8.28,7.83,3.52,2.36,3.88,10.95,6.4,19.38l-9.95-1.33-1.35-7.32c-1.57-8.48-2.1-9.22-6.11-9.75l-2.12,15.79L388.59,509Zm10.57,16.88c3.21.43,5.4-.84,5.79-3.8s-1.22-4.46-4.74-4.93l-2.91-.39L401.15,488Z" fill="#a31b37"/>
+		<path opacity="0" d="M439,476.28c7.89.67,16.27,6.65,15.07,20.76-1.25,14.71-11.14,18.49-18.35,17.88-8.2-.7-16.24-7-15-21.09C421.78,481,430.76,475.58,439,476.28Zm-2.65,31.25c4.47.38,7.14-2.34,7.91-11.38.55-6.5-.17-12-5.89-12.49-5.22-.44-7.28,3.94-7.9,11.33S431.09,507.08,436.37,507.53Z" fill="#a31b37"/>
+		<path opacity="0" d="M459.69,478.33l13.77.51c9.9.36,13.8,6.48,13.6,11.84-.15,4.1-2.64,11-14.48,10.54l-4.05-.14L468,516.45l-9.66-.36Zm11.88,16.33c4.42.16,5.74-1.67,5.84-4.44.08-2.32-1-4.74-5.19-4.9l-3.11-.11-.34,9.34Z" fill="#a31b37"/>
+		<path opacity="0" d="M491,479.36l24.81-.21.06,6.53-15.15.13.07,8.8,14.09-.12,0,6.53-14.09.11.08,9.41,15.71-.13,0,6.53-25.37.21Z" fill="#a31b37"/>
+		<path opacity="0" d="M520.26,479.07l13.89-.67c8.72-.42,13.92,3.7,14.22,9.89.2,4.26-1.78,7.07-6.74,9.19,3.89,1.7,5.8,10.08,9.8,17.92l-10,.48-2.65-7c-3.07-8.05-3.73-8.68-7.77-8.49l.77,15.92-9.66.47Zm13.45,14.69c3.24-.15,5.16-1.8,5-4.78s-2-4.17-5.57-4l-2.93.14.43,8.79Z" fill="#a31b37"/>
+		<path opacity="0" d="M558.43,483.34l-9.68.88-.59-6.5,29-2.64.59,6.51-9.69.88,2.83,31.13-9.63.87Z" fill="#a31b37"/>
+		<path opacity="0" d="M590.72,494l-14.45-18.74,10.25-1.4,7.94,10.64,3.68-12.22,10.19-1.4-7.79,21.78,2.33,17.1-9.82,1.34Z" fill="#a31b37"/>
+		<path opacity="0" d="M628.87,467.11l13.58-3c8.52-1.88,14.34,1.31,15.67,7.36.91,4.17-.57,7.27-5.1,10.19,4.12,1,7.4,9,12.66,16l-9.8,2.16-3.78-6.42c-4.38-7.42-5.13-7.93-9.09-7.06l3.43,15.56L637,504Zm15.72,12.24c3.16-.7,4.78-2.64,4.14-5.56s-2.68-3.77-6.15-3l-2.87.63,1.9,8.59Z" fill="#a31b37"/>
+		<path opacity="0" d="M659.88,460.11l23.91-6.66,1.75,6.28L671,463.8l2.36,8.47,13.57-3.78,1.75,6.29-13.57,3.78,2.52,9.06,15.14-4.22,1.75,6.29L670,496.5Z" fill="#a31b37"/>
+		<path opacity="0" d="M695.32,478.27c4.77,1.48,7.36,1.72,9.78.9,2.18-.74,3.29-2.52,2.71-4.25-1.77-5.24-15.68-4.91-18.62-13.61-1.74-5.14,1.94-10.82,8.5-13a20.64,20.64,0,0,1,9.54-.78l2.27,6.71c-4.69-.63-6.66-.61-8.67.07-2.18.74-3.38,2.25-2.89,3.72,1.44,4.24,16.25,5,19.11,13.51,1.94,5.71-1.63,11.7-8.31,14-3.13,1.06-6.37,1.22-10.82.51Z" fill="#a31b37"/>
+		<path opacity="0" d="M711.77,443.94l23-9.37,2.46,6.05-14,5.72,3.32,8.14,13-5.32,2.47,6-13,5.32,3.55,8.71,14.55-5.93,2.46,6L726,478.93Z" fill="#a31b37"/>
+		<path opacity="0" d="M745,429.39l9-4.49,27,29-8.36,4.19-5.3-6.13-8.59,4.29,1.68,7.95L752,468.37Zm18.28,17.7-9.1-10.79-.11.06,3.14,13.77Z" fill="#a31b37"/>
+		<path opacity="0" d="M765.1,419.39,776.86,412c7.38-4.66,13.93-3.63,17.23,1.61,2.27,3.6,1.93,7-1.34,11.32,4.22-.44,10,5.91,17.34,10.77L801.61,441l-5.73-4.76c-6.64-5.49-7.52-5.72-11-3.55l8.51,13.47-8.17,5.16ZM784,425.55c2.74-1.73,3.6-4.1,2-6.63s-3.8-2.64-6.81-.74l-2.48,1.57,4.7,7.43Z" fill="#a31b37"/>
+		<path opacity="0" d="M833.16,413.92a16.25,16.25,0,0,1-5.85,8.49c-7.84,6.47-18,5.27-25.44-3.69-7.61-9.22-7.33-19.57.75-26.23a22.94,22.94,0,0,1,8.75-4.49l4.61,5.59c-3.43.75-5.4,1.59-7,2.94-4.29,3.53-5.08,9.13.2,15.53,5.11,6.19,10.39,7.5,15,3.69,1.92-1.58,3.36-4.35,4.32-7.5Z" fill="#a31b37"/>
+		<path opacity="0" d="M812.85,384.82l6.18-7.43,11.87,9.85,6.82-8.2-11.88-9.86,6.17-7.43,29.08,24.13-6.17,7.44-12.18-10.11-6.81,8.2,12.18,10.11L841.94,409Z" fill="#a31b37"/>
+	</g>
+	<g id="afx-fill" opacity="0">
+		<path d="M224,324,277.9,95.66h98.39L430.23,324H361.58l-9.2-38.93H301.81L292.61,324Zm103.3-148.35h-.62l-12.26,55.78h25.44Z" fill="#a31b37"/>
+		<path d="M437.9,95.66h129v57.62H506.55v40.77h43.83v57.62H506.55V324H437.9Z" fill="#a31b37"/>
+		<path d="M572.76,95.66h75.1l22.68,42,22.07-42h74.48L708.24,207.84,770.77,324h-75.1l-24.52-45.67L647.25,324H572.76l60.69-115.56Z" fill="#a31b37"/>
+	</g>
+	<g id="afx-stroke">
+		<path d="M224,324,277.9,95.66h98.39L430.23,324H361.58l-9.2-38.93H301.81L292.61,324H224" fill="none" stroke="#a0a09f" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke-dasharray="836" stroke-dashoffset="836"></path>
+		<path d="M314.37,231.44l12.26-55.78h.62l12.56,55.78H314.37" fill="none" stroke="#a0a09f" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke-dasharray="141" stroke-dashoffset="141"></path>
+		<path d="M437.9,324V95.66h129v57.62H506.55v40.77h43.83v57.62H506.55V324H437.9" fill="none" stroke="#a0a09f" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke-dasharray="803" stroke-dashoffset="803"></path>
+		<path d="M572.76,324l60.69-115.56L572.76,95.66h75.1l22.68,42,22.07-42h74.48L708.24,207.84,770.77,324h-75.1l-24.52-45.67L647.25,324H572.76" fill="none" stroke="#a0a09f" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke-dasharray="1015" stroke-dashoffset="1015"></path>
+	</g>
+	<style>
+		#afx-logo #afx-stroke > path {
+			-webkit-animation: drawIn 1.5s linear 0.2s forwards, fadeOut 0.5s linear 1.7s forwards;
+			        animation: drawIn 1.5s linear 0.2s forwards, fadeOut 0.5s linear 1.7s forwards;
+		}
+
+		#afx-logo #afx-fill {
+			-webkit-animation: fadeIn 0.75s ease-in-out 1.7s forwards;
+			        animation: fadeIn 0.75s ease-in-out 1.7s forwards;
+		}
+
+		#afx-logo #elipseLine {
+			-webkit-animation: drawIn 1s ease-in-out 1.7s forwards;
+			        animation: drawIn 1s ease-in-out 1.7s forwards;
+		}
+
+		#afx-logo #text > path {
+			-webkit-animation: fadeIn 0.01s linear forwards;
+			        animation: fadeIn 0.01s linear forwards;
+		}
+
+		#afx-logo #text > path:nth-child(1) {
+			-webkit-animation-delay: 3.05s;
+			        animation-delay: 3.05s;
+		}
+		#afx-logo #text > path:nth-child(2) {
+			-webkit-animation-delay: 3.1s;
+			        animation-delay: 3.1s;
+		}
+		#afx-logo #text > path:nth-child(3) {
+			-webkit-animation-delay: 3.15s;
+			        animation-delay: 3.15s;
+		}
+		#afx-logo #text > path:nth-child(4) {
+			-webkit-animation-delay: 3.2s;
+			        animation-delay: 3.2s;
+		}
+		#afx-logo #text > path:nth-child(5) {
+			-webkit-animation-delay: 3.25s;
+			        animation-delay: 3.25s;
+		}
+		#afx-logo #text > path:nth-child(6) {
+			-webkit-animation-delay: 3.3s;
+			        animation-delay: 3.3s;
+		}
+		#afx-logo #text > path:nth-child(7) {
+			-webkit-animation-delay: 3.35s;
+			        animation-delay: 3.35s;
+		}
+		#afx-logo #text > path:nth-child(8) {
+			-webkit-animation-delay: 3.4s;
+			        animation-delay: 3.4s;
+		}
+		#afx-logo #text > path:nth-child(9) {
+			-webkit-animation-delay: 3.45s;
+			        animation-delay: 3.45s;
+		}
+		#afx-logo #text > path:nth-child(10) {
+			-webkit-animation-delay: 3.5s;
+			        animation-delay: 3.5s;
+		}
+		#afx-logo #text > path:nth-child(11) {
+			-webkit-animation-delay: 3.55s;
+			        animation-delay: 3.55s;
+		}
+		#afx-logo #text > path:nth-child(12) {
+			-webkit-animation-delay: 3.6s;
+			        animation-delay: 3.6s;
+		}
+		#afx-logo #text > path:nth-child(13) {
+			-webkit-animation-delay: 3.65s;
+			        animation-delay: 3.65s;
+		}
+		#afx-logo #text > path:nth-child(14) {
+			-webkit-animation-delay: 3.7s;
+			        animation-delay: 3.7s;
+		}
+		#afx-logo #text > path:nth-child(15) {
+			-webkit-animation-delay: 3.75s;
+			        animation-delay: 3.75s;
+		}
+		#afx-logo #text > path:nth-child(16) {
+			-webkit-animation-delay: 3.8s;
+			        animation-delay: 3.8s;
+		}
+		#afx-logo #text > path:nth-child(17) {
+			-webkit-animation-delay: 3.85s;
+			        animation-delay: 3.85s;
+		}
+		#afx-logo #text > path:nth-child(18) {
+			-webkit-animation-delay: 3.9s;
+			        animation-delay: 3.9s;
+		}
+		#afx-logo #text > path:nth-child(19) {
+			-webkit-animation-delay: 3.95s;
+			        animation-delay: 3.95s;
+		}
+		#afx-logo #text > path:nth-child(20) {
+			-webkit-animation-delay: 4s;
+			        animation-delay: 4s;
+		}
+		#afx-logo #text > path:nth-child(21) {
+			-webkit-animation-delay: 4.05s;
+			        animation-delay: 4.05s;
+		}
+		#afx-logo #text > path:nth-child(22) {
+			-webkit-animation-delay: 4.1s;
+			        animation-delay: 4.1s;
+		}
+		#afx-logo #text > path:nth-child(23) {
+			-webkit-animation-delay: 4.15s;
+			        animation-delay: 4.15s;
+		}
+		#afx-logo #text > path:nth-child(24) {
+			-webkit-animation-delay: 4.2s;
+			        animation-delay: 4.2s;
+		}
+
+		@-webkit-keyframes drawIn {
+			to {
+				stroke-dashoffset: 0px;
+			}
+		}
+
+		@keyframes drawIn {
+			to {
+				stroke-dashoffset: 0px;
+			}
+		}
+
+		@-webkit-keyframes fadeIn {
+			to {
+				opacity: 1;
+			}
+		}
+
+		@keyframes fadeIn {
+			to {
+				opacity: 1;
+			}
+		}
+
+		@-webkit-keyframes fadeOut {
+			to {
+				opacity: 0;
+			}
+		}
+
+		@keyframes fadeOut {
+			to {
+				opacity: 0;
+			}
+		}
+	</style>
+</svg>

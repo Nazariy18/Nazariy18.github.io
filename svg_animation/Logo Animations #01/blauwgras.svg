@@ -1,0 +1,190 @@
+<svg id="blauw-gras-logo" xmlns="http://www.w3.org/2000/svg" viewBox="-50 0 1365 273">
+	<defs>
+		<clipPath id="clipW1">
+			<polygon points="549 88 503 88 549 219 595 219 549 88"/>
+		</clipPath>
+		<clipPath id="clipW2">
+			<polygon points="642 44 595 44 642 219 688 219 642 44"/>
+		</clipPath>
+		<clipPath id="clipW3">
+			<polygon points="595 44 549 219 595 219 642 44 595 44"/>
+		</clipPath>
+		<clipPath id="clipW4">
+			<polygon points="688 0 734 0 687.98 219 642 219 688 0"/>
+		</clipPath>
+		<clipPath id="clip-gras">
+			<polygon points="734 0 677.35 273 1265 273 1265 0 734 0"/>
+		</clipPath>
+		<clipPath id="clip-blau">
+			<path d="M109.37,129.79c11.48-9.09,17.1-20.84,17.1-35.69,0-14.63-5.4-26.6-16-35.91S86.87,44,71.34,44H0V222H76.74c15.75,0,29.25-4.88,40.06-14.41,10.8-9.75,16.2-21.94,16.2-37.24Q133,143.43,109.37,129.79ZM36,78H71.61c5.64,0,10.37,1.77,14,5.54A19.4,19.4,0,0,1,91,97.5a18.68,18.68,0,0,1-5.64,14A18.33,18.33,0,0,1,71.61,117H36ZM92.16,185a20.43,20.43,0,0,1-15,6H36V149H77.11a20.43,20.43,0,0,1,15,6c4,4,5.84,8.89,5.84,14.89A21.21,21.21,0,0,1,92.16,185Z" />
+			<polygon points="155 44 188 44 188 219 155 219 155 44" />
+			<path d="M314.74,104c-9.89-12.66-24.05-19-42-19-17.31,0-31.92,6.56-44.28,19.89S210,134.28,210,153.5s6.07,35.49,18.43,48.61c12.36,13.33,27,19.89,44.28,19.89,18,0,32.14-6.33,42-19v16H348V88H314.74Zm-9.07,75.87Q295.33,190,279.5,190t-26.17-10.14Q243,169.72,243,153.5q0-15.88,10.33-26.36Q263.67,117,279.5,117t26.17,10.14Q316,137.28,316,153.5T305.67,179.86Z" />
+			<path d="M458.31,155.08c0,11.22-2.5,19.81-7.74,25.54s-12.29,8.59-20.94,8.59c-7.73,0-14.11-2.38-18.89-7.16s-7.05-11.93-7.05-21V88H370v77.58c0,17.67,4.55,31.51,13.88,41.53s21.17,15,35.51,15c17.76,0,30.73-6.44,38.92-19.09,12-14.41,33.69-61.64,33.69-78.65V88H458.31Z" />
+		</clipPath>
+		<clipPath id="clip-u2">
+			<path d="M458.31,203.06V219H492V88H458.31V203.06Z"/>
+		</clipPath>
+	</defs>
+	<g id="r-point" opacity="0">
+		<path d="M1254,66a11.27,11.27,0,0,1,5.41,1.42,10.07,10.07,0,0,1,4.11,4.07,11.05,11.05,0,0,1,0,11,10.24,10.24,0,0,1-4.07,4.08,11.06,11.06,0,0,1-11,0,10.31,10.31,0,0,1-4.07-4.08,11,11,0,0,1,0-11,10.15,10.15,0,0,1,4.12-4.07A11.25,11.25,0,0,1,1254,66Zm0,1.82a9.43,9.43,0,0,0-4.52,1.19,8.57,8.57,0,0,0-3.43,3.4,9.32,9.32,0,0,0-1.24,4.6,9.22,9.22,0,0,0,1.22,4.55,8.62,8.62,0,0,0,3.4,3.4,9.15,9.15,0,0,0,9.13,0,8.56,8.56,0,0,0,3.4-3.4,9.19,9.19,0,0,0,0-9.15,8.53,8.53,0,0,0-3.44-3.4A9.41,9.41,0,0,0,1254,67.82Zm-.76,3.43h.31a9.08,9.08,0,0,1,2.71.33,2.94,2.94,0,0,1,1.48,1.14,3,3,0,0,1,.56,1.74,3.17,3.17,0,0,1-.93,2.26,3.59,3.59,0,0,1-2.45,1.07,3.43,3.43,0,0,1,1,.63,13.45,13.45,0,0,1,1.75,2.35h0l1.44,2.32h-2.33l-1-1.87-.15-.27a8.58,8.58,0,0,0-1.85-2.48,2.39,2.39,0,0,0-1.53-.41h-1.12v5h-1.91V71.25Zm0,1.6h-2.17v3.57h2.32a3.77,3.77,0,0,0,2.27-.49,1.71,1.71,0,0,0,.31-2.25,1.64,1.64,0,0,0-.81-.62,5.82,5.82,0,0,0-1.92-.21Z" fill="#333"/>
+	</g>
+	<g id="g-gras" clip-path="url(#clip-gras)">
+		<g id="w-gras">
+			<path d="M872,88V211.22c0,20-6.57,35.1-19.87,45.68-13.08,10.57-29.08,15.75-47.57,15.75-14,0-26.15-2.7-36.74-8.1a55.52,55.52,0,0,1-24.35-23.4l28.4-16.2c6.54,11.92,17.81,18,33.82,18,10.6,0,18.71-2.7,24.8-8.33,6.08-5.4,9-13.27,9-23.4V197.27q-14.88,19.57-41.26,19.58c-18.26,0-33.59-6.3-45.76-19.13C740.09,184.9,734,169.37,734,150.92c0-18.22,6.31-33.75,18.71-46.57S780.44,85,798.48,85q26.71,0,41.25,19.57V88Zm-94.72,88.35c6.77,6.52,15.56,9.9,25.93,9.9,10.6,0,19.16-3.38,25.93-9.9s10.14-15.08,10.14-25.43c0-10.12-3.38-18.45-10.14-25.2-6.77-6.52-15.56-9.9-25.93-9.9-10.6,0-19.16,3.38-25.93,9.9s-10.14,15.08-10.14,25.2C767.14,161.27,770.52,169.6,777.28,176.35Z" fill="#333"/>
+			<path d="M927.36,100.3C935.26,88.15,957.21,85,966,85v37.12c-10.14-1.12-18.57.9-26.69,6.3S927.36,142.6,927.36,155v64H894V88h33.36Z" fill="#333"/>
+			<path d="M1081.74,104c-9.89-12.66-24-19-42-19-17.31,0-31.92,6.56-44.28,19.89S977,134.28,977,153.5s6.07,35.49,18.43,48.61c12.36,13.33,27,19.89,44.28,19.89,18,0,32.14-6.33,42-19v16H1115V88h-33.26Zm-9.07,75.87Q1062.34,190,1046.5,190t-26.17-10.14Q1010,169.72,1010,153.5q0-15.88,10.33-26.36Q1030.67,117,1046.5,117t26.17,10.14Q1083,137.28,1083,153.5T1072.67,179.86Z" fill="#333"/>
+			<path d="M1176.68,125.15c0,3.4,2.25,6.35,6.76,8.39a79.78,79.78,0,0,0,16.68,5.67,132,132,0,0,1,19.62,6.35,38.09,38.09,0,0,1,16.68,12.7c4.51,5.9,6.58,13.16,6.58,22,0,13.39-4.78,23.59-14.7,30.85S1206,222,1191.33,222c-26.6,0-44.64-10.36-54.33-31l28.86-16.18c3.83,11.34,12.17,17,25.25,17,11.94,0,17.62-3.63,17.62-11.11,0-3.4-2.07-6.35-6.58-8.39a93.64,93.64,0,0,0-16.68-5.9,166.67,166.67,0,0,1-19.61-6.58,40.5,40.5,0,0,1-16.69-12.25q-6.76-8.5-6.76-21.09c0-12.93,4.73-22.91,14-30.4,9.47-7.25,21-11.11,34.94-11.11A57.81,57.81,0,0,1,1220,92.26a53.9,53.9,0,0,1,20.52,20.41l-28.41,15.65c-4.06-8.84-11-13.15-20.74-13.15-4.28,0-7.89.9-10.82,3A7.75,7.75,0,0,0,1176.68,125.15Z" fill="#333"/>
+		</g>
+	</g>
+	<g id="w-blauw">
+		<g id="blau-path" clip-path="url(#clip-blau)">
+			<path d="M18,39.65V225.89" fill="none" stroke="#00bdff" stroke-miterlimit="10" stroke-width="37" stroke-dasharray="187" stroke-dashoffset="187"></path>
+			<path d="M0,61H76.55a31.65,31.65,0,0,1,0,63.29H30.48l.19,10.82H83.79c18,0,32.58,15.63,32.58,34.91s-14.58,34.91-32.58,34.91H0" fill="none" stroke="#00bdff" stroke-miterlimit="10" stroke-width="38" stroke-dasharray="475" stroke-dashoffset="475"></path>
+			<path d="M171.5,39.65v182.5" fill="none" stroke="#00bdff" stroke-miterlimit="10" stroke-width="36" stroke-dasharray="183" stroke-dashoffset="183"></path>
+			<path d="M332.72,87.29V223.15" fill="none" stroke="#00bdff" stroke-miterlimit="10" stroke-width="36" stroke-dasharray="136" stroke-dashoffset="136"></path>
+			<path d="M334.92,152.94c-1.61-3.48-4.82-9.11-6.8-14.64C319,117.53,302,101,276.86,101c-27.89,0-50.51,23.26-50.51,52s22.62,52,50.51,52,50.5-23.26,50.5-52" fill="none" stroke="#00bdff" stroke-miterlimit="10" stroke-width="36" stroke-dasharray="326" stroke-dashoffset="326"></path>
+			<path d="M387.27,85v85.71s1.79,34.2,36.09,34.2c55-8.88,51.06-76.55,51.06-76.55L475.14,85" fill="none" stroke="#00bdff" stroke-miterlimit="10" stroke-width="37" stroke-dasharray="286" stroke-dashoffset="286"></path>
+		</g>
+		<g clip-path="url(#clip-u2)">
+			<path id="path-u2" d="M475.14,85l-.75,137.15" fill="none" stroke="#00bdff" stroke-miterlimit="10" stroke-width="37" stroke-dasharray="138" stroke-dashoffset="138"></path>
+		</g>
+		<g id="w-rects">
+			<g clip-path="url(#clipW1)">
+				<rect  id="w-rect1" x="496.69" y="88" width="122.08" height="131" fill="#0076b7"/>
+			</g>
+			<g clip-path="url(#clipW3)">
+				<rect id="w-rect2" x="528.43" y="44" width="140.98" height="175" fill="#00bdff"/>
+			</g>
+			<g clip-path="url(#clipW2)">
+				<rect id="w-rect3" x="565.09" y="44" width="148.91" height="175" fill="#0076b7"/>
+			</g>
+			<g clip-path="url(#clipW4)">
+				<rect id="w-rect4" x="638.8" width="108.85" height="219" fill="#00bdff"/>
+			</g>
+		</g>
+	</g>
+	<style>
+		#blauw-gras-logo #blau-path > *:nth-child(1) {
+			-webkit-animation: drawIn 0.22s ease-in-out 0s forwards;
+			        animation: drawIn 0.22s ease-in-out 0s forwards;
+		}
+		#blauw-gras-logo #blau-path > *:nth-child(2) {
+			-webkit-animation: drawIn 0.55s ease-in-out 0.1s forwards;
+			        animation: drawIn 0.55s ease-in-out 0.1s forwards;
+		}
+		#blauw-gras-logo #blau-path > *:nth-child(3) {
+			-webkit-animation: drawIn 0.21s ease-in-out 0.55s forwards;
+			        animation: drawIn 0.21s ease-in-out 0.55s forwards;
+		}
+		#blauw-gras-logo #blau-path > *:nth-child(4) {
+			-webkit-animation: drawIn 0.16s ease-in-out 0.75s forwards;
+			        animation: drawIn 0.16s ease-in-out 0.75s forwards;
+		}
+		#blauw-gras-logo #blau-path > *:nth-child(5) {
+			-webkit-animation: drawIn 0.38s ease-in-out 0.8s forwards;
+			        animation: drawIn 0.38s ease-in-out 0.8s forwards;
+		}
+		#blauw-gras-logo #blau-path > *:nth-child(6) {
+			-webkit-animation: drawIn 0.35s ease-in-out 1.1s forwards;
+			        animation: drawIn 0.35s ease-in-out 1.1s forwards;
+		}
+		#blauw-gras-logo #path-u2 {
+			-webkit-animation: drawIn 0.18s ease-in-out 1.35s forwards;
+			        animation: drawIn 0.18s ease-in-out 1.35s forwards;
+		}
+
+
+		#blauw-gras-logo #w-rect1 {
+			-webkit-transform: translate(0px, -132px);
+			    -ms-transform: translate(0px, -132px);
+			        transform: translate(0px, -132px);
+			-webkit-animation: moveIn 0.15s ease-in-out 1.5s forwards;
+			        animation: moveIn 0.15s ease-in-out 1.5s forwards;
+		}
+		#blauw-gras-logo #w-rect2 {
+			-webkit-transform: translate(0px, 176px);
+			    -ms-transform: translate(0px, 176px);
+			        transform: translate(0px, 176px);
+			-webkit-animation: moveIn 0.2s ease-in-out 1.6s forwards;
+			        animation: moveIn 0.2s ease-in-out 1.6s forwards;
+		}
+		#blauw-gras-logo #w-rect3 {
+			-webkit-transform: translate(0px, -176px);
+			    -ms-transform: translate(0px, -176px);
+			        transform: translate(0px, -176px);
+			-webkit-animation: moveIn 0.2s ease-in-out 1.73s forwards;
+			        animation: moveIn 0.2s ease-in-out 1.73s forwards;
+		}
+		#blauw-gras-logo #w-rect4 {
+			-webkit-transform: translate(0px, 220px);
+			    -ms-transform: translate(0px, 220px);
+			        transform: translate(0px, 220px);
+			-webkit-animation: moveIn 0.3s ease-out 1.86s forwards;
+			        animation: moveIn 0.3s ease-out 1.86s forwards;
+		}
+
+		#blauw-gras-logo #w-blauw,
+		#blauw-gras-logo #g-gras {
+			-webkit-transform: translate(250px, 0px);
+			    -ms-transform: translate(250px, 0px);
+			        transform: translate(250px, 0px);
+			-webkit-animation: moveIn 0.8s ease-in-out 2s forwards;
+			        animation: moveIn 0.8s ease-in-out 2s forwards;
+		}
+
+		#blauw-gras-logo #w-gras {
+			-webkit-transform: translate(-600px, 0px);
+			    -ms-transform: translate(-600px, 0px);
+			        transform: translate(-600px, 0px);
+			-webkit-animation: moveIn 0.8s ease-in-out 2s forwards;
+			        animation: moveIn 0.8s ease-in-out 2s forwards;
+		}
+
+		#blauw-gras-logo #r-point {
+			-webkit-animation: fadeIn 0.4s linear 2.65s forwards;
+			        animation: fadeIn 0.4s linear 2.65s forwards;
+		}
+
+		@-webkit-keyframes moveIn {
+			to {
+				opacity: 1;
+				-webkit-transform: translate(0px, 0px);
+				        transform: translate(0px, 0px);
+			}
+		}
+
+		@keyframes moveIn {
+			to {
+				opacity: 1;
+				-webkit-transform: translate(0px, 0px);
+				        transform: translate(0px, 0px);
+			}
+		}
+
+		@-webkit-keyframes drawIn {
+			to {
+				stroke-dashoffset: 0px;
+			}
+		}
+
+		@keyframes drawIn {
+			to {
+				stroke-dashoffset: 0px;
+			}
+		}
+
+		@-webkit-keyframes fadeIn {
+			to {
+				opacity: 1;
+			}
+		}
+
+		@keyframes fadeIn {
+			to {
+				opacity: 1;
+			}
+		}
+
+
+	</style>
+</svg>
