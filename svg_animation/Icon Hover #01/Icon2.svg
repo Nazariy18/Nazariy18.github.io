@@ -1,0 +1,100 @@
+<svg id="fhc-icon2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <g>
+    <g id="wrench">
+      <path d="M201.1,75.74a1.5,1.5,0,0,0-2.53-.75L185.82,87.74l-14.74-2.82-2.82-14.73L181,57.43a1.5,1.5,0,0,0-.75-2.53,27,27,0,0,0-30.63,36.38L91.28,149.63A27,27,0,0,0,54.9,180.26a1.54,1.54,0,0,0,1,1.13,1.52,1.52,0,0,0,1.49-.38l12.75-12.75,14.74,2.82,2.82,14.74L75,198.57a1.52,1.52,0,0,0-.38,1.49,1.54,1.54,0,0,0,1.13,1,27.48,27.48,0,0,0,5.61.58,27,27,0,0,0,25-37l58.35-58.35A27,27,0,0,0,201.1,75.74Z" fill="#3f4347"/>
+      <g>
+        <path d="M153,113l-4.61-9.71-4-2.47L124.17,121l-7.41,7.41L92.69,152.46a1.51,1.51,0,0,1-1.67.32,24,24,0,0,0-33.61,24l11.22-11.21a1.48,1.48,0,0,1,1.34-.41l16.51,3.17a1.49,1.49,0,0,1,1.19,1.19L90.84,186a1.5,1.5,0,0,1-.41,1.34L79.22,198.59a24,24,0,0,0,24-33.61,1.51,1.51,0,0,1,.32-1.67L123.88,143l14.87-14.87,8-8Z" fill="#f1f2f2"/>
+        <path d="M144.36,100.79c.53,2.4,1,4.86,1.37,7.36l.49,3.75c.3,2.69.49,5.43.54,8.19l16.55-16.55a1.51,1.51,0,0,1,1.67-.32,24,24,0,0,0,33.61-24L187.37,90.43a1.48,1.48,0,0,1-1.34.41l-16.51-3.17a1.49,1.49,0,0,1-1.19-1.19L165.16,70a1.5,1.5,0,0,1,.41-1.34l11.21-11.22a24,24,0,0,0-24,33.61,1.51,1.51,0,0,1-.32,1.67Z" fill="#dddedf"/>
+      </g>
+      <path d="M111.64,144.36a1.51,1.51,0,0,0-2.12,0L99.23,154.65a1.49,1.49,0,0,0,0,2.12,1.45,1.45,0,0,0,1.06.44,1.47,1.47,0,0,0,1.06-.44l10.29-10.29A1.51,1.51,0,0,0,111.64,144.36Z" fill="#3f4347"/>
+      <line x1="121.02" y1="134.78" x2="155.37" y2="100.43" fill="none" stroke="#3f4347" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    </g>
+    <g id="screwdriver">
+      <path d="M195,173.63l-42.2-42.2a6.27,6.27,0,0,0-8.84,0l-.95.95-2.16-2.16h0L137,126.33a2.4,2.4,0,0,0-3.4,0l-2,2-50-50-2.81-6.26a1.51,1.51,0,0,0-.49-.6L65.52,62.35a1.5,1.5,0,0,0-1.94.15l-5.29,5.3a1.49,1.49,0,0,0-.16,1.93L67.32,82.5a1.42,1.42,0,0,0,.6.49l6.26,2.82,50,50-2,2a2.4,2.4,0,0,0,0,3.4l4.23,4.22,1.82,1.83-.94.95a6.25,6.25,0,0,0,0,8.84l42.19,42.19a6.25,6.25,0,0,0,8.84,0L195,182.47A6.27,6.27,0,0,0,195,173.63Z" fill="#3f4347"/>
+      <path d="M173.27,156.13l-10.33,18.68-1.46,3.64-1.9,6.7,11.95,12a3.25,3.25,0,0,0,4.6,0l16.76-16.76a3.25,3.25,0,0,0,0-4.6Z" fill="#f4716b"/>
+      <path d="M165.14,177.9a51.81,51.81,0,0,0,8.13-21.77L150.7,133.55a3.26,3.26,0,0,0-4.6,0l-2,2h0l-12.74,12.75h0l-2,2a3.25,3.25,0,0,0,0,4.6l30.24,30.23a59.81,59.81,0,0,0,3.83-4.74Z" fill="#ff9481"/>
+      <g>
+        <path d="M149.13,164a1.49,1.49,0,0,0,0,2.12l14.28,14.28,9.13,9.13a1.49,1.49,0,0,0,1.06.44,1.51,1.51,0,0,0,1.06-.44,1.49,1.49,0,0,0,0-2.12l-9.52-9.52L151.25,164A1.49,1.49,0,0,0,149.13,164Z" fill="#3f4347"/>
+        <path d="M138.58,151.33a1.5,1.5,0,0,0-2.12,2.13l6.71,6.71a1.48,1.48,0,0,0,1.06.43,1.5,1.5,0,0,0,1.06-.43,1.52,1.52,0,0,0,0-2.13Z" fill="#3f4347"/>
+        <path d="M176.37,167.81a1.49,1.49,0,0,0-2.12,0,1.51,1.51,0,0,0,0,2.12l8.95,8.95a1.5,1.5,0,1,0,2.12-2.13Z" fill="#3f4347"/>
+        <path d="M168.6,163.66a1.5,1.5,0,0,0,1.06-2.56l-20.42-20.43a1.51,1.51,0,0,0-2.12,0,1.49,1.49,0,0,0,0,2.12l20.42,20.43A1.53,1.53,0,0,0,168.6,163.66Z" fill="#3f4347"/>
+      </g>
+      <path d="M75.66,83.19l-6.14-2.77L61.31,69l3.49-3.49,11.41,8.21L79,79.88a1.52,1.52,0,0,0,.31.44l50.15,50.16-3.17,3.17L76.11,83.5A1.39,1.39,0,0,0,75.66,83.19Z" fill="#fff"/>
+      <polygon points="124.65 139.5 127.32 136.83 127.32 136.83 132.61 131.54 132.62 131.54 135.28 128.87 140.91 134.5 130.29 145.13 124.65 139.5" fill="#3f4347"/>
+      <polygon points="130.29 145.13 140.91 134.5 135.28 128.87 132.62 131.54 132.61 131.54 127.32 136.83 127.32 136.83 124.65 139.5 130.29 145.13" fill="#bbbdbf"/>
+    </g>
+  </g>
+  <style>
+    #fhc-icon2:hover {
+      cursor: pointer;
+    }
+
+    #fhc-icon2:hover #wrench {
+      -webkit-transform-origin: 128px 128px;
+          -ms-transform-origin: 128px 128px;
+              transform-origin: 128px 128px;
+      -webkit-animation: rotateWrench 2.8s ease-out 0s infinite;
+              animation: rotateWrench 2.8s ease-out 0s infinite;
+    }
+
+    #fhc-icon2:hover #screwdriver {
+      -webkit-transform-origin: 128px 128px;
+          -ms-transform-origin: 128px 128px;
+              transform-origin: 128px 128px;
+      -webkit-animation: rotateScrewdriver 2.8s ease-out 0s infinite;
+              animation: rotateScrewdriver 2.8s ease-out 0s infinite;
+    }
+
+    @-webkit-keyframes rotateWrench {
+      40% {
+        -webkit-transform: translate(-50px, 0px) rotate(-40deg);
+                transform: translate(-50px, 0px) rotate(-40deg);
+        -webkit-animation-timing-function: ease-in-out;
+                animation-timing-function: ease-in-out;
+      }
+      66%, 100% {
+        -webkit-transform: translate(0px, 0px) rotate(0deg);
+                transform: translate(0px, 0px) rotate(0deg);
+      }
+    }
+
+    @keyframes rotateWrench {
+      40% {
+        -webkit-transform: translate(-50px, 0px) rotate(-40deg);
+                transform: translate(-50px, 0px) rotate(-40deg);
+        -webkit-animation-timing-function: ease-in-out;
+                animation-timing-function: ease-in-out;
+      }
+      66%, 100% {
+        -webkit-transform: translate(0px, 0px) rotate(0deg);
+                transform: translate(0px, 0px) rotate(0deg);
+      }
+    }
+
+    @-webkit-keyframes rotateScrewdriver {
+      40% {
+        -webkit-transform: translate(50px, 0px) rotate(40deg);
+                transform: translate(50px, 0px) rotate(40deg);
+        -webkit-animation-timing-function: ease-in-out;
+                animation-timing-function: ease-in-out;
+      }
+      66%, 100% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+      }
+    }
+
+    @keyframes rotateScrewdriver {
+      40% {
+        -webkit-transform: translate(50px, 0px) rotate(40deg);
+                transform: translate(50px, 0px) rotate(40deg);
+        -webkit-animation-timing-function: ease-in-out;
+                animation-timing-function: ease-in-out;
+      }
+      66%, 100% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+      }
+    }
+  </style>
+</svg>

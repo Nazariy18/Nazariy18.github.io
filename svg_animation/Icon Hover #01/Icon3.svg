@@ -1,0 +1,162 @@
+<svg id="fhc-icon3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <defs>
+    <clipPath id="clip-wrench">
+      <rect width="256" height="210.2" fill="#f1f2f2"/>
+    </clipPath>
+  </defs>
+  <g>
+    <g>
+      <path d="M121.52,145.27l4.73,4.35,13.32-11.74-1.36-2.67-1.4-13.89c-1.89.68-5.81,1.85-5.81,1.85S131.65,140.64,121.52,145.27Z" fill="#f1f2f2"/>
+      <path d="M141.06,177.79l-44-1-2-.66-10.43-30.9-10.06,2.22L84,181.52a1.27,1.27,0,0,1,0,.58l-3.33,26.4h29.15C132.53,201.67,139.7,183.08,141.06,177.79Z" fill="#dddedf"/>
+      <polygon points="182.12 144.65 181.23 144.63 181.97 145.13 182.12 144.65" fill="#bbbdbf"/>
+      <path d="M108.18,209l64.52.64L169.17,182l.19-.76L178.9,147l-10.13-2.33-10.7,32.12-1.32.47-16.54.86C138.85,183.37,130.82,202.19,108.18,209Z" fill="#bbbdbf"/>
+    </g>
+    <g>
+      <polyline points="73.55 146.96 83.16 181.76 79.48 210.2" fill="none" stroke="#3f4347" stroke-linejoin="round" stroke-width="3"/>
+      <polyline points="104.11 140.99 119.52 160.94 126.84 151.61 112.16 137.88" fill="none" stroke="#3f4347" stroke-linejoin="round" stroke-width="3"/>
+      <path d="M138,120.3l1.47,14.49a6.09,6.09,0,0,0,4.94,5.38l32.27,6.08a17.14,17.14,0,0,1,13.87,14.89l5.66,49.06H56.65l5.65-49.06a17.17,17.17,0,0,1,13.87-14.89l32.28-6.08a6.12,6.12,0,0,0,4.94-5.38l1.46-14.42" fill="none" stroke="#3f4347" stroke-linejoin="round" stroke-width="3"/>
+      <polyline points="179.3 146.96 169.69 181.76 173.38 210.2" fill="none" stroke="#3f4347" stroke-linejoin="round" stroke-width="3"/>
+      <polyline points="168.2 144.68 157.55 176.75 126.02 176.75 126.84 176.75 95.3 176.75 84.65 144.68" fill="none" stroke="#3f4347" stroke-linejoin="round" stroke-width="3"/>
+      <polyline points="148.75 140.99 133.34 160.94 126.02 151.61 140.69 137.88" fill="none" stroke="#3f4347" stroke-linejoin="round" stroke-width="3"/>
+    </g>
+    <g clip-path="url(#clip-wrench)">
+      <g id="wrench">
+        <path d="M189.82,210H178.69V158.71a15.44,15.44,0,0,1-5.45-25.27l2.57-2.6v11.93l8.44,5.72,8.44-5.72V130.84l2.57,2.6a15.44,15.44,0,0,1-5.44,25.27l-.54-1.4.54,1.4Z" fill="none" stroke="#3f4347" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+        <path d="M189.28,157.31a13.94,13.94,0,0,0,4.91-22.82v8.28a1.5,1.5,0,0,1-.65,1.24l-8.45,5.72a1.48,1.48,0,0,1-1.68,0L175,144a1.51,1.51,0,0,1-.66-1.24v-8.28a13.94,13.94,0,0,0,4.92,22.82,1.51,1.51,0,0,1,1,1.4V208.5h8.13V158.71A1.51,1.51,0,0,1,189.28,157.31Z" fill="#dddedf"/>
+        <path d="M184.25,194.54a1.5,1.5,0,0,0-1.5,1.5v8.83a1.5,1.5,0,0,0,3,0V196A1.5,1.5,0,0,0,184.25,194.54Z" fill="#3f4347"/>
+        <path d="M184.25,160.58a1.5,1.5,0,0,0-1.5,1.5v28.4a1.5,1.5,0,1,0,3,0v-28.4A1.5,1.5,0,0,0,184.25,160.58Z" fill="#3f4347"/>
+      </g>
+    </g>
+    <line x1="196.21" y1="210.2" x2="56.65" y2="210.2" fill="none" stroke="#3f4347" stroke-linejoin="round" stroke-width="3"/>
+    <g id="head">
+      <g>
+        <path d="M158.19,84.87V93.8a4.47,4.47,0,0,0,0-8.93Z" fill="#f1f2f2"/>
+        <path d="M119.11,120.42a29,29,0,0,0,7.14.9c16.78,0,31.32-14.14,31.32-31.77,2.2-1.86-1.37-17.62-3.56-18.77l-4.16-1.84a90.81,90.81,0,0,1-2.21,15.93C143,101.16,132.45,114.16,119.11,120.42Z" fill="#f1f2f2"/>
+        <path d="M157.57,83.43a5.91,5.91,0,0,1,0,11.81" fill="none" stroke="#3f4347" stroke-miterlimit="10" stroke-width="3"/>
+        <path d="M93.48,95.24a5.91,5.91,0,1,1,0-11.81" fill="none" stroke="#3f4347" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3"/>
+        <ellipse cx="125.84" cy="87.88" rx="32.36" ry="34.72" fill="none" stroke="#3f4347" stroke-miterlimit="10" stroke-width="3"/>
+      </g>
+      <g id="g-hat">
+        <g id="hat">
+          <path d="M163.94,84.87h5a1.5,1.5,0,0,0,0-3h-5.61c-.75-20.74-17.11-37.37-37.11-37.37S89.89,61.13,89.13,81.87H83.52a1.5,1.5,0,1,0,0,3h80.42Z" fill="#3f4347"/>
+          <path d="M139.17,58.35,135.52,56c.64-2.32,1.14-4.54,1.53-6.6a32.62,32.62,0,0,0-10.8-1.85c-18.36,0-33.37,15.28-34.12,34.37H121a43,43,0,0,0,3.59-3.82l4,.43Z" fill="#ff9481"/>
+          <path d="M137.05,49.35A81.19,81.19,0,0,1,134.61,59l-.49,1.45a64.5,64.5,0,0,1-3.36,8l-1.51,2.79q-.58,1-1.2,2s-2.3,3.46-2.46,3.5A43.79,43.79,0,0,1,121,81.87h39.41C159.77,66.71,150.17,54,137.05,49.35Z" fill="#f4716b"/>
+          <g>
+            <path d="M116.69,67.4l-.5,0a2.51,2.51,0,0,0-1.16.23,1.23,1.23,0,0,0-.61.75,4.82,4.82,0,0,0-.17,1.46v.38h-.66v1.45h.66v5.1H116v-5.1h1.57V70.2H116v-.39a1.89,1.89,0,0,1,.07-.6.5.5,0,0,1,.25-.3,1,1,0,0,1,.46-.09h.9l0-1.33-.42,0Z" fill="#fff"/>
+            <rect x="119.4" y="67.53" width="1.73" height="9.22" fill="#fff"/>
+            <path d="M127.76,71a1.61,1.61,0,0,0-.85-.68,4,4,0,0,0-1.39-.21c-.3,0-.62,0-1,0a10,10,0,0,0-1,.14c-.32,0-.59.11-.81.16l.05,1.23c.22,0,.49-.06.8-.08l.94-.07.84,0a1,1,0,0,1,.69.19.77.77,0,0,1,.24.65v.4l-1.59.14a4.3,4.3,0,0,0-1.26.23,1.44,1.44,0,0,0-.78.6,2.14,2.14,0,0,0-.26,1.14,2.12,2.12,0,0,0,.52,1.56,2.08,2.08,0,0,0,1.53.51,4.65,4.65,0,0,0,.83-.07l.3-.08c.16,0,.32-.07.46-.12l.56-.21a1.43,1.43,0,0,0,.35.25,1.46,1.46,0,0,0,.51.16l.33,0h.79l0-1.2a1,1,0,0,1-.39-.14.34.34,0,0,1-.19-.28v-3A2.51,2.51,0,0,0,127.76,71Zm-2.88,4.65a.66.66,0,0,1-.55-.22,1,1,0,0,1-.17-.61.76.76,0,0,1,.81-.86l1.33-.12v1.5l-.39.14-.51.12A3.26,3.26,0,0,1,124.88,75.6Z" fill="#fff"/>
+            <path d="M130,69.89v.31h-.77v1.45H130v3.49a1.75,1.75,0,0,0,1.75,1.75H133V75.42h-.68a.52.52,0,0,1-.52-.52V71.65h1.67V70.2h-1.67V68.47H130Z" fill="#fff"/>
+            <path d="M128.41,55a3.08,3.08,0,0,0-3.34,0l-9.28,5.92a3.07,3.07,0,0,0-1.42,2.6V65a.74.74,0,1,0,1.48,0V63.5a1.61,1.61,0,0,1,.74-1.35l9.28-5.92a1.61,1.61,0,0,1,1.73,0l6.52,4.24,2.57,1.67a1.62,1.62,0,0,1,.73,1.34V75a.44.44,0,0,1-.44.44h-1.63a.74.74,0,1,0,0,1.48H137A1.92,1.92,0,0,0,138.9,75V63.49a3.08,3.08,0,0,0-1.4-2.58L134.61,59Z" fill="#fff"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+  <style>
+    #fhc-icon3:hover {
+      cursor: pointer;
+    }
+
+    #fhc-icon3:hover #g-hat {
+      -webkit-transform-origin: 128px 84px;
+          -ms-transform-origin: 128px 84px;
+              transform-origin: 128px 84px;
+      -webkit-animation: moveHat 2.5s ease-out 0s infinite;
+              animation: moveHat 2.5s ease-out 0s infinite;
+    }
+
+    #fhc-icon3:hover #hat {
+      -webkit-transform-origin: 128px 84px;
+          -ms-transform-origin: 128px 84px;
+              transform-origin: 128px 84px;
+      -webkit-animation: moveHat2 2.5s ease-in-out 0s infinite;
+              animation: moveHat2 2.5s ease-in-out 0s infinite;
+    }
+
+    #fhc-icon3:hover #wrench {
+      -webkit-transform-origin: 184.25px 206.4px;
+          -ms-transform-origin: 184.25px 206.4px;
+              transform-origin: 184.25px 206.4px;
+      -webkit-animation: movewrench3 2.5s ease-in-out 0s infinite;
+              animation: movewrench3 2.5s ease-in-out 0s infinite;
+    }
+
+    @-webkit-keyframes moveHat {
+      42% {
+        -webkit-transform: translate(0px, -5px);
+                transform: translate(0px, -5px);
+        -webkit-animation-timing-function: ease-in;
+                animation-timing-function: ease-in;
+      }
+      60%, 100% {
+        -webkit-transform: translate(0px, 0px);
+                transform: translate(0px, 0px);
+      }
+    }
+
+    @keyframes moveHat {
+      42% {
+        -webkit-transform: translate(0px, -5px);
+                transform: translate(0px, -5px);
+        -webkit-animation-timing-function: ease-in;
+                animation-timing-function: ease-in;
+      }
+      60%, 100% {
+        -webkit-transform: translate(0px, 0px);
+                transform: translate(0px, 0px);
+      }
+    }
+
+    @-webkit-keyframes moveHat2 {
+      2%, 10%, 18%, 26%, 34% {
+        -webkit-transform: translate(0px, 0px) rotate(-2deg);
+                transform: translate(0px, 0px) rotate(-2deg);
+      }
+      6%, 14%, 22%, 30% {
+        -webkit-transform: translate(0px, 0px) rotate(2deg);
+                transform: translate(0px, 0px) rotate(2deg);
+      }
+      36%, 100% {
+        -webkit-transform: translate(0px, 0px) rotate(0deg);
+                transform: translate(0px, 0px) rotate(0deg);
+      }
+    }
+
+    @keyframes moveHat2 {
+      2%, 10%, 18%, 26%, 34% {
+        -webkit-transform: translate(0px, 0px) rotate(-2deg);
+                transform: translate(0px, 0px) rotate(-2deg);
+      }
+      6%, 14%, 22%, 30% {
+        -webkit-transform: translate(0px, 0px) rotate(2deg);
+                transform: translate(0px, 0px) rotate(2deg);
+      }
+      36%, 100% {
+        -webkit-transform: translate(0px, 0px) rotate(0deg);
+                transform: translate(0px, 0px) rotate(0deg);
+      }
+    }
+
+    @-webkit-keyframes movewrench3 {
+      30% {
+        -webkit-transform: translate(0px, 7px) rotate(15deg);
+                transform: translate(0px, 7px) rotate(15deg);
+      }
+      60%, 100% {
+        -webkit-transform: translate(0px, 0px);
+                transform: translate(0px, 0px);
+      }
+    }
+
+    @keyframes movewrench3 {
+      30% {
+        -webkit-transform: translate(0px, 7px) rotate(15deg);
+                transform: translate(0px, 7px) rotate(15deg);
+      }
+      60%, 100% {
+        -webkit-transform: translate(0px, 0px);
+                transform: translate(0px, 0px);
+      }
+    }
+  </style>
+</svg>

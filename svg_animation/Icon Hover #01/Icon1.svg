@@ -1,0 +1,193 @@
+<svg id="fhc-icon1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <g>
+    <g id="doc">
+      <path d="M162.12,157.47c6.16,0,11.93.7,16.84,3.7V159l-.3-99.57H159.85l.15,1A171.32,171.32,0,0,1,160.29,91l-.16,2c-.26,3-.62,6.23-1.08,9.51l-.29,2c-.47,3.1-1,6.28-1.72,9.52l-.43,2c-.66,3-1.42,6-2.29,9l-.58,2q-1.43,4.74-3.23,9.52l-.78,2c-1.2,3-2.51,6-4,9l-1,2q-2.29,4.54-5,9h0l-1.27,2c-2,3.07-6.45,9-6.45,9l-1.59,1.94a112.11,112.11,0,0,1-8.29,9l-2.13,2a113.64,113.64,0,0,1-11.09,9l-2.9,2A125.24,125.24,0,0,1,86.75,203.9L83,205.33l51.05-.2c-2.78-4.79-2.89-10.34-2.89-16.26C131.19,171,144.24,157.47,162.12,157.47Z" fill="#f1f2f2"/>
+      <polygon points="81.89 69.02 74.76 69.02 81.89 62.35 81.89 69.02" fill="#f1f2f2"/>
+      <g>
+        <path d="M86.66,102.94l-.83,0a4.11,4.11,0,0,0-1.91.37,2,2,0,0,0-1,1.24,8.1,8.1,0,0,0-.29,2.41v.62H81.55v2.39h1.08v8.4h2.86v-8.4h2.58v-2.39H85.49v-.64a3.55,3.55,0,0,1,.11-1,.84.84,0,0,1,.41-.49,1.7,1.7,0,0,1,.77-.15h1.48l0-2.19-.69-.09Z" fill="#f4716b"/>
+        <rect x="91.12" y="103.15" width="2.86" height="15.19" fill="#f4716b"/>
+        <path d="M105.36,115.83V110.9a4,4,0,0,0-.47-2.11,2.68,2.68,0,0,0-1.4-1.13,6.6,6.6,0,0,0-2.3-.34c-.48,0-1,0-1.59.08s-1.12.14-1.64.23-1,.18-1.34.27l.08,2c.38,0,.82-.09,1.33-.13l1.54-.11c.52,0,1,0,1.39,0a1.78,1.78,0,0,1,1.14.31,1.35,1.35,0,0,1,.38,1.08v.65l-2.62.24a7,7,0,0,0-2.07.37,2.48,2.48,0,0,0-1.28,1,3.32,3.32,0,0,0,2.94,5.3,7.85,7.85,0,0,0,1.37-.13,12.85,12.85,0,0,0,1.26-.32c.38-.13.69-.25.92-.35a2.2,2.2,0,0,0,.57.41,2.5,2.5,0,0,0,.85.26,3.83,3.83,0,0,0,.53,0c.21,0,.42,0,.64,0h.68l.06-2a1.92,1.92,0,0,1-.65-.22A.63.63,0,0,1,105.36,115.83Zm-2.88.1a3.93,3.93,0,0,1-.63.23,7,7,0,0,1-.85.2,4.41,4.41,0,0,1-.86.09,1,1,0,0,1-.89-.37,1.6,1.6,0,0,1-.29-1,1.46,1.46,0,0,1,.31-1,1.51,1.51,0,0,1,1-.41l2.19-.2Z" fill="#f4716b"/>
+        <path d="M111.47,104.7h-2.86v2.85h-1.27v2.39h1.27v5.74a2.89,2.89,0,0,0,2.89,2.9h2v-2.43h-1.12a.85.85,0,0,1-.86-.86v-5.35h2.75v-2.39h-2.75Z" fill="#f4716b"/>
+        <path d="M120.93,92.24l-15-9.73a5.07,5.07,0,0,0-5.5,0L85.18,92.24a5.05,5.05,0,0,0-2.34,4.28V99a1.22,1.22,0,0,0,2.44,0V96.52a2.6,2.6,0,0,1,1.21-2.22l15.28-9.76a2.65,2.65,0,0,1,2.85,0l15,9.74a2.63,2.63,0,0,1,1.2,2.21v18.93a.72.72,0,0,1-.72.72h-2.69a1.22,1.22,0,1,0,0,2.44h2.69a3.16,3.16,0,0,0,3.16-3.16V96.5A5.05,5.05,0,0,0,120.93,92.24Z" fill="#f4716b"/>
+      </g>
+      <g id="circ-360">
+        <path d="M153.18,192.77a2.78,2.78,0,0,1-1.58.39,5.83,5.83,0,0,1-1.76-.27,5.16,5.16,0,0,1-1.52-.76l-1,2a6,6,0,0,0,2,.91,8.77,8.77,0,0,0,2.39.32,6.15,6.15,0,0,0,2.64-.51,3.65,3.65,0,0,0,1.6-1.35,3.43,3.43,0,0,0,.52-1.85,3.11,3.11,0,0,0-.8-2.17,3.9,3.9,0,0,0-2.32-1.13l2.6-3V183.7h-8v2.14h4.89l-2.36,2.67v1.76h1.21q2.16,0,2.16,1.41A1.24,1.24,0,0,1,153.18,192.77Z" fill="#f4716b"/>
+        <path d="M163.59,185.67a3.71,3.71,0,0,1,2.15.58l1-2a4.76,4.76,0,0,0-1.44-.58,7.25,7.25,0,0,0-1.76-.21,6.25,6.25,0,0,0-3.07.73,5.05,5.05,0,0,0-2.06,2.11,7.14,7.14,0,0,0-.74,3.35,6,6,0,0,0,1.37,4.23,4.88,4.88,0,0,0,3.77,1.47,5.11,5.11,0,0,0,2.21-.46,3.75,3.75,0,0,0,1.57-1.34,3.62,3.62,0,0,0,.58-2,3.39,3.39,0,0,0-.53-1.88,3.5,3.5,0,0,0-1.43-1.26,4.41,4.41,0,0,0-2-.44,3.83,3.83,0,0,0-2.84,1,3.53,3.53,0,0,1,.92-2.48A3.12,3.12,0,0,1,163.59,185.67Zm-2.4,4.79a2.14,2.14,0,0,1,1.43-.49,2.06,2.06,0,0,1,1.42.47,1.73,1.73,0,0,1,0,2.51,2.05,2.05,0,0,1-1.38.46,2.14,2.14,0,0,1-1.48-.48,1.67,1.67,0,0,1,0-2.47Z" fill="#f4716b"/>
+        <path d="M170.51,184.21a4.69,4.69,0,0,0-1.75,2,7.48,7.48,0,0,0-.64,3.2,7.41,7.41,0,0,0,.64,3.19,4.8,4.8,0,0,0,6.84,2.05,4.79,4.79,0,0,0,1.75-2.05,7.41,7.41,0,0,0,.63-3.19,7.49,7.49,0,0,0-.63-3.2,4.82,4.82,0,0,0-1.75-2,4.71,4.71,0,0,0-2.55-.71A4.65,4.65,0,0,0,170.51,184.21Zm4.19,2.45a6.79,6.79,0,0,1,0,5.58,1.88,1.88,0,0,1-1.65.9,1.86,1.86,0,0,1-1.63-.9,6.79,6.79,0,0,1,0-5.58,1.85,1.85,0,0,1,1.63-.91A1.87,1.87,0,0,1,174.7,186.66Z" fill="#f4716b"/>
+        <path d="M184.59,185a2.86,2.86,0,0,0-2.49-1.41,2.91,2.91,0,0,0-1.45.38,2.83,2.83,0,0,0-1.44,2.45,2.79,2.79,0,0,0,1.44,2.44,3,3,0,0,0,2.9,0,2.9,2.9,0,0,0,1-1,2.78,2.78,0,0,0,0-2.84Zm-1.4,2.52a1.57,1.57,0,0,1-2.18,0,1.52,1.52,0,0,1-.44-1.1,1.5,1.5,0,0,1,.44-1.1,1.55,1.55,0,0,1,2.18,0,1.5,1.5,0,0,1,.44,1.1A1.52,1.52,0,0,1,183.19,187.48Z" fill="#f4716b"/>
+        <path d="M179,198a1.5,1.5,0,0,0-2.06.51,17.34,17.34,0,1,1-7.57-24.75L166,175a1.5,1.5,0,0,0,.54,2.9,1.39,1.39,0,0,0,.53-.1l6.49-2.48a1.48,1.48,0,0,0,.87-.86,1.5,1.5,0,0,0-.06-1.21l-3.26-6.44a1.5,1.5,0,1,0-2.67,1.35l1.26,2.5A20.31,20.31,0,1,0,179.46,200,1.5,1.5,0,0,0,179,198Z" fill="#f2706b"/>
+        <circle cx="162.12" cy="188.87" r="30.93" fill="none" stroke="#3f4347" stroke-miterlimit="10" stroke-width="3"/>
+      </g>
+      <g id="text-lines">
+        <g>
+          <path d="M131.77,92h36" fill="none" stroke="#bbbdbf" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke-dasharray="36" stroke-dashoffset="0"></path>
+          <path d="M131.77,103.48h36" fill="none" stroke="#bbbdbf" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke-dasharray="36" stroke-dashoffset="0"></path>
+          <path d="M131.77,115h36" fill="none" stroke="#bbbdbf" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke-dasharray="36" stroke-dashoffset="0"></path>
+        </g>
+        <g>
+          <path d="M83.2,126h84.58" fill="none" stroke="#bbbdbf" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke-dasharray="85" stroke-dashoffset="0"></path>
+          <path d="M83.2,137.5h84.58" fill="none" stroke="#bbbdbf" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke-dasharray="85" stroke-dashoffset="0"></path>
+          <path d="M83.2,148.48h84.58" fill="none" stroke="#bbbdbf" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke-dasharray="85" stroke-dashoffset="0"></path>
+        </g>
+        <g>
+          <path d="M83.2,159.47h56.41" fill="none" stroke="#bbbdbf" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke-dasharray="57" stroke-dashoffset="0"></path>
+          <path d="M83.2,170.45h48.48" fill="none" stroke="#bbbdbf" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke-dasharray="57" stroke-dashoffset="0"></path>
+          <path d="M83.2,181.44h42.24" fill="none" stroke="#bbbdbf" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke-dasharray="57" stroke-dashoffset="0"></path>
+          <path d="M83.2,192.43h42.24" fill="none" stroke="#bbbdbf" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke-dasharray="57" stroke-dashoffset="0"></path>
+        </g>
+      </g>
+      <path id="big-rect" d="M134.3,213H63V51.17H187V163.52" fill="none" stroke="#3f4347" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" stroke-dasharray="418 10 3 9" stroke-dashoffset="440"/>
+      <g>
+        <line x1="129.79" y1="205.4" x2="103.12" y2="205.4" fill="none" stroke="#3f4347" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+        <polyline points="93.27 205.4 71.02 205.4 71.02 70.54 83.44 58.64 178.96 58.64 178.96 157.08" fill="none" stroke="#3f4347" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+        <polyline points="83.44 58.64 83.44 70.54 71.02 70.54" fill="none" stroke="#3f4347" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g>
+        <path d="M150.46,45.71a1.5,1.5,0,0,0-1.5-1.5h-9.83a1.34,1.34,0,0,1-1.34-1.33V36.21a1.5,1.5,0,0,0-1.5-1.5H113.63a1.5,1.5,0,0,0-1.5,1.5v6.67a1.34,1.34,0,0,1-1.34,1.33H101a1.5,1.5,0,0,0-1.5,1.5v19a1.5,1.5,0,0,0,1.5,1.5h48a1.5,1.5,0,0,0,1.5-1.5Z" fill="#3f4347"/>
+        <rect x="102.46" y="55.4" width="45" height="7.81" fill="#dddedf"/>
+        <path d="M102.46,47.21V55.4h45V47.21h-8.33a4.34,4.34,0,0,1-4.34-4.33V37.71H115.13v5.17a4.34,4.34,0,0,1-4.34,4.33Z" fill="#bbbdbf"/>
+      </g>
+    </g>
+  </g>
+  <style>
+    #fhc-icon1:hover {
+      cursor: pointer;
+    }
+
+    #fhc-icon1:hover #circ-360 {
+      -webkit-transform-origin: 162.12px 188.87px;
+          -ms-transform-origin: 162.12px 188.87px;
+              transform-origin: 162.12px 188.87px;
+      -webkit-animation: rotateCirc 3.5s ease-in-out 0s infinite;
+              animation: rotateCirc 3.5s ease-in-out 0s infinite;
+    }
+
+    #fhc-icon1:hover #text-lines > g:nth-child(1) > path {
+      -webkit-animation: drawLine1 3.5s ease-in-out 0s infinite;
+              animation: drawLine1 3.5s ease-in-out 0s infinite;
+    }
+    #fhc-icon1:hover #text-lines > g:nth-child(2) > path {
+      -webkit-animation: drawLine2 3.5s ease-in-out 0.2s infinite;
+              animation: drawLine2 3.5s ease-in-out 0.2s infinite;
+    }
+    #fhc-icon1:hover #text-lines > g:nth-child(3) > path {
+      -webkit-animation: drawLine3 3.5s ease-in-out 0.4s infinite;
+              animation: drawLine3 3.5s ease-in-out 0.4s infinite;
+    }
+
+    #fhc-icon1:hover #big-rect {
+      -webkit-animation: drawLine4 3.5s ease-in-out 0s infinite;
+              animation: drawLine4 3.5s ease-in-out 0s infinite;
+    }
+
+    #fhc-icon1:hover #doc {
+      -webkit-transform-origin: 128px 128px;
+          -ms-transform-origin: 128px 128px;
+              transform-origin: 128px 128px;
+      -webkit-animation: rotDoc 3.5s ease-in-out 0s infinite;
+              animation: rotDoc 3.5s ease-in-out 0s infinite;
+    }
+
+    @-webkit-keyframes rotateCirc {
+      57%, 100% {
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+      }
+    }
+
+    @keyframes rotateCirc {
+      57%, 100% {
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+      }
+    }
+
+    @-webkit-keyframes drawLine1 {
+      29% {
+        stroke-dashoffset: 36px;
+      }
+      58%, 100% {
+        stroke-dashoffset: 0px;
+      }
+    }
+
+    @keyframes drawLine1 {
+      29% {
+        stroke-dashoffset: 36px;
+      }
+      58%, 100% {
+        stroke-dashoffset: 0px;
+      }
+    }
+
+    @-webkit-keyframes drawLine2 {
+      29% {
+        stroke-dashoffset: 85px;
+      }
+      58%, 100% {
+        stroke-dashoffset: 0px;
+      }
+    }
+
+    @keyframes drawLine2 {
+      29% {
+        stroke-dashoffset: 85px;
+      }
+      58%, 100% {
+        stroke-dashoffset: 0px;
+      }
+    }
+
+    @-webkit-keyframes drawLine3 {
+      29% {
+        stroke-dashoffset: 57px;
+      }
+      58%, 100% {
+        stroke-dashoffset: 0px;
+      }
+    }
+
+    @keyframes drawLine3 {
+      29% {
+        stroke-dashoffset: 57px;
+      }
+      58%, 100% {
+        stroke-dashoffset: 0px;
+      }
+    }
+
+    @-webkit-keyframes drawLine4 {
+      68%, 100% {
+        stroke-dashoffset: 0px;
+      }
+    }
+
+    @keyframes drawLine4 {
+      68%, 100% {
+        stroke-dashoffset: 0px;
+      }
+    }
+
+    @-webkit-keyframes rotDoc {
+      34% {
+        -webkit-transform: rotate(-2deg) translate(0px, -5px);
+                transform: rotate(-2deg) translate(0px, -5px);
+      }
+      68%, 100% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+      }
+    }
+
+    @keyframes rotDoc {
+      34% {
+        -webkit-transform: rotate(-2deg) translate(0px, -5px);
+                transform: rotate(-2deg) translate(0px, -5px);
+      }
+      68%, 100% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+      }
+    }
+  </style>
+</svg>
