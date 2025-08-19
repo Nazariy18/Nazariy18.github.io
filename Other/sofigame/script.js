@@ -16,6 +16,8 @@ let heroX; // Changes when moving forward
 let heroY; // Only changes when falling
 let sceneOffset; // Moves the whole game
 
+let planeX = 0;
+
 let platforms = [];
 let sticks = [];
 let trees = [];
@@ -48,8 +50,11 @@ const walkingSpeed = 4;
 const transitioningSpeed = 2;
 const fallingSpeed = 2;
 
-const heroWidth = 17; // 24
-const heroHeight = 30; // 40
+const heroWidth = 30; // 17 //24
+const heroHeight = 64; // 30 // 40
+
+const planeWidth = 360; //721
+const planeHeight = 110; //220
 
 const canvas = document.getElementById("game");
 canvas.width = window.innerWidth; // Make the Canvas full screen
@@ -62,6 +67,11 @@ const perfectElement = document.getElementById("perfect");
 const restartButton = document.getElementById("restart");
 const scoreElement = document.getElementById("score");
 
+//my
+
+const imgGirl = document.getElementById("girlSprite");
+const imgPlane = document.getElementById("imgPlane");
+
 // Initialize layout
 resetGame();
 
@@ -72,6 +82,8 @@ function resetGame() {
   lastTimestamp = undefined;
   sceneOffset = 0;
   score = 0;
+
+  planeX = 0;
 
   introductionElement.style.opacity = 1;
   perfectElement.style.opacity = 0;
@@ -119,7 +131,7 @@ function generateTree() {
     minimumGap +
     Math.floor(Math.random() * (maximumGap - minimumGap));
 
-  const treeColors = ["#6D8821", "#8FAC34", "#98B333"];
+  const treeColors = ["#A9C8CB", "#8AB4C4", "#578EA2"];
   const color = treeColors[Math.floor(Math.random() * 3)];
 
   trees.push({ x, color });
@@ -147,14 +159,6 @@ function generatePlatform() {
 
 resetGame();
 
-// If space was pressed restart the game
-/*window.addEventListener("keydown", function (event) {
-  if (event.key == " ") {
-    event.preventDefault();
-    resetGame();
-    return;
-  }
-});*/
 
 window.addEventListener("mousedown", function (event) {
   if (phase == "waiting") {
@@ -164,7 +168,6 @@ window.addEventListener("mousedown", function (event) {
     window.requestAnimationFrame(animate);
   }
 });
-
 window.addEventListener("touchstart", function (event) {
   if (phase == "waiting") {
     lastTimestamp = undefined;
@@ -179,7 +182,6 @@ window.addEventListener("mouseup", function (event) {
     phase = "turning";
   }
 });
-
 window.addEventListener("touchend", function (event) {
   if (phase == "stretching") {
     phase = "turning";
@@ -288,6 +290,11 @@ function animate(timestamp) {
       throw Error("Wrong phase");
   }
 
+  if (score > 15) {
+    alert("Ура, ти перемогла. Наступний крок: https://nimble.li/qm28yjgm");
+    resetGame();
+  }
+
   draw();
   window.requestAnimationFrame(animate);
 
@@ -330,6 +337,9 @@ function draw() {
   );
 
   // Draw scene
+  if (score > 3 && score < 20) {
+      drawPlane();
+    }
   drawPlatforms();
   drawHero();
   drawSticks();
@@ -347,7 +357,7 @@ restartButton.addEventListener("click", function (event) {
 function drawPlatforms() {
   platforms.forEach(({ x, w }) => {
     // Draw platform
-    ctx.fillStyle = "black";
+    ctx.fillStyle = "#1B3946";
     ctx.fillRect(
       x,
       canvasHeight - platformHeight,
@@ -357,7 +367,7 @@ function drawPlatforms() {
 
     // Draw perfect area only if hero did not yet reach the platform
     if (sticks.last().x < x) {
-      ctx.fillStyle = "red";
+      ctx.fillStyle = "#FF96D5";
       ctx.fillRect(
         x + w / 2 - perfectAreaSize / 2,
         canvasHeight - platformHeight,
@@ -370,49 +380,23 @@ function drawPlatforms() {
 
 function drawHero() {
   ctx.save();
-  ctx.fillStyle = "black";
   ctx.translate(
     heroX - heroWidth / 2,
     heroY + canvasHeight - platformHeight - heroHeight / 2
   );
 
-  // Body
-  drawRoundedRect(
-    -heroWidth / 2,
-    -heroHeight / 2,
-    heroWidth,
-    heroHeight - 4,
-    5
-  );
+  ctx.drawImage(imgGirl, -heroWidth / 2, -heroHeight / 2 + 4, heroWidth, heroHeight)
 
-  // Legs
-  const legDistance = 5;
-  ctx.beginPath();
-  ctx.arc(legDistance, 11.5, 3, 0, Math.PI * 2, false);
-  ctx.fill();
-  ctx.beginPath();
-  ctx.arc(-legDistance, 11.5, 3, 0, Math.PI * 2, false);
-  ctx.fill();
+  ctx.restore();
+}
 
-  // Eye
-  ctx.beginPath();
-  ctx.fillStyle = "white";
-  ctx.arc(5, -7, 3, 0, Math.PI * 2, false);
-  ctx.fill();
+function drawPlane() {
+  planeX += 5;
 
-  // Band
-  ctx.fillStyle = "red";
-  ctx.fillRect(-heroWidth / 2 - 1, -12, heroWidth + 2, 4.5);
-  ctx.beginPath();
-  ctx.moveTo(-9, -14.5);
-  ctx.lineTo(-17, -18.5);
-  ctx.lineTo(-14, -8.5);
-  ctx.fill();
-  ctx.beginPath();
-  ctx.moveTo(-10, -10.5);
-  ctx.lineTo(-15, -3.5);
-  ctx.lineTo(-5, -7);
-  ctx.fill();
+  ctx.save();
+  ctx.translate(-canvasWidth/2 - planeWidth + planeX, 0);
+
+  ctx.drawImage(imgPlane, 0, 0, planeWidth, planeHeight)
 
   ctx.restore();
 }
@@ -440,6 +424,7 @@ function drawSticks() {
     ctx.rotate((Math.PI / 180) * stick.rotation);
 
     // Draw stick
+    ctx.strokeStyle = "#1B3946";
     ctx.beginPath();
     ctx.lineWidth = 2;
     ctx.moveTo(0, 0);
@@ -454,14 +439,14 @@ function drawSticks() {
 function drawBackground() {
   // Draw sky
   var gradient = ctx.createLinearGradient(0, 0, 0, window.innerHeight);
-  gradient.addColorStop(0, "#BBD691");
-  gradient.addColorStop(1, "#FEF1E1");
+  gradient.addColorStop(0, "#ACC3F3");
+  gradient.addColorStop(1, "#FAD1DA");
   ctx.fillStyle = gradient;
   ctx.fillRect(0, 0, window.innerWidth, window.innerHeight);
 
   // Draw hills
-  drawHill(hill1BaseHeight, hill1Amplitude, hill1Stretch, "#95C629");
-  drawHill(hill2BaseHeight, hill2Amplitude, hill2Stretch, "#659F1C");
+  drawHill(hill1BaseHeight, hill1Amplitude, hill1Stretch, "#2C5F74");
+  drawHill(hill2BaseHeight, hill2Amplitude, hill2Stretch, "#4A8195");
 
   // Draw trees
   trees.forEach((tree) => drawTree(tree.x, tree.color));
@@ -493,7 +478,7 @@ function drawTree(x, color) {
   const treeCrownWidth = 10;
 
   // Draw trunk
-  ctx.fillStyle = "#7D833C";
+  ctx.fillStyle = "#2C5F74";
   ctx.fillRect(
     -treeTrunkWidth / 2,
     -treeTrunkHeight,
