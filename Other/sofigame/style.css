@@ -9,6 +9,17 @@ body {
   cursor: pointer;
 }
 
+canvas {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0); /* mobile webkit */
+}   
+
 .container {
   display: flex;
   justify-content: center;
@@ -41,7 +52,7 @@ body {
   position: absolute;
   border-radius: 50%;
   color: white;
-  background-color: red;
+  background-color: #FF96D5;
   border: none;
   font-weight: 700;
   font-size: 1.2em;
@@ -54,74 +65,4 @@ body {
   position: absolute;
   opacity: 0;
   transition: opacity 2s;
-}
-
-#youtube,
-#youtube-card {
-  display: none;
-}
-
-@media (min-height: 425px) {
-  /** Youtube logo by https://codepen.io/alvaromontoro */
-  #youtube {
-    z-index: 2;
-    display: block;
-    width: 100px;
-    height: 70px;
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    background: red;
-    border-radius: 50% / 11%;
-    transform: scale(0.8);
-    transition: transform 0.5s;
-  }
-
-  #youtube:hover,
-  #youtube:focus {
-    transform: scale(0.9);
-  }
-
-  #youtube::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 7.5%;
-    left: -6%;
-    width: 112%;
-    height: 85%;
-    background: red;
-    border-radius: 9% / 50%;
-  }
-
-  #youtube::after {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 20px;
-    left: 40px;
-    width: 45px;
-    height: 30px;
-    border: 15px solid transparent;
-    box-sizing: border-box;
-    border-left: 30px solid white;
-  }
-
-  #youtube span {
-    font-size: 0;
-    position: absolute;
-    width: 0;
-    height: 0;
-    overflow: hidden;
-  }
-
-  #youtube:hover + #youtube-card {
-    display: block;
-    position: absolute;
-    bottom: 12px;
-    left: 10px;
-    padding: 25px 25px 25px 130px;
-    width: 300px;
-    background-color: white;
-  }
 }
