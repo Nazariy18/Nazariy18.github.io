@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>❤️</title>
+
+<style>
+  body {
+    margin: 0;
+    min-height: 100vh;
+    background: #fff;
+    font-family: "Segoe UI", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container {
+    text-align: center;
+    padding: 24px;
+    max-width: 420px;
+    width: 100%;
+  }
+
+  h1 {
+    color: #e53e3e;
+    margin-bottom: 16px;
+  }
+
+  .media img,
+  .media video {
+    width: 100%;
+    max-width: 320px;
+    max-height: 320px;
+    object-fit: cover;
+    border-radius: 18px;
+    display: none;
+    margin: 0 auto;
+  }
+
+  .text {
+    margin-top: 16px;
+    font-size: 16px;
+    color: #555;
+    //font-style: italic;
+    min-height: 48px;
+  }
+
+  /*.buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    position: relative;
+    height: 60px;
+  }
+
+  button {
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  #yesBtn {
+    background: #e53e3e;
+    color: white;
+  }
+
+  #noBtn {
+    background: white;
+    border: 2px solid #e53e3e;
+    color: #e53e3e;
+  }
+
+  .pulse {
+    animation: pulse 1.2s infinite;
+    box-shadow: 0 0 0 rgba(229,62,62,0.6);
+  }
+
+  @keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(229,62,62,0.6); transform: scale(1); }
+    50% { box-shadow: 0 0 20px 10px rgba(229,62,62,0.4); transform: scale(1.08); }
+    100% { box-shadow: 0 0 0 0 rgba(229,62,62,0.6); transform: scale(1); }
+  }*/
+
+  .buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 20px;
+  position: relative;
+}
+
+button {
+  font-size: 18px;
+  padding: 14px 28px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  position: relative;
+}
+
+#yesBtn {
+  background: #e85b5b;
+  color: white;
+  border: none;
+  z-index: 2;
+}
+
+#noBtn {
+  background: white;
+  color: #e85b5b;
+  border: 2px solid #e85b5b;
+  z-index: 1;
+}
+
+/* Пульсуюча тінь */
+.shadow-blink::before {
+  content: "";
+  position: absolute;
+  inset: -12px;
+  border-radius: 999px;
+  background: rgba(232, 91, 91, 0.4);
+  filter: blur(12px);
+  animation: shadowPulse 1.2s infinite;
+  z-index: -1;
+}
+
+@keyframes shadowPulse {
+  0% { opacity: 0.3; transform: scale(0.9); }
+  50% { opacity: 0.7; transform: scale(1.1); }
+  100% { opacity: 0.3; transform: scale(0.9); }
+}
+
+.pulse {
+  animation: pulseBtn 1s infinite;
+}
+
+@keyframes pulseBtn {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.08); }
+  100% { transform: scale(1); }
+}
+
+  .pulse {
+    animation: pulseBtn 1.2s infinite;
+  }
+
+  @keyframes pulseBtn {
+    0% { transform: scale(1.4); }
+    50% { transform: scale(1.5); }
+    100% { transform: scale(1.4); }
+  }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+  <h1 id="title">Чи будеш ти моєю другою половинкою в день закоханих?</h1>
+
+  <div class="media">
+    <img id="photo" src="img/cat01.png"  />
+    <video id="video" muted playsinline></video>
+  </div>
+
+  <div class="text" id="text">
+    Ти хотіла записочку? Тримай 😁
+  </div>
+
+  <div class="buttons" id="buttons">
+    <button id="yesBtn">Так</button>
+    <button id="noBtn">Ні</button>
+  </div>
+</div>
+
+<script>
+  const photo = document.getElementById("photo");
+  const video = document.getElementById("video");
+  const text = document.getElementById("text");
+  const h1T = document.getElementById("hText");
+  const title = document.getElementById("title");
+  const yesBtn = document.getElementById("yesBtn");
+  const noBtn = document.getElementById("noBtn");
+  const buttons = document.getElementById("buttons");
+
+  let noCount = 0;
+  let yesScale = 1;
+  let noScale = 1;
+
+  const noVideos = [
+    "img/what01.mp4",
+    "img/et2.mp4",
+    "img/et3.mp4",
+    "img/happy.mp4"
+  ];
+
+  function showPhoto(src) {
+    video.pause();
+    video.style.display = "none";
+    photo.src = src;
+    photo.style.display = "block";
+  }
+
+  function showVideo(src, loop = true) {
+    photo.style.display = "none";
+    video.src = src;
+    video.loop = loop;
+    video.currentTime = 0;
+    video.play();
+    video.style.display = "block";
+  }
+
+  // старт
+  showPhoto("img/cat01.png");
+
+  yesBtn.onclick = () => {
+    //title.style.display = "none";
+    title.textContent = "Муррррр 😘";
+    buttons.style.display = "none";
+
+    text.textContent = "Упс не то…";
+    showPhoto("img/ups02.jpg");
+
+    let count = 2;
+    const timer = setInterval(() => {
+      text.textContent = `Зараз зникне ${count}…`;
+      count--;
+      if (count < 0) {
+        clearInterval(timer);
+        text.textContent = "Я знав, що ти скажеш «так» ❤️";
+        showVideo(noVideos[3]);
+      }
+    }, 1000);
+  };
+
+  noBtn.onclick = () => {
+    noCount++;
+
+    showVideo(noVideos[Math.min(noCount - 1, noVideos.length - 1)]);
+
+    yesScale *= 1.2;
+    noScale *= 0.8;
+
+    yesBtn.style.transform = `scale(${yesScale})`;
+    noBtn.style.transform = `scale(${noScale})`;
+
+    noBtn.style.position = "absolute";
+
+    if (noCount === 1) {
+      text.textContent = "Не поняв? Ти не туди натиснула!";
+      noBtn.style.left = 0.1 * 60 + "%";
+    } else if (noCount === 2) {
+      text.textContent = "Так так так, і куди це тебе заведе?";
+      noBtn.style.left = 1.5 * 60 + "%";
+    } else {
+      noBtn.style.display = "none";
+      yesBtn.classList.add("pulse");
+      text.textContent = "Ти граєшся з вогнем!";
+    }
+  };
+</script>
+
+</body>
+</html>
