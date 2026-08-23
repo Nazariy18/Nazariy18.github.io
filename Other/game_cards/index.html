@@ -20,7 +20,7 @@
       box-sizing: border-box;
       -webkit-tap-highlight-color: transparent;
     }
-   
+    
     h1, h2 { color: #fff; margin-top: 0; }
     #setup-screen h2 { color: #2c3e50; }
     /* ГОЛОВНИЙ БЛОК */
@@ -35,7 +35,7 @@
       box-sizing: border-box;
       margin: 0;
     }
-   
+    
     #game-screen, #end-screen { background: transparent; box-shadow: none; padding: 0; }
     .hidden { display: none !important; }
     /* ЕКРАН ВИБОРУ */
@@ -49,15 +49,26 @@
     .cards-list.open { display: block; }
     .card-label { display: flex; align-items: flex-start; margin: 10px 0; cursor: pointer; color: #333; }
     .card-label input { margin-top: 3px; margin-right: 12px; transform: scale(1.2); }
-    button { background: #3498db; color: white; border: none; padding: 15px; font-size: 18px; border-radius: 8px; cursor: pointer; margin-top: 10px; width: 100%; font-weight: bold; transition: background 0.2s, transform 0.15s; }
-    button:hover { background: #2980b9; }
-    button:active { transform: scale(0.97); }
-   
+    
+    button { 
+      background: #3498db; 
+      color: white; 
+      border: none; 
+      padding: 15px; 
+      font-size: 18px; 
+      border-radius: 8px; 
+      cursor: pointer; 
+      margin-top: 10px; 
+      width: 100%; 
+      font-weight: bold; 
+    }
+    
     .btn-green { background: #27ae60; }
-    .btn-green:hover { background: #219653; }
+    
     /* ФОРМА ДОДАВАННЯ КАРТКИ */
     .add-card-form { background: #f8f9fa; padding: 15px; border-radius: 8px; text-align: left; border: 1px solid #e1e8ed; }
     .add-card-form input, .add-card-form select { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 6px; box-sizing: border-box; font-family: inherit; font-size: 16px; margin-bottom: 10px; }
+    
     /* ІГРОВІ КАРТКИ (КВАДРАТНІ) */
     #card-stack {
       position: relative;
@@ -87,8 +98,8 @@
     }
     #card-top { z-index: 2; cursor: grab; touch-action: none; }
     #card-bottom { z-index: 1; transform: scale(0.96); opacity: 0.85; }
-   
-    /* Кнопки навігації */
+    
+    /* Кнопки навігації (без анімацій і підсвіток) */
     .nav-buttons {
       display: flex;
       gap: 12px;
@@ -103,29 +114,27 @@
       border: none;
       font-weight: 600;
       cursor: pointer;
-      transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
       display: flex;
       align-items: center;
       justify-content: center;
       gap: 8px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+      transition: none !important;
+      -webkit-tap-highlight-color: transparent !important;
+      outline: none !important;
+      user-select: none;
+      -webkit-user-select: none;
     }
-    .nav-btn:active { transform: scale(0.96); }
-    .nav-btn:disabled {
-      opacity: 0.4;
-      cursor: not-allowed;
-      transform: none;
-    }
+
     .btn-prev {
       background: linear-gradient(135deg, #636e72, #2d3436);
       color: #fff;
     }
-    .btn-prev:hover:not(:disabled) { background: linear-gradient(135deg, #747d8c, #353b48); }
+    
     .btn-next {
       background: linear-gradient(135deg, #0984e3, #0652DD);
       color: #fff;
     }
-    .btn-next:hover:not(:disabled) { background: linear-gradient(135deg, #74b9ff, #0984e3); }
 
     #stats {
       font-size: clamp(14px, 3vw, 18px);
@@ -141,7 +150,7 @@
   <div id="setup-screen" class="screen">
     <h2>Оберіть картки для гри:</h2>
     <div id="blocks-container"></div>
-   
+    
     <!-- Форма для кастомних карток -->
     <div class="add-card-form">
       <div style="font-weight: bold; color: #2c3e50; margin-bottom: 10px;">+ Додати свою картку:</div>
@@ -164,13 +173,14 @@
     </div>
     <button onclick="startGame()" style="margin-top: 15px;">Почати гру</button>
   </div>
+
   <!-- ЕКРАН 2: ГРА -->
   <div id="game-screen" class="screen hidden">
     <div id="card-stack">
       <div id="card-bottom" class="card-element"></div>
       <div id="card-top" class="card-element"></div>
     </div>
-   
+    
     <div class="nav-buttons">
       <button id="btn-prev" class="nav-btn btn-prev" onclick="triggerSwipe(-1)">
         ⬅️ Попередня
@@ -181,15 +191,17 @@
     </div>
     <div id="stats">Завантаження статистики...</div>
   </div>
+
   <!-- ЕКРАН 3: ФІНІШ -->
   <div id="end-screen" class="screen hidden" style="background: white; padding: 40px;">
     <h2 style="color: #2c3e50;">Гру завершено!</h2>
     <button onclick="resetToSetup()">Почати спочатку</button>
   </div>
+
   <script src="data.js"></script>
   <script>
     let activeCardsData = [];
-   
+    
     let gameDeck = [];
     let history = [];
     let historyIndex = -1;
@@ -243,10 +255,10 @@
         if (block.checked === undefined) block.checked = true;
         const group = document.createElement('div');
         group.className = 'block-group';
-       
+        
         const header = document.createElement('div');
         header.className = 'block-header';
-       
+        
         const blockCheckbox = document.createElement('input');
         blockCheckbox.type = 'checkbox';
         blockCheckbox.id = `block-cb-${bIndex}`;
@@ -257,11 +269,11 @@
         const title = document.createElement('div');
         title.className = 'block-title';
         title.innerHTML = `${block.name} (Рівень ${block.level}) <span>▼</span>`;
-       
+        
         header.onclick = (e) => {
           if(e.target !== blockCheckbox) document.getElementById(`cards-list-${bIndex}`).classList.toggle('open');
         };
-       
+        
         header.appendChild(blockCheckbox);
         header.appendChild(title);
         group.appendChild(header);
@@ -269,26 +281,26 @@
         const list = document.createElement('div');
         list.className = 'cards-list';
         list.id = `cards-list-${bIndex}`;
-       
+        
         if (block.isCustom) list.classList.add('open');
         block.cardStates = block.cardStates || [];
         block.cards.forEach((cardText, cIndex) => {
           if (block.cardStates[cIndex] === undefined) block.cardStates[cIndex] = true;
           const label = document.createElement('label');
           label.className = 'card-label';
-         
+          
           const cb = document.createElement('input');
           cb.type = 'checkbox';
           cb.className = `card-checkbox card-cb-${bIndex}`;
           cb.dataset.bindex = bIndex;
           cb.dataset.cindex = cIndex;
           cb.checked = block.cardStates[cIndex];
-         
+          
           cb.onchange = () => {
             const allInBlock = document.querySelectorAll(`.card-cb-${bIndex}`);
             blockCheckbox.checked = Array.from(allInBlock).some(c => c.checked);
           };
-         
+          
           label.appendChild(cb);
           label.appendChild(document.createTextNode(cardText));
           list.appendChild(label);
@@ -301,7 +313,7 @@
     function addCustomCard() {
       const textInput = document.getElementById('custom-card-text');
       const levelInput = document.getElementById('custom-card-level');
-     
+      
       const text = textInput.value.trim();
       const level = parseInt(levelInput.value);
       if (!text) {
@@ -309,7 +321,7 @@
         return;
       }
       let customBlock = activeCardsData.find(b => b.isCustom && b.level === level);
-     
+      
       if (!customBlock) {
         customBlock = {
           name: "Мої картки",
@@ -342,32 +354,30 @@
       lastX = startPosition;
       lastTime = Date.now();
       velocityX = 0;
-     
+      
       const cardTop = document.getElementById('card-top');
       cardTop.style.transition = 'none';
       cardTop.style.cursor = 'grabbing';
 
-      // Поріг ~28% ширини картки — набагато легше змахувати на телефоні
       currentSwipeThreshold = document.getElementById('card-stack').offsetWidth * 0.28;
     }
 
     function dragAction(event) {
       if (!isDragging || isAnimating) return;
 
-      // Запобігаємо скролу сторінки під час перетягування
       if (event.cancelable) event.preventDefault();
-     
+      
       const x = getPositionX(event);
       const now = Date.now();
       const dt = now - lastTime;
       if (dt > 0) {
-        velocityX = (x - lastX) / dt; // px/ms
+        velocityX = (x - lastX) / dt;
       }
       lastX = x;
       lastTime = now;
 
       currentTranslate = x - startPosition;
-     
+      
       if (currentTranslate > 8 && dragDirection !== 1) {
         dragDirection = 1;
         updateCardDOM('card-bottom', getUpcomingCard(), "Кінець гри");
@@ -381,12 +391,11 @@
         bottom.style.transform = 'scale(0.96)';
         bottom.style.opacity = '0.85';
       }
-     
+      
       const cardTop = document.getElementById('card-top');
-      const rotation = currentTranslate * 0.05; // м'яке обертання
+      const rotation = currentTranslate * 0.05;
       cardTop.style.transform = `translateX(${currentTranslate}px) rotate(${rotation}deg)`;
-     
-      // Плавна прозорість
+      
       let progress = Math.min(Math.abs(currentTranslate) / currentSwipeThreshold, 1);
       cardTop.style.opacity = 1 - progress * 0.45;
     }
@@ -400,20 +409,15 @@
       const absTranslate = Math.abs(currentTranslate);
       const absVelocity = Math.abs(velocityX);
 
-      // Свайп спрацьовує якщо:
-      // 1) пройшли поріг відстані АБО
-      // 2) швидкий флік (velocity > 0.45 px/ms ≈ 450 px/s)
       const shouldSwipe = absTranslate > currentSwipeThreshold || absVelocity > 0.45;
 
       if (shouldSwipe && currentTranslate > 0) {
-        // Вправо → наступна
         if (getUpcomingCard()) {
           flyAway(1);
         } else {
           endGame();
         }
       } else if (shouldSwipe && currentTranslate < 0) {
-        // Вліво → попередня
         if (getPreviousCard()) {
           flyAway(-1);
         } else {
@@ -437,7 +441,6 @@
     function flyAway(direction) {
       if (isAnimating) return;
       isAnimating = true;
-      setNavButtonsEnabled(false);
 
       const cardTop = document.getElementById('card-top');
       const cardBottom = document.getElementById('card-bottom');
@@ -445,48 +448,38 @@
       const flyDistance = direction * (stackWidth + 80);
       const rotation = direction * 18;
 
-      // Відліт верхньої картки
       cardTop.style.transition = 'transform 0.28s cubic-bezier(0.2, 0.8, 0.3, 1), opacity 0.25s ease-out';
       cardTop.style.transform = `translateX(${flyDistance}px) rotate(${rotation}deg)`;
       cardTop.style.opacity = '0';
 
-      // Нижня картка плавно виходить на передній план
       cardBottom.style.transition = 'transform 0.28s ease-out, opacity 0.28s ease-out';
       cardBottom.style.transform = 'scale(1)';
       cardBottom.style.opacity = '1';
 
       setTimeout(() => {
-        // 1. Спочатку вимикаємо transition — щоб не було анімації «назад»
         cardTop.style.transition = 'none';
         cardBottom.style.transition = 'none';
 
-        // 2. Міняємо логічний стан (текст уже оновиться в renderState)
         if (direction > 0) {
           goNext();
         } else {
           goPrev();
         }
 
-        // 3. Миттєво ставимо нову верхню картку на місце (без анімації)
         cardTop.style.transform = 'translateX(0) rotate(0deg)';
         cardTop.style.opacity = '1';
 
-        // 4. Нижню повертаємо в «тінь» (теж миттєво)
         cardBottom.style.transform = 'scale(0.96)';
         cardBottom.style.opacity = '0.85';
 
-        // 5. Даємо браузеру застосувати стилі, потім знову дозволяємо анімації
         requestAnimationFrame(() => {
           requestAnimationFrame(() => {
             isAnimating = false;
-            setNavButtonsEnabled(true);
-            updateNavButtonsState();
           });
         });
       }, 280);
     }
 
-    // Кнопки викликають той самий flyAway
     function triggerSwipe(direction) {
       if (isAnimating || isDragging) return;
 
@@ -495,7 +488,6 @@
           endGame();
           return;
         }
-        // Підготовлюємо нижню картку
         updateCardDOM('card-bottom', getUpcomingCard(), "Кінець гри");
         flyAway(1);
       } else {
@@ -503,17 +495,6 @@
         updateCardDOM('card-bottom', getPreviousCard(), "Це перша картка");
         flyAway(-1);
       }
-    }
-
-    function setNavButtonsEnabled(enabled) {
-      document.getElementById('btn-prev').disabled = !enabled;
-      document.getElementById('btn-next').disabled = !enabled;
-    }
-
-    function updateNavButtonsState() {
-      document.getElementById('btn-prev').disabled = !getPreviousCard();
-      // next завжди доступна, поки є картки або історія вперед
-      document.getElementById('btn-next').disabled = !getUpcomingCard() && gameDeck.length === 0 && historyIndex >= history.length - 1;
     }
 
     function startGame() {
@@ -534,12 +515,11 @@
         }
       });
       if(gameDeck.length === 0) return alert("Оберіть картки для гри!");
-     
+      
       document.getElementById('setup-screen').classList.add('hidden');
       document.getElementById('game-screen').classList.remove('hidden');
-     
+      
       goNext();
-      updateNavButtonsState();
     }
 
     function resetToSetup() {
@@ -590,19 +570,18 @@
     function renderState() {
       const currentCard = history[historyIndex];
       updateCardDOM('card-top', currentCard);
-     
+      
       const cardTop = document.getElementById('card-top');
-      // transition вже вимкнено в flyAway
       cardTop.style.transform = 'translateX(0) rotate(0deg)';
       cardTop.style.opacity = '1';
-     
+      
       currentTranslate = 0;
       dragDirection = 0;
       velocityX = 0;
 
       let remainingCards = history.slice(historyIndex).concat(gameDeck);
       let totalCount = remainingCards.length;
-     
+      
       let currentLevel = currentCard.level;
       let currentLevelCount = remainingCards.filter(c => c.level === currentLevel).length;
       document.getElementById('stats').innerHTML = `
@@ -611,8 +590,6 @@
           (Загалом залишилося: ${totalCount})
         </span>
       `;
-
-      updateNavButtonsState();
     }
 
     function updateCardDOM(elementId, cardObj, fallbackText = "") {
@@ -628,16 +605,16 @@
 
     function getGradient(level) {
       switch(level) {
-        case 1: return 'linear-gradient(135deg, #56ab2f, #a8e063)'; // Зелений
-        case 2: return 'linear-gradient(135deg, #f12711, #f5af19)'; // Помаранчевий
-        case 3: return 'linear-gradient(135deg, #8E2DE2, #4A00E0)'; // Фіолетовий
-        case 4: return 'linear-gradient(135deg, #FF416C, #FF4B2B)'; // Червоний
-        case 5: return 'linear-gradient(135deg, #1CB5E0, #000046)'; // Темно-синій
-        case 6: return 'linear-gradient(135deg, #DA4453, #89216B)'; // Малиновий
-        case 7: return 'linear-gradient(135deg, #00B4DB, #0083B0)'; // Бірюзовий
-        case 8: return 'linear-gradient(135deg, #aa4b6b, #3b8d99)'; // Бронзовий/Мікс
-        case 9: return 'linear-gradient(135deg, #41295a, #2F0743)'; // Темно-фіолетовий
-        case 10: default: return 'linear-gradient(135deg, #000000, #434343)'; // Чорний
+        case 1: return 'linear-gradient(135deg, #56ab2f, #a8e063)';
+        case 2: return 'linear-gradient(135deg, #f12711, #f5af19)';
+        case 3: return 'linear-gradient(135deg, #8E2DE2, #4A00E0)';
+        case 4: return 'linear-gradient(135deg, #FF416C, #FF4B2B)';
+        case 5: return 'linear-gradient(135deg, #1CB5E0, #000046)';
+        case 6: return 'linear-gradient(135deg, #DA4453, #89216B)';
+        case 7: return 'linear-gradient(135deg, #00B4DB, #0083B0)';
+        case 8: return 'linear-gradient(135deg, #aa4b6b, #3b8d99)';
+        case 9: return 'linear-gradient(135deg, #41295a, #2F0743)';
+        case 10: default: return 'linear-gradient(135deg, #000000, #434343)';
       }
     }
 
